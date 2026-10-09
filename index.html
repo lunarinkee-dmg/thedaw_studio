@@ -22,7 +22,7 @@ render();load();</script><style>
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
 <script>
-let designCfg={title:'',body:'',date:'',bg:'#181d1b',accent:'#d3ff86',size:54,bodySize:32.25,titleY:1130,bodyY:1302,image:'',logo:'',cropZoom:1,cropX:0,cropY:0},designImg=null,designDrag=null,designVideo=null,designLogo=null,designRecording=false;
+let designCfg={title:'',body:'',date:'',bg:'#181d1b',accent:'#d3ff86',size:54,bodySize:32.25,titleY:1130,bodyY:1302,image:'',logo:'',cropZoom:1,cropX:0,cropY:0},designImg=null,designDrag=null,designVideo=null,designLogo=null,designRecording=false,designCancelExport=null;
 try{Object.assign(designCfg,JSON.parse(localStorage.getItem('daw_native_design')||'{}'))}catch(e){}
 function designStore(){try{localStorage.setItem('daw_native_design',JSON.stringify(designCfg))}catch(e){let x=document.getElementById('designNotice');if(x)x.textContent='Фотография слишком большая для хранения в браузере. Скачай PNG.'}}
 function designWrap(ctx,txt,x,y,width,size,lines,style='title'){
@@ -58,7 +58,7 @@ function designPaint(){
 }
 function designLogoLoad(src){if(!src){designLogo=null;designPaint();return}let im=new Image();im.onload=()=>{designLogo=im;designPaint()};im.src=src}
 function designImageLoad(src){if(!src){designImg=null;designPaint();return}let im=new Image();im.onload=()=>{designImg=im;designPaint()};im.src=src}
-function renderDesign(){let m=document.getElementById('main'),s=designCfg;if(!m)return;m.innerHTML='<h1>Дизайн theDĀW</h1><p class="muted">Шаблон по Canva theDAW - reels · 1080 × 1920. Перетаскивай текст на макете.</p><div class="design-layout"><div class="card design-form"><label>Подставить новость из черновиков</label><select id="designDraft"><option value="">Выбери черновик</option>'+data.drafts.map(d=>'<option value="'+esc(d.id)+'">'+esc(d.headline)+'</option>').join('')+'</select><button class="btn" id="designFill">Подставить текст</button><label>Заголовок</label><textarea id="designTitle" rows="3"></textarea><label>Описание</label><textarea id="designBody" rows="5"></textarea><label>Дата</label><input id="designDate"><label>Загрузить фоновое фото</label><input type="file" accept="image/*" id="designFile"><label>Загрузить фоновое видео (MP4 / WebM)</label><input type="file" accept="video/mp4,video/webm,video/quicktime,video/*" id="designVideoFile"><label>Кадрирование фона — масштаб</label><input type="range" id="designCropZoom" min="1" max="3" step="0.01"><label>Сдвиг фона по горизонтали</label><input type="range" id="designCropX" min="-1500" max="1500" step="5"><label>Сдвиг фона по вертикали</label><input type="range" id="designCropY" min="-2200" max="2200" step="5"><button class="btn" id="designCropReset">Сбросить кадрирование</button><label>Длительность ролика (секунды)</label><input type="number" min="3" max="60" value="10" id="designDuration"><button class="btn" id="designClear">Убрать фото</button><label>Цвет фона</label><input type="color" id="designBg"><label>Акцентный цвет</label><input type="color" id="designAccent"><label>Размер заголовка</label><input type="number" min="20" max="130" step="0.5" id="designSize"><label>Логотип (PNG с прозрачностью)</label><input type="file" id="designLogoFile" accept="image/png,image/webp"><label>Размер описания</label><input type="number" min="15" max="70" step="0.25" id="designBodySize"><button class="btn" id="designReset">Сбросить положение текста</button><button class="btn primary" id="designDownload">↓ Скачать PNG</button><button class="btn primary" id="designExportVideo">🎬 Скачать MP4</button><p class="muted mini" id="designNotice">Настройки сохраняются в этом браузере.</p></div><div class="design-stage"><canvas id="designCanvas" width="1080" height="1920"></canvas></div></div>';
+function renderDesign(){let m=document.getElementById('main'),s=designCfg;if(!m)return;m.innerHTML='<h1>Дизайн theDĀW</h1><p class="muted">Шаблон по Canva theDAW - reels · 1080 × 1920. Перетаскивай текст на макете.</p><div class="design-layout"><div class="card design-form"><label>Подставить новость из черновиков</label><select id="designDraft"><option value="">Выбери черновик</option>'+data.drafts.map(d=>'<option value="'+esc(d.id)+'">'+esc(d.headline)+'</option>').join('')+'</select><button class="btn" id="designFill">Подставить текст</button><label>Заголовок</label><textarea id="designTitle" rows="3"></textarea><label>Описание</label><textarea id="designBody" rows="5"></textarea><label>Дата</label><input id="designDate"><label>Загрузить фоновое фото</label><input type="file" accept="image/*" id="designFile"><label>Загрузить фоновое видео (MP4 / WebM)</label><input type="file" accept="video/mp4,video/webm,video/quicktime,video/*" id="designVideoFile"><label>Кадрирование фона — масштаб</label><input type="range" id="designCropZoom" min="1" max="3" step="0.01"><label>Сдвиг фона по горизонтали</label><input type="range" id="designCropX" min="-1500" max="1500" step="5"><label>Сдвиг фона по вертикали</label><input type="range" id="designCropY" min="-2200" max="2200" step="5"><button class="btn" id="designCropReset">Сбросить кадрирование</button><label>Длительность ролика (секунды)</label><input type="number" min="3" max="60" value="10" id="designDuration"><button class="btn" id="designClear">Убрать фото</button><label>Цвет фона</label><input type="color" id="designBg"><label>Акцентный цвет</label><input type="color" id="designAccent"><label>Размер заголовка</label><input type="number" min="20" max="130" step="0.5" id="designSize"><label>Логотип (PNG с прозрачностью)</label><input type="file" id="designLogoFile" accept="image/png,image/webp"><label>Размер описания</label><input type="number" min="15" max="70" step="0.25" id="designBodySize"><button class="btn" id="designReset">Сбросить положение текста</button><button class="btn primary" id="designDownload">↓ Скачать PNG</button><button class="btn primary" id="designExportVideo">🎬 Скачать MP4</button><button class="btn" id="designCancelVideo" style="display:none">✕ Отменить экспорт</button><p class="muted mini" id="designNotice">Настройки сохраняются в этом браузере.</p></div><div class="design-stage"><canvas id="designCanvas" width="1080" height="1920"></canvas></div></div>';
 let logoInput=document.getElementById('designLogoFile');if(logoInput)logoInput.onchange=e=>{let file=e.target.files[0];if(!file)return;let reader=new FileReader();reader.onload=()=>{designCfg.logo=reader.result;designLogoLoad(reader.result);designStore()};reader.readAsDataURL(file)};designLogoLoad(designCfg.logo);
 for(const [id,key] of [['designCropZoom','cropZoom'],['designCropX','cropX'],['designCropY','cropY']]){let el=document.getElementById(id);el.value=s[key]??(key==='cropZoom'?1:0);el.oninput=()=>{s[key]=Number(el.value);designStore();designPaint()}}
 document.getElementById('designCropReset').onclick=()=>{s.cropZoom=1;s.cropX=0;s.cropY=0;for(const [id,key] of [['designCropZoom','cropZoom'],['designCropX','cropX'],['designCropY','cropY']])document.getElementById(id).value=s[key];designStore();designPaint()};
@@ -76,29 +76,41 @@ document.getElementById('designVideoFile').onchange=e=>{
  v.onerror=()=>{document.getElementById('designNotice').textContent='Не удалось прочитать видео'};
 };
 document.getElementById('designExportVideo').onclick=async()=>{
- const notice=document.getElementById('designNotice'),btn=document.getElementById('designExportVideo');
+ const notice=document.getElementById('designNotice'),btn=document.getElementById('designExportVideo'),cancelBtn=document.getElementById('designCancelVideo');
  if(designRecording)return;
- if(!HTMLCanvasElement.prototype.captureStream||!window.MediaRecorder){notice.textContent='Этот браузер не поддерживает экспорт видео. Попробуй Chrome или Edge.';return}
+ if(!HTMLCanvasElement.prototype.captureStream||!window.MediaRecorder){notice.textContent='Этот браузер не поддерживает экспорт видео.';return}
  const duration=Math.min(60,Math.max(3,Number(document.getElementById('designDuration').value)||10));
  const cv=document.getElementById('designCanvas');
  const mime=['video/mp4;codecs="avc1.42E01E"','video/mp4;codecs=avc1','video/mp4'].find(t=>MediaRecorder.isTypeSupported(t));
- if(!mime){notice.textContent='Этот браузер не поддерживает прямой экспорт MP4. Попробуй актуальный Safari или Chrome с поддержкой MP4 MediaRecorder. Нельзя просто переименовать WebM в MP4.';return}
- let recorder,stream,frames=[],raf;
+ if(!mime){notice.textContent='Этот браузер не поддерживает прямой экспорт MP4.';return}
+ let recorder,stream,frames=[],raf,timer,stopped=false,cancelled=false,resolveWait;
+ const finishWait=()=>{if(resolveWait){let r=resolveWait;resolveWait=null;r()}};
  try{
-  designRecording=true;btn.disabled=true;stream=cv.captureStream(30);
+  designRecording=true;btn.disabled=true;cancelBtn.style.display='';cancelBtn.disabled=false;
+  designCancelExport=()=>{cancelled=true;notice.textContent='Отменяем экспорт…';cancelBtn.disabled=true;finishWait()};
+  cancelBtn.onclick=()=>{if(designCancelExport)designCancelExport()};
+  stream=cv.captureStream(30);
   recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:5000000});
-  recorder.ondataavailable=e=>{if(e.data.size)frames.push(e.data)};
+  recorder.ondataavailable=e=>{if(e.data.size&&!cancelled)frames.push(e.data)};
   const completed=new Promise((resolve,reject)=>{recorder.onstop=resolve;recorder.onerror=()=>reject(new Error('Ошибка записи'))});
   recorder.start(500);
   const started=performance.now();
-  function tick(){designPaint();if(designRecording)raf=requestAnimationFrame(tick)}
+  function tick(){if(cancelled)return;designPaint();if(designRecording)raf=requestAnimationFrame(tick)}
   tick();
-  await new Promise(resolve=>{let timer=setInterval(()=>{let elapsed=(performance.now()-started)/1000;notice.textContent='Создаём видео: '+Math.min(100,Math.round(elapsed/duration*100))+'%';if(elapsed>=duration){clearInterval(timer);resolve()}},200)});
-  recorder.stop();await completed;
-  const blob=new Blob(frames,{type:mime}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='theDAW-reels-'+Date.now()+'.mp4';a.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
+  await new Promise(resolve=>{resolveWait=resolve;timer=setInterval(()=>{if(cancelled){finishWait();return}let elapsed=(performance.now()-started)/1000;notice.textContent='Создаём видео: '+Math.min(100,Math.round(elapsed/duration*100))+'%';if(elapsed>=duration)finishWait()},200)});
+  clearInterval(timer);
+  if(recorder.state!=='inactive'){recorder.stop();stopped=true}
+  await completed;
+  if(cancelled){notice.textContent='Экспорт отменён. Файл не сохранён.';return}
+  const blob=new Blob(frames,{type:mime}),url=URL.createObjectURL(blob),link=document.createElement('a');
+  link.href=url;link.download='theDAW-reels-'+Date.now()+'.mp4';link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
   notice.textContent='Видео готово! Сохранён MP4 (без звука).';
- }catch(err){notice.textContent='Ошибка экспорта: '+err.message}
- finally{designRecording=false;btn.disabled=false;cancelAnimationFrame(raf);if(stream)stream.getTracks().forEach(t=>t.stop());designPaint()}
+ }catch(err){notice.textContent=cancelled?'Экспорт отменён.': 'Ошибка экспорта: '+err.message}
+ finally{
+  clearInterval(timer);finishWait();designRecording=false;designCancelExport=null;btn.disabled=false;cancelBtn.style.display='none';cancelBtn.onclick=null;
+  cancelAnimationFrame(raf);if(recorder&&recorder.state!=='inactive')try{recorder.stop()}catch(e){}
+  if(stream)stream.getTracks().forEach(t=>t.stop());frames.length=0;designPaint();
+ }
 };
 
 document.getElementById('designDownload').onclick=()=>{designPaint();let a=document.createElement('a');a.href=document.getElementById('designCanvas').toDataURL('image/png');a.download='theDAW-'+Date.now()+'.png';a.click()};
