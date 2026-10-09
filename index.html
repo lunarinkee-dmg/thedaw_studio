@@ -1,173 +1,1807 @@
+
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#121315"><title>theDĀW Studio — demo</title><style>
-:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#f3f0e9;background:#111315;font-size:15px}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.4;cursor:not-allowed}a{color:#c8ff72}header{height:74px;padding:0 4%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2a2d2c;background:#151719}.logo{font-size:23px;font-weight:900;letter-spacing:-1.5px}.logo span{font-size:11px;letter-spacing:2px;color:#bdc3bc;margin-left:14px}.pill{background:#292e2b;border:1px solid #454b41;padding:7px 12px;border-radius:99px;font-size:11px;color:#c8ff72;font-weight:800;letter-spacing:1px}.app{display:grid;grid-template-columns:220px minmax(0,1fr);min-height:calc(100vh - 74px)}nav{border-right:1px solid #2a2d2c;padding:27px 14px;background:#151719}nav button{display:flex;gap:13px;align-items:center;border:0;background:transparent;color:#afb5b0;padding:13px 15px;border-radius:11px;width:100%;text-align:left;margin:4px 0}nav button.active,nav button:hover{background:#2b3228;color:#d5ff95}nav .small{font-size:10px;letter-spacing:2px;color:#808b82;margin:21px 14px 9px}main{padding:38px 5%;max-width:1400px;width:100%;margin:auto}h1{font-size:clamp(28px,4vw,47px);margin:0 0 9px;letter-spacing:-2px}h2{font-size:22px;margin:0 0 15px}p.muted,.muted{color:#a1aaa1}p{line-height:1.65} .topline{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:27px}.controls{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid #495046;background:#272c29;color:#f4f4ec;border-radius:9px;padding:11px 16px;font-weight:700}.btn.primary{background:#d3ff86;color:#161b12;border-color:#d3ff86}.btn:hover{filter:brightness(1.11)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{border:1px solid #353936;background:#1c201f;border-radius:16px;padding:20px}.news-summary{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;line-clamp:4;overflow:hidden;line-height:1.5;max-height:6em}.news-side-layout{display:grid;grid-template-columns:48px minmax(0,1fr) 48px;align-items:center;gap:12px}.news-side-arrow{width:48px;height:64px;padding:0;font-size:28px;align-self:center}.news-side-layout .grid{min-width:0}@media(max-width:670px){.news-side-layout{grid-template-columns:34px minmax(0,1fr) 34px;gap:5px}.news-side-arrow{width:34px;height:52px;font-size:22px}}.news-pages{display:flex;justify-content:center;align-items:center;gap:10px;flex-wrap:wrap;margin-top:24px}.news-pages .btn{min-width:42px}.news-pages .selected{background:#d3ff86;color:#161b12;border-color:#d3ff86}.card h3{line-height:1.35;font-size:20px;margin:14px 0}.tag{color:#cfff84;text-transform:uppercase;letter-spacing:1.3px;font-size:10px;font-weight:800}.meta{font-size:12px;color:#9aa49b}.card .actions{display:flex;gap:7px;margin-top:20px;flex-wrap:wrap}input,textarea,select{background:#181b1a;color:#fff;border:1px solid #505951;border-radius:9px;padding:12px;width:100%}textarea{min-height:125px;resize:vertical}label{display:block;font-size:12px;font-weight:800;color:#c5cec3;margin:17px 0 8px}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.split{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.8fr);gap:20px}.stack{display:grid;gap:13px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{padding:14px 19px;border-radius:12px;background:#242a26;min-width:135px}.stat b{display:block;font-size:24px}.stat span{font-size:11px;color:#a5b0a5}.empty{padding:60px;text-align:center;color:#adb6ae;border:1px dashed #525952;border-radius:16px}.preview{width:100%;max-width:380px;aspect-ratio:4/5;margin:auto;background:radial-gradient(circle at 80% 18%,#729e55 0%,transparent 30%),linear-gradient(160deg,#39453c,#141615 58%,#222d23);border:1px solid #505b4c;display:flex;flex-direction:column;justify-content:space-between;padding:23px;overflow:hidden}.preview .brand{font-size:25px;font-weight:900;letter-spacing:-1px}.preview .headline{font-size:clamp(23px,3vw,39px);line-height:1.02;overflow-wrap:anywhere;font-weight:900;letter-spacing:-1.4px;text-transform:uppercase}.preview .foot{font-size:11px;letter-spacing:1px;color:#d4e4ce}.mediaitem{border:1px solid #434945;border-radius:12px;padding:15px;background:#252925}.mediaitem small{display:block;color:#acb3aa;margin-top:7px}.steps{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}.step{background:#252a26;border:1px solid #343a35;border-radius:90px;padding:8px 12px;color:#9ca69d;font-size:12px}.step.on{background:#32422c;border-color:#b8ed74;color:#dbffa8}.banner{padding:16px 20px;border:1px solid #5a694e;background:#273327;border-radius:12px;margin:17px 0;color:#d6e9d0}.danger{background:#3a2924;border-color:#795c51;color:#f0c7bb}footer{font-size:12px;color:#8a968b;margin-top:40px}.mini{font-size:12px}.link{color:#c8ff72} .hidden{display:none!important}@media(max-width:960px){.grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}}@media(max-width:670px){.app{display:block}nav{display:flex;overflow-x:auto;border-right:none;border-bottom:1px solid #2a2d2c;padding:7px}nav button{white-space:nowrap;font-size:12px}nav .small{display:none}main{padding:25px 17px}.grid,.two{grid-template-columns:1fr}.logo span{display:none}.card{padding:15px}}
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#121315">
+<title>theDĀW Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  color:#f3f0e9;
+  background:#111315;
+  font-size:15px;
+}
+*{box-sizing:border-box}
+body{margin:0}
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+button:disabled{opacity:.4;cursor:not-allowed}
+a{color:#c8ff72}
+header{
+  height:74px;
+  padding:0 4%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #2a2d2c;
+  background:#151719;
+}
+.logo{font-size:23px;font-weight:900;letter-spacing:-1.5px}
+.logo span{
+  font-size:11px;
+  letter-spacing:2px;
+  color:#bdc3bc;
+  margin-left:14px;
+}
+.pill{
+  background:#292e2b;
+  border:1px solid #454b41;
+  padding:7px 12px;
+  border-radius:99px;
+  font-size:11px;
+  color:#c8ff72;
+  font-weight:800;
+}
+.app{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  min-height:calc(100vh - 74px);
+}
+nav{
+  border-right:1px solid #2a2d2c;
+  padding:27px 14px;
+  background:#151719;
+}
+nav button{
+  display:flex;
+  gap:13px;
+  align-items:center;
+  border:0;
+  background:transparent;
+  color:#afb5b0;
+  padding:13px 15px;
+  border-radius:11px;
+  width:100%;
+  text-align:left;
+  margin:4px 0;
+}
+nav button.active,nav button:hover{
+  background:#2b3228;
+  color:#d5ff95;
+}
+nav .small{
+  font-size:10px;
+  letter-spacing:2px;
+  color:#808b82;
+  margin:21px 14px 9px;
+}
+main{
+  padding:38px 5%;
+  max-width:1400px;
+  width:100%;
+  margin:auto;
+}
+h1{
+  font-size:clamp(28px,4vw,47px);
+  margin:0 0 9px;
+  letter-spacing:-2px;
+}
+h2{font-size:22px;margin:0 0 15px}
+p{line-height:1.65}
+.muted{color:#a1aaa1}
+.topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:27px;
+}
+.btn{
+  border:1px solid #495046;
+  background:#272c29;
+  color:#f4f4ec;
+  border-radius:9px;
+  padding:11px 16px;
+  font-weight:700;
+}
+.btn.primary{
+  background:#d3ff86;
+  color:#161b12;
+  border-color:#d3ff86;
+}
+.btn:hover{filter:brightness(1.11)}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.card{
+  border:1px solid #353936;
+  background:#1c201f;
+  border-radius:16px;
+  padding:20px;
+}
+.card h3{
+  line-height:1.35;
+  font-size:20px;
+  margin:14px 0;
+}
+.card .actions{
+  display:flex;
+  gap:7px;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
+input,textarea,select{
+  background:#181b1a;
+  color:#fff;
+  border:1px solid #505951;
+  border-radius:9px;
+  padding:12px;
+  width:100%;
+}
+textarea{min-height:125px;resize:vertical}
+label{
+  display:block;
+  font-size:12px;
+  font-weight:800;
+  color:#c5cec3;
+  margin:17px 0 8px;
+}
+.tag{
+  color:#cfff84;
+  text-transform:uppercase;
+  letter-spacing:1.3px;
+  font-size:10px;
+  font-weight:800;
+}
+.meta{font-size:12px;color:#9aa49b}
+.mini{font-size:12px}
+.banner{
+  padding:16px 20px;
+  border:1px solid #5a694e;
+  background:#273327;
+  border-radius:12px;
+  margin:17px 0;
+  color:#d6e9d0;
+}
+.danger{
+  background:#3a2924;
+  border-color:#795c51;
+  color:#f0c7bb;
+}
 
-/* Compact news layout: 3 columns x 2 rows at desktop viewport */
-.news-view{width:100%}.news-heading{margin-bottom:18px}.news-heading h1{font-size:clamp(28px,3vw,42px)}.news-heading p{margin:5px 0 0;font-size:13px}.news-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.news-card{padding:15px 17px;border-radius:13px;display:flex;flex-direction:column;min-width:0;min-height:0}.news-card h3{font-size:clamp(15px,1.08vw,18px);line-height:1.27;margin:9px 0 7px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}.news-card .news-summary{font-size:12.5px;line-height:1.4;max-height:4.2em;-webkit-line-clamp:3;line-clamp:3;margin:0 0 10px}.news-card .news-meta{font-size:11px;margin-top:auto}.news-card .actions{margin-top:10px;gap:6px}.news-card .actions .btn{font-size:11.5px;padding:8px 10px;white-space:nowrap}.news-pagination{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:17px 0 0;padding:0 2px;background:transparent;border:0}.news-page-numbers{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap}.news-page-numbers .btn{min-width:34px;padding:7px 9px}.news-page-numbers .selected{background:#d3ff86;color:#161b12;border-color:#d3ff86}.news-nav-arrow{font-size:24px;line-height:1;padding:6px 15px}.news-page-ellipsis{color:#a1aaa1;padding:0 4px}@media(min-width:1100px) and (min-height:850px){.news-grid{grid-template-rows:repeat(2,minmax(0,1fr))}.news-card{max-height:310px}}@media(max-width:1000px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:670px){.news-grid{grid-template-columns:1fr}.news-card{max-height:none}.news-page-numbers .btn{min-width:30px;padding:6px}.news-nav-arrow{padding:7px 11px}.news-pagination{gap:5px}}
+/* НОВОСТИ */
+.news-heading{margin-bottom:18px}
+.news-heading h1{font-size:clamp(28px,3vw,42px)}
+.news-heading p{margin:5px 0 0;font-size:13px}
+.news-grid{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+}
+.news-card{
+  padding:15px 17px;
+  border-radius:13px;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+.news-card h3{
+  font-size:clamp(15px,1.08vw,18px);
+  line-height:1.27;
+  margin:9px 0 7px;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  line-clamp:3;
+  overflow:hidden;
+}
+.news-summary{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  line-clamp:3;
+  overflow:hidden;
+  font-size:12.5px;
+  line-height:1.4;
+  max-height:4.2em;
+  margin:0 0 10px;
+}
+.news-meta{font-size:11px;margin-top:auto}
+.news-card .actions{margin-top:10px;gap:6px}
+.news-card .actions .btn{
+  font-size:11.5px;
+  padding:8px 10px;
+  white-space:nowrap;
+}
+.news-carousel{
+  display:grid;
+  grid-template-columns:36px minmax(0,1fr) 36px;
+  gap:12px;
+  align-items:center;
+}
+.news-carousel>.news-grid{
+  grid-column:2;
+  grid-row:1;
+}
+.news-edge-arrow{
+  width:36px;
+  height:60px;
+  border:1px solid #384039;
+  border-radius:9px;
+  background:#1b201e;
+  color:#d3ff86;
+  font-size:39px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.news-edge-arrow:disabled{opacity:.24}
+.news-edge-left{grid-column:1;grid-row:1}
+.news-edge-right{grid-column:3;grid-row:1}
+.news-pagination{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:14px 0;
+}
+.news-page-numbers{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+.news-page-numbers .btn{
+  border:0;
+  background:transparent;
+  padding:4px 6px;
+  color:#aab4a9;
+}
+.news-page-numbers .selected{
+  color:#d3ff86;
+  text-decoration:underline;
+  text-underline-offset:5px;
+}
+.news-page-ellipsis{color:#a1aaa1}
 
-/* Side arrows beside news cards; pagination below */
-.news-carousel{position:relative;width:100%}.news-edge-arrow{position:absolute;top:50%;transform:translateY(-50%);width:35px;height:64px;border:1px solid #384039;border-radius:9px;background:#1b201e;color:#d3ff86;font-size:39px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2}.news-edge-arrow:hover:not(:disabled){background:#303b2b}.news-edge-arrow:disabled{opacity:.24;cursor:default}.news-edge-left{left:-48px}.news-edge-right{right:-48px}.news-pagination{justify-content:center;margin:14px 0 0;padding:0;border:0;min-height:39px}.news-page-numbers{gap:7px}.news-page-numbers .btn{min-width:35px;padding:8px 10px}@media(max-width:900px){.news-edge-left{left:-12px}.news-edge-right{right:-12px}.news-edge-arrow{width:28px;height:48px;font-size:30px;background:#202620e8}}@media(max-width:670px){.news-edge-left{left:-10px}.news-edge-right{right:-10px}.news-pagination{margin-top:15px}}
-
-/* Explicit three-column carousel; navigation never inherits sidebar nav styles */
-.news-carousel{display:grid;grid-template-columns:36px minmax(0,1fr) 36px;gap:12px;align-items:center}.news-carousel>.news-grid{grid-column:2;grid-row:1}.news-edge-arrow{position:static;transform:none;width:36px;height:60px;grid-row:1;top:auto;left:auto;right:auto}.news-edge-left{grid-column:1}.news-edge-right{grid-column:3}.news-pagination{display:flex!important;justify-content:center;align-items:center;width:100%;background:none!important;border:0!important;padding:0!important;margin:12px 0 0!important;min-height:25px}.news-page-numbers{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center;justify-content:center;gap:10px;width:auto}.news-page-numbers button.btn{display:inline-block!important;flex:0 0 auto!important;width:auto!important;min-width:0!important;height:auto!important;padding:3px 4px!important;margin:0!important;border:0!important;background:none!important;color:#aab4a9!important;border-radius:0!important;font-size:14px;font-weight:600;line-height:1.3}.news-page-numbers button.selected{color:#d3ff86!important;font-weight:900;text-decoration:underline;text-underline-offset:5px}.news-page-ellipsis{padding:0 2px}@media(max-width:900px){.news-carousel{grid-template-columns:28px minmax(0,1fr) 28px;gap:5px}.news-edge-arrow{width:28px;height:48px}}@media(max-width:670px){.news-page-numbers{gap:5px}}
-</style></head><body><header><div class="logo">theDĀW<span>STUDIO / WORKSPACE</span></div><div class="pill">● LOCAL DEMO</div></header><div class="app"><nav><div class="small">WORKSPACE</div><button data-view="inbox" class="active">▦ &nbsp; Новости</button><button data-view="drafts">✎ &nbsp; Черновики</button><button data-view="media">▧ &nbsp; Медиатека</button><button data-view="design">◈ &nbsp; Дизайн</button><button data-view="publish">↗ &nbsp; Публикация</button><div class="small">SYSTEM</div><button data-view="settings">⚙ &nbsp; Подключения</button></nav><main id="main"></main></div><script>const K='thedaw_studio_v02';let saved={};try{saved=JSON.parse(localStorage.getItem(K))||{}}catch(e){};let data={news:[],drafts:saved.drafts||[],media:saved.media||[]},view='inbox',current=null,newsPage=1,newsLoading=false,newsError='';const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const save=()=>localStorage.setItem(K,JSON.stringify({drafts:data.drafts,media:data.media}));function go(v){view=v;document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===v));render()}document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.view));function create(id){let n=data.news.find(x=>x.id===id);if(!n)return;let d={id:'d'+Date.now(),sourceUrl:n.url,sourceTitle:n.title,sourceSummary:n.summary,sourceName:n.source,headline:n.title,caption:n.title+'\n\n'+n.summary+'\n\nИсточник: '+n.source+' — '+n.url,tiktok:n.title,category:n.category};data.drafts.unshift(d);current=d.id;save();go('drafts')}function update(k,v){let d=data.drafts.find(x=>x.id===current);if(d){d[k]=v;save()}}function newsTimestamp(n){
- const raw=String(n.date||n.published||n.pubDate||'').trim();
- const ru=raw.match(/^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{4})(?:\s+(\d{1,2}):(\d{2}))?/);
- if(ru){const d=new Date(Number(ru[3]),Number(ru[2])-1,Number(ru[1]),Number(ru[4]||0),Number(ru[5]||0));return d.getFullYear()===Number(ru[3])&&d.getMonth()===Number(ru[2])-1&&d.getDate()===Number(ru[1])?d.getTime():NaN}
- return Date.parse(raw);
+/* ДИЗАЙН */
+.design-layout{
+  display:grid;
+  grid-template-columns:minmax(270px,400px) minmax(270px,1fr);
+  gap:22px;
+  align-items:start;
 }
-function recentNews(items){
- const now=Date.now(),cutoff=now-2*24*60*60*1000;
- return items.filter(n=>{const t=newsTimestamp(n);return Number.isFinite(t)&&t>=cutoff&&t<=now+5*60*1000});
+.design-form{display:grid;gap:12px}
+.design-form label{margin:0}
+.design-stage{
+  display:flex;
+  justify-content:center;
+  background:#242a26;
+  padding:16px;
+  border-radius:15px;
 }
-function render(){if(view==='design'){renderDesign();return}let m=document.querySelector('#main');if(!m)return;if(view==='inbox'){
- const sorted=recentNews(data.news).sort((a,b)=>newsTimestamp(b)-newsTimestamp(a));
- const pages=Math.max(1,Math.ceil(sorted.length/6));newsPage=Math.max(1,Math.min(newsPage,pages));
- const visible=sorted.slice((newsPage-1)*6,newsPage*6);
- m.innerHTML='<section class="news-view"><div class="topline news-heading"><div><h1>Новости</h1><p class="muted">Свежие новости первыми · '+sorted.length+' материалов за последние 48 часов</p></div><button class="btn primary" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+'</button></div>'+
- (newsError?'<p class="banner danger">'+esc(newsError)+'</p>':'')+
- '<div class="news-carousel"><button class="news-edge-arrow news-edge-left" data-news-page="'+(newsPage-1)+'" aria-label="Предыдущая страница" '+(newsPage===1?'disabled':'')+'>‹</button><div class="grid news-grid">'+(visible.length?visible.map(n=>'<article class="card news-card"><span class="tag">'+esc(n.category)+'</span><h3 title="'+esc(n.title)+'">'+esc(n.title)+'</h3><p class="muted news-summary">'+esc(n.summary)+'</p><div class="meta news-meta">'+esc(n.source)+' · '+esc(n.date)+'</div><div class="actions"><button class="btn primary" data-create="'+esc(n.id)+'">Создать пост →</button><a class="btn" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">Источник ↗</a></div></article>').join(''):'<p class="muted">'+(newsLoading?'Загружаем новости…':'Новостей пока нет.')+'</p>')+'</div>'+
- '<button class="news-edge-arrow news-edge-right" data-news-page="'+(newsPage+1)+'" aria-label="Следующая страница" '+(newsPage===pages?'disabled':'')+'>›</button></div>'+
- (pages>1?'<div class="news-pagination" role="navigation" aria-label="Страницы новостей" aria-label="Страницы новостей"><div class="news-page-numbers">'+Array.from({length:pages},(_,i)=>i+1).filter(p=>p===1||p===pages||Math.abs(p-newsPage)<=2).reduce((acc,p,i,arr)=>{if(i&&p-arr[i-1]>1)acc.push('<span class="news-page-ellipsis">…</span>');acc.push('<button class="btn '+(p===newsPage?'selected':'')+'" data-news-page="'+p+'" '+(p===newsPage?'aria-current="page"':'')+'>'+p+'</button>');return acc},[]).join('')+'</div></div>':'')+'</section>';
- m.querySelectorAll('[data-create]').forEach(b=>b.onclick=()=>create(b.dataset.create));
- m.querySelectorAll('[data-news-page]').forEach(b=>b.onclick=()=>{newsPage=Number(b.dataset.newsPage);render();document.querySelector('main').scrollIntoView({behavior:'smooth',block:'start'})});
- m.querySelector('#newsRefresh').onclick=()=>load(true);
-}else if(view==='drafts'){m.innerHTML='<h1>Черновики</h1>'+data.drafts.map(d=>'<div class="card"><h3>'+esc(d.headline)+'</h3><div class="actions"><button class="btn primary" data-ai="'+esc(d.id)+'">✨ Написать с AI</button><a class="btn" href="https://www.canva.com/design/DAHXQ4rCB5s/erMvoEWYI_CoRN9gxyI7LQ/edit" target="_blank" rel="noopener noreferrer" title="Открой шаблон, создай копию через Файл → Создать копию и вставь текст из черновика">◈ Открыть шаблон Canva ↗</a></div><p class="muted" id="status-'+esc(d.id)+'"></p><label>Заголовок</label><input data-id="'+esc(d.id)+'" data-field="headline" value="'+esc(d.headline)+'"><label>Instagram</label><textarea data-id="'+esc(d.id)+'" data-field="caption" rows="6">'+esc(d.caption)+'</textarea><label>TikTok</label><textarea data-id="'+esc(d.id)+'" data-field="tiktok" rows="3">'+esc(d.tiktok)+'</textarea></div>').join('');m.querySelectorAll('[data-ai]').forEach(b=>b.onclick=()=>generateAI(b.dataset.ai));m.querySelectorAll('[data-field]').forEach(el=>el.oninput=()=>{let d=data.drafts.find(x=>x.id===el.dataset.id);if(d){d[el.dataset.field]=el.value;save()}})}else if(view==='media'){m.innerHTML='<h1>Медиатека</h1><p class="muted">Пока сохраняем ссылки, не скачиваем видео.</p><input id="mediaUrl" placeholder="Ссылка на TikTok или медиа"><button class="btn primary" id="addMedia">Сохранить ссылку</button>'+data.media.map(x=>'<div class="card"><a href="'+esc(x)+'" target="_blank">'+esc(x)+'</a></div>').join('');m.querySelector('#addMedia').onclick=()=>{let u=m.querySelector('#mediaUrl').value;if(/^https?:\/\//.test(u)){data.media.unshift(u);save();render()}}}else{m.innerHTML='<h1>'+({design:'Дизайн',publish:'Публикация',settings:'Подключения'}[view]||'Раздел')+'</h1>'+(view==='settings'?'<div class="card"><h3>AI-копирайтер</h3><p class="muted">Укажи адрес своего Cloudflare Worker и пароль доступа. Пароль хранится только до закрытия вкладки.</p><label>Worker URL</label><input id="workerUrl" placeholder="https://...workers.dev" value="'+esc(localStorage.getItem('daw_worker_url')||'')+'"><label>Пароль</label><input id="workerPassword" type="password" placeholder="Пароль из Cloudflare"><button class="btn primary" id="saveAI">Сохранить настройки AI</button></div>':'<div class="card"><p class="muted">Этот раздел пока в разработке. Canva и соцсети ещё не подключены.</p></div>');if(view==='settings')m.querySelector('#saveAI').onclick=()=>{localStorage.setItem('daw_worker_url',m.querySelector('#workerUrl').value.trim());sessionStorage.setItem('daw_ai_password',m.querySelector('#workerPassword').value);alert('Настройки AI сохранены для этой вкладки')}}}async function load(manual=false){
- if(newsLoading)return;
- newsLoading=true;newsError='';if(view==='inbox')render();
- try{
-  const r=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
-  if(!r.ok)throw Error('HTTP '+r.status);
-  const n=await r.json();if(!Array.isArray(n))throw Error('Неверный формат');
-  data.news=recentNews(n);if(manual)newsPage=1;
- }catch(e){newsError='Не удалось обновить новости: '+e.message}
- finally{newsLoading=false;if(view==='inbox')render()}
+#designCanvas{
+  width:100%;
+  max-width:410px;
+  aspect-ratio:9/16;
+  touch-action:none;
+  cursor:grab;
 }
-async function generateAI(id){
- const d=data.drafts.find(x=>x.id===id);if(!d)return;
- const url=(localStorage.getItem('daw_worker_url')||'').trim();
- const password=sessionStorage.getItem('daw_ai_password')||'';
- if(!url||!password){alert('Сначала открой «Подключения» и введи Worker URL и пароль');go('settings');return}
- const el=document.getElementById('status-'+id);if(el)el.textContent='AI готовит текст…';
- try{
-  const r=await fetch(url.replace(/\/$/,'')+'/generate',{method:'POST',headers:{'Content-Type':'application/json','X-Studio-Key':password},body:JSON.stringify({title:d.sourceTitle||d.headline,summary:d.sourceSummary||'',source:d.sourceName||'',url:d.sourceUrl||'',category:d.category||''})});
-  const obj=await r.json();if(!r.ok)throw Error(obj.error||'HTTP '+r.status);
-  d.headline=obj.headline||d.headline;d.caption=obj.instagram||d.caption;d.tiktok=obj.tiktok||d.tiktok;save();render();
- }catch(e){const msg=document.getElementById('status-'+id);if(msg)msg.textContent='Ошибка: '+e.message}
+@media(max-width:1000px){
+  .news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-render();load();</script><style>
-.design-layout{display:grid;grid-template-columns:minmax(270px,400px) minmax(270px,1fr);gap:22px;align-items:start}
-.design-form{display:grid;gap:12px}.design-form label{margin:0}.design-stage{display:flex;justify-content:center;background:#242a26;padding:16px;border-radius:15px}
-#designCanvas{width:100%;max-width:410px;aspect-ratio:9/16;touch-action:none;cursor:grab}
-@media(max-width:800px){.design-layout{grid-template-columns:1fr}.design-stage{order:-1}#designCanvas{max-width:330px}}
+@media(max-width:800px){
+  .design-layout{grid-template-columns:1fr}
+  .design-stage{order:-1}
+  #designCanvas{max-width:330px}
+}
+@media(max-width:670px){
+  .app{display:block}
+  nav{
+    display:flex;
+    overflow-x:auto;
+    border-right:none;
+    border-bottom:1px solid #2a2d2c;
+    padding:7px;
+  }
+  nav button{white-space:nowrap;font-size:12px}
+  nav .small{display:none}
+  main{padding:25px 17px}
+  .grid,.news-grid{grid-template-columns:1fr}
+  .logo span{display:none}
+  .card{padding:15px}
+  .news-carousel{
+    grid-template-columns:28px minmax(0,1fr) 28px;
+    gap:5px;
+  }
+  .news-edge-arrow{width:28px;height:48px;font-size:30px}
+  .news-page-numbers{gap:5px}
+}
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">theDĀW<span>STUDIO / WORKSPACE</span></div>
+  <div class="pill">● LOCAL DEMO</div>
+</header>
+
+<div class="app">
+<nav>
+  <div class="small">WORKSPACE</div>
+  <button data-view="inbox" class="active">▦ &nbsp; Новости</button>
+  <button data-view="drafts">✎ &nbsp; Черновики</button>
+  <button data-view="media">▧ &nbsp; Медиатека</button>
+  <button data-view="design">◈ &nbsp; Дизайн</button>
+  <button data-view="publish">↗ &nbsp; Публикация</button>
+  <div class="small">SYSTEM</div>
+  <button data-view="settings">⚙ &nbsp; Подключения</button>
+</nav>
+<main id="main"></main>
+</div>
+
 <script>
-const DESIGN_DEFAULTS={title:'',body:'',date:'',bg:'#181d1b',accent:'#d3ff86',size:40,bodySize:22,titleY:1130,bodyY:1302,image:'',logo:'',cropZoom:1,cropX:0,cropY:0};
-let designCfg={title:'',body:'',date:'',bg:'#181d1b',accent:'#d3ff86',size:40,bodySize:22,titleY:1130,bodyY:1302,image:'',logo:'',cropZoom:1,cropX:0,cropY:0},designImg=null,designDrag=null,designVideo=null,designLogo=null,designRecording=false,designCancelExport=null;
-try{Object.assign(designCfg,JSON.parse(localStorage.getItem('daw_native_design')||'{}'))}catch(e){}
-function designStore(){try{localStorage.setItem('daw_native_design',JSON.stringify(designCfg))}catch(e){let x=document.getElementById('designNotice');if(x)x.textContent='Фотография слишком большая для хранения в браузере. Скачай PNG.'}}
+const K='thedaw_studio_v02';
+let saved={};
+try {
+  saved=JSON.parse(localStorage.getItem(K))||{};
+} catch(e){}
+
+let data={
+  news:[],
+  drafts:saved.drafts||[],
+  media:saved.media||[]
+};
+
+let view='inbox';
+let current=null;
+let newsPage=1;
+let newsLoading=false;
+let newsError='';
+
+const esc=x=>String(x??'').replace(
+  /[&<>"']/g,
+  c=>({
+    '&':'&amp;',
+    '<':'&lt;',
+    '>':'&gt;',
+    '"':'&quot;',
+    "'":'&#39;'
+  }[c])
+);
+
+const save=()=>localStorage.setItem(
+  K,
+  JSON.stringify({
+    drafts:data.drafts,
+    media:data.media
+  })
+);
+
+function go(v){
+  view=v;
+  document.querySelectorAll('nav button').forEach(
+    b=>b.classList.toggle('active',b.dataset.view===v)
+  );
+  render();
+}
+
+document.querySelectorAll('nav button').forEach(
+  b=>b.onclick=()=>go(b.dataset.view)
+);
+
+function create(id){
+  let n=data.news.find(x=>x.id===id);
+  if(!n)return;
+
+  let d={
+    id:'d'+Date.now(),
+    sourceUrl:n.url,
+    sourceTitle:n.title,
+    sourceSummary:n.summary,
+    sourceName:n.source,
+    headline:n.title,
+    caption:n.title+'\n\n'+n.summary+
+      '\n\nИсточник: '+n.source+' — '+n.url,
+    tiktok:n.title,
+    category:n.category
+  };
+
+  data.drafts.unshift(d);
+  current=d.id;
+  save();
+  go('drafts');
+}
+
+function update(k,v){
+  let d=data.drafts.find(x=>x.id===current);
+  if(d){
+    d[k]=v;
+    save();
+  }
+}
+
+function newsTimestamp(n){
+  const raw=String(
+    n.date||n.published||n.pubDate||''
+  ).trim();
+
+  const ru=raw.match(
+    /^(\d{1,2})[.\/-](\d{1,2})[.\/-](\d{4})(?:\s+(\d{1,2}):(\d{2}))?/
+  );
+
+  if(ru){
+    const d=new Date(
+      Number(ru[3]),
+      Number(ru[2])-1,
+      Number(ru[1]),
+      Number(ru[4]||0),
+      Number(ru[5]||0)
+    );
+
+    return d.getFullYear()===Number(ru[3]) &&
+      d.getMonth()===Number(ru[2])-1 &&
+      d.getDate()===Number(ru[1])
+      ?d.getTime():NaN;
+  }
+
+  return Date.parse(raw);
+}
+
+function recentNews(items){
+  const now=Date.now();
+  const cutoff=now-2*24*60*60*1000;
+
+  return items.filter(n=>{
+    const t=newsTimestamp(n);
+    return Number.isFinite(t) &&
+      t>=cutoff &&
+      t<=now+5*60*1000;
+  });
+}
+
+function render(){
+  if(view==='design'){
+    renderDesign();
+    return;
+  }
+
+  const m=document.getElementById('main');
+  if(!m)return;
+
+  if(view==='inbox'){
+    const sorted=recentNews(data.news).sort(
+      (a,b)=>newsTimestamp(b)-newsTimestamp(a)
+    );
+
+    const pages=Math.max(
+      1,
+      Math.ceil(sorted.length/6)
+    );
+
+    newsPage=Math.max(
+      1,
+      Math.min(newsPage,pages)
+    );
+
+    const visible=sorted.slice(
+      (newsPage-1)*6,
+      newsPage*6
+    );
+
+    m.innerHTML=
+      '<section class="news-view">'+
+      '<div class="topline news-heading">'+
+      '<div><h1>Новости</h1>'+
+      '<p class="muted">Свежие новости первыми · '+
+      sorted.length+
+      ' материалов за последние 48 часов</p></div>'+
+      '<button class="btn primary" id="newsRefresh" '+
+      (newsLoading?'disabled':'')+'>'+
+      (newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+
+      '</button></div>'+
+      (newsError?
+        '<p class="banner danger">'+esc(newsError)+'</p>':'')+
+      '<div class="news-carousel">'+
+      '<button class="news-edge-arrow news-edge-left" '+
+      'data-news-page="'+(newsPage-1)+'" '+
+      (newsPage===1?'disabled':'')+'>‹</button>'+
+      '<div class="grid news-grid">'+
+      (visible.length?
+        visible.map(n=>
+          '<article class="card news-card">'+
+          '<span class="tag">'+esc(n.category)+'</span>'+
+          '<h3 title="'+esc(n.title)+'">'+esc(n.title)+'</h3>'+
+          '<p class="muted news-summary">'+esc(n.summary)+'</p>'+
+          '<div class="meta news-meta">'+
+          esc(n.source)+' · '+esc(n.date)+
+          '</div><div class="actions">'+
+          '<button class="btn primary" data-create="'+
+          esc(n.id)+'">Создать пост →</button>'+
+          '<a class="btn" href="'+esc(n.url)+
+          '" target="_blank" rel="noopener noreferrer">'+
+          'Источник ↗</a></div></article>'
+        ).join(''):
+        '<p class="muted">'+
+        (newsLoading?'Загружаем новости…':'Новостей пока нет.')+
+        '</p>')+
+      '</div>'+
+      '<button class="news-edge-arrow news-edge-right" '+
+      'data-news-page="'+(newsPage+1)+'" '+
+      (newsPage===pages?'disabled':'')+'>›</button>'+
+      '</div>'+
+      (pages>1?
+        '<div class="news-pagination">'+
+        '<div class="news-page-numbers">'+
+        Array.from({length:pages},(_,i)=>i+1)
+          .filter(p=>
+            p===1||p===pages||Math.abs(p-newsPage)<=2
+          )
+          .reduce((acc,p,i,arr)=>{
+            if(i&&p-arr[i-1]>1){
+              acc.push('<span class="news-page-ellipsis">…</span>');
+            }
+            acc.push(
+              '<button class="btn '+
+              (p===newsPage?'selected':'')+
+              '" data-news-page="'+p+'">'+p+'</button>'
+            );
+            return acc;
+          },[]).join('')+
+        '</div></div>':'')+
+      '</section>';
+
+    m.querySelectorAll('[data-create]').forEach(
+      b=>b.onclick=()=>create(b.dataset.create)
+    );
+
+    m.querySelectorAll('[data-news-page]').forEach(
+      b=>b.onclick=()=>{
+        newsPage=Number(b.dataset.newsPage);
+        render();
+        document.querySelector('main').scrollIntoView({
+          behavior:'smooth',
+          block:'start'
+        });
+      }
+    );
+
+    m.querySelector('#newsRefresh').onclick=()=>load(true);
+
+  } else if(view==='drafts'){
+
+    m.innerHTML=
+      '<h1>Черновики</h1>'+
+      data.drafts.map(d=>
+        '<div class="card">'+
+        '<h3>'+esc(d.headline)+'</h3>'+
+        '<div class="actions">'+
+        '<button class="btn primary" data-ai="'+
+        esc(d.id)+'">✨ Написать с AI</button>'+
+        '<a class="btn" href="https://www.canva.com/design/DAHXQ4rCB5s/erMvoEWYI_CoRN9gxyI7LQ/edit" '+
+        'target="_blank" rel="noopener noreferrer">'+
+        '◈ Открыть шаблон Canva ↗</a>'+
+        '</div>'+
+        '<p class="muted" id="status-'+esc(d.id)+'"></p>'+
+        '<label>Заголовок</label>'+
+        '<input data-id="'+esc(d.id)+
+        '" data-field="headline" value="'+esc(d.headline)+'">'+
+        '<label>Instagram</label>'+
+        '<textarea data-id="'+esc(d.id)+
+        '" data-field="caption" rows="6">'+
+        esc(d.caption)+'</textarea>'+
+        '<label>TikTok</label>'+
+        '<textarea data-id="'+esc(d.id)+
+        '" data-field="tiktok" rows="3">'+
+        esc(d.tiktok)+'</textarea></div>'
+      ).join('');
+
+    m.querySelectorAll('[data-ai]').forEach(
+      b=>b.onclick=()=>generateAI(b.dataset.ai)
+    );
+
+    m.querySelectorAll('[data-field]').forEach(el=>{
+      el.oninput=()=>{
+        let d=data.drafts.find(x=>x.id===el.dataset.id);
+        if(d){
+          d[el.dataset.field]=el.value;
+          save();
+        }
+      };
+    });
+
+  } else if(view==='media'){
+
+    m.innerHTML=
+      '<h1>Медиатека</h1>'+
+      '<p class="muted">Пока сохраняем ссылки, не скачиваем видео.</p>'+
+      '<input id="mediaUrl" placeholder="Ссылка на TikTok или медиа">'+
+      '<button class="btn primary" id="addMedia">Сохранить ссылку</button>'+
+      data.media.map(x=>
+        '<div class="card"><a href="'+esc(x)+
+        '" target="_blank">'+esc(x)+'</a></div>'
+      ).join('');
+
+    m.querySelector('#addMedia').onclick=()=>{
+      let u=m.querySelector('#mediaUrl').value;
+      if(/^https?:\/\//.test(u)){
+        data.media.unshift(u);
+        save();
+        render();
+      }
+    };
+
+  } else if(view==='settings'){
+
+    m.innerHTML=
+      '<h1>Подключения</h1>'+
+      '<div class="card">'+
+      '<h3>AI-копирайтер</h3>'+
+      '<p class="muted">Укажи адрес Cloudflare Worker и пароль доступа. '+
+      'Пароль хранится только до закрытия вкладки.</p>'+
+      '<label>Worker URL</label>'+
+      '<input id="workerUrl" placeholder="https://...workers.dev" value="'+
+      esc(localStorage.getItem('daw_worker_url')||'')+'">'+
+      '<label>Пароль</label>'+
+      '<input id="workerPassword" type="password" '+
+      'placeholder="Пароль из Cloudflare">'+
+      '<button class="btn primary" id="saveAI">'+
+      'Сохранить настройки AI</button></div>';
+
+    m.querySelector('#saveAI').onclick=()=>{
+      localStorage.setItem(
+        'daw_worker_url',
+        m.querySelector('#workerUrl').value.trim()
+      );
+      sessionStorage.setItem(
+        'daw_ai_password',
+        m.querySelector('#workerPassword').value
+      );
+      alert('Настройки AI сохранены для этой вкладки');
+    };
+
+  } else {
+
+    m.innerHTML=
+      '<h1>Публикация</h1>'+
+      '<div class="card"><p class="muted">'+
+      'Для публикации Reels открой вкладку «Дизайн».'+
+      '</p></div>';
+  }
+}
+
+async function load(manual=false){
+  if(newsLoading)return;
+
+  newsLoading=true;
+  newsError='';
+
+  if(view==='inbox')render();
+
+  try{
+    const r=await fetch(
+      './news.json?v='+Date.now(),
+      {cache:'no-store'}
+    );
+
+    if(!r.ok)throw Error('HTTP '+r.status);
+
+    const n=await r.json();
+
+    if(!Array.isArray(n)){
+      throw Error('Неверный формат');
+    }
+
+    data.news=recentNews(n);
+
+    if(manual)newsPage=1;
+
+  }catch(e){
+    newsError='Не удалось обновить новости: '+e.message;
+  }finally{
+    newsLoading=false;
+    if(view==='inbox')render();
+  }
+}
+
+async function generateAI(id){
+  const d=data.drafts.find(x=>x.id===id);
+  if(!d)return;
+
+  const url=(
+    localStorage.getItem('daw_worker_url')||''
+  ).trim();
+
+  const password=
+    sessionStorage.getItem('daw_ai_password')||'';
+
+  if(!url||!password){
+    alert('Сначала открой «Подключения» и введи Worker URL и пароль');
+    go('settings');
+    return;
+  }
+
+  const el=document.getElementById('status-'+id);
+  if(el)el.textContent='AI готовит текст…';
+
+  try{
+    const r=await fetch(
+      url.replace(/\/$/,'')+'/generate',
+      {
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json',
+          'X-Studio-Key':password
+        },
+        body:JSON.stringify({
+          title:d.sourceTitle||d.headline,
+          summary:d.sourceSummary||'',
+          source:d.sourceName||'',
+          url:d.sourceUrl||'',
+          category:d.category||''
+        })
+      }
+    );
+
+    const obj=await r.json();
+
+    if(!r.ok){
+      throw Error(obj.error||'HTTP '+r.status);
+    }
+
+    d.headline=obj.headline||d.headline;
+    d.caption=obj.instagram||d.caption;
+    d.tiktok=obj.tiktok||d.tiktok;
+
+    save();
+    render();
+
+  }catch(e){
+    const msg=document.getElementById('status-'+id);
+    if(msg)msg.textContent='Ошибка: '+e.message;
+  }
+}
+
+render();
+load();
+</script>
+
+<script>
+const DESIGN_DEFAULTS={
+  title:'',
+  body:'',
+  date:'',
+  bg:'#181d1b',
+  accent:'#d3ff86',
+  size:40,
+  bodySize:22,
+  titleY:1130,
+  bodyY:1302,
+  image:'',
+  logo:'',
+  cropZoom:1,
+  cropX:0,
+  cropY:0
+};
+
+let designCfg={...DESIGN_DEFAULTS};
+let designImg=null;
+let designDrag=null;
+let designVideo=null;
+let designLogo=null;
+let designRecording=false;
+let designCancelExport=null;
+let designPublishMode=null;
+
+try{
+  Object.assign(
+    designCfg,
+    JSON.parse(localStorage.getItem('daw_native_design')||'{}')
+  );
+}catch(e){}
+
+function designStore(){
+  try{
+    localStorage.setItem(
+      'daw_native_design',
+      JSON.stringify(designCfg)
+    );
+  }catch(e){
+    let x=document.getElementById('designNotice');
+    if(x){
+      x.textContent='Фотография слишком большая для хранения в браузере. Скачай PNG.';
+    }
+  }
+}
+
 function designWrap(ctx,txt,x,y,width,size,lines,style='title'){
- const title=style==='title',tracking=title?-.022*size:-.011*size,leading=title?1.12:1.22;
- ctx.font=title?'900 '+size+'px Montserrat,Arial,sans-serif':'italic 400 '+size+'px Montserrat,Arial,sans-serif';
- const measure=t=>{let w=0;for(const ch of t)w+=ctx.measureText(ch).width+tracking;return w};
- let words=String(txt||'').split(/\s+/),rows=[],line='';
- for(const word of words){let next=line?line+' '+word:word;if(measure(next)>width&&line){rows.push(line);line=word}else line=next}rows.push(line);
- rows.slice(0,lines).forEach((t,i)=>{let xx=x;for(const ch of t){ctx.fillText(ch,xx,y+i*size*leading);xx+=ctx.measureText(ch).width+tracking}});
+  const title=style==='title';
+  const tracking=title?-.022*size:-.011*size;
+  const leading=title?1.12:1.22;
+
+  ctx.font=title
+    ?'900 '+size+'px Montserrat,Arial,sans-serif'
+    :'italic 400 '+size+'px Montserrat,Arial,sans-serif';
+
+  const measure=t=>{
+    let w=0;
+    for(const ch of t){
+      w+=ctx.measureText(ch).width+tracking;
+    }
+    return w;
+  };
+
+  let words=String(txt||'').split(/\s+/);
+  let rows=[];
+  let line='';
+
+  for(const word of words){
+    let next=line?line+' '+word:word;
+    if(measure(next)>width&&line){
+      rows.push(line);
+      line=word;
+    }else{
+      line=next;
+    }
+  }
+
+  rows.push(line);
+
+  rows.slice(0,lines).forEach((t,i)=>{
+    let xx=x;
+    for(const ch of t){
+      ctx.fillText(ch,xx,y+i*size*leading);
+      xx+=ctx.measureText(ch).width+tracking;
+    }
+  });
 }
+
 function designPaint(){
- let cv=document.getElementById('designCanvas');if(!cv)return;
- let ctx=cv.getContext('2d'),s=designCfg;
- ctx.fillStyle=s.bg;ctx.fillRect(0,0,1080,1920);
- const media=designVideo&&designVideo.readyState>=2?designVideo:designImg;
- if(media){let mw=media.videoWidth||media.width,mh=media.videoHeight||media.height;if(mw>0&&mh>0){
- const k=Math.max(1080/mw,1920/mh)*Math.max(1,Number(s.cropZoom)||1),w=mw*k,h=mh*k;
- const dx=(1080-w)/2+(Number(s.cropX)||0),dy=(1920-h)/2+(Number(s.cropY)||0);
- ctx.save();ctx.beginPath();ctx.rect(0,0,1080,1920);ctx.clip();ctx.drawImage(media,dx,dy,w,h);ctx.restore();
- }}
+  const cv=document.getElementById('designCanvas');
+  if(!cv)return;
 
- ctx.save();ctx.beginPath();ctx.rect(0,0,1080,1920);ctx.clip();
- ctx.translate(-650,-180);ctx.rotate(-0.11);ctx.font='900 104px Arial,sans-serif';ctx.fillStyle='rgba(255,255,255,0.075)';
- for(let y=0;y<2400;y+=112){let text=Array(9).fill('theDAW').join(' ');ctx.fillText(text,-300,y)}
- ctx.restore();
- let top=ctx.createLinearGradient(0,0,0,520);top.addColorStop(0,'rgba(0,0,0,.55)');top.addColorStop(1,'rgba(0,0,0,0)');ctx.fillStyle=top;ctx.fillRect(0,0,1080,520);
- let g=ctx.createLinearGradient(0,670,0,1920);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(.5,'rgba(0,0,0,.42)');g.addColorStop(1,'rgba(0,0,0,.84)');ctx.fillStyle=g;ctx.fillRect(0,670,1080,1250);
- ctx.textBaseline='top';ctx.fillStyle='#fff';
- if(designLogo&&designLogo.complete&&designLogo.naturalWidth){ctx.drawImage(designLogo,108,106,84,129)}
- ctx.font='400 28.5px Arial,sans-serif';ctx.textAlign='right';ctx.fillText(s.date||designShortDate(),970,155);ctx.textAlign='left';
- ctx.fillStyle='#fff';designWrap(ctx,s.title||'ЗАГОЛОВОК НОВОСТИ',108,s.titleY,862,+s.size,5);
- ctx.fillStyle='#f3f3f3';designWrap(ctx,s.body||'Описание новости',108,s.bodyY,800,+s.bodySize,9,'body');
+  const ctx=cv.getContext('2d');
+  const s=designCfg;
+
+  ctx.fillStyle=s.bg;
+  ctx.fillRect(0,0,1080,1920);
+
+  const media=
+    designVideo&&designVideo.readyState>=2
+      ?designVideo
+      :designImg;
+
+  if(media){
+    const mw=media.videoWidth||media.width;
+    const mh=media.videoHeight||media.height;
+
+    if(mw>0&&mh>0){
+      const k=Math.max(1080/mw,1920/mh)*
+        Math.max(1,Number(s.cropZoom)||1);
+
+      const w=mw*k;
+      const h=mh*k;
+
+      const dx=(1080-w)/2+(Number(s.cropX)||0);
+      const dy=(1920-h)/2+(Number(s.cropY)||0);
+
+      ctx.save();
+      ctx.beginPath();
+      ctx.rect(0,0,1080,1920);
+      ctx.clip();
+      ctx.drawImage(media,dx,dy,w,h);
+      ctx.restore();
+    }
+  }
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(0,0,1080,1920);
+  ctx.clip();
+  ctx.translate(-650,-180);
+  ctx.rotate(-0.11);
+  ctx.font='900 104px Arial,sans-serif';
+  ctx.fillStyle='rgba(255,255,255,0.075)';
+
+  for(let y=0;y<2400;y+=112){
+    let text=Array(9).fill('theDAW').join(' ');
+    ctx.fillText(text,-300,y);
+  }
+
+  ctx.restore();
+
+  let top=ctx.createLinearGradient(0,0,0,520);
+  top.addColorStop(0,'rgba(0,0,0,.55)');
+  top.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=top;
+  ctx.fillRect(0,0,1080,520);
+
+  let g=ctx.createLinearGradient(0,670,0,1920);
+  g.addColorStop(0,'rgba(0,0,0,0)');
+  g.addColorStop(.5,'rgba(0,0,0,.42)');
+  g.addColorStop(1,'rgba(0,0,0,.84)');
+  ctx.fillStyle=g;
+  ctx.fillRect(0,670,1080,1250);
+
+  ctx.textBaseline='top';
+  ctx.fillStyle='#fff';
+
+  if(
+    designLogo&&
+    designLogo.complete&&
+    designLogo.naturalWidth
+  ){
+    ctx.drawImage(designLogo,108,106,84,129);
+  }
+
+  ctx.font='400 28.5px Arial,sans-serif';
+  ctx.textAlign='right';
+  ctx.fillText(s.date||designShortDate(),970,155);
+  ctx.textAlign='left';
+
+  ctx.fillStyle='#fff';
+
+  designWrap(
+    ctx,
+    s.title||'ЗАГОЛОВОК НОВОСТИ',
+    108,
+    s.titleY,
+    862,
+    +s.size,
+    5
+  );
+
+  ctx.fillStyle='#f3f3f3';
+
+  designWrap(
+    ctx,
+    s.body||'Описание новости',
+    108,
+    s.bodyY,
+    800,
+    +s.bodySize,
+    9,
+    'body'
+  );
 }
-function designLogoLoad(src){src=src||'assets/thedaw-logo.svg';let im=new Image();im.onload=()=>{designLogo=im;designPaint()};im.src=src}
-function designImageLoad(src){if(!src){designImg=null;designPaint();return}let im=new Image();im.onload=()=>{designImg=im;designPaint()};im.src=src}
-function designShortDate(){const d=new Date();return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')}
-function renderDesign(){let m=document.getElementById('main'),s=designCfg;if(!m)return;m.innerHTML='<h1>Дизайн theDĀW</h1><p class="muted">Шаблон по Canva theDAW - reels · 1080 × 1920. Перетаскивай текст на макете.</p><div class="design-layout"><div class="card design-form"><label>Подставить новость из черновиков</label><select id="designDraft"><option value="">Выбери черновик</option>'+data.drafts.map(d=>'<option value="'+esc(d.id)+'">'+esc(d.headline)+'</option>').join('')+'</select><button class="btn" id="designFill">Подставить текст</button><label>Заголовок</label><textarea id="designTitle" rows="3"></textarea><label>Описание</label><textarea id="designBody" rows="5"></textarea><label>Дата</label><input id="designDate"><label>Загрузить фоновое фото</label><input type="file" accept="image/*" id="designFile"><label>Загрузить фоновое видео (MP4 / WebM)</label><input type="file" accept="video/mp4,video/webm,video/quicktime,video/*" id="designVideoFile"><label>Кадрирование фона — масштаб</label><input type="range" id="designCropZoom" min="1" max="3" step="0.01"><label>Сдвиг фона по горизонтали</label><input type="range" id="designCropX" min="-1500" max="1500" step="5"><label>Сдвиг фона по вертикали</label><input type="range" id="designCropY" min="-2200" max="2200" step="5"><button class="btn" id="designCropReset">Сбросить кадрирование</button><label>Длительность ролика (секунды)</label><input type="number" min="3" max="60" value="10" id="designDuration"><button class="btn" id="designClear">Убрать фото</button><label>Цвет фона</label><input type="color" id="designBg"><label>Акцентный цвет</label><input type="color" id="designAccent"><label>Размер заголовка</label><input type="number" min="20" max="130" step="0.5" id="designSize"><label>Логотип (PNG с прозрачностью)</label><input type="file" id="designLogoFile" accept="image/png,image/webp"><label>Размер описания</label><input type="number" min="15" max="70" step="0.25" id="designBodySize"><button class="btn" id="designReset">Сбросить положение текста</button><button class="btn" id="designResetAll" style="border-color:#b66;color:#ffb5b5">↺ Сбросить весь шаблон</button><button class="btn primary" id="designDownload">↓ Скачать PNG</button><button class="btn primary" id="designExportVideo">🎬 Скачать MP4</button><button class="btn" id="designCancelVideo" style="display:none">✕ Отменить экспорт</button><p class="muted mini" id="designNotice">Настройки сохраняются в этом браузере.</p></div><div class="design-stage"><canvas id="designCanvas" width="1080" height="1920"></canvas></div></div>';
-let logoInput=document.getElementById('designLogoFile');if(logoInput)logoInput.onchange=e=>{let file=e.target.files[0];if(!file)return;let reader=new FileReader();reader.onload=()=>{designCfg.logo=reader.result;designLogoLoad(reader.result);designStore()};reader.readAsDataURL(file)};designLogoLoad(designCfg.logo);
-for(const [id,key] of [['designCropZoom','cropZoom'],['designCropX','cropX'],['designCropY','cropY']]){let el=document.getElementById(id);el.value=s[key]??(key==='cropZoom'?1:0);el.oninput=()=>{s[key]=Number(el.value);designStore();designPaint()}}
-document.getElementById('designCropReset').onclick=()=>{s.cropZoom=1;s.cropX=0;s.cropY=0;for(const [id,key] of [['designCropZoom','cropZoom'],['designCropX','cropX'],['designCropY','cropY']])document.getElementById(id).value=s[key];designStore();designPaint()};
-let fields={designTitle:'title',designBody:'body',designDate:'date',designBg:'bg',designAccent:'accent',designSize:'size',designBodySize:'bodySize'};Object.keys(fields).forEach(id=>{let el=document.getElementById(id),key=fields[id];el.value=s[key];el.oninput=()=>{s[key]=el.type==='number'?Number(el.value):el.value;designStore();designPaint()}});
-document.getElementById('designFill').onclick=()=>{let d=data.drafts.find(x=>x.id===document.getElementById('designDraft').value);if(!d)return;s.title=d.headline||'';s.body=(d.caption||'').replace(d.headline||'','').replace(/Источник:[\s\S]*/,'').trim().slice(0,600);s.date=designShortDate();designStore();renderDesign()};
-document.getElementById('designClear').onclick=()=>{s.image='';if(designVideo){designVideo.pause();URL.revokeObjectURL(designVideo.src);designVideo=null}designImageLoad('');designStore()};
-document.getElementById('designResetAll').onclick=()=>{
- if(designRecording){document.getElementById('designNotice').textContent='Сначала отмените экспорт видео.';return}
- if(!confirm('Сбросить все изменения шаблона? Удалятся тексты, загруженные фото, видео, свой логотип, кадрирование, цвета и размеры. Черновики новостей не затронутся.'))return;
- if(designVideo){designVideo.pause();URL.revokeObjectURL(designVideo.src);designVideo.src='';designVideo=null}
- designImg=null;designLogo=null;designDrag=null;
- try{localStorage.removeItem('daw_native_design')}catch(e){}
- designCfg={...DESIGN_DEFAULTS};
- renderDesign();
- document.getElementById('designNotice').textContent='Шаблон сброшен к стандартному виду. Черновики сохранены.';
-};
-document.getElementById('designReset').onclick=()=>{s.titleY=1130;s.bodyY=1302;s.size=40;s.bodySize=22;document.getElementById('designSize').value=s.size;document.getElementById('designBodySize').value=s.bodySize;designStore();designPaint()};
-document.getElementById('designFile').onchange=e=>{let file=e.target.files[0];if(!file||!file.type.startsWith('image/'))return;let reader=new FileReader();reader.onload=()=>{let im=new Image();im.onload=()=>{let c=document.createElement('canvas'),k=Math.min(1,1600/Math.max(im.width,im.height));c.width=Math.round(im.width*k);c.height=Math.round(im.height*k);c.getContext('2d').drawImage(im,0,0,c.width,c.height);s.image=c.toDataURL('image/jpeg',.72);designImageLoad(s.image);designStore()};im.src=reader.result};reader.readAsDataURL(file)};
 
-document.getElementById('designVideoFile').onchange=e=>{
- const file=e.target.files[0];if(!file)return;
- if(designVideo){designVideo.pause();URL.revokeObjectURL(designVideo.src)}
- const v=document.createElement('video');v.muted=true;v.loop=true;v.playsInline=true;v.preload='auto';v.src=URL.createObjectURL(file);designVideo=v;
- v.onloadeddata=()=>{v.play().catch(()=>{});designPaint()};
- v.onerror=()=>{document.getElementById('designNotice').textContent='Не удалось прочитать видео'};
-};
-document.getElementById('designExportVideo').onclick=async()=>{
- const notice=document.getElementById('designNotice'),btn=document.getElementById('designExportVideo'),cancelBtn=document.getElementById('designCancelVideo');
- if(designRecording)return;
- if(!HTMLCanvasElement.prototype.captureStream||!window.MediaRecorder){notice.textContent='Этот браузер не поддерживает экспорт видео.';return}
- const duration=Math.min(60,Math.max(3,Number(document.getElementById('designDuration').value)||10));
- const cv=document.getElementById('designCanvas');
- const mime=['video/mp4;codecs="avc1.42E01E"','video/mp4;codecs=avc1','video/mp4'].find(t=>MediaRecorder.isTypeSupported(t));
- if(!mime){notice.textContent='Этот браузер не поддерживает прямой экспорт MP4.';return}
- let recorder,stream,frames=[],raf,timer,stopped=false,cancelled=false,resolveWait;
- const finishWait=()=>{if(resolveWait){let r=resolveWait;resolveWait=null;r()}};
- try{
-  designRecording=true;btn.disabled=true;cancelBtn.style.display='';cancelBtn.disabled=false;
-  designCancelExport=()=>{cancelled=true;notice.textContent='Отменяем экспорт…';cancelBtn.disabled=true;finishWait()};
-  cancelBtn.onclick=()=>{if(designCancelExport)designCancelExport()};
-  stream=cv.captureStream(30);
-  recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:5000000});
-  recorder.ondataavailable=e=>{if(e.data.size&&!cancelled)frames.push(e.data)};
-  const completed=new Promise((resolve,reject)=>{recorder.onstop=resolve;recorder.onerror=()=>reject(new Error('Ошибка записи'))});
-  recorder.start(500);
-  const started=performance.now();
-  function tick(){if(cancelled)return;designPaint();if(designRecording)raf=requestAnimationFrame(tick)}
-  tick();
-  await new Promise(resolve=>{resolveWait=resolve;timer=setInterval(()=>{if(cancelled){finishWait();return}let elapsed=(performance.now()-started)/1000;notice.textContent='Создаём видео: '+Math.min(100,Math.round(elapsed/duration*100))+'%';if(elapsed>=duration)finishWait()},200)});
-  clearInterval(timer);
-  if(recorder.state!=='inactive'){recorder.stop();stopped=true}
-  await completed;
-  if(cancelled){notice.textContent='Экспорт отменён. Файл не сохранён.';return}
-  const blob=new Blob(frames,{type:mime}),url=URL.createObjectURL(blob),link=document.createElement('a');
-  link.href=url;link.download='theDAW-reels-'+Date.now()+'.mp4';link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);
-  notice.textContent='Видео готово! Сохранён MP4 (без звука).';
- }catch(err){notice.textContent=cancelled?'Экспорт отменён.': 'Ошибка экспорта: '+err.message}
- finally{
-  clearInterval(timer);finishWait();designRecording=false;designCancelExport=null;btn.disabled=false;cancelBtn.style.display='none';cancelBtn.onclick=null;
-  cancelAnimationFrame(raf);if(recorder&&recorder.state!=='inactive')try{recorder.stop()}catch(e){}
-  if(stream)stream.getTracks().forEach(t=>t.stop());frames.length=0;designPaint();
- }
-};
+function designLogoLoad(src){
+  src=src||'assets/thedaw-logo.svg';
 
-document.getElementById('designDownload').onclick=()=>{designPaint();let a=document.createElement('a');a.href=document.getElementById('designCanvas').toDataURL('image/png');a.download='theDAW-'+Date.now()+'.png';a.click()};
-let cv=document.getElementById('designCanvas');cv.onpointerdown=e=>{let r=cv.getBoundingClientRect(),y=(e.clientY-r.top)/r.height*1920;designDrag=Math.abs(y-s.titleY)<Math.abs(y-s.bodyY)?'titleY':'bodyY';cv.setPointerCapture(e.pointerId)};cv.onpointermove=e=>{if(!designDrag)return;let r=cv.getBoundingClientRect();s[designDrag]=Math.round(Math.max(220,Math.min(1750,(e.clientY-r.top)/r.height*1920)));designPaint()};cv.onpointerup=()=>{designDrag=null;designStore()};cv.onpointercancel=()=>{designDrag=null;designStore()};
-if(s.image)designImageLoad(s.image);else{designImg=null;designPaint()}
+  let im=new Image();
+
+  im.onload=()=>{
+    designLogo=im;
+    designPaint();
+  };
+
+  im.src=src;
 }
-</script></body></html>
+
+function designImageLoad(src){
+  if(!src){
+    designImg=null;
+    designPaint();
+    return;
+  }
+
+  let im=new Image();
+
+  im.onload=()=>{
+    designImg=im;
+    designPaint();
+  };
+
+  im.src=src;
+}
+
+function designShortDate(){
+  const d=new Date();
+
+  return String(d.getDate()).padStart(2,'0')+
+    '/'+String(d.getMonth()+1).padStart(2,'0');
+}
+
+function renderDesign(){
+  const m=document.getElementById('main');
+  const s=designCfg;
+
+  if(!m)return;
+
+  m.innerHTML=`
+    <h1>Дизайн theDĀW</h1>
+    <p class="muted">
+      Шаблон theDAW — Reels · 1080 × 1920.
+      Перетаскивай текст на макете.
+    </p>
+
+    <div class="design-layout">
+      <div class="card design-form">
+
+        <label>Подставить новость из черновиков</label>
+        <select id="designDraft">
+          <option value="">Выбери черновик</option>
+          ${data.drafts.map(d=>
+            '<option value="'+esc(d.id)+'">'+
+            esc(d.headline)+'</option>'
+          ).join('')}
+        </select>
+
+        <button class="btn" id="designFill">
+          Подставить текст
+        </button>
+
+        <label>Заголовок</label>
+        <textarea id="designTitle" rows="3"></textarea>
+
+        <label>Описание</label>
+        <textarea id="designBody" rows="5"></textarea>
+
+        <label>Дата</label>
+        <input id="designDate">
+
+        <label>Загрузить фоновое фото</label>
+        <input type="file" accept="image/*" id="designFile">
+
+        <label>Загрузить фоновое видео (MP4 / WebM)</label>
+        <input type="file"
+          accept="video/mp4,video/webm,video/quicktime,video/*"
+          id="designVideoFile">
+
+        <label>Кадрирование фона — масштаб</label>
+        <input type="range"
+          id="designCropZoom" min="1" max="3" step="0.01">
+
+        <label>Сдвиг фона по горизонтали</label>
+        <input type="range"
+          id="designCropX" min="-1500" max="1500" step="5">
+
+        <label>Сдвиг фона по вертикали</label>
+        <input type="range"
+          id="designCropY" min="-2200" max="2200" step="5">
+
+        <button class="btn" id="designCropReset">
+          Сбросить кадрирование
+        </button>
+
+        <label>Длительность ролика (секунды)</label>
+        <input type="number"
+          min="3" max="60" value="10" id="designDuration">
+
+        <button class="btn" id="designClear">
+          Убрать фото
+        </button>
+
+        <label>Цвет фона</label>
+        <input type="color" id="designBg">
+
+        <label>Акцентный цвет</label>
+        <input type="color" id="designAccent">
+
+        <label>Размер заголовка</label>
+        <input type="number"
+          min="20" max="130" step="0.5" id="designSize">
+
+        <label>Логотип (PNG с прозрачностью)</label>
+        <input type="file"
+          id="designLogoFile" accept="image/png,image/webp">
+
+        <label>Размер описания</label>
+        <input type="number"
+          min="15" max="70" step="0.25" id="designBodySize">
+
+        <button class="btn" id="designReset">
+          Сбросить положение текста
+        </button>
+
+        <button class="btn" id="designResetAll"
+          style="border-color:#b66;color:#ffb5b5">
+          ↺ Сбросить весь шаблон
+        </button>
+
+        <button class="btn primary" id="designDownload">
+          ↓ Скачать PNG
+        </button>
+
+        <button class="btn primary" id="designExportVideo">
+          🎬 Скачать MP4
+        </button>
+
+        <label>Подпись для Instagram Reels</label>
+        <textarea id="designInstagramCaption"
+          rows="4"
+          placeholder="Текст публикации"></textarea>
+
+        <button class="btn primary" id="designPublishInstagram">
+          ◎ Опубликовать Reels в Instagram
+        </button>
+
+        <button class="btn" id="designCancelVideo"
+          style="display:none">
+          ✕ Отменить экспорт
+        </button>
+
+        <p class="muted mini" id="designNotice">
+          Настройки сохраняются в этом браузере.
+        </p>
+
+      </div>
+
+      <div class="design-stage">
+        <canvas id="designCanvas"
+          width="1080" height="1920"></canvas>
+      </div>
+    </div>
+  `;
+
+  const logoInput=document.getElementById('designLogoFile');
+
+  if(logoInput){
+    logoInput.onchange=e=>{
+      let file=e.target.files[0];
+      if(!file)return;
+
+      let reader=new FileReader();
+
+      reader.onload=()=>{
+        designCfg.logo=reader.result;
+        designLogoLoad(reader.result);
+        designStore();
+      };
+
+      reader.readAsDataURL(file);
+    };
+  }
+
+  designLogoLoad(designCfg.logo);
+
+  for(const [id,key] of [
+    ['designCropZoom','cropZoom'],
+    ['designCropX','cropX'],
+    ['designCropY','cropY']
+  ]){
+    let el=document.getElementById(id);
+
+    el.value=s[key]??(key==='cropZoom'?1:0);
+
+    el.oninput=()=>{
+      s[key]=Number(el.value);
+      designStore();
+      designPaint();
+    };
+  }
+
+  document.getElementById('designCropReset').onclick=()=>{
+    s.cropZoom=1;
+    s.cropX=0;
+    s.cropY=0;
+
+    for(const [id,key] of [
+      ['designCropZoom','cropZoom'],
+      ['designCropX','cropX'],
+      ['designCropY','cropY']
+    ]){
+      document.getElementById(id).value=s[key];
+    }
+
+    designStore();
+    designPaint();
+  };
+
+  let fields={
+    designTitle:'title',
+    designBody:'body',
+    designDate:'date',
+    designBg:'bg',
+    designAccent:'accent',
+    designSize:'size',
+    designBodySize:'bodySize'
+  };
+
+  Object.keys(fields).forEach(id=>{
+    let el=document.getElementById(id);
+    let key=fields[id];
+
+    el.value=s[key];
+
+    el.oninput=()=>{
+      s[key]=el.type==='number'
+        ?Number(el.value)
+        :el.value;
+
+      designStore();
+      designPaint();
+    };
+  });
+
+  document.getElementById('designFill').onclick=()=>{
+    let d=data.drafts.find(
+      x=>x.id===document.getElementById('designDraft').value
+    );
+
+    if(!d)return;
+
+    s.title=d.headline||'';
+
+    s.body=(d.caption||'')
+      .replace(d.headline||'','')
+      .replace(/Источник:[\s\S]*/,'')
+      .trim()
+      .slice(0,600);
+
+    s.date=designShortDate();
+
+    designStore();
+    renderDesign();
+  };
+
+  document.getElementById('designClear').onclick=()=>{
+    s.image='';
+
+    if(designVideo){
+      designVideo.pause();
+      URL.revokeObjectURL(designVideo.src);
+      designVideo=null;
+    }
+
+    designImageLoad('');
+    designStore();
+  };
+
+  document.getElementById('designResetAll').onclick=()=>{
+    if(designRecording){
+      document.getElementById('designNotice').textContent=
+        'Сначала отмените экспорт видео.';
+      return;
+    }
+
+    if(!confirm(
+      'Сбросить все изменения шаблона? '+
+      'Черновики новостей не затронутся.'
+    ))return;
+
+    if(designVideo){
+      designVideo.pause();
+      URL.revokeObjectURL(designVideo.src);
+      designVideo.src='';
+      designVideo=null;
+    }
+
+    designImg=null;
+    designLogo=null;
+    designDrag=null;
+
+    try{
+      localStorage.removeItem('daw_native_design');
+    }catch(e){}
+
+    designCfg={...DESIGN_DEFAULTS};
+    renderDesign();
+
+    document.getElementById('designNotice').textContent=
+      'Шаблон сброшен. Черновики сохранены.';
+  };
+
+  document.getElementById('designReset').onclick=()=>{
+    s.titleY=1130;
+    s.bodyY=1302;
+    s.size=40;
+    s.bodySize=22;
+
+    document.getElementById('designSize').value=s.size;
+    document.getElementById('designBodySize').value=s.bodySize;
+
+    designStore();
+    designPaint();
+  };
+
+  document.getElementById('designFile').onchange=e=>{
+    let file=e.target.files[0];
+
+    if(!file||!file.type.startsWith('image/'))return;
+
+    let reader=new FileReader();
+
+    reader.onload=()=>{
+      let im=new Image();
+
+      im.onload=()=>{
+        let c=document.createElement('canvas');
+
+        let k=Math.min(
+          1,
+          1600/Math.max(im.width,im.height)
+        );
+
+        c.width=Math.round(im.width*k);
+        c.height=Math.round(im.height*k);
+
+        c.getContext('2d').drawImage(
+          im,0,0,c.width,c.height
+        );
+
+        s.image=c.toDataURL('image/jpeg',.72);
+
+        designImageLoad(s.image);
+        designStore();
+      };
+
+      im.src=reader.result;
+    };
+
+    reader.readAsDataURL(file);
+  };
+
+  document.getElementById('designVideoFile').onchange=e=>{
+    const file=e.target.files[0];
+    if(!file)return;
+
+    if(designVideo){
+      designVideo.pause();
+      URL.revokeObjectURL(designVideo.src);
+    }
+
+    const v=document.createElement('video');
+
+    v.muted=true;
+    v.loop=true;
+    v.playsInline=true;
+    v.preload='auto';
+    v.src=URL.createObjectURL(file);
+
+    designVideo=v;
+
+    v.onloadeddata=()=>{
+      v.play().catch(()=>{});
+      designPaint();
+    };
+
+    v.onerror=()=>{
+      document.getElementById('designNotice').textContent=
+        'Не удалось прочитать видео';
+    };
+  };
+
+  // INSTAGRAM API
+
+  async function designInstagramCall(
+    mode,
+    route,
+    body,
+    video=false
+  ){
+    const headers={
+      'X-Studio-Key':mode.studio,
+      'Content-Type':video?'video/mp4':'application/json'
+    };
+
+    if(!video){
+      headers['X-Publish-Key']=mode.publishKey;
+    }
+
+    const response=await fetch(
+      mode.worker.replace(/\/$/,'')+route,
+      {
+        method:'POST',
+        headers,
+        body:video?body:JSON.stringify(body)
+      }
+    );
+
+    const result=await response.json().catch(()=>({}));
+
+    if(!response.ok||result.ok===false){
+      throw new Error(
+        result.error||'HTTP '+response.status
+      );
+    }
+
+    return result;
+  }
+
+  document.getElementById('designPublishInstagram').onclick=()=>{
+    if(designRecording)return;
+
+    const worker=(
+      localStorage.getItem('daw_worker_url')||''
+    ).trim();
+
+    const studio=sessionStorage.getItem('daw_ai_password');
+
+    if(!worker||!studio){
+      alert(
+        'Сначала укажи Worker URL и пароль '+
+        'во вкладке «Подключения».'
+      );
+      return;
+    }
+
+    const publishKey=prompt(
+      'Введи отдельный пароль публикации INSTAGRAM_PUBLISH_KEY:'
+    );
+
+    if(!publishKey)return;
+
+    if(!confirm(
+      'Опубликовать Reels в @thedaw.mag? '+
+      'После обработки ролик станет публичным.'
+    ))return;
+
+    designPublishMode={
+      worker,
+      studio,
+      publishKey,
+      caption:document.getElementById(
+        'designInstagramCaption'
+      ).value
+    };
+
+    document.getElementById('designExportVideo').click();
+  };
+
+  document.getElementById('designExportVideo').onclick=async()=>{
+    const notice=document.getElementById('designNotice');
+    const btn=document.getElementById('designExportVideo');
+    const cancelBtn=document.getElementById('designCancelVideo');
+    const publishBtn=document.getElementById('designPublishInstagram');
+
+    const publishMode=designPublishMode;
+    designPublishMode=null;
+
+    if(designRecording)return;
+
+    if(
+      !HTMLCanvasElement.prototype.captureStream||
+      !window.MediaRecorder
+    ){
+      notice.textContent=
+        'Этот браузер не поддерживает экспорт видео.';
+      return;
+    }
+
+    const duration=Math.min(
+      60,
+      Math.max(
+        3,
+        Number(document.getElementById('designDuration').value)||10
+      )
+    );
+
+    const cv=document.getElementById('designCanvas');
+
+    const mime=[
+      'video/mp4;codecs="avc1.42E01E"',
+      'video/mp4;codecs=avc1',
+      'video/mp4'
+    ].find(t=>MediaRecorder.isTypeSupported(t));
+
+    if(!mime){
+      notice.textContent=
+        'Этот браузер не поддерживает прямой экспорт MP4.';
+      return;
+    }
+
+    let recorder;
+    let stream;
+    let frames=[];
+    let raf;
+    let timer;
+    let cancelled=false;
+    let resolveWait;
+
+    const finishWait=()=>{
+      if(resolveWait){
+        let r=resolveWait;
+        resolveWait=null;
+        r();
+      }
+    };
+
+    try{
+      designRecording=true;
+      btn.disabled=true;
+      publishBtn.disabled=true;
+      cancelBtn.style.display='';
+      cancelBtn.disabled=false;
+
+      designCancelExport=()=>{
+        cancelled=true;
+        notice.textContent='Отменяем экспорт…';
+        cancelBtn.disabled=true;
+        finishWait();
+      };
+
+      cancelBtn.onclick=()=>{
+        if(designCancelExport){
+          designCancelExport();
+        }
+      };
+
+      stream=cv.captureStream(30);
+
+      recorder=new MediaRecorder(
+        stream,
+        {
+          mimeType:mime,
+          videoBitsPerSecond:5000000
+        }
+      );
+
+      recorder.ondataavailable=e=>{
+        if(e.data.size&&!cancelled){
+          frames.push(e.data);
+        }
+      };
+
+      const completed=new Promise((resolve,reject)=>{
+        recorder.onstop=resolve;
+        recorder.onerror=()=>{
+          reject(new Error('Ошибка записи'));
+        };
+      });
+
+      recorder.start(500);
+
+      const started=performance.now();
+
+      function tick(){
+        if(cancelled)return;
+
+        designPaint();
+
+        if(designRecording){
+          raf=requestAnimationFrame(tick);
+        }
+      }
+
+      tick();
+
+      await new Promise(resolve=>{
+        resolveWait=resolve;
+
+        timer=setInterval(()=>{
+          if(cancelled){
+            finishWait();
+            return;
+          }
+
+          let elapsed=(performance.now()-started)/1000;
+
+          notice.textContent=
+            'Создаём видео: '+
+            Math.min(
+              100,
+              Math.round(elapsed/duration*100)
+            )+'%';
+
+          if(elapsed>=duration){
+            finishWait();
+          }
+        },200);
+      });
+
+      clearInterval(timer);
+
+      if(recorder.state!=='inactive'){
+        recorder.stop();
+      }
+
+      await completed;
+
+      if(cancelled){
+        notice.textContent=
+          'Экспорт отменён. Файл не сохранён.';
+        return;
+      }
+
+      const blob=new Blob(
+        frames,
+        {type:mime}
+      );
+
+      if(publishMode){
+        if(blob.size>50*1024*1024){
+          throw Error('Видео больше 50 МБ.');
+        }
+
+        notice.textContent='Загружаем видео в R2…';
+
+        const uploaded=await designInstagramCall(
+          publishMode,
+          '/instagram/upload',
+          blob,
+          true
+        );
+
+        notice.textContent=
+          'Instagram обрабатывает Reels…';
+
+        const prepared=await designInstagramCall(
+          publishMode,
+          '/instagram/prepare',
+          {
+            key:uploaded.key,
+            caption:publishMode.caption
+          }
+        );
+
+        let ready=false;
+
+        for(let attempt=0;attempt<30;attempt++){
+          await new Promise(
+            resolve=>setTimeout(resolve,5000)
+          );
+
+          const status=await designInstagramCall(
+            publishMode,
+            '/instagram/status',
+            {creation_id:prepared.creation_id}
+          );
+
+          if(status.ready){
+            ready=true;
+            break;
+          }
+
+          if(
+            ['ERROR','EXPIRED'].includes(status.status)
+          ){
+            throw Error(
+              'Instagram отклонил видео: '+
+              (status.details||status.status)
+            );
+          }
+
+          notice.textContent=
+            'Instagram обрабатывает Reels… '+
+            (attempt+1)*5+' сек.';
+        }
+
+        if(!ready){
+          throw Error(
+            'Instagram не закончил обработку за 150 секунд. '+
+            'Публикация не выполнена.'
+          );
+        }
+
+        notice.textContent='Публикуем Reels…';
+
+        const published=await designInstagramCall(
+          publishMode,
+          '/instagram/publish',
+          {
+            creation_id:prepared.creation_id,
+            confirm:true
+          }
+        );
+
+        notice.textContent=
+          '✓ Reels опубликован в Instagram! ID: '+
+          published.media_id;
+
+      }else{
+        const url=URL.createObjectURL(blob);
+        const link=document.createElement('a');
+
+        link.href=url;
+        link.download='theDAW-reels-'+Date.now()+'.mp4';
+        link.click();
+
+        setTimeout(
+          ()=>URL.revokeObjectURL(url),
+          60000
+        );
+
+        notice.textContent=
+          'Видео готово! Сохранён MP4 (без звука).';
+      }
+
+    }catch(err){
+      notice.textContent=cancelled
+        ?'Экспорт отменён.'
+        :'Ошибка экспорта: '+err.message;
+
+    }finally{
+      clearInterval(timer);
+      finishWait();
+
+      designRecording=false;
+      designCancelExport=null;
+
+      btn.disabled=false;
+      publishBtn.disabled=false;
+      cancelBtn.style.display='none';
+      cancelBtn.onclick=null;
+
+      cancelAnimationFrame(raf);
+
+      if(recorder&&recorder.state!=='inactive'){
+        try{
+          recorder.stop();
+        }catch(e){}
+      }
+
+      if(stream){
+        stream.getTracks().forEach(
+          t=>t.stop()
+        );
+      }
+
+      frames.length=0;
+      designPaint();
+    }
+  };
+
+  document.getElementById('designDownload').onclick=()=>{
+    designPaint();
+
+    let a=document.createElement('a');
+
+    a.href=document.getElementById(
+      'designCanvas'
+    ).toDataURL('image/png');
+
+    a.download='theDAW-'+Date.now()+'.png';
+    a.click();
+  };
+
+  let cv=document.getElementById('designCanvas');
+
+  cv.onpointerdown=e=>{
+    let r=cv.getBoundingClientRect();
+
+    let y=(e.clientY-r.top)/r.height*1920;
+
+    designDrag=
+      Math.abs(y-s.titleY)<Math.abs(y-s.bodyY)
+        ?'titleY'
+        :'bodyY';
+
+    cv.setPointerCapture(e.pointerId);
+  };
+
+  cv.onpointermove=e=>{
+    if(!designDrag)return;
+
+    let r=cv.getBoundingClientRect();
+
+    s[designDrag]=Math.round(
+      Math.max(
+        220,
+        Math.min(
+          1750,
+          (e.clientY-r.top)/r.height*1920
+        )
+      )
+    );
+
+    designPaint();
+  };
+
+  cv.onpointerup=()=>{
+    designDrag=null;
+    designStore();
+  };
+
+  cv.onpointercancel=()=>{
+    designDrag=null;
+    designStore();
+  };
+
+  if(s.image){
+    designImageLoad(s.image);
+  }else{
+    designImg=null;
+    designPaint();
+  }
+}
+</script>
+
+</body>
+</html>
