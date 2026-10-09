@@ -794,6 +794,7 @@ let designCfg={...DESIGN_DEFAULTS};
 let designImg=null;
 let designDrag=null;
 let designVideo=null;
+let designMusic=null;
 let designLogo=null;
 let designRecording=false;
 let designCancelExport=null;
@@ -1054,6 +1055,13 @@ function renderDesign(){
           accept="video/mp4,video/webm,video/quicktime,video/*"
           id="designVideoFile">
 
+        <label>Добавить музыку (MP3 / M4A / WAV)</label>
+        <input type="file" accept="audio/*" id="designMusicFile">
+        <button class="btn" id="designRemoveMusic">Убрать музыку</button>
+        <label>Громкость исходного видео</label>
+        <input type="range" id="designOriginalVolume" min="0" max="100" value="100">
+        <label>Громкость музыки</label>
+        <input type="range" id="designMusicVolume" min="0" max="100" value="70">
         <label>Кадрирование фона — масштаб</label>
         <input type="range"
           id="designCropZoom" min="1" max="3" step="0.01">
@@ -1160,6 +1168,19 @@ function renderDesign(){
   }
 
   designLogoLoad(designCfg.logo);
+  document.getElementById('designMusicFile').onchange=e=>{
+    const f=e.target.files[0]; if(!f)return;
+    if(designMusic){designMusic.pause();URL.revokeObjectURL(designMusic.src);}
+    designMusic=new Audio(URL.createObjectURL(f));
+    designMusic.loop=true;
+    designMusic.preload='auto';
+    document.getElementById('designNotice').textContent='Музыка загружена: '+f.name;
+  };
+  document.getElementById('designRemoveMusic').onclick=()=>{
+    if(designMusic){designMusic.pause();URL.revokeObjectURL(designMusic.src);designMusic=null;}
+    document.getElementById('designMusicFile').value='';
+    document.getElementById('designNotice').textContent='Музыка удалена';
+  };
 
   for(const [id,key] of [
     ['designCropZoom','cropZoom'],
@@ -1489,6 +1510,7 @@ function renderDesign(){
 
     let recorder;
     let stream;
+    let audioContext;
     let frames=[];
     let raf;
     let timer;
@@ -1524,6 +1546,34 @@ function renderDesign(){
       };
 
       stream=cv.captureStream(30);
+      // Mix the source video's audio and optional music into the recorded stream.
+      const AC=window.AudioContext||window.webkitAudioContext;
+      if((designVideo||designMusic)&&!AC)throw Error('Браузер не поддерживает обработку звука.');
+      if(AC&&(designVideo||designMusic)){
+        audioContext=new AC();
+        const mix=audioContext.createMediaStreamDestination();
+        const connectAudio=(element,volume)=>{
+          const source=audioContext.createMediaElementSource(element);
+          const gain=audioContext.createGain();
+          gain.gain.value=volume;
+          source.connect(gain);
+          gain.connect(mix);
+          element.muted=false;
+          element.volume=1;
+        };
+        if(designVideo)connectAudio(designVideo,Number(document.getElementById('designOriginalVolume').value)/100);
+        if(designMusic)connectAudio(designMusic,Number(document.getElementById('designMusicVolume').value)/100);
+        mix.stream.getAudioTracks().forEach(track=>stream.addTrack(track));
+        await audioContext.resume();
+        if(designVideo){
+          designVideo.currentTime=0;
+          await designVideo.play();
+        }
+        if(designMusic){
+          designMusic.currentTime=0;
+          await designMusic.play();
+        }
+      }
 
       recorder=new MediaRecorder(
         stream,
@@ -1699,7 +1749,7 @@ function renderDesign(){
         );
 
         notice.textContent=
-          'Видео готово! Сохранён MP4 (без звука).';
+          'Видео готово! MP4 сохранён со звуком, если он был добавлен.';
       }
 
     }catch(err){
@@ -1727,6 +1777,8 @@ function renderDesign(){
         }catch(e){}
       }
 
+      if(designMusic)designMusic.pause();
+      if(audioContext)await audioContext.close().catch(()=>{});
       if(stream){
         stream.getTracks().forEach(
           t=>t.stop()
