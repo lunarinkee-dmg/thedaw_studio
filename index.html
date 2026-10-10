@@ -1323,7 +1323,7 @@ function renderDesign(){
         </button>
 
         <button class="btn primary" id="designInstagramPublish" type="button">
-          ↗ Залить в Instagram
+          ↗ Опубликовать Reels через Meta API
         </button>
 
         <button class="btn primary" id="designTikTokPublish" type="button">
@@ -1347,14 +1347,12 @@ function renderDesign(){
       </div>
 
       <div class="design-stage" style="position:relative">
-        <button class="btn primary" id="designInstagramOpen" type="button" title="Открыть Instagram" style="position:absolute;left:12px;top:16px;z-index:2;padding:10px 12px;font-size:12px">↗ Instagram</button>
         <canvas id="designCanvas"
           width="1080" height="1920"></canvas>
       </div>
     </div>
   `;
 
-  document.getElementById('designInstagramOpen').onclick=()=>window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
   document.getElementById('designInstagramPublish').onclick=async()=>{
     if(designRecording)return;
     const caption=document.getElementById('designInstagramCaption').value.trim();
@@ -1368,8 +1366,11 @@ function renderDesign(){
     if(!window.theDawPublishKey){
       window.theDawPublishKey=prompt('Введи INSTAGRAM_PUBLISH_KEY из Cloudflare Worker (не сохраняется на сайте):')||'';
     }
-    if(!window.theDawStudioKey||!window.theDawPublishKey)return;
-    document.getElementById('designExportVideo').onclick(true);
+    if(!window.theDawStudioKey||!window.theDawPublishKey){
+      document.getElementById('designNotice').textContent='Для публикации нужны оба ключа Cloudflare Worker.';
+      return;
+    }
+    await document.getElementById('designExportVideo').onclick(true);
   };
   document.getElementById('designTikTokPublish').onclick=()=>{
     const notice=document.getElementById('designNotice');
