@@ -412,10 +412,10 @@ function create(id){
     originalTitle:n.title,
     originalSummary:n.summary,
     sourceName:n.source,
-    headline:n.title_ru||n.title,
-    caption:(n.title_ru||n.title)+'\n\n'+(n.summary_ru||n.summary)+
+    headline:n.title,
+    caption:(n.title)+'\n\n'+(n.summary)+
       '\n\nИсточник: '+n.source+' — '+n.url,
-    tiktok:n.title_ru||n.title,
+    tiktok:n.title,
     category:n.category
   };
 
@@ -523,8 +523,8 @@ function render(){
         visible.map(n=>
           '<article class="card news-card">'+
           '<span class="tag">'+esc(n.category)+'</span>'+
-          '<h3 title="'+esc(n.title_ru||n.title)+'">'+esc(n.title_ru||n.title)+'</h3>'+
-          '<p class="muted news-summary">'+esc(n.summary_ru||n.summary)+'</p>'+
+          '<h3 title="'+esc(n.title)+'">'+esc(n.title)+'</h3>'+
+          '<p class="muted news-summary">'+esc(n.summary)+'</p>'+
           '<div class="meta news-meta">'+
           esc(n.source)+' · '+esc(n.date)+
           '</div><div class="actions">'+
