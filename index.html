@@ -1303,9 +1303,14 @@ function renderDesign(){
           ↓ Скачать PNG
         </button>
 
-        <button class="btn primary" id="designExportVideo">
-          🎬 Скачать MP4
-        </button>
+        <div class="design-export-actions" style="display:flex;gap:8px;align-items:stretch;flex-wrap:wrap">
+          <button class="btn primary" id="designInstagramOpen" type="button" title="Открыть Instagram для ручной публикации" style="flex:1;min-width:130px">
+            ↗ Instagram
+          </button>
+          <button class="btn primary" id="designExportVideo" style="flex:1;min-width:130px">
+            🎬 Скачать MP4
+          </button>
+        </div>
 
         <label>Подпись для Instagram Reels</label>
         <textarea id="designInstagramCaption"
@@ -1329,6 +1334,8 @@ function renderDesign(){
       </div>
     </div>
   `;
+
+  document.getElementById('designInstagramOpen').onclick=()=>window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
 
   const logoInput=document.getElementById('designLogoFile');
 
