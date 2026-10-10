@@ -447,6 +447,16 @@ input,textarea,select{background:rgba(255,255,255,.74);border-color:rgba(145,145
 @media(prefers-reduced-motion:reduce){
   .btn,.card,nav button,.news-edge-arrow{transition:none}
 }
+
+/* Two-section navigation and constructor workspace */
+.constructor-heading{margin-bottom:20px}
+.constructor-heading h1{margin-bottom:5px}
+.constructor-heading p{margin:0;font-size:13px}
+.constructor-tabs{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 27px;padding:8px;background:rgba(255,255,255,.42);border:1px solid rgba(255,255,255,.8);border-radius:16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.constructor-tab{border:1px solid transparent;border-radius:11px;padding:11px 15px;background:transparent;color:#444;font-weight:750}
+.constructor-tab:hover{background:rgba(255,255,255,.65)}
+.constructor-tab.active{background:#B30012;color:#fff;box-shadow:0 4px 12px rgba(179,0,18,.17)}
+@media(max-width:670px){.constructor-tabs{flex-wrap:nowrap;overflow-x:auto}.constructor-tab{white-space:nowrap;flex-shrink:0}}
 </style>
 </head>
 <body>
@@ -460,12 +470,7 @@ input,textarea,select{background:rgba(255,255,255,.74);border-color:rgba(145,145
 <nav>
   <div class="small">WORKSPACE</div>
   <button data-view="inbox" class="active">▦ &nbsp; Новости</button>
-  <button data-view="drafts">✎ &nbsp; Черновики</button>
-  <button data-view="media">▧ &nbsp; Медиатека</button>
-  <button data-view="design">◈ &nbsp; Дизайн</button>
-  <button data-view="publish">↗ &nbsp; Публикация</button>
-  <div class="small">SYSTEM</div>
-  <button data-view="settings">⚙ &nbsp; Настройки</button>
+  <button data-view="constructor">◈ &nbsp; Конструктор</button>
 </nav>
 <main id="main"></main>
 </div>
@@ -484,6 +489,7 @@ let data={
 };
 
 let view='inbox';
+let constructorTab='drafts';
 let current=null;
 let newsPage=1;
 let newsLoading=false;
@@ -546,8 +552,9 @@ function create(id){
 
   data.drafts.unshift(d);
   current=d.id;
+  constructorTab='drafts';
   save();
-  go('drafts');
+  go('constructor');
 }
 
 function update(k,v){
@@ -598,15 +605,17 @@ function recentNews(items){
 }
 
 function render(){
-  if(view==='design'){
+  const section=view==='constructor'?constructorTab:view;
+  if(section==='design'){
     renderDesign();
+    renderConstructorTabs();
     return;
   }
 
   const m=document.getElementById('main');
   if(!m)return;
 
-  if(view==='inbox'){
+  if(section==='inbox'){
     const sorted=recentNews(data.news).sort(
       (a,b)=>newsTimestamp(b)-newsTimestamp(a)
     );
@@ -708,7 +717,7 @@ function render(){
 
     m.querySelector('#newsRefresh').onclick=()=>load(true);
 
-  } else if(view==='drafts'){
+  } else if(section==='drafts'){
 
     m.innerHTML=
       '<h1>Черновики</h1>'+
@@ -750,7 +759,7 @@ function render(){
       };
     });
 
-  } else if(view==='media'){
+  } else if(section==='media'){
 
     m.innerHTML=
       '<h1>Медиатека</h1>'+
@@ -771,7 +780,7 @@ function render(){
       }
     };
 
-  } else if(view==='settings'){
+  } else if(section==='settings'){
     m.innerHTML='<h1>Настройки</h1><div class="card"><h3>Версия без Cloudflare</h3>'+
       '<p class="muted">Новости обновляются через GitHub Actions. Черновики хранятся в этом браузере. '+
       'Для публикации скачай PNG или MP4 и загрузи в Instagram вручную.</p>'+
@@ -791,6 +800,39 @@ function render(){
       'Для публикации Reels открой вкладку «Дизайн».'+
       '</p></div>';
   }
+  renderConstructorTabs();
+}
+
+function renderConstructorTabs(){
+  if(view!=='constructor')return;
+  const m=document.getElementById('main');
+  if(!m)return;
+  const tabs=[
+    ['drafts','ИИ-копирайтер'],
+    ['design','Дизайн'],
+    ['media','Медиатека'],
+    ['publish','Публикация'],
+    ['settings','Настройки']
+  ];
+  const bar=document.createElement('div');
+  bar.className='constructor-tabs';
+  bar.setAttribute('role','tablist');
+  bar.setAttribute('aria-label','Разделы конструктора');
+  tabs.forEach(([id,label])=>{
+    const btn=document.createElement('button');
+    btn.type='button';
+    btn.className='constructor-tab'+(constructorTab===id?' active':'');
+    btn.textContent=label;
+    btn.setAttribute('role','tab');
+    btn.setAttribute('aria-selected',String(constructorTab===id));
+    btn.onclick=()=>{constructorTab=id;render();};
+    bar.appendChild(btn);
+  });
+  const title=document.createElement('div');
+  title.className='constructor-heading';
+  title.innerHTML='<h1>Конструктор</h1><p class="muted">От идеи до готовой публикации — всё в одном месте.</p>';
+  m.prepend(bar);
+  m.prepend(title);
 }
 
 async function load(manual=false){
