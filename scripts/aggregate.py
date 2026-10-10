@@ -14,6 +14,7 @@ from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from html import unescape
+from html.parser import HTMLParser
 
 OUT = Path(__file__).resolve().parents[1] / "news.json"
 SOURCES_FILE = OUT.with_name("sources.json")
@@ -79,6 +80,77 @@ def entry_value(entry, *tags):
                 return node.text.strip()
     return ""
 
+class ArticleLinks(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+        self.href = None
+        self.parts = []
+    def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            self.href = dict(attrs).get("href")
+            self.parts = []
+    def handle_data(self, data):
+        if self.href is not None:
+            self.parts.append(data)
+    def handle_endtag(self, tag):
+        if tag == "a" and self.href:
+            title = clean(" ".join(self.parts))
+            if len(title) >= 22:
+                self.links.append((self.href, title))
+            self.href = None
+            self.parts = []
+
+def html_fallback(name, category, site):
+    """Use publisher pages when RSS is absent; never fabricate dates."""
+    body, final_url = fetch(site)
+    page = body.decode("utf-8", "ignore")
+    parser = ArticleLinks()
+    parser.feed(page)
+    host = urllib.parse.urlparse(site).netloc.removeprefix("www.")
+    candidates = []
+    seen = set()
+    for href, title in parser.links:
+        link = urllib.parse.urljoin(final_url, href)
+        parsed = urllib.parse.urlparse(link)
+        if parsed.netloc.removeprefix("www.") != host or link in seen:
+            continue
+        if name == "The Flow":
+            if not re.search(r"/(?:news|features|videos|releases|albums|clips)/[^/?#]+", parsed.path):
+                continue
+        elif name == "98mag":
+            if len([x for x in parsed.path.split("/") if x]) < 1 or re.search(r"/(?:category|tag|author|page)/", parsed.path):
+                continue
+        seen.add(link)
+        candidates.append((link, title))
+        if len(candidates) >= 28:
+            break
+    output = []
+    for link, title in candidates:
+        try:
+            article, _ = fetch(link)
+            html = article.decode("utf-8", "ignore")
+            match = re.search(r'<meta[^>]+(?:property|name)=["\\'](?:article:published_time|datePublished|pubdate)["\\'][^>]+content=["\\']([^"\\']+)', html, re.I)
+            if not match:
+                match = re.search(r'"datePublished"\\s*:\\s*"([^"]+)"', html)
+            if not match:
+                continue
+            published = parse_date(match.group(1))
+            if not published or published > NOW + timedelta(minutes=10):
+                continue
+            uid = "rss" + hashlib.sha256(link.encode()).hexdigest()[:16]
+            output.append({
+                "id": uid, "category": category, "title": title,
+                "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+                "source": name, "url": link, "date": published.strftime("%d.%m.%Y"),
+                "published_at": published.isoformat()
+            })
+            if len(output) >= 12:
+                break
+        except Exception:
+            continue
+    return output
+
 def collect(source):
     name, category, site, explicit = source
     errors = []
@@ -111,6 +183,12 @@ def collect(source):
             return name, output, None
         except Exception as exc:
             errors.append(str(exc)[:90])
+    try:
+        fallback = html_fallback(name, category, site)
+        if fallback:
+            return name, fallback, None
+    except Exception as exc:
+        errors.append("HTML: " + str(exc)[:90])
     return name, [], "; ".join(errors[-2:]) or "Feed unavailable"
 
 def main():
