@@ -447,6 +447,70 @@ input,textarea,select{background:rgba(255,255,255,.74);border-color:rgba(145,145
 @media(prefers-reduced-motion:reduce){
   .btn,.card,nav button,.news-edge-arrow{transition:none}
 }
+
+/* Dopamine Editorial: bold typography, tactile controls, energetic details */
+:root{--daw-pop:#B30012;--daw-ink:#333333;--daw-paper:#e8e8e8}
+body{
+ background:
+ radial-gradient(circle at 94% 10%,rgba(179,0,18,.17) 0 8%,transparent 24%),
+ radial-gradient(circle at 2% 88%,rgba(179,0,18,.09),transparent 32%),
+ repeating-linear-gradient(135deg,rgba(51,51,51,.015) 0 1px,transparent 1px 19px),
+ #e8e8e8;
+ background-attachment:fixed;
+}
+header{height:82px;border-bottom:2px solid #333333;background:rgba(255,255,255,.74)}
+.logo{font-size:27px;letter-spacing:-2px;transform:rotate(-1deg);display:inline-block}
+.logo::first-letter{color:#B30012}
+.logo span{font-size:10px;letter-spacing:2.2px;transform:rotate(1deg);display:inline-block}
+.pill{background:#B30012!important;color:#fff!important;border:2px solid #333!important;border-radius:999px;box-shadow:3px 3px 0 #333;letter-spacing:.06em}
+.app{min-height:calc(100vh - 82px)}
+nav{background:rgba(255,255,255,.55);border-right:2px solid rgba(51,51,51,.65)}
+nav button{font-weight:700;border-radius:14px;transition:transform .16s,background .16s,box-shadow .16s}
+nav button:hover{transform:translateX(3px)}
+nav button.active,nav button.active:hover{
+ background:#B30012;color:#fff;border-left:0;box-shadow:4px 4px 0 #333;transform:translate(-2px,-2px)
+}
+nav .small{color:#B30012;font-weight:900;letter-spacing:2.5px}
+h1{font-weight:900;letter-spacing:-2.7px;line-height:1.04}
+h1::after{content:"";display:block;width:54px;height:7px;background:#B30012;border-radius:20px;margin-top:13px;transform:rotate(-3deg)}
+h2{font-weight:900;letter-spacing:-.7px}
+.card{
+ background:rgba(255,255,255,.78);border:2px solid rgba(51,51,51,.85);
+ border-radius:22px;box-shadow:5px 6px 0 rgba(51,51,51,.86);
+ backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);
+ transition:transform .17s ease,box-shadow .17s ease,border-color .17s ease
+}
+.card:hover{transform:translateY(-3px);box-shadow:6px 9px 0 rgba(51,51,51,.88);border-color:#333}
+.card h3{font-weight:850;letter-spacing:-.6px}
+.btn{
+ border:2px solid #333;border-radius:12px;background:#fff;color:#333;
+ font-weight:850;box-shadow:3px 3px 0 #333;transition:transform .14s,box-shadow .14s,background .14s
+}
+.btn:not(.primary){background:rgba(255,255,255,.9);border-color:#333;box-shadow:3px 3px 0 #333}
+.btn:hover:not(:disabled),.btn:not(.primary):hover:not(:disabled){transform:translate(-1px,-1px);box-shadow:4px 4px 0 #333;background:#fff}
+.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 1px 0 #333}
+.btn.primary{background:#B30012;color:#fff;border-color:#333;box-shadow:3px 3px 0 #333}
+.btn.primary:hover:not(:disabled){background:#ce1428;color:#fff;border-color:#333;box-shadow:4px 4px 0 #333}
+.tag{
+ display:inline-block;align-self:flex-start;background:#B30012;color:#fff;
+ border-radius:7px;padding:5px 8px;letter-spacing:.09em;font-weight:900;transform:rotate(-2deg)
+}
+.news-card:nth-child(3n+2) .tag{transform:rotate(2deg)}
+.news-card:nth-child(3n+3) .tag{background:#333;transform:rotate(-1deg)}
+.news-edge-arrow{border:2px solid #333;border-radius:14px;background:#fff;box-shadow:3px 3px 0 #333}
+.news-edge-arrow:hover:not(:disabled){background:#B30012;color:#fff;border-color:#333}
+.news-page-numbers .selected{color:#B30012;font-weight:900}
+input,textarea,select{border:2px solid #a6a6a6;border-radius:12px;background:rgba(255,255,255,.9)}
+input:focus,textarea:focus,select:focus{border-color:#B30012;box-shadow:0 0 0 3px rgba(179,0,18,.1)}
+.design-stage{border:2px solid #333;border-radius:22px;box-shadow:5px 6px 0 #333;background:rgba(255,255,255,.53)}
+.banner{border:2px solid #333;border-radius:16px}
+@media(max-width:670px){
+ header{height:70px}.app{min-height:calc(100vh - 70px)}
+ .logo{font-size:24px}nav{border-right:0;border-bottom:2px solid #333}
+ .card{box-shadow:3px 4px 0 rgba(51,51,51,.8)}
+ h1{letter-spacing:-1.6px}
+}
+@media(prefers-reduced-motion:reduce){.card,.btn,nav button{transition:none}}
 </style>
 </head>
 <body>
