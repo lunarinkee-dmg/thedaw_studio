@@ -1303,14 +1303,9 @@ function renderDesign(){
           ↓ Скачать PNG
         </button>
 
-        <div class="design-export-actions" style="display:flex;gap:8px;align-items:stretch;flex-wrap:wrap">
-          <button class="btn primary" id="designInstagramOpen" type="button" title="Открыть Instagram для ручной публикации" style="flex:1;min-width:130px">
-            ↗ Instagram
-          </button>
-          <button class="btn primary" id="designExportVideo" style="flex:1;min-width:130px">
-            🎬 Скачать MP4
-          </button>
-        </div>
+        <button class="btn primary" id="designExportVideo">
+          🎬 Скачать MP4
+        </button>
 
         <label>Подпись для Instagram Reels</label>
         <textarea id="designInstagramCaption"
@@ -1328,7 +1323,8 @@ function renderDesign(){
 
       </div>
 
-      <div class="design-stage">
+      <div class="design-stage" style="position:relative">
+        <button class="btn primary" id="designInstagramOpen" type="button" title="Открыть Instagram" style="position:absolute;left:12px;top:16px;z-index:2;padding:10px 12px;font-size:12px">↗ Instagram</button>
         <canvas id="designCanvas"
           width="1080" height="1920"></canvas>
       </div>
