@@ -345,7 +345,7 @@ label{
   <button data-view="design">◈ &nbsp; Дизайн</button>
   <button data-view="publish">↗ &nbsp; Публикация</button>
   <div class="small">SYSTEM</div>
-  <button data-view="settings">⚙ &nbsp; Подключения</button>
+  <button data-view="settings">⚙ &nbsp; Настройки</button>
 </nav>
 <main id="main"></main>
 </div>
@@ -597,7 +597,7 @@ function render(){
         '<h3>'+esc(d.headline)+'</h3>'+
         '<div class="actions">'+
         '<button class="btn primary" data-ai="'+
-        esc(d.id)+'">✨ Написать с AI</button>'+
+        esc(d.id)+'">✎ Подготовить текст</button>'+
         '<a class="btn" href="https://www.canva.com/design/DAHXQ4rCB5s/erMvoEWYI_CoRN9gxyI7LQ/edit" '+
         'target="_blank" rel="noopener noreferrer">'+
         '◈ Открыть шаблон Canva ↗</a>'+
@@ -652,32 +652,15 @@ function render(){
     };
 
   } else if(view==='settings'){
-
-    m.innerHTML=
-      '<h1>Подключения</h1>'+
-      '<div class="card">'+
-      '<h3>AI-копирайтер</h3>'+
-      '<p class="muted">Укажи адрес Cloudflare Worker и пароль доступа. '+
-      'Пароль хранится только до закрытия вкладки.</p>'+
-      '<label>Worker URL</label>'+
-      '<input id="workerUrl" placeholder="https://...workers.dev" value="'+
-      esc(localStorage.getItem('daw_worker_url')||'')+'">'+
-      '<label>Пароль</label>'+
-      '<input id="workerPassword" type="password" '+
-      'placeholder="Пароль из Cloudflare">'+
-      '<button class="btn primary" id="saveAI">'+
-      'Сохранить настройки AI</button></div>';
-
-    m.querySelector('#saveAI').onclick=()=>{
-      localStorage.setItem(
-        'daw_worker_url',
-        m.querySelector('#workerUrl').value.trim()
-      );
-      sessionStorage.setItem(
-        'daw_ai_password',
-        m.querySelector('#workerPassword').value
-      );
-      alert('Настройки AI сохранены для этой вкладки');
+    m.innerHTML='<h1>Настройки</h1><div class="card"><h3>Версия без Cloudflare</h3>'+
+      '<p class="muted">Новости обновляются через GitHub Actions. Черновики хранятся в этом браузере. '+
+      'Для публикации скачай PNG или MP4 и загрузи в Instagram вручную.</p>'+
+      '<button class="btn primary" id="exportDrafts">Скачать копию черновиков</button></div>';
+    m.querySelector('#exportDrafts').onclick=()=>{
+      const blob=new Blob([JSON.stringify({drafts:data.drafts,media:data.media},null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');a.href=url;a.download='thedaw-drafts-backup.json';a.click();
+      setTimeout(()=>URL.revokeObjectURL(url),1000);
     };
 
   } else {
@@ -724,62 +707,13 @@ async function load(manual=false){
   }
 }
 
-async function generateAI(id){
+function generateAI(id){
   const d=data.drafts.find(x=>x.id===id);
   if(!d)return;
-
-  const url=(
-    localStorage.getItem('daw_worker_url')||''
-  ).trim();
-
-  const password=
-    sessionStorage.getItem('daw_ai_password')||'';
-
-  if(!url||!password){
-    alert('Сначала открой «Подключения» и введи Worker URL и пароль');
-    go('settings');
-    return;
-  }
-
-  const el=document.getElementById('status-'+id);
-  if(el)el.textContent='AI готовит текст…';
-
-  try{
-    const r=await fetch(
-      url.replace(/\/$/,'')+'/generate',
-      {
-        method:'POST',
-        headers:{
-          'Content-Type':'application/json',
-          'X-Studio-Key':password
-        },
-        body:JSON.stringify({
-          title:d.sourceTitle||d.headline,
-          summary:d.sourceSummary||'',
-          source:d.sourceName||'',
-          url:d.sourceUrl||'',
-          category:d.category||''
-        })
-      }
-    );
-
-    const obj=await r.json();
-
-    if(!r.ok){
-      throw Error(obj.error||'HTTP '+r.status);
-    }
-
-    d.headline=obj.headline||d.headline;
-    d.caption=obj.instagram||d.caption;
-    d.tiktok=obj.tiktok||d.tiktok;
-
-    save();
-    render();
-
-  }catch(e){
-    const msg=document.getElementById('status-'+id);
-    if(msg)msg.textContent='Ошибка: '+e.message;
-  }
+  const title=d.headline||d.sourceTitle||'';
+  d.caption=title+'\\n\\n'+(d.sourceSummary||'')+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
+  d.tiktok=title;
+  save();render();
 }
 
 render();
@@ -813,7 +747,7 @@ let designMusic=null;
 let designLogo=null;
 let designRecording=false;
 let designCancelExport=null;
-let designPublishMode=null;
+
 
 try{
   Object.assign(
@@ -1108,8 +1042,6 @@ function renderDesign(){
         <textarea id="designInstagramCaption"
           rows="4"
           placeholder="Текст публикации"></textarea>
-
-        <button class="btn primary" id="designPublishInstagram">
           ◎ Опубликовать Reels в Instagram
         </button>
 
@@ -1380,91 +1312,11 @@ function renderDesign(){
     else if(file.type.startsWith('image/')){if(designVideo){designVideo.pause();URL.revokeObjectURL(designVideo.src);designVideo=null;}handleDesignImage(e);}
     else document.getElementById('designNotice').textContent='Выбери фото или видео';
   };
-  // INSTAGRAM API
-
-  async function designInstagramCall(
-    mode,
-    route,
-    body,
-    video=false
-  ){
-    const headers={
-      'X-Studio-Key':mode.studio,
-      'Content-Type':video?'video/mp4':'application/json'
-    };
-
-    if(!video){
-      headers['X-Publish-Key']=mode.publishKey;
-    }
-
-    const response=await fetch(
-      mode.worker.replace(/\/$/,'')+route,
-      {
-        method:'POST',
-        headers,
-        body:video?body:JSON.stringify(body)
-      }
-    );
-
-    const result=await response.json().catch(()=>({}));
-
-    if(!response.ok||result.ok===false){
-      throw new Error(
-        result.error||'HTTP '+response.status
-      );
-    }
-
-    return result;
-  }
-
-  document.getElementById('designPublishInstagram').onclick=()=>{
-    if(designRecording)return;
-
-    const worker=(
-      localStorage.getItem('daw_worker_url')||''
-    ).trim();
-
-    const studio=sessionStorage.getItem('daw_ai_password');
-
-    if(!worker||!studio){
-      alert(
-        'Сначала укажи Worker URL и пароль '+
-        'во вкладке «Подключения».'
-      );
-      return;
-    }
-
-    const publishKey=prompt(
-      'Введи отдельный пароль публикации INSTAGRAM_PUBLISH_KEY:'
-    );
-
-    if(!publishKey)return;
-
-    if(!confirm(
-      'Опубликовать Reels в @thedaw.mag? '+
-      'После обработки ролик станет публичным.'
-    ))return;
-
-    designPublishMode={
-      worker,
-      studio,
-      publishKey,
-      caption:document.getElementById(
-        'designInstagramCaption'
-      ).value
-    };
-
-    document.getElementById('designExportVideo').click();
-  };
-
   document.getElementById('designExportVideo').onclick=async()=>{
     const notice=document.getElementById('designNotice');
     const btn=document.getElementById('designExportVideo');
     const cancelBtn=document.getElementById('designCancelVideo');
-    const publishBtn=document.getElementById('designPublishInstagram');
 
-    const publishMode=designPublishMode;
-    designPublishMode=null;
 
     if(designRecording)return;
 
@@ -1519,7 +1371,6 @@ function renderDesign(){
     try{
       designRecording=true;
       btn.disabled=true;
-      publishBtn.disabled=true;
       cancelBtn.style.display='';
       cancelBtn.disabled=false;
 
@@ -1646,87 +1497,6 @@ function renderDesign(){
         {type:mime}
       );
 
-      if(publishMode){
-        if(blob.size>50*1024*1024){
-          throw Error('Видео больше 50 МБ.');
-        }
-
-        notice.textContent='Загружаем видео в R2…';
-
-        const uploaded=await designInstagramCall(
-          publishMode,
-          '/instagram/upload',
-          blob,
-          true
-        );
-
-        notice.textContent=
-          'Instagram обрабатывает Reels…';
-
-        const prepared=await designInstagramCall(
-          publishMode,
-          '/instagram/prepare',
-          {
-            key:uploaded.key,
-            caption:publishMode.caption
-          }
-        );
-
-        let ready=false;
-
-        for(let attempt=0;attempt<30;attempt++){
-          await new Promise(
-            resolve=>setTimeout(resolve,5000)
-          );
-
-          const status=await designInstagramCall(
-            publishMode,
-            '/instagram/status',
-            {creation_id:prepared.creation_id}
-          );
-
-          if(status.ready){
-            ready=true;
-            break;
-          }
-
-          if(
-            ['ERROR','EXPIRED'].includes(status.status)
-          ){
-            throw Error(
-              'Instagram отклонил видео: '+
-              (status.details||status.status)
-            );
-          }
-
-          notice.textContent=
-            'Instagram обрабатывает Reels… '+
-            (attempt+1)*5+' сек.';
-        }
-
-        if(!ready){
-          throw Error(
-            'Instagram не закончил обработку за 150 секунд. '+
-            'Публикация не выполнена.'
-          );
-        }
-
-        notice.textContent='Публикуем Reels…';
-
-        const published=await designInstagramCall(
-          publishMode,
-          '/instagram/publish',
-          {
-            creation_id:prepared.creation_id,
-            confirm:true
-          }
-        );
-
-        notice.textContent=
-          '✓ Reels опубликован в Instagram! ID: '+
-          published.media_id;
-
-      }else{
         const url=URL.createObjectURL(blob);
         const link=document.createElement('a');
 
@@ -1741,8 +1511,6 @@ function renderDesign(){
 
         notice.textContent=
           'Видео готово! MP4 сохранён со звуком, если он был добавлен.';
-      }
-
     }catch(err){
       notice.textContent=cancelled
         ?'Экспорт отменён.'
@@ -1756,7 +1524,6 @@ function renderDesign(){
       designCancelExport=null;
 
       btn.disabled=false;
-      publishBtn.disabled=false;
       cancelBtn.style.display='none';
       cancelBtn.onclick=null;
 
