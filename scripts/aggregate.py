@@ -95,7 +95,7 @@ def collect(source):
                 title = clean(entry_value(entry, "title", ATOM + "title"))
                 link = entry_value(entry, "link", ATOM + "link")
                 published = parse_date(entry_value(entry, "pubDate", "date", ATOM + "published", ATOM + "updated", "{http://purl.org/dc/elements/1.1/}date"))
-                if not title or not link or not published or not NOW - timedelta(hours=48) <= published <= NOW + timedelta(minutes=10):
+                if not title or not link or not published or not NOW - timedelta(minutes=30) <= published <= NOW + timedelta(minutes=10):
                     continue
                 if re.search(r"\b(russia|russian|moscow|kremlin)\b|росси[яий]|москв", title, re.I):
                     continue
