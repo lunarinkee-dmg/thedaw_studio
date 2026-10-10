@@ -300,7 +300,7 @@ CONTENT = "{http://purl.org/rss/1.0/modules/content/}"
 USER_AGENT = "Mozilla/5.0 (compatible; theDAWStudio/0.4; news aggregator)"
 
 def clean(value):
-    return re.sub(r"\\s+", " ", unescape(re.sub(r"<[^>]+>", " ", value or ""))).strip()
+    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", value or ""))).strip()
 
 def parse_date(value):
     if not value:
@@ -325,9 +325,9 @@ def feed_candidates(site, explicit):
     try:
         body, final_url = fetch(site)
         head = body[:180_000].decode("utf-8", "ignore")
-        for tag in re.findall(r"<link\\b[^>]*>", head, flags=re.I):
-            if re.search(r'type\\s*=\\s*["\\\']application/(?:rss|atom)\\+xml', tag, re.I):
-                match = re.search(r'href\\s*=\\s*["\\\']([^"\\\']+)', tag, re.I)
+        for tag in re.findall(r"<link\b[^>]*>", head, flags=re.I):
+            if re.search(r'type\s*=\s*["\\']application/(?:rss|atom)\+xml', tag, re.I):
+                match = re.search(r'href\s*=\s*["\\']([^"\\']+)', tag, re.I)
                 if match:
                     candidates.append(urllib.parse.urljoin(final_url, unescape(match.group(1))))
     except Exception:
@@ -364,7 +364,7 @@ def collect(source):
                 published = parse_date(entry_value(entry, "pubDate", "date", ATOM + "published", ATOM + "updated", "{http://purl.org/dc/elements/1.1/}date"))
                 if not title or not link or not published or not NOW - timedelta(hours=48) <= published <= NOW + timedelta(minutes=10):
                     continue
-                if re.search(r"\\b(russia|russian|moscow|kremlin)\\b|росси[яий]|москв", title, re.I):
+                if re.search(r"\b(russia|russian|moscow|kremlin)\b|росси[яий]|москв", title, re.I):
                     continue
                 link = urllib.parse.urljoin(feed_url, link)
                 summary = clean(entry_value(entry, "description", ATOM + "summary", CONTENT + "encoded"))[:350]
