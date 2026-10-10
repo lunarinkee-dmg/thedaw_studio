@@ -667,13 +667,13 @@ async function showSourcesManager(){
  const m=document.getElementById('main');
  m.innerHTML='<h1>Источники новостей</h1><p class="muted">Добавляйте и управляйте сайтами прямо здесь. Для записи изменений требуется доступ GitHub.</p><p id="sourceStatus" class="muted">Загрузка…</p><div class="card"><label>GitHub fine-grained token (Contents: Read and write)</label><input id="sourceToken" type="password" autocomplete="off" placeholder="github_pat_…"><button class="btn" id="sourceConnect">Подключить GitHub</button><p class="muted">Токен действует только в открытой вкладке, не сохраняется в браузере. Никому его не передавайте.</p><label>URL сайта</label><input id="sourceUrl" type="url" placeholder="https://example.com"><label>Категория</label><select id="sourceCategory"><option>Казахстан / ЦА</option><option>Музыка</option><option>Кино / сериалы</option><option>Искусство / культура</option><option>ИИ</option><option>Азия</option></select><div class="actions"><button class="btn primary" id="sourceAdd">+ Добавить</button><button class="btn" id="sourceSave">Сохранить изменения</button><button class="btn" id="sourceBack">← Новости</button></div></div><div id="sourceList"></div>';
  document.getElementById('sourceBack').onclick=render;
- document.getElementById('sourceConnect').onclick=()=>{sourceToken=document.getElementById('sourceToken').value.trim();document.getElementById('sourceToken').value='';document.getElementById('sourceStatus').textContent=sourceToken?'GitHub подключён. Теперь изменения можно сохранять.':'Введите токен GitHub.';};
- document.getElementById('sourceSave').onclick=saveSources;
+ document.getElementById('sourceConnect').onclick=()=>{sourceToken=document.getElementById('sourceToken').value.trim();document.getElementById('sourceToken').value='';document.getElementById('sourceStatus').textContent=sourceToken?'Токен введён. Нажмите «Сохранить изменения», чтобы проверить доступ.':'Введите токен GitHub.';};
+ document.getElementById('sourceSave').onclick=async()=>{const btn=document.getElementById('sourceSave');btn.disabled=true;try{await saveSources();}finally{btn.disabled=false;}};
  document.getElementById('sourceAdd').onclick=()=>{
   let url;try{url=new URL(document.getElementById('sourceUrl').value.trim());if(!['http:','https:'].includes(url.protocol))throw Error();}catch{alert('Введите корректный URL с https://');return;}
   if(sourceEditor.some(s=>s.url===url.href)){alert('Сайт уже добавлен');return;}
   sourceEditor.push({name:url.hostname,url:url.href,category:document.getElementById('sourceCategory').value,enabled:true});
-  document.getElementById('sourceUrl').value='';drawSourceList();saveSources();
+  document.getElementById('sourceUrl').value='';drawSourceList();document.getElementById('sourceStatus').textContent='Источник добавлен в список. Нажмите «Сохранить изменения».';
  };
  try{
   const response=await fetch('sources.json?ts='+Date.now(),{cache:'no-store'});
@@ -693,8 +693,8 @@ function drawSourceList(){
   const name=document.createElement('strong');name.textContent=s.name||s.url;
   const detail=document.createElement('p');detail.className='muted';detail.textContent=(s.category||'Другое')+' · '+s.url;
   label.append(name,detail);
-  const toggle=document.createElement('input');toggle.type='checkbox';toggle.checked=s.enabled!==false;toggle.title='Включить источник';toggle.onchange=()=>{s.enabled=toggle.checked;saveSources();};
-  const remove=document.createElement('button');remove.className='btn';remove.textContent='Удалить';remove.onclick=()=>{sourceEditor.splice(i,1);drawSourceList();saveSources();};
+  const toggle=document.createElement('input');toggle.type='checkbox';toggle.checked=s.enabled!==false;toggle.title='Включить источник';toggle.onchange=()=>{s.enabled=toggle.checked;document.getElementById('sourceStatus').textContent='Изменения не сохранены. Нажмите «Сохранить изменения».';};
+  const remove=document.createElement('button');remove.className='btn';remove.textContent='Удалить';remove.onclick=()=>{sourceEditor.splice(i,1);drawSourceList();document.getElementById('sourceStatus').textContent='Источник удалён из списка. Нажмите «Сохранить изменения».';};
   row.append(label,toggle,remove);box.append(row);
  });
 }
