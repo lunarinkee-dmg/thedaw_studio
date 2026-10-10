@@ -1,0 +1,14 @@
+[
+  {
+    "name": "The Flow",
+    "url": "https://the-flow.ru/",
+    "category": "Музыка",
+    "enabled": true
+  },
+  {
+    "name": "98mag",
+    "url": "https://www.98mag.kz/",
+    "category": "Казахстан / ЦА",
+    "enabled": true
+  }
+]
