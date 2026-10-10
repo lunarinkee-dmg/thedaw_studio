@@ -130,7 +130,7 @@ def html_fallback(name, category, site):
         try:
             article, _ = fetch(link)
             html = article.decode("utf-8", "ignore")
-            match = re.search(r'<meta[^>]+(?:property|name)=["\\'](?:article:published_time|datePublished|pubdate)["\\'][^>]+content=["\\']([^"\\']+)', html, re.I)
+            match = re.search(r"<meta[^>]+(?:property|name)=[\\x22\\x27](?:article:published_time|datePublished|pubdate)[\\x22\\x27][^>]+content=[\\x22\\x27]([^\\x22\\x27]+)", html, re.I)
             if not match:
                 match = re.search(r'"datePublished"\\s*:\\s*"([^"]+)"', html)
             if not match:
