@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#333333">
+<meta name="theme-color" content="#e8e8e8">
 <title>theDĀW Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -354,6 +354,40 @@ input:focus,textarea:focus,select:focus{border-color:#c84a58}
 /* Scroll design settings separately from preview */
 @media(min-width:801px){.design-layout{align-items:start}.design-form{max-height:calc(100vh - 185px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#777777 #3c3c3c}.design-stage{position:sticky;top:18px;max-height:calc(100vh - 110px);overflow:hidden}.design-stage canvas{max-height:calc(100vh - 145px);width:auto;max-width:100%;height:auto}}
 .design-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:11px 0;margin:4px 0}.design-toggle-row input{width:43px;height:23px;accent-color:#e8e8e8;cursor:pointer}
+
+/* Light editorial palette: inverted base and text */
+:root{--daw-base:#e8e8e8;--daw-light:#333333;color:#333333;background:#e8e8e8;color-scheme:light}
+body{background:#e8e8e8;color:#333333}
+header,nav{background:#e8e8e8;border-color:#c7c7c7}
+.logo{color:#333333}
+.logo span{color:#686868}
+.pill{background:#f7f7f7;color:#333333;border-color:#B30012}
+nav button{color:#4d4d4d}
+nav button:hover{background:#d8d8d8;color:#333333}
+nav button.active,nav button.active:hover{background:#f5dfe2;color:#333333;border-left-color:#B30012}
+nav .small,.muted,.meta,.news-page-ellipsis{color:#656565}
+a{color:#8d0010}
+.btn{background:#f8f8f8;color:#333333;border-color:#c0c0c0}
+.btn:hover:not(:disabled){background:#dedede}
+.btn.primary{background:#B30012;color:#ffffff;border-color:#B30012}
+.btn.primary:hover:not(:disabled){background:#ce1227;color:#ffffff;border-color:#ce1227}
+.card{background:#f8f8f8;border-color:#d0d0d0;color:#333333}
+.card:hover{border-color:#adadad}
+input,textarea,select{background:#ffffff;color:#333333;border-color:#c4c4c4}
+label{color:#454545}
+.tag,.news-page-numbers .selected{color:#B30012}
+.news-page-numbers .btn{color:#626262}
+.news-page-numbers .selected{color:#B30012}
+.news-edge-arrow{background:#f8f8f8;color:#333333;border-color:#c7c7c7}
+.news-edge-arrow:hover:not(:disabled){color:#B30012;border-color:#B30012}
+.design-stage{background:#d6d6d6}
+.banner{background:#f5f5f5;border-color:#c8c8c8;color:#333333}
+.danger{background:#fbe9eb;border-color:#c97780;color:#8d0010}
+::selection{background:#B30012;color:#ffffff}
+:focus-visible{outline-color:#B30012}
+input:focus,textarea:focus,select:focus{border-color:#B30012}
+@media(max-width:670px){nav{border-bottom-color:#c7c7c7}}
+@media(min-width:801px){.design-form{scrollbar-color:#b7b7b7 #e8e8e8}}
 </style>
 </head>
 <body>
