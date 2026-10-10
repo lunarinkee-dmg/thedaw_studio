@@ -495,12 +495,71 @@ header{color:#333333}
 .news-card,.source-row{background:linear-gradient(145deg,rgba(255,255,255,.68),rgba(255,255,255,.32));border:1px solid rgba(255,255,255,.82);box-shadow:0 12px 34px rgba(45,45,45,.085),inset 0 1px 0 rgba(255,255,255,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
 .btn.primary,.constructor-tab.active{background:#B30012;color:#fff;border-color:#B30012}
 .tag,.news-page-numbers .selected{color:#B30012}
+
+/* theDĀW 2026 — screenshot-inspired editorial workspace */
+:root{font-family:Arial,Helvetica,sans-serif;--daw-red:#bb0018}
+body{background:radial-gradient(ellipse 42% 60% at 91% 34%,rgba(179,0,25,.52),transparent 80%),radial-gradient(ellipse 45% 54% at 9% 84%,rgba(226,100,117,.36),transparent 80%),linear-gradient(112deg,#f8f8f8 3%,#ededed 47%,#f4e9eb 100%);background-attachment:fixed}
+body:before{content:"";display:block;height:56px;background:linear-gradient(105deg,#746b6b,#8f353f)}
+header{height:185px;min-height:185px;background:transparent;border:0;box-shadow:none;padding:28px 4.5%;align-items:flex-start}
+.logo{font-family:Montserrat,Arial,sans-serif;color:#b50018;font-weight:900;font-size:29px;letter-spacing:-2px;max-width:90px;line-height:.88;transform:scaleY(1.32);transform-origin:top left}
+.logo span{display:none}
+header>.pill{display:none}
+.section-switch{top:60%;gap:13px}
+.section-switch-main{height:60px;min-width:174px;border-radius:40px;font-size:13px;font-weight:500;text-transform:uppercase}
+.section-switch-icon{height:43px;width:43px;border-radius:50%;border:1px solid #c81c37!important;color:#b50018!important;background:rgba(244,209,214,.54)!important;font-size:24px;box-shadow:0 2px 3px #0002!important}
+.section-switch button{box-shadow:0 2px 5px #0002,inset 0 1px 2px #fff!important;border:1px solid #e0e0e0}
+.app{min-height:calc(100vh - 241px)}
+main{max-width:none;padding:30px 2.65% 65px}
+.btn,.pill,input,textarea,select{border-radius:28px}
+.btn:not(.primary),input,textarea,select{box-shadow:inset 0 1px 3px #0002,0 2px 2px #0001}
+.btn.primary{border-radius:30px;background:#b90018;border-color:#b90018;box-shadow:0 2px 3px #0004}
+.card{border-radius:30px;border:1px solid #dedede;box-shadow:2px 3px 3px #0002,inset 0 1px 0 #fff;background:rgba(255,255,255,.66)}
+.news-view{max-width:630px;margin:50px auto 0}
+.news-heading{justify-content:flex-end;align-items:center;margin:0 0 12px}
+.news-heading>div{display:none}
+.news-heading #sourcesManage{font-size:11px;padding:6px 21px}
+.news-heading #newsRefresh{font-size:11px;padding:6px 17px}
+.news-carousel{display:block;position:relative}
+.news-grid{display:block;position:relative;min-height:305px}
+.news-card{position:relative;min-height:305px;padding:28px 30px 60px;border-radius:35px;background:rgba(255,255,255,.90)}
+.news-card:not(:first-child){display:none}
+.news-card:first-child:before,.news-card:first-child:after{content:"";position:absolute;left:2.5%;width:95%;height:16px;bottom:-15px;background:rgba(255,255,255,.91);border:1px solid #d5d5d5;border-radius:0 0 32px 32px;z-index:-1;box-shadow:0 2px 2px #0002}
+.news-card:first-child:after{left:5%;width:90%;bottom:-29px;z-index:-2}
+.news-card .actions{position:absolute;bottom:19px;right:23px;margin:0}
+.news-card .actions .btn{font-size:11px}
+.news-card .actions .btn.primary{font-size:12px}
+.news-edge-arrow{position:absolute;bottom:18px;z-index:2;border-radius:50%;height:34px;width:34px;font-size:26px}
+.news-edge-left{left:20px}.news-edge-right{left:60px}
+.news-pagination{margin-top:85px}
+.news-pagination:before{content:"очередь";position:absolute;margin-top:-68px;font-size:14px}
+.news-page-numbers .btn{border-radius:22px}
+.constructor-heading{display:none}
+.constructor-tabs{display:flex;justify-content:center;background:transparent;border:0;box-shadow:none;padding:0;margin:0 0 26px;gap:8px}
+.constructor-tab{border-radius:25px;border:1px solid #ddd;background:rgba(255,255,255,.7);box-shadow:0 2px 3px #0002;padding:9px 17px;font-weight:400;font-size:12px}
+.constructor-tab.active{background:#b90018;color:#fff}
+.daw-copy-layout{display:grid;grid-template-columns:minmax(320px,450px) minmax(0,1fr);gap:25px;align-items:start}
+.daw-copy-panel{padding:22px 28px 28px;min-height:620px}
+.daw-copy-panel h2{text-align:center;font-weight:400;font-size:23px;margin:4px 0 30px}
+.daw-copy-panel label{text-align:center;font-weight:400;font-size:16px;color:#222;margin:16px 0 5px}
+.daw-copy-panel textarea{min-height:210px;border-radius:35px;padding:18px}
+.daw-copy-panel input{height:45px}
+.daw-copy-panel .daw-generate{width:85%;display:block;margin:0 auto 25px}
+.daw-copy-panel .daw-transfer{display:block;margin:22px 0 0 auto}
+.daw-preview{min-height:620px;display:grid;grid-template-columns:1fr .8fr;overflow:hidden;border-radius:35px;background:rgba(255,255,255,.18);border:1px solid #ddd;box-shadow:0 2px 3px #0001}
+.daw-preview-left{background:rgba(255,255,255,.05);padding:25px;overflow-wrap:anywhere}
+.daw-preview-right{background:#fff;padding:25px;text-align:center;font-size:21px}
+.daw-preview-left h3{font-size:28px;font-weight:600;line-height:1.2}
+.daw-preview-left p{white-space:pre-wrap}
+.daw-choose{display:block;width:100%;margin:0 0 22px;border:1px solid #c21b31;border-radius:25px;padding:8px 18px;background:rgba(255,215,222,.56);color:#bd6c77;text-align:left}
+.daw-queue{position:absolute;right:3%;top:194px;text-align:center;font-size:14px}
+.daw-queue strong{display:block;min-width:160px;border:1px solid #fff;border-radius:30px;background:rgba(255,255,255,.2);padding:8px;margin-top:5px;font-weight:400;box-shadow:0 2px 3px #0002}
+@media(max-width:800px){header{height:165px;min-height:165px}.section-switch{top:65%}main{padding:20px 18px}.daw-copy-layout{grid-template-columns:1fr}.daw-preview{min-height:400px}.daw-copy-panel{min-height:0}.daw-queue{position:static;margin:0 0 18px}.constructor-tabs{justify-content:flex-start;overflow:auto}.news-view{margin-top:35px}}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">theDĀW<span>STUDIO / WORKSPACE</span></div>
+  <div class="logo" aria-label="theDĀW">the<br>DĀW<span>STUDIO / WORKSPACE</span></div>
   <div class="section-switch" role="group" aria-label="Переключение разделов">
     <button class="section-switch-main" id="sectionSwitchMain" type="button" aria-label="Переключить раздел">Новости</button>
     <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Перейти в конструктор">◈</button>
@@ -562,7 +621,7 @@ function updateSectionSwitch(){
   if(!main||!icon)return;
   const news=view==='inbox';
   main.textContent=news?'Новости':'Конструктор';
-  icon.textContent=news?'▦':'◈';
+  icon.textContent=news?'✦':'◇';
   const next=news?'конструктор':'новости';
   main.title='Перейти в '+next;
   icon.title='Перейти в '+next;
@@ -724,20 +783,14 @@ function render(){
       (a,b)=>newsTimestamp(b)-newsTimestamp(a)
     );
 
-    const pages=Math.max(
-      1,
-      Math.ceil(sorted.length/6)
-    );
+    const pages=Math.max(1,sorted.length);
 
     newsPage=Math.max(
       1,
       Math.min(newsPage,pages)
     );
 
-    const visible=sorted.slice(
-      (newsPage-1)*6,
-      newsPage*6
-    );
+    const visible=sorted.slice(newsPage-1,newsPage);
 
     m.innerHTML=
       '<section class="news-view">'+
@@ -802,7 +855,7 @@ function render(){
             return acc;
           },[]).join('')+
         '</div></div>':'')+
-      '</section>';
+      '<div class="daw-queue">очередь<strong>'+sorted.length+'/13</strong></div>'+ '</section>';
 
     m.querySelectorAll('[data-create]').forEach(
       b=>b.onclick=()=>create(b.dataset.create)
@@ -823,47 +876,27 @@ function render(){
     m.querySelector('#sourcesManage').onclick=showSourcesManager;
 
   } else if(section==='drafts'){
-
+    const selected=data.drafts.find(x=>x.id===current)||data.drafts[0];
+    if(selected)current=selected.id;
     m.innerHTML=
-      '<h1>Черновики</h1>'+
-      data.drafts.map(d=>
-        '<div class="card">'+
-        '<h3>'+esc(d.headline)+'</h3>'+
-        '<div class="actions">'+
-        '<button class="btn primary" data-ai="'+
-        esc(d.id)+'">✎ Подготовить текст</button>'+
-        '<a class="btn" href="https://www.canva.com/design/DAHXQ4rCB5s/erMvoEWYI_CoRN9gxyI7LQ/edit" '+
-        'target="_blank" rel="noopener noreferrer">'+
-        '◈ Открыть шаблон Canva ↗</a>'+
-        '</div>'+
-        '<p class="muted" id="status-'+esc(d.id)+'"></p>'+
-        '<label>Заголовок</label>'+
-        '<input data-id="'+esc(d.id)+
-        '" data-field="headline" value="'+esc(d.headline)+'">'+
-        '<label>Instagram</label>'+
-        '<textarea data-id="'+esc(d.id)+
-        '" data-field="caption" rows="6">'+
-        esc(d.caption)+'</textarea>'+
-        '<label>TikTok</label>'+
-        '<textarea data-id="'+esc(d.id)+
-        '" data-field="tiktok" rows="3">'+
-        esc(d.tiktok)+'</textarea></div>'
-      ).join('');
-
-    m.querySelectorAll('[data-ai]').forEach(
-      b=>b.onclick=()=>generateAI(b.dataset.ai)
-    );
-
-    m.querySelectorAll('[data-field]').forEach(el=>{
-      el.oninput=()=>{
-        let d=data.drafts.find(x=>x.id===el.dataset.id);
-        if(d){
-          d[el.dataset.field]=el.value;
-          save();
-        }
-      };
-    });
-
+      '<div class="daw-copy-layout"><section>'+
+      '<select class="daw-choose" id="dawChoose"><option value="">Выбрать новость</option>'+
+      data.drafts.map(d=>'<option value="'+esc(d.id)+'" '+(selected&&selected.id===d.id?'selected':'')+'>'+esc(d.headline||d.sourceTitle||'Черновик')+'</option>').join('')+
+      '</select><div class="card daw-copy-panel"><h2>[ AI copywriter ]</h2>'+
+      '<button class="btn primary daw-generate" id="dawGenerate">сгенерировать текст</button>'+
+      '<label>заголовок</label><input id="dawHeadline" placeholder="Заголовок" value="'+esc(selected?.headline||'')+'">'+
+      '<label>описание</label><textarea id="dawCaption" placeholder="Описание">'+esc(selected?.caption||'')+'</textarea>'+
+      '<button class="btn primary daw-transfer" id="dawTransfer">перенести в шаблон ⟶</button>'+
+      '<p class="muted mini" id="dawStatus"></p></div></section>'+
+      '<section class="daw-preview"><div class="daw-preview-left"><h3 id="dawPreviewTitle">'+esc(selected?.headline||'')+'</h3><p id="dawPreviewCaption">'+esc(selected?.caption||'')+'</p></div><div class="daw-preview-right">[ превью ]</div></section></div>';
+    m.querySelector('#dawChoose').onchange=e=>{current=e.target.value||null;render();};
+    m.querySelector('#dawHeadline').oninput=e=>{if(!current)return;update('headline',e.target.value);m.querySelector('#dawPreviewTitle').textContent=e.target.value;};
+    m.querySelector('#dawCaption').oninput=e=>{if(!current)return;update('caption',e.target.value);m.querySelector('#dawPreviewCaption').textContent=e.target.value;};
+    m.querySelector('#dawGenerate').onclick=()=>{if(current)generateAI(current);else m.querySelector('#dawStatus').textContent='Сначала выбери новость.';};
+    m.querySelector('#dawTransfer').onclick=()=>{
+      if(!current){m.querySelector('#dawStatus').textContent='Сначала выбери новость.';return;}
+      constructorTab='design';render();
+    };
   } else if(section==='media'){
 
     m.innerHTML=
