@@ -748,7 +748,7 @@ function render(){
       ' последних публикаций из The Flow и 98mag</p></div>'+
       '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
       (newsLoading?'disabled':'')+'>'+
-      (newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+
+      (newsLoading?'⏳ Проверяем источники…':'↻ Обновить новости')+
       '</button></div>'+
       (newsError?
         '<p class="banner danger">'+esc(newsError)+'</p>':'')+
@@ -942,30 +942,50 @@ function renderConstructorTabs(){
 
 async function load(manual=false){
   if(newsLoading)return;
-
   newsLoading=true;
   newsError='';
-
   if(view==='inbox')render();
-
   try{
-    const r=await fetch(
-      './news.json?v='+Date.now(),
-      {cache:'no-store'}
-    );
-
-    if(!r.ok)throw Error('HTTP '+r.status);
-
-    const n=await r.json();
-
-    if(!Array.isArray(n)){
-      throw Error('Неверный формат');
+    if(manual){
+      let token=sourceToken;
+      if(!token){
+        token=prompt('Чтобы проверить сайты прямо сейчас, нужен GitHub token с Actions: Read and write и Contents: Read. Токен используется только в этой вкладке:')||'';
+        token=token.trim();
+      }
+      if(!token)throw Error('Для запуска проверки нужен GitHub token. Без него доступно только автоматическое обновление.');
+      sourceToken=token;
+      const headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+      const base='https://api.github.com/repos/lunarinkee-dmg/thedaw_studio/actions/workflows/news.yml';
+      const started=Date.now();
+      const response=await fetch(base+'/dispatches',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({ref:'main'})});
+      if(!response.ok)throw Error('Не удалось запустить проверку (GitHub HTTP '+response.status+'). Проверьте права токена.');
+      let completed=false;
+      for(let attempt=0;attempt<24;attempt++){
+        await new Promise(resolve=>setTimeout(resolve,5000));
+        const runsResponse=await fetch(base+'/runs?event=workflow_dispatch&per_page=5&ts='+Date.now(),{headers,cache:'no-store'});
+        if(!runsResponse.ok)throw Error('Не удалось проверить выполнение GitHub Actions: HTTP '+runsResponse.status);
+        const runs=(await runsResponse.json()).workflow_runs||[];
+        const run=runs.find(x=>new Date(x.created_at).getTime()>=started-15000);
+        if(run&&run.status==='completed'){
+          if(run.conclusion!=='success')throw Error('Сборщик завершился с ошибкой. Проверьте GitHub Actions.');
+          completed=true;
+          break;
+        }
+      }
+      if(!completed)throw Error('Проверка ещё выполняется. Повторите обновление через минуту.');
     }
-
-    data.news=recentNews(n);
-
-    if(manual)newsPage=1;
-
+    const r=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw Error('HTTP '+r.status);
+    const n=await r.json();
+    if(!Array.isArray(n))throw Error('Неверный формат данных');
+    data.news=manual?n.filter(item=>{
+      const timestamp=Date.parse(item.published_at||'');
+      return Number.isFinite(timestamp)&&timestamp>=Date.now()-30*60*1000&&timestamp<=Date.now()+5*60*1000;
+    }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at)):recentNews(n);
+    if(manual){
+      newsPage=1;
+      if(!data.news.length)newsError='За последние 30 минут новых публикаций не найдено.';
+    }
   }catch(e){
     newsError='Не удалось обновить новости: '+e.message;
   }finally{
