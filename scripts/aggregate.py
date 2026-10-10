@@ -1,4 +1,4 @@
-"""Collect recent culture news from theDĀW's 46 approved sources.
+"""Collect recent culture news from theDĀW's 47 approved sources.
 
 RSS/Atom feeds are discovered automatically; sites without accessible feeds are
 reported in Actions logs and are not silently replaced by unrelated sources.
@@ -106,6 +106,12 @@ SOURCES = [
         "Казахстан / ЦА",
         "https://the-steppe.com/",
         "https://the-steppe.com/feed"
+    ],
+    [
+        "The Flow",
+        "Музыка",
+        "https://the-flow.ru/",
+        ""
     ],
     [
         "Billboard",
