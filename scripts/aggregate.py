@@ -326,8 +326,8 @@ def feed_candidates(site, explicit):
         body, final_url = fetch(site)
         head = body[:180_000].decode("utf-8", "ignore")
         for tag in re.findall(r"<link\b[^>]*>", head, flags=re.I):
-            if re.search(r'type\s*=\s*["\\']application/(?:rss|atom)\+xml', tag, re.I):
-                match = re.search(r'href\s*=\s*["\\']([^"\\']+)', tag, re.I)
+            if re.search(r"type\s*=\s*[\x22\x27]application/(?:rss|atom)\+xml", tag, re.I):
+                match = re.search(r"href\s*=\s*[\x22\x27]([^\x22\x27]+)", tag, re.I)
                 if match:
                     candidates.append(urllib.parse.urljoin(final_url, unescape(match.group(1))))
     except Exception:
