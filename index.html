@@ -642,12 +642,10 @@ function newsTimestamp(n){
 
 function recentNews(items){
   const now=Date.now();
-  const cutoff=now-90*24*60*60*1000;
 
   return items.filter(n=>{
     const t=newsTimestamp(n);
     return Number.isFinite(t) &&
-      t>=cutoff &&
       t<=now+5*60*1000;
   }).sort((a,b)=>newsTimestamp(b)-newsTimestamp(a)).slice(0,10);
 }
