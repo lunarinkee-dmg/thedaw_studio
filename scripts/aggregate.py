@@ -95,7 +95,7 @@ def collect(source):
                 title = clean(entry_value(entry, "title", ATOM + "title"))
                 link = entry_value(entry, "link", ATOM + "link")
                 published = parse_date(entry_value(entry, "pubDate", "date", ATOM + "published", ATOM + "updated", "{http://purl.org/dc/elements/1.1/}date"))
-                if not title or not link or not published or not NOW - timedelta(minutes=30) <= published <= NOW + timedelta(minutes=10):
+                if not title or not link or not published or not NOW - timedelta(days=90) <= published <= NOW + timedelta(minutes=10):
                     continue
                 if re.search(r"\b(russia|russian|moscow|kremlin)\b|росси[яий]|москв", title, re.I):
                     continue
@@ -132,10 +132,10 @@ def main():
     # Preserve recent items if a publisher's feed is temporarily unavailable.
     for uid, item in previous_by_id.items():
         published = parse_date(item.get("published_at", ""))
-        if published and published >= NOW - timedelta(hours=48) and uid not in items and (item.get("source") in ACTIVE_NAMES or urllib.parse.urlparse(item.get("url", "")).netloc.removeprefix("www.") in ACTIVE_HOSTS):
+        if published and published >= NOW - timedelta(days=90) and uid not in items and (item.get("source") in ACTIVE_NAMES or urllib.parse.urlparse(item.get("url", "")).netloc.removeprefix("www.") in ACTIVE_HOSTS):
             items[uid] = {key: value for key, value in item.items() if key not in ("title_ru", "summary_ru")}
     fresh = sorted(items.values(), key=lambda item: item["published_at"], reverse=True)
-    OUT.write_text(json.dumps(fresh[:150], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(fresh[:10], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Saved", len(fresh[:150]), "articles from", len(SOURCES), "configured sources")
 
 if __name__ == "__main__":
