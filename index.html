@@ -483,7 +483,7 @@ header{position:relative;display:flex;align-items:center;justify-content:space-b
  .logo{font-size:21px}
  .pill{font-size:9px;padding:6px 8px}
 }
-</style>
+.source-row{display:flex;align-items:center;gap:16px;margin-top:12px}.source-description{flex:1;min-width:0;overflow-wrap:anywhere}.source-description p{margin:5px 0}.source-row input[type=checkbox]{width:20px;height:20px}\n</style>
 </head>
 <body>
 
@@ -640,6 +640,45 @@ function recentNews(items){
   });
 }
 
+
+let sourceEditor=[];
+async function showSourcesManager(){
+ const m=document.getElementById('main');
+ m.innerHTML='<h1>Источники новостей</h1><p class="muted">Добавляйте сайты и скачивайте sources.json. Для применения загрузите файл в корень репозитория GitHub.</p><p id="sourceStatus" class="muted">Загрузка…</p><div class="card"><label>URL сайта</label><input id="sourceUrl" type="url" placeholder="https://example.com"><label>Категория</label><select id="sourceCategory"><option>Казахстан / ЦА</option><option>Музыка</option><option>Кино / сериалы</option><option>Искусство / культура</option><option>ИИ</option><option>Азия</option></select><div class="actions"><button class="btn primary" id="sourceAdd">+ Добавить</button><button class="btn" id="sourceExport">↓ Скачать sources.json</button><button class="btn" id="sourceBack">← Новости</button></div></div><div id="sourceList"></div>';
+ document.getElementById('sourceBack').onclick=render;
+ document.getElementById('sourceAdd').onclick=()=>{
+  let url;try{url=new URL(document.getElementById('sourceUrl').value.trim());if(!['http:','https:'].includes(url.protocol))throw Error();}catch{alert('Введите корректный URL с https://');return;}
+  if(sourceEditor.some(s=>s.url===url.href)){alert('Сайт уже добавлен');return;}
+  sourceEditor.push({name:url.hostname,url:url.href,category:document.getElementById('sourceCategory').value,enabled:true});
+  document.getElementById('sourceUrl').value='';drawSourceList();
+ };
+ document.getElementById('sourceExport').onclick=()=>{
+  const blob=new Blob([JSON.stringify(sourceEditor,null,2)+String.fromCharCode(10)],{type:'application/json'});
+  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='sources.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ };
+ try{
+  const response=await fetch('sources.json?ts='+Date.now(),{cache:'no-store'});
+  if(!response.ok)throw Error('HTTP '+response.status);
+  const list=await response.json();if(!Array.isArray(list))throw Error('Неверный формат');
+  sourceEditor=list;
+  document.getElementById('sourceStatus').textContent='Источников: '+list.length+'. После загрузки файла в GitHub новости обновятся при следующем запуске агрегатора.';
+ }catch(e){document.getElementById('sourceStatus').textContent='Не удалось прочитать список: '+e.message;}
+ drawSourceList();
+}
+function drawSourceList(){
+ const box=document.getElementById('sourceList');if(!box)return;
+ box.innerHTML=sourceEditor.length?'':'<p class="muted">Список пуст. Добавьте первый сайт.</p>';
+ sourceEditor.forEach((s,i)=>{
+  const row=document.createElement('div');row.className='card source-row';
+  const label=document.createElement('div');label.className='source-description';
+  const name=document.createElement('strong');name.textContent=s.name||s.url;
+  const detail=document.createElement('p');detail.className='muted';detail.textContent=(s.category||'Другое')+' · '+s.url;
+  label.append(name,detail);
+  const toggle=document.createElement('input');toggle.type='checkbox';toggle.checked=s.enabled!==false;toggle.title='Включить источник';toggle.onchange=()=>{s.enabled=toggle.checked;};
+  const remove=document.createElement('button');remove.className='btn';remove.textContent='Удалить';remove.onclick=()=>{sourceEditor.splice(i,1);drawSourceList();};
+  row.append(label,toggle,remove);box.append(row);
+ });
+}
 function render(){
   const section=view==='constructor'?constructorTab:view;
   if(section==='design'){
@@ -678,7 +717,7 @@ function render(){
       '<p class="muted">Свежие новости первыми · '+
       sorted.length+
       ' материалов за последние 48 часов</p></div>'+
-      '<button class="btn primary" id="newsRefresh" '+
+      '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
       (newsLoading?'disabled':'')+'>'+
       (newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+
       '</button></div>'+
@@ -752,6 +791,7 @@ function render(){
     );
 
     m.querySelector('#newsRefresh').onclick=()=>load(true);
+    m.querySelector('#sourcesManage').onclick=showSourcesManager;
 
   } else if(section==='drafts'){
 
