@@ -18,19 +18,48 @@ now = datetime.now(timezone.utc)
 def translate_text(text):
     if not text.strip() or not re.search(r"[A-Za-z]", text):
         return text
+    errors = []
+    # Primary free translator. It may rate-limit automated GitHub runners.
     params = urllib.parse.urlencode({
         "client": "gtx", "sl": "auto", "tl": "ru", "dt": "t", "q": text
     })
-    req = urllib.request.Request(
-        "https://translate.googleapis.com/translate_a/single?" + params,
-        headers={"User-Agent": "Mozilla/5.0 theDAWStudio/0.3"}
-    )
-    with urllib.request.urlopen(req, timeout=18) as res:
-        payload = json.load(res)
-    translated = "".join(chunk[0] or "" for chunk in payload[0] if chunk)
-    if not translated.strip():
-        raise ValueError("Empty translation")
-    return translated.strip()
+    try:
+        req = urllib.request.Request(
+            "https://translate.googleapis.com/translate_a/single?" + params,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        with urllib.request.urlopen(req, timeout=12) as res:
+            payload = json.load(res)
+        translated = "".join(chunk[0] or "" for chunk in payload[0] if chunk).strip()
+        if translated:
+            return translated
+        errors.append("Google returned an empty translation")
+    except Exception as exc:
+        errors.append("Google: " + str(exc)[:90])
+    # Backup free translator. Limit each request to 450 characters.
+    try:
+        chunks = [text[i:i+450] for i in range(0, len(text), 450)]
+        results = []
+        for chunk in chunks:
+            params = urllib.parse.urlencode({
+                "q": chunk, "langpair": "en|ru"
+            })
+            req = urllib.request.Request(
+                "https://api.mymemory.translated.net/get?" + params,
+                headers={"User-Agent": "Mozilla/5.0"}
+            )
+            with urllib.request.urlopen(req, timeout=12) as res:
+                payload = json.load(res)
+            if int(payload.get("responseStatus", 0)) != 200:
+                raise ValueError(str(payload.get("responseDetails", "Translation rejected")))
+            result = (payload.get("responseData") or {}).get("translatedText", "").strip()
+            if not result:
+                raise ValueError("Empty MyMemory response")
+            results.append(unescape(result))
+        return " ".join(results)
+    except Exception as exc:
+        errors.append("MyMemory: " + str(exc)[:90])
+    raise RuntimeError("; ".join(errors))
 
 def translate_ru(title, summary):
     return {"title_ru": translate_text(title), "summary_ru": translate_text(summary)}
@@ -84,15 +113,20 @@ for source, category, feed in FEEDS:
 fresh=[x for x in items.values() if (parse_date(x.get("published_at","")) or datetime(2000,1,1,tzinfo=timezone.utc)) >= now-timedelta(hours=24)]
 fresh.sort(key=lambda x:x["published_at"],reverse=True)
 pending = [x for x in fresh if not x.get("title_ru") or not x.get("summary_ru")]
-for item in pending[:60]:
+print("News requiring Russian translation:", len(pending))
+translated_count = 0
+for item in pending[:35]:
     try:
         # Keep successfully translated fields even if the other request fails.
         if not item.get("title_ru"):
             item["title_ru"] = translate_text(item["title"])
         if not item.get("summary_ru"):
             item["summary_ru"] = translate_text(item["summary"])
+        if item.get("title_ru") and item.get("summary_ru"):
+            translated_count += 1
     except Exception as exc:
         print("Free translation unavailable:", item["id"], str(exc)[:140])
-    time.sleep(0.25)
+    time.sleep(0.45)
+print("Fully translated in this run:", translated_count)
 OUT.write_text(json.dumps(fresh[:150],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("Saved",len(fresh),"articles")
