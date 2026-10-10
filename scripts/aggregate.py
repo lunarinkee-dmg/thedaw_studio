@@ -128,11 +128,6 @@ def main():
             print(name + ": " + (str(len(news)) + " recent items" if error is None else "feed unavailable: " + error), flush=True)
             for item in news:
                 items[item["id"]] = item
-    # Preserve recent items if a publisher's feed is temporarily unavailable.
-    for uid, item in previous_by_id.items():
-        published = parse_date(item.get("published_at", ""))
-        if published and published >= NOW - timedelta(hours=48) and uid not in items:
-            items[uid] = {key: value for key, value in item.items() if key not in ("title_ru", "summary_ru")}
     fresh = sorted(items.values(), key=lambda item: item["published_at"], reverse=True)
     OUT.write_text(json.dumps(fresh[:150], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Saved", len(fresh[:150]), "articles from", len(SOURCES), "configured sources")
