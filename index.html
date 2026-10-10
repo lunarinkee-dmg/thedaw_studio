@@ -787,7 +787,8 @@ const DESIGN_DEFAULTS={
   logo:'',
   cropZoom:1,
   cropX:0,
-  cropY:0
+  cropY:0,
+  gradient:true
 };
 
 let designCfg={...DESIGN_DEFAULTS};
@@ -901,34 +902,17 @@ function designPaint(){
     }
   }
 
-  ctx.save();
-  ctx.beginPath();
-  ctx.rect(0,0,1080,1920);
-  ctx.clip();
-  ctx.translate(-650,-180);
-  ctx.rotate(-0.11);
-  ctx.font='900 104px Arial,sans-serif';
-  ctx.fillStyle='rgba(255,255,255,0.075)';
-
-  for(let y=0;y<2400;y+=112){
-    let text=Array(9).fill('theDAW').join(' ');
-    ctx.fillText(text,-300,y);
-  }
-
-  ctx.restore();
-
+  if(s.gradient!==false){
   let top=ctx.createLinearGradient(0,0,0,520);
   top.addColorStop(0,'rgba(0,0,0,.55)');
   top.addColorStop(1,'rgba(0,0,0,0)');
-  ctx.fillStyle=top;
-  ctx.fillRect(0,0,1080,520);
-
-  let g=ctx.createLinearGradient(0,670,0,1920);
-  g.addColorStop(0,'rgba(0,0,0,0)');
-  g.addColorStop(.5,'rgba(0,0,0,.42)');
-  g.addColorStop(1,'rgba(0,0,0,.84)');
-  ctx.fillStyle=g;
-  ctx.fillRect(0,670,1080,1250);
+  ctx.fillStyle=top;ctx.fillRect(0,0,1080,520);
+  let bottom=ctx.createLinearGradient(0,670,0,1920);
+  bottom.addColorStop(0,'rgba(0,0,0,0)');
+  bottom.addColorStop(.5,'rgba(0,0,0,.42)');
+  bottom.addColorStop(1,'rgba(0,0,0,.84)');
+  ctx.fillStyle=bottom;ctx.fillRect(0,670,1080,1250);
+  }
 
   ctx.textBaseline='top';
   ctx.fillStyle='#fff';
@@ -1017,13 +1001,8 @@ function renderDesign(){
 
   m.innerHTML=`
     <h1>Дизайн theDĀW</h1>
-    <p class="muted">
-      Шаблон theDAW — Reels · 1080 × 1920.
-      Перетаскивай текст на макете.
-    </p>
-
     <div class="design-layout">
-      <div class="card design-form">
+      <div class="card design-form" id="designSettings">
 
         <label>Подставить новость из черновиков</label>
         <select id="designDraft">
@@ -1047,13 +1026,9 @@ function renderDesign(){
         <label>Дата</label>
         <input id="designDate">
 
-        <label>Загрузить фоновое фото</label>
-        <input type="file" accept="image/*" id="designFile">
-
-        <label>Загрузить фоновое видео (MP4 / WebM)</label>
-        <input type="file"
-          accept="video/mp4,video/webm,video/quicktime,video/*"
-          id="designVideoFile">
+        <label>Фоновое медиа (фото или видео)</label>
+        <input type="file" accept="image/*,video/*" id="designMediaFile">
+        <label class="design-toggle-row" for="designGradient"><span>Градиент сверху и снизу</span><input type="checkbox" id="designGradient"></label>
 
         <label>Добавить музыку (MP3 / M4A / WAV)</label>
         <input type="file" accept="audio/*" id="designMusicFile">
@@ -1085,12 +1060,6 @@ function renderDesign(){
         <button class="btn" id="designClear">
           Убрать фото
         </button>
-
-        <label>Цвет фона</label>
-        <input type="color" id="designBg">
-
-        <label>Акцентный цвет</label>
-        <input type="color" id="designAccent">
 
         <label>Размер заголовка</label>
         <input type="number"
@@ -1168,6 +1137,9 @@ function renderDesign(){
   }
 
   designLogoLoad(designCfg.logo);
+  const gradientToggle=document.getElementById('designGradient');
+  gradientToggle.checked=s.gradient!==false;
+  gradientToggle.onchange=()=>{s.gradient=gradientToggle.checked;designStore();designPaint()};
   document.getElementById('designMusicFile').onchange=e=>{
     const f=e.target.files[0]; if(!f)return;
     if(designMusic){designMusic.pause();URL.revokeObjectURL(designMusic.src);}
@@ -1219,8 +1191,6 @@ function renderDesign(){
     designTitle:'title',
     designBody:'body',
     designDate:'date',
-    designBg:'bg',
-    designAccent:'accent',
     designSize:'size',
     designBodySize:'bodySize'
   };
@@ -1294,6 +1264,7 @@ function renderDesign(){
       designVideo=null;
     }
 
+    if(designMusic){designMusic.pause();URL.revokeObjectURL(designMusic.src);designMusic=null;}
     designImg=null;
     designLogo=null;
     designDrag=null;
@@ -1322,7 +1293,7 @@ function renderDesign(){
     designPaint();
   };
 
-  document.getElementById('designFile').onchange=e=>{
+  const handleDesignImage=e=>{
     let file=e.target.files[0];
 
     if(!file||!file.type.startsWith('image/'))return;
@@ -1359,7 +1330,7 @@ function renderDesign(){
     reader.readAsDataURL(file);
   };
 
-  document.getElementById('designVideoFile').onchange=e=>{
+  const handleDesignVideo=e=>{
     const file=e.target.files[0];
     if(!file)return;
 
@@ -1389,6 +1360,12 @@ function renderDesign(){
     };
   };
 
+  document.getElementById('designMediaFile').onchange=e=>{
+    const file=e.target.files[0];if(!file)return;
+    if(file.type.startsWith('video/')){handleDesignVideo(e);s.image='';designImg=null;designStore();}
+    else if(file.type.startsWith('image/')){if(designVideo){designVideo.pause();URL.revokeObjectURL(designVideo.src);designVideo=null;}handleDesignImage(e);}
+    else document.getElementById('designNotice').textContent='Выбери фото или видео';
+  };
   // INSTAGRAM API
 
   async function designInstagramCall(
