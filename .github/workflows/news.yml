@@ -22,7 +22,9 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Collect news
+      - name: Collect and translate news
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/aggregate.py
 
       - name: Save updated news
