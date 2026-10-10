@@ -642,14 +642,14 @@ function newsTimestamp(n){
 
 function recentNews(items){
   const now=Date.now();
-  const cutoff=now-30*60*1000;
+  const cutoff=now-90*24*60*60*1000;
 
   return items.filter(n=>{
     const t=newsTimestamp(n);
     return Number.isFinite(t) &&
       t>=cutoff &&
       t<=now+5*60*1000;
-  });
+  }).sort((a,b)=>newsTimestamp(b)-newsTimestamp(a)).slice(0,10);
 }
 
 
@@ -747,7 +747,7 @@ function render(){
       '<div><h1>Новости</h1>'+
       '<p class="muted">Свежие новости первыми · '+
       sorted.length+
-      ' материалов за последние 30 минут</p></div>'+
+      ' последних публикаций из The Flow и 98mag</p></div>'+
       '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
       (newsLoading?'disabled':'')+'>'+
       (newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+
