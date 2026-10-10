@@ -457,21 +457,46 @@ input,textarea,select{background:rgba(255,255,255,.74);border-color:rgba(145,145
 .constructor-tab:hover{background:rgba(255,255,255,.65)}
 .constructor-tab.active{background:#B30012;color:#fff;box-shadow:0 4px 12px rgba(179,0,18,.17)}
 @media(max-width:670px){.constructor-tabs{flex-wrap:nowrap;overflow-x:auto}.constructor-tab{white-space:nowrap;flex-shrink:0}}
+
+/* Minimal centered paired section switch — no sidebar */
+.app{display:block;min-height:calc(100vh - 74px)}
+main{max-width:1440px;margin:0 auto}
+header{position:relative;display:flex;align-items:center;justify-content:space-between;min-height:74px}
+.section-switch{
+ position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+ display:flex;align-items:center;gap:5px;z-index:3;
+}
+.section-switch button{
+ border:1px solid rgba(255,255,255,.94);
+ background:linear-gradient(145deg,rgba(255,255,255,.89),rgba(255,255,255,.55));
+ color:#333333;box-shadow:0 5px 18px rgba(51,51,51,.10),inset 0 1px rgba(255,255,255,.9);
+ backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);
+ font-weight:800;transition:background .15s,transform .15s,border-color .15s;
+}
+.section-switch button:hover{background:#fff;border-color:rgba(179,0,18,.55);transform:translateY(-1px)}
+.section-switch-main{height:43px;min-width:166px;padding:0 21px;border-radius:14px;font-size:14px}
+.section-switch-icon{height:43px;width:43px;display:grid;place-items:center;border-radius:13px;font-size:23px;line-height:1;color:#B30012!important}
+@media(max-width:760px){
+ header{height:auto;min-height:112px;padding:13px 17px;align-items:flex-start}
+ .section-switch{top:auto;bottom:12px;transform:translateX(-50%)}
+ .section-switch-main{min-width:156px}
+ .logo{font-size:21px}
+ .pill{font-size:9px;padding:6px 8px}
+}
 </style>
 </head>
 <body>
 
 <header>
   <div class="logo">theDĀW<span>STUDIO / WORKSPACE</span></div>
+  <div class="section-switch" role="group" aria-label="Переключение разделов">
+    <button class="section-switch-main" id="sectionSwitchMain" type="button" aria-label="Переключить раздел">Новости</button>
+    <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Перейти в конструктор">◈</button>
+  </div>
   <div class="pill">● LOCAL DEMO</div>
 </header>
 
 <div class="app">
-<nav>
-  <div class="small">WORKSPACE</div>
-  <button data-view="inbox" class="active">▦ &nbsp; Новости</button>
-  <button data-view="constructor">◈ &nbsp; Конструктор</button>
-</nav>
 <main id="main"></main>
 </div>
 
@@ -519,17 +544,28 @@ const save=()=>localStorage.setItem(
   })
 );
 
+function updateSectionSwitch(){
+  const main=document.getElementById('sectionSwitchMain');
+  const icon=document.getElementById('sectionSwitchIcon');
+  if(!main||!icon)return;
+  const news=view==='inbox';
+  main.textContent=news?'Новости':'Конструктор';
+  icon.textContent=news?'▦':'◈';
+  const next=news?'конструктор':'новости';
+  main.title='Перейти в '+next;
+  icon.title='Перейти в '+next;
+  main.setAttribute('aria-label','Сейчас '+(news?'Новости':'Конструктор')+'. Перейти в '+next);
+  icon.setAttribute('aria-label','Перейти в '+next);
+}
 function go(v){
   view=v;
-  document.querySelectorAll('nav button').forEach(
-    b=>b.classList.toggle('active',b.dataset.view===v)
-  );
+  updateSectionSwitch();
   render();
 }
-
-document.querySelectorAll('nav button').forEach(
-  b=>b.onclick=()=>go(b.dataset.view)
-);
+function toggleSection(){go(view==='inbox'?'constructor':'inbox')}
+document.getElementById('sectionSwitchMain').onclick=toggleSection;
+document.getElementById('sectionSwitchIcon').onclick=toggleSection;
+updateSectionSwitch();
 
 function create(id){
   let n=data.news.find(x=>x.id===id);
