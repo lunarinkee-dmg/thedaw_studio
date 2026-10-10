@@ -1,5 +1,5 @@
 import json, re, hashlib, urllib.request, xml.etree.ElementTree as ET
-import os, time
+import time, urllib.parse
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -15,27 +15,25 @@ FEEDS = [
     ("ARTnews", "Искусство", "https://www.artnews.com/feed/"),
 ]
 now = datetime.now(timezone.utc)
-TRANSLATE_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+def translate_text(text):
+    if not text.strip() or not re.search(r"[A-Za-z]", text):
+        return text
+    params = urllib.parse.urlencode({
+        "client": "gtx", "sl": "auto", "tl": "ru", "dt": "t", "q": text
+    })
+    req = urllib.request.Request(
+        "https://translate.googleapis.com/translate_a/single?" + params,
+        headers={"User-Agent": "Mozilla/5.0 theDAWStudio/0.3"}
+    )
+    with urllib.request.urlopen(req, timeout=18) as res:
+        payload = json.load(res)
+    translated = "".join(chunk[0] or "" for chunk in payload[0] if chunk)
+    if not translated.strip():
+        raise ValueError("Empty translation")
+    return translated.strip()
+
 def translate_ru(title, summary):
-    if not TRANSLATE_KEY:
-        return None
-    payload = json.dumps({
-        "model": "gpt-4o-mini",
-        "temperature": 0,
-        "response_format": {"type": "json_object"},
-        "messages": [
-            {"role": "system", "content": "Translate news title and summary into fluent, factual Russian. Preserve names, numbers, dates and meaning. Do not add information. Respond ONLY with JSON keys title_ru and summary_ru."},
-            {"role": "user", "content": json.dumps({"title": title, "summary": summary}, ensure_ascii=False)}
-        ]
-    }).encode("utf-8")
-    req = urllib.request.Request("https://api.openai.com/v1/chat/completions", data=payload,
-        headers={"Authorization": "Bearer " + TRANSLATE_KEY, "Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=30) as res:
-        answer = json.load(res)
-    obj = json.loads(answer["choices"][0]["message"]["content"])
-    if not isinstance(obj.get("title_ru"), str) or not isinstance(obj.get("summary_ru"), str):
-        raise ValueError("Invalid translation")
-    return {"title_ru": obj["title_ru"].strip(), "summary_ru": obj["summary_ru"].strip()}
+    return {"title_ru": translate_text(title), "summary_ru": translate_text(summary)}
 
 old = []
 if OUT.exists():
@@ -85,16 +83,16 @@ for source, category, feed in FEEDS:
         print(source, "unavailable:", str(ex)[:180])
 fresh=[x for x in items.values() if (parse_date(x.get("published_at","")) or datetime(2000,1,1,tzinfo=timezone.utc)) >= now-timedelta(hours=24)]
 fresh.sort(key=lambda x:x["published_at"],reverse=True)
-if TRANSLATE_KEY:
-    pending = [x for x in fresh if not x.get("title_ru") or not x.get("summary_ru")]
-    for item in pending[:60]:
-        try:
-            translation = translate_ru(item["title"], item["summary"])
-            if translation: item.update(translation)
-        except Exception as exc:
-            print("Translation unavailable:", item["id"], str(exc)[:140])
-        time.sleep(0.15)
-else:
-    print("OPENAI_API_KEY is not configured; untranslated originals will be shown.")
+pending = [x for x in fresh if not x.get("title_ru") or not x.get("summary_ru")]
+for item in pending[:60]:
+    try:
+        # Keep successfully translated fields even if the other request fails.
+        if not item.get("title_ru"):
+            item["title_ru"] = translate_text(item["title"])
+        if not item.get("summary_ru"):
+            item["summary_ru"] = translate_text(item["summary"])
+    except Exception as exc:
+        print("Free translation unavailable:", item["id"], str(exc)[:140])
+    time.sleep(0.25)
 OUT.write_text(json.dumps(fresh[:150],ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("Saved",len(fresh),"articles")
