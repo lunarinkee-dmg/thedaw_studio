@@ -615,7 +615,7 @@ function update(k,v){
 
 function newsTimestamp(n){
   const raw=String(
-    n.date||n.published||n.pubDate||''
+    n.published_at||n.date||n.published||n.pubDate||''
   ).trim();
 
   const ru=raw.match(
@@ -642,7 +642,7 @@ function newsTimestamp(n){
 
 function recentNews(items){
   const now=Date.now();
-  const cutoff=now-2*24*60*60*1000;
+  const cutoff=now-30*60*1000;
 
   return items.filter(n=>{
     const t=newsTimestamp(n);
@@ -747,7 +747,7 @@ function render(){
       '<div><h1>Новости</h1>'+
       '<p class="muted">Свежие новости первыми · '+
       sorted.length+
-      ' материалов за последние 48 часов</p></div>'+
+      ' материалов за последние 30 минут</p></div>'+
       '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
       (newsLoading?'disabled':'')+'>'+
       (newsLoading?'⏳ Обновляем…':'↻ Обновить новости')+
@@ -1005,7 +1005,8 @@ const DESIGN_DEFAULTS={
   cropZoom:1,
   cropX:0,
   cropY:0,
-  gradient:true
+  gradient:true,
+  duration:10
 };
 
 let designCfg={...DESIGN_DEFAULTS};
@@ -1270,9 +1271,9 @@ function renderDesign(){
           Сбросить кадрирование
         </button>
 
-        <label>Длительность ролика (секунды)</label>
-        <input type="number"
-          min="3" max="60" value="10" id="designDuration">
+        <label for="designDuration">Длительность Reels: <strong id="designDurationValue">10 сек.</strong></label>
+        <input type="range" min="3" max="60" step="1" value="10" id="designDuration">
+        <div class="muted mini">От 3 до 60 секунд. Применяется при экспорте MP4.</div>
 
         <button class="btn" id="designClear">
           Убрать фото
@@ -1350,6 +1351,16 @@ function renderDesign(){
     const notice=document.getElementById('designNotice');
     notice.textContent='Публикация в TikTok пока не подключена. Для прямой загрузки требуется TikTok Content Posting API и авторизация аккаунта. MP4 можно скачать кнопкой выше.';
     window.open('https://developers.tiktok.com/','_blank','noopener,noreferrer');
+  };
+
+  const durationSlider=document.getElementById('designDuration');
+  const durationValue=document.getElementById('designDurationValue');
+  durationSlider.value=String(Math.min(60,Math.max(3,Number(s.duration)||10)));
+  durationValue.textContent=durationSlider.value+' сек.';
+  durationSlider.oninput=()=>{
+    s.duration=Number(durationSlider.value);
+    durationValue.textContent=durationSlider.value+' сек.';
+    designStore();
   };
 
   const logoInput=document.getElementById('designLogoFile');
