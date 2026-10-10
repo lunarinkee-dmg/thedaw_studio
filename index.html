@@ -388,6 +388,65 @@ label{color:#454545}
 input:focus,textarea:focus,select:focus{border-color:#B30012}
 @media(max-width:670px){nav{border-bottom-color:#c7c7c7}}
 @media(min-width:801px){.design-form{scrollbar-color:#b7b7b7 #e8e8e8}}
+
+/* Liquid Glass — translucent, softly refracting interface surfaces */
+:root{
+  --glass-fill:rgba(255,255,255,.44);
+  --glass-stroke:rgba(255,255,255,.78);
+  --glass-shadow:0 12px 34px rgba(45,45,45,.085),inset 0 1px 0 rgba(255,255,255,.86);
+}
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(ellipse 55% 42% at 85% 9%,rgba(179,0,18,.105),transparent 75%),
+    radial-gradient(ellipse 46% 38% at 7% 72%,rgba(255,255,255,.92),transparent 76%),
+    radial-gradient(ellipse 60% 50% at 55% 98%,rgba(177,181,192,.27),transparent 78%),
+    #e8e8e8;
+  background-attachment:fixed;
+}
+header,nav{
+  background:rgba(250,250,250,.46);
+  border-color:rgba(255,255,255,.7);
+  -webkit-backdrop-filter:blur(22px) saturate(145%);
+  backdrop-filter:blur(22px) saturate(145%);
+}
+header{position:relative;z-index:2;box-shadow:0 1px 0 rgba(130,130,130,.12)}
+nav{box-shadow:inset -1px 0 rgba(110,110,110,.1)}
+.card,.design-stage,.banner{
+  background:linear-gradient(145deg,rgba(255,255,255,.67),rgba(255,255,255,.30) 65%,rgba(255,255,255,.50));
+  border:1px solid var(--glass-stroke);
+  box-shadow:var(--glass-shadow);
+  -webkit-backdrop-filter:blur(18px) saturate(155%);
+  backdrop-filter:blur(18px) saturate(155%);
+}
+.card{border-radius:20px}
+.card:hover{border-color:rgba(255,255,255,.98);box-shadow:0 16px 38px rgba(45,45,45,.12),inset 0 1px 0 #fff}
+.design-stage{border-radius:20px}
+.btn:not(.primary),.news-edge-arrow,.pill{
+  background:linear-gradient(155deg,rgba(255,255,255,.83),rgba(255,255,255,.38));
+  border:1px solid rgba(255,255,255,.88);
+  box-shadow:0 4px 13px rgba(50,50,50,.08),inset 0 1px 0 rgba(255,255,255,.95);
+  -webkit-backdrop-filter:blur(12px) saturate(145%);
+  backdrop-filter:blur(12px) saturate(145%);
+}
+.btn:not(.primary):hover:not(:disabled),.news-edge-arrow:hover:not(:disabled){
+  background:rgba(255,255,255,.88);
+  border-color:rgba(179,0,18,.34);
+}
+.btn.primary{box-shadow:0 5px 14px rgba(179,0,18,.18),inset 0 1px 0 rgba(255,255,255,.22)}
+nav button.active,nav button.active:hover{
+  background:linear-gradient(110deg,rgba(179,0,18,.13),rgba(255,255,255,.52));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75);
+}
+input,textarea,select{background:rgba(255,255,255,.74);border-color:rgba(145,145,145,.34)}
+@supports not ((-webkit-backdrop-filter:blur(1px)) or (backdrop-filter:blur(1px))){
+  header,nav{background:#f0f0f0}
+  .card,.design-stage,.banner{background:#f8f8f8;border-color:#d2d2d2}
+  .btn:not(.primary),.news-edge-arrow,.pill{background:#fafafa;border-color:#d2d2d2}
+}
+@media(prefers-reduced-motion:reduce){
+  .btn,.card,nav button,.news-edge-arrow{transition:none}
+}
 </style>
 </head>
 <body>
