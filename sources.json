@@ -10,5 +10,11 @@
     "url": "https://www.98mag.kz/",
     "category": "Казахстан / ЦА",
     "enabled": true
+  },
+  {
+    "name": "the-steppe.com",
+    "url": "https://the-steppe.com/",
+    "category": "Казахстан / ЦА",
+    "enabled": true
   }
 ]
