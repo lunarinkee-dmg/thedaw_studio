@@ -1,4 +1,4 @@
-"""Collect recent culture news from user-managed sources.json.
+"""Collect recent culture news from theDĀW's 46 approved sources.
 
 RSS/Atom feeds are discovered automatically; sites without accessible feeds are
 reported in Actions logs and are not silently replaced by unrelated sources.
@@ -16,16 +16,284 @@ from pathlib import Path
 from html import unescape
 
 OUT = Path(__file__).resolve().parents[1] / "news.json"
-SOURCES_FILE = Path(__file__).resolve().parents[1] / "sources.json"
-
-def load_sources():
-    """Read the user-maintained source list; start empty until sources are added."""
-    if not SOURCES_FILE.exists():
-        return []
-    data = json.loads(SOURCES_FILE.read_text(encoding="utf-8"))
-    return [[s.get("name") or urllib.parse.urlparse(s["url"]).netloc, s.get("category", "Другое"), s["url"], s.get("feed", "")] for s in data if s.get("enabled", True) and s.get("url", "").startswith(("https://", "http://"))]
-
-SOURCES = load_sources()
+SOURCES = [
+    [
+        "98mag",
+        "Казахстан / ЦА",
+        "https://www.98mag.kz/",
+        ""
+    ],
+    [
+        "The Astana Times",
+        "Казахстан / ЦА",
+        "https://astanatimes.com/",
+        "https://astanatimes.com/feed/"
+    ],
+    [
+        "Kursiv Media",
+        "Казахстан / ЦА",
+        "https://kz.kursiv.media/",
+        ""
+    ],
+    [
+        "WE Project",
+        "Казахстан / ЦА",
+        "https://weproject.media/",
+        ""
+    ],
+    [
+        "Afisha.uz",
+        "Казахстан / ЦА",
+        "https://www.afisha.uz/",
+        ""
+    ],
+    [
+        "Казахстанская правда",
+        "Казахстан / ЦА",
+        "https://kazpravda.kz/",
+        ""
+    ],
+    [
+        "Elordainfo",
+        "Казахстан / ЦА",
+        "https://elordainfo.kz/",
+        ""
+    ],
+    [
+        "The Village Kazakhstan",
+        "Казахстан / ЦА",
+        "https://www.the-village-kz.com/",
+        ""
+    ],
+    [
+        "Masa Media",
+        "Казахстан / ЦА",
+        "https://masa.media/",
+        ""
+    ],
+    [
+        "Vlast.kz",
+        "Казахстан / ЦА",
+        "https://vlast.kz/",
+        ""
+    ],
+    [
+        "Qazaqstan TV",
+        "Казахстан / ЦА",
+        "https://qazaqstan.tv/",
+        ""
+    ],
+    [
+        "The Times of Central Asia",
+        "Казахстан / ЦА",
+        "https://timesca.com/",
+        ""
+    ],
+    [
+        "CABAR.asia",
+        "Казахстан / ЦА",
+        "https://cabar.asia/",
+        ""
+    ],
+    [
+        "Gazeta.uz",
+        "Казахстан / ЦА",
+        "https://www.gazeta.uz/",
+        ""
+    ],
+    [
+        "The Steppe",
+        "Казахстан / ЦА",
+        "https://the-steppe.com/",
+        "https://the-steppe.com/feed"
+    ],
+    [
+        "Billboard",
+        "Музыка",
+        "https://www.billboard.com/",
+        "https://www.billboard.com/feed/"
+    ],
+    [
+        "Rolling Stone",
+        "Музыка",
+        "https://www.rollingstone.com/",
+        ""
+    ],
+    [
+        "NME",
+        "Музыка",
+        "https://www.nme.com/",
+        ""
+    ],
+    [
+        "Pitchfork",
+        "Музыка",
+        "https://pitchfork.com/",
+        "https://pitchfork.com/feed/rss"
+    ],
+    [
+        "The FADER",
+        "Музыка",
+        "https://www.thefader.com/",
+        ""
+    ],
+    [
+        "Stereogum",
+        "Музыка",
+        "https://www.stereogum.com/",
+        ""
+    ],
+    [
+        "Consequence",
+        "Музыка",
+        "https://consequence.net/",
+        ""
+    ],
+    [
+        "Complex",
+        "Музыка",
+        "https://www.complex.com/",
+        ""
+    ],
+    [
+        "Hypebeast Music",
+        "Музыка",
+        "https://hypebeast.com/music",
+        ""
+    ],
+    [
+        "NME Asia",
+        "Музыка",
+        "https://www.nme.com/en_asia",
+        ""
+    ],
+    [
+        "Variety",
+        "Кино / сериалы",
+        "https://variety.com/",
+        "https://variety.com/feed/"
+    ],
+    [
+        "The Hollywood Reporter",
+        "Кино / сериалы",
+        "https://www.hollywoodreporter.com/",
+        ""
+    ],
+    [
+        "Deadline",
+        "Кино / сериалы",
+        "https://deadline.com/",
+        ""
+    ],
+    [
+        "IndieWire",
+        "Кино / сериалы",
+        "https://www.indiewire.com/",
+        ""
+    ],
+    [
+        "Screen Daily",
+        "Кино / сериалы",
+        "https://www.screendaily.com/",
+        ""
+    ],
+    [
+        "Vogue",
+        "Искусство / культура",
+        "https://www.vogue.com/",
+        ""
+    ],
+    [
+        "Artnet",
+        "Искусство / культура",
+        "https://news.artnet.com/",
+        ""
+    ],
+    [
+        "ARTnews",
+        "Искусство / культура",
+        "https://www.artnews.com/",
+        "https://www.artnews.com/feed/"
+    ],
+    [
+        "The Art Newspaper",
+        "Искусство / культура",
+        "https://www.theartnewspaper.com/",
+        ""
+    ],
+    [
+        "Frieze",
+        "Искусство / культура",
+        "https://www.frieze.com/",
+        ""
+    ],
+    [
+        "Hyperallergic",
+        "Искусство / культура",
+        "https://hyperallergic.com/",
+        ""
+    ],
+    [
+        "Dezeen",
+        "Искусство / культура",
+        "https://www.dezeen.com/",
+        ""
+    ],
+    [
+        "Dazed",
+        "Искусство / культура",
+        "https://www.dazeddigital.com/",
+        ""
+    ],
+    [
+        "i-D",
+        "Искусство / культура",
+        "https://i-d.co/",
+        ""
+    ],
+    [
+        "Hypebeast",
+        "Искусство / культура",
+        "https://hypebeast.com/",
+        ""
+    ],
+    [
+        "Highsnobiety",
+        "Искусство / культура",
+        "https://www.highsnobiety.com/",
+        ""
+    ],
+    [
+        "Korea JoongAng Daily",
+        "Азия",
+        "https://koreajoongangdaily.joins.com/",
+        ""
+    ],
+    [
+        "The Korea Herald",
+        "Азия",
+        "https://www.koreaherald.com/",
+        ""
+    ],
+    [
+        "Vanity Fair",
+        "Культура / технологии",
+        "https://www.vanityfair.com/",
+        ""
+    ],
+    [
+        "WIRED",
+        "Культура / технологии",
+        "https://www.wired.com/",
+        ""
+    ],
+    [
+        "Cybersport.ru",
+        "Культура / технологии",
+        "https://www.cybersport.ru/",
+        ""
+    ]
+]
 NOW = datetime.now(timezone.utc)
 ATOM = "{http://www.w3.org/2005/Atom}"
 CONTENT = "{http://purl.org/rss/1.0/modules/content/}"
@@ -128,6 +396,11 @@ def main():
             print(name + ": " + (str(len(news)) + " recent items" if error is None else "feed unavailable: " + error), flush=True)
             for item in news:
                 items[item["id"]] = item
+    # Preserve recent items if a publisher's feed is temporarily unavailable.
+    for uid, item in previous_by_id.items():
+        published = parse_date(item.get("published_at", ""))
+        if published and published >= NOW - timedelta(hours=48) and uid not in items:
+            items[uid] = {key: value for key, value in item.items() if key not in ("title_ru", "summary_ru")}
     fresh = sorted(items.values(), key=lambda item: item["published_at"], reverse=True)
     OUT.write_text(json.dumps(fresh[:150], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Saved", len(fresh[:150]), "articles from", len(SOURCES), "configured sources")
