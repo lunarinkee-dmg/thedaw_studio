@@ -380,6 +380,11 @@ const esc=x=>String(x??'').replace(
   }[c])
 );
 
+function tiktokSearchUrl(title){
+  const query=String(title||'').replace(/\s+/g,' ').trim().slice(0,130);
+  return 'https://www.tiktok.com/search/video?q='+encodeURIComponent(query);
+}
+
 const save=()=>localStorage.setItem(
   K,
   JSON.stringify({
@@ -530,6 +535,9 @@ function render(){
           '</div><div class="actions">'+
           '<button class="btn primary" data-create="'+
           esc(n.id)+'">Создать пост →</button>'+
+          '<a class="btn" href="'+esc(tiktokSearchUrl(n.title))+
+          '" target="_blank" rel="noopener noreferrer" title="Найти видео по теме новости в TikTok">'+
+          '♫ Видео TikTok ↗</a>'+
           '<a class="btn" href="'+esc(n.url)+
           '" target="_blank" rel="noopener noreferrer">'+
           'Источник ↗</a></div></article>'
