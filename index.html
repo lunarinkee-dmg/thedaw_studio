@@ -1303,6 +1303,10 @@ function renderDesign(){
           🎬 Скачать MP4
         </button>
 
+        <button class="btn primary" id="designInstagramPublish" type="button">
+          ↗ Залить в Instagram
+        </button>
+
         <button class="btn primary" id="designTikTokPublish" type="button">
           ↗ Залить в TikTok
         </button>
@@ -1332,6 +1336,16 @@ function renderDesign(){
   `;
 
   document.getElementById('designInstagramOpen').onclick=()=>window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
+  document.getElementById('designInstagramPublish').onclick=async()=>{
+    const caption=document.getElementById('designInstagramCaption').value.trim();
+    if(caption&&navigator.clipboard&&window.isSecureContext){
+      try{await navigator.clipboard.writeText(caption);}catch(e){}
+    }
+    document.getElementById('designNotice').textContent=
+      'Instagram открыт. Прямая публикация пока не подключена: скачай PNG или MP4 и загрузи файл вручную.'+
+      (caption?' Подпись скопирована, если браузер разрешил доступ к буферу обмена.':'');
+    window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
+  };
   document.getElementById('designTikTokPublish').onclick=()=>{
     const notice=document.getElementById('designNotice');
     notice.textContent='Публикация в TikTok пока не подключена. Для прямой загрузки требуется TikTok Content Posting API и авторизация аккаунта. MP4 можно скачать кнопкой выше.';
