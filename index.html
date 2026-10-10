@@ -1299,12 +1299,12 @@ function renderDesign(){
           ↺ Сбросить весь шаблон
         </button>
 
-        <button class="btn primary" id="designDownload">
-          ↓ Скачать PNG
-        </button>
-
         <button class="btn primary" id="designExportVideo">
           🎬 Скачать MP4
+        </button>
+
+        <button class="btn primary" id="designTikTokPublish" type="button">
+          ↗ Залить в TikTok
         </button>
 
         <label>Подпись для Instagram Reels</label>
@@ -1332,6 +1332,11 @@ function renderDesign(){
   `;
 
   document.getElementById('designInstagramOpen').onclick=()=>window.open('https://www.instagram.com/','_blank','noopener,noreferrer');
+  document.getElementById('designTikTokPublish').onclick=()=>{
+    const notice=document.getElementById('designNotice');
+    notice.textContent='Публикация в TikTok пока не подключена. Для прямой загрузки требуется TikTok Content Posting API и авторизация аккаунта. MP4 можно скачать кнопкой выше.';
+    window.open('https://developers.tiktok.com/','_blank','noopener,noreferrer');
+  };
 
   const logoInput=document.getElementById('designLogoFile');
 
@@ -1818,18 +1823,7 @@ function renderDesign(){
     }
   };
 
-  document.getElementById('designDownload').onclick=()=>{
-    designPaint();
 
-    let a=document.createElement('a');
-
-    a.href=document.getElementById(
-      'designCanvas'
-    ).toDataURL('image/png');
-
-    a.download='theDAW-'+Date.now()+'.png';
-    a.click();
-  };
 
   let cv=document.getElementById('designCanvas');
 
