@@ -1355,22 +1355,43 @@ function renderDesign(){
 
   document.getElementById('designInstagramPublish').onclick=async()=>{
     if(designRecording)return;
+    const notice=document.getElementById('designNotice');
     const caption=document.getElementById('designInstagramCaption').value.trim();
     if(caption.length>2200){
-      document.getElementById('designNotice').textContent='Подпись не должна превышать 2200 символов.';
+      notice.textContent='Подпись не должна превышать 2200 символов.';
       return;
     }
-    if(!window.theDawStudioKey){
-      window.theDawStudioKey=prompt('Введи STUDIO_KEY из Cloudflare Worker (не сохраняется на сайте):')||'';
-    }
-    if(!window.theDawPublishKey){
-      window.theDawPublishKey=prompt('Введи INSTAGRAM_PUBLISH_KEY из Cloudflare Worker (не сохраняется на сайте):')||'';
-    }
+    const studioKey=prompt('STUDIO_KEY из Cloudflare Worker:',window.theDawStudioKey||'');
+    if(studioKey===null)return;
+    const publishKey=prompt('INSTAGRAM_PUBLISH_KEY из Cloudflare Worker:',window.theDawPublishKey||'');
+    if(publishKey===null)return;
+    window.theDawStudioKey=studioKey.trim();
+    window.theDawPublishKey=publishKey.trim();
     if(!window.theDawStudioKey||!window.theDawPublishKey){
-      document.getElementById('designNotice').textContent='Для публикации нужны оба ключа Cloudflare Worker.';
+      notice.textContent='Для публикации нужны оба ключа Cloudflare Worker.';
       return;
     }
-    await document.getElementById('designExportVideo').onclick(true);
+    const btn=document.getElementById('designInstagramPublish');
+    btn.disabled=true;
+    notice.textContent='Проверяем подключение к Instagram…';
+    try{
+      const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/instagram/check',{
+        method:'POST',
+        headers:{'X-Studio-Key':window.theDawStudioKey,'Content-Type':'application/json'},
+        body:'{}'
+      });
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok||result.error||result.ok===false){
+        if(response.status===401)window.theDawStudioKey='';
+        throw Error(result.error||'Ошибка подключения (HTTP '+response.status+')');
+      }
+      notice.textContent='Подключение подтверждено. Создаём MP4…';
+      await document.getElementById('designExportVideo').onclick(true);
+    }catch(err){
+      notice.textContent='Проверка подключения: '+err.message;
+    }finally{
+      btn.disabled=false;
+    }
   };
   document.getElementById('designTikTokPublish').onclick=()=>{
     const notice=document.getElementById('designNotice');
@@ -1838,7 +1859,10 @@ function renderDesign(){
             body:contentType?body:JSON.stringify(body)
           });
           const data=await response.json().catch(()=>({}));
-          if(!response.ok||data.error||data.ok===false)throw Error(data.error||'Ошибка '+path+' (HTTP '+response.status+')');
+          if(!response.ok||data.error||data.ok===false){
+            if(response.status===401&&String(data.error||'').includes('INSTAGRAM_PUBLISH_KEY'))window.theDawPublishKey='';
+            throw Error((data.error||'HTTP '+response.status)+' ['+path+']. Проверь значение секрета в настройках активного Worker.');
+          }
           return data;
         };
         notice.textContent='Загружаем Reels в Cloudflare R2…';
