@@ -555,17 +555,35 @@ main{max-width:none;padding:30px 2.65% 65px}
 .daw-queue strong{display:block;min-width:160px;border:1px solid #fff;border-radius:30px;background:rgba(255,255,255,.2);padding:8px;margin-top:5px;font-weight:400;box-shadow:0 2px 3px #0002}
 @media(max-width:800px){header{height:165px;min-height:165px}.section-switch{top:65%}main{padding:20px 18px}.daw-copy-layout{grid-template-columns:1fr}.daw-preview{min-height:400px}.daw-copy-panel{min-height:0}.daw-queue{position:static;margin:0 0 18px}.constructor-tabs{justify-content:flex-start;overflow:auto}.news-view{margin-top:35px}}
 
-/* Floating gradient and compact editorial logo */
-body{position:relative;isolation:isolate;background:#f1eeee!important}
-body::before{height:56px;position:relative;z-index:1}
-body::after{content:"";position:fixed;z-index:-1;inset:-25%;pointer-events:none;background:radial-gradient(ellipse 34% 34% at 85% 30%,rgba(189,0,30,.56),transparent 78%),radial-gradient(ellipse 38% 39% at 12% 80%,rgba(226,91,116,.42),transparent 80%),radial-gradient(ellipse 38% 36% at 52% 55%,rgba(255,255,255,.90),transparent 84%),linear-gradient(125deg,#f6f6f6,#f3e6e8);animation:dawFloat 24s ease-in-out infinite alternate;will-change:transform}
-@keyframes dawFloat{0%{transform:translate3d(-3%,-2%,0) scale(1.02)}50%{transform:translate3d(3%,3%,0) scale(1.09)}100%{transform:translate3d(-1%,5%,0) scale(1.04)}}
-header{z-index:2}
-.logo{position:absolute;top:34px;left:4.4%;transform:none!important;line-height:.8;font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:46px;font-weight:900;letter-spacing:-5px;color:#b80018;text-transform:none;white-space:nowrap;user-select:none}
-.logo .daw-logo-the{display:block!important;font-size:15px;line-height:1;letter-spacing:-1px;font-family:Arial,sans-serif;font-weight:900}
-.logo .daw-logo-word{display:block!important;font-style:italic;transform:scaleX(.78) scaleY(1.38);transform-origin:top left;margin-top:3px}
-@media(max-width:760px){.logo{top:25px;left:18px;font-size:37px}.logo .daw-logo-the{font-size:12px}}
-@media(prefers-reduced-motion:reduce){body::after{animation:none}}
+/* Fix: one continuous animated background, without a second overlapping layer */
+html{background:#f5f1f2}
+body{
+  position:static;isolation:auto;
+  background-image:
+    radial-gradient(ellipse 55% 62% at 92% 30%,rgba(208,33,59,.53),transparent 78%),
+    radial-gradient(ellipse 48% 58% at 7% 86%,rgba(232,112,132,.36),transparent 78%),
+    radial-gradient(ellipse 55% 65% at 47% 52%,rgba(255,255,255,.85),transparent 82%),
+    linear-gradient(115deg,#f8f8f8,#f3e4e7)!important;
+  background-size:145% 145%,145% 145%,145% 145%,100% 100%;
+  background-position:70% 20%,20% 80%,50% 45%,center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  animation:dawBackgroundFloat 28s ease-in-out infinite alternate;
+}
+body::after{content:none!important}
+body::before{height:56px;display:block;background:linear-gradient(105deg,#746b6b,#8f353f)}
+@keyframes dawBackgroundFloat{
+  0%{background-position:70% 20%,20% 80%,50% 45%,center}
+  50%{background-position:98% 53%,2% 53%,60% 65%,center}
+  100%{background-position:75% 75%,48% 98%,40% 40%,center}
+}
+header{z-index:auto;position:relative;background:transparent!important;box-shadow:none!important}
+.logo{position:absolute;top:26px;left:4.5%;height:92px;width:60px;max-width:none;transform:none!important;font-size:0;line-height:normal;letter-spacing:normal;color:#b90018}
+.logo .daw-logo-the{display:block!important;color:#b90018!important;font:900 18px Arial,sans-serif;letter-spacing:-1px;line-height:1}
+.logo .daw-logo-word{display:block!important;color:#b90018!important;font:italic 900 54px Impact,'Arial Narrow',sans-serif;letter-spacing:-5px;transform:scaleX(.85) scaleY(1.35);transform-origin:top left;margin-top:0}
+.news-view{margin-top:5px}
+@media(max-width:760px){.logo{top:17px;left:20px}.news-view{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){body{animation:none}}
 </style>
 </head>
 <body>
