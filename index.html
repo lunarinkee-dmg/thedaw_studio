@@ -188,6 +188,22 @@ label{
 nav button.active{font-weight:800;border-left:2px solid #e8e8e8}
 input:focus,textarea:focus,select:focus{border-color:#e8e8e8;outline:none}
 
+/* theDĀW signature red: intentional, restrained accents */
+:root{--daw-base:#333333;--daw-light:#e8e8e8;--daw-red:#B30012}
+.logo::first-letter{color:var(--daw-red)}
+.pill{border-color:var(--daw-red)}
+.pill::first-letter{color:var(--daw-red)}
+nav button.active{border-left-color:var(--daw-red);background:#484042}
+nav button.active:hover{background:#554346}
+.btn.primary{background:var(--daw-red);border-color:var(--daw-red);color:#ffffff}
+.btn.primary:hover:not(:disabled){background:#cf1024;color:#ffffff;border-color:#cf1024}
+.tag{color:#ff6876}
+.news-page-numbers .selected{color:#ff6876}
+.news-edge-arrow:hover:not(:disabled){border-color:var(--daw-red);color:#ffffff}
+:focus-visible{outline-color:#ff6876}
+input:focus,textarea:focus,select:focus{border-color:#c84a58}
+.design-toggle-row input{accent-color:var(--daw-red)}
+
 /* НОВОСТИ */
 .news-heading{margin-bottom:18px}
 .news-heading h1{font-size:clamp(28px,3vw,42px)}
