@@ -754,6 +754,13 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 .daw-reel-delta.negative{color:#bf6060}
 .daw-reel-trend-icon{display:inline-block;font-size:19px;line-height:1;font-weight:400;transform:none;color:inherit}
 .daw-reel-delta.negative .daw-reel-trend-icon{transform:rotate(90deg)}
+
+.daw-reel-delta{position:relative;cursor:help}
+.daw-reel-delta:focus-visible{outline:2px solid #64bb85;outline-offset:3px;border-radius:3px}
+.daw-reel-trend-popover{display:none;position:absolute;z-index:30;top:calc(100% + 9px);right:0;width:168px;padding:10px 12px;background:#fff;border:1px solid #e8d7dd;border-radius:12px;box-shadow:0 8px 26px #48242c25;color:#47363d;font-size:12px;font-weight:400;white-space:normal}
+.daw-reel-delta:hover .daw-reel-trend-popover,.daw-reel-delta:focus-visible .daw-reel-trend-popover{display:block}
+.daw-reel-trend-row{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
+.daw-reel-trend-row b{color:#21a657;font-size:12px}
 </style>
 </head>
 <body>
@@ -1380,6 +1387,16 @@ async function loadReelsAnalytics(){
     const snapshotKey='daw-reels-last-refresh-v1';
     let previous={};
     try{previous=JSON.parse(localStorage.getItem(snapshotKey)||'{}')||{};}catch{}
+    const historyKey='daw-reels-refresh-history-v2';
+    let history=[];
+    try{const parsed=JSON.parse(localStorage.getItem(historyKey)||'[]');if(Array.isArray(parsed))history=parsed.filter(e=>e&&Number.isFinite(e.at)&&e.items);}catch{}
+    const observedAt=Date.now();
+    const timedChange=(id,field,current,hours)=>{
+      if(typeof current!=='number')return null;
+      const deadline=observedAt-hours*3600000;
+      const baseline=[...history].reverse().find(e=>e.at<=deadline&&typeof e.items?.[id]?.[field]==='number');
+      return baseline?current-baseline.items[id][field]:null;
+    };
     const next={};
     for(const reel of payload.items){
       if(reel.id){
@@ -1421,7 +1438,7 @@ async function loadReelsAnalytics(){
         const total=Math.round(n);
         return total<60?total+' сек':Math.floor(total/60)+' мин '+String(total%60).padStart(2,'0')+' сек';
       };
-      const tile=(parent,label,value,icon,delta=null,total=null)=>{
+      const tile=(parent,label,value,icon,delta=null,periods=null)=>{
         if(value===null)return;
         const cell=document.createElement('div');cell.className='daw-reel-kpi';
         const labelNode=document.createElement('div');labelNode.className='daw-reel-kpi-label';labelNode.textContent=icon+' '+label;
@@ -1435,12 +1452,26 @@ async function loadReelsAnalytics(){
           change.className='daw-reel-delta'+(increment<0?' negative':'');
           const symbol=document.createElement('span');symbol.className='daw-reel-trend-icon';symbol.setAttribute('aria-hidden','true');symbol.textContent='↗';
           change.append(symbol,document.createTextNode((increment<0?'−':'+')+new Intl.NumberFormat('ru-RU').format(Math.abs(increment))));
+          if(periods){
+            change.tabIndex=0;
+            change.setAttribute('aria-label',label+': изменения за 1, 12 и 24 часа');
+            const popup=document.createElement('span');popup.className='daw-reel-trend-popover';
+            for(const hours of [1,12,24]){
+              const line=document.createElement('span');line.className='daw-reel-trend-row';
+              const name=document.createElement('span');name.textContent='За '+hours+' ч';
+              const value=document.createElement('b');
+              const n=periods[hours];
+              value.textContent=typeof n==='number'?(n>0?'+':'')+new Intl.NumberFormat('ru-RU').format(n):'—';
+              line.append(name,value);popup.append(line);
+            }
+            change.append(popup);
+          }
           valueNode.append(change);
         }
         cell.append(labelNode,valueNode);parent.append(cell);
       };
-      tile(grid,'Просмотры',num(reel.views),'◉',typeof previous[reel.id]?.views==='number'&&typeof reel.views==='number'?reel.views-previous[reel.id].views:null);
-      tile(grid,'Охват',num(reel.reach),'♧',typeof previous[reel.id]?.reach==='number'&&typeof reel.reach==='number'?reel.reach-previous[reel.id].reach:null);
+      tile(grid,'Просмотры',num(reel.views),'◉',typeof previous[reel.id]?.views==='number'&&typeof reel.views==='number'?reel.views-previous[reel.id].views:null,{1:timedChange(reel.id,'views',reel.views,1),12:timedChange(reel.id,'views',reel.views,12),24:timedChange(reel.id,'views',reel.views,24)});
+      tile(grid,'Охват',num(reel.reach),'♧',typeof previous[reel.id]?.reach==='number'&&typeof reel.reach==='number'?reel.reach-previous[reel.id].reach:null,{1:timedChange(reel.id,'reach',reel.reach,1),12:timedChange(reel.id,'reach',reel.reach,12),24:timedChange(reel.id,'reach',reel.reach,24)});
       tile(grid,'Вовлечённость',pct(reel.engagement_rate),'♡');
       tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
       tile(grid,'Репосты',num(reel.shares),'↗');
@@ -1458,6 +1489,7 @@ async function loadReelsAnalytics(){
       output.append(el);
     }
     try{localStorage.setItem(snapshotKey,JSON.stringify(next));}catch{}
+    try{history.push({at:observedAt,items:next});history=history.filter(e=>e.at>=observedAt-8*86400000).slice(-450);localStorage.setItem(historyKey,JSON.stringify(history));}catch{}
     if(!payload.items.length){const p=document.createElement('p');p.textContent='Опубликованные Reels не найдены.';output.append(p);}
   }catch(e){output.textContent='Ошибка статистики: '+e.message+'. Проверь права Instagram API и обновлённый Worker.';}
   finally{btn.disabled=false;}
