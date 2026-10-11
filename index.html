@@ -728,6 +728,23 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
   100%{transform:translate3d(-2%,5%,0) scale(1.05)}
 }
 @media(prefers-reduced-motion:reduce){html::before{animation:none}}
+
+.daw-reel-analytics{margin:16px 0!important;padding:22px!important;max-width:100%!important;border-radius:20px!important}
+.daw-reel-top{display:flex;align-items:flex-start;gap:18px;margin-bottom:18px}
+.daw-reel-thumb{width:112px;min-width:112px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;background:#eee}
+.daw-reel-intro{min-width:0;flex:1}
+.daw-reel-intro h3{font-size:19px;line-height:1.35;margin:0 0 9px}
+.daw-reel-caption{font-size:13px;line-height:1.55;color:#666;white-space:pre-wrap;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:0 0 12px}
+.daw-reel-link{font-size:13px!important;color:#ae5267!important;text-decoration:none!important;font-weight:600}
+.daw-reel-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.daw-reel-kpi{background:#f5f3f3;border-radius:12px;padding:15px 13px;min-width:0}
+.daw-reel-kpi-label{color:#777;font-size:12px;line-height:1.3;margin-bottom:8px}
+.daw-reel-kpi strong{font-size:22px;line-height:1.1;color:#252525;font-weight:700;overflow-wrap:anywhere}
+.daw-reel-details{border-top:1px solid #e2dfe0;margin-top:18px;padding-top:15px}
+.daw-reel-details summary{cursor:pointer;font-size:14px;font-weight:600;color:#555}
+.daw-reel-note{font-size:11px;line-height:1.5;color:#888;margin:12px 0 0}
+@media(max-width:700px){.daw-reel-analytics{padding:15px!important}.daw-reel-top{gap:11px}.daw-reel-thumb{width:82px;min-width:82px}.daw-reel-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.daw-reel-kpi{padding:12px 10px}.daw-reel-kpi strong{font-size:19px}}
+
 </style>
 </head>
 <body>
@@ -1356,44 +1373,59 @@ async function loadReelsAnalytics(){
     output.append(counter);
     for(const reel of payload.items){
       const el=document.createElement('article');
-      el.className='card';
-      el.style.cssText='margin:14px 0;padding:20px;max-width:100%;';
-      const heading=document.createElement('h3');heading.textContent=reel.title||'Reels без заголовка';el.append(heading);
-      const caption=document.createElement('p');caption.textContent=reel.caption||'Без подписи';caption.style.cssText='white-space:pre-wrap;max-height:125px;overflow:auto;';el.append(caption);
-      const grid=document.createElement('div');
-      grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:15px 0;';
-      const percent=n=>typeof n==='number'?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+'%':'—';
-      const time=n=>typeof n==='number'?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+' сек':'—';
-      function stat(target,label,value){
-        const cell=document.createElement('div');cell.style.cssText='border:1px solid #e6d3d6;border-radius:12px;padding:12px;';
-        const name=document.createElement('div');name.className='muted';name.textContent=label;
-        const number=document.createElement('strong');number.textContent=value;number.style.cssText='display:block;margin-top:7px;font-size:18px;';
-        cell.append(name,number);target.append(cell);
+      el.className='card daw-reel-analytics';
+      const captionText=String(reel.caption||'').trim();
+      const titleText=String(reel.title||captionText.split('\n')[0]||'Reels без заголовка').trim();
+      const description=captionText.startsWith(titleText)?captionText.slice(titleText.length).trim():captionText;
+      const top=document.createElement('div');top.className='daw-reel-top';
+      if(reel.thumbnail_url||reel.media_url){
+        const image=document.createElement('img');image.className='daw-reel-thumb';
+        image.src=reel.thumbnail_url||reel.media_url;image.alt='Обложка Reels';image.loading='lazy';
+        image.onerror=()=>image.remove();top.append(image);
       }
-      stat(grid,'Просмотры',fmt(reel.views));
-      stat(grid,'Охват',fmt(reel.reach));
-      stat(grid,'Вовлечённость',percent(reel.engagement_rate));
-      stat(grid,'Среднее время просмотра',time(reel.avg_watch_time_seconds));
-      stat(grid,'Репосты',fmt(reel.shares));
-      stat(grid,'Сохранения',fmt(reel.saves));
-      el.append(grid);
-      const details=document.createElement('details');
-      details.style.cssText='margin:12px 0;border-top:1px solid #e6d3d6;padding-top:12px;';
-      const summary=document.createElement('summary');summary.textContent='Подробная статистика';summary.style.cursor='pointer';
-      details.append(summary);
-      const extended=document.createElement('div');extended.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:12px 0;';
-      stat(extended,'Лайки',fmt(reel.likes));
-      stat(extended,'Комментарии',fmt(reel.comments));
-      stat(extended,'Взаимодействия',fmt(reel.interactions));
-      stat(extended,'Общее время просмотра',time(reel.total_watch_time_seconds));
-      stat(extended,'Доля ранних пропусков',percent(reel.skip_rate));
-      details.append(extended);
-      const hint=document.createElement('p');hint.className='muted';
-      hint.textContent='Вовлечённость = взаимодействия / охват × 100%. Прочерк означает, что Instagram не предоставил метрику. Динамика за 1/6/24 часа появится после подключения хранения замеров.';
-      details.append(hint);
-      el.append(details);
+      const intro=document.createElement('div');intro.className='daw-reel-intro';
+      const heading=document.createElement('h3');heading.textContent=titleText;intro.append(heading);
+      if(description){
+        const body=document.createElement('p');body.className='daw-reel-caption';body.textContent=description;intro.append(body);
+      }
       if(reel.permalink&&/^https:\/\//.test(reel.permalink)){
-        const link=document.createElement('a');link.href=reel.permalink;link.textContent='Открыть Reels ↗';link.target='_blank';link.rel='noopener noreferrer';link.style.color='#a92745';el.append(link);
+        const link=document.createElement('a');link.className='daw-reel-link';link.href=reel.permalink;
+        link.textContent='Открыть Reels ↗';link.target='_blank';link.rel='noopener noreferrer';intro.append(link);
+      }
+      top.append(intro);el.append(top);
+      const grid=document.createElement('div');grid.className='daw-reel-kpis';
+      const num=n=>typeof n==='number'&&Number.isFinite(n)?new Intl.NumberFormat('ru-RU').format(n):null;
+      const pct=n=>typeof n==='number'&&Number.isFinite(n)?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+'%':null;
+      const secs=n=>typeof n==='number'&&Number.isFinite(n)?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+' сек':null;
+      const tile=(parent,label,value,icon)=>{
+        if(value===null)return;
+        const cell=document.createElement('div');cell.className='daw-reel-kpi';
+        const labelNode=document.createElement('div');labelNode.className='daw-reel-kpi-label';labelNode.textContent=icon+' '+label;
+        const valueNode=document.createElement('strong');valueNode.textContent=value;
+        cell.append(labelNode,valueNode);parent.append(cell);
+      };
+      tile(grid,'Просмотры',num(reel.views),'▷');
+      tile(grid,'Охват',num(reel.reach),'◎');
+      tile(grid,'Вовлечённость',pct(reel.engagement_rate),'♡');
+      tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
+      tile(grid,'Репосты',num(reel.shares),'↗');
+      tile(grid,'Сохранения',num(reel.saves),'▣');
+      if(grid.childElementCount)el.append(grid);
+      else{const unavailable=document.createElement('p');unavailable.className='muted';unavailable.textContent='Показатели этого Reels пока недоступны в Instagram API.';el.append(unavailable);}
+      const details=document.createElement('details');details.className='daw-reel-details';
+      const summary=document.createElement('summary');summary.textContent='Подробная статистика';details.append(summary);
+      const extra=document.createElement('div');extra.className='daw-reel-kpis';
+      tile(extra,'Лайки',num(reel.likes),'♡');
+      tile(extra,'Комментарии',num(reel.comments),'☰');
+      tile(extra,'Взаимодействия',num(reel.interactions),'✦');
+      tile(extra,'Общее время просмотра',secs(reel.total_watch_time_seconds),'◷');
+      tile(extra,'Ранние пропуски',pct(reel.skip_rate),'↷');
+      if(extra.childElementCount){details.append(extra);el.append(details);}
+      const absent=[['Вовлечённость',reel.engagement_rate],['Среднее время просмотра',reel.avg_watch_time_seconds],['Репосты',reel.shares],['Сохранения',reel.saves]].filter(pair=>typeof pair[1]!=='number');
+      if(absent.length){
+        const note=document.createElement('p');note.className='daw-reel-note';
+        note.textContent='Не получены: '+absent.map(x=>x[0]).join(', ')+'. Требуется проверить доступность метрик в Instagram API и ответ Worker.';
+        el.append(note);
       }
       output.append(el);
     }
