@@ -18,6 +18,12 @@
     "enabled": true
   },
   {
+    "name": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/",
+    "category": "Киберспорт / Игры",
+    "enabled": true
+  },
+  {
     "name": "The New York Times",
     "url": "https://www.nytimes.com/",
     "feed": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
@@ -35,12 +41,6 @@
     "url": "https://pitchfork.com/",
     "feed": "https://pitchfork.com/rss/news/",
     "category": "США / Музыка",
-    "enabled": true
-  },
-  {
-    "name": "Rolling Stone",
-    "url": "https://www.rollingstone.com/",
-    "category": "США / Музыка и культура",
     "enabled": true
   },
   {
