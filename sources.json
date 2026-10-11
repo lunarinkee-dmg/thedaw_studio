@@ -41,5 +41,12 @@
     "url": "https://tengrinews.kz/",
     "category": "Казахстан / Новости",
     "enabled": true
+  },
+  {
+    "name": "Toaster",
+    "url": "https://t.me/s/toastermag",
+    "category": "Культура / Музыка",
+    "type": "telegram",
+    "enabled": true
   }
 ]
