@@ -676,6 +676,36 @@ html.daw-guest-mode .app{display:block}
 .daw-guest-subhead{margin-bottom:29px}.daw-guest-pipeline{margin-bottom:55px}
 .daw-guest-reels{gap:8px}.daw-guest-reel{padding:8px}.daw-guest-reel span{font-size:9px}
 }
+
+/* theDAW news approval workspace — exact composition from supplied mockup */
+body:has(.daw-news-screen) header{height:184px;min-height:184px}
+body:has(.daw-news-screen) main{padding:0 20px 36px}
+body:has(.daw-news-screen) .section-switch{top:61%;gap:11px}
+body:has(.daw-news-screen) .section-switch-main{height:60px;min-width:174px;border-radius:40px;font-size:13px;font-weight:600;text-transform:uppercase}
+body:has(.daw-news-screen) .section-switch-icon{width:45px;height:45px;padding:0;border:0!important;border-radius:100%;background:transparent!important;box-shadow:none!important}
+body:has(.daw-news-screen) .section-switch-icon img{display:block;width:45px;height:45px}
+body:has(.daw-news-screen) .daw-auth{top:23px}
+.daw-news-screen{display:flex;flex-direction:column;align-items:center;min-height:calc(100svh - 184px);padding-top:64px}
+.daw-news-card-row{display:flex;align-items:center;justify-content:center;gap:16px;width:100%}
+.daw-news-stack{position:relative;width:min(625px,calc(100vw - 136px));height:333px;margin-bottom:28px;isolation:isolate}
+.daw-news-stack::before,.daw-news-stack::after{content:"";position:absolute;left:2.5%;width:95%;height:100%;top:14px;border:1px solid #ddd6d6;border-radius:35px;background:rgba(255,255,255,.77);box-shadow:0 3px 4px #0002;z-index:-1}
+.daw-news-stack::after{left:5%;width:90%;top:28px;z-index:-2}
+.daw-news-card{width:100%;height:100%;background:rgba(255,255,255,.9);border:1px solid #d9d5d5;border-radius:35px;box-shadow:0 3px 4px #0002;display:flex;flex-direction:column;padding:26px 54px 25px}
+.daw-news-category{width:fit-content;border:1px solid #eca4b0;background:#ffe5ea;border-radius:12px;color:#e54b66;font-size:13px;padding:3px 9px;margin-bottom:17px;max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+.daw-news-title{font-size:18px;line-height:1.27;font-weight:500;letter-spacing:-.4px;margin:0 0 21px;color:#252525;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
+.daw-news-description{font-size:16px;line-height:1.27;font-weight:400;white-space:normal;color:#303030;overflow:hidden;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;margin:0}
+.daw-news-actions{display:flex;justify-content:center;align-items:center;gap:43px;margin-top:auto;padding-top:12px}
+.daw-news-actions button{background:transparent;border:none;color:#f18c9f;font-size:37px;line-height:1;font-weight:400;text-shadow:1px 2px 2px #ad4d5b;cursor:pointer;padding:0 4px}
+.daw-news-actions button:hover{color:#b30012;transform:scale(1.08)}
+.daw-news-arrow{background:transparent;border:0!important;box-shadow:none!important;color:#ed96a8;line-height:1;font-size:63px;min-width:36px;width:36px;padding:0 2px;cursor:pointer;text-shadow:0 2px 5px #cd667d}
+.daw-news-arrow:hover:not(:disabled){color:#b30012}
+.daw-news-arrow:disabled{opacity:.22;cursor:default}
+.daw-news-queue{margin-top:115px;text-align:center;color:#303030;font-size:15px;display:flex;align-items:center;flex-direction:column;gap:8px}
+.daw-news-queue strong{min-width:172px;border-radius:28px;background:rgba(255,255,255,.49);border:1px solid #ddd;box-shadow:inset 0 2px 4px #0002,0 2px 4px #0002;padding:8px 14px;font-size:17px;font-weight:400}
+.daw-news-tools{display:flex;gap:10px;justify-content:center;align-items:center;margin:22px auto 0}
+.daw-news-tools button{font-size:11px;padding:6px 12px}
+.daw-news-warning{max-width:620px;font-size:12px;margin:14px auto 0;text-align:center}
+@media(max-width:720px){body:has(.daw-news-screen) header{height:155px;min-height:155px}body:has(.daw-news-screen) .section-switch{top:auto;bottom:13px}body:has(.daw-news-screen) main{padding:0 11px 25px}.daw-news-screen{padding-top:47px;min-height:calc(100svh - 155px)}.daw-news-card-row{gap:3px}.daw-news-stack{width:calc(100vw - 91px);height:365px}.daw-news-card{padding:24px 22px 22px}.daw-news-title{font-size:17px}.daw-news-description{font-size:14px}.daw-news-arrow{font-size:45px;width:29px;min-width:29px}.daw-news-queue{margin-top:70px}}
 </style>
 </head>
 <body>
@@ -683,8 +713,9 @@ html.daw-guest-mode .app{display:block}
 <header>
   <div class="logo" aria-label="theDĀW"><img alt="theDĀW" width="60" height="92" src="./assets/daw-logo-2026.svg"></div>
   <div class="section-switch" role="group" aria-label="Переключение разделов">
+    <button class="section-switch-icon" id="sectionConstructorIcon" type="button" aria-label="Конструктор" title="Конструктор"><img src="./assets/constructor-icon.svg" alt=""></button>
     <button class="section-switch-main" id="sectionSwitchMain" type="button" aria-label="Переключить раздел">Новости</button>
-    <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Перейти в конструктор">◈</button>
+    <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Паблишер"><img src="./assets/publisher-icon.svg" alt=""></button>
   </div>
   <div class="daw-auth"><span class="daw-role" id="dawRole">Гость</span><button class="btn" id="dawAuthButton" type="button">Войти как редактор</button></div>
 </header>
@@ -704,7 +735,9 @@ try {
 let data={
   news:[],
   drafts:saved.drafts||[],
-  media:saved.media||[]
+  media:saved.media||[],
+  approved:saved.approved||{},
+  rejected:saved.rejected||{}
 };
 
 const DAW_API='https://thedaw-ai.lunarinkee.workers.dev';
@@ -812,7 +845,9 @@ const save=()=>localStorage.setItem(
   K,
   JSON.stringify({
     drafts:data.drafts,
-    media:data.media
+    media:data.media,
+    approved:data.approved,
+    rejected:data.rejected
   })
 );
 
@@ -823,7 +858,9 @@ function updateSectionSwitch(){
   if(view==='home')return;
   const news=view==='inbox';
   main.textContent=news?'Новости':'Конструктор';
-  icon.textContent=news?'✦':'◇';
+  icon.innerHTML='<img src="./assets/publisher-icon.svg" alt="">';
+  const left=document.getElementById('sectionConstructorIcon');
+  if(left)left.style.display=news?'grid':'none';
   const next=news?'конструктор':'новости';
   main.title='Перейти в '+next;
   icon.title='Перейти в '+next;
@@ -840,7 +877,11 @@ function go(v){
 }
 function toggleSection(){go(view==='inbox'?'constructor':'inbox')}
 document.getElementById('sectionSwitchMain').onclick=toggleSection;
-document.getElementById('sectionSwitchIcon').onclick=toggleSection;
+document.getElementById('sectionConstructorIcon').onclick=()=>go('constructor');
+document.getElementById('sectionSwitchIcon').onclick=()=>{
+  if(!isEditor()){showEditorLogin();return;}
+  constructorTab='publish';go('constructor');
+};
 updateSectionSwitch();
 
 function create(id){
@@ -1051,81 +1092,55 @@ function render(){
   if(!m)return;
 
   if(section==='inbox'){
-    const sorted=recentNews(data.news).sort(
-      (a,b)=>newsTimestamp(b)-newsTimestamp(a)
-    );
-
+    const sorted=recentNews(data.news)
+      .filter(n=>!data.rejected[n.id]&&!data.approved[n.id])
+      .sort((x,y)=>newsTimestamp(y)-newsTimestamp(x));
     const pages=Math.max(1,sorted.length);
-
-    newsPage=Math.max(
-      1,
-      Math.min(newsPage,pages)
-    );
-
-    const visible=sorted.slice(newsPage-1,newsPage);
-
-    m.innerHTML=
-      '<section class="news-view">'+
-      (!isEditor()?'<p class="guest-readonly-note">Режим гостя · Просмотр новостей. Для создания публикаций войди как редактор.</p>':'')+
-      '<div class="topline news-heading">'+
-      '<div><h1>Новости</h1>'+
-      '<p class="muted">Свежие новости первыми · '+
-      sorted.length+
-      ' публикаций за последние 36 часов</p></div>'+
-      '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
-      (newsLoading?'disabled':'')+'>'+
-      (newsLoading?'⏳ Проверяем источники…':'↻ Обновить новости')+
-      '</button></div>'+
-      (newsError?
-        '<p class="banner danger">'+esc(newsError)+'</p>':'')+
-      '<div class="news-carousel">'+
-      '<button class="news-edge-arrow news-edge-left" data-news-page="'+(newsPage-1)+'" '+(newsPage===1?'disabled':'')+' aria-label="Предыдущая новость">‹</button>'+
-      '<div class="grid news-grid">'+
-      (visible.length?
-        visible.map(n=>
-          '<article class="card news-card">'+
-          '<span class="tag">'+esc(n.category)+'</span>'+
-          '<h3 title="'+esc(n.title)+'">'+esc(n.title)+'</h3>'+
-          '<p class="muted news-summary">'+esc(n.summary)+'</p>'+
-          '<div class="meta news-meta">'+
-          esc(n.source)+' · '+esc(n.date)+
-          '</div><div class="actions">'+
-          (isEditor()?'<button class="btn primary" data-create="'+esc(n.id)+'">Создать пост →</button>':'')+
-          '<a class="btn" href="'+esc(tiktokSearchUrl(n.title))+
-          '" target="_blank" rel="noopener noreferrer" title="Найти видео по теме новости в TikTok">'+
-          '♫ Видео TikTok ↗</a>'+
-          '<a class="btn" href="'+esc(n.url)+
-          '" target="_blank" rel="noopener noreferrer">'+
-          'Источник ↗</a></div></article>'
-        ).join(''):
-        '<p class="muted">'+
-        (newsLoading?'Загружаем новости…':'Новостей пока нет.')+
-        '</p>')+
+    newsPage=Math.max(1,Math.min(newsPage,pages));
+    const n=sorted[newsPage-1];
+    const approvedCount=Object.keys(data.approved).length;
+    const publishedCount=Object.values(data.approved).filter(x=>x.published===true).length;
+    m.innerHTML='<section class="daw-news-screen">'+
+      '<div class="daw-news-card-row">'+
+      '<button class="daw-news-arrow" data-direction="-1" '+(newsPage<=1?'disabled':'')+' aria-label="Предыдущая новость">‹</button>'+
+      '<div class="daw-news-stack"><article class="daw-news-card">'+
+      (n?'<span class="daw-news-category">'+esc(n.category||'новости')+'</span>'+
+        '<h2 class="daw-news-title">'+esc(n.title)+'</h2>'+
+        '<p class="daw-news-description">'+esc(n.summary||'Описание пока недоступно')+'</p>'+
+        (isEditor()?'<div class="daw-news-actions"><button id="dawRejectNews" title="Отклонить" aria-label="Отклонить новость">×</button><button id="dawApproveNews" title="Одобрить" aria-label="Одобрить новость">✓</button></div>':'<p class="daw-news-warning">Для одобрения войди как редактор.</p>'):
+        '<h2 class="daw-news-title">Новых материалов пока нет</h2><p class="daw-news-description">Загрузи свежие новости или дождись автоматической проверки.</p>')+
+      '</article></div>'+
+      '<button class="daw-news-arrow" data-direction="1" '+(newsPage>=sorted.length?'disabled':'')+' aria-label="Следующая новость">›</button>'+
       '</div>'+
-      '<button class="news-edge-arrow news-edge-right" data-news-page="'+(newsPage+1)+'" '+(newsPage===pages?'disabled':'')+' aria-label="Следующая новость">›</button>'+
-      '</div>'+
-      (sorted.length?'<div class="news-pagination">'+newsPage+' / '+sorted.length+'</div>':'')+
-      '<div class="daw-queue">очередь<strong>'+sorted.length+'/13</strong></div>'+ '</section>';
-
-    m.querySelectorAll('[data-create]').forEach(
-      b=>b.onclick=()=>create(b.dataset.create)
-    );
-
-    m.querySelectorAll('[data-news-page]').forEach(
-      b=>b.onclick=()=>{
-        newsPage=Number(b.dataset.newsPage);
-        render();
-        document.querySelector('main').scrollIntoView({
-          behavior:'smooth',
-          block:'start'
+      '<div class="daw-news-queue">очередь<strong>'+publishedCount+'/'+approvedCount+'</strong></div>'+
+      '<div class="daw-news-tools"><button class="btn" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'Проверяем новости…':'↻ Обновить новости')+'</button>'+
+      (isEditor()?'<button class="btn" id="sourcesManage">Источники</button>':'')+'</div>'+
+      (newsError?'<p class="daw-news-warning">'+esc(newsError)+'</p>':'')+
+      '</section>';
+    m.querySelectorAll('[data-direction]').forEach(btn=>btn.onclick=()=>{
+      newsPage=Math.max(1,Math.min(pages,newsPage+Number(btn.dataset.direction)));
+      render();
+    });
+    const refresh=m.querySelector('#newsRefresh');if(refresh)refresh.onclick=()=>load(true);
+    const sources=m.querySelector('#sourcesManage');if(sources)sources.onclick=showSourcesManager;
+    const approve=m.querySelector('#dawApproveNews');if(approve)approve.onclick=()=>{
+      if(!n||!isEditor())return;
+      data.approved[n.id]={id:n.id,url:n.url,approvedAt:new Date().toISOString(),published:false};
+      if(!data.drafts.some(d=>d.sourceUrl===n.url)){
+        data.drafts.unshift({
+          id:'d'+Date.now(),newsId:n.id,sourceUrl:n.url,sourceTitle:n.title,
+          sourceSummary:n.summary,originalTitle:n.title,originalSummary:n.summary,
+          sourceName:n.source,headline:n.title,
+          caption:n.title+'\\n\\n'+(n.summary||'')+'\\n\\nИсточник: '+n.source+' — '+n.url,
+          tiktok:n.title,category:n.category
         });
       }
-    );
-
-    m.querySelector('#newsRefresh').onclick=()=>load(true);
-    m.querySelector('#sourcesManage').onclick=()=>isEditor()?showSourcesManager():showEditorLogin();
-    if(!isEditor())m.querySelector('#sourcesManage').style.display='none';
-
+      save();newsPage=1;render();
+    };
+    const reject=m.querySelector('#dawRejectNews');if(reject)reject.onclick=()=>{
+      if(!n||!isEditor())return;
+      data.rejected[n.id]=true;save();newsPage=1;render();
+    };
   } else if(section==='drafts'){
     const selected=data.drafts.find(x=>x.id===current)||data.drafts[0];
     if(selected)current=selected.id;
@@ -2201,6 +2216,15 @@ function renderDesign(){
         if(!ready)throw Error('Instagram долго обрабатывает видео. Проверь публикацию позже, чтобы не создать дубль.');
         notice.textContent='Публикуем Reels в Instagram…';
         const result=await call('/instagram/publish',{creation_id:prepared.creation_id,confirm:true});
+        if(current){
+          const draft=data.drafts.find(d=>d.id===current);
+          if(draft&&draft.newsId&&data.approved[draft.newsId]){
+            data.approved[draft.newsId].published=true;
+            data.approved[draft.newsId].publishedAt=new Date().toISOString();
+            data.approved[draft.newsId].instagramMediaId=result.media_id;
+            save();
+          }
+        }
         notice.textContent='✓ Reels опубликован в Instagram! ID: '+result.media_id;
       }else{
         const url=URL.createObjectURL(blob);
