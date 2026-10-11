@@ -968,6 +968,13 @@ function newsTimestamp(n){
   return Date.parse(raw);
 }
 
+function displayNewsTitle(value){
+  return String(value||'')
+    .replace(/^\s*\d{1,2}:\d{2}(?::\d{2})?\s*[,|–—-]?\s*\d{1,2}\s+[А-Яа-яЁё]+\s+\d{4}(?:\s*г(?:ода|\.)?)?\s*[,|–—:-]?\s*/u,'')
+    .replace(/^\s*\d{1,2}[.\/-]\d{1,2}[.\/-]\d{4}\s*(?:[,|–—-]\s*)?/u,'')
+    .trim();
+}
+
 function recentNews(items){
   const now=Date.now();
 
@@ -1127,7 +1134,7 @@ function render(){
       '<button class="daw-news-arrow" data-direction="-1" '+(newsPage<=1?'disabled':'')+' aria-label="Предыдущая новость">‹</button>'+
       '<div class="daw-news-stack"><article class="daw-news-card">'+
       (n?'<span class="daw-news-category">'+esc(n.category||'новости')+'</span>'+
-        '<h2 class="daw-news-title">'+esc(n.title)+'</h2>'+
+        '<h2 class="daw-news-title">'+esc(displayNewsTitle(n.title))+'</h2>'+
         '<p class="daw-news-description">'+esc(n.summary||'Описание пока недоступно')+'</p>'+
         '<div class="daw-news-source">Источник: '+(n.url?'<a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">'+esc(n.source||'Открыть первоисточник')+' ↗</a>':esc(n.source||'Не указан'))+'</div>'+
         (isEditor()?'<div class="daw-news-actions"><button id="dawRejectNews" title="Отклонить" aria-label="Отклонить новость">×</button><button id="dawApproveNews" title="Одобрить" aria-label="Одобрить новость">✓</button></div>':'<p class="daw-news-warning">Для одобрения войди как редактор.</p>'):
