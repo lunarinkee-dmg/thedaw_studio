@@ -1377,6 +1377,15 @@ async function loadReelsAnalytics(){
     const payload=await response.json().catch(()=>({}));
     if(!response.ok||payload.ok!==true)throw Error(payload.error||'HTTP '+response.status);
     if(!Array.isArray(payload.items))throw Error('Некорректный ответ Instagram');
+    const snapshotKey='daw-reels-last-refresh-v1';
+    let previous={};
+    try{previous=JSON.parse(localStorage.getItem(snapshotKey)||'{}')||{};}catch{}
+    const next={};
+    for(const reel of payload.items){
+      if(reel.id){
+        next[reel.id]={views:typeof reel.views==='number'?reel.views:null,reach:typeof reel.reach==='number'?reel.reach:null};
+      }
+    }
     output.replaceChildren();
     const counter=document.createElement('p');
     counter.className='muted';counter.textContent='Найдено Reels: '+payload.items.length+' · Обновлено: '+new Date(payload.checked_at).toLocaleString('ru-RU');
@@ -1420,19 +1429,18 @@ async function loadReelsAnalytics(){
         const amount=document.createElement('span');amount.textContent=value;valueNode.append(amount);
         const actual=typeof delta==='number'?delta:delta?.value;
         const hasActual=typeof actual==='number'&&Number.isFinite(actual);
-        const increment=hasActual?actual:typeof total==='number'&&Number.isFinite(total)?Math.round(total*0.035):null;
+        const increment=hasActual?actual:null;
         if(increment!==null){
           const change=document.createElement('span');
-          change.className='daw-reel-delta'+(hasActual?'':' daw-reel-delta-demo')+(increment<0?' negative':'');
+          change.className='daw-reel-delta'+(increment<0?' negative':'');
           const symbol=document.createElement('span');symbol.className='daw-reel-trend-icon';symbol.setAttribute('aria-hidden','true');symbol.textContent='↗';
           change.append(symbol,document.createTextNode((increment<0?'−':'+')+new Intl.NumberFormat('ru-RU').format(Math.abs(increment))));
-          if(!hasActual)change.title='Демонстрационный прирост (3,5%), не реальные данные';
           valueNode.append(change);
         }
         cell.append(labelNode,valueNode);parent.append(cell);
       };
-      tile(grid,'Просмотры',num(reel.views),'◉',reel.hourly_views_delta,reel.views);
-      tile(grid,'Охват',num(reel.reach),'♧',reel.hourly_reach_delta,reel.reach);
+      tile(grid,'Просмотры',num(reel.views),'◉',typeof previous[reel.id]?.views==='number'&&typeof reel.views==='number'?reel.views-previous[reel.id].views:null);
+      tile(grid,'Охват',num(reel.reach),'♧',typeof previous[reel.id]?.reach==='number'&&typeof reel.reach==='number'?reel.reach-previous[reel.id].reach:null);
       tile(grid,'Вовлечённость',pct(reel.engagement_rate),'♡');
       tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
       tile(grid,'Репосты',num(reel.shares),'↗');
@@ -1449,6 +1457,7 @@ async function loadReelsAnalytics(){
       if(extra.childElementCount){details.append(extra);el.append(details);}
       output.append(el);
     }
+    try{localStorage.setItem(snapshotKey,JSON.stringify(next));}catch{}
     if(!payload.items.length){const p=document.createElement('p');p.textContent='Опубликованные Reels не найдены.';output.append(p);}
   }catch(e){output.textContent='Ошибка статистики: '+e.message+'. Проверь права Instagram API и обновлённый Worker.';}
   finally{btn.disabled=false;}
