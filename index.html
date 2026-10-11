@@ -757,8 +757,8 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 
 .daw-reel-delta{position:relative;cursor:help}
 .daw-reel-delta:focus-visible{outline:2px solid #64bb85;outline-offset:3px;border-radius:3px}
-.daw-reel-trend-popover{display:none;position:absolute;z-index:30;top:calc(100% + 9px);right:0;width:168px;padding:10px 12px;background:#fff;border:1px solid #e8d7dd;border-radius:12px;box-shadow:0 8px 26px #48242c25;color:#47363d;font-size:12px;font-weight:400;white-space:normal}
-.daw-reel-delta:hover .daw-reel-trend-popover,.daw-reel-delta:focus-visible .daw-reel-trend-popover{display:block}
+.daw-reel-trend-popover{display:none;position:fixed;z-index:99999;width:168px;padding:10px 12px;background:#fff;border:1px solid #e8d7dd;border-radius:12px;box-shadow:0 8px 26px #48242c25;color:#47363d;font-size:12px;font-weight:400;white-space:normal}
+
 .daw-reel-trend-row{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
 .daw-reel-trend-row b{color:#21a657;font-size:12px}
 </style>
@@ -1464,7 +1464,21 @@ async function loadReelsAnalytics(){
               value.textContent=typeof n==='number'?(n>0?'+':'')+new Intl.NumberFormat('ru-RU').format(n):'—';
               line.append(name,value);popup.append(line);
             }
-            change.append(popup);
+            const showPopup=()=>{
+              document.querySelectorAll('body > .daw-reel-trend-popover').forEach(node=>node.remove());
+              document.body.append(popup);
+              popup.style.display='block';
+              const rect=change.getBoundingClientRect();
+              const width=popup.offsetWidth||168;
+              const height=popup.offsetHeight||112;
+              popup.style.left=Math.max(8,Math.min(window.innerWidth-width-8,rect.left))+'px';
+              popup.style.top=(rect.bottom+8+height>window.innerHeight?Math.max(8,rect.top-height-8):rect.bottom+8)+'px';
+            };
+            const hidePopup=()=>{popup.remove();};
+            change.addEventListener('mouseenter',showPopup);
+            change.addEventListener('mouseleave',hidePopup);
+            change.addEventListener('focus',showPopup);
+            change.addEventListener('blur',hidePopup);
           }
           valueNode.append(change);
         }
