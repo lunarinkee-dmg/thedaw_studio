@@ -584,7 +584,20 @@ header{z-index:auto;position:relative;background:transparent!important;box-shado
 .news-view{margin-top:5px}
 @media(max-width:760px){.logo{top:17px;left:20px}.news-view{margin-top:10px}}
 @media(prefers-reduced-motion:reduce){body{animation:none}}
- .logo img{display:block;width:60px;height:92px;object-fit:contain;max-width:none}\n</style>
+ .logo img{display:block;width:60px;height:92px;object-fit:contain;max-width:none}\n
+/* Guest / editor roles */
+.daw-auth{position:absolute;right:3%;top:43px;z-index:5;display:flex;align-items:center;gap:9px}
+.daw-auth .btn{padding:9px 17px;font-size:12px}
+.daw-role{font-size:12px;color:#6b5155;background:rgba(255,255,255,.72);border:1px solid #ffffffa6;padding:10px 15px;border-radius:24px}
+.daw-login-overlay{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(30,16,21,.42);backdrop-filter:blur(16px);padding:16px}
+.daw-login-panel{width:min(440px,100%);padding:32px;background:#ffffffed;border:1px solid white;border-radius:30px;box-shadow:0 20px 70px #21121c55}
+.daw-login-panel h2{font-size:24px;font-weight:650;margin:0 0 8px}
+.daw-login-panel p{font-size:13px;margin:4px 0 18px}
+.daw-login-actions{display:flex;justify-content:flex-end;gap:12px;margin-top:17px}
+.daw-login-error{color:#a50017;font-size:13px;min-height:18px}
+.guest-readonly-note{max-width:640px;margin:4px auto 24px;text-align:center;font-size:13px}
+@media(max-width:760px){.daw-auth{top:16px;right:12px}.daw-role{padding:8px;font-size:10px}.daw-auth .btn{padding:8px 10px;font-size:10px}}
+</style>
 </head>
 <body>
 
@@ -594,12 +607,13 @@ header{z-index:auto;position:relative;background:transparent!important;box-shado
     <button class="section-switch-main" id="sectionSwitchMain" type="button" aria-label="Переключить раздел">Новости</button>
     <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Перейти в конструктор">◈</button>
   </div>
-  <div class="pill">● LOCAL DEMO</div>
+  <div class="daw-auth"><span class="daw-role" id="dawRole">Гость</span><button class="btn" id="dawAuthButton" type="button">Войти как редактор</button></div>
 </header>
 
 <div class="app">
 <main id="main"></main>
 </div>
+<div id="dawLoginMount"></div>
 
 <script>
 const K='thedaw_studio_v02';
@@ -613,6 +627,82 @@ let data={
   drafts:saved.drafts||[],
   media:saved.media||[]
 };
+
+const DAW_API='https://thedaw-ai.lunarinkee.workers.dev';
+let editorSession='';
+let editorRole='guest';
+try { editorSession=sessionStorage.getItem('daw_editor_session')||''; }catch(e){}
+const isEditor=()=>editorRole==='editor' && Boolean(editorSession);
+function updateAuthDisplay(){
+  const role=document.getElementById('dawRole'), btn=document.getElementById('dawAuthButton');
+  if(role)role.textContent=isEditor()?'Редактор':'Гость';
+  if(btn)btn.textContent=isEditor()?'Выйти':'Войти как редактор';
+  document.documentElement.dataset.dawRole=isEditor()?'editor':'guest';
+}
+function editorLogout(message){
+  editorRole='guest';editorSession='';
+  try{sessionStorage.removeItem('daw_editor_session')}catch(e){}
+  if(view==='constructor')view='inbox';
+  updateAuthDisplay();updateSectionSwitch();render();
+  if(message)alert(message);
+}
+async function editorRequest(path,body={}){
+  if(!editorSession)throw Error('Нужен вход редактора');
+  const response=await fetch(DAW_API+path,{
+    method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
+    body:JSON.stringify(body),cache:'no-store'
+  });
+  const value=await response.json().catch(()=>({}));
+  if(!response.ok||!value.ok){
+    if(response.status===401)editorLogout('Сессия редактора истекла. Войди ещё раз.');
+    throw Error(value.error||'Не удалось проверить доступ');
+  }
+  return value;
+}
+function closeEditorLogin(){
+  document.getElementById('dawLoginMount').replaceChildren();
+}
+function showEditorLogin(){
+  const mount=document.getElementById('dawLoginMount');
+  mount.innerHTML='<div class="daw-login-overlay"><form class="daw-login-panel" id="dawLoginForm">'+
+    '<h2>Вход редактора</h2><p>Гости могут читать новости. Для работы с публикациями нужен пароль редактора.</p>'+
+    '<label for="dawLoginPassword">Пароль</label><input id="dawLoginPassword" type="password" autocomplete="current-password" required minlength="1" placeholder="Пароль редактора">'+
+    '<div id="dawLoginError" class="daw-login-error" role="alert"></div>'+
+    '<div class="daw-login-actions"><button class="btn" type="button" id="dawLoginCancel">Отмена</button><button class="btn primary" id="dawLoginSubmit" type="submit">Войти</button></div>'+
+    '</form></div>';
+  document.getElementById('dawLoginCancel').onclick=closeEditorLogin;
+  mount.querySelector('.daw-login-overlay').onclick=e=>{if(e.target.classList.contains('daw-login-overlay'))closeEditorLogin()};
+  document.getElementById('dawLoginForm').onsubmit=async e=>{
+    e.preventDefault();
+    const submit=document.getElementById('dawLoginSubmit');
+    const error=document.getElementById('dawLoginError');
+    const password=document.getElementById('dawLoginPassword').value;
+    submit.disabled=true;error.textContent='Проверяем доступ…';
+    try{
+      const res=await fetch(DAW_API+'/auth/login',{
+        method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({password}),cache:'no-store'
+      });
+      const result=await res.json().catch(()=>({}));
+      if(!res.ok||!result.ok||!result.session)throw Error(result.error||'Cloudflare HTTP '+res.status);
+      editorSession=result.session;editorRole='editor';
+      try{sessionStorage.setItem('daw_editor_session',editorSession)}catch(e){}
+      closeEditorLogin();updateAuthDisplay();updateSectionSwitch();render();
+    }catch(err){
+      error.textContent=err.message;
+    }finally{submit.disabled=false}
+  };
+  document.getElementById('dawLoginPassword').focus();
+}
+document.getElementById('dawAuthButton').onclick=()=>isEditor()?editorLogout():showEditorLogin();
+async function restoreEditorSession(){
+  if(!editorSession){updateAuthDisplay();return;}
+  try{
+    const res=await editorRequest('/auth/session');
+    editorRole=res.role==='editor'?'editor':'guest';
+  }catch(e){editorRole='guest';editorSession='';try{sessionStorage.removeItem('daw_editor_session')}catch(e){}}
+  updateAuthDisplay();render();
+}
 
 let view='inbox';
 let constructorTab='drafts';
@@ -659,6 +749,7 @@ function updateSectionSwitch(){
   icon.setAttribute('aria-label','Перейти в '+next);
 }
 function go(v){
+  if(v==='constructor'&&!isEditor()){showEditorLogin();return;}
   view=v;
   updateSectionSwitch();
   render();
@@ -669,6 +760,7 @@ document.getElementById('sectionSwitchIcon').onclick=toggleSection;
 updateSectionSwitch();
 
 function create(id){
+  if(!isEditor()){showEditorLogin();return;}
   let n=data.news.find(x=>x.id===id);
   if(!n)return;
 
@@ -798,6 +890,7 @@ function drawSourceList(){
  });
 }
 function render(){
+  if(view==='constructor'&&!isEditor()){view='inbox';updateSectionSwitch();}
   const section=view==='constructor'?constructorTab:view;
   if(section==='design'){
     renderDesign();
@@ -824,6 +917,7 @@ function render(){
 
     m.innerHTML=
       '<section class="news-view">'+
+      (!isEditor()?'<p class="guest-readonly-note">Режим гостя · Просмотр новостей. Для создания публикаций войди как редактор.</p>':'')+
       '<div class="topline news-heading">'+
       '<div><h1>Новости</h1>'+
       '<p class="muted">Свежие новости первыми · '+
@@ -849,8 +943,7 @@ function render(){
           '<div class="meta news-meta">'+
           esc(n.source)+' · '+esc(n.date)+
           '</div><div class="actions">'+
-          '<button class="btn primary" data-create="'+
-          esc(n.id)+'">Создать пост →</button>'+
+          (isEditor()?'<button class="btn primary" data-create="'+esc(n.id)+'">Создать пост →</button>':'')+
           '<a class="btn" href="'+esc(tiktokSearchUrl(n.title))+
           '" target="_blank" rel="noopener noreferrer" title="Найти видео по теме новости в TikTok">'+
           '♫ Видео TikTok ↗</a>'+
@@ -903,7 +996,8 @@ function render(){
     );
 
     m.querySelector('#newsRefresh').onclick=()=>load(true);
-    m.querySelector('#sourcesManage').onclick=showSourcesManager;
+    m.querySelector('#sourcesManage').onclick=()=>isEditor()?showSourcesManager():showEditorLogin();
+    if(!isEditor())m.querySelector('#sourcesManage').style.display='none';
 
   } else if(section==='drafts'){
     const selected=data.drafts.find(x=>x.id===current)||data.drafts[0];
@@ -1069,6 +1163,7 @@ function generateAI(id){
 }
 
 render();
+restoreEditorSession();
 load();
 </script>
 
