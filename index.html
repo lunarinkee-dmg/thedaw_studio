@@ -748,6 +748,12 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 .daw-reel-details .daw-reel-kpis{margin-top:12px}
 @media(max-width:760px){.daw-reels-list{grid-template-columns:1fr}}
 
+.daw-reel-value{display:flex!important;align-items:center;gap:9px;flex-wrap:wrap}
+.daw-reel-delta{display:inline-flex!important;align-items:center;gap:3px;color:#20bd52;font-size:12px;font-weight:750;margin:0!important;white-space:nowrap}
+.daw-reel-delta-demo{color:#20bd52}
+.daw-reel-delta.negative{color:#bf6060}
+.daw-reel-trend-icon{display:inline-block;font-size:24px;line-height:.7;font-weight:900;transform:scaleX(1.25);color:inherit}
+.daw-reel-delta.negative .daw-reel-trend-icon{transform:rotate(90deg) scaleX(1.25)}
 </style>
 </head>
 <body>
@@ -1410,23 +1416,20 @@ async function loadReelsAnalytics(){
         if(value===null)return;
         const cell=document.createElement('div');cell.className='daw-reel-kpi';
         const labelNode=document.createElement('div');labelNode.className='daw-reel-kpi-label';labelNode.textContent=icon+' '+label;
-        const valueNode=document.createElement('strong');valueNode.textContent=value;
-        cell.append(labelNode,valueNode);
-        const changeValue=typeof delta==='number'?delta:delta?.value;
-        if(typeof changeValue==='number'&&Number.isFinite(changeValue)){
-          const change=document.createElement('small');change.className='daw-reel-delta';
-          const sign=changeValue>0?'↑':changeValue<0?'↓':'→';
-          change.textContent=sign+' '+new Intl.NumberFormat('ru-RU').format(Math.abs(changeValue))+' за последний час';
-          if(changeValue<0)change.classList.add('negative');
-          cell.append(change);
-        }else if(typeof total==='number'&&Number.isFinite(total)){
-          const estimate=Math.round(total*0.035);
-          const change=document.createElement('small');change.className='daw-reel-delta daw-reel-delta-demo';
-          change.textContent='↑ +'+new Intl.NumberFormat('ru-RU').format(estimate);
-          change.title='Пример, не реальный прирост. Автоматически заменится после получения почасового замера.';
-          cell.append(change);
+        const valueNode=document.createElement('strong');valueNode.className='daw-reel-value';
+        const amount=document.createElement('span');amount.textContent=value;valueNode.append(amount);
+        const actual=typeof delta==='number'?delta:delta?.value;
+        const hasActual=typeof actual==='number'&&Number.isFinite(actual);
+        const increment=hasActual?actual:typeof total==='number'&&Number.isFinite(total)?Math.round(total*0.035):null;
+        if(increment!==null){
+          const change=document.createElement('span');
+          change.className='daw-reel-delta'+(hasActual?'':' daw-reel-delta-demo')+(increment<0?' negative':'');
+          const symbol=document.createElement('span');symbol.className='daw-reel-trend-icon';symbol.setAttribute('aria-hidden','true');symbol.textContent='↗';
+          change.append(symbol,document.createTextNode((increment<0?'−':'+')+new Intl.NumberFormat('ru-RU').format(Math.abs(increment))));
+          if(!hasActual)change.title='Демонстрационный прирост (3,5%), не реальные данные';
+          valueNode.append(change);
         }
-        parent.append(cell);
+        cell.append(labelNode,valueNode);parent.append(cell);
       };
       tile(grid,'Просмотры',num(reel.views),'◉',reel.hourly_views_delta,reel.views);
       tile(grid,'Охват',num(reel.reach),'♧',reel.hourly_reach_delta,reel.reach);
