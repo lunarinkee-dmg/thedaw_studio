@@ -706,6 +706,27 @@ body:has(.daw-news-screen) .daw-auth{top:23px}
 .daw-news-tools button{font-size:11px;padding:6px 12px}
 .daw-news-warning{max-width:620px;font-size:12px;margin:14px auto 0;text-align:center}
 @media(max-width:720px){body:has(.daw-news-screen) header{height:155px;min-height:155px}body:has(.daw-news-screen) .section-switch{top:auto;bottom:13px}body:has(.daw-news-screen) main{padding:0 11px 25px}.daw-news-screen{padding-top:47px;min-height:calc(100svh - 155px)}.daw-news-card-row{gap:3px}.daw-news-stack{width:calc(100vw - 91px);height:365px}.daw-news-card{padding:24px 22px 22px}.daw-news-title{font-size:17px}.daw-news-description{font-size:14px}.daw-news-arrow{font-size:45px;width:29px;min-width:29px}.daw-news-queue{margin-top:70px}}
+
+/* Smooth animated editorial gradient — behind the entire application */
+html{min-height:100%;background:#f4f0f1!important;position:relative}
+html::before{
+  content:"";position:fixed;inset:-18%;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 40% 48% at 85% 34%,rgba(216,35,67,.53) 0%,rgba(228,86,109,.31) 43%,transparent 80%),
+    radial-gradient(ellipse 40% 46% at 15% 83%,rgba(238,112,139,.40) 0%,rgba(241,148,165,.21) 44%,transparent 80%),
+    radial-gradient(ellipse 44% 52% at 49% 55%,rgba(255,255,255,.89) 0%,transparent 80%),
+    linear-gradient(120deg,#f8f8f8,#f3eaec);
+  background-repeat:no-repeat;
+  animation:dawSlowDrift 36s ease-in-out infinite alternate;
+  will-change:transform;
+}
+body{position:relative!important;z-index:1;background:transparent!important;animation:none!important;min-height:100vh}
+@keyframes dawSlowDrift{
+  0%{transform:translate3d(-3%,-2%,0) scale(1.03)}
+  50%{transform:translate3d(3%,3%,0) scale(1.11)}
+  100%{transform:translate3d(-2%,5%,0) scale(1.05)}
+}
+@media(prefers-reduced-motion:reduce){html::before{animation:none}}
 </style>
 </head>
 <body>
