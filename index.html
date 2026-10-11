@@ -694,6 +694,7 @@ body:has(.daw-news-screen) .daw-auth{top:23px}
 .daw-news-category{width:fit-content;border:1px solid #eca4b0;background:#ffe5ea;border-radius:12px;color:#e54b66;font-size:13px;padding:3px 9px;margin-bottom:17px;max-width:100%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
 .daw-news-title{font-size:18px;line-height:1.27;font-weight:500;letter-spacing:-.4px;margin:0 0 21px;color:#252525;overflow:hidden;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
 .daw-news-description{font-size:16px;line-height:1.27;font-weight:400;white-space:normal;color:#303030;overflow:hidden;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;margin:0}
+.daw-news-source{margin-top:14px;font-size:12px;color:#777;overflow-wrap:anywhere}.daw-news-source a{color:#ae5267;text-decoration:underline;text-underline-offset:2px}.daw-news-source a:hover{color:#8c253f}
 .daw-news-actions{display:flex;justify-content:center;align-items:center;gap:43px;margin-top:auto;padding-top:12px}
 .daw-news-actions button{background:transparent;border:none;color:#f18c9f;font-size:37px;line-height:1;font-weight:400;text-shadow:1px 2px 2px #ad4d5b;cursor:pointer;padding:0 4px}
 .daw-news-actions button:hover{color:#b30012;transform:scale(1.08)}
@@ -1128,6 +1129,7 @@ function render(){
       (n?'<span class="daw-news-category">'+esc(n.category||'новости')+'</span>'+
         '<h2 class="daw-news-title">'+esc(n.title)+'</h2>'+
         '<p class="daw-news-description">'+esc(n.summary||'Описание пока недоступно')+'</p>'+
+        '<div class="daw-news-source">Источник: '+(n.url?'<a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">'+esc(n.source||'Открыть первоисточник')+' ↗</a>':esc(n.source||'Не указан'))+'</div>'+
         (isEditor()?'<div class="daw-news-actions"><button id="dawRejectNews" title="Отклонить" aria-label="Отклонить новость">×</button><button id="dawApproveNews" title="Одобрить" aria-label="Одобрить новость">✓</button></div>':'<p class="daw-news-warning">Для одобрения войди как редактор.</p>'):
         '<h2 class="daw-news-title">Новых материалов пока нет</h2><p class="daw-news-description">Загрузи свежие новости или дождись автоматической проверки.</p>')+
       '</article></div>'+
