@@ -1062,7 +1062,7 @@ function render(){
       Math.min(newsPage,pages)
     );
 
-    const visible=sorted;
+    const visible=sorted.slice(newsPage-1,newsPage);
 
     m.innerHTML=
       '<section class="news-view">'+
@@ -1079,6 +1079,7 @@ function render(){
       (newsError?
         '<p class="banner danger">'+esc(newsError)+'</p>':'')+
       '<div class="news-carousel">'+
+      '<button class="news-edge-arrow news-edge-left" data-news-page="'+(newsPage-1)+'" '+(newsPage===1?'disabled':'')+' aria-label="Предыдущая новость">‹</button>'+
       '<div class="grid news-grid">'+
       (visible.length?
         visible.map(n=>
@@ -1101,7 +1102,9 @@ function render(){
         (newsLoading?'Загружаем новости…':'Новостей пока нет.')+
         '</p>')+
       '</div>'+
+      '<button class="news-edge-arrow news-edge-right" data-news-page="'+(newsPage+1)+'" '+(newsPage===pages?'disabled':'')+' aria-label="Следующая новость">›</button>'+
       '</div>'+
+      (sorted.length?'<div class="news-pagination">'+newsPage+' / '+sorted.length+'</div>':'')+
       '<div class="daw-queue">очередь<strong>'+sorted.length+'/13</strong></div>'+ '</section>';
 
     m.querySelectorAll('[data-create]').forEach(
