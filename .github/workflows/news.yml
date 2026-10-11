@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Verify Telegram parser
+        run: python -m unittest discover -s scripts -p 'test_telegram.py' -v
+
       - name: Collect and translate news
         run: python scripts/aggregate.py
 
