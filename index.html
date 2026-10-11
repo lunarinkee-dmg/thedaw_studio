@@ -1416,7 +1416,7 @@ async function loadReelsAnalytics(){
       tile(grid,'Репосты',num(reel.shares),'↗');
       tile(grid,'Сохранения',num(reel.saves),'▢');
       const reelDuration=Number.isFinite(reel.duration_seconds)?reel.duration_seconds:Number.isFinite(reel.video_duration_seconds)?reel.video_duration_seconds:null;
-      tile(grid,'Длина ролика',duration(reelDuration),'▷');
+      tile(grid,'Длина ролика',duration(reelDuration)||'—','▷');
       if(grid.childElementCount)el.append(grid);
       const details=document.createElement('details');details.className='daw-reel-details';
       const summary=document.createElement('summary');summary.textContent='Подробная статистика';details.append(summary);
