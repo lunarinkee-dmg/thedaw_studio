@@ -1010,44 +1010,46 @@ async function load(manual=false){
   if(view==='inbox')render();
   try{
     if(manual){
-      let token=sourceToken;
-      if(!token){
-        token=prompt('Чтобы проверить сайты прямо сейчас, нужен GitHub token с Actions: Read and write и Contents: Read. Токен используется только в этой вкладке:')||'';
-        token=token.trim();
-      }
-      if(!token)throw Error('Для запуска проверки нужен GitHub token. Без него доступно только автоматическое обновление.');
-      sourceToken=token;
-      const headers={'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
-      const base='https://api.github.com/repos/lunarinkee-dmg/thedaw_studio/actions/workflows/news.yml';
-      const started=Date.now();
-      const response=await fetch(base+'/dispatches',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({ref:'main'})});
-      if(!response.ok)throw Error('Не удалось запустить проверку (GitHub HTTP '+response.status+'). Проверьте права токена.');
-      let completed=false;
-      for(let attempt=0;attempt<24;attempt++){
-        await new Promise(resolve=>setTimeout(resolve,5000));
-        const runsResponse=await fetch(base+'/runs?event=workflow_dispatch&per_page=5&ts='+Date.now(),{headers,cache:'no-store'});
-        if(!runsResponse.ok)throw Error('Не удалось проверить выполнение GitHub Actions: HTTP '+runsResponse.status);
-        const runs=(await runsResponse.json()).workflow_runs||[];
-        const run=runs.find(x=>new Date(x.created_at).getTime()>=started-15000);
-        if(run&&run.status==='completed'){
-          if(run.conclusion!=='success')throw Error('Сборщик завершился с ошибкой. Проверьте GitHub Actions.');
-          completed=true;
-          break;
+      try{
+        // Read-only, server-side publisher check. No GitHub token in the browser.
+        const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/news/refresh',{
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body:'{}',
+          cache:'no-store',
+          signal:AbortSignal.timeout(45000)
+        });
+        const payload=await response.json().catch(()=>({}));
+        if(!response.ok||payload.ok!==true||!Array.isArray(payload.news)){
+          throw Error(payload.error||'Cloudflare HTTP '+response.status);
         }
+        const now=Date.now();
+        data.news=payload.news.filter(item=>{
+          const published=Date.parse(item.published_at||'');
+          return Number.isFinite(published)&&published>=now-30*60*1000&&published<=now+5*60*1000;
+        }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));
+        if(!data.news.length){
+          newsError='Источники проверены. За последние 30 минут новых публикаций не найдено.';
+        }else if(payload.sources_errors?.length){
+          newsError='Часть источников недоступна: '+payload.sources_errors.join('; ').slice(0,260);
+        }
+      }catch(workerError){
+        // Keep the site useful before the new Worker version is deployed.
+        // Be explicit that the cached dataset is NOT a real-time scan.
+        const response=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
+        if(!response.ok)throw Error('Cloudflare: '+workerError.message+'; news.json HTTP '+response.status);
+        const saved=await response.json();
+        if(!Array.isArray(saved))throw Error('Некорректный news.json');
+        data.news=recentNews(saved);
+        newsError='Проверка в реальном времени пока недоступна ('+workerError.message+'). Показаны новости последнего автоматического сбора GitHub Actions.';
       }
-      if(!completed)throw Error('Проверка ещё выполняется. Повторите обновление через минуту.');
-    }
-    const r=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
-    if(!r.ok)throw Error('HTTP '+r.status);
-    const n=await r.json();
-    if(!Array.isArray(n))throw Error('Неверный формат данных');
-    data.news=manual?n.filter(item=>{
-      const timestamp=Date.parse(item.published_at||'');
-      return Number.isFinite(timestamp)&&timestamp>=Date.now()-30*60*1000&&timestamp<=Date.now()+5*60*1000;
-    }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at)):recentNews(n);
-    if(manual){
       newsPage=1;
-      if(!data.news.length)newsError='За последние 30 минут новых публикаций не найдено.';
+    }else{
+      const response=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
+      if(!response.ok)throw Error('news.json HTTP '+response.status);
+      const items=await response.json();
+      if(!Array.isArray(items))throw Error('Некорректный формат новостей');
+      data.news=recentNews(items);
     }
   }catch(e){
     newsError='Не удалось обновить новости: '+e.message;
