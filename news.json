@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss1b658ad156ca5499",
+    "category": "Киберспорт / Игры",
+    "title": "Николас Кейдж о съёмках в «Сокровище нации 3»: «Посмотрим, захочу ли я вообще за это взяться»",
+    "summary": "АктёрНиколас Кейдж не соглашался на съёмки в третьей части приключенческой франшизы «Сокровище нации» (National Treasure). Об этом он сообщил в ...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/movies/nikolas-keidzh-o-semkakh-v-sokrovishche-natsii-3-posmotrim-zakhochu-li-ya",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T19:13:00+00:00"
+  },
+  {
+    "id": "rssf20a241612a0cb22",
+    "category": "Киберспорт / Игры",
+    "title": "Nix: «Играть и бить крипов намного проще, чем комментировать»",
+    "summary": "СтримерАлександр Nix Левин сравнил комментирование турниров и профессиональную игру в Dota 2. Он считает, что каст отбирает больше сил, чем выст...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/dota-2/nix-igrat-i-bit-kripov-namnogo-proshche-chem-kommentirovat",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T19:05:00+00:00"
+  },
+  {
     "id": "rsse83f58b14130a07b",
     "category": "Киберспорт / Игры",
     "title": "Dosia о Spirit на EPL S24: «Не знаю, что случилось с donk, но надеюсь, что это просто временный спад»",
@@ -78,25 +98,5 @@
     "url": "https://www.cybersport.ru/tags/dota-2/nix-o-atf-i-saksa-v-odnoi-komande-takogo-nelzya-bylo-dopustit",
     "date": "11.10.2026",
     "published_at": "2026-10-11T17:23:00+00:00"
-  },
-  {
-    "id": "rssd208b74c3a9b0225",
-    "category": "Киберспорт / Игры",
-    "title": "Турниры BLAST получат новый формат в 2027 году — вероятно, изменения коснутся драфтов",
-    "summary": "Турнирный оператор BLAST объявил о введении нового формата на турнирах по Dota 2 в 2027 году. Об этом представители ТО сообщили в социальных сетях.",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/dota-2/turniry-blast-poluchat-novyi-format-v-2027-godu-veroyatno-izmeneniya-kosnut-sya",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T17:15:00+00:00"
-  },
-  {
-    "id": "rssc5a0a50a5eb71ee2",
-    "category": "Киберспорт / Игры",
-    "title": "Team Yandex встретится с Aurevia Team в финале нижней сетки MLBB Continental Championships Season 8",
-    "summary": "Team Spiritвыиграла уAurevia Teamв финале верхней сетки плей-оффMLBB Continental Championships Season 8. Встреча завершилась со счетом 3:1.",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/mlbb/team-yandex-vstretit-sya-s-aurevia-team-v-finale-nizhnei-setki-mlbb-continental",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T16:46:00+00:00"
   }
 ]
