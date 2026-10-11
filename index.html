@@ -1589,39 +1589,70 @@ async function loadReelsAnalytics(){
   finally{btn.disabled=false;}
 }
 
+// Compare contiguous seven-word phrases to catch overly similar rewrites.
+// Proper names and numbers may necessarily match; this is a warning, not legal proof.
+function dawOriginalityOverlap(source, generated){
+  const tokens=s=>String(s||'').toLocaleLowerCase('ru').match(/[\\p{L}\\p{N}]+/gu)||[];
+  const input=tokens(source),output=tokens(generated),size=7;
+  if(input.length<size||output.length<size)return [];
+  const seen=new Set();
+  for(let i=0;i<=input.length-size;i++)seen.add(input.slice(i,i+size).join(' '));
+  const matches=[];
+  for(let i=0;i<=output.length-size;i++){
+    const phrase=output.slice(i,i+size).join(' ');
+    if(seen.has(phrase)&&!matches.includes(phrase))matches.push(phrase);
+    if(matches.length>=3)break;
+  }
+  return matches;
+}
+
 async function generateAI(id){
   if(!isEditor()){showEditorLogin();return;}
   const d=data.drafts.find(x=>x.id===id);
   if(!d)return;
-  const button=document.getElementById('dawGenerate');
-  const status=document.getElementById('dawStatus');
+  const button=document.getElementById('dawEditorGenerate')||document.getElementById('dawGenerate');
+  const status=document.getElementById('dawEditorStatus')||document.getElementById('dawStatus');
   if(button){button.disabled=true;button.textContent='Генерируем…';}
-  if(status)status.textContent='Gemini готовит текст новости…';
+  if(status)status.textContent='Gemini пишет новость в стиле theDĀW…';
+  const input={title:d.sourceTitle||d.headline,summary:d.sourceSummary||'',source:d.sourceName||'',url:d.sourceUrl||''};
+  const reference=(input.title||'')+' '+(input.summary||'');
   try{
-    const response=await fetch(DAW_API+'/generate',{
-      method:'POST',
-      headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
-      body:JSON.stringify({title:d.sourceTitle||d.headline,summary:d.sourceSummary||'',source:d.sourceName||'',url:d.sourceUrl||''}),
-      cache:'no-store',
-      signal:AbortSignal.timeout(45000)
-    });
-    const result=await response.json().catch(()=>({}));
-    if(!response.ok||result.error)throw Error(result.error||'HTTP '+response.status);
-    if(typeof result.headline!=='string'||typeof result.instagram!=='string'||typeof result.tiktok!=='string')throw Error('Gemini вернул неполный ответ');
+    let result=null,overlap=[];
+    for(let attempt=0;attempt<2;attempt++){
+      const feedback=attempt?'Слишком близко к тексту первоисточника. Напиши заново с иной композицией и формулировками, сохранив только проверяемые факты. Повторившиеся фразы: '+overlap.join(' / '):'';
+      const response=await fetch(DAW_API+'/generate',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
+        body:JSON.stringify({...input,rewriteFeedback:feedback}),
+        cache:'no-store',signal:AbortSignal.timeout(45000)
+      });
+      const payload=await response.json().catch(()=>({}));
+      if(!response.ok||payload.error)throw Error(payload.error||'HTTP '+response.status);
+      if(typeof payload.headline!=='string'||typeof payload.instagram!=='string'||typeof payload.tiktok!=='string')
+        throw Error('Gemini вернул неполный ответ');
+      result=payload;
+      overlap=dawOriginalityOverlap(reference,payload.headline+' '+payload.instagram);
+      if(!overlap.length&&!payload.originality_warning)break;
+      if(status&&attempt===0)status.textContent='Проверка обнаружила близкие фразы. Переписываем ещё раз…';
+    }
     d.headline=result.headline;
     d.caption=result.instagram+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
     d.tiktok=result.tiktok;
     save();render();
-    const done=document.getElementById('dawStatus');
-    if(done)done.textContent='✓ Текст сгенерирован через Gemini. Проверь факты перед публикацией.';
+    const warning=overlap.length||result.originality_warning;
+    const done=document.getElementById('dawEditorStatus')||document.getElementById('dawStatus');
+    if(done)done.textContent=warning?
+      '⚠ Проверь оригинальность формулировок и факты перед публикацией: найдены сходные фразы.':
+      '✓ Текст написан заново. Проверь факты и источник перед публикацией.';
   }catch(error){
     if(error.message.includes('Сессия')||error.message.includes('401'))editorLogout('Войди как редактор повторно.');
-    const target=document.getElementById('dawStatus');
+    const target=document.getElementById('dawEditorStatus')||document.getElementById('dawStatus');
     if(target)target.textContent='Ошибка Gemini: '+error.message+'. Исходный текст не изменён.';
-    if(button){button.disabled=false;button.textContent='Сгенерировать';}
+  }finally{
+    const btn=document.getElementById('dawEditorGenerate')||document.getElementById('dawGenerate');
+    if(btn){btn.disabled=false;btn.textContent='сгенерировать текст';}
   }
 }
-
 render();
 restoreEditorSession();
 load();
