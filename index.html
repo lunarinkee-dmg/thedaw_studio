@@ -629,6 +629,53 @@ html.daw-home-mode .app{min-height:100vh}
 .daw-login-submit:disabled{opacity:.6;cursor:wait}
 .daw-login-error{color:#a50017;font-size:12px;text-align:center;min-height:22px;max-width:340px;padding:4px 0}
 @media(max-width:600px){.daw-login-panel{min-height:340px;border-radius:32px;padding:70px 23px 25px}.daw-login-panel h2{font-size:36px;margin-bottom:30px}.daw-login-back{left:17px;top:12px}}
+
+/* Public guest landing — theDAW reference */
+html.daw-guest-mode header{display:none!important}
+html.daw-guest-mode body::before{display:none}
+html.daw-guest-mode main{max-width:none;padding:0!important}
+html.daw-guest-mode .app{display:block}
+.daw-guest{min-height:100vh;padding:20px clamp(16px,3.1vw,52px) 85px;color:#303033}
+.daw-guest-head{max-width:1440px;margin:0 auto;display:flex;align-items:start;justify-content:space-between;min-height:76px;position:relative}
+.daw-guest-logo{width:52px;height:73px;object-fit:contain;display:block}
+.daw-guest-location{color:white;font-size:13px;text-shadow:0 1px 2px #0002}
+.daw-guest-welcome{text-align:center;font-size:clamp(19px,2.25vw,31px);font-weight:400;letter-spacing:-1.65px;margin:-48px 0 15px}
+.daw-guest-nav{display:flex;justify-content:center;gap:22px;margin:0 auto 27px;flex-wrap:wrap}
+.daw-guest-nav button{width:150px;min-height:27px;padding:5px 13px;border-radius:40px;border:1px solid #e3dfe0;background:rgba(255,255,255,.30);box-shadow:inset 0 2px 4px #0002,0 2px 4px #0002;color:#3b393b;font-size:11px;cursor:pointer}
+.daw-guest-nav button:hover{background:#fff9}
+.daw-guest-panel{position:relative;max-width:1160px;margin:auto;border:1px solid rgba(192,183,186,.72);border-radius:32px;background:rgba(255,255,255,.22);box-shadow:0 1px 4px #0002,inset 0 1px 0 #fff9;backdrop-filter:blur(14px);padding:32px clamp(24px,5.5vw,86px) 78px}
+.daw-guest-live{position:absolute;top:19px;right:21px;display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:30px;background:#fff;border:1px solid #ede6e8;box-shadow:0 2px 4px #0002;color:#86d993;font-size:12px}
+.daw-guest-live i{width:11px;height:11px;border-radius:50%;background:#91f5a4;box-shadow:0 0 7px #91f5a4;display:block}
+.daw-guest-title{text-align:center;font-size:clamp(19px,2vw,26px);font-weight:400;letter-spacing:-1.15px;margin:5px 0 47px}
+.daw-guest-title span{background:#b70018;color:#fff;padding:1px 5px}
+.daw-guest-stats{display:flex;align-items:start;justify-content:center;gap:clamp(18px,6.2vw,105px);margin-bottom:51px}
+.daw-guest-stat{text-align:center;min-width:110px}
+.daw-guest-stat strong{display:block;font-size:clamp(44px,5vw,65px);font-weight:400;letter-spacing:-3px;line-height:1}
+.daw-guest-stat span{font-size:13px;font-weight:650;display:block;margin-top:7px}
+.daw-guest-subhead{text-align:center;font-size:clamp(18px,2vw,24px);font-weight:400;letter-spacing:-1px;margin:0 0 44px}
+.daw-guest-pipeline{width:min(480px,100%);margin:0 auto 70px;position:relative;display:grid;gap:25px}
+.daw-guest-pipeline:before{content:"";width:3px;background:#e499aa;position:absolute;left:8px;top:4px;bottom:3px;border-radius:5px}
+.daw-guest-step{display:grid;grid-template-columns:18px 30px 1fr;gap:11px;align-items:center;position:relative}
+.daw-guest-step:before{content:"";width:7px;height:7px;border:1px solid #dd7589;border-radius:50%;background:#f7c4cb;position:absolute;left:5px;top:calc(50% - 4px)}
+.daw-guest-step-icon{grid-column:2;color:#e4768d;width:26px;height:28px;display:grid;place-items:center;font-size:25px;font-weight:400}
+.daw-guest-step-info{grid-column:3}
+.daw-guest-step-info b{font-size:17px;font-weight:400;letter-spacing:-.65px;display:block}
+.daw-guest-step-info span{font-size:11px;color:#666;line-height:1.25;display:block;max-width:290px}
+.daw-guest-reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,5vw,75px);width:min(820px,100%);margin:auto}
+.daw-guest-reel{aspect-ratio:9/16;background:rgba(255,255,255,.86);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;padding:20px;color:#757575;text-decoration:none;min-width:0}
+.daw-guest-reel svg{opacity:.35}
+.daw-guest-reel span{font-size:12px;line-height:1.4}
+.daw-guest-about{max-width:680px;margin:72px auto 0;text-align:center;font-size:13px;color:#5c5355;line-height:1.6}
+.daw-guest-about p{margin:8px 0 20px}
+@media(max-width:720px){
+.daw-guest-head{min-height:105px}.daw-guest-welcome{margin:-17px 0 20px;line-height:1.25;letter-spacing:-.9px}
+.daw-guest-logo{width:39px;height:59px}.daw-guest-location{font-size:10px}
+.daw-guest-nav{gap:9px;margin-bottom:22px}.daw-guest-nav button{width:auto;min-width:92px;font-size:10px}
+.daw-guest-panel{padding:70px 18px 48px;border-radius:24px}.daw-guest-live{top:16px;right:16px}
+.daw-guest-title{margin-bottom:30px}.daw-guest-stats{gap:7px;margin-bottom:42px;justify-content:space-around}.daw-guest-stat{min-width:0}.daw-guest-stat strong{font-size:38px}.daw-guest-stat span{font-size:10px}
+.daw-guest-subhead{margin-bottom:29px}.daw-guest-pipeline{margin-bottom:55px}
+.daw-guest-reels{gap:8px}.daw-guest-reel{padding:8px}.daw-guest-reel span{font-size:9px}
+}
 </style>
 </head>
 <body>
@@ -787,6 +834,7 @@ function go(v){
   if(v==='constructor'&&!isEditor()){showEditorLogin();return;}
   view=v;
   document.documentElement.classList.toggle('daw-home-mode',v==='home');
+  document.documentElement.classList.toggle('daw-guest-mode',v==='guest');
   updateSectionSwitch();
   render();
 }
@@ -926,8 +974,58 @@ function drawSourceList(){
   row.append(label,toggle,remove);box.append(row);
  });
 }
+function renderGuest(){
+  const m=document.getElementById('main');
+  const logo=document.querySelector('header .logo img');
+  const found=data.news.length;
+  m.innerHTML=`
+  <section class="daw-guest" aria-label="Гостевая страница theDĀW Studio">
+    <div class="daw-guest-head">
+      <img class="daw-guest-logo" id="dawGuestLogo" alt="theDĀW">
+      <span class="daw-guest-location">Astana · Warsaw · 2026</span>
+    </div>
+    <h1 class="daw-guest-welcome">добро пожаловать в theDĀW Studio</h1>
+    <nav class="daw-guest-nav" aria-label="Навигация гостевой страницы">
+      <button type="button" id="dawGuestHome">главная</button>
+      <button type="button" id="dawGuestAbout">о проекте</button>
+      <button type="button" id="dawGuestContact">сотрудничество</button>
+    </nav>
+    <div class="daw-guest-panel">
+      <div class="daw-guest-live"><i aria-hidden="true"></i> Live</div>
+      <h2 class="daw-guest-title">редакция в <span>[ реальном времени ]</span></h2>
+      <div class="daw-guest-stats" aria-label="Статистика редакции">
+        <div class="daw-guest-stat"><strong id="dawGuestNewsCount">${found}</strong><span>новостей в ленте</span></div>
+        <div class="daw-guest-stat"><strong>—</strong><span>обработано AI</span></div>
+        <div class="daw-guest-stat"><strong>—</strong><span>опубликовано</span></div>
+      </div>
+      <h2 class="daw-guest-subhead" id="dawGuestWorkflow">как работает <b>theDĀW Studio</b></h2>
+      <div class="daw-guest-pipeline">
+        <div class="daw-guest-step"><span class="daw-guest-step-icon" aria-hidden="true">◉</span><div class="daw-guest-step-info"><b>Поиск материалов</b><span>Мониторинг медиа и обнаружение публикаций</span></div></div>
+        <div class="daw-guest-step"><span class="daw-guest-step-icon" aria-hidden="true">AI</span><div class="daw-guest-step-info"><b>AI Copywriter</b><span>Преобразование материалов в тексты для публикации</span></div></div>
+        <div class="daw-guest-step"><span class="daw-guest-step-icon" aria-hidden="true">▤</span><div class="daw-guest-step-info"><b>Создание Reels</b><span>Подбор материалов и монтаж видео</span></div></div>
+        <div class="daw-guest-step"><span class="daw-guest-step-icon" aria-hidden="true">◎</span><div class="daw-guest-step-info"><b>Instagram</b><span>Публикация после одобрения редактора</span></div></div>
+      </div>
+      <h2 class="daw-guest-subhead" id="dawGuestReelsTitle">самые свежие Reels</h2>
+      <div class="daw-guest-reels" id="dawGuestReels">
+        <div class="daw-guest-reel"><span>Здесь появятся Reels после подключения Instagram API</span></div>
+        <div class="daw-guest-reel"><span>Обложки последних публикаций</span></div>
+        <div class="daw-guest-reel"><span>Видео из аккаунта theDĀW</span></div>
+      </div>
+      <div class="daw-guest-about" id="dawGuestContactText">
+        <b>theDĀW Studio</b>
+        <p>Редакционная система для работы с новостями, текстами, видео и публикациями. Показатели AI и Instagram появятся после подключения серверной статистики.</p>
+      </div>
+    </div>
+  </section>`;
+  if(logo)m.querySelector('#dawGuestLogo').src=logo.src;
+  m.querySelector('#dawGuestHome').onclick=()=>go('home');
+  m.querySelector('#dawGuestAbout').onclick=()=>m.querySelector('#dawGuestWorkflow').scrollIntoView({behavior:'smooth',block:'center'});
+  m.querySelector('#dawGuestContact').onclick=()=>m.querySelector('#dawGuestContactText').scrollIntoView({behavior:'smooth',block:'center'});
+}
 function render(){
   document.documentElement.classList.toggle('daw-home-mode',view==='home');
+  document.documentElement.classList.toggle('daw-guest-mode',view==='guest');
+  if(view==='guest'){renderGuest();return;}
   if(view==='home'){
     const m=document.getElementById('main');
     const logo=document.querySelector('header .logo img');
@@ -938,7 +1036,7 @@ function render(){
       '<button type="button" id="dawHomeGuest">гость</button></div></div></section>';
     if(logo)m.querySelector('#dawHomeLogo').src=logo.src;
     m.querySelector('#dawHomeEditor').onclick=()=>isEditor()?go('constructor'):showEditorLogin();
-    m.querySelector('#dawHomeGuest').onclick=()=>go('inbox');
+    m.querySelector('#dawHomeGuest').onclick=()=>go('guest');
     return;
   }
   if(view==='constructor'&&!isEditor()){view='inbox';updateSectionSwitch();}
@@ -1175,7 +1273,7 @@ async function load(manual=false){
     newsError='Не удалось обновить новости: '+e.message;
   }finally{
     newsLoading=false;
-    if(view==='inbox')render();
+    if(view==='inbox'||view==='guest')render();
   }
 }
 
