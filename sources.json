@@ -48,12 +48,5 @@
     "category": "Культура / Музыка",
     "type": "telegram",
     "enabled": true
-  },
-  {
-    "name": "Sports.ru — Игры",
-    "url": "https://t.me/s/games_sportsru",
-    "category": "Киберспорт / Игры",
-    "type": "telegram",
-    "enabled": true
   }
 ]
