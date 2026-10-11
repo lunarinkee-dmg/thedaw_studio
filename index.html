@@ -1412,11 +1412,12 @@ async function loadReelsAnalytics(){
         const labelNode=document.createElement('div');labelNode.className='daw-reel-kpi-label';labelNode.textContent=icon+' '+label;
         const valueNode=document.createElement('strong');valueNode.textContent=value;
         cell.append(labelNode,valueNode);
-        if(delta&&typeof delta.value==='number'&&Number.isFinite(delta.value)){
+        const changeValue=typeof delta==='number'?delta:delta?.value;
+        if(typeof changeValue==='number'&&Number.isFinite(changeValue)){
           const change=document.createElement('small');change.className='daw-reel-delta';
-          const sign=delta.value>0?'↑':delta.value<0?'↓':'→';
-          change.textContent=sign+' '+new Intl.NumberFormat('ru-RU').format(Math.abs(delta.value))+' за последний час';
-          if(delta.value<0)change.classList.add('negative');
+          const sign=changeValue>0?'↑':changeValue<0?'↓':'→';
+          change.textContent=sign+' '+new Intl.NumberFormat('ru-RU').format(Math.abs(changeValue))+' за последний час';
+          if(changeValue<0)change.classList.add('negative');
           cell.append(change);
         }
         parent.append(cell);
