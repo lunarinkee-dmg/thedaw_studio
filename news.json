@@ -1,5 +1,35 @@
 [
   {
+    "id": "rssecd265421fb40d94",
+    "category": "Киберспорт / Игры",
+    "title": "«Легендарная волшебница» — тренер Spirit выбил лучший результат в тесте про «Сейлор Мун» во время паузы игры с PARIVISION",
+    "summary": "Тренер Team Spirit Илья Illidan Пивцаев рассказал, чем занимался во время паузы на последней карте финала нижней сетки BLAST Slam VIII по Dota 2...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/dota-2/legendarnaya-volshebnitsa-trener-spirit-vybil-luchshii-rezultat-v-teste-pro",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T14:16:00+00:00"
+  },
+  {
+    "id": "rss154ac348803b7ecd",
+    "category": "Киберспорт / Игры",
+    "title": "NRG и T1 вылетели из VALORANT Champions 2026",
+    "summary": "100 ThievesобыгралаNRGв нижней сеткеVALORANT Champions 2026.Результат встречи— 2:0.",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/valorant/nrg-i-t1-vyleteli-iz-valorant-champions-2026",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T14:16:00+00:00"
+  },
+  {
+    "id": "rss3e036fdc7d389c18",
+    "category": "Киберспорт / Игры",
+    "title": "Студент сделал античит для CS2, который определяет нарушителей по движению мыши и нажатию клавиш",
+    "summary": "Геймер под никомMagga_ предложил модель для античита в CS2, которая бы позволила выявлять смурфов читеров. Исследование, проведенное в рамках на...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/cs2/student-sdelal-antichit-dlya-cs2-kotoryi-opredelyayet-narushitelei-po-dvizheniyu",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T14:03:00+00:00"
+  },
+  {
     "id": "rss6c001ea41c312fd0",
     "category": "Киберспорт / Игры",
     "title": "Сможет ли Team Spirit взять реванш и одолеть Team Yandex в финале BLAST Slam VIII?",
@@ -68,35 +98,5 @@
     "url": "https://www.cybersport.ru/tags/cs2/mashina-ili-nozh-iz-cs-chto-dorozhe-nash-novyi-test-dlya-vsekh-skinovedov",
     "date": "11.10.2026",
     "published_at": "2026-10-11T11:15:00+00:00"
-  },
-  {
-    "id": "rss5401adad4998bf3b",
-    "category": "Киберспорт / Игры",
-    "title": "Virtus.pro и МТС проведут турнир РИИЛ Cup по Standoff 2",
-    "summary": "Киберспортивный клуб Virtus.pro и компания МТС анонсировали чемпионат МТС РИИЛ Cup по шутеру Standoff 2 для дуэтов, который пройдет с 22 по 31 о...",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/standoff-2/virtus-pro-i-mt-s-provedut-turnir-riil-cup-po-standoff-2",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T11:15:00+00:00"
-  },
-  {
-    "id": "rssddcb1924c37efaad",
-    "category": "Киберспорт / Игры",
-    "title": "Sashi Esport кикнула игрока спустя три дня после анонса — команде не удалось сменить регион перед мейджором",
-    "summary": "Киберспортивная организацияSashi Esportотказалась от сотрудничества с новозеландским игрокомМайкломchelleos Хокинсом. Об этом киберспортсмен соо...",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/cs2/sashi-esport-kiknula-igroka-spustya-tri-dnya-posle-anonsa-komande-ne-udalos",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T11:03:00+00:00"
-  },
-  {
-    "id": "rss9c4279d8d8171730",
-    "category": "Киберспорт / Игры",
-    "title": "Bottega присоединился к Abed в PlayTime на правах аренды",
-    "summary": "КиберспортсменАндрей bottega Копытко перешел в составPlayTimeпо Dota 2 на правах аренды. Об этом сообщили представители BETBOOM Team в Telegram.",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/dota-2/bottega-prisoyedinilsya-k-abed-v-playtime-na-pravakh-arendy",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T10:31:00+00:00"
   }
 ]
