@@ -822,7 +822,6 @@ let view='home';
 let constructorTab='drafts';
 let current=null;
 let newsPage=1;
-let newsDayView=false;
 let newsLoading=false;
 let newsError='';
 
@@ -1096,11 +1095,9 @@ function render(){
     const sorted=recentNews(data.news)
       .filter(n=>!data.rejected[n.id]&&!data.approved[n.id])
       .sort((x,y)=>newsTimestamp(y)-newsTimestamp(x));
-    const dayItems=recentNews(data.news).filter(item=>newsTimestamp(item)>=Date.now()-24*60*60*1000);
-    const cards=newsDayView?dayItems:sorted;
-    const pages=Math.max(1,cards.length);
+    const pages=Math.max(1,sorted.length);
     newsPage=Math.max(1,Math.min(newsPage,pages));
-    const n=cards[newsPage-1];
+    const n=sorted[newsPage-1];
     const approvedCount=Object.keys(data.approved).length;
     const publishedCount=Object.values(data.approved).filter(x=>x.published===true).length;
     m.innerHTML='<section class="daw-news-screen">'+
@@ -1113,10 +1110,10 @@ function render(){
         (isEditor()?'<div class="daw-news-actions"><button id="dawRejectNews" title="Отклонить" aria-label="Отклонить новость">×</button><button id="dawApproveNews" title="Одобрить" aria-label="Одобрить новость">✓</button></div>':'<p class="daw-news-warning">Для одобрения войди как редактор.</p>'):
         '<h2 class="daw-news-title">Новых материалов пока нет</h2><p class="daw-news-description">Загрузи свежие новости или дождись автоматической проверки.</p>')+
       '</article></div>'+
-      '<button class="daw-news-arrow" data-direction="1" '+(newsPage>=cards.length?'disabled':'')+' aria-label="Следующая новость">›</button>'+
+      '<button class="daw-news-arrow" data-direction="1" '+(newsPage>=sorted.length?'disabled':'')+' aria-label="Следующая новость">›</button>'+
       '</div>'+
       '<div class="daw-news-queue">очередь<strong>'+publishedCount+'/'+approvedCount+'</strong></div>'+
-      '<div class="daw-news-tools"><button class="btn" id="newsDayAll" '+(newsLoading?'disabled':'')+'>'+(newsDayView?'Обычная очередь':'Все новости за день')+'</button><button class="btn" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'Проверяем новости…':'↻ Обновить новости')+'</button>'+
+      '<div class="daw-news-tools"><button class="btn" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'Проверяем новости…':'↻ Обновить новости')+'</button>'+
       (isEditor()?'<button class="btn" id="sourcesManage">Источники</button>':'')+'</div>'+
       (newsError?'<p class="daw-news-warning">'+esc(newsError)+'</p>':'')+
       '</section>';
@@ -1124,7 +1121,6 @@ function render(){
       newsPage=Math.max(1,Math.min(pages,newsPage+Number(btn.dataset.direction)));
       render();
     });
-    const dayButton=m.querySelector('#newsDayAll');if(dayButton)dayButton.onclick=async()=>{if(newsDayView){newsDayView=false;newsPage=1;render();}else{newsDayView=true;newsPage=1;await load(true);}};
     const refresh=m.querySelector('#newsRefresh');if(refresh)refresh.onclick=()=>load(true);
     const sources=m.querySelector('#sourcesManage');if(sources)sources.onclick=showSourcesManager;
     const approve=m.querySelector('#dawApproveNews');if(approve)approve.onclick=()=>{
