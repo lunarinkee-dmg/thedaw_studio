@@ -729,21 +729,24 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 }
 @media(prefers-reduced-motion:reduce){html::before{animation:none}}
 
-.daw-reel-analytics{margin:16px 0!important;padding:20px!important;max-width:100%!important;border-radius:14px!important;background:#fffafa!important;border:1px solid #ecdce0!important;box-shadow:none!important}
-.daw-reel-top{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
-.daw-reel-thumb,.daw-reel-thumb-placeholder{width:90px;min-width:90px;aspect-ratio:3/4;object-fit:cover;border-radius:12px;background:#f4ecee}
-.daw-reel-thumb-placeholder{display:flex;align-items:center;justify-content:center;color:#b5a1a8;font-size:24px}
+.daw-reels-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px}
+.daw-reels-list>p{grid-column:1/-1}
+.daw-reel-analytics{margin:0!important;padding:14px!important;max-width:100%!important;border-radius:14px!important;background:#fffafa!important;border:1px solid #ecdce0!important;box-shadow:none!important;min-width:0}
+.daw-reel-top{display:flex;gap:11px;align-items:flex-start;margin-bottom:14px}
+.daw-reel-thumb,.daw-reel-thumb-placeholder{width:62px;min-width:62px;aspect-ratio:3/4;object-fit:cover;border-radius:9px;background:#f4ecee}
+.daw-reel-thumb-placeholder{display:flex;align-items:center;justify-content:center;color:#b5a1a8;font-size:19px}
 .daw-reel-intro{min-width:0;flex:1}
-.daw-reel-intro h3{font-size:16px;line-height:1.35;font-weight:650;color:#32292c;margin:0 0 9px}
-.daw-reel-link{font-size:12px!important;color:#ad6176!important;text-decoration:none!important;font-weight:500}
+.daw-reel-intro h3{font-size:14px;line-height:1.3;font-weight:650;color:#32292c;margin:0 0 6px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.daw-reel-link{font-size:11px!important;color:#ad6176!important;text-decoration:none!important;font-weight:500}
 .daw-reel-link:hover{text-decoration:underline!important}
-.daw-reel-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:22px;row-gap:24px;margin:18px 0 10px}
+.daw-reel-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:12px;row-gap:13px;margin:0}
 .daw-reel-kpi{background:transparent;border:0;border-radius:0;padding:0;min-width:0}
-.daw-reel-kpi-label{color:#947b84;font-size:12px;line-height:1.4;margin-bottom:6px}
-.daw-reel-kpi strong{display:block;font-size:24px;line-height:1.15;color:#31272b;font-weight:700;overflow-wrap:anywhere}
-.daw-reel-details{border-top:1px solid #ecdee1;margin-top:18px;padding-top:13px}
-.daw-reel-details summary{cursor:pointer;font-size:13px;font-weight:600;color:#8f6371}
-@media(max-width:520px){.daw-reel-analytics{padding:14px!important}.daw-reel-top{gap:12px}.daw-reel-thumb,.daw-reel-thumb-placeholder{width:78px;min-width:78px}.daw-reel-kpis{column-gap:12px;row-gap:20px}.daw-reel-kpi strong{font-size:21px}}
+.daw-reel-kpi-label{color:#947b84;font-size:11px;line-height:1.3;margin-bottom:3px}
+.daw-reel-kpi strong{display:block;font-size:19px;line-height:1.15;color:#31272b;font-weight:700;overflow-wrap:anywhere}
+.daw-reel-details{border-top:1px solid #ecdee1;margin-top:13px;padding-top:10px}
+.daw-reel-details summary{cursor:pointer;font-size:12px;font-weight:600;color:#8f6371}
+.daw-reel-details .daw-reel-kpis{margin-top:12px}
+@media(max-width:760px){.daw-reels-list{grid-template-columns:1fr}}
 
 </style>
 </head>
@@ -1236,7 +1239,7 @@ function render(){
       '<h1>Статистика Reels</h1>'+
       '<p class="muted">Результаты опубликованных Reels подключённого Instagram-аккаунта. Вовлечённость = взаимодействия / охват × 100%. Подписки с отдельного Reels через этот API недоступны.</p>'+
       '<button id="dawLoadAnalytics" class="btn primary" type="button">↻ Обновить статистику</button>'+
-      '<div id="dawAnalyticsResults" aria-live="polite" style="margin-top:16px"><p class="muted">Нажми «Обновить статистику», чтобы загрузить данные из Instagram.</p></div>'+
+      '<div id="dawAnalyticsResults" class="daw-reels-list" aria-live="polite" style="margin-top:16px"><p class="muted">Нажми «Обновить статистику», чтобы загрузить данные из Instagram.</p></div>'+
       '</section>';
     m.querySelector('#dawLoadAnalytics').onclick=loadReelsAnalytics;
   } else if(section==='settings'){
@@ -1416,7 +1419,21 @@ async function loadReelsAnalytics(){
       tile(grid,'Репосты',num(reel.shares),'↗');
       tile(grid,'Сохранения',num(reel.saves),'▢');
       const reelDuration=Number.isFinite(reel.duration_seconds)?reel.duration_seconds:Number.isFinite(reel.video_duration_seconds)?reel.video_duration_seconds:null;
-      tile(grid,'Длина ролика',duration(reelDuration)||'—','▷');
+      const durationCell=document.createElement('div');durationCell.className='daw-reel-kpi';
+      const durationLabel=document.createElement('div');durationLabel.className='daw-reel-kpi-label';durationLabel.textContent='▷ Длина ролика';
+      const durationValue=document.createElement('strong');durationValue.textContent=duration(reelDuration)||'—';
+      durationCell.append(durationLabel,durationValue);grid.append(durationCell);
+      if(reelDuration===null&&typeof reel.media_url==='string'&&/^https:\/\//.test(reel.media_url)){
+        const video=document.createElement('video');video.preload='metadata';
+        video.muted=true;
+        const cleanup=()=>{video.removeAttribute('src');video.load();};
+        video.onloadedmetadata=()=>{
+          if(Number.isFinite(video.duration)&&video.duration>0)durationValue.textContent=duration(video.duration);
+          cleanup();
+        };
+        video.onerror=cleanup;
+        video.src=reel.media_url;
+      }
       if(grid.childElementCount)el.append(grid);
       const details=document.createElement('details');details.className='daw-reel-details';
       const summary=document.createElement('summary');summary.textContent='Подробная статистика';details.append(summary);
