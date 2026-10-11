@@ -15,6 +15,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 from html import unescape
 from html.parser import HTMLParser
+from telegram import collect_telegram
 
 OUT = Path(__file__).resolve().parents[1] / "news.json"
 SOURCES_FILE = OUT.with_name("sources.json")
@@ -162,6 +163,13 @@ def html_fallback(name, category, site):
 
 def collect(source):
     name, category, site, explicit = source
+    # Telegram exposes a public HTML post preview, not a regular RSS feed.
+    if urllib.parse.urlparse(site).hostname in ("t.me", "telegram.me"):
+        try:
+            posts = collect_telegram(name, category, site, NOW)
+            return name, posts, None
+        except Exception as exc:
+            return name, [], "Telegram: " + str(exc)[:150]
     errors = []
     for feed in feed_candidates(site, explicit):
         try:
