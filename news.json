@@ -1,5 +1,15 @@
 [
   {
+    "id": "rssba1a0743146851ff",
+    "category": "Киберспорт / Игры",
+    "title": "«Манчестер Сити» разгромил «Ливерпуль» в шестом туре АПЛ",
+    "summary": "«Манчестер Сити»обыграл«Ливерпуль»в шестом туре регулярного сезонаАПЛ 2026-2027 (Английская Премьер-лига). Встреча завершилась со счетом 3:0.",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/football/manchester-siti-razgromil-liverpul-v-shestom-ture-apl",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T17:29:00+00:00"
+  },
+  {
     "id": "rss43754f2bed4fede8",
     "category": "Киберспорт / Игры",
     "title": "Nix об ATF и Saksa в одной команде: «Такого нельзя было допустить»",
@@ -88,15 +98,5 @@
     "url": "https://www.cybersport.ru/tags/dota-2/nix-postavil-415-tys-na-pobedu-spirit-na-tretei-karte-matcha-protiv-parivision",
     "date": "11.10.2026",
     "published_at": "2026-10-11T15:34:00+00:00"
-  },
-  {
-    "id": "rss4b210f5585eaaa6b",
-    "category": "Киберспорт / Игры",
-    "title": "Dukalis о поражении от Team Spirit: «Просто очень сильно закинули вторую карту»",
-    "summary": "СаппортPARIVISIONАндрей Dukalis Куропаткин прокомментировал поражение в финале нижней сеткиBLAST Slam VIIIпо Dota 2 отTeam Spirit. Он считает, ч...",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/dota-2/dukalis-o-porazhenii-ot-team-spirit-prosto-ochen-silno-zakinuli-vtoruyu-kartu",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T15:20:00+00:00"
   }
 ]
