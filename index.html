@@ -1096,7 +1096,7 @@ function render(){
     const sorted=recentNews(data.news)
       .filter(n=>!data.rejected[n.id]&&!data.approved[n.id])
       .sort((x,y)=>newsTimestamp(y)-newsTimestamp(x));
-    const dayItems=sorted.filter(item=>newsTimestamp(item)>=Date.now()-24*60*60*1000);
+    const dayItems=recentNews(data.news).filter(item=>newsTimestamp(item)>=Date.now()-24*60*60*1000);
     const pages=Math.max(1,sorted.length);
     newsPage=Math.max(1,Math.min(newsPage,pages));
     const n=sorted[newsPage-1];
