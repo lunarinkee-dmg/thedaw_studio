@@ -123,8 +123,6 @@ def html_fallback(name, category, site):
                 continue
         seen.add(link)
         candidates.append((link, title))
-        if len(candidates) >= 28:
-            break
     output = []
     for link, title in candidates:
         try:
@@ -145,8 +143,6 @@ def html_fallback(name, category, site):
                 "source": name, "url": link, "date": published.strftime("%d.%m.%Y"),
                 "published_at": published.isoformat()
             })
-            if len(output) >= 12:
-                break
         except Exception:
             continue
     return output
@@ -163,7 +159,7 @@ def collect(source):
                 errors.append(feed + ": no entries")
                 continue
             output = []
-            for entry in entries[:45]:
+            for entry in entries:
                 title = clean(entry_value(entry, "title", ATOM + "title"))
                 link = entry_value(entry, "link", ATOM + "link")
                 published = parse_date(entry_value(entry, "pubDate", "date", ATOM + "published", ATOM + "updated", "{http://purl.org/dc/elements/1.1/}date"))
@@ -212,9 +208,16 @@ def main():
         published = parse_date(item.get("published_at", ""))
         if published and uid not in items and (item.get("source") in ACTIVE_NAMES or urllib.parse.urlparse(item.get("url", "")).netloc.removeprefix("www.") in ACTIVE_HOSTS):
             items[uid] = {key: value for key, value in item.items() if key not in ("title_ru", "summary_ru")}
-    fresh = sorted(items.values(), key=lambda item: item["published_at"], reverse=True)
-    OUT.write_text(json.dumps(fresh[:10], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Saved", len(fresh[:150]), "articles from", len(SOURCES), "configured sources")
+    # No numerical cap: retain every distinct article found in the rolling archive.
+    # Time-based expiry avoids unbounded growth of GitHub Pages' static JSON file.
+    archive_after = NOW - timedelta(days=7)
+    fresh = sorted(
+        (item for item in items.values()
+         if (parse_date(item.get("published_at", "")) or datetime.min.replace(tzinfo=timezone.utc)) >= archive_after),
+        key=lambda item: item["published_at"], reverse=True
+    )
+    OUT.write_text(json.dumps(fresh, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("Saved", len(fresh), "articles from", len(SOURCES), "configured sources")
 
 if __name__ == "__main__":
     main()
