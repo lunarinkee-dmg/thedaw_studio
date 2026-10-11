@@ -22,5 +22,12 @@
     "url": "https://www.cybersport.ru/",
     "category": "Киберспорт / Игры",
     "enabled": true
+  },
+  {
+    "name": "Quick N Rapp",
+    "url": "https://t.me/s/quicknrapp",
+    "category": "Музыка / Рэп",
+    "type": "telegram",
+    "enabled": true
   }
 ]
