@@ -37,12 +37,6 @@
     "enabled": false
   },
   {
-    "name": "WEproject",
-    "url": "https://weproject.media/",
-    "category": "Центральная Азия / Культура",
-    "enabled": true
-  },
-  {
     "name": "Pitchfork",
     "url": "https://pitchfork.com/",
     "feed": "https://pitchfork.com/rss/news/",
@@ -54,12 +48,6 @@
     "url": "https://www.rollingstone.com/",
     "category": "США / Музыка и культура",
     "enabled": true
-  },
-  {
-    "name": "Afisha.uz",
-    "url": "https://www.afisha.uz/",
-    "category": "Узбекистан / Культура",
-    "enabled": false
   },
   {
     "name": "Billboard",
