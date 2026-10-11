@@ -1214,6 +1214,14 @@ function render(){
       }
     };
 
+  } else if(section==='analytics'){
+    m.innerHTML='<section style="max-width:1120px;margin:0 auto;padding:16px">'+
+      '<h1>Статистика Reels</h1>'+
+      '<p class="muted">Результаты опубликованных Reels подключённого Instagram-аккаунта. Вовлечённость = взаимодействия / охват × 100%. Подписки с отдельного Reels через этот API недоступны.</p>'+
+      '<button id="dawLoadAnalytics" class="btn primary" type="button">↻ Обновить статистику</button>'+
+      '<div id="dawAnalyticsResults" aria-live="polite" style="margin-top:16px"><p class="muted">Нажми «Обновить статистику», чтобы загрузить данные из Instagram.</p></div>'+
+      '</section>';
+    m.querySelector('#dawLoadAnalytics').onclick=loadReelsAnalytics;
   } else if(section==='settings'){
     m.innerHTML='<h1>Настройки</h1><div class="card"><h3>Версия без Cloudflare</h3>'+
       '<p class="muted">Новости обновляются через GitHub Actions. Черновики хранятся в этом браузере. '+
@@ -1246,6 +1254,7 @@ function renderConstructorTabs(){
     ['design','Дизайн'],
     ['media','Медиатека'],
     ['publish','Публикация'],
+    ['analytics','Статистика Reels'],
     ['settings','Настройки']
   ];
   const bar=document.createElement('div');
@@ -1323,6 +1332,51 @@ async function load(manual=false){
     newsLoading=false;
     if(view==='inbox'||view==='guest')render();
   }
+}
+
+async function loadReelsAnalytics(){
+  const output=document.getElementById('dawAnalyticsResults');
+  const btn=document.getElementById('dawLoadAnalytics');
+  if(!output||!btn)return;
+  btn.disabled=true;
+  output.textContent='Загружаем метрики Instagram… Это может занять до минуты.';
+  const fmt=n=>typeof n==='number'?new Intl.NumberFormat('ru-RU').format(n):'—';
+  try{
+    const response=await fetch(DAW_API+'/instagram/analytics',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
+      body:'{}',cache:'no-store',signal:AbortSignal.timeout(90000)
+    });
+    const payload=await response.json().catch(()=>({}));
+    if(!response.ok||payload.ok!==true)throw Error(payload.error||'HTTP '+response.status);
+    if(!Array.isArray(payload.items))throw Error('Некорректный ответ Instagram');
+    output.replaceChildren();
+    const counter=document.createElement('p');
+    counter.className='muted';counter.textContent='Найдено Reels: '+payload.items.length+' · Обновлено: '+new Date(payload.checked_at).toLocaleString('ru-RU');
+    output.append(counter);
+    for(const reel of payload.items){
+      const el=document.createElement('article');
+      el.className='card';
+      el.style.cssText='margin:14px 0;padding:20px;max-width:100%;';
+      const heading=document.createElement('h3');heading.textContent=reel.title||'Reels без заголовка';el.append(heading);
+      const caption=document.createElement('p');caption.textContent=reel.caption||'Без подписи';caption.style.cssText='white-space:pre-wrap;max-height:125px;overflow:auto;';el.append(caption);
+      const metrics=document.createElement('div');
+      metrics.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:15px 0;';
+      for(const [label,value] of [['Просмотры',fmt(reel.views)],['Вовлечённость',typeof reel.engagement_rate==='number'?reel.engagement_rate.toLocaleString('ru-RU')+'%':'—'],['Уникальные зрители (охват)',fmt(reel.reach)],['Подписки с Reels','Недоступно'],['Взаимодействия',fmt(reel.interactions)]]){
+        const cell=document.createElement('div');cell.style.cssText='border:1px solid #e6d3d6;border-radius:12px;padding:12px;';
+        const name=document.createElement('div');name.className='muted';name.textContent=label;
+        const number=document.createElement('strong');number.textContent=value;number.style.cssText='display:block;margin-top:7px;font-size:18px';
+        cell.append(name,number);metrics.append(cell);
+      }
+      el.append(metrics);
+      if(reel.permalink&&/^https:\/\//.test(reel.permalink)){
+        const link=document.createElement('a');link.href=reel.permalink;link.textContent='Открыть Reels ↗';link.target='_blank';link.rel='noopener noreferrer';link.style.color='#a92745';el.append(link);
+      }
+      output.append(el);
+    }
+    if(!payload.items.length){const p=document.createElement('p');p.textContent='Опубликованные Reels не найдены.';output.append(p);}
+  }catch(e){output.textContent='Ошибка статистики: '+e.message+'. Проверь права Instagram API и обновлённый Worker.';}
+  finally{btn.disabled=false;}
 }
 
 async function generateAI(id){
