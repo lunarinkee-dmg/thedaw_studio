@@ -1360,15 +1360,38 @@ async function loadReelsAnalytics(){
       el.style.cssText='margin:14px 0;padding:20px;max-width:100%;';
       const heading=document.createElement('h3');heading.textContent=reel.title||'Reels без заголовка';el.append(heading);
       const caption=document.createElement('p');caption.textContent=reel.caption||'Без подписи';caption.style.cssText='white-space:pre-wrap;max-height:125px;overflow:auto;';el.append(caption);
-      const metrics=document.createElement('div');
-      metrics.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:15px 0;';
-      for(const [label,value] of [['Просмотры',fmt(reel.views)],['Вовлечённость',typeof reel.engagement_rate==='number'?reel.engagement_rate.toLocaleString('ru-RU')+'%':'—'],['Уникальные зрители (охват)',fmt(reel.reach)],['Взаимодействия',fmt(reel.interactions)]]){
+      const grid=document.createElement('div');
+      grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:15px 0;';
+      const percent=n=>typeof n==='number'?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+'%':'—';
+      const time=n=>typeof n==='number'?n.toLocaleString('ru-RU',{maximumFractionDigits:1})+' сек':'—';
+      function stat(target,label,value){
         const cell=document.createElement('div');cell.style.cssText='border:1px solid #e6d3d6;border-radius:12px;padding:12px;';
         const name=document.createElement('div');name.className='muted';name.textContent=label;
-        const number=document.createElement('strong');number.textContent=value;number.style.cssText='display:block;margin-top:7px;font-size:18px';
-        cell.append(name,number);metrics.append(cell);
+        const number=document.createElement('strong');number.textContent=value;number.style.cssText='display:block;margin-top:7px;font-size:18px;';
+        cell.append(name,number);target.append(cell);
       }
-      el.append(metrics);
+      stat(grid,'Просмотры',fmt(reel.views));
+      stat(grid,'Охват',fmt(reel.reach));
+      stat(grid,'Вовлечённость',percent(reel.engagement_rate));
+      stat(grid,'Среднее время просмотра',time(reel.avg_watch_time_seconds));
+      stat(grid,'Репосты',fmt(reel.shares));
+      stat(grid,'Сохранения',fmt(reel.saves));
+      el.append(grid);
+      const details=document.createElement('details');
+      details.style.cssText='margin:12px 0;border-top:1px solid #e6d3d6;padding-top:12px;';
+      const summary=document.createElement('summary');summary.textContent='Подробная статистика';summary.style.cursor='pointer';
+      details.append(summary);
+      const extended=document.createElement('div');extended.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:12px 0;';
+      stat(extended,'Лайки',fmt(reel.likes));
+      stat(extended,'Комментарии',fmt(reel.comments));
+      stat(extended,'Взаимодействия',fmt(reel.interactions));
+      stat(extended,'Общее время просмотра',time(reel.total_watch_time_seconds));
+      stat(extended,'Доля ранних пропусков',percent(reel.skip_rate));
+      details.append(extended);
+      const hint=document.createElement('p');hint.className='muted';
+      hint.textContent='Вовлечённость = взаимодействия / охват × 100%. Прочерк означает, что Instagram не предоставил метрику. Динамика за 1/6/24 часа появится после подключения хранения замеров.';
+      details.append(hint);
+      el.append(details);
       if(reel.permalink&&/^https:\/\//.test(reel.permalink)){
         const link=document.createElement('a');link.href=reel.permalink;link.textContent='Открыть Reels ↗';link.target='_blank';link.rel='noopener noreferrer';link.style.color='#a92745';el.append(link);
       }
