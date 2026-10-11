@@ -27,6 +27,19 @@ def load_sources():
 SOURCES = load_sources()
 ACTIVE_NAMES = {source[0] for source in SOURCES}
 ACTIVE_HOSTS = {urllib.parse.urlparse(source[2]).netloc.removeprefix("www.") for source in SOURCES}
+ACTIVE_TELEGRAM_URLS = {source[2].rstrip("/") for source in SOURCES if urllib.parse.urlparse(source[2]).netloc in ("t.me", "telegram.me")}
+def retained_source(item):
+    """A Telegram channel must match by channel URL/name, not shared t.me host."""
+    source_name = item.get("source")
+    if source_name in ACTIVE_NAMES:
+        return True
+    url = item.get("url", "")
+    parsed = urllib.parse.urlparse(url)
+    host = parsed.netloc.removeprefix("www.")
+    if host in ("t.me", "telegram.me"):
+        return any(url == path or url.startswith(path + "/") for path in ACTIVE_TELEGRAM_URLS)
+    return host in ACTIVE_HOSTS
+
 
 NOW = datetime.now(timezone.utc)
 ATOM = "{http://www.w3.org/2005/Atom}"
@@ -206,7 +219,7 @@ def main():
     # Preserve recent items if a publisher's feed is temporarily unavailable.
     for uid, item in previous_by_id.items():
         published = parse_date(item.get("published_at", ""))
-        if published and uid not in items and (item.get("source") in ACTIVE_NAMES or urllib.parse.urlparse(item.get("url", "")).netloc.removeprefix("www.") in ACTIVE_HOSTS):
+        if published and uid not in items and retained_source(item):
             items[uid] = {key: value for key, value in item.items() if key not in ("title_ru", "summary_ru")}
     # No numerical cap: retain every distinct article found in the rolling archive.
     # Time-based expiry avoids unbounded growth of GitHub Pages' static JSON file.
