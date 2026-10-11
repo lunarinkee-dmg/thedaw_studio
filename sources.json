@@ -22,49 +22,5 @@
     "url": "https://www.cybersport.ru/",
     "category": "Киберспорт / Игры",
     "enabled": true
-  },
-  {
-    "name": "The New York Times",
-    "url": "https://www.nytimes.com/",
-    "feed": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-    "category": "Мир / Культура",
-    "enabled": true
-  },
-  {
-    "name": "Quick N Rapp",
-    "url": "https://t.me/s/quicknrapp",
-    "category": "Музыка / Рэп",
-    "enabled": false
-  },
-  {
-    "name": "Pitchfork",
-    "url": "https://pitchfork.com/",
-    "feed": "https://pitchfork.com/rss/news/",
-    "category": "США / Музыка",
-    "enabled": true
-  },
-  {
-    "name": "Billboard",
-    "url": "https://www.billboard.com/",
-    "category": "США / Музыка",
-    "enabled": false
-  },
-  {
-    "name": "Variety",
-    "url": "https://variety.com/",
-    "category": "США / Кино и культура",
-    "enabled": false
-  },
-  {
-    "name": "XXL",
-    "url": "https://www.xxlmag.com/",
-    "category": "США / Хип-хоп",
-    "enabled": false
-  },
-  {
-    "name": "The FADER",
-    "url": "https://www.thefader.com/",
-    "category": "США / Музыка",
-    "enabled": false
   }
 ]
