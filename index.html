@@ -597,6 +597,23 @@ header{z-index:auto;position:relative;background:transparent!important;box-shado
 .daw-login-error{color:#a50017;font-size:13px;min-height:18px}
 .guest-readonly-note{max-width:640px;margin:4px auto 24px;text-align:center;font-size:13px}
 @media(max-width:760px){.daw-auth{top:16px;right:12px}.daw-role{padding:8px;font-size:10px}.daw-auth .btn{padding:8px 10px;font-size:10px}}
+
+/* Welcome screen, matching supplied theDAW landing-page reference */
+html.daw-home-mode,html.daw-home-mode body{min-height:100%;overflow-x:hidden}
+html.daw-home-mode body::before{display:none}
+html.daw-home-mode header{display:none!important}
+html.daw-home-mode main{padding:0!important;max-width:none}
+html.daw-home-mode .app{min-height:100vh}
+.daw-home{min-height:100vh;min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:75px 22px 64px}
+.daw-home-location{position:absolute;top:30px;right:2.2%;font-size:14px;line-height:1.4;color:white;text-shadow:0 1px 3px #87333d33;font-weight:400}
+.daw-home-center{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;width:100%;margin-top:-20px}
+.daw-home-logo{width:min(270px,39vw);height:auto;aspect-ratio:60/92;object-fit:contain;filter:none;display:block}
+.daw-home-actions{display:flex;flex-direction:column;gap:12px;margin-top:100px;width:174px}
+.daw-home-actions button{height:45px;padding:7px 15px;border-radius:40px;border:1px solid rgba(255,255,255,.9);background:linear-gradient(150deg,rgba(255,255,255,.90),rgba(248,248,248,.65));box-shadow:0 2px 4px #5f515233,inset 0 1px 3px #ffffff;color:#282525;font-size:14px;font-weight:500;backdrop-filter:blur(15px);transition:transform .15s,box-shadow .15s}
+.daw-home-actions button:hover{transform:translateY(-2px);box-shadow:0 5px 15px #5f515238}
+.daw-home-actions button:focus-visible{outline:2px solid #bf0018;outline-offset:4px}
+@media(max-width:670px){.daw-home-location{top:20px;right:19px;font-size:11px}.daw-home-logo{width:min(210px,56vw)}.daw-home-actions{margin-top:65px}}
+@media(prefers-reduced-motion:reduce){.daw-home-actions button{transition:none}}
 </style>
 </head>
 <body>
@@ -687,7 +704,7 @@ function showEditorLogin(){
       if(!res.ok||!result.ok||!result.session)throw Error(result.error||'Cloudflare HTTP '+res.status);
       editorSession=result.session;editorRole='editor';
       try{sessionStorage.setItem('daw_editor_session',editorSession)}catch(e){}
-      closeEditorLogin();updateAuthDisplay();updateSectionSwitch();render();
+      closeEditorLogin();go('constructor');updateAuthDisplay();
     }catch(err){
       error.textContent=err.message;
     }finally{submit.disabled=false}
@@ -704,7 +721,7 @@ async function restoreEditorSession(){
   updateAuthDisplay();render();
 }
 
-let view='inbox';
+let view='home';
 let constructorTab='drafts';
 let current=null;
 let newsPage=1;
@@ -739,6 +756,7 @@ function updateSectionSwitch(){
   const main=document.getElementById('sectionSwitchMain');
   const icon=document.getElementById('sectionSwitchIcon');
   if(!main||!icon)return;
+  if(view==='home')return;
   const news=view==='inbox';
   main.textContent=news?'Новости':'Конструктор';
   icon.textContent=news?'✦':'◇';
@@ -751,6 +769,7 @@ function updateSectionSwitch(){
 function go(v){
   if(v==='constructor'&&!isEditor()){showEditorLogin();return;}
   view=v;
+  document.documentElement.classList.toggle('daw-home-mode',v==='home');
   updateSectionSwitch();
   render();
 }
@@ -890,6 +909,20 @@ function drawSourceList(){
  });
 }
 function render(){
+  document.documentElement.classList.toggle('daw-home-mode',view==='home');
+  if(view==='home'){
+    const m=document.getElementById('main');
+    const logo=document.querySelector('header .logo img');
+    m.innerHTML='<section class="daw-home" aria-label="theDĀW — главная страница">'+
+      '<div class="daw-home-location">Astana · Warsaw · 2026</div>'+
+      '<div class="daw-home-center"><img class="daw-home-logo" alt="theDĀW" id="dawHomeLogo">'+
+      '<div class="daw-home-actions"><button type="button" id="dawHomeEditor">авторизация</button>'+
+      '<button type="button" id="dawHomeGuest">гость</button></div></div></section>';
+    if(logo)m.querySelector('#dawHomeLogo').src=logo.src;
+    m.querySelector('#dawHomeEditor').onclick=()=>isEditor()?go('constructor'):showEditorLogin();
+    m.querySelector('#dawHomeGuest').onclick=()=>go('inbox');
+    return;
+  }
   if(view==='constructor'&&!isEditor()){view='inbox';updateSectionSwitch();}
   const section=view==='constructor'?constructorTab:view;
   if(section==='design'){
