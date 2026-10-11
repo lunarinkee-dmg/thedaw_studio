@@ -35,5 +35,54 @@
     "url": "https://t.me/s/quicknrapp",
     "category": "Музыка / Рэп",
     "enabled": false
+  },
+  {
+    "name": "WEproject",
+    "url": "https://weproject.media/",
+    "category": "Центральная Азия / Культура",
+    "enabled": true
+  },
+  {
+    "name": "Pitchfork",
+    "url": "https://pitchfork.com/",
+    "feed": "https://pitchfork.com/rss/news/",
+    "category": "США / Музыка",
+    "enabled": true
+  },
+  {
+    "name": "Rolling Stone",
+    "url": "https://www.rollingstone.com/",
+    "category": "США / Музыка и культура",
+    "enabled": true
+  },
+  {
+    "name": "Afisha.uz",
+    "url": "https://www.afisha.uz/",
+    "category": "Узбекистан / Культура",
+    "enabled": false
+  },
+  {
+    "name": "Billboard",
+    "url": "https://www.billboard.com/",
+    "category": "США / Музыка",
+    "enabled": false
+  },
+  {
+    "name": "Variety",
+    "url": "https://variety.com/",
+    "category": "США / Кино и культура",
+    "enabled": false
+  },
+  {
+    "name": "XXL",
+    "url": "https://www.xxlmag.com/",
+    "category": "США / Хип-хоп",
+    "enabled": false
+  },
+  {
+    "name": "The FADER",
+    "url": "https://www.thefader.com/",
+    "category": "США / Музыка",
+    "enabled": false
   }
 ]
