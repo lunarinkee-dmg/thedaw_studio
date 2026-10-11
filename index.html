@@ -743,7 +743,7 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 .daw-reel-kpi{background:transparent;border:0;border-radius:0;padding:0;min-width:0}
 .daw-reel-kpi-label{color:#947b84;font-size:11px;line-height:1.3;margin-bottom:3px}
 .daw-reel-kpi strong{display:block;font-size:19px;line-height:1.15;color:#31272b;font-weight:700;overflow-wrap:anywhere}
-.daw-reel-details{border-top:1px solid #ecdee1;margin-top:13px;padding-top:10px}
+.daw-reel-delta{display:block;color:#359a72;font-size:11px;font-weight:650;margin-top:4px}.daw-reel-delta.negative{color:#bf6060}\n.daw-reel-details{border-top:1px solid #ecdee1;margin-top:13px;padding-top:10px}
 .daw-reel-details summary{cursor:pointer;font-size:12px;font-weight:600;color:#8f6371}
 .daw-reel-details .daw-reel-kpis{margin-top:12px}
 @media(max-width:760px){.daw-reels-list{grid-template-columns:1fr}}
@@ -1406,15 +1406,23 @@ async function loadReelsAnalytics(){
         const total=Math.round(n);
         return total<60?total+' сек':Math.floor(total/60)+' мин '+String(total%60).padStart(2,'0')+' сек';
       };
-      const tile=(parent,label,value,icon)=>{
+      const tile=(parent,label,value,icon,delta=null)=>{
         if(value===null)return;
         const cell=document.createElement('div');cell.className='daw-reel-kpi';
         const labelNode=document.createElement('div');labelNode.className='daw-reel-kpi-label';labelNode.textContent=icon+' '+label;
         const valueNode=document.createElement('strong');valueNode.textContent=value;
-        cell.append(labelNode,valueNode);parent.append(cell);
+        cell.append(labelNode,valueNode);
+        if(delta&&typeof delta.value==='number'&&Number.isFinite(delta.value)){
+          const change=document.createElement('small');change.className='daw-reel-delta';
+          const sign=delta.value>0?'↑':delta.value<0?'↓':'→';
+          change.textContent=sign+' '+new Intl.NumberFormat('ru-RU').format(Math.abs(delta.value))+' за последний час';
+          if(delta.value<0)change.classList.add('negative');
+          cell.append(change);
+        }
+        parent.append(cell);
       };
-      tile(grid,'Просмотры',num(reel.views),'◉');
-      tile(grid,'Охват',num(reel.reach),'♧');
+      tile(grid,'Просмотры',num(reel.views),'◉',reel.hourly_views_delta);
+      tile(grid,'Охват',num(reel.reach),'♧',reel.hourly_reach_delta);
       tile(grid,'Вовлечённость',pct(reel.engagement_rate),'♡');
       tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
       tile(grid,'Репосты',num(reel.shares),'↗');
