@@ -2027,6 +2027,19 @@ function renderDesign(){
     }
     details.appendChild(content);settings.appendChild(details);
   }
+  // The AI Copywriter already selects the news on the left.
+  // Keep these elements mounted for existing handlers, but remove the duplicate
+  // draft selector and transfer button from the editing UI.
+  for(const id of ['designDraft','designFill']){
+    const element=document.getElementById(id);
+    if(!element)continue;
+    if(element.id==='designDraft'){
+      const label=element.previousElementSibling;
+      if(label&&label.tagName==='LABEL')label.hidden=true;
+    }
+    element.hidden=true;
+    element.style.display='none';
+  }
   // Keep controls that are not part of a disclosure (and their listeners) intact.
   for(const el of [...settings.children]){
     if(el!==menu&&!el.classList.contains('daw-editor-section')){
