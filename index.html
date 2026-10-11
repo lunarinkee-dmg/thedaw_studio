@@ -1617,6 +1617,12 @@ function renderDesign(){
           ↗ Залить в TikTok
         </button>
 
+        <label>Режим публикации</label>
+        <select id="designPublishMode" style="width:100%;padding:10px"><option value="now">Опубликовать сейчас</option><option value="schedule">Запланировать Reels</option></select>
+        <div id="designScheduleControls" style="display:none">
+          <label>Дата и время публикации (время устройства)</label><input id="designScheduleAt" type="datetime-local" style="width:100%;padding:10px"/>
+          <button class="btn" id="designScheduleQueue" type="button">📅 Посмотреть очередь</button><div id="designScheduleList"></div>
+        </div>
         <label>Подпись для Instagram Reels</label>
         <textarea id="designInstagramCaption"
           rows="4"
@@ -1640,6 +1646,32 @@ function renderDesign(){
     </div>
   `;
 
+  document.getElementById('designPublishMode').onchange=e=>{
+    const schedule=e.target.value==='schedule';
+    document.getElementById('designScheduleControls').style.display=schedule?'block':'none';
+    document.getElementById('designInstagramPublish').textContent=schedule?'📅 Запланировать Reels':'↗ Опубликовать Reels через Meta API';
+  };
+  document.getElementById('designScheduleQueue').onclick=async()=>{
+    const list=document.getElementById('designScheduleList');
+    list.textContent='Загрузка…';
+    try {
+      const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/schedule/list',{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:'{}'});
+      const result=await response.json();
+      if(!response.ok)throw Error(result.error||response.status);
+      list.replaceChildren();
+      for(const item of result.items) {
+        const p=document.createElement('p');
+        p.textContent=new Date(item.scheduled_at).toLocaleString('ru-RU')+' · '+item.status+' · '+item.caption.slice(0,50)+(item.last_error?' · '+item.last_error:'');
+        if(item.status==='queued'){
+          const btn=document.createElement('button');btn.textContent='Отменить';btn.className='btn';
+          btn.onclick=async()=>{const res=await fetch('https://thedaw-ai.lunarinkee.workers.dev/schedule/cancel',{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:JSON.stringify({id:item.id})});const body=await res.json();if(!res.ok)alert(body.error||'Ошибка');else document.getElementById('designScheduleQueue').click();};
+          p.append(' ',btn);
+        }
+        list.appendChild(p);
+      }
+      if(!result.items.length)list.textContent='Очередь пуста';
+    } catch(e){list.textContent='Ошибка: '+e.message;}
+  };
   document.getElementById('designInstagramPublish').onclick=async()=>{
     if(designRecording)return;
     const notice=document.getElementById('designNotice');
@@ -2146,6 +2178,14 @@ function renderDesign(){
         };
         notice.textContent='Загружаем Reels в Cloudflare R2…';
         const upload=await call('/instagram/upload',blob,'video/mp4');
+        if(document.getElementById('designPublishMode').value==='schedule'){
+          const dateValue=document.getElementById('designScheduleAt').value;
+          const at=new Date(dateValue);
+          if(!dateValue||!Number.isFinite(at.getTime())||at.getTime()<=Date.now()+60000)throw Error('Укажи дату минимум через минуту');
+          const queued=await call('/schedule/create',{key:upload.key,caption:document.getElementById('designInstagramCaption').value.trim(),scheduled_at:at.toISOString()});
+          notice.textContent='✓ Reels запланирован на '+at.toLocaleString('ru-RU')+' (ID: '+queued.id+')';
+          return;
+        }
         notice.textContent='Instagram обрабатывает видео…';
         const prepared=await call('/instagram/prepare',{
           key:upload.key,
