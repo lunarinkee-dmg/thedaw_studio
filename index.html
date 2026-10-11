@@ -1380,14 +1380,13 @@ async function loadReelsAnalytics(){
       const captionText=String(reel.caption||'').trim();
       const titleText=String(reel.title||captionText.split('\n')[0]||'Reels без заголовка').trim();
       const top=document.createElement('div');top.className='daw-reel-top';
-      const imageSrc=reel.thumbnail_url||reel.thumbnail||null;
-      if(imageSrc&&/^https:\/\//.test(imageSrc)){
+      const imageSrc=[reel.thumbnail_url,reel.thumbnail,reel.cover_url,reel.poster_url,reel.media?.thumbnail_url,reel.media?.thumbnail].find(u=>typeof u==='string'&&/^https:\/\//.test(u));
+      const placeholder=document.createElement('div');placeholder.className='daw-reel-thumb-placeholder';placeholder.textContent='▧';
+      top.append(placeholder);
+      if(imageSrc){
         const image=document.createElement('img');image.className='daw-reel-thumb';
-        image.src=imageSrc;image.alt='Обложка Reels';image.loading='lazy';
-        image.onerror=()=>{const placeholder=document.createElement('div');placeholder.className='daw-reel-thumb-placeholder';placeholder.textContent='▧';image.replaceWith(placeholder);};
-        top.append(image);
-      }else{
-        const placeholder=document.createElement('div');placeholder.className='daw-reel-thumb-placeholder';placeholder.textContent='▧';top.append(placeholder);
+        image.src=imageSrc;image.alt='Обложка Reels';image.loading='lazy';image.referrerPolicy='no-referrer';
+        image.onload=()=>placeholder.replaceWith(image);
       }
       const intro=document.createElement('div');intro.className='daw-reel-intro';
       const heading=document.createElement('h3');heading.textContent=titleText;intro.append(heading);
@@ -1418,22 +1417,6 @@ async function loadReelsAnalytics(){
       tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
       tile(grid,'Репосты',num(reel.shares),'↗');
       tile(grid,'Сохранения',num(reel.saves),'▢');
-      const reelDuration=Number.isFinite(reel.duration_seconds)?reel.duration_seconds:Number.isFinite(reel.video_duration_seconds)?reel.video_duration_seconds:null;
-      const durationCell=document.createElement('div');durationCell.className='daw-reel-kpi';
-      const durationLabel=document.createElement('div');durationLabel.className='daw-reel-kpi-label';durationLabel.textContent='▷ Длина ролика';
-      const durationValue=document.createElement('strong');durationValue.textContent=duration(reelDuration)||'—';
-      durationCell.append(durationLabel,durationValue);grid.append(durationCell);
-      if(reelDuration===null&&typeof reel.media_url==='string'&&/^https:\/\//.test(reel.media_url)){
-        const video=document.createElement('video');video.preload='metadata';
-        video.muted=true;
-        const cleanup=()=>{video.removeAttribute('src');video.load();};
-        video.onloadedmetadata=()=>{
-          if(Number.isFinite(video.duration)&&video.duration>0)durationValue.textContent=duration(video.duration);
-          cleanup();
-        };
-        video.onerror=cleanup;
-        video.src=reel.media_url;
-      }
       if(grid.childElementCount)el.append(grid);
       const details=document.createElement('details');details.className='daw-reel-details';
       const summary=document.createElement('summary');summary.textContent='Подробная статистика';details.append(summary);
