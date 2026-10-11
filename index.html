@@ -1446,7 +1446,7 @@ async function loadReelsAnalytics(){
         const amount=document.createElement('span');amount.textContent=value;valueNode.append(amount);
         const actual=typeof delta==='number'?delta:delta?.value;
         const hasActual=typeof actual==='number'&&Number.isFinite(actual);
-        const increment=hasActual?actual:null;
+        const increment=periods&&typeof periods[1]==='number'?periods[1]:null;
         if(increment!==null){
           const change=document.createElement('span');
           change.className='daw-reel-delta'+(increment<0?' negative':'');
