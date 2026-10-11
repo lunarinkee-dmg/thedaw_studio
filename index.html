@@ -964,7 +964,7 @@ function render(){
       Math.min(newsPage,pages)
     );
 
-    const visible=sorted.slice(newsPage-1,newsPage);
+    const visible=sorted;
 
     m.innerHTML=
       '<section class="news-view">'+
@@ -973,7 +973,7 @@ function render(){
       '<div><h1>Новости</h1>'+
       '<p class="muted">Свежие новости первыми · '+
       sorted.length+
-      ' последних публикаций из The Flow и 98mag</p></div>'+
+      ' публикаций за последние 36 часов</p></div>'+
       '<button class="btn" id="sourcesManage">⚙ Источники</button>'+ '<button class="btn primary" id="newsRefresh" '+
       (newsLoading?'disabled':'')+'>'+
       (newsLoading?'⏳ Проверяем источники…':'↻ Обновить новости')+
@@ -981,9 +981,6 @@ function render(){
       (newsError?
         '<p class="banner danger">'+esc(newsError)+'</p>':'')+
       '<div class="news-carousel">'+
-      '<button class="news-edge-arrow news-edge-left" '+
-      'data-news-page="'+(newsPage-1)+'" '+
-      (newsPage===1?'disabled':'')+'>‹</button>'+
       '<div class="grid news-grid">'+
       (visible.length?
         visible.map(n=>
@@ -1006,29 +1003,7 @@ function render(){
         (newsLoading?'Загружаем новости…':'Новостей пока нет.')+
         '</p>')+
       '</div>'+
-      '<button class="news-edge-arrow news-edge-right" '+
-      'data-news-page="'+(newsPage+1)+'" '+
-      (newsPage===pages?'disabled':'')+'>›</button>'+
       '</div>'+
-      (pages>1?
-        '<div class="news-pagination">'+
-        '<div class="news-page-numbers">'+
-        Array.from({length:pages},(_,i)=>i+1)
-          .filter(p=>
-            p===1||p===pages||Math.abs(p-newsPage)<=2
-          )
-          .reduce((acc,p,i,arr)=>{
-            if(i&&p-arr[i-1]>1){
-              acc.push('<span class="news-page-ellipsis">…</span>');
-            }
-            acc.push(
-              '<button class="btn '+
-              (p===newsPage?'selected':'')+
-              '" data-news-page="'+p+'">'+p+'</button>'
-            );
-            return acc;
-          },[]).join('')+
-        '</div></div>':'')+
       '<div class="daw-queue">очередь<strong>'+sorted.length+'/13</strong></div>'+ '</section>';
 
     m.querySelectorAll('[data-create]').forEach(
