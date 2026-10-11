@@ -1009,7 +1009,7 @@ function create(id){
 
   data.drafts.unshift(d);
   current=d.id;
-  constructorTab='drafts';
+  constructorTab='design';
   save();
   go('constructor');
 }
@@ -1332,7 +1332,6 @@ function renderConstructorTabs(){
   const m=document.getElementById('main');
   if(!m)return;
   const tabs=[
-    ['drafts','ИИ-копирайтер'],
     ['design','Дизайн'],
     ['media','Медиатека'],
     ['publish','Публикация'],
