@@ -1381,13 +1381,14 @@ async function loadReelsAnalytics(){
       const titleText=String(reel.title||captionText.split('\n')[0]||'Reels без заголовка').trim();
       const top=document.createElement('div');top.className='daw-reel-top';
       const imageSrc=[reel.thumbnail_url,reel.thumbnail,reel.cover_url,reel.poster_url,reel.media?.thumbnail_url,reel.media?.thumbnail].find(u=>typeof u==='string'&&/^https:\/\//.test(u));
-      const placeholder=document.createElement('div');placeholder.className='daw-reel-thumb-placeholder';placeholder.textContent='▧';
-      top.append(placeholder);
+      const placeholder=()=>{const p=document.createElement('div');p.className='daw-reel-thumb-placeholder';p.textContent='▧';return p;};
       if(imageSrc){
         const image=document.createElement('img');image.className='daw-reel-thumb';
-        image.src=imageSrc;image.alt='Обложка Reels';image.loading='lazy';image.referrerPolicy='no-referrer';
-        image.onload=()=>placeholder.replaceWith(image);
-      }
+        image.alt='Обложка Reels';image.loading='lazy';
+        image.onerror=()=>image.replaceWith(placeholder());
+        image.src=imageSrc;
+        top.append(image);
+      }else top.append(placeholder());
       const intro=document.createElement('div');intro.className='daw-reel-intro';
       const heading=document.createElement('h3');heading.textContent=titleText;intro.append(heading);
       if(reel.permalink&&/^https:\/\//.test(reel.permalink)){
