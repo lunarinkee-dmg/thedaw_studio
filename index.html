@@ -761,7 +761,7 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 
 .daw-reel-trend-row{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
 .daw-reel-trend-row b{color:#21a657;font-size:12px}
-</style>
+.daw-reel-delta-waiting{color:#8b9490!important;font-weight:500}.daw-reel-delta-waiting .daw-reel-trend-icon{color:#20bd52}\n</style>
 </head>
 <body>
 
@@ -1391,7 +1391,8 @@ async function loadReelsAnalytics(){
     let history=[];
     try{const parsed=JSON.parse(localStorage.getItem(historyKey)||'[]');if(Array.isArray(parsed))history=parsed.filter(e=>e&&Number.isFinite(e.at)&&e.items);}catch{}
     const observedAt=Date.now();
-    const timedChange=(id,field,current,hours)=>{
+    const timedChange=(id,field,current,hours,serverHourly=null)=>{
+      if(hours===1&&typeof serverHourly==='number'&&Number.isFinite(serverHourly))return serverHourly;
       if(typeof current!=='number')return null;
       const deadline=observedAt-hours*3600000;
       const baseline=[...history].reverse().find(e=>e.at<=deadline&&typeof e.items?.[id]?.[field]==='number');
@@ -1447,11 +1448,12 @@ async function loadReelsAnalytics(){
         const actual=typeof delta==='number'?delta:delta?.value;
         const hasActual=typeof actual==='number'&&Number.isFinite(actual);
         const increment=periods&&typeof periods[1]==='number'?periods[1]:null;
-        if(increment!==null){
+        if(periods){
           const change=document.createElement('span');
-          change.className='daw-reel-delta'+(increment<0?' negative':'');
+          change.className='daw-reel-delta'+(increment!==null&&increment<0?' negative':'');
           const symbol=document.createElement('span');symbol.className='daw-reel-trend-icon';symbol.setAttribute('aria-hidden','true');symbol.textContent='↗';
-          change.append(symbol,document.createTextNode((increment<0?'−':'+')+new Intl.NumberFormat('ru-RU').format(Math.abs(increment))));
+          change.append(symbol,document.createTextNode(increment===null?'—':(increment<0?'−':'+')+new Intl.NumberFormat('ru-RU').format(Math.abs(increment))));
+          if(increment===null){change.classList.add('daw-reel-delta-waiting');change.title='Нет замера за час — наведи для подробностей';}
           if(periods){
             change.tabIndex=0;
             change.setAttribute('aria-label',label+': изменения за 1, 12 и 24 часа');
@@ -1484,8 +1486,8 @@ async function loadReelsAnalytics(){
         }
         cell.append(labelNode,valueNode);parent.append(cell);
       };
-      tile(grid,'Просмотры',num(reel.views),'◉',typeof previous[reel.id]?.views==='number'&&typeof reel.views==='number'?reel.views-previous[reel.id].views:null,{1:timedChange(reel.id,'views',reel.views,1),12:timedChange(reel.id,'views',reel.views,12),24:timedChange(reel.id,'views',reel.views,24)});
-      tile(grid,'Охват',num(reel.reach),'♧',typeof previous[reel.id]?.reach==='number'&&typeof reel.reach==='number'?reel.reach-previous[reel.id].reach:null,{1:timedChange(reel.id,'reach',reel.reach,1),12:timedChange(reel.id,'reach',reel.reach,12),24:timedChange(reel.id,'reach',reel.reach,24)});
+      tile(grid,'Просмотры',num(reel.views),'◉',typeof previous[reel.id]?.views==='number'&&typeof reel.views==='number'?reel.views-previous[reel.id].views:null,{1:timedChange(reel.id,'views',reel.views,1,typeof reel.hourly_views_delta==='number'?reel.hourly_views_delta:reel.hourly_views_delta?.value),12:timedChange(reel.id,'views',reel.views,12),24:timedChange(reel.id,'views',reel.views,24)});
+      tile(grid,'Охват',num(reel.reach),'♧',typeof previous[reel.id]?.reach==='number'&&typeof reel.reach==='number'?reel.reach-previous[reel.id].reach:null,{1:timedChange(reel.id,'reach',reel.reach,1,typeof reel.hourly_reach_delta==='number'?reel.hourly_reach_delta:reel.hourly_reach_delta?.value),12:timedChange(reel.id,'reach',reel.reach,12),24:timedChange(reel.id,'reach',reel.reach,24)});
       tile(grid,'Вовлечённость',pct(reel.engagement_rate),'♡');
       tile(grid,'Среднее время просмотра',secs(reel.avg_watch_time_seconds),'◷');
       tile(grid,'Репосты',num(reel.shares),'↗');
