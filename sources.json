@@ -18,12 +18,6 @@
     "enabled": true
   },
   {
-    "name": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/",
-    "category": "Киберспорт / Игры",
-    "enabled": true
-  },
-  {
     "name": "The New York Times",
     "url": "https://www.nytimes.com/",
     "feed": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
