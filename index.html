@@ -803,6 +803,12 @@ body:has(.daw-editor-layout) .constructor-tab{font-size:11px;padding:6px 10px}
 .daw-editor-footer>#designInstagramPublish{background:rgba(255,255,255,.6)!important;color:#292929!important;border:1px solid #ddd!important}
 @media(max-width:1090px){.daw-editor-layout{grid-template-columns:minmax(240px,38%) minmax(330px,1fr)}.daw-editor-layout .design-stage{grid-column:2;grid-row:1;max-height:590px!important}.daw-design-controls{grid-column:1;grid-row:2}.daw-editor-footer{margin-left:0;grid-column:1/-1}.daw-editor-copy{grid-column:1;grid-row:1}}
 @media(max-width:730px){.daw-editor-layout{display:flex!important;flex-direction:column;gap:17px}.daw-editor-copy,.daw-design-controls{height:auto;min-height:0;max-height:600px!important}.daw-editor-layout .design-stage{height:520px;min-height:520px;order:1}.daw-design-controls{order:2}.daw-editor-copy{order:0;min-height:530px}.daw-editor-footer{grid-template-columns:1fr;gap:10px;margin:15px 0}.daw-editor-footer>.btn{height:45px}body:has(.daw-editor-layout) main{padding:15px 15px 50px}}
+
+/* Keep the news stage aligned with the current editorial reference */
+body:has(.daw-news-screen) .section-switch-icon img{width:44px;height:44px}
+body:has(.daw-editor-layout) .section-switch{top:61%}
+body:has(.daw-editor-layout) .section-switch-main{min-width:174px;height:60px}
+body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 </style>
 </head>
 <body>
@@ -916,7 +922,7 @@ async function restoreEditorSession(){
 }
 
 let view='home';
-let constructorTab='drafts';
+let constructorTab='design';
 let current=null;
 let newsPage=1;
 let newsLoading=false;
@@ -974,7 +980,7 @@ function go(v){
 }
 function toggleSection(){go(view==='inbox'?'constructor':'inbox')}
 document.getElementById('sectionSwitchMain').onclick=toggleSection;
-document.getElementById('sectionConstructorIcon').onclick=()=>go('constructor');
+document.getElementById('sectionConstructorIcon').onclick=()=>{constructorTab='design';go('constructor');};
 document.getElementById('sectionSwitchIcon').onclick=()=>{
   if(!isEditor()){showEditorLogin();return;}
   constructorTab='publish';go('constructor');
