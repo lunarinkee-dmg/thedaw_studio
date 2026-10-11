@@ -1316,13 +1316,37 @@ async function load(manual=false){
   }
 }
 
-function generateAI(id){
+async function generateAI(id){
+  if(!isEditor()){showEditorLogin();return;}
   const d=data.drafts.find(x=>x.id===id);
   if(!d)return;
-  const title=d.headline||d.sourceTitle||'';
-  d.caption=title+'\\n\\n'+(d.sourceSummary||'')+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
-  d.tiktok=title;
-  save();render();
+  const button=document.getElementById('dawGenerate');
+  const status=document.getElementById('dawStatus');
+  if(button){button.disabled=true;button.textContent='Генерируем…';}
+  if(status)status.textContent='Gemini готовит текст новости…';
+  try{
+    const response=await fetch(DAW_API+'/generate',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
+      body:JSON.stringify({title:d.sourceTitle||d.headline,summary:d.sourceSummary||'',source:d.sourceName||'',url:d.sourceUrl||''}),
+      cache:'no-store',
+      signal:AbortSignal.timeout(45000)
+    });
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok||result.error)throw Error(result.error||'HTTP '+response.status);
+    if(typeof result.headline!=='string'||typeof result.instagram!=='string'||typeof result.tiktok!=='string')throw Error('Gemini вернул неполный ответ');
+    d.headline=result.headline;
+    d.caption=result.instagram+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
+    d.tiktok=result.tiktok;
+    save();render();
+    const done=document.getElementById('dawStatus');
+    if(done)done.textContent='✓ Текст сгенерирован через Gemini. Проверь факты перед публикацией.';
+  }catch(error){
+    if(error.message.includes('Сессия')||error.message.includes('401'))editorLogout('Войди как редактор повторно.');
+    const target=document.getElementById('dawStatus');
+    if(target)target.textContent='Ошибка Gemini: '+error.message+'. Исходный текст не изменён.';
+    if(button){button.disabled=false;button.textContent='Сгенерировать';}
+  }
 }
 
 render();
