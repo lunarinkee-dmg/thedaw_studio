@@ -809,6 +809,20 @@ body:has(.daw-news-screen) .section-switch-icon img{width:44px;height:44px}
 body:has(.daw-editor-layout) .section-switch{top:61%}
 body:has(.daw-editor-layout) .section-switch-main{min-width:174px;height:60px}
 body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
+
+/* Editorial news trash: rejected articles live only until local midnight */
+.daw-trash-switch{display:flex;gap:9px;margin:18px auto 0;justify-content:center}
+.daw-trash-switch .btn{border-radius:24px;padding:8px 17px;font-size:13px}
+.daw-trash-panel{width:min(820px,94%);margin:19px auto 35px;border-radius:23px;background:rgba(255,255,255,.52);border:1px solid #e6cdd2;padding:23px;box-shadow:0 3px 8px #0001}
+.daw-trash-info{color:#7d6970;font-size:13px;margin-bottom:17px}
+.daw-trash-item{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 2px;border-bottom:1px solid #e8d9dc}
+.daw-trash-item:last-child{border-bottom:0}
+.daw-trash-item span{font-size:11px;color:#bf6477}
+.daw-trash-item h3{font-size:15px;font-weight:500;margin:4px 0 6px}
+.daw-trash-item small{font-size:12px;color:#84747c}
+.daw-trash-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.daw-trash-actions a{font-size:12px;color:#a13c53}
+@media(max-width:650px){.daw-trash-item{align-items:flex-start;flex-direction:column}}
 </style>
 </head>
 <body>
@@ -843,6 +857,19 @@ let data={
   rejected:saved.rejected||{}
 };
 
+// Rejected stories are held only until local midnight. Older legacy flags expire.
+const dawDay=()=>new Date().toLocaleDateString('en-CA');
+function dawCleanTrash(){
+  const today=dawDay();
+  let changed=false;
+  for(const [id,item] of Object.entries(data.rejected)){
+    if(!item||typeof item!=='object'||item.day!==today){
+      delete data.rejected[id];changed=true;
+    }
+  }
+  if(changed)save();
+}
+dawCleanTrash();
 const DAW_API='https://thedaw-ai.lunarinkee.workers.dev';
 let editorSession='';
 let editorRole='guest';
@@ -927,6 +954,8 @@ let current=null;
 let newsPage=1;
 let newsLoading=false;
 let newsError='';
+let newsPane='feed';
+let lastNewsCheck=null;
 
 const esc=x=>String(x??'').replace(
   /[&<>"']/g,
@@ -1057,14 +1086,16 @@ function displayNewsTitle(value){
 }
 
 function recentNews(items){
-  const now=Date.now();
-
-  return items.filter(n=>{
-    const t=newsTimestamp(n);
-    return Number.isFinite(t) &&
-      t>=now-36*60*60*1000 &&
-      t<=now+5*60*1000;
-  }).sort((a,b)=>newsTimestamp(b)-newsTimestamp(a));
+  // No item-count cap and no short 36-hour display cutoff.
+  // The backend retains a rolling seven-day archive.
+  return (Array.isArray(items)?items:[])
+    .filter(n=>n&&n.id&&n.title&&n.url)
+    .sort((a,b)=>newsTimestamp(b)-newsTimestamp(a));
+}
+function dawMergeNews(incoming){
+  const map=new Map(data.news.map(n=>[n.id,n]));
+  for(const item of recentNews(incoming))map.set(item.id,item);
+  data.news=recentNews([...map.values()]);
 }
 
 
@@ -1202,12 +1233,16 @@ function render(){
   if(!m)return;
 
   if(section==='inbox'){
+    dawCleanTrash();
     const sorted=recentNews(data.news)
       .filter(n=>!data.rejected[n.id]&&!data.approved[n.id])
       .sort((x,y)=>newsTimestamp(y)-newsTimestamp(x));
     const pages=Math.max(1,sorted.length);
     newsPage=Math.max(1,Math.min(newsPage,pages));
     const n=sorted[newsPage-1];
+    const trashed=Object.values(data.rejected)
+      .filter(x=>x&&typeof x==='object'&&x.day===dawDay())
+      .sort((a,b)=>Date.parse(b.rejectedAt||0)-Date.parse(a.rejectedAt||0));
     const approvedCount=Object.keys(data.approved).length;
     const publishedCount=Object.values(data.approved).filter(x=>x.published===true).length;
     m.innerHTML='<section class="daw-news-screen">'+
@@ -1225,6 +1260,13 @@ function render(){
       '<button class="daw-news-arrow" data-direction="1" '+(newsPage>=sorted.length?'disabled':'')+' aria-label="Следующая новость">›</button>'+
       '</div>'+
       '<div class="daw-news-queue">очередь<strong>'+publishedCount+'/'+approvedCount+'</strong></div>'+
+      '<div class="daw-trash-switch"><button class="btn '+(newsPane==='feed'?'primary':'')+'" id="dawFeedTab">Лента · '+sorted.length+'</button>'+
+      '<button class="btn '+(newsPane==='trash'?'primary':'')+'" id="dawTrashTab">Корзина · '+trashed.length+'</button></div>'+
+      (newsPane==='trash'?'<div class="daw-trash-panel"><div class="daw-trash-info">Отклонённые новости за сегодня. Корзина очищается автоматически после полуночи.</div>'+
+        (trashed.length?trashed.map(x=>'<article class="daw-trash-item"><div><span>'+esc(x.category||'Новости')+'</span><h3>'+esc(x.title||'Без заголовка')+'</h3><small>'+esc(x.source||'')+' · '+esc(x.date||'')+'</small></div>'+
+          '<div class="daw-trash-actions">'+(x.url?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Источник ↗</a>':'')+
+          (isEditor()?'<button class="btn" data-daw-restore="'+esc(x.id)+'">Вернуть ↗</button>':'')+'</div></article>').join(''):
+          '<p class="muted">Корзина пока пуста.</p>')+'</div>':'')+
       '<div class="daw-news-tools"><button class="btn" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'Проверяем новости…':'↻ Обновить новости')+'</button>'+
       (isEditor()?'<button class="btn" id="sourcesManage">Источники</button>':'')+'</div>'+
       (newsError?'<p class="daw-news-warning">'+esc(newsError)+'</p>':'')+
@@ -1251,8 +1293,17 @@ function render(){
     };
     const reject=m.querySelector('#dawRejectNews');if(reject)reject.onclick=()=>{
       if(!n||!isEditor())return;
-      data.rejected[n.id]=true;save();newsPage=1;render();
+      data.rejected[n.id]={...n,day:dawDay(),rejectedAt:new Date().toISOString()};
+      save();newsPage=1;render();
     };
+    const feedTab=m.querySelector('#dawFeedTab');
+    const trashTab=m.querySelector('#dawTrashTab');
+    if(feedTab)feedTab.onclick=()=>{newsPane='feed';render();};
+    if(trashTab)trashTab.onclick=()=>{newsPane='trash';render();};
+    m.querySelectorAll('[data-daw-restore]').forEach(btn=>btn.onclick=()=>{
+      if(!isEditor())return;
+      delete data.rejected[btn.dataset.dawRestore];save();render();
+    });
   } else if(section==='drafts'){
     const selected=data.drafts.find(x=>x.id===current)||data.drafts[0];
     if(selected)current=selected.id;
@@ -1359,55 +1410,38 @@ function renderConstructorTabs(){
 async function load(manual=false){
   if(newsLoading)return;
   newsLoading=true;
-  newsError='';
-  if(view==='inbox')render();
+  if(manual)newsError='';
+  if(manual&&view==='inbox')render();
   try{
+    // Static feed is updated every 10 min by GitHub Actions even when the site is closed.
+    const staticResponse=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
+    if(!staticResponse.ok)throw Error('news.json HTTP '+staticResponse.status);
+    const incoming=await staticResponse.json();
+    if(!Array.isArray(incoming))throw Error('Некорректный формат ленты');
+    dawMergeNews(incoming);
+    lastNewsCheck=new Date();
     if(manual){
+      // Live refresh is optional; failures must not replace or erase the running feed.
       try{
-        // Read-only, server-side publisher check. No GitHub token in the browser.
-        const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/news/refresh',{
-          method:'POST',
-          headers:{'Content-Type':'application/json'},
-          body:'{}',
-          cache:'no-store',
-          signal:AbortSignal.timeout(45000)
+        const response=await fetch(DAW_API+'/news/refresh',{
+          method:'POST',headers:{'Content-Type':'application/json'},body:'{}',
+          cache:'no-store',signal:AbortSignal.timeout(45000)
         });
         const payload=await response.json().catch(()=>({}));
-        if(!response.ok||payload.ok!==true||!Array.isArray(payload.news)){
+        if(!response.ok||payload.ok!==true||!Array.isArray(payload.news))
           throw Error(payload.error||'Cloudflare HTTP '+response.status);
-        }
-        const now=Date.now();
-        data.news=payload.news.filter(item=>{
-          const published=Date.parse(item.published_at||'');
-          return Number.isFinite(published)&&published>=now-36*60*60*1000&&published<=now+5*60*1000;
-        }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));
-        if(!data.news.length){
-          newsError='Источники проверены. За последние 36 часов новых публикаций не найдено.';
-        }else if(payload.sources_errors?.length){
-          newsError='Часть источников недоступна: '+payload.sources_errors.join('; ').slice(0,260);
-        }
+        dawMergeNews(payload.news);
+        if(payload.sources_errors?.length)
+          newsError='Не все источники ответили при дополнительной проверке: '+payload.sources_errors.join('; ').slice(0,220);
       }catch(workerError){
-        // Keep the site useful before the new Worker version is deployed.
-        // Be explicit that the cached dataset is NOT a real-time scan.
-        const response=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
-        if(!response.ok)throw Error('Cloudflare: '+workerError.message+'; news.json HTTP '+response.status);
-        const saved=await response.json();
-        if(!Array.isArray(saved))throw Error('Некорректный news.json');
-        data.news=recentNews(saved);
-        newsError='Проверка в реальном времени пока недоступна ('+workerError.message+'). Показаны новости последнего автоматического сбора GitHub Actions.';
+        newsError='Автоматическая лента работает. Дополнительная проверка сейчас недоступна: '+workerError.message;
       }
-      newsPage=1;
-    }else{
-      const response=await fetch('./news.json?v='+Date.now(),{cache:'no-store'});
-      if(!response.ok)throw Error('news.json HTTP '+response.status);
-      const items=await response.json();
-      if(!Array.isArray(items))throw Error('Некорректный формат новостей');
-      data.news=recentNews(items);
     }
   }catch(e){
-    newsError='Не удалось обновить новости: '+e.message;
+    newsError='Не удалось загрузить новости: '+e.message;
   }finally{
     newsLoading=false;
+    dawCleanTrash();
     if(view==='inbox'||view==='guest')render();
   }
 }
@@ -1591,6 +1625,13 @@ async function generateAI(id){
 render();
 restoreEditorSession();
 load();
+// Background collection runs on GitHub every 10 minutes; open tabs automatically
+// read the latest snapshot on the same cadence, silently and without reminders.
+setInterval(()=>{dawCleanTrash();load(false);},10*60*1000);
+document.addEventListener('visibilitychange',()=>{
+  if(!document.hidden&&(!lastNewsCheck||Date.now()-lastNewsCheck.getTime()>10*60*1000))
+    load(false);
+});
 </script>
 
 <script>
