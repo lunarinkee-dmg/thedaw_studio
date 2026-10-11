@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss762b31035c5df600",
+    "category": "Киберспорт / Игры",
+    "title": "Nix поставил ₽415 тыс. на победу Spirit на третьей карте матча против PARIVISION",
+    "summary": "СтримерАлександр Nix Левин сделал две ставки общей суммой в₽415 тыс. на то, чтоTeam SpiritпобедитPARIVISIONна третьей карте финала нижней сеткиB...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/dota-2/nix-postavil-415-tys-na-pobedu-spirit-na-tretei-karte-matcha-protiv-parivision",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T15:34:00+00:00"
+  },
+  {
+    "id": "rss4b210f5585eaaa6b",
+    "category": "Киберспорт / Игры",
+    "title": "Dukalis о поражении от Team Spirit: «Просто очень сильно закинули вторую карту»",
+    "summary": "СаппортPARIVISIONАндрей Dukalis Куропаткин прокомментировал поражение в финале нижней сеткиBLAST Slam VIIIпо Dota 2 отTeam Spirit. Он считает, ч...",
+    "source": "Cybersport.ru",
+    "url": "https://www.cybersport.ru/tags/dota-2/dukalis-o-porazhenii-ot-team-spirit-prosto-ochen-silno-zakinuli-vtoruyu-kartu",
+    "date": "11.10.2026",
+    "published_at": "2026-10-11T15:20:00+00:00"
+  },
+  {
     "id": "rss8f2680b4a0f4e3a8",
     "category": "Киберспорт / Игры",
     "title": "Kassad: «Spirit не хватает всего одной замены, чтобы получить свою эру. Это минус zont1x, плюс b1t»",
@@ -78,25 +98,5 @@
     "url": "https://www.cybersport.ru/tags/cs2/aurora-gaming-zanyala-trete-mesto-na-esl-pro-league-season-24-posle-pobedy-nad",
     "date": "11.10.2026",
     "published_at": "2026-10-11T13:28:00+00:00"
-  },
-  {
-    "id": "rss9a8f0099f84ee3e1",
-    "category": "Киберспорт / Игры",
-    "title": "Team Spirit выбила PARIVISION из BLAST Slam VIII",
-    "summary": "PARIVISIONуступилаTeam Spiritв финале нижней сеткиBLAST Slam VIIIпо Dota 2. Встреча закончилась со счетом 1:2.",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/dota-2/team-spirit-vybila-parivision-iz-blast-slam-viii",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T13:00:00+00:00"
-  },
-  {
-    "id": "rss120641f588421ddf",
-    "category": "Киберспорт / Игры",
-    "title": "Team Vitality или MOUZ — кто станет чемпионом ESL Pro League Season 24?",
-    "summary": "11 октября состоится гранд-финалESL Pro League Season 24по CS2. В решающем противостоянии турнира встретятсяTeam VitalityиMOUZ.",
-    "source": "Cybersport.ru",
-    "url": "https://www.cybersport.ru/tags/cs2/team-vitality-ili-mouz-kto-stanet-chempionom-esl-pro-league-season-24",
-    "date": "11.10.2026",
-    "published_at": "2026-10-11T12:52:00+00:00"
   }
 ]
