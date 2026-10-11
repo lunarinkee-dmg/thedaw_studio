@@ -761,7 +761,49 @@ body{position:relative!important;z-index:1;background:transparent!important;anim
 
 .daw-reel-trend-row{display:flex;justify-content:space-between;gap:12px;padding:4px 0}
 .daw-reel-trend-row b{color:#21a657;font-size:12px}
-.daw-reel-delta-waiting{color:#8b9490!important;font-weight:500}.daw-reel-delta-waiting .daw-reel-trend-icon{color:#20bd52}\n</style>
+.daw-reel-delta-waiting{color:#8b9490!important;font-weight:500}.daw-reel-delta-waiting .daw-reel-trend-icon{color:#20bd52}\n
+/* theDAW Studio — three-column editorial constructor */
+body:has(.daw-editor-layout) header{height:185px;min-height:185px}
+body:has(.daw-editor-layout) main{max-width:none;padding:20px 2.6% 52px}
+body:has(.daw-editor-layout) .constructor-tabs{margin:0 0 12px;padding:0;justify-content:center;gap:6px}
+body:has(.daw-editor-layout) .constructor-tab{font-size:11px;padding:6px 10px}
+.daw-editor-layout{display:grid!important;grid-template-columns:minmax(285px,31.7%) minmax(350px,1fr) minmax(250px,25%);gap:24px;align-items:stretch!important}
+.daw-editor-copy{border-radius:36px!important;min-height:590px;height:590px;display:flex!important;flex-direction:column;align-items:stretch;padding:30px 28px 22px!important;background:rgba(255,255,255,.48)!important;box-shadow:0 2px 5px #0002!important}
+.daw-editor-copy>h2{text-align:center;font-weight:400;font-size:25px;letter-spacing:-1px;margin:24px 0 27px}
+.daw-editor-copy label{font-size:16px;color:#282828;text-align:center;font-weight:400;margin:18px 0 5px}
+.daw-editor-copy input{height:43px;border-radius:30px}
+.daw-editor-copy textarea{flex:1;min-height:140px;border-radius:33px;resize:none;padding:17px}
+.daw-editor-copy select{background:rgba(250,198,207,.65);border:1px solid #d85b70;border-radius:30px;color:#bc7983;box-shadow:0 2px 3px #0002;height:33px;font-size:14px;padding:5px 14px}
+.daw-editor-generate{display:flex;align-items:center;gap:14px}
+.daw-editor-generate>.btn{flex:1;border-radius:29px;font-size:16px;padding:10px 12px}
+.daw-editor-cross{border:0;background:transparent;color:#e88397;font-size:32px;line-height:1;text-shadow:0 1px 2px #cb506d;cursor:pointer}
+.daw-editor-transfer{display:flex;gap:15px;align-items:center;margin-top:16px;justify-content:flex-end}
+.daw-editor-transfer .btn{font-size:14px;flex:1}
+.daw-editor-status{font-size:11px;color:#a23a52;min-height:13px;margin:6px 0 0}
+.daw-design-controls{height:590px;min-height:590px;max-height:590px!important;display:block!important;overflow-y:auto;overscroll-behavior:contain;border-radius:34px 0 0 34px!important;padding:25px 32px!important;background:rgba(255,255,255,.36)!important;scrollbar-color:#df778d #f1e8e9;scrollbar-width:thin}
+.daw-editor-title{text-align:center;font-size:25px;letter-spacing:-.8px;font-weight:400;margin:5px 0 29px}
+.daw-editor-section{margin:0 0 9px;border:0}
+.daw-editor-section>summary{list-style:none;cursor:pointer;font-size:25px;letter-spacing:-1px;padding:7px 0 10px 40px;position:relative}
+.daw-editor-section>summary::-webkit-details-marker{display:none}
+.daw-editor-section>summary:before{content:"";position:absolute;left:0;top:15px;width:15px;height:15px;border:1px solid #9a9a9a;box-shadow:inset 0 2px 3px #0002;border-radius:50%;background:#dedede}
+.daw-editor-section[open]>summary:before{background:#f0a6b4;border-color:#dc617a}
+.daw-editor-section-content{display:flex;flex-direction:column;gap:7px;padding:0 8px 16px 40px}
+.daw-editor-section-content label{font-size:14px;font-weight:400;margin:5px 0 0;text-align:left}
+.daw-editor-section-content input:not([type=range]):not([type=checkbox]),.daw-editor-section-content textarea,.daw-editor-section-content select{background:rgba(255,255,255,.34);border:1px solid #ccc;border-radius:22px;box-shadow:inset 0 2px 4px #0002;padding:8px 12px;color:#333}
+.daw-editor-section-content textarea{min-height:70px;resize:vertical}
+.daw-editor-section-content input[type=range]{accent-color:#e66f86;width:100%;height:23px}
+.daw-editor-section-content input[type=file]{max-width:100%;font-size:11px}
+.daw-editor-section-content .btn{font-size:12px;padding:8px 12px}
+.daw-editor-layout .design-stage{position:relative!important;top:auto!important;height:590px;max-height:none!important;min-height:590px;background:#fff!important;border-radius:0!important;padding:0!important;box-shadow:0 2px 4px #0002;align-items:center;overflow:hidden}
+.daw-editor-layout .design-stage canvas{width:auto!important;max-width:100%!important;height:min(88%,560px)!important;max-height:550px!important;object-fit:contain}
+.daw-preview-heading{position:absolute;top:19px;left:0;right:0;text-align:center;color:#454545;font-size:20px;z-index:2;pointer-events:none}
+.daw-editor-footer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:20px 0 0 calc(31.7% + 24px)}
+.daw-editor-footer>.btn{height:44px;border-radius:28px;font-weight:400;font-size:15px;background:rgba(255,255,255,.5);border:1px solid #ddd;box-shadow:inset 0 2px 3px #0001,0 2px 4px #0002;color:#303030}
+.daw-editor-footer>#designResetAll{background:#f28392!important;color:#cb0017!important;border:1px solid #d8001c!important}
+.daw-editor-footer>#designInstagramPublish{background:rgba(255,255,255,.6)!important;color:#292929!important;border:1px solid #ddd!important}
+@media(max-width:1090px){.daw-editor-layout{grid-template-columns:minmax(240px,38%) minmax(330px,1fr)}.daw-editor-layout .design-stage{grid-column:2;grid-row:1;max-height:590px!important}.daw-design-controls{grid-column:1;grid-row:2}.daw-editor-footer{margin-left:0;grid-column:1/-1}.daw-editor-copy{grid-column:1;grid-row:1}}
+@media(max-width:730px){.daw-editor-layout{display:flex!important;flex-direction:column;gap:17px}.daw-editor-copy,.daw-design-controls{height:auto;min-height:0;max-height:600px!important}.daw-editor-layout .design-stage{height:520px;min-height:520px;order:1}.daw-design-controls{order:2}.daw-editor-copy{order:0;min-height:530px}.daw-editor-footer{grid-template-columns:1fr;gap:10px;margin:15px 0}.daw-editor-footer>.btn{height:45px}body:has(.daw-editor-layout) main{padding:15px 15px 50px}}
+</style>
 </head>
 <body>
 
@@ -1778,8 +1820,7 @@ function renderDesign(){
   if(!m)return;
 
   m.innerHTML=`
-    <h1>Дизайн theDĀW</h1>
-    <div class="design-layout">
+    <div class="design-layout daw-editor-layout">
       <div class="card design-form" id="designSettings">
 
         <label>Подставить новость из черновиков</label>
@@ -1900,6 +1941,111 @@ function renderDesign(){
       </div>
     </div>
   `;
+
+
+  // Reorganize the existing live controls; preserve every original control ID
+  // and the rendering, export, scheduling and publishing handlers below.
+  const editorLayout=m.querySelector('.design-layout');
+  const settings=m.querySelector('#designSettings');
+  const preview=m.querySelector('.design-stage');
+  settings.classList.add('daw-design-controls');
+  const copy=document.createElement('section');
+  copy.className='card daw-editor-copy';
+  const options=data.drafts.map(d=>'<option value="'+esc(d.id)+'" '+(d.id===current?'selected':'')+'>'+esc(d.headline||d.sourceTitle||'Черновик')+'</option>').join('');
+  const selected=data.drafts.find(d=>d.id===current)||data.drafts[0];
+  copy.innerHTML='<select id="dawEditorDraft" aria-label="Выбрать новость"><option value="">Выбрать новость</option>'+options+'</select>'+
+    '<h2>[ AI copywriter ]</h2><div class="daw-editor-generate"><button class="btn primary" id="dawEditorGenerate" type="button">сгенерировать текст</button>'+
+    '<button type="button" id="dawEditorClear" class="daw-editor-cross" aria-label="Очистить текст">×</button></div>'+
+    '<label for="dawEditorHeadline">заголовок</label><input id="dawEditorHeadline" value="'+esc(selected?.headline||'')+'" autocomplete="off">'+
+    '<label for="dawEditorCaption">описание</label><textarea id="dawEditorCaption">'+esc(selected?.caption||'')+'</textarea>'+
+    '<div class="daw-editor-transfer"><button class="daw-editor-cross" type="button" id="dawEditorDelete" aria-label="Очистить">×</button>'+
+    '<button class="btn primary" type="button" id="dawEditorTransfer">перенести в шаблон　⟶</button></div>'+
+    '<p class="daw-editor-status" id="dawEditorStatus" aria-live="polite"></p>';
+  editorLayout.insertBefore(copy,settings);
+  copy.querySelector('#dawEditorDraft').onchange=e=>{
+    current=e.target.value||null;
+    const chosen=data.drafts.find(d=>d.id===current);
+    copy.querySelector('#dawEditorHeadline').value=chosen?.headline||'';
+    copy.querySelector('#dawEditorCaption').value=chosen?.caption||'';
+    document.getElementById('designDraft').value=current||'';
+  };
+  copy.querySelector('#dawEditorHeadline').oninput=e=>{
+    if(!current)return;update('headline',e.target.value);
+  };
+  copy.querySelector('#dawEditorCaption').oninput=e=>{
+    if(!current)return;update('caption',e.target.value);
+  };
+  const emptyText=()=>{
+    copy.querySelector('#dawEditorHeadline').value='';
+    copy.querySelector('#dawEditorCaption').value='';
+    if(current){update('headline','');update('caption','');}
+  };
+  copy.querySelector('#dawEditorClear').onclick=emptyText;
+  copy.querySelector('#dawEditorDelete').onclick=emptyText;
+  copy.querySelector('#dawEditorGenerate').onclick=()=>{
+    if(!current){copy.querySelector('#dawEditorStatus').textContent='Сначала выбери новость.';return;}
+    generateAI(current);
+  };
+  copy.querySelector('#dawEditorTransfer').onclick=()=>{
+    if(!current){copy.querySelector('#dawEditorStatus').textContent='Сначала выбери новость.';return;}
+    document.getElementById('designDraft').value=current;
+    document.getElementById('designFill').click();
+  };
+
+  const menu=document.createElement('h2');
+  menu.className='daw-editor-title';
+  menu.textContent='[ редактирование ]';
+  settings.prepend(menu);
+  const groups=[
+    {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
+    {name:'Медиа',ids:['designMediaFile','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
+    {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset','designDuration']},
+    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
+  ];
+  const used=new Set();
+  for(const g of groups){
+    const details=document.createElement('details');
+    details.className='daw-editor-section';
+    details.open=g.name==='Текст';
+    const summary=document.createElement('summary');
+    summary.textContent=g.name;
+    details.appendChild(summary);
+    const content=document.createElement('div');content.className='daw-editor-section-content';
+    for(const id of g.ids){
+      const control=document.getElementById(id);
+      if(!control)continue;
+      const label=control.matches('input,textarea,select')?
+        (control.previousElementSibling?.tagName==='LABEL'?control.previousElementSibling:null):null;
+      if(label&&label.parentNode===settings&&!used.has(label)){content.appendChild(label);used.add(label);}
+      if(control.parentNode===settings){content.appendChild(control);used.add(control);}
+    }
+    details.appendChild(content);settings.appendChild(details);
+  }
+  // Keep controls that are not part of a disclosure (and their listeners) intact.
+  for(const el of [...settings.children]){
+    if(el!==menu&&!el.classList.contains('daw-editor-section')){
+      if(el.id==='designResetAll'||el.id==='designInstagramPublish')continue;
+      // Avoid orphaned labels; all controls remain accessible in the last section.
+      settings.querySelector('.daw-editor-section:last-child .daw-editor-section-content').appendChild(el);
+    }
+  }
+  const footer=document.createElement('div');footer.className='daw-editor-footer';
+  const schedule=document.createElement('button');schedule.className='btn daw-schedule-btn';schedule.type='button';schedule.textContent='запланировать';
+  schedule.onclick=()=>{
+    const mode=document.getElementById('designPublishMode');
+    mode.value='schedule';mode.dispatchEvent(new Event('change'));
+    const section=document.getElementById('designScheduleControls').closest('details');section.open=true;
+    section.scrollIntoView({behavior:'smooth',block:'nearest'});
+  };
+  const publish=document.getElementById('designInstagramPublish');
+  publish.textContent='опубликовать';
+  const reset=document.getElementById('designResetAll');
+  reset.textContent='сбросить';
+  footer.append(schedule,publish,reset);
+  editorLayout.after(footer);
+  const previewHeading=document.createElement('span');
+  previewHeading.className='daw-preview-heading';previewHeading.textContent='[ превью ]';
+  preview.prepend(previewHeading);
 
   document.getElementById('designPublishMode').onchange=e=>{
     const schedule=e.target.value==='schedule';
