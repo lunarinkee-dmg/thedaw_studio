@@ -1362,7 +1362,7 @@ async function loadReelsAnalytics(){
       const caption=document.createElement('p');caption.textContent=reel.caption||'Без подписи';caption.style.cssText='white-space:pre-wrap;max-height:125px;overflow:auto;';el.append(caption);
       const metrics=document.createElement('div');
       metrics.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:10px;margin:15px 0;';
-      for(const [label,value] of [['Просмотры',fmt(reel.views)],['Вовлечённость',typeof reel.engagement_rate==='number'?reel.engagement_rate.toLocaleString('ru-RU')+'%':'—'],['Уникальные зрители (охват)',fmt(reel.reach)],['Подписки с Reels','Недоступно'],['Взаимодействия',fmt(reel.interactions)]]){
+      for(const [label,value] of [['Просмотры',fmt(reel.views)],['Вовлечённость',typeof reel.engagement_rate==='number'?reel.engagement_rate.toLocaleString('ru-RU')+'%':'—'],['Уникальные зрители (охват)',fmt(reel.reach)],['Взаимодействия',fmt(reel.interactions)]]){
         const cell=document.createElement('div');cell.style.cssText='border:1px solid #e6d3d6;border-radius:12px;padding:12px;';
         const name=document.createElement('div');name.className='muted';name.textContent=label;
         const number=document.createElement('strong');number.textContent=value;number.style.cssText='display:block;margin-top:7px;font-size:18px';
