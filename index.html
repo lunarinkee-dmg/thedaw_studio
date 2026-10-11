@@ -869,7 +869,6 @@ function dawCleanTrash(){
   }
   if(changed)save();
 }
-dawCleanTrash();
 const DAW_API='https://thedaw-ai.lunarinkee.workers.dev';
 let editorSession='';
 let editorRole='guest';
@@ -982,6 +981,7 @@ const save=()=>localStorage.setItem(
     rejected:data.rejected
   })
 );
+dawCleanTrash();
 
 function updateSectionSwitch(){
   const main=document.getElementById('sectionSwitchMain');
