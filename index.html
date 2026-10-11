@@ -1153,7 +1153,7 @@ async function load(manual=false){
         const now=Date.now();
         data.news=payload.news.filter(item=>{
           const published=Date.parse(item.published_at||'');
-          return Number.isFinite(published)&&published>=now-30*60*1000&&published<=now+5*60*1000;
+          return Number.isFinite(published)&&published>=now-24*60*60*1000&&published<=now+5*60*1000;
         }).sort((a,b)=>Date.parse(b.published_at)-Date.parse(a.published_at));
         if(!data.news.length){
           newsError='Источники проверены. За последние 30 минут новых публикаций не найдено.';
