@@ -29,5 +29,11 @@
     "category": "Музыка / Рэп",
     "type": "telegram",
     "enabled": true
+  },
+  {
+    "name": "Kazinform",
+    "url": "https://www.inform.kz/lenta/",
+    "category": "Казахстан / Новости",
+    "enabled": true
   }
 ]
