@@ -35,5 +35,11 @@
     "url": "https://www.inform.kz/lenta/",
     "category": "Казахстан / Новости",
     "enabled": true
+  },
+  {
+    "name": "Tengrinews",
+    "url": "https://tengrinews.kz/",
+    "category": "Казахстан / Новости",
+    "enabled": true
   }
 ]
