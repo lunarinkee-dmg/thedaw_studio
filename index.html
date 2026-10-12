@@ -823,6 +823,16 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 .daw-trash-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .daw-trash-actions a{font-size:12px;color:#a13c53}
 @media(max-width:650px){.daw-trash-item{align-items:flex-start;flex-direction:column}}
+
+/* Three independent AI copywriter fields: headline, visual description, post caption */
+.daw-editor-copy{gap:0!important}
+.daw-editor-copy>h2{margin:12px 0 14px}
+.daw-editor-copy label{margin:9px 0 4px}
+.daw-editor-copy textarea{flex:0 0 auto;min-height:0}
+#dawEditorVisualDescription{height:85px}
+#dawEditorCaption{height:110px}
+.daw-editor-copy .daw-editor-transfer{margin-top:auto;padding-top:10px}
+@media(min-width:731px){.daw-editor-copy{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#e3a0ad transparent}}
 </style>
 </head>
 <body>
@@ -1636,6 +1646,7 @@ async function generateAI(id){
       if(status&&attempt===0)status.textContent='Проверка обнаружила близкие фразы. Переписываем ещё раз…';
     }
     d.headline=result.headline;
+    d.visualDescription=result.instagram.replace(/Источник:[\s\S]*/,'').trim().slice(0,600);
     d.caption=result.instagram+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
     d.tiktok=result.tiktok;
     save();render();
@@ -2031,7 +2042,8 @@ function renderDesign(){
     '<h2>[ AI copywriter ]</h2><div class="daw-editor-generate"><button class="btn primary" id="dawEditorGenerate" type="button">сгенерировать текст</button>'+
     '<button type="button" id="dawEditorClear" class="daw-editor-cross" aria-label="Очистить текст">×</button></div>'+
     '<label for="dawEditorHeadline">заголовок</label><input id="dawEditorHeadline" value="'+esc(selected?.headline||'')+'" autocomplete="off">'+
-    '<label for="dawEditorCaption">описание</label><textarea id="dawEditorCaption">'+esc(selected?.caption||'')+'</textarea>'+
+    '<label for="dawEditorVisualDescription">описание</label><textarea id="dawEditorVisualDescription">'+esc(selected?.visualDescription??selected?.sourceSummary??'')+'</textarea>'+ 
+    '<label for="dawEditorCaption">описание для поста</label><textarea id="dawEditorCaption">'+esc(selected?.caption||'')+'</textarea>'+
     '<div class="daw-editor-transfer"><button class="daw-editor-cross" type="button" id="dawEditorDelete" aria-label="Очистить">×</button>'+
     '<button class="btn primary" type="button" id="dawEditorTransfer">перенести в шаблон　⟶</button></div>'+
     '<p class="daw-editor-status" id="dawEditorStatus" aria-live="polite"></p>';
@@ -2041,6 +2053,7 @@ function renderDesign(){
     const chosen=data.drafts.find(d=>d.id===current);
     copy.querySelector('#dawEditorHeadline').value=chosen?.headline||'';
     copy.querySelector('#dawEditorCaption').value=chosen?.caption||'';
+    copy.querySelector('#dawEditorVisualDescription').value=chosen?.visualDescription??chosen?.sourceSummary??'';
     document.getElementById('designDraft').value=current||'';
   };
   copy.querySelector('#dawEditorHeadline').oninput=e=>{
@@ -2048,11 +2061,16 @@ function renderDesign(){
   };
   copy.querySelector('#dawEditorCaption').oninput=e=>{
     if(!current)return;update('caption',e.target.value);
+    const ig=document.getElementById('designInstagramCaption');if(ig)ig.value=e.target.value;
+  };
+  copy.querySelector('#dawEditorVisualDescription').oninput=e=>{
+    if(!current)return;update('visualDescription',e.target.value);
   };
   const emptyText=()=>{
     copy.querySelector('#dawEditorHeadline').value='';
     copy.querySelector('#dawEditorCaption').value='';
-    if(current){update('headline','');update('caption','');}
+    copy.querySelector('#dawEditorVisualDescription').value='';
+    if(current){update('headline','');update('caption','');update('visualDescription','');}
   };
   copy.querySelector('#dawEditorClear').onclick=emptyText;
   copy.querySelector('#dawEditorDelete').onclick=emptyText;
@@ -2314,11 +2332,12 @@ function renderDesign(){
 
     s.title=d.headline||'';
 
-    s.body=(d.caption||'')
-      .replace(d.headline||'','')
+    s.body=(d.visualDescription??d.sourceSummary??d.caption??'')
       .replace(/Источник:[\s\S]*/,'')
       .trim()
       .slice(0,600);
+    const igCaption=document.getElementById('designInstagramCaption');
+    if(igCaption)igCaption.value=d.caption||'';
 
     s.date=designShortDate();
 
