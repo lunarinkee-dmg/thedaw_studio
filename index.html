@@ -833,6 +833,7 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 #dawEditorCaption{height:110px}
 .daw-editor-copy .daw-editor-transfer{margin-top:auto;padding-top:10px}
 @media(min-width:731px){.daw-editor-copy{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#e3a0ad transparent}}
+.daw-tiktok-import{display:flex;flex-direction:column;gap:9px;padding:12px 0 16px}.daw-tiktok-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-actions>.btn{flex:1;min-width:145px;font-size:12px}.daw-tiktok-import .mini{font-size:11px;line-height:1.5;color:#786b70;margin:0}
 </style>
 </head>
 <body>
@@ -1693,7 +1694,8 @@ const DESIGN_DEFAULTS={
   cropX:0,
   cropY:0,
   gradient:true,
-  duration:10
+  duration:10,
+  tiktokUrl:''
 };
 
 let designCfg={...DESIGN_DEFAULTS};
@@ -1932,6 +1934,13 @@ function renderDesign(){
 
         <label>Фоновое медиа (фото или видео)</label>
         <input type="file" accept="image/*,video/*" id="designMediaFile">
+        <div class="daw-tiktok-import">
+          <label for="designTikTokUrl">Ссылка на TikTok</label>
+          <input type="url" id="designTikTokUrl" placeholder="https://www.tiktok.com/@user/video/..." autocomplete="off">
+          <div class="daw-tiktok-actions"><button class="btn" id="designTikTokOpen" type="button">Открыть TikTok ↗</button>
+          <button class="btn" id="designTikTokUpload" type="button">Добавить видео ↑</button></div>
+          <p id="designTikTokHelp" class="muted mini">Скачай видео в TikTok, если автор разрешил сохранение, затем загрузи файл в конструктор.</p>
+        </div>
         <label class="design-toggle-row" for="designGradient"><span>Градиент сверху и снизу</span><input type="checkbox" id="designGradient"></label>
 
         <label>Добавить музыку (MP3 / M4A / WAV)</label>
@@ -2090,7 +2099,7 @@ function renderDesign(){
   settings.prepend(menu);
   const groups=[
     {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
-    {name:'Медиа',ids:['designMediaFile','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
+    {name:'Медиа',ids:['designMediaFile','designTikTokUrl','designTikTokOpen','designTikTokUpload','designTikTokHelp','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
     {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset','designDuration']},
     {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
   ];
@@ -2471,6 +2480,39 @@ function renderDesign(){
       document.getElementById('designNotice').textContent=
         'Не удалось прочитать видео';
     };
+  };
+
+
+  const tiktokInput=document.getElementById('designTikTokUrl');
+  const tiktokHelp=document.getElementById('designTikTokHelp');
+  tiktokInput.value=s.tiktokUrl||'';
+  const isTikTokUrl=value=>{
+    try{
+      const u=new URL(value.trim());
+      const host=u.hostname.toLowerCase();
+      return u.protocol==='https:'&&(
+        (['www.tiktok.com','m.tiktok.com','tiktok.com'].includes(host)&&(/^\/@[^/]+\/video\/\d+/.test(u.pathname)||/^\/t\//.test(u.pathname)))||
+        (['vm.tiktok.com','vt.tiktok.com'].includes(host)&&u.pathname.length>1)
+      );
+    }catch{return false;}
+  };
+  tiktokInput.oninput=()=>{
+    s.tiktokUrl=tiktokInput.value.trim();designStore();
+    tiktokHelp.textContent=isTikTokUrl(s.tiktokUrl)?
+      'Открой ролик, выбери «Поделиться» → «Сохранить видео» (если разрешено автором), затем добавь файл сюда.':
+      'Вставь ссылку на публичный ролик TikTok.';
+  };
+  document.getElementById('designTikTokOpen').onclick=()=>{
+    const value=tiktokInput.value.trim();
+    if(!isTikTokUrl(value)){tiktokHelp.textContent='Вставь ссылку на ролик TikTok.';return;}
+    window.open(value,'_blank','noopener,noreferrer');
+    tiktokHelp.textContent='Сохрани видео через TikTok, если доступно, затем добавь скачанный файл в шаблон.';
+  };
+  document.getElementById('designTikTokUpload').onclick=()=>{
+    const picker=document.getElementById('designMediaFile');
+    picker.accept='video/*';
+    picker.click();
+    picker.addEventListener('change',()=>{picker.accept='image/*,video/*';},{once:true});
   };
 
   document.getElementById('designMediaFile').onchange=e=>{
