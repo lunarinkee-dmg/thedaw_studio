@@ -836,6 +836,7 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 .daw-tiktok-import{display:flex;flex-direction:column;gap:9px;padding:12px 0 16px}.daw-tiktok-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-actions>.btn{flex:1;min-width:145px;font-size:12px}.daw-tiktok-import .mini{font-size:11px;line-height:1.5;color:#786b70;margin:0}
 .daw-tiktok-rights{display:flex!important;align-items:center;gap:8px;font-size:12px!important;line-height:1.4}.daw-tiktok-rights input{width:16px!important;height:16px;flex:none;accent-color:#c94465}.daw-tiktok-actions .btn{font-size:11px}.daw-tiktok-import #designTikTokDownload{background:#ecadc0;color:#752234;border-color:#d4899b}
 .daw-tiktok-publish-fields{display:flex;flex-direction:column;gap:9px;padding:12px 0}.daw-tiktok-publish-actions{display:flex;flex-wrap:wrap;gap:8px}.daw-tiktok-publish-actions>.btn{font-size:12px;flex:1}.daw-tiktok-publish-fields>.mini{font-size:11px;line-height:1.5}
+.daw-tiktok-desktop-help{margin:8px 0;font-size:12px;line-height:1.5}.daw-tiktok-desktop-help summary{cursor:pointer;color:#8b3a50}.daw-tiktok-desktop-help a{color:#ad3154;text-decoration:underline}
 </style>
 </head>
 <body>
@@ -2017,7 +2018,11 @@ function renderDesign(){
             <button class="btn" id="designTikTokCopyCaption" type="button">Скопировать подпись</button>
             <button class="btn" id="designTikTokStudioOpen" type="button">Открыть TikTok Studio ↗</button>
           </div>
-          <p class="mini muted">Видео скачивается как MP4; публикация подтверждается вручную в TikTok Studio. Прямая автопубликация потребует подключения TikTok API.</p>
+          <p class="mini muted">Видео скачивается как MP4; публикация подтверждается вручную в TikTok Studio.</p>
+          <details class="daw-tiktok-desktop-help"><summary>Бета: автозагрузка MP4 через браузер на Windows</summary>
+            <p class="mini muted">Локальный помощник Playwright может выбрать MP4 в TikTok Studio и попробовать вставить подпись. Он не публикует видео. Потребуется Node.js и первый ручной вход в TikTok.</p>
+            <a href="https://github.com/lunarinkee-dmg/thedaw_studio/blob/main/tools/README-tiktok-studio.md" target="_blank" rel="noopener noreferrer">Инструкция по установке и запуску ↗</a>
+          </details>
         </div>
 
         <label>Режим публикации</label>
