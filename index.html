@@ -835,6 +835,7 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 @media(min-width:731px){.daw-editor-copy{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#e3a0ad transparent}}
 .daw-tiktok-import{display:flex;flex-direction:column;gap:9px;padding:12px 0 16px}.daw-tiktok-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-actions>.btn{flex:1;min-width:145px;font-size:12px}.daw-tiktok-import .mini{font-size:11px;line-height:1.5;color:#786b70;margin:0}
 .daw-tiktok-rights{display:flex!important;align-items:center;gap:8px;font-size:12px!important;line-height:1.4}.daw-tiktok-rights input{width:16px!important;height:16px;flex:none;accent-color:#c94465}.daw-tiktok-actions .btn{font-size:11px}.daw-tiktok-import #designTikTokDownload{background:#ecadc0;color:#752234;border-color:#d4899b}
+.daw-tiktok-publish-fields{display:flex;flex-direction:column;gap:9px;padding:12px 0}.daw-tiktok-publish-actions{display:flex;flex-wrap:wrap;gap:8px}.daw-tiktok-publish-actions>.btn{font-size:12px;flex:1}.daw-tiktok-publish-fields>.mini{font-size:11px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -2007,8 +2008,17 @@ function renderDesign(){
         </button>
 
         <button class="btn primary" id="designTikTokPublish" type="button">
-          ↗ Залить в TikTok
+          ↗ Подготовить для TikTok Studio
         </button>
+        <div class="daw-tiktok-publish-fields">
+          <label for="designTikTokCaption">Текст для TikTok</label>
+          <textarea id="designTikTokCaption" rows="3" placeholder="Подпись к публикации TikTok"></textarea>
+          <div class="daw-tiktok-publish-actions">
+            <button class="btn" id="designTikTokCopyCaption" type="button">Скопировать подпись</button>
+            <button class="btn" id="designTikTokStudioOpen" type="button">Открыть TikTok Studio ↗</button>
+          </div>
+          <p class="mini muted">Видео скачивается как MP4; публикация подтверждается вручную в TikTok Studio. Прямая автопубликация потребует подключения TikTok API.</p>
+        </div>
 
         <label>Режим публикации</label>
         <select id="designPublishMode" style="width:100%;padding:10px"><option value="now">Опубликовать сейчас</option><option value="schedule">Запланировать Reels</option></select>
@@ -2096,6 +2106,16 @@ function renderDesign(){
     document.getElementById('designFill').click();
   };
 
+  // Populate TikTok caption from the selected draft without overwriting edits
+  // whenever the user changes a draft in the AI Copywriter.
+  const tiktokCaption=m.querySelector('#designTikTokCaption');
+  if(tiktokCaption)tiktokCaption.value=selected?.tiktok||selected?.caption||'';
+  const prevChoose=copy.querySelector('#dawEditorDraft').onchange;
+  copy.querySelector('#dawEditorDraft').onchange=e=>{
+    prevChoose(e);
+    const draft=data.drafts.find(d=>d.id===current);
+    if(tiktokCaption)tiktokCaption.value=draft?.tiktok||draft?.caption||'';
+  };
   const menu=document.createElement('h2');
   menu.className='daw-editor-title';
   menu.textContent='[ редактирование ]';
@@ -2104,7 +2124,7 @@ function renderDesign(){
     {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
     {name:'Медиа',ids:['designMediaFile','designTikTokUrl','designTikTokRights','designTikTokDownload','designTikTokOpen','designTikTokUpload','designTikTokHelp','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
     {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset','designDuration']},
-    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
+    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designTikTokCaption','designTikTokCopyCaption','designTikTokStudioOpen','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
   ];
   const used=new Set();
   for(const g of groups){
@@ -2225,10 +2245,48 @@ function renderDesign(){
       btn.disabled=false;
     }
   };
-  document.getElementById('designTikTokPublish').onclick=()=>{
+  // TikTok Studio handoff: generate the same MP4, copy its caption,
+  // then complete the upload manually in the official TikTok Studio.
+  // Do not imply the video was published or upload through unofficial APIs.
+  document.getElementById('designTikTokPublish').onclick=async()=>{
     const notice=document.getElementById('designNotice');
-    notice.textContent='Публикация в TikTok пока не подключена. Для прямой загрузки требуется TikTok Content Posting API и авторизация аккаунта. MP4 можно скачать кнопкой выше.';
-    window.open('https://developers.tiktok.com/','_blank','noopener,noreferrer');
+    if(designRecording){notice.textContent='Дождись завершения текущего экспорта.';return;}
+    const caption=(document.getElementById('designTikTokCaption').value||'').trim();
+    const btn=document.getElementById('designTikTokPublish');
+    const exportBtn=document.getElementById('designExportVideo');
+    btn.disabled=true;
+    let copied=false;
+    try{
+      // The copy action happens during the user click before async work.
+      if(caption && navigator.clipboard && window.isSecureContext){
+        await navigator.clipboard.writeText(caption);
+        copied=true;
+      }
+    }catch(e){}
+    // Open immediately after the click path, before the long video export.
+    const studio=window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
+    notice.textContent='Создаём MP4 для TikTok Studio…'+(copied?' Подпись скопирована.':'');
+    try{
+      await exportBtn.onclick(false);
+      const done=document.getElementById('designNotice');
+      if(done)done.textContent='MP4 экспортирован. В TikTok Studio нажми Upload, выбери скачанный файл и '+(copied?'вставь подпись из буфера.':'скопируй подпись из поля «Текст для TikTok».')+' Публикацию нужно подтвердить в TikTok.';
+      if(!studio&&done)done.textContent+=' Если TikTok Studio не открылся, нажми «Открыть TikTok Studio».';
+    }catch(e){
+      notice.textContent='Не удалось подготовить MP4: '+e.message;
+    }finally{btn.disabled=false;}
+  };
+  document.getElementById('designTikTokStudioOpen').onclick=()=>{
+    window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
+  };
+  document.getElementById('designTikTokCopyCaption').onclick=async()=>{
+    const caption=document.getElementById('designTikTokCaption');
+    caption.select();
+    try{
+      await navigator.clipboard.writeText(caption.value);
+      document.getElementById('designNotice').textContent='✓ Подпись для TikTok скопирована.';
+    }catch(e){
+      document.getElementById('designNotice').textContent='Выделила текст. Нажми Ctrl+C или ⌘C для копирования.';
+    }
   };
 
   const durationSlider=document.getElementById('designDuration');
