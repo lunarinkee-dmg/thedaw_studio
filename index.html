@@ -889,6 +889,9 @@ header > .daw-auth > #dawAuthButton{order:2!important}
   header > .daw-auth > #dawThemeToggle{margin-left:3px!important}
   header > .section-switch,body:has(.daw-news-screen) header > .section-switch,body:has(.daw-editor-layout) header > .section-switch{left:50%!important;right:auto!important;transform:translateX(-50%)!important}
 }
+
+/* Remove obsolete top gradient strip on both themes. */
+html body::before{display:none!important;content:none!important;height:0!important}
 </style>
 </head>
 <body>
