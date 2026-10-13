@@ -1706,6 +1706,44 @@ function dawOriginalityOverlap(source, generated){
   return matches;
 }
 
+
+// Exactly five topical hashtags for generated Instagram / TikTok captions.
+// Gemini proposes the tags; the fallback uses article signals instead of random trends.
+function dawPublicationHashtags(result, draft){
+  const source=[draft.sourceTitle,draft.sourceSummary,result.headline,result.instagram,result.tiktok,draft.category].filter(Boolean).join(' ');
+  const matches=source.toLowerCase();
+  const tags=[];
+  const add=tag=>{
+    const normalized='#'+String(tag).replace(/^#+/,'').replace(/[^\p{L}\p{N}_]/gu,'');
+    if(normalized.length<3||normalized.length>42)return;
+    if(!tags.some(t=>t.toLowerCase()===normalized.toLowerCase()))tags.push(normalized);
+  };
+  const stripped=txt=>String(txt||'').replace(/(?:^|\s)#[\p{L}\p{N}_]+/gu,'').trim();
+  // Prefer the specific tags composed by Gemini, not generic promotional tags.
+  for(const tag of (result.instagram+' '+result.tiktok).match(/#[\p{L}\p{N}_]+/gu)||[]){
+    if(!/^#(?:fyp|foryou|viral|рек|рекомендации|trending|тренды)$/i.test(tag))add(tag);
+  }
+  const topicRules=[
+    [/\b(playboi carti|carti)\b/i,['#PlayboiCarti','#ХипХоп']],
+    [/\b(kanye west|ye\b|канье)\b/i,['#KanyeWest','#ХипХоп']],
+    [/\b(метро бумин|metro boomin)\b/i,['#MetroBoomin','#ХипХоп']],
+    [/\b(jack white|джек уайт)\b/i,['#JackWhite','#РокМузыка']],
+    [/\b(hip.hop|хип.хоп|рэп|rap\b|trap\b|трэп)\b/i,['#ХипХоп','#РэпМузыка']],
+    [/\b(альбом|трек|релиз|сингл|музык|песн|концерт|турне|фестивал|артист|исполнител|групп)\w*/i,['#Музыка','#МузыкальныеНовости']],
+    [/\b(кино|фильм|режисс|акт[её]р|сериал|трейлер|премьера|oscars?|оскар)\w*/i,['#Кино','#НовостиКино']],
+    [/\b(искусств|выставк|музе|художник|галере|арт.объект|биеннале)\w*/i,['#Искусство','#СовременноеИскусство']],
+    [/\b(искусственн.{0,12}интеллект|нейросет|chatgpt|openai|gemini|ai\b)\w*/i,['#ИскусственныйИнтеллект','#Технологии']],
+    [/\b(игр[аыуе]|гейминг|киберспорт|esports|steam|playstation)\b/i,['#Гейминг','#ИгровыеНовости']],
+    [/\b(мод[аыуе]|fashion|дизайнер|коллекци|бренд)\w*/i,['#Мода','#Дизайн']],
+    [/\b(казахстан|қазақстан|алматы|астан[аые]|шымкент)\w*/i,['#Казахстан','#КультураКазахстана']],
+    [/\b(фотограф|архитектур|литератур|книг|театр)\w*/i,['#Культура','#КультурныеНовости']]
+  ];
+  for(const [rule,proposals] of topicRules)if(rule.test(matches))for(const t of proposals)add(t);
+  // A small neutral safety net if the source gives too little topical information.
+  for(const generic of ['#Культура','#НовостиКультуры','#theDAW','#КреативнаяИндустрия','#Медиа'])add(generic);
+  return {tags:tags.slice(0,5),cleanInstagram:stripped(result.instagram),cleanTikTok:stripped(result.tiktok)};
+}
+
 async function generateAI(id){
   if(!isEditor()){showEditorLogin();return;}
   const d=data.drafts.find(x=>x.id===id);
@@ -1719,7 +1757,7 @@ async function generateAI(id){
   try{
     let result=null,overlap=[];
     for(let attempt=0;attempt<2;attempt++){
-      const feedback=attempt?'Слишком близко к тексту первоисточника. Напиши заново с иной композицией и формулировками, сохранив только проверяемые факты. Повторившиеся фразы: '+overlap.join(' / '):'';
+      const feedback=(attempt?'Слишком близко к тексту первоисточника. Напиши заново с иной композицией и формулировками, сохранив только проверяемые факты. Повторившиеся фразы: '+overlap.join(' / ')+'. ':'')+'К текстам для публикации в Instagram и TikTok добавь ровно 5 релевантных теме новости хештегов (без #fyp, #viral и случайных тегов).';
       const response=await fetch(DAW_API+'/generate',{
         method:'POST',
         headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
@@ -1735,10 +1773,12 @@ async function generateAI(id){
       if(!overlap.length&&!payload.originality_warning)break;
       if(status&&attempt===0)status.textContent='Проверка обнаружила близкие фразы. Переписываем ещё раз…';
     }
+    const postTags=dawPublicationHashtags(result,d);
+    const hashtagLine=postTags.tags.join(' ');
     d.headline=result.headline;
-    d.visualDescription=result.instagram.replace(/Источник:[\s\S]*/,'').trim().slice(0,600);
-    d.caption=result.instagram+'\\n\\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
-    d.tiktok=result.tiktok;
+    d.visualDescription=postTags.cleanInstagram.replace(/Источник:[\s\S]*/,'').trim().slice(0,600);
+    d.caption=postTags.cleanInstagram+'\n\n'+hashtagLine+'\n\nИсточник: '+(d.sourceName||'')+' — '+(d.sourceUrl||'');
+    d.tiktok=postTags.cleanTikTok+'\n\n'+hashtagLine;
     save();render();
     const warning=overlap.length||result.originality_warning;
     const done=document.getElementById('dawEditorStatus')||document.getElementById('dawStatus');
