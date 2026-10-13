@@ -866,6 +866,29 @@ header .daw-theme-toggle{order:3;margin-left:8px}
   header .daw-auth,body:has(.daw-news-screen) header .daw-auth{right:14px;top:13px}
   header .daw-theme-toggle{margin-left:2px}
 }
+
+/* Header placement fix: center navigation, pin all account and theme controls right. */
+header{position:relative!important}
+header > .section-switch,
+body:has(.daw-news-screen) header > .section-switch,
+body:has(.daw-editor-layout) header > .section-switch{
+  position:absolute!important;left:50%!important;right:auto!important;
+  transform:translateX(-50%)!important;
+}
+header > .daw-auth,
+body:has(.daw-news-screen) header > .daw-auth{
+  position:absolute!important;left:auto!important;right:4.5%!important;top:23px!important;
+  display:flex!important;flex-direction:row!important;align-items:center!important;
+  justify-content:flex-end!important;gap:9px!important;z-index:8!important;
+}
+header > .daw-auth > #dawThemeToggle{order:3!important;margin-left:8px!important;display:grid!important}
+header > .daw-auth > #dawRole{order:1!important}
+header > .daw-auth > #dawAuthButton{order:2!important}
+@media(max-width:760px){
+  header > .daw-auth,body:has(.daw-news-screen) header > .daw-auth{right:14px!important;top:13px!important;gap:5px!important}
+  header > .daw-auth > #dawThemeToggle{margin-left:3px!important}
+  header > .section-switch,body:has(.daw-news-screen) header > .section-switch,body:has(.daw-editor-layout) header > .section-switch{left:50%!important;right:auto!important;transform:translateX(-50%)!important}
+}
 </style>
 </head>
 <body>
