@@ -912,6 +912,11 @@ html[data-theme="dark"]{
     radial-gradient(ellipse 75% 85% at 8% 89%,rgba(66,35,65,.29),transparent 89%),
     linear-gradient(120deg,#141316,#221d25)!important;
 }
+.daw-editor-layout{grid-template-columns:minmax(285px,42%) minmax(350px,1fr)!important}
+.daw-editor-layout>.design-stage{position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important;padding:0!important;margin:0!important}
+.daw-editor-footer{display:flex!important;justify-content:flex-end!important;margin-left:0!important}
+.daw-editor-footer>.btn{min-width:210px}
+@media(max-width:800px){.daw-editor-layout{grid-template-columns:1fr!important}}
 </style>
 </head>
 <body>
@@ -1823,8 +1828,7 @@ const DESIGN_DEFAULTS={
   cropX:0,
   cropY:0,
   gradient:true,
-  duration:10,
-  tiktokUrl:''
+  duration:10
 };
 
 let designCfg={...DESIGN_DEFAULTS};
@@ -2063,15 +2067,6 @@ function renderDesign(){
 
         <label>Фоновое медиа (фото или видео)</label>
         <input type="file" accept="image/*,video/*" id="designMediaFile">
-        <div class="daw-tiktok-import">
-          <label for="designTikTokUrl">Ссылка на TikTok</label>
-          <input type="url" id="designTikTokUrl" placeholder="https://www.tiktok.com/@user/video/..." autocomplete="off">
-          <label class="daw-tiktok-rights"><input type="checkbox" id="designTikTokRights"> У меня есть разрешение использовать это видео</label>
-          <div class="daw-tiktok-actions"><button class="btn primary" id="designTikTokDownload" type="button">↓ Скачать и добавить</button>
-          <button class="btn" id="designTikTokOpen" type="button">Открыть TikTok ↗</button>
-          <button class="btn" id="designTikTokUpload" type="button">Добавить файл ↑</button></div>
-          <p id="designTikTokHelp" class="muted mini">Автоматическая загрузка доступна для публичных роликов, если TikTok предоставляет файл для скачивания. Не используй чужие видео без разрешения.</p>
-        </div>
         <label class="design-toggle-row" for="designGradient"><span>Градиент сверху и снизу</span><input type="checkbox" id="designGradient"></label>
 
         <label>Добавить музыку (MP3 / M4A / WAV)</label>
@@ -2096,10 +2091,6 @@ function renderDesign(){
         <button class="btn" id="designCropReset">
           Сбросить кадрирование
         </button>
-
-        <label for="designDuration">Длительность Reels: <strong id="designDurationValue">10 сек.</strong></label>
-        <input type="range" min="3" max="60" step="1" value="10" id="designDuration">
-        <div class="muted mini">От 3 до 60 секунд. Применяется при экспорте MP4.</div>
 
         <button class="btn" id="designClear">
           Убрать фото
@@ -2134,29 +2125,6 @@ function renderDesign(){
           ↗ Опубликовать Reels через Meta API
         </button>
 
-        <button class="btn primary" id="designTikTokPublish" type="button">
-          ↗ Подготовить для TikTok Studio
-        </button>
-        <div class="daw-tiktok-publish-fields">
-          <label for="designTikTokCaption">Текст для TikTok</label>
-          <textarea id="designTikTokCaption" rows="3" placeholder="Подпись к публикации TikTok"></textarea>
-          <div class="daw-tiktok-publish-actions">
-            <button class="btn" id="designTikTokCopyCaption" type="button">Скопировать подпись</button>
-            <button class="btn" id="designTikTokStudioOpen" type="button">Открыть TikTok Studio ↗</button>
-          </div>
-          <p class="mini muted">Видео скачивается как MP4; публикация подтверждается вручную в TikTok Studio.</p>
-          <details class="daw-tiktok-desktop-help"><summary>Бета: автозагрузка MP4 через браузер на Windows</summary>
-            <p class="mini muted">Локальный помощник Playwright может выбрать MP4 в TikTok Studio и попробовать вставить подпись. Он не публикует видео. Потребуется Node.js и первый ручной вход в TikTok.</p>
-            <a href="https://github.com/lunarinkee-dmg/thedaw_studio/blob/main/tools/README-tiktok-studio.md" target="_blank" rel="noopener noreferrer">Инструкция по установке и запуску ↗</a>
-          </details>
-        </div>
-
-        <label>Режим публикации</label>
-        <select id="designPublishMode" style="width:100%;padding:10px"><option value="now">Опубликовать сейчас</option><option value="schedule">Запланировать Reels</option></select>
-        <div id="designScheduleControls" style="display:none">
-          <label>Дата и время публикации (время устройства)</label><input id="designScheduleAt" type="datetime-local" style="width:100%;padding:10px"/>
-          <button class="btn" id="designScheduleQueue" type="button">📅 Посмотреть очередь</button><div id="designScheduleList"></div>
-        </div>
         <label>Подпись для Instagram Reels</label>
         <textarea id="designInstagramCaption"
           rows="4"
@@ -2237,25 +2205,15 @@ function renderDesign(){
     document.getElementById('designFill').click();
   };
 
-  // Populate TikTok caption from the selected draft without overwriting edits
-  // whenever the user changes a draft in the AI Copywriter.
-  const tiktokCaption=m.querySelector('#designTikTokCaption');
-  if(tiktokCaption)tiktokCaption.value=selected?.tiktok||selected?.caption||'';
-  const prevChoose=copy.querySelector('#dawEditorDraft').onchange;
-  copy.querySelector('#dawEditorDraft').onchange=e=>{
-    prevChoose(e);
-    const draft=data.drafts.find(d=>d.id===current);
-    if(tiktokCaption)tiktokCaption.value=draft?.tiktok||draft?.caption||'';
-  };
   const menu=document.createElement('h2');
   menu.className='daw-editor-title';
   menu.textContent='[ редактирование ]';
   settings.prepend(menu);
   const groups=[
     {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
-    {name:'Медиа',ids:['designMediaFile','designTikTokUrl','designTikTokRights','designTikTokDownload','designTikTokOpen','designTikTokUpload','designTikTokHelp','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
-    {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset','designDuration']},
-    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designTikTokCaption','designTikTokCopyCaption','designTikTokStudioOpen','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
+    {name:'Медиа',ids:['designMediaFile','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
+    {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset']},
+    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designInstagramCaption','designCancelVideo','designNotice']}
   ];
   const used=new Set();
   for(const g of groups){
@@ -2298,49 +2256,11 @@ function renderDesign(){
     }
   }
   const footer=document.createElement('div');footer.className='daw-editor-footer';
-  const schedule=document.createElement('button');schedule.className='btn daw-schedule-btn';schedule.type='button';schedule.textContent='запланировать';
-  schedule.onclick=()=>{
-    const mode=document.getElementById('designPublishMode');
-    mode.value='schedule';mode.dispatchEvent(new Event('change'));
-    const section=document.getElementById('designScheduleControls').closest('details');section.open=true;
-    section.scrollIntoView({behavior:'smooth',block:'nearest'});
-  };
   const publish=document.getElementById('designInstagramPublish');
   publish.textContent='опубликовать';
-  const reset=document.getElementById('designResetAll');
-  reset.textContent='сбросить';
-  footer.append(schedule,publish,reset);
+  footer.append(publish);
   editorLayout.after(footer);
-  const previewHeading=document.createElement('span');
-  previewHeading.className='daw-preview-heading';previewHeading.textContent='[ превью ]';
-  preview.prepend(previewHeading);
-
-  document.getElementById('designPublishMode').onchange=e=>{
-    const schedule=e.target.value==='schedule';
-    document.getElementById('designScheduleControls').style.display=schedule?'block':'none';
-    document.getElementById('designInstagramPublish').textContent=schedule?'📅 Запланировать Reels':'↗ Опубликовать Reels через Meta API';
-  };
-  document.getElementById('designScheduleQueue').onclick=async()=>{
-    const list=document.getElementById('designScheduleList');
-    list.textContent='Загрузка…';
-    try {
-      const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/schedule/list',{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:'{}'});
-      const result=await response.json();
-      if(!response.ok)throw Error(result.error||response.status);
-      list.replaceChildren();
-      for(const item of result.items) {
-        const p=document.createElement('p');
-        p.textContent=new Date(item.scheduled_at).toLocaleString('ru-RU')+' · '+item.status+' · '+item.caption.slice(0,50)+(item.last_error?' · '+item.last_error:'');
-        if(item.status==='queued'){
-          const btn=document.createElement('button');btn.textContent='Отменить';btn.className='btn';
-          btn.onclick=async()=>{const res=await fetch('https://thedaw-ai.lunarinkee.workers.dev/schedule/cancel',{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:JSON.stringify({id:item.id})});const body=await res.json();if(!res.ok)alert(body.error||'Ошибка');else document.getElementById('designScheduleQueue').click();};
-          p.append(' ',btn);
-        }
-        list.appendChild(p);
-      }
-      if(!result.items.length)list.textContent='Очередь пуста';
-    } catch(e){list.textContent='Ошибка: '+e.message;}
-  };
+  // Export requires canvas even if the visual preview is hidden.
   document.getElementById('designInstagramPublish').onclick=async()=>{
     if(designRecording)return;
     const notice=document.getElementById('designNotice');
@@ -2376,64 +2296,6 @@ function renderDesign(){
       btn.disabled=false;
     }
   };
-  // TikTok Studio handoff: generate the same MP4, copy its caption,
-  // then complete the upload manually in the official TikTok Studio.
-  // Do not imply the video was published or upload through unofficial APIs.
-  document.getElementById('designTikTokPublish').onclick=async()=>{
-    const notice=document.getElementById('designNotice');
-    if(designRecording){notice.textContent='Дождись завершения текущего экспорта.';return;}
-    const caption=(document.getElementById('designTikTokCaption').value||'').trim();
-    const btn=document.getElementById('designTikTokPublish');
-    const exportBtn=document.getElementById('designExportVideo');
-    btn.disabled=true;
-    let copied=false;
-    // Open the official upload page synchronously to avoid popup blockers.
-    const studio=window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
-    try{
-      // Copy the caption before the long MP4 render starts.
-      if(caption && navigator.clipboard && window.isSecureContext){
-        await navigator.clipboard.writeText(caption);
-        copied=true;
-      }
-    }catch(e){}
-    notice.textContent='Создаём MP4 для TikTok Studio…'+(copied?' Подпись скопирована.':'');
-    try{
-      const saved=await exportBtn.onclick(false);
-      const done=document.getElementById('designNotice');
-      if(saved!==true){
-        if(done)done.textContent='MP4 не подготовлен. Проверь настройки экспорта и повтори попытку. '+(done.textContent||'');
-        return;
-      }
-      if(done)done.textContent='MP4 экспортирован. В TikTok Studio нажми Upload, выбери скачанный файл и '+(copied?'вставь подпись из буфера.':'скопируй подпись из поля «Текст для TikTok».')+' Публикацию нужно подтвердить в TikTok.';
-      if(!studio&&done)done.textContent+=' Если TikTok Studio не открылся, нажми «Открыть TikTok Studio».';
-    }catch(e){
-      notice.textContent='Не удалось подготовить MP4: '+e.message;
-    }finally{btn.disabled=false;}
-  };
-  document.getElementById('designTikTokStudioOpen').onclick=()=>{
-    window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
-  };
-  document.getElementById('designTikTokCopyCaption').onclick=async()=>{
-    const caption=document.getElementById('designTikTokCaption');
-    caption.select();
-    try{
-      await navigator.clipboard.writeText(caption.value);
-      document.getElementById('designNotice').textContent='✓ Подпись для TikTok скопирована.';
-    }catch(e){
-      document.getElementById('designNotice').textContent='Выделила текст. Нажми Ctrl+C или ⌘C для копирования.';
-    }
-  };
-
-  const durationSlider=document.getElementById('designDuration');
-  const durationValue=document.getElementById('designDurationValue');
-  durationSlider.value=String(Math.min(60,Math.max(3,Number(s.duration)||10)));
-  durationValue.textContent=durationSlider.value+' сек.';
-  durationSlider.oninput=()=>{
-    s.duration=Number(durationSlider.value);
-    durationValue.textContent=durationSlider.value+' сек.';
-    designStore();
-  };
-
   const logoInput=document.getElementById('designLogoFile');
 
   if(logoInput){
@@ -2679,71 +2541,6 @@ function renderDesign(){
   };
 
 
-  const tiktokInput=document.getElementById('designTikTokUrl');
-  const tiktokHelp=document.getElementById('designTikTokHelp');
-  tiktokInput.value=s.tiktokUrl||'';
-  const isTikTokUrl=value=>{
-    try{
-      const u=new URL(value.trim());
-      const host=u.hostname.toLowerCase();
-      return u.protocol==='https:'&&(
-        (['www.tiktok.com','m.tiktok.com','tiktok.com'].includes(host)&&(/^\/@[^/]+\/video\/\d+/.test(u.pathname)||/^\/t\//.test(u.pathname)))||
-        (['vm.tiktok.com','vt.tiktok.com'].includes(host)&&u.pathname.length>1)
-      );
-    }catch{return false;}
-  };
-  tiktokInput.oninput=()=>{
-    s.tiktokUrl=tiktokInput.value.trim();designStore();
-    tiktokHelp.textContent=isTikTokUrl(s.tiktokUrl)?
-      'Открой ролик, выбери «Поделиться» → «Сохранить видео» (если разрешено автором), затем добавь файл сюда.':
-      'Вставь ссылку на публичный ролик TikTok.';
-  };
-
-  document.getElementById('designTikTokDownload').onclick=async()=>{
-    const url=tiktokInput.value.trim();
-    const status=tiktokHelp;
-    const button=document.getElementById('designTikTokDownload');
-    if(!isTikTokUrl(url)){status.textContent='Вставь корректную ссылку TikTok.';return;}
-    if(!document.getElementById('designTikTokRights').checked){
-      status.textContent='Подтверди, что у тебя есть право использовать это видео.';return;
-    }
-    if(!isEditor()){showEditorLogin();return;}
-    button.disabled=true;button.textContent='Загружаем…';
-    status.textContent='Проверяем доступность разрешённого видео через Cloudflare…';
-    try{
-      const response=await fetch(DAW_API+'/tiktok/download',{
-        method:'POST',
-        headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
-        body:JSON.stringify({url,rightsConfirmed:true}),
-        signal:AbortSignal.timeout(45000),cache:'no-store'
-      });
-      if(!response.ok){
-        const payload=await response.json().catch(()=>({}));
-        throw Error(response.status===404?'Серверная функция ещё не установлена в Cloudflare.':payload.error||'HTTP '+response.status);
-      }
-      const blob=await response.blob();
-      if(blob.size>50*1024*1024)throw Error('Видео больше 50 МБ');
-      if(!/video\\/|octet-stream/i.test(blob.type))throw Error('Сервер не вернул видеофайл');
-      const file=new File([blob],'thedaw-tiktok.mp4',{type:'video/mp4'});
-      handleDesignVideo({target:{files:[file]}});
-      s.image='';designImg=null;designStore();
-      status.textContent='✓ Видео загружено в шаблон. Можешь редактировать и экспортировать Reels.';
-    }catch(e){status.textContent='Загрузка не удалась: '+e.message+' Можно добавить скачанный файл вручную.';}
-    finally{button.disabled=false;button.textContent='↓ Скачать и добавить';}
-  };
-  document.getElementById('designTikTokOpen').onclick=()=>{
-    const value=tiktokInput.value.trim();
-    if(!isTikTokUrl(value)){tiktokHelp.textContent='Вставь ссылку на ролик TikTok.';return;}
-    window.open(value,'_blank','noopener,noreferrer');
-    tiktokHelp.textContent='Сохрани видео через TikTok, если доступно, затем добавь скачанный файл в шаблон.';
-  };
-  document.getElementById('designTikTokUpload').onclick=()=>{
-    const picker=document.getElementById('designMediaFile');
-    picker.accept='video/*';
-    picker.click();
-    picker.addEventListener('change',()=>{picker.accept='image/*,video/*';},{once:true});
-  };
-
   document.getElementById('designMediaFile').onchange=e=>{
     const file=e.target.files[0];if(!file)return;
     if(file.type.startsWith('video/')){handleDesignVideo(e);s.image='';designImg=null;designStore();}
@@ -2768,13 +2565,7 @@ function renderDesign(){
       return;
     }
 
-    const duration=Math.min(
-      60,
-      Math.max(
-        3,
-        Number(document.getElementById('designDuration').value)||10
-      )
-    );
+    const duration=10;
 
     const cv=document.getElementById('designCanvas');
 
@@ -2956,14 +2747,6 @@ function renderDesign(){
         };
         notice.textContent='Загружаем Reels в Cloudflare R2…';
         const upload=await call('/instagram/upload',blob,'video/mp4');
-        if(document.getElementById('designPublishMode').value==='schedule'){
-          const dateValue=document.getElementById('designScheduleAt').value;
-          const at=new Date(dateValue);
-          if(!dateValue||!Number.isFinite(at.getTime())||at.getTime()<=Date.now()+60000)throw Error('Укажи дату минимум через минуту');
-          const queued=await call('/schedule/create',{key:upload.key,caption:document.getElementById('designInstagramCaption').value.trim(),scheduled_at:at.toISOString()});
-          notice.textContent='✓ Reels запланирован на '+at.toLocaleString('ru-RU')+' (ID: '+queued.id+')';
-          return;
-        }
         notice.textContent='Instagram обрабатывает видео…';
         const prepared=await call('/instagram/prepare',{
           key:upload.key,
