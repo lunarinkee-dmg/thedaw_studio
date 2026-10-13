@@ -859,13 +859,12 @@ html[data-theme="dark"] .daw-preview-heading{color:#454545}
 html[data-theme="dark"] .daw-theme-toggle{background:#3a303c!important;color:#f7d9e0!important;border-color:#866170!important}
 @media(max-width:760px){.daw-theme-toggle{width:31px;height:31px;font-size:17px}.daw-auth{gap:5px}}
 
-/* Right-aligned section navigation, clear of account/theme controls */
-header .section-switch,body:has(.daw-news-screen) header .section-switch,body:has(.daw-editor-layout) header .section-switch{left:auto;right:4.5%;top:116px;bottom:auto;transform:none}
+/* Keep section controls centered; theme button at the far right of account controls. */
 header .daw-auth,body:has(.daw-news-screen) header .daw-auth{right:4.5%;top:23px}
+header .daw-theme-toggle{order:3;margin-left:8px}
 @media(max-width:760px){
- header .section-switch,body:has(.daw-news-screen) header .section-switch,body:has(.daw-editor-layout) header .section-switch{left:auto;right:14px;top:auto;bottom:12px;transform:none;gap:7px}
- header .section-switch-main{min-width:138px;padding:0 13px}
- header .daw-auth,body:has(.daw-news-screen) header .daw-auth{right:14px;top:13px}
+  header .daw-auth,body:has(.daw-news-screen) header .daw-auth{right:14px;top:13px}
+  header .daw-theme-toggle{margin-left:2px}
 }
 </style>
 </head>
