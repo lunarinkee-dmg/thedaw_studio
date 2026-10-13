@@ -834,6 +834,7 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 .daw-editor-copy .daw-editor-transfer{margin-top:auto;padding-top:10px}
 @media(min-width:731px){.daw-editor-copy{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#e3a0ad transparent}}
 .daw-tiktok-import{display:flex;flex-direction:column;gap:9px;padding:12px 0 16px}.daw-tiktok-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-actions>.btn{flex:1;min-width:145px;font-size:12px}.daw-tiktok-import .mini{font-size:11px;line-height:1.5;color:#786b70;margin:0}
+.daw-tiktok-rights{display:flex!important;align-items:center;gap:8px;font-size:12px!important;line-height:1.4}.daw-tiktok-rights input{width:16px!important;height:16px;flex:none;accent-color:#c94465}.daw-tiktok-actions .btn{font-size:11px}.daw-tiktok-import #designTikTokDownload{background:#ecadc0;color:#752234;border-color:#d4899b}
 </style>
 </head>
 <body>
@@ -1937,9 +1938,11 @@ function renderDesign(){
         <div class="daw-tiktok-import">
           <label for="designTikTokUrl">Ссылка на TikTok</label>
           <input type="url" id="designTikTokUrl" placeholder="https://www.tiktok.com/@user/video/..." autocomplete="off">
-          <div class="daw-tiktok-actions"><button class="btn" id="designTikTokOpen" type="button">Открыть TikTok ↗</button>
-          <button class="btn" id="designTikTokUpload" type="button">Добавить видео ↑</button></div>
-          <p id="designTikTokHelp" class="muted mini">Скачай видео в TikTok, если автор разрешил сохранение, затем загрузи файл в конструктор.</p>
+          <label class="daw-tiktok-rights"><input type="checkbox" id="designTikTokRights"> У меня есть разрешение использовать это видео</label>
+          <div class="daw-tiktok-actions"><button class="btn primary" id="designTikTokDownload" type="button">↓ Скачать и добавить</button>
+          <button class="btn" id="designTikTokOpen" type="button">Открыть TikTok ↗</button>
+          <button class="btn" id="designTikTokUpload" type="button">Добавить файл ↑</button></div>
+          <p id="designTikTokHelp" class="muted mini">Автоматическая загрузка доступна для публичных роликов, если TikTok предоставляет файл для скачивания. Не используй чужие видео без разрешения.</p>
         </div>
         <label class="design-toggle-row" for="designGradient"><span>Градиент сверху и снизу</span><input type="checkbox" id="designGradient"></label>
 
@@ -2099,7 +2102,7 @@ function renderDesign(){
   settings.prepend(menu);
   const groups=[
     {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
-    {name:'Медиа',ids:['designMediaFile','designTikTokUrl','designTikTokOpen','designTikTokUpload','designTikTokHelp','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
+    {name:'Медиа',ids:['designMediaFile','designTikTokUrl','designTikTokRights','designTikTokDownload','designTikTokOpen','designTikTokUpload','designTikTokHelp','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
     {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset','designDuration']},
     {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designTikTokPublish','designPublishMode','designScheduleControls','designInstagramCaption','designCancelVideo','designNotice']}
   ];
@@ -2501,6 +2504,39 @@ function renderDesign(){
     tiktokHelp.textContent=isTikTokUrl(s.tiktokUrl)?
       'Открой ролик, выбери «Поделиться» → «Сохранить видео» (если разрешено автором), затем добавь файл сюда.':
       'Вставь ссылку на публичный ролик TikTok.';
+  };
+
+  document.getElementById('designTikTokDownload').onclick=async()=>{
+    const url=tiktokInput.value.trim();
+    const status=tiktokHelp;
+    const button=document.getElementById('designTikTokDownload');
+    if(!isTikTokUrl(url)){status.textContent='Вставь корректную ссылку TikTok.';return;}
+    if(!document.getElementById('designTikTokRights').checked){
+      status.textContent='Подтверди, что у тебя есть право использовать это видео.';return;
+    }
+    if(!isEditor()){showEditorLogin();return;}
+    button.disabled=true;button.textContent='Загружаем…';
+    status.textContent='Проверяем доступность разрешённого видео через Cloudflare…';
+    try{
+      const response=await fetch(DAW_API+'/tiktok/download',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
+        body:JSON.stringify({url,rightsConfirmed:true}),
+        signal:AbortSignal.timeout(45000),cache:'no-store'
+      });
+      if(!response.ok){
+        const payload=await response.json().catch(()=>({}));
+        throw Error(response.status===404?'Серверная функция ещё не установлена в Cloudflare.':payload.error||'HTTP '+response.status);
+      }
+      const blob=await response.blob();
+      if(blob.size>50*1024*1024)throw Error('Видео больше 50 МБ');
+      if(!/video\\/|octet-stream/i.test(blob.type))throw Error('Сервер не вернул видеофайл');
+      const file=new File([blob],'thedaw-tiktok.mp4',{type:'video/mp4'});
+      handleDesignVideo({target:{files:[file]}});
+      s.image='';designImg=null;designStore();
+      status.textContent='✓ Видео загружено в шаблон. Можешь редактировать и экспортировать Reels.';
+    }catch(e){status.textContent='Загрузка не удалась: '+e.message+' Можно добавить скачанный файл вручную.';}
+    finally{button.disabled=false;button.textContent='↓ Скачать и добавить';}
   };
   document.getElementById('designTikTokOpen').onclick=()=>{
     const value=tiktokInput.value.trim();
