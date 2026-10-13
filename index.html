@@ -2256,19 +2256,23 @@ function renderDesign(){
     const exportBtn=document.getElementById('designExportVideo');
     btn.disabled=true;
     let copied=false;
+    // Open the official upload page synchronously to avoid popup blockers.
+    const studio=window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
     try{
-      // The copy action happens during the user click before async work.
+      // Copy the caption before the long MP4 render starts.
       if(caption && navigator.clipboard && window.isSecureContext){
         await navigator.clipboard.writeText(caption);
         copied=true;
       }
     }catch(e){}
-    // Open immediately after the click path, before the long video export.
-    const studio=window.open('https://www.tiktok.com/tiktokstudio','_blank','noopener,noreferrer');
     notice.textContent='Создаём MP4 для TikTok Studio…'+(copied?' Подпись скопирована.':'');
     try{
-      await exportBtn.onclick(false);
+      const saved=await exportBtn.onclick(false);
       const done=document.getElementById('designNotice');
+      if(saved!==true){
+        if(done)done.textContent='MP4 не подготовлен. Проверь настройки экспорта и повтори попытку. '+(done.textContent||'');
+        return;
+      }
       if(done)done.textContent='MP4 экспортирован. В TikTok Studio нажми Upload, выбери скачанный файл и '+(copied?'вставь подпись из буфера.':'скопируй подпись из поля «Текст для TikTok».')+' Публикацию нужно подтвердить в TikTok.';
       if(!studio&&done)done.textContent+=' Если TikTok Studio не открылся, нажми «Открыть TikTok Studio».';
     }catch(e){
@@ -2863,6 +2867,7 @@ function renderDesign(){
         setTimeout(()=>URL.revokeObjectURL(url),60000);
         notice.textContent='Видео готово! MP4 сохранён со звуком, если он был добавлен.';
       }
+      return true;
     }catch(err){
       notice.textContent=cancelled
         ?'Экспорт отменён.'
