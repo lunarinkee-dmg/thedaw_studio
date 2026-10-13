@@ -837,6 +837,27 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 .daw-tiktok-rights{display:flex!important;align-items:center;gap:8px;font-size:12px!important;line-height:1.4}.daw-tiktok-rights input{width:16px!important;height:16px;flex:none;accent-color:#c94465}.daw-tiktok-actions .btn{font-size:11px}.daw-tiktok-import #designTikTokDownload{background:#ecadc0;color:#752234;border-color:#d4899b}
 .daw-tiktok-publish-fields{display:flex;flex-direction:column;gap:9px;padding:12px 0}.daw-tiktok-publish-actions{display:flex;flex-wrap:wrap;gap:8px}.daw-tiktok-publish-actions>.btn{font-size:12px;flex:1}.daw-tiktok-publish-fields>.mini{font-size:11px;line-height:1.5}
 .daw-tiktok-desktop-help{margin:8px 0;font-size:12px;line-height:1.5}.daw-tiktok-desktop-help summary{cursor:pointer;color:#8b3a50}.daw-tiktok-desktop-help a{color:#ad3154;text-decoration:underline}
+
+/* User-selectable Liquid Glass dark appearance (interface only; canvas untouched) */
+.daw-theme-toggle{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:50%;border:1px solid rgba(140,105,115,.34);background:rgba(255,255,255,.58);color:#9d1631;font-size:19px;box-shadow:0 2px 5px #0002;cursor:pointer}
+.daw-theme-toggle:hover{border-color:#bb0018}
+html[data-theme="dark"]{color-scheme:dark;background:#141316!important;color:#f1edf0}
+html[data-theme="dark"]::before{background:radial-gradient(ellipse 42% 54% at 84% 33%,rgba(136,12,40,.40),transparent 78%),radial-gradient(ellipse 42% 52% at 14% 82%,rgba(94,35,65,.30),transparent 80%),linear-gradient(125deg,#141316,#221d25)}
+html[data-theme="dark"] body,html[data-theme="dark"] header,html[data-theme="dark"] .logo,html[data-theme="dark"] .card,html[data-theme="dark"] .banner,html[data-theme="dark"] .constructor-tabs{color:#f1edf0}
+html[data-theme="dark"] .card,html[data-theme="dark"] .daw-editor-copy,html[data-theme="dark"] .daw-design-controls,html[data-theme="dark"] .daw-guest-panel,html[data-theme="dark"] .daw-login-panel,html[data-theme="dark"] .daw-trash-panel{background:rgba(37,34,42,.82)!important;border-color:rgba(210,190,204,.19)!important;box-shadow:0 6px 28px #0004,inset 0 1px #ffffff0d!important}
+html[data-theme="dark"] .news-card,html[data-theme="dark"] .daw-news-card,html[data-theme="dark"] .daw-news-stack::before,html[data-theme="dark"] .daw-news-stack::after,html[data-theme="dark"] .source-row,html[data-theme="dark"] .daw-news-queue strong{background:rgba(42,37,46,.94)!important;border-color:#54434d!important;box-shadow:0 4px 12px #0003}
+html[data-theme="dark"] .daw-news-title,html[data-theme="dark"] .daw-news-description,html[data-theme="dark"] .daw-news-queue,html[data-theme="dark"] .daw-editor-copy label,html[data-theme="dark"] .daw-editor-title,html[data-theme="dark"] .daw-editor-copy>h2,html[data-theme="dark"] .daw-login-panel h2,html[data-theme="dark"] .daw-login-panel label,html[data-theme="dark"] .daw-guest,html[data-theme="dark"] .daw-guest-nav button,html[data-theme="dark"] .daw-guest-about,html[data-theme="dark"] .daw-guest-step-info span,html[data-theme="dark"] .daw-reel-intro h3{color:#f1edf0!important}
+html[data-theme="dark"] .muted,html[data-theme="dark"] .meta,html[data-theme="dark"] .daw-news-source,html[data-theme="dark"] .daw-trash-info,html[data-theme="dark"] .daw-tiktok-import .mini{color:#bdb1bb}
+html[data-theme="dark"] input:not([type=range]):not([type=checkbox]),html[data-theme="dark"] textarea,html[data-theme="dark"] select,html[data-theme="dark"] .daw-editor-section-content input:not([type=range]):not([type=checkbox]),html[data-theme="dark"] .daw-editor-section-content textarea,html[data-theme="dark"] .daw-editor-section-content select{background:rgba(35,32,40,.88)!important;color:#f4eef2!important;border-color:#635560!important}
+html[data-theme="dark"] .btn:not(.primary),html[data-theme="dark"] .constructor-tab:not(.active),html[data-theme="dark"] .section-switch button,html[data-theme="dark"] .daw-role,html[data-theme="dark"] .daw-guest-nav button,html[data-theme="dark"] .daw-home-actions button,html[data-theme="dark"] .daw-editor-footer>.btn:not(#designResetAll){background:rgba(52,46,57,.87)!important;color:#f5ecf2!important;border-color:#67525f!important;box-shadow:0 2px 8px #0004!important}
+html[data-theme="dark"] .daw-reel-analytics{background:#27232b!important;border-color:#55454f!important}
+html[data-theme="dark"] .daw-reel-kpi strong,html[data-theme="dark"] .daw-reel-kpi-label{color:#f1edf0}
+html[data-theme="dark"] .daw-reel-trend-popover{background:#302831;color:#f1edf0;border-color:#715564}
+html[data-theme="dark"] .daw-preview-right{background:#29252d;color:#f1edf0}
+html[data-theme="dark"] .daw-editor-layout .design-stage{background:#fff!important;color:#333!important}
+html[data-theme="dark"] .daw-preview-heading{color:#454545}
+html[data-theme="dark"] .daw-theme-toggle{background:#3a303c!important;color:#f7d9e0!important;border-color:#866170!important}
+@media(max-width:760px){.daw-theme-toggle{width:31px;height:31px;font-size:17px}.daw-auth{gap:5px}}
 </style>
 </head>
 <body>
@@ -848,7 +869,7 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
     <button class="section-switch-main" id="sectionSwitchMain" type="button" aria-label="Переключить раздел">Новости</button>
     <button class="section-switch-icon" id="sectionSwitchIcon" type="button" aria-label="Переключить раздел" title="Паблишер"><img src="./assets/publisher-icon.svg" alt=""></button>
   </div>
-  <div class="daw-auth"><span class="daw-role" id="dawRole">Гость</span><button class="btn" id="dawAuthButton" type="button">Войти как редактор</button></div>
+  <div class="daw-auth"><button id="dawThemeToggle" class="daw-theme-toggle" type="button" aria-label="Переключить тему" title="Переключить тему">☾</button><span class="daw-role" id="dawRole">Гость</span><button class="btn" id="dawAuthButton" type="button">Войти как редактор</button></div>
 </header>
 
 <div class="app">
@@ -857,6 +878,17 @@ body:has(.daw-editor-layout) .section-switch-icon{height:44px;width:44px}
 <div id="dawLoginMount"></div>
 
 <script>
+
+/* Theme selection: saved preference wins, otherwise follow operating system. */
+(function(){
+  const key='thedaw_theme';
+  const media=window.matchMedia('(prefers-color-scheme: dark)');
+  const stored=()=>{try{return localStorage.getItem(key)}catch(e){return null}};
+  const apply=(mode)=>{const dark=(mode==='dark'||(!mode&&media.matches));document.documentElement.dataset.theme=dark?'dark':'light';const button=document.getElementById('dawThemeToggle');if(button){button.textContent=dark?'☀':'☾';button.title=dark?'Включить светлую тему':'Включить тёмную тему';button.setAttribute('aria-label',button.title);button.setAttribute('aria-pressed',String(dark))}const meta=document.querySelector('meta[name="theme-color"]');if(meta)meta.content=dark?'#141316':'#e8e8e8'};
+  apply(stored());
+  document.getElementById('dawThemeToggle')?.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';try{localStorage.setItem(key,next)}catch(e){}apply(next)});
+  media.addEventListener?.('change',()=>{if(!stored())apply(null)});
+})();
 const K='thedaw_studio_v02';
 let saved={};
 try {
