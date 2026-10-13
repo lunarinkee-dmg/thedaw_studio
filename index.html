@@ -892,6 +892,26 @@ header > .daw-auth > #dawAuthButton{order:2!important}
 
 /* Remove obsolete top gradient strip on both themes. */
 html body::before{display:none!important;content:none!important;height:0!important}
+
+/* Seamless page background: avoid Safari clipping the animated HTML pseudo-layer. */
+html,html[data-theme="light"]{
+  background-color:#f4f0f1!important;
+  background-image:
+    radial-gradient(ellipse 68% 76% at 91% 26%,rgba(234,88,118,.43),transparent 86%),
+    radial-gradient(ellipse 76% 88% at 9% 91%,rgba(239,150,173,.30),transparent 88%),
+    linear-gradient(120deg,#f9f8f8,#f3e7eb)!important;
+  background-attachment:fixed!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+}
+html::before{content:none!important;display:none!important;animation:none!important}
+html[data-theme="dark"]{
+  background-color:#141316!important;
+  background-image:
+    radial-gradient(ellipse 74% 83% at 91% 26%,rgba(116,21,46,.38),transparent 87%),
+    radial-gradient(ellipse 75% 85% at 8% 89%,rgba(66,35,65,.29),transparent 89%),
+    linear-gradient(120deg,#141316,#221d25)!important;
+}
 </style>
 </head>
 <body>
