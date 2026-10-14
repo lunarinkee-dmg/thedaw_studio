@@ -917,6 +917,7 @@ html[data-theme="dark"]{
 .daw-editor-footer{display:flex!important;justify-content:flex-end!important;margin-left:0!important}
 .daw-editor-footer>.btn{min-width:210px}
 @media(max-width:800px){.daw-editor-layout{grid-template-columns:1fr!important}}
+.daw-tiktok-api-box{display:flex;flex-direction:column;gap:9px;padding:14px 0;border-top:1px solid #e6c4cc}.daw-tiktok-api-box h3{font-size:16px;font-weight:550;margin:0}.daw-tiktok-api-box label{font-size:13px;margin:2px 0}.daw-tiktok-api-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-api-actions .btn{flex:1;min-width:140px;font-size:12px}.daw-tiktok-api-box .mini{font-size:11px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -2130,6 +2131,22 @@ function renderDesign(){
           rows="4"
           placeholder="Текст публикации"></textarea>
 
+        <div class="daw-tiktok-api-box">
+          <h3>TikTok API</h3>
+          <p class="mini muted" id="designTikTokStatus">Подключение не проверено.</p>
+          <div class="daw-tiktok-api-actions">
+            <button type="button" class="btn" id="designTikTokConnect">Подключить TikTok</button>
+            <button type="button" class="btn" id="designTikTokCheck">Проверить подключение</button>
+          </div>
+          <label for="designTikTokCaption">Описание TikTok</label>
+          <textarea id="designTikTokCaption" rows="4" placeholder="Текст публикации и 5 хештегов"></textarea>
+          <div class="daw-tiktok-api-actions">
+            <button type="button" class="btn" id="designTikTokCopy">Скопировать текст</button>
+            <button type="button" class="btn primary" id="designTikTokSend">Отправить MP4 в TikTok</button>
+          </div>
+          <p class="mini muted">После отправки открой уведомление в TikTok и заверши публикацию. Прямая публикация появится после одобрения video.publish.</p>
+        </div>
+
         <button class="btn" id="designCancelVideo"
           style="display:none">
           ✕ Отменить экспорт
@@ -2205,6 +2222,14 @@ function renderDesign(){
     document.getElementById('designFill').click();
   };
 
+  const tikCap=document.getElementById('designTikTokCaption');
+  tikCap.value=selected?.tiktok||selected?.caption||'';
+  const prevTikChoose=copy.querySelector('#dawEditorDraft').onchange;
+  copy.querySelector('#dawEditorDraft').onchange=e=>{
+    prevTikChoose(e);
+    const draft=data.drafts.find(d=>d.id===current);
+    tikCap.value=draft?.tiktok||draft?.caption||'';
+  };
   const menu=document.createElement('h2');
   menu.className='daw-editor-title';
   menu.textContent='[ редактирование ]';
@@ -2213,7 +2238,7 @@ function renderDesign(){
     {name:'Текст',ids:['designTitle','designSize','designBody','designBodySize','designDate']},
     {name:'Медиа',ids:['designMediaFile','designGradient','designMusicFile','designRemoveMusic','designOriginalVolume','designMusicVolume','designLogoFile','designClear']},
     {name:'Кадрирование',ids:['designCropZoom','designCropX','designCropY','designCropReset','designReset']},
-    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designInstagramCaption','designCancelVideo','designNotice']}
+    {name:'Публикация и экспорт',ids:['designDraft','designFill','designExportVideo','designInstagramCaption','designTikTokStatus','designTikTokConnect','designTikTokCheck','designTikTokCaption','designTikTokCopy','designTikTokSend','designCancelVideo','designNotice']}
   ];
   const used=new Set();
   for(const g of groups){
@@ -2261,6 +2286,57 @@ function renderDesign(){
   footer.append(publish);
   editorLayout.after(footer);
   // Export requires canvas even if the visual preview is hidden.
+
+  const tiktokStatus=document.getElementById('designTikTokStatus');
+  const tiktokCall=async(path,body={})=>{
+    if(!isEditor()){showEditorLogin();throw Error('Сначала войди как редактор.');}
+    const res=await fetch(DAW_API+path,{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:JSON.stringify(body),cache:'no-store'});
+    const result=await res.json().catch(()=>({}));
+    if(!res.ok||result.error)throw Error(result.error||'HTTP '+res.status);
+    return result;
+  };
+  const checkTikTok=async()=>{
+    try{
+      const status=await tiktokCall('/tiktok/status');
+      tiktokStatus.textContent=status.connected?
+        '✓ TikTok подключён. Разрешения: '+status.scope:
+        'TikTok ещё не подключён. Нажми «Подключить TikTok».';
+    }catch(err){tiktokStatus.textContent='TikTok API: '+err.message;}
+  };
+  document.getElementById('designTikTokCheck').onclick=checkTikTok;
+  document.getElementById('designTikTokConnect').onclick=async()=>{
+    // Start OAuth from the authenticated editor session; open an empty tab synchronously.
+    const popup=window.open('about:blank','_blank');
+    try{
+      const result=await tiktokCall('/tiktok/connect/start');
+      if(popup)popup.location.href=result.url;
+      else tiktokStatus.textContent='Браузер заблокировал окно авторизации. Разреши всплывающие окна и попробуй ещё раз.';
+      if(popup)tiktokStatus.textContent='Авторизуй TikTok в новой вкладке, затем нажми «Проверить подключение».';
+    }catch(err){
+      if(popup)popup.close();
+      tiktokStatus.textContent='Не удалось начать подключение: '+err.message;
+    }
+  };
+  document.getElementById('designTikTokCopy').onclick=async()=>{
+    try{await navigator.clipboard.writeText(tikCap.value);tiktokStatus.textContent='✓ Описание TikTok скопировано.';}
+    catch{tikCap.select();tiktokStatus.textContent='Текст выделен — скопируй его сочетанием Ctrl+C.';}
+  };
+  document.getElementById('designTikTokSend').onclick=async()=>{
+    if(designRecording){tiktokStatus.textContent='Подожди завершения экспорта.';return;}
+    if(!isEditor()){showEditorLogin();return;}
+    const button=document.getElementById('designTikTokSend');
+    button.disabled=true;
+    try{
+      const status=await tiktokCall('/tiktok/status');
+      if(!status.connected)throw Error('Сначала подключи TikTok.');
+      tiktokStatus.textContent='Готовим MP4 и передаём его в TikTok…';
+      const result=await document.getElementById('designExportVideo').onclick('tiktok');
+      if(result!==true)throw Error('Экспорт MP4 не завершился. Проверь сообщение экспорта.');
+      tiktokStatus.textContent='✓ Видео отправлено в TikTok. Открой уведомления приложения и заверши публикацию. Описание скопируй отдельной кнопкой.';
+    }catch(err){tiktokStatus.textContent='Ошибка TikTok: '+err.message;}
+    finally{button.disabled=false;}
+  };
+
   document.getElementById('designInstagramPublish').onclick=async()=>{
     if(designRecording)return;
     const notice=document.getElementById('designNotice');
@@ -2552,6 +2628,7 @@ function renderDesign(){
     const btn=document.getElementById('designExportVideo');
     const cancelBtn=document.getElementById('designCancelVideo');
     const publishBtn=document.getElementById('designInstagramPublish');
+    const sendToTikTok=publishToInstagram==='tiktok';
     publishToInstagram=publishToInstagram===true;
 
     if(designRecording)return;
@@ -2728,7 +2805,17 @@ function renderDesign(){
         {type:mime}
       );
 
-      if(publishToInstagram){
+      if(sendToTikTok){
+        if(blob.size>50*1024*1024)throw Error('MP4 больше 50 МБ — TikTok API принимает файлы до 50 МБ в этой версии.');
+        const response=await fetch(DAW_API+'/tiktok/upload',{
+          method:'POST',
+          headers:{'Content-Type':'video/mp4','X-Editor-Session':editorSession},
+          body:blob,cache:'no-store'
+        });
+        const result=await response.json().catch(()=>({}));
+        if(!response.ok||result.error)throw Error(result.error||'TikTok HTTP '+response.status);
+        notice.textContent='✓ Видео отправлено в TikTok. Закончи публикацию через уведомление в приложении. ID: '+result.publish_id;
+      }else if(publishToInstagram){
         if(blob.size>50*1024*1024)throw Error('Видео больше 50 МБ. Уменьши длительность Reels.');
         const endpoint='https://thedaw-ai.lunarinkee.workers.dev';
         const headers={'X-Editor-Session':editorSession};
