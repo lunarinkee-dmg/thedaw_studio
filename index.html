@@ -2303,7 +2303,7 @@ function renderDesign(){
     scheduleControls.hidden=!scheduleEnabled.checked;
     publish.textContent=scheduleEnabled.checked?'запланировать Reels':'опубликовать';
   };
-  scheduleDate.min=new Date(Date.now()+120000).toISOString().slice(0,16);
+  // Validate local time on submit; avoid assigning a UTC string to datetime-local.
   document.getElementById('designScheduleQueue').onclick=async()=>{
     const list=document.getElementById('designScheduleList');
     list.textContent='Загружаем очередь…';
