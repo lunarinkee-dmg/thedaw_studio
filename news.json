@@ -50,16 +50,6 @@
     "published_at": "2026-10-20T16:37:07+00:00"
   },
   {
-    "id": "rss7c9f53dd24891a2e",
-    "category": "Казахстан / ЦА",
-    "title": "Almaty Open: Скaтов и Бублик с Нурланулы проиграли свои матчи",
-    "summary": "В Алматы продолжается турнир серии ATP 250 Almaty Open. Сегодня на корте выступили казахстанские теннисисты Тимофей Скатов, Александр Бублик и Зангар Нурланулы. Сообщение Almaty Open: Скaтов и Бублик с Нурланулы проиграли свои матчи появились сначала на 98mag .",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/gorod/almaty-open-skatov-i-bublik-s-nurlanuly-proigrali-svoi-matchi/",
-    "date": "20.10.2026",
-    "published_at": "2026-10-20T15:29:29+00:00"
-  },
-  {
     "id": "tgd92836f73161f9c640",
     "category": "Музыка / Рэп",
     "title": "🫂 Kid Cudi любит Travis Scott",
@@ -78,6 +68,16 @@
     "url": "https://the-steppe.com/kultura/v-almati-nagradeelee-pobyedeetyelyeyi-fyesteevalya-the-planet-of-art",
     "date": "20.10.2026",
     "published_at": "2026-10-20T15:00:00+00:00"
+  },
+  {
+    "id": "rss7c9f53dd24891a2e",
+    "category": "Казахстан / ЦА",
+    "title": "Almaty Open: Скaтов и Бублик с Нурланулы проиграли свои матчи",
+    "summary": "В Алматы продолжается турнир серии ATP 250 Almaty Open. Сегодня на корте выступили казахстанские теннисисты Тимофей Скатов, Александр Бублик и Зангар Нурланулы. Сообщение Almaty Open: Скaтов и Бублик с Нурланулы проиграли свои матчи появились сначала на 98mag .",
+    "source": "98mag",
+    "url": "https://www.98mag.kz/gorod/almaty-open-skatov-i-bublik-s-nurlanuly-proigrali-svoi-matchi/",
+    "date": "20.10.2026",
+    "published_at": "2026-10-20T14:40:00+00:00"
   },
   {
     "id": "tg881fe800976087aea1",
@@ -1278,15 +1278,5 @@
     "url": "https://t.me/quicknrapp/30698",
     "date": "14.10.2026",
     "published_at": "2026-10-14T07:03:49+00:00"
-  },
-  {
-    "id": "rss29d7e9f445b27504",
-    "category": "Казахстан / ЦА",
-    "title": "«С рождением дочери мой мир перевернулся»: Ержан Алдабергенов — об отцовстве, казахском языке и «Замандасе»",
-    "summary": "Ержан Алдабергенов — казахстанский медиаменеджер, ведущий и автор проектов «Замандас», «Уайымдама» и «По папиной линии». Редакция STEPPE поговорила с Ержаном о том, как рождение дочери повлияло на его планы, почему заговорить на казахском оказалось проще в горах и зачем хранить истории о современном Казахстане. Как вы пришли в подкасты и как появил",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/lyudi/s-rozhdeniem-docheri-moj-mir-perevernulsja-erzhan-aldabergenov-ob-otcovstve-kazahskom-jazyke-i-zamandase",
-    "date": "14.10.2026",
-    "published_at": "2026-10-14T05:00:00+00:00"
   }
 ]
