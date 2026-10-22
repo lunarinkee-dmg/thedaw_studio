@@ -6,12 +6,17 @@ on:
     - cron: '*/10 * * * *'
   workflow_dispatch:
 
+concurrency:
+  group: news-update
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Download repository
@@ -23,7 +28,7 @@ jobs:
           python-version: '3.12'
 
       - name: Verify Telegram parser
-        run: python -m unittest discover -s scripts -p 'test_telegram.py' -v
+        run: python -m unittest discover -s scripts -v
 
       - name: Collect and translate news
         run: python scripts/aggregate.py

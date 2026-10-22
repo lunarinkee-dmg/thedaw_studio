@@ -32,6 +32,7 @@ let uploaded = false;
 const limit = Date.now()+180000;
 while(Date.now()<limit && !uploaded){
   for(const p of context.pages()){
+    if(!/^https:\/\/(?:[a-z0-9-]+\.)*tiktok\.com\//i.test(p.url()))continue;
     const input=p.locator('input[type="file"][accept*="video"], input[type="file"][accept*=".mp4"], input[type="file"]').first();
     if(await input.count()){
       try { await input.setInputFiles(videoPath,{timeout:5000}); uploaded=true; break; }
@@ -46,6 +47,7 @@ if(uploaded){
     // Fill only a recognizable editable caption field; never click a publish control.
     let filled=false;
     for(const p of context.pages()){
+      if(!/^https:\/\/(?:[a-z0-9-]+\.)*tiktok\.com\//i.test(p.url()))continue;
       const editors=[
         p.locator('[contenteditable="true"][data-placeholder*="caption" i]'),
         p.locator('[contenteditable="true"][aria-label*="caption" i]'),

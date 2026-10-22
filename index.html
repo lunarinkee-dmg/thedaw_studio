@@ -958,10 +958,10 @@ try {
 
 let data={
   news:[],
-  drafts:saved.drafts||[],
-  media:saved.media||[],
-  approved:saved.approved||{},
-  rejected:saved.rejected||{}
+  drafts:Array.isArray(saved.drafts)?saved.drafts.filter(d=>d&&typeof d==='object'&&typeof d.id==='string'):[],
+  media:Array.isArray(saved.media)?saved.media.filter(u=>typeof u==='string'):[],
+  approved:saved.approved&&typeof saved.approved==='object'&&!Array.isArray(saved.approved)?saved.approved:{},
+  rejected:saved.rejected&&typeof saved.rejected==='object'&&!Array.isArray(saved.rejected)?saved.rejected:{}
 };
 
 // Rejected stories are held only until local midnight. Older legacy flags expire.
@@ -975,6 +975,17 @@ function dawCleanTrash(){
     }
   }
   if(changed)save();
+}
+// Only HTTP(S) links may come from feeds, backups or remote API responses.
+function dawSafeUrl(value){
+  try{const url=new URL(value);return ['https:','http:'].includes(url.protocol)?url.href:'#';}
+  catch{return '#';}
+}
+async function dawFetch(url,options={}){
+  const response=await fetch(url,{...options,signal:options.signal||AbortSignal.timeout(120000)});
+  if(response.status===401&&editorSession&&options.headers?.['X-Editor-Session']===editorSession)
+    editorLogout('Сессия редактора истекла. Войди ещё раз.');
+  return response;
 }
 const DAW_API='https://thedaw-ai.lunarinkee.workers.dev';
 let editorSession='';
@@ -996,13 +1007,12 @@ function editorLogout(message){
 }
 async function editorRequest(path,body={}){
   if(!editorSession)throw Error('Нужен вход редактора');
-  const response=await fetch(DAW_API+path,{
+  const response=await dawFetch(DAW_API+path,{
     method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
     body:JSON.stringify(body),cache:'no-store'
   });
   const value=await response.json().catch(()=>({}));
   if(!response.ok||!value.ok){
-    if(response.status===401)editorLogout('Сессия редактора истекла. Войди ещё раз.');
     throw Error(value.error||'Не удалось проверить доступ');
   }
   return value;
@@ -1029,7 +1039,7 @@ function showEditorLogin(){
     const password=document.getElementById('dawLoginPassword').value;
     submit.disabled=true;error.textContent='Проверяем доступ…';
     try{
-      const res=await fetch(DAW_API+'/auth/login',{
+      const res=await dawFetch(DAW_API+'/auth/login',{
         method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({password}),cache:'no-store'
       });
@@ -1050,7 +1060,7 @@ async function restoreEditorSession(){
   try{
     const res=await editorRequest('/auth/session');
     editorRole=res.role==='editor'?'editor':'guest';
-  }catch(e){editorRole='guest';editorSession='';try{sessionStorage.removeItem('daw_editor_session')}catch(e){}}
+  }catch(e){editorRole='guest';} // Keep the stored session on transient network/server failures; 401 clears it in dawFetch.
   updateAuthDisplay();render();
 }
 
@@ -1079,15 +1089,28 @@ function tiktokSearchUrl(title){
   return 'https://www.tiktok.com/search/video?q='+encodeURIComponent(query);
 }
 
-const save=()=>localStorage.setItem(
-  K,
-  JSON.stringify({
-    drafts:data.drafts,
-    media:data.media,
-    approved:data.approved,
-    rejected:data.rejected
-  })
-);
+function save(){
+  try{
+    localStorage.setItem(K,JSON.stringify({drafts:data.drafts,media:data.media,approved:data.approved,rejected:data.rejected}));
+    document.getElementById('dawStorageWarning')?.remove();
+    return true;
+  }catch{
+    let warning=document.getElementById('dawStorageWarning');
+    if(!warning){
+      warning=document.createElement('div');warning.id='dawStorageWarning';warning.setAttribute('role','alert');
+      warning.style.cssText='position:fixed;bottom:0;left:0;right:0;z-index:10000;background:#fff0d0;color:#222;padding:14px';
+      warning.append(document.createTextNode('Не удалось сохранить изменения в браузере. До закрытия вкладки скачай копию черновиков. '));
+      const button=document.createElement('button');button.type='button';button.textContent='Скачать копию';
+      button.onclick=()=>{
+        const url=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'}));
+        const link=document.createElement('a');link.href=url;link.download='thedaw-drafts-backup.json';link.click();
+        setTimeout(()=>URL.revokeObjectURL(url),1000);
+      };
+      warning.append(button);document.body.append(warning);
+    }
+    return false;
+  }
+}
 dawCleanTrash();
 
 function updateSectionSwitch(){
@@ -1359,7 +1382,7 @@ function render(){
       (n?'<span class="daw-news-category">'+esc(n.category||'новости')+'</span>'+
         '<h2 class="daw-news-title">'+esc(displayNewsTitle(n.title))+'</h2>'+
         '<p class="daw-news-description">'+esc(n.summary||'Описание пока недоступно')+'</p>'+
-        '<div class="daw-news-source">Источник: '+(n.url?'<a href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer">'+esc(n.source||'Открыть первоисточник')+' ↗</a>':esc(n.source||'Не указан'))+'</div>'+
+        '<div class="daw-news-source">Источник: '+(n.url?'<a href="'+esc(dawSafeUrl(n.url))+'" target="_blank" rel="noopener noreferrer">'+esc(n.source||'Открыть первоисточник')+' ↗</a>':esc(n.source||'Не указан'))+'</div>'+
         '<a class="daw-news-tiktok" href="'+esc(tiktokSearchUrl(displayNewsTitle(n.title)))+'" target="_blank" rel="noopener noreferrer" title="Искать тематические видео в TikTok">♫ Видео по теме в TikTok ↗</a>'+
         (isEditor()?'<div class="daw-news-actions"><button id="dawRejectNews" title="Отклонить" aria-label="Отклонить новость">×</button><button id="dawApproveNews" title="Одобрить" aria-label="Одобрить новость">✓</button></div>':'<p class="daw-news-warning">Для одобрения войди как редактор.</p>'):
         '<h2 class="daw-news-title">Новых материалов пока нет</h2><p class="daw-news-description">Загрузи свежие новости или дождись автоматической проверки.</p>')+
@@ -1371,7 +1394,7 @@ function render(){
       '<button class="btn '+(newsPane==='trash'?'primary':'')+'" id="dawTrashTab">Корзина · '+trashed.length+'</button></div>'+
       (newsPane==='trash'?'<div class="daw-trash-panel"><div class="daw-trash-info">Отклонённые новости за сегодня. Корзина очищается автоматически после полуночи.</div>'+
         (trashed.length?trashed.map(x=>'<article class="daw-trash-item"><div><span>'+esc(x.category||'Новости')+'</span><h3>'+esc(x.title||'Без заголовка')+'</h3><small>'+esc(x.source||'')+' · '+esc(x.date||'')+'</small></div>'+
-          '<div class="daw-trash-actions">'+(x.url?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">Источник ↗</a>':'')+
+          '<div class="daw-trash-actions">'+(x.url?'<a href="'+esc(dawSafeUrl(x.url))+'" target="_blank" rel="noopener noreferrer">Источник ↗</a>':'')+
           (isEditor()?'<button class="btn" data-daw-restore="'+esc(x.id)+'">Вернуть ↗</button>':'')+'</div></article>').join(''):
           '<p class="muted">Корзина пока пуста.</p>')+'</div>':'')+
       '<div class="daw-news-tools"><button class="btn" id="newsRefresh" '+(newsLoading?'disabled':'')+'>'+(newsLoading?'Проверяем новости…':'↻ Обновить новости')+'</button>'+
@@ -1441,7 +1464,7 @@ function render(){
       '<input id="mediaUrl" placeholder="Ссылка на TikTok или медиа">'+
       '<button class="btn primary" id="addMedia">Сохранить ссылку</button>'+
       data.media.map(x=>
-        '<div class="card"><a href="'+esc(x)+
+        '<div class="card"><a href="'+esc(dawSafeUrl(x))+
         '" target="_blank">'+esc(x)+'</a></div>'
       ).join('');
 
@@ -1530,7 +1553,7 @@ async function load(manual=false){
     if(manual){
       // Live refresh is optional; failures must not replace or erase the running feed.
       try{
-        const response=await fetch(DAW_API+'/news/refresh',{
+        const response=await dawFetch(DAW_API+'/news/refresh',{
           method:'POST',headers:{'Content-Type':'application/json'},body:'{}',
           cache:'no-store',signal:AbortSignal.timeout(45000)
         });
@@ -1561,7 +1584,7 @@ async function loadReelsAnalytics(){
   output.textContent='Загружаем метрики Instagram… Это может занять до минуты.';
   const fmt=n=>typeof n==='number'?new Intl.NumberFormat('ru-RU').format(n):'—';
   try{
-    const response=await fetch(DAW_API+'/instagram/analytics',{
+    const response=await dawFetch(DAW_API+'/instagram/analytics',{
       method:'POST',
       headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
       body:'{}',cache:'no-store',signal:AbortSignal.timeout(90000)
@@ -1699,7 +1722,7 @@ async function loadReelsAnalytics(){
 // Compare contiguous seven-word phrases to catch overly similar rewrites.
 // Proper names and numbers may necessarily match; this is a warning, not legal proof.
 function dawOriginalityOverlap(source, generated){
-  const tokens=s=>String(s||'').toLocaleLowerCase('ru').match(/[\\p{L}\\p{N}]+/gu)||[];
+  const tokens=s=>String(s||'').toLocaleLowerCase('ru').match(/[\p{L}\p{N}]+/gu)||[];
   const input=tokens(source),output=tokens(generated),size=7;
   if(input.length<size||output.length<size)return [];
   const seen=new Set();
@@ -1765,7 +1788,7 @@ async function generateAI(id){
     let result=null,overlap=[];
     for(let attempt=0;attempt<2;attempt++){
       const feedback=(attempt?'Слишком близко к тексту первоисточника. Напиши заново с иной композицией и формулировками, сохранив только проверяемые факты. Повторившиеся фразы: '+overlap.join(' / ')+'. ':'')+'К текстам для публикации в Instagram и TikTok добавь ровно 5 релевантных теме новости хештегов (без #fyp, #viral и случайных тегов).';
-      const response=await fetch(DAW_API+'/generate',{
+      const response=await dawFetch(DAW_API+'/generate',{
         method:'POST',
         headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
         body:JSON.stringify({...input,rewriteFeedback:feedback}),
@@ -1793,7 +1816,7 @@ async function generateAI(id){
       '⚠ Проверь оригинальность формулировок и факты перед публикацией: найдены сходные фразы.':
       '✓ Текст написан заново. Проверь факты и источник перед публикацией.';
   }catch(error){
-    if(error.message.includes('Сессия')||error.message.includes('401'))editorLogout('Войди как редактор повторно.');
+    if(editorSession&&(error.message.includes('Сессия')||error.message.includes('401')))editorLogout('Войди как редактор повторно.');
     const target=document.getElementById('dawEditorStatus')||document.getElementById('dawStatus');
     if(target)target.textContent='Ошибка Gemini: '+error.message+'. Исходный текст не изменён.';
   }finally{
@@ -2184,8 +2207,9 @@ function renderDesign(){
   settings.classList.add('daw-design-controls');
   const copy=document.createElement('section');
   copy.className='card daw-editor-copy';
-  const options=data.drafts.map(d=>'<option value="'+esc(d.id)+'" '+(d.id===current?'selected':'')+'>'+esc(d.headline||d.sourceTitle||'Черновик')+'</option>').join('');
   const selected=data.drafts.find(d=>d.id===current)||data.drafts[0];
+  current=selected?.id||null;
+  const options=data.drafts.map(d=>'<option value="'+esc(d.id)+'" '+(d.id===current?'selected':'')+'>'+esc(d.headline||d.sourceTitle||'Черновик')+'</option>').join('');
   copy.innerHTML='<select id="dawEditorDraft" aria-label="Выбрать новость"><option value="">Выбрать новость</option>'+options+'</select>'+
     '<h2>[ AI copywriter ]</h2><div class="daw-editor-generate"><button class="btn primary" id="dawEditorGenerate" type="button">сгенерировать текст</button>'+
     '<button type="button" id="dawEditorClear" class="daw-editor-cross" aria-label="Очистить текст">×</button></div>'+
@@ -2234,11 +2258,15 @@ function renderDesign(){
 
   const tikCap=document.getElementById('designTikTokCaption');
   tikCap.value=selected?.tiktok||selected?.caption||'';
+  tikCap.oninput=()=>update('tiktok',tikCap.value);
+  document.getElementById('designInstagramCaption').value=selected?.caption||'';
+  document.getElementById('designInstagramCaption').oninput=e=>{update('caption',e.target.value);copy.querySelector('#dawEditorCaption').value=e.target.value;};
   const prevTikChoose=copy.querySelector('#dawEditorDraft').onchange;
   copy.querySelector('#dawEditorDraft').onchange=e=>{
     prevTikChoose(e);
     const draft=data.drafts.find(d=>d.id===current);
     tikCap.value=draft?.tiktok||draft?.caption||'';
+    document.getElementById('designInstagramCaption').value=draft?.caption||'';
   };
   const menu=document.createElement('h2');
   menu.className='daw-editor-title';
@@ -2309,7 +2337,7 @@ function renderDesign(){
     list.textContent='Загружаем очередь…';
     if(!isEditor()){list.textContent='Войди как редактор, чтобы увидеть очередь.';showEditorLogin();return;}
     try{
-      const response=await fetch(DAW_API+'/schedule/list',{
+      const response=await dawFetch(DAW_API+'/schedule/list',{
         method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
         body:'{}',cache:'no-store'
       });
@@ -2327,7 +2355,7 @@ function renderDesign(){
           cancel.onclick=async()=>{
             if(!confirm('Отменить запланированную публикацию?'))return;
             try{
-              const response=await fetch(DAW_API+'/schedule/cancel',{
+              const response=await dawFetch(DAW_API+'/schedule/cancel',{
                 method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},
                 body:JSON.stringify({id:item.id})
               });
@@ -2348,7 +2376,7 @@ function renderDesign(){
   const tiktokStatus=document.getElementById('designTikTokStatus');
   const tiktokCall=async(path,body={})=>{
     if(!isEditor()){showEditorLogin();throw Error('Сначала войди как редактор.');}
-    const res=await fetch(DAW_API+path,{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:JSON.stringify(body),cache:'no-store'});
+    const res=await dawFetch(DAW_API+path,{method:'POST',headers:{'Content-Type':'application/json','X-Editor-Session':editorSession},body:JSON.stringify(body),cache:'no-store'});
     const result=await res.json().catch(()=>({}));
     if(!res.ok||result.error)throw Error(result.error||'HTTP '+res.status);
     return result;
@@ -2367,7 +2395,9 @@ function renderDesign(){
     const popup=window.open('about:blank','_blank');
     try{
       const result=await tiktokCall('/tiktok/connect/start');
-      if(popup)popup.location.href=result.url;
+      const oauthUrl=new URL(result.url);
+      if(oauthUrl.protocol!=='https:'||!['www.tiktok.com','tiktok.com'].includes(oauthUrl.hostname))throw Error('Некорректный адрес авторизации TikTok');
+      if(popup){popup.opener=null;popup.location.href=oauthUrl.href;}
       else tiktokStatus.textContent='Браузер заблокировал окно авторизации. Разреши всплывающие окна и попробуй ещё раз.';
       if(popup)tiktokStatus.textContent='Авторизуй TikTok в новой вкладке, затем нажми «Проверить подключение».';
     }catch(err){
@@ -2408,18 +2438,23 @@ function renderDesign(){
       showEditorLogin();
       return;
     }
+    if(scheduleEnabled.checked){
+      const scheduledAt=new Date(scheduleDate.value);
+      if(!scheduleDate.value||!Number.isFinite(scheduledAt.getTime())||scheduledAt.getTime()<=Date.now()+60000){
+        notice.textContent='Выбери дату и время хотя бы на минуту позже текущего.';return;
+      }
+    }
     const btn=document.getElementById('designInstagramPublish');
     btn.disabled=true;
     notice.textContent='Проверяем подключение к Instagram…';
     try{
-      const response=await fetch('https://thedaw-ai.lunarinkee.workers.dev/instagram/check',{
+      const response=await dawFetch(DAW_API+'/instagram/check',{
         method:'POST',
         headers:{'X-Editor-Session':editorSession,'Content-Type':'application/json'},
         body:'{}'
       });
       const result=await response.json().catch(()=>({}));
       if(!response.ok||result.error||result.ok===false){
-        if(response.status===401)editorLogout('Сессия редактора истекла. Войди повторно.');
         throw Error(result.error||'Ошибка подключения (HTTP '+response.status+')');
       }
       notice.textContent='Подключение подтверждено. Создаём MP4…';
@@ -2865,7 +2900,7 @@ function renderDesign(){
 
       if(sendToTikTok){
         if(blob.size>50*1024*1024)throw Error('MP4 больше 50 МБ — TikTok API принимает файлы до 50 МБ в этой версии.');
-        const response=await fetch(DAW_API+'/tiktok/upload',{
+        const response=await dawFetch(DAW_API+'/tiktok/upload',{
           method:'POST',
           headers:{'Content-Type':'video/mp4','X-Editor-Session':editorSession},
           body:blob,cache:'no-store'
@@ -2875,18 +2910,17 @@ function renderDesign(){
         notice.textContent='✓ Видео отправлено в TikTok. Закончи публикацию через уведомление в приложении. ID: '+result.publish_id;
       }else if(publishToInstagram){
         if(blob.size>50*1024*1024)throw Error('Видео больше 50 МБ. Уменьши длительность Reels.');
-        const endpoint='https://thedaw-ai.lunarinkee.workers.dev';
+        const endpoint=DAW_API;
         const headers={'X-Editor-Session':editorSession};
         const call=async(path,body,contentType)=>{
-          const response=await fetch(endpoint+path,{
+          const response=await dawFetch(endpoint+path,{
             method:'POST',
             headers:{...headers,'Content-Type':contentType||'application/json'},
             body:contentType?body:JSON.stringify(body)
           });
           const data=await response.json().catch(()=>({}));
           if(!response.ok||data.error||data.ok===false){
-            if(response.status===401)editorLogout('Сессия редактора истекла. Войди повторно.');
-            throw Error((data.error||'HTTP '+response.status)+' ['+path+']');
+                throw Error((data.error||'HTTP '+response.status)+' ['+path+']');
           }
           return data;
         };
@@ -2943,7 +2977,7 @@ function renderDesign(){
     }catch(err){
       notice.textContent=cancelled
         ?'Экспорт отменён.'
-        :'Ошибка экспорта: '+err.message;
+        :'Ошибка экспорта: '+err.message+((publishToInstagram||sendToTikTok)?' Если запрос уже отправлен, проверь очередь и аккаунт перед повтором, чтобы не создать дубль.':'');
 
     }finally{
       clearInterval(timer);
