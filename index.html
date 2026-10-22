@@ -920,6 +920,7 @@ html[data-theme="dark"]{
 .daw-tiktok-api-box{display:flex;flex-direction:column;gap:9px;padding:14px 0;border-top:1px solid #e6c4cc}.daw-tiktok-api-box h3{font-size:16px;font-weight:550;margin:0}.daw-tiktok-api-box label{font-size:13px;margin:2px 0}.daw-tiktok-api-actions{display:flex;gap:8px;flex-wrap:wrap}.daw-tiktok-api-actions .btn{flex:1;min-width:140px;font-size:12px}.daw-tiktok-api-box .mini{font-size:11px;line-height:1.4}
 .daw-schedule-box{display:flex;flex-direction:column;gap:10px;margin:12px 0;padding:14px 0;border-top:1px solid #e7c5cf}.daw-schedule-box>.daw-schedule-switch{display:flex;align-items:center;gap:8px;font-size:13px}.daw-schedule-switch input{width:16px;height:16px;accent-color:#d55372}.daw-schedule-box input[type=datetime-local]{width:100%;padding:9px;border-radius:12px;border:1px solid #d6b8c1}.daw-schedule-box #designScheduleControls[hidden]{display:none!important}.daw-schedule-box #designScheduleControls label{display:block;margin-bottom:7px}.daw-schedule-item{font-size:12px;line-height:1.4;padding:8px 0;border-bottom:1px solid #ecdce0}.daw-schedule-item .btn{margin-left:8px;font-size:11px}
 </style>
+<link rel="stylesheet" href="./studio.css">
 </head>
 <body>
 
@@ -1071,6 +1072,7 @@ let newsPage=1;
 let newsLoading=false;
 let newsError='';
 let newsPane='feed';
+let newsCategory='';
 let lastNewsCheck=null;
 
 const esc=x=>String(x??'').replace(
@@ -1365,7 +1367,7 @@ function render(){
   if(section==='inbox'){
     dawCleanTrash();
     const sorted=recentNews(data.news)
-      .filter(n=>!data.rejected[n.id]&&!data.approved[n.id])
+      .filter(n=>!data.rejected[n.id]&&!data.approved[n.id]&&(!newsCategory||n.category===newsCategory))
       .sort((x,y)=>newsTimestamp(y)-newsTimestamp(x));
     const pages=Math.max(1,sorted.length);
     newsPage=Math.max(1,Math.min(newsPage,pages));
@@ -1572,7 +1574,7 @@ async function load(manual=false){
   }finally{
     newsLoading=false;
     dawCleanTrash();
-    if(view==='inbox'||view==='guest')render();
+    if(['inbox','guest','home','calendar'].includes(view))render();
   }
 }
 
@@ -1592,6 +1594,7 @@ async function loadReelsAnalytics(){
     const payload=await response.json().catch(()=>({}));
     if(!response.ok||payload.ok!==true)throw Error(payload.error||'HTTP '+response.status);
     if(!Array.isArray(payload.items))throw Error('Некорректный ответ Instagram');
+    window.dispatchEvent(new CustomEvent('daw:analytics',{detail:payload}));
     const snapshotKey='daw-reels-last-refresh-v1';
     let previous={};
     try{previous=JSON.parse(localStorage.getItem(snapshotKey)||'{}')||{};}catch{}
@@ -3066,5 +3069,6 @@ function renderDesign(){
 }
 </script>
 
+<script src="./studio.js"></script>
 </body>
 </html>

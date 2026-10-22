@@ -1,7 +1,7 @@
 name: Validate Studio
 on:
   push:
-    paths: ['index.html', 'scripts/**', 'tools/**', 'tests/**', '.github/workflows/checks.yml']
+    paths: ['index.html', 'studio.js', 'studio.css', 'scripts/**', 'tools/**', 'tests/**', '.github/workflows/checks.yml']
   pull_request:
 permissions:
   contents: read
