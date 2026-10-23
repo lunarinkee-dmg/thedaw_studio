@@ -1,5 +1,55 @@
 [
   {
+    "id": "rssf77ce7589ae66267",
+    "category": "Казахстан / Новости",
+    "title": "В теңге или долларах копить казахстанцам? Какие депозиты выгоднее и куда переводить деньги",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/article/tenge-dollarah-kopit-kazahstantsam-kakie-depozityi-vyigodnee-4615/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T01:33:00+00:00"
+  },
+  {
+    "id": "rss3433a9070a048deb",
+    "category": "Казахстан / Новости",
+    "title": "06:31, 23 Октября 2026 Где в Казахстане ухудшится качество воздуха: прогноз Казгидромета на 23 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/gde-v-kazahstane-uhudshitsya-kachestvo-vozduha-prognoz-kazgidrometa-na-23-oktyab-842d606b",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T01:31:00+00:00"
+  },
+  {
+    "id": "rss40b459a7faf19478",
+    "category": "Казахстан / Новости",
+    "title": "Истекающую кровью собаку нашли в квартире в Костанае: установлен подозреваемый",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/istekayuschuyu-krovyu-sobaku-nashli-kvartire-kostanae-611491/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T01:15:00+00:00"
+  },
+  {
+    "id": "rsse869dee32b307ad1",
+    "category": "Казахстан / Новости",
+    "title": "“Слишком усердные ученики“: как Венгрия чуть не разрушила советский контроль над Восточной Европой",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/article/slishkom-userdnyie-ucheniki-vengriya-ne-razrushila-sovetskiy-4631/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T01:05:00+00:00"
+  },
+  {
+    "id": "rss8d1e5035b774f2c4",
+    "category": "Казахстан / Новости",
+    "title": "06:03, 23 Октября 2026 Отпуск по уходу за ребенком для отцов в мире в восемь раз короче, чем для матерей — ООН",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/otpusk-po-uhodu-za-rebenkom-dlya-ottsov-v-mire-v-vosem-raz-koroche-chem-dlya-mat-3e6ebb48",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T01:03:00+00:00"
+  },
+  {
     "id": "rssa7d75f58a3d4c9a5",
     "category": "Казахстан / Новости",
     "title": "05:30, 23 Октября 2026 Глобальное потепление расширяет географию распространения малярии и лихорадки денге",
@@ -330,22 +380,22 @@
     "published_at": "2026-10-22T17:37:00+00:00"
   },
   {
-    "id": "rss6a44789ff1c9ec48",
-    "category": "Казахстан / Новости",
-    "title": "22:25, 22 Октября 2026 Мастера искусств Кызылординской области выступили с праздничным концертом в Пекине",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mastera-iskusstv-kizilordinskoy-oblasti-vistupili-sprazdnichnim-kontsertom-vpeki-cea6e4e3",
-    "date": "22.10.2026",
-    "published_at": "2026-10-22T17:25:00+00:00"
-  },
-  {
     "id": "rss945d19efde378956",
     "category": "Казахстан / Новости",
     "title": "Ограничения на трассах Казахстана: какие дороги закрыли из-за непогоды",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/autoroads/ogranicheniya-trassah-kazahstana-kakie-dorogi-zakryili-iz-za-611483/",
+    "date": "22.10.2026",
+    "published_at": "2026-10-22T17:25:00+00:00"
+  },
+  {
+    "id": "rss6a44789ff1c9ec48",
+    "category": "Казахстан / Новости",
+    "title": "22:25, 22 Октября 2026 Мастера искусств Кызылординской области выступили с праздничным концертом в Пекине",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mastera-iskusstv-kizilordinskoy-oblasti-vistupili-sprazdnichnim-kontsertom-vpeki-cea6e4e3",
     "date": "22.10.2026",
     "published_at": "2026-10-22T17:25:00+00:00"
   },
