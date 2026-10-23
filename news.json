@@ -1,5 +1,75 @@
 [
   {
+    "id": "rss2f3b25e45f36e82b",
+    "category": "Казахстан / Новости",
+    "title": "10:23, 23 Октября 2026 Как будут работать ЦОНы 24–26 октября в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kak-budut-rabotat-tsoni-2426-oktyabrya-v-kazahstane-81ac8490",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:23:00+00:00"
+  },
+  {
+    "id": "rssb35ba0e500d3ff0b",
+    "category": "Казахстан / Новости",
+    "title": "10:20, 23 Октября 2026 Какие больницы и поликлиники появятся в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kakie-bolnitsi-i-polikliniki-poyavyatsya-v-astane-e41f0507",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:20:00+00:00"
+  },
+  {
+    "id": "rss63720a6ad36ec456",
+    "category": "Казахстан / Новости",
+    "title": "10:18, 23 Октября 2026 Костанай столкнулся с дефицитом электрических мощностей: что ждет город",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kostanay-stolknulsya-sdefitsitom-elektricheskih-moshnostey-chto-zhdet-gorod-0b92f02d",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:18:00+00:00"
+  },
+  {
+    "id": "rssba51a5b709136cc1",
+    "category": "Казахстан / Новости",
+    "title": "10:09, 23 Октября 2026 Клубника, которая хранится пять лет — как в Казахстане сублимируют продукты",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/klubnika-kotoraya-hranitsya-pyat-let-kakvkazahstane-sublimiruyut-produkti-19a5c130",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:09:00+00:00"
+  },
+  {
+    "id": "rss6c9ce0765f61b314",
+    "category": "Казахстан / Новости",
+    "title": "Нецензурная надпись на госномере обошлась в крупную сумму водителю из Уральска",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autonews/netsenzurnaya-nadpis-gosnomere-oboshlas-krupnuyu-summu-611504/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:06:07+00:00"
+  },
+  {
+    "id": "tg24cdf5b6f6fd58e009",
+    "category": "Культура / Музыка",
+    "title": "мартин — «не прощаюсь»",
+    "summary": "мартин — «не прощаюсь»\nДебютный альбом из девяти композиций с романтичным инди-поп-звучанием, посвященных любви, взрослению и поиску себя. В пластинке артист исследует переменчивость чувств и моменты, способные перевернуть привычную жизнь. В этом году мартин также вошел в рейтинг Forbes «30 до 30». Презентации альбома пройдут 24 октября в петербургском клубе Sound и 7 ноября в московском VK Stadium.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32655",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T05:05:58+00:00"
+  },
+  {
+    "id": "rss6721976746e72ab6",
+    "category": "Казахстан / Новости",
+    "title": "09:57, 23 Октября 2026 Флаг Казахстана подняли в Нью-Йорке в честь Дня Республики",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/flag-kazahstana-podnyali-vnyu-yorke-vchest-dnya-respubliki-a146764d",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T04:57:00+00:00"
+  },
+  {
     "id": "rsse740e414a19a5a1d",
     "category": "Казахстан / Новости",
     "title": "Три огромных карьера нашли под Балхашом: ущерб природе почти полмиллиарда",
@@ -32,7 +102,7 @@
   {
     "id": "rssf3a6c501a712ab43",
     "category": "Казахстан / Новости",
-    "title": "09:34, 23 Октября 2026 630 миграционных нарушений пресекли в Туркестанской области",
+    "title": "09:34, 23 Октября 2026 630 миграционных нарушений выявили в Туркестанской области",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/630-migratsionnih-narusheniy-presekli-vturkestanskoy-oblasti-f70a1603",
@@ -2858,15 +2928,5 @@
     "url": "https://the-steppe.com/novosti/target-amazon",
     "date": "16.10.2026",
     "published_at": "2026-10-16T06:00:00+00:00"
-  },
-  {
-    "id": "tg20540181f68512c8a7",
-    "category": "Культура / Музыка",
-    "title": "SABU — «SAD»",
-    "summary": "SABU — «SAD»\nЧувственный макси-сингл, в заглавном треке которого хрупкое гитарное звучание контрастирует с мощным басовым дропом. Артистка обращается к теме болезненного принятия себя, внутренних страхов и борьбы с собственными мыслями. В создании музыки для релиза принял участие SALUKI, а клип на заглавный трек снял режиссер Никита Вильчинский.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32584",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T05:03:01+00:00"
   }
 ]
