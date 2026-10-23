@@ -1,5 +1,75 @@
 [
   {
+    "id": "tg9a2496d3e43b585aac",
+    "category": "Культура / Музыка",
+    "title": "TOASTER pinned a photo",
+    "summary": "TOASTER pinned a photo",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32658",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:52:40+00:00"
+  },
+  {
+    "id": "rss3a2c71af842e0cb4",
+    "category": "Казахстан / Новости",
+    "title": "17:51, 23 Октября 2026 Нарушителей, сбрасывающих мусор, фиксируют с воздуха в ВКО",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/narushiteley-sbrasivayushih-musor-fiksiruyut-svozduha-vvko-6d3ec671",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:51:00+00:00"
+  },
+  {
+    "id": "rss6de8e1931c00748c",
+    "category": "Казахстан / Новости",
+    "title": "17:41, 23 Октября 2026 Телевидение — часть моей жизни: Дина Аймагамбетова о работе эфирной службы Jibek Joly и Silk Way",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dlyanas-tri-sekundi-tselaya-vechnost-dina-aymagambetova-orabote-efirnoy-sluzhbi--2a81301b",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:41:00+00:00"
+  },
+  {
+    "id": "rss960e24d4d5ea8ba0",
+    "category": "Казахстан / Новости",
+    "title": "17:30, 23 Октября 2026 Вице-Президент вручил государственные награды ряду общественных деятелей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vitse-prezident-vruchil-gosudarstvennie-nagradi-ryadu-obshestvennih-deyateley-0a2d23e3",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:30:00+00:00"
+  },
+  {
+    "id": "rsse796717f33d31fa1",
+    "category": "Казахстан / Новости",
+    "title": "17:22, 23 Октября 2026 Врачи Казахстана и России обсудили современные методы лечения эпилепсии у детей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vrachi-kazahstana-irossii-obsudili-sovremennie-metodi-lecheniya-epilepsii-udetey-df427377",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:22:00+00:00"
+  },
+  {
+    "id": "rss7a0a82efcb0927f9",
+    "category": "Казахстан / Новости",
+    "title": "Блогеры высказались о скандальном деле “королевы Wildberries“",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/blogeryi-vyiskazalis-o-skandalnom-dele-korolevyi-wildberries-611562/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:15:04+00:00"
+  },
+  {
+    "id": "rss092e6f4c6a995212",
+    "category": "Казахстан / Новости",
+    "title": "17:11, 23 Октября 2026 Жители Павлодара вложили миллионы в отопление, но продолжают топить печи",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zhiteli-pavlodara-vlozhili-millioni-votoplenie-noprodolzhayut-topit-pechi-997b4fa6",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T12:11:00+00:00"
+  },
+  {
     "id": "tge5d4895b38b375fe43",
     "category": "Музыка / Рэп",
     "title": "✌🏽Lil Uzi Vert поделился новыми фото",
@@ -360,22 +430,22 @@
     "published_at": "2026-10-23T10:01:39+00:00"
   },
   {
-    "id": "rssb43dec879b5895a0",
-    "category": "Казахстан / Новости",
-    "title": "15:00, 23 Октября 2026 22 соглашения с Бельгией откроют новые возможности для студентов Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/22-soglasheniya-s-belgiey-otkroyut-novie-vozmozhnosti-dlya-studentov-kazahstana-16f7ebc8",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T10:00:00+00:00"
-  },
-  {
     "id": "rss6305d3f8ce0abc7e",
     "category": "Казахстан / ЦА",
     "title": "Ювелирные коллекции Bvlgari впервые представили в Almaty Museum of Arts",
     "summary": "Bvlgari стал первым брендом, устроившим ужин в Almaty Museum of Arts. Коллекции высокого ювелирного искусства продемонстрировали на фоне современного искусства из собраний музея. Редакция STEPPE собрала главное о прошедшем вечере. Bvlgari открыл новую главу в истории Дома и представил римское высокое ювелирное мастерство в диалоге с современным иск",
     "source": "the-steppe.com",
     "url": "https://the-steppe.com/gorod/sobytiya/yuvyeleerniye-kollyektseeee-bvlgari-vpyerviye-pryedstaveelee-v-almaty-museum-of-arts",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T10:00:00+00:00"
+  },
+  {
+    "id": "rssb43dec879b5895a0",
+    "category": "Казахстан / Новости",
+    "title": "15:00, 23 Октября 2026 22 соглашения с Бельгией откроют новые возможности для студентов Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/22-soglasheniya-s-belgiey-otkroyut-novie-vozmozhnosti-dlya-studentov-kazahstana-16f7ebc8",
     "date": "23.10.2026",
     "published_at": "2026-10-23T10:00:00+00:00"
   },
@@ -4148,15 +4218,5 @@
     "url": "https://t.me/quicknrapp/30731",
     "date": "16.10.2026",
     "published_at": "2026-10-16T13:01:43+00:00"
-  },
-  {
-    "id": "rsse97d0ca1ef16081e",
-    "category": "Казахстан / ЦА",
-    "title": "Ерік Толенов стал новым резидентом «Закрытого клуба»",
-    "summary": "Казахстанский певец Ерік Толенов, ранее выступавший под псевдонимом Kyle Ruh, присоединился к музыкальному лейблу «Закрытый клуб» и начал выпускать музыку под собственным именем — Yerik Tolen. Первым релизом артиста в новом звучании стал трек «Qandaisyn». Сообщение Ерік Толенов стал новым резидентом «Закрытого клуба» появились сначала на 98mag .",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/kultura/erik-tolenov-stal-novym-rezidentom-zakrytogo-kluba/",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T12:31:04+00:00"
   }
 ]
