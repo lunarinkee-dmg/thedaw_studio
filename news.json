@@ -1,5 +1,85 @@
 [
   {
+    "id": "rss132eafc98134ff81",
+    "category": "Казахстан / Новости",
+    "title": "22:11, 23 Октября 2026 Новый сквер открыли на улице Кенесары в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/noviy-skver-otkrili-na-ulitse-kenesari-v-astane-c5e9beeb",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T17:11:00+00:00"
+  },
+  {
+    "id": "rss51bf5e2f40a26be0",
+    "category": "Казахстан / Новости",
+    "title": "В Туркестанской области отметили День Республики и наградили жителей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/turkestanskoy-oblasti-otmetili-den-respubliki-nagradili-611579/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T17:02:00+00:00"
+  },
+  {
+    "id": "rssa14f2dd50565aa9f",
+    "category": "Казахстан / Новости",
+    "title": "22:00, 23 Октября 2026 Студенческие кредиты запустят в Кыргызстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/studencheskie-krediti-zapustyat-vkirgizstane-9247e99e",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T17:00:00+00:00"
+  },
+  {
+    "id": "rss75d50b911107fd27",
+    "category": "Казахстан / Новости",
+    "title": "21:56, 23 Октября 2026 Париж готовится к возможным беспорядкам: владельцы магазинов усиливают охрану",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/parizh-gotovitsya-kvozmozhnim-besporyadkam-vladeltsi-magazinov-usilivayut-ohranu-34de132d",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T16:56:00+00:00"
+  },
+  {
+    "id": "rss806ecb221d575ba6",
+    "category": "Казахстан / Новости",
+    "title": "Парламент Албании погрузился в хаос на фоне массовых беспорядков в столице",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/parlament-albanii-pogruzilsya-haos-fone-massovyih-611576/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T16:51:44+00:00"
+  },
+  {
+    "id": "rsscd938b4a11a190cc",
+    "category": "Казахстан / Новости",
+    "title": "21:47, 23 Октября 2026 Месторождение Тенгиз позволило привлечь инвестиции на сумму 170 млрд долларов — эксперт",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mestorozhdenie-tengiz-pozvolilo-privlech-investitsii-nasummu-170mlrd-dollarov-ek-ae718931",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T16:47:00+00:00"
+  },
+  {
+    "id": "rss130e02c98cde4a13",
+    "category": "Казахстан / ЦА",
+    "title": "Казахстанцам вернули доступ к трансляциям Гран-при по фигурному катанию",
+    "summary": "В Казахстане 23 октября вновь стали доступны бесплатные трансляции серии Гран-при по фигурному катанию на официальном YouTube-канале Международного союза конькобежцев (ISU). До этого казахстанские болельщики несколько месяцев боролись за возможность смотреть соревнования, права на показ которых получила российская платформа Okko. Рассказываем, как ",
+    "source": "98mag",
+    "url": "https://www.98mag.kz/likbez/kazahstanczam-vernuli-dostup-k-translyacziyam-gran-pri-po-figurnomu-kataniyu/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T16:40:44+00:00"
+  },
+  {
+    "id": "rss9c521ee9b135f1a9",
+    "category": "Казахстан / Новости",
+    "title": "21:40, 23 Октября 2026 Более строгие наказания за убийство родителей сохранили в Южной Корее",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-strogie-nakazaniya-za-ubiystvo-roditeley-sohranili-v-yuzhnoy-koree-83e3382a",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T16:40:00+00:00"
+  },
+  {
     "id": "rssd1cf7e9ce492b6cd",
     "category": "Казахстан / Новости",
     "title": "21:32, 23 Октября 2026 Снег, метель и заморозки накроют 24 октября Казахстана",
@@ -350,22 +430,22 @@
     "published_at": "2026-10-23T13:24:05+00:00"
   },
   {
-    "id": "rss60234c54ee2e35d6",
-    "category": "Казахстан / Новости",
-    "title": "18:24, 23 Октября 2026 Токаев поблагодарил главу NVIDIA за вклад в развитие партнерства с Казахстаном",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tokaev-poblagodaril-glavu-nvidia-za-vklad-v-razvitie-partnerstva-s-kazahstanom-77fe64fc",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T13:24:00+00:00"
-  },
-  {
     "id": "rsse3cf77f955a7b390",
     "category": "Казахстан / Новости",
     "title": "На Сайране снова исчезли понтонные мосты: в акимате Алматы объяснили, что происходит",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/kazakhstan_news/sayrane-snova-ischezli-pontonnyie-mostyi-akimate-almatyi-611563/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T13:24:00+00:00"
+  },
+  {
+    "id": "rss60234c54ee2e35d6",
+    "category": "Казахстан / Новости",
+    "title": "18:24, 23 Октября 2026 Токаев поблагодарил главу NVIDIA за вклад в развитие партнерства с Казахстаном",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tokaev-poblagodaril-glavu-nvidia-za-vklad-v-razvitie-partnerstva-s-kazahstanom-77fe64fc",
     "date": "23.10.2026",
     "published_at": "2026-10-23T13:24:00+00:00"
   },
@@ -4598,25 +4678,5 @@
     "url": "https://t.me/quicknrapp/30734",
     "date": "16.10.2026",
     "published_at": "2026-10-16T19:01:01+00:00"
-  },
-  {
-    "id": "tg9a9e9d9e6eb50cfb60",
-    "category": "Культура / Музыка",
-    "title": "#релизкультура",
-    "summary": "#релизкультура\n14 апреля 2017 года Kendrick Lamar выпускает «DAMN.» - альбом, в котором через религию, собственные грехи и страх смерти пытается разобраться, почему его жизнь складывается именно так. После «good kid, m.A.A.d city» и «To Pimp a Butterfly» Кендрик снова обращается к концептуальному рэпу, но теперь его интересуют не столько окружающий мир, сколько противоречия внутри него самого\nВ основе «DAMN.» лежит конфликт между двумя состояниями - wickedness и weakness, злобой и слабостью. Кендрик постоянно возвращается к вопросу о том, что определяет его поступки и к чему они приводят\nАльбо",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32588",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T17:11:36+00:00"
-  },
-  {
-    "id": "tgaf075aa0a43d076e31",
-    "category": "Музыка / Рэп",
-    "title": "😂 Kai Cenat наконец-то купил идеальную для себя машину и поехал на ней в McDonald’s",
-    "summary": "😂 Kai Cenat наконец-то купил идеальную для себя машину и поехал на ней в McDonald’s \n⠀\nЭто одна из самых узких машин в мире, созданная командой Prop Department на базе Ford Festiva 1988 года. Они вырезали большую часть кузова посередине и заменили оригинальный двигатель на электромотор от кроссового мотоцикла, сохранив фары, поворотники и место для пассажира за водителем.\n⠀\nСоздатель назвал её самым узким автомобилем, допущенным к езде по дорогам общего пользования. Однако официальный рекорд Гиннесса принадлежит Fiat Panda шириной всего 50,2 см.\n⠀\nКак вам тачка?\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30733",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T16:38:24+00:00"
   }
 ]
