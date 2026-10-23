@@ -1,5 +1,85 @@
 [
   {
+    "id": "rssb10abad744243f91",
+    "category": "Казахстан / Новости",
+    "title": "14:27, 23 Октября 2026 Когда банки Казахстана начнут снижать ставки по кредитам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kogda-banki-kazahstana-nachnut-snizhat-stavki-pokreditam-048acfa5",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:27:00+00:00"
+  },
+  {
+    "id": "rss7bb3f68f8b2f0d3c",
+    "category": "Казахстан / Новости",
+    "title": "14:25, 23 Октября 2026 Три популярных автобусных маршрута изменили движение в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tri-populyarnih-avtobusnih-marshruta-izmenili-dvizhenie-v-astane-721d1eb1",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:25:00+00:00"
+  },
+  {
+    "id": "rss32ecf4f10344e482",
+    "category": "Казахстан / Новости",
+    "title": "14:18, 23 Октября 2026 Комплексный план развития беспилотных систем утвердили в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kompleksniy-plan-razvitiya-bespilotnih-sistem-utverdili-v-kazahstane-da3aef7b",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:18:00+00:00"
+  },
+  {
+    "id": "rss95c56d7034f0bf8b",
+    "category": "Казахстан / Новости",
+    "title": "14:18, 23 Октября 2026 Глава государства анонсировал запуск третьего суперкомпьютера в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/glava-gosudarstva-anonsiroval-zapusk-tretego-superkompyutera-v-kazahstane-95ef6b1a",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:18:00+00:00"
+  },
+  {
+    "id": "rssa498525e6e0bac76",
+    "category": "Казахстан / Новости",
+    "title": "14:07, 23 Октября 2026 Обещали льготное жилье и выгодные кредиты: в Астане раскрыли мошенничество на 413 млн теңге",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/obeshali-lgotnoe-zhile-i-vigodnie-krediti-v-astane-raskrili-moshennichestvo-na-4-806ab17f",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:07:00+00:00"
+  },
+  {
+    "id": "rss3045e97f8c4c26e9",
+    "category": "Казахстан / Новости",
+    "title": "Банки могут снизить проценты по новым вкладам после решения Нацбанка",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/money/banki-mogut-snizit-protsentyi-novyim-vkladam-resheniya-611540/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:05:43+00:00"
+  },
+  {
+    "id": "rss482848e70426333f",
+    "category": "Казахстан / Новости",
+    "title": "Жилой комплекс почти на 600 квартир построили в Туркестане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/jiloy-kompleks-pochti-na-600-kvartir-postroili-v-turkestane-611538/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T09:02:00+00:00"
+  },
+  {
+    "id": "rssf43957bb48845aa2",
+    "category": "Казахстан / ЦА",
+    "title": "В ChatGPT появились защищённые чаты",
+    "summary": "OpenAI начала внедрять в ChatGPT функцию Locked Chats, которая позволяет скрывать отдельные переписки из общей истории и защищать их паролем. Для доступа к таким чатам потребуется четырёхзначный PIN-код или биометрическая аутентификация на поддерживаемых устройствах. Сообщение В ChatGPT появились защищённые чаты появились сначала на 98mag .",
+    "source": "98mag",
+    "url": "https://www.98mag.kz/biznes/v-chatgpt-poyavilis-chaty-s-zashhitoj-po-pin-kodu/",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T08:58:43+00:00"
+  },
+  {
     "id": "rss6b463eedf11e8fbc",
     "category": "Казахстан / Новости",
     "title": "13:57, 23 Октября 2026 Какие варианты снижения базовой ставки обсуждал Нацбанк Казахстана",
@@ -918,6 +998,16 @@
     "url": "https://www.inform.kz/ru/kazahstan-zavoeval-zoloto-i-serebro-v-dvuh-velogonkah-na-aziatskih-para-igrah-f8d0ae09",
     "date": "23.10.2026",
     "published_at": "2026-10-23T04:08:00+00:00"
+  },
+  {
+    "id": "rss0da238918da9d8ed",
+    "category": "Казахстан / ЦА",
+    "title": "Музыкальная эволюция Лисы: от LALISA до Press Play",
+    "summary": "23 октября 2026 года Лиса выпустила мини-альбом PRESS PLAY, который станет новой главой ее сольной карьеры. За последние несколько лет артистка прошла путь от участницы BLACKPINK до самостоятельной исполнительницы: основала собственную компанию, дебютировала в кино и начала активнее обращаться к тайским корням в своем творчестве. Редакторка STEPPE ",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/steppe-select/muzykalnaja-jevoljucija-lisy-ot-lalisa-do-press-play",
+    "date": "23.10.2026",
+    "published_at": "2026-10-23T04:00:00+00:00"
   },
   {
     "id": "rss07a19cbe05887f81",
@@ -3658,25 +3748,5 @@
     "url": "https://www.98mag.kz/biznes/tesla-predstavila-novyj-letayushhij-sportkar-roadster/",
     "date": "16.10.2026",
     "published_at": "2026-10-16T10:32:06+00:00"
-  },
-  {
-    "id": "rsse5f1757485eaa709",
-    "category": "Казахстан / ЦА",
-    "title": "Джеймс Кэмерон проведёт мастер-класс в Кыргызстане",
-    "summary": "Американский режиссёр Джеймс Кэмерон, известный по фильмам «Терминатор», «Титаник» и «Аватар», проведёт мастер-класс «Создавая миры» в Кыргызстане. Источник: vesti.kg Сообщение Джеймс Кэмерон проведёт мастер-класс в Кыргызстане появились сначала на 98mag .",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/gorod/dzhejms-kemeron-provedyot-master-klass-v-kyrgyzstane/",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T09:06:57+00:00"
-  },
-  {
-    "id": "tgf1a3311d1768510aca",
-    "category": "Музыка / Рэп",
-    "title": "🏆 A$AP Rocky заявил, что работал над альбомом «Don’t Be Dumb» с целью получить свою первую премию «Грэмми»",
-    "summary": "🏆 A$AP Rocky заявил, что работал над альбомом «Don’t Be Dumb» с целью получить свою первую премию «Грэмми» \nДумаю, это стало бы подтверждением всего, ради чего я так усердно работал. Я вложил в этот альбом столько сил и намеренно хотел получить “Грэмми”.\nНо в этом году моим главным приоритетом была музыка. 60 концертов — солдауты. Есть артисты с “Грэмми”, которые даже не могут собрать полные арены. Мы создаём нечто новое и дарим людям перформансы, которых они ещё никогда не видели.\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30727",
-    "date": "16.10.2026",
-    "published_at": "2026-10-16T09:05:11+00:00"
   }
 ]
