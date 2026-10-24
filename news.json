@@ -1,5 +1,55 @@
 [
   {
+    "id": "tgea0b5f9c4f87b013a6",
+    "category": "Культура / Музыка",
+    "title": "Амура — «Спокойно»",
+    "summary": "Амура — «Спокойно»\nЗавораживающий неопоп с глубоким, обволакивающим звучанием, медитативными битами и мягким гипнотическим вокалом. В новом сингле артистка рассказывает о попытке сохранить хладнокровие на фоне болезненного расставания и предательства. Трек открывает новый этап в ее творчестве с экспериментальным звучанием и визуальной эстетикой, построенной на контрасте технологичности и нежности.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32667",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:03:58+00:00"
+  },
+  {
+    "id": "rss59f6d752a0be2cd4",
+    "category": "Казахстан / Новости",
+    "title": "Daewoo Matiz - мини-бикини для самых брутальных мужчин",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/opinion/daewoo-matiz-mini-bikini-dlya-samyih-brutalnyih-mujchin-1438/",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:03:00+00:00"
+  },
+  {
+    "id": "rssfc4158987f4c23d4",
+    "category": "Казахстан / Новости",
+    "title": "10:00, 24 Октября 2026 Куда сходить в Астане 24–26 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kuda-shodit-vastane-2425oktyabrya-5c099013",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:00:00+00:00"
+  },
+  {
+    "id": "rss7fec3c3cb5cc2cb1",
+    "category": "Казахстан / Новости",
+    "title": "09:46, 24 Октября 2026 Продовольственная инфляция в Казахстане снижается второй месяц подряд",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prodovolstvennaya-inflyatsiya-v-kazahstane-snizhaetsya-vtoroy-mesyats-podryad-18788165",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T04:46:00+00:00"
+  },
+  {
+    "id": "rss4d53259898e4dedf",
+    "category": "Казахстан / Новости",
+    "title": "КНБ раскрыл схему в спецЦОН Астаны: аннулированы десятки водительских прав",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/crime/knb-raskryil-shemu-spetstsone-astanyi-annulirovanyi-desyatki-611590/",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T04:45:13+00:00"
+  },
+  {
     "id": "rss90ebedc6f928cabf",
     "category": "Казахстан / Новости",
     "title": "09:25, 24 Октября 2026 Землетрясение магнитудой 7,2 произошло у побережья острова в Тихом океане",
@@ -30,22 +80,22 @@
     "published_at": "2026-10-24T04:13:00+00:00"
   },
   {
-    "id": "rssee3cd0d17a3b60b8",
-    "category": "Казахстан / Новости",
-    "title": "09:00, 24 Октября 2026 Покупка жилья на вторичном рынке в Казахстане: что нужно проверить до сделки",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/chto-proverit-pered-pokupkoy-kvartiri-ikakvipisat-prezhnih-zhiltsov-84b4da27",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T04:00:00+00:00"
-  },
-  {
     "id": "rss612f9866e10ae51d",
     "category": "Казахстан / ЦА",
     "title": "Почему брендам нужен свой звук: история молодого саунд-дизайнера Юрия Спиридонова",
     "summary": "Юрий Спиридонов — саунд-дизайнер и композитор, работающий с казахстанскими брендами и продакшнами. Он создавал звуковое оформление для рекламных кампаний CITIX, UMAMI и inDrive, а также работал над аниме из шести серий для KOTEX. В интервью для STEPPE Youth Юрий рассказал о своем пути в индустрии, особенностях работы со звуком, развитии саунд-дизай",
     "source": "the-steppe.com",
     "url": "https://the-steppe.com/steppe-youth/pochemu-brendam-nuzhen-svoj-zvuk-istorija-molodogo-saund-dizajnera-jurija-spiridonova",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T04:00:00+00:00"
+  },
+  {
+    "id": "rssee3cd0d17a3b60b8",
+    "category": "Казахстан / Новости",
+    "title": "09:00, 24 Октября 2026 Покупка жилья на вторичном рынке в Казахстане: что нужно проверить до сделки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/chto-proverit-pered-pokupkoy-kvartiri-ikakvipisat-prezhnih-zhiltsov-84b4da27",
     "date": "24.10.2026",
     "published_at": "2026-10-24T04:00:00+00:00"
   },
@@ -5138,15 +5188,5 @@
     "url": "https://t.me/quicknrapp/30736",
     "date": "17.10.2026",
     "published_at": "2026-10-17T07:01:27+00:00"
-  },
-  {
-    "id": "tg75e48451598dd92b80",
-    "category": "Культура / Музыка",
-    "title": "GONE.Fludd, CAKEBOY — «Каждый День»",
-    "summary": "GONE.Fludd, CAKEBOY — «Каждый День»\nМрачный рейдж-рэп с перегруженным звуком, ломаным битом и колкими панчлайнами. В новом совместном сингле участники GLAM GO GANG! рассуждают о деньгах, амбициях и необходимости работать каждый день, не оглядываясь на обстоятельства. Трек выходит в преддверии сольных альбомов артистов — «Любовь и ракеты» от GONE.Fludd и «Execute (Part 1)» от CAKEBOY.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32594",
-    "date": "17.10.2026",
-    "published_at": "2026-10-17T05:04:57+00:00"
   }
 ]
