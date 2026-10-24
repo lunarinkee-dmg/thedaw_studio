@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss4a437d17172525de",
+    "category": "Казахстан / Новости",
+    "title": "10:44, 24 Октября 2026 Маралы и олени попали в объектив фотографа в нацпарке «Буйратау»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/marali-i-oleni-popali-v-obektiv-fotografa-v-natsparke-buyratau-1044e782",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:44:00+00:00"
+  },
+  {
+    "id": "rss8920247215d1efdb",
+    "category": "Казахстан / Новости",
+    "title": "10:30, 24 Октября 2026 Медь, новые транспортные маршруты и научные открытия: что мировые СМИ пишут о Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/med-novie-transportnie-marshruti-i-nauchnie-otkritiya-chto-mirovie-smi-pishut-o--ae3bec58",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:30:00+00:00"
+  },
+  {
+    "id": "rss04b62c519c1f0994",
+    "category": "Казахстан / Новости",
+    "title": "10:15, 24 Октября 2026 Курсы валют в обменниках Астаны и Алматы на 24 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na24oktyabrya-44e3e01f",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T05:15:00+00:00"
+  },
+  {
     "id": "tgea0b5f9c4f87b013a6",
     "category": "Культура / Музыка",
     "title": "Амура — «Спокойно»",
@@ -80,22 +110,22 @@
     "published_at": "2026-10-24T04:13:00+00:00"
   },
   {
-    "id": "rss612f9866e10ae51d",
-    "category": "Казахстан / ЦА",
-    "title": "Почему брендам нужен свой звук: история молодого саунд-дизайнера Юрия Спиридонова",
-    "summary": "Юрий Спиридонов — саунд-дизайнер и композитор, работающий с казахстанскими брендами и продакшнами. Он создавал звуковое оформление для рекламных кампаний CITIX, UMAMI и inDrive, а также работал над аниме из шести серий для KOTEX. В интервью для STEPPE Youth Юрий рассказал о своем пути в индустрии, особенностях работы со звуком, развитии саунд-дизай",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/steppe-youth/pochemu-brendam-nuzhen-svoj-zvuk-istorija-molodogo-saund-dizajnera-jurija-spiridonova",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T04:00:00+00:00"
-  },
-  {
     "id": "rssee3cd0d17a3b60b8",
     "category": "Казахстан / Новости",
     "title": "09:00, 24 Октября 2026 Покупка жилья на вторичном рынке в Казахстане: что нужно проверить до сделки",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/chto-proverit-pered-pokupkoy-kvartiri-ikakvipisat-prezhnih-zhiltsov-84b4da27",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T04:00:00+00:00"
+  },
+  {
+    "id": "rss612f9866e10ae51d",
+    "category": "Казахстан / ЦА",
+    "title": "Почему брендам нужен свой звук: история молодого саунд-дизайнера Юрия Спиридонова",
+    "summary": "Юрий Спиридонов — саунд-дизайнер и композитор, работающий с казахстанскими брендами и продакшнами. Он создавал звуковое оформление для рекламных кампаний CITIX, UMAMI и inDrive, а также работал над аниме из шести серий для KOTEX. В интервью для STEPPE Youth Юрий рассказал о своем пути в индустрии, особенностях работы со звуком, развитии саунд-дизай",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/steppe-youth/pochemu-brendam-nuzhen-svoj-zvuk-istorija-molodogo-saund-dizajnera-jurija-spiridonova",
     "date": "24.10.2026",
     "published_at": "2026-10-24T04:00:00+00:00"
   },
