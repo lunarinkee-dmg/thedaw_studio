@@ -1,5 +1,85 @@
 [
   {
+    "id": "rss1f4c78cd0e717648",
+    "category": "Казахстан / Новости",
+    "title": "12:15, 24 Октября 2026 День Республики отметили в Петропавловске: североказахстанцев наградили за вклад в развитие страны",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/den-respubliki-otmetili-v-petropavlovske-severokazahstantsev-nagradili-za-vklad--7e8e4b8a",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:15:00+00:00"
+  },
+  {
+    "id": "rss2c644403ea00da20",
+    "category": "Казахстан / Новости",
+    "title": "20 учебных центров и десятки профессий: чему учат солдат в армии Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/20-uchebnyih-tsentrov-desyatki-professiy-chemu-uchat-soldat-611578/",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:10:30+00:00"
+  },
+  {
+    "id": "rss395f3ebe7b4e49ad",
+    "category": "Казахстан / Новости",
+    "title": "12:03, 24 Октября 2026 Праздничный концерт, посвященный Дню Республики, состоялся в Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prazdnichniy-kontsert-posvyashenniy-dnyu-respubliki-sostoyalsya-v-almati-0d1680d0",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:03:00+00:00"
+  },
+  {
+    "id": "tg64d7551119a216662d",
+    "category": "Музыка / Рэп",
+    "title": "⚡️ EsDeeKid дропнул клип на новый трек «Bandit»",
+    "summary": "⚡️ EsDeeKid дропнул клип на новый трек «Bandit»\nБританский рэпер продолжает подогревать интерес к грядущему альбому, подробности которого пока держатся в секрете.\nПри этом EsDeeKid сохраняет высокие показатели на Spotify, имея 12,9 млн ежемесячных слушателей.\nКак вам? ❤️/👎\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/30874",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:02:06+00:00"
+  },
+  {
+    "id": "rss1fa7728002ebd9d4",
+    "category": "Казахстан / Новости",
+    "title": "12:00, 24 Октября 2026 Казахстан сегодня: от реформ — к ценностям",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-segodnya-otreform-ktsennostyam-788508ec",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:00:00+00:00"
+  },
+  {
+    "id": "rssc6f787873d064dff",
+    "category": "Казахстан / Новости",
+    "title": "11:58, 24 Октября 2026 Национальная одежда и сельский быт: как жили казахи 70 лет назад",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/natsionalnaya-odezhda-iselskiy-bit-kakzhili-kazahi-70-let-nazad-d74681c4",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T06:58:00+00:00"
+  },
+  {
+    "id": "rssbc1894c0e8aab631",
+    "category": "Казахстан / Новости",
+    "title": "Вдове Газиза Байтасова передали первую медаль, названную в его честь",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/vdove-gaziza-baytasova-peredali-pervuyu-medal-nazvannuyu-ego-611593/",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T06:46:02+00:00"
+  },
+  {
+    "id": "rss25617f246f11df58",
+    "category": "Казахстан / Новости",
+    "title": "11:44, 24 Октября 2026 От журналистики к сцене Индии: как Акмарал Кайназарова изменила судьбу индийского танца в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ot-zhurnalistiki-k-stsene-indii-kak-akmaral-kaynazarova-izmenila-sudbu-indiyskog-81ef7416",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T06:44:00+00:00"
+  },
+  {
     "id": "rss2f84a388df023900",
     "category": "Казахстан / Новости",
     "title": "11:30, 24 Октября 2026 Кинопремьеры недели: что смотреть в кинотеатрах Казахстана",
@@ -5268,15 +5348,5 @@
     "url": "https://t.me/toastermag/32595",
     "date": "17.10.2026",
     "published_at": "2026-10-17T08:04:57+00:00"
-  },
-  {
-    "id": "tg147551c4aa079330aa",
-    "category": "Музыка / Рэп",
-    "title": "🤯 Стример Agent был в шоке, когда увидел, что новая Tesla может ЛЕТАТЬ",
-    "summary": "🤯 Стример Agent был в шоке, когда увидел, что новая Tesla может ЛЕТАТЬ\nНедавно Илон Маск показал обновлённую Tesla Roadster с двигателями SpaceX. Во время демонстрации автомобиль взлетел с рампы, сделал сальто и переворот над другими Tesla.\nТакже заявлено, что Roadster разгоняется до 97 км/ч за 0,81 секунды и развивает скорость более 370 км/ч.\nПроизводство планируют запустить в 2028 году. Пока неизвестно, какими будут характеристики серийной модели и разрешат ли использовать её воздушные возможности на обычных дорогах.\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30736",
-    "date": "17.10.2026",
-    "published_at": "2026-10-17T07:01:27+00:00"
   }
 ]
