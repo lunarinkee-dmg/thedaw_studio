@@ -1,5 +1,35 @@
 [
   {
+    "id": "rssf837054ebf52e028",
+    "category": "Казахстан / Новости",
+    "title": "12:45, 24 Октября 2026 Мерей Маулитканов одержал победу на ЧМ по борьбе в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/merey-maulitkanov-oderzhal-pobedu-na-chm-po-borbe-v-astane-0e6eef31",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:45:00+00:00"
+  },
+  {
+    "id": "rssd6fa41779bb63db8",
+    "category": "Казахстан / Новости",
+    "title": "В Атырау нашли мёртвым чиновника – СМИ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/events/v-atyirau-nashli-mrtvyim-chinovnika-akimata-smi-611595/",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:29:14+00:00"
+  },
+  {
+    "id": "rssbe4d7c272895809f",
+    "category": "Казахстан / Новости",
+    "title": "12:29, 24 Октября 2026 Семья из ВКО знакомит туристов с искусством беркутчи",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/semya-iz-vko-znakomit-turistov-s-iskusstvom-berkutchi-2a24274e",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T07:29:00+00:00"
+  },
+  {
     "id": "rss1f4c78cd0e717648",
     "category": "Казахстан / Новости",
     "title": "12:15, 24 Октября 2026 День Республики отметили в Петропавловске: североказахстанцев наградили за вклад в развитие страны",
@@ -240,22 +270,22 @@
     "published_at": "2026-10-24T04:13:00+00:00"
   },
   {
-    "id": "rss612f9866e10ae51d",
-    "category": "Казахстан / ЦА",
-    "title": "Почему брендам нужен свой звук: история молодого саунд-дизайнера Юрия Спиридонова",
-    "summary": "Юрий Спиридонов — саунд-дизайнер и композитор, работающий с казахстанскими брендами и продакшнами. Он создавал звуковое оформление для рекламных кампаний CITIX, UMAMI и inDrive, а также работал над аниме из шести серий для KOTEX. В интервью для STEPPE Youth Юрий рассказал о своем пути в индустрии, особенностях работы со звуком, развитии саунд-дизай",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/steppe-youth/pochemu-brendam-nuzhen-svoj-zvuk-istorija-molodogo-saund-dizajnera-jurija-spiridonova",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T04:00:00+00:00"
-  },
-  {
     "id": "rssee3cd0d17a3b60b8",
     "category": "Казахстан / Новости",
     "title": "09:00, 24 Октября 2026 Покупка жилья на вторичном рынке в Казахстане: что нужно проверить до сделки",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/chto-proverit-pered-pokupkoy-kvartiri-ikakvipisat-prezhnih-zhiltsov-84b4da27",
+    "date": "24.10.2026",
+    "published_at": "2026-10-24T04:00:00+00:00"
+  },
+  {
+    "id": "rss612f9866e10ae51d",
+    "category": "Казахстан / ЦА",
+    "title": "Почему брендам нужен свой звук: история молодого саунд-дизайнера Юрия Спиридонова",
+    "summary": "Юрий Спиридонов — саунд-дизайнер и композитор, работающий с казахстанскими брендами и продакшнами. Он создавал звуковое оформление для рекламных кампаний CITIX, UMAMI и inDrive, а также работал над аниме из шести серий для KOTEX. В интервью для STEPPE Youth Юрий рассказал о своем пути в индустрии, особенностях работы со звуком, развитии саунд-дизай",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/steppe-youth/pochemu-brendam-nuzhen-svoj-zvuk-istorija-molodogo-saund-dizajnera-jurija-spiridonova",
     "date": "24.10.2026",
     "published_at": "2026-10-24T04:00:00+00:00"
   },
