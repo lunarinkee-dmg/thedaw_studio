@@ -1,5 +1,55 @@
 [
   {
+    "id": "rss881f2de415af77db",
+    "category": "Казахстан / Новости",
+    "title": "13:35, 25 Октября 2026 Торговля, образование и здравоохранение: главное в зарубежной прессе на казахском языке",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/torgovlya-obrazovanie-i-zdravoohranenie-glavnoe-v-zarubezhnoy-presse-na-kazahsko-1bfad3f7",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T08:35:00+00:00"
+  },
+  {
+    "id": "rsscae1aa403b49e9b9",
+    "category": "Казахстан / Новости",
+    "title": "Заморозки ожидаются в Астане и Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/zamorozki-ojidayutsya-v-astane-i-almatyi-611634/",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T08:33:00+00:00"
+  },
+  {
+    "id": "rss610ce0dbb1a7b59d",
+    "category": "Казахстан / Новости",
+    "title": "13:20, 25 Октября 2026 Евросоюз перешел на зимнее время",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/evrosoyuz-pereshel-na-zimnee-vremya-8a04dcc5",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T08:20:00+00:00"
+  },
+  {
+    "id": "tgb85885083b5d055eca",
+    "category": "Культура / Музыка",
+    "title": "Воскресенье — день талантов в TOASTER. По традиции, сегодня ты можешь поделиться своим творчеством в нашем чате",
+    "summary": "Воскресенье — день талантов в TOASTER. По традиции, сегодня ты можешь поделиться своим творчеством в нашем чате\nИ не забывай про правилам оформления, чтобы публикацию не удалили.\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32682",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T08:05:11+00:00"
+  },
+  {
+    "id": "rss45e81731bca5e252",
+    "category": "Казахстан / Новости",
+    "title": "13:05, 25 Октября 2026 Обязательный техосмотр: сколько стоит и что нужно знать казахстанцам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/obyazatelniy-tehosmotr-skolko-eto-stoit-ichto-nuzhno-znat-avtolyubitelyam-kazahs-b3711055",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T08:05:00+00:00"
+  },
+  {
     "id": "rssf32197c6ec64fd34",
     "category": "Казахстан / Новости",
     "title": "12:52, 25 Октября 2026 Почему рост экономики не ощущается сразу, объяснил финансовый аналитик",
@@ -6338,25 +6388,5 @@
     "url": "https://t.me/quicknrapp/30759",
     "date": "18.10.2026",
     "published_at": "2026-10-18T08:57:55+00:00"
-  },
-  {
-    "id": "rss252b61bcc0de1518",
-    "category": "Казахстан / Новости",
-    "title": "Россия может лишиться острова в Каспийском море",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/russia/rossiya-mojet-lishitsya-ostrova-v-kaspiyskom-more-611095/",
-    "date": "18.10.2026",
-    "published_at": "2026-10-18T08:28:55+00:00"
-  },
-  {
-    "id": "tg87c977fa0400de0583",
-    "category": "Культура / Музыка",
-    "title": "Воскресенье — день талантов в TOASTER. По традиции, сегодня ты можешь поделиться своим творчеством в нашем чате",
-    "summary": "Воскресенье — день талантов в TOASTER. По традиции, сегодня ты можешь поделиться своим творчеством в нашем чате\nИ не забывай про правилам оформления, чтобы публикацию не удалили.\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32609",
-    "date": "18.10.2026",
-    "published_at": "2026-10-18T08:04:02+00:00"
   }
 ]
