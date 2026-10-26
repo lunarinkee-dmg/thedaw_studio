@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss2703c38b6da6d4e5",
+    "category": "Казахстан / Новости",
+    "title": "06:30, 26 Октября 2026 Синоптики обратились к жителям Астаны, Алматы и еще пяти городов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sinoptiki-obratilis-k-zhitelyam-astani-almati-i-eshe-pyati-gorodov-225725ea",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T01:30:00+00:00"
+  },
+  {
+    "id": "rssb270e243087b487b",
+    "category": "Казахстан / Новости",
+    "title": "06:12, 26 Октября 2026 Буровая установка затонула у берегов Африки: пять человек пропали без вести",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/burovaya-ustanovka-zatonula-u-beregov-afriki-pyat-chelovek-propali-bez-vesti-ebaf16d1",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T01:12:00+00:00"
+  },
+  {
+    "id": "rssa705f1bb8502a950",
+    "category": "Казахстан / Новости",
+    "title": "Криминальный район? Как изменился Айнабулак за последние годы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/article/kriminalnyiy-rayon-izmenilsya-aynabulak-poslednie-godyi-4635/",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T01:02:00+00:00"
+  },
+  {
     "id": "rssae4c0a1d3645cca0",
     "category": "Казахстан / Новости",
     "title": "05:52, 26 Октября 2026 Лула да Силва переизбран президентом Бразилии",
@@ -8,6 +38,16 @@
     "url": "https://www.inform.kz/ru/lula-da-silva-pereizbran-prezidentom-brazilii-0117fd72",
     "date": "26.10.2026",
     "published_at": "2026-10-26T00:52:00+00:00"
+  },
+  {
+    "id": "rss234692f67fa9b015",
+    "category": "Казахстан / Новости",
+    "title": "Президентская гонка в Бразилии завершилась исторической победой Лулы да Силвы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/latin/prezidentskaya-gonka-brazilii-zavershilas-istoricheskoy-611659/",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T00:51:25+00:00"
   },
   {
     "id": "rssdbe970c01247a4c2",
@@ -6958,25 +6998,5 @@
     "url": "https://tengrinews.kz/kazakhstan_news/kakoy-budet-zima-2026-2027-v-kazahstane-611116/",
     "date": "19.10.2026",
     "published_at": "2026-10-19T03:51:02+00:00"
-  },
-  {
-    "id": "rssbd59c42d5a817335",
-    "category": "Казахстан / Новости",
-    "title": "Что общего между Q-pop и айтысом? Разбираем казахскую современную и традиционную музыку",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/obschego-q-pop-aytyisom-razbiraem-kazahskuyu-sovremennuyu-4607/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T01:31:00+00:00"
-  },
-  {
-    "id": "rss2ee58e887d36d99a",
-    "category": "Казахстан / Новости",
-    "title": "“Не нравится - увольняйся“: как казахстанцев заставляют работать бесплатно и можно ли наказать работодателя",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/ne-nravitsya-uvolnyaysya-kazahstantsev-zastavlyayut-rabotat-4597/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T01:05:00+00:00"
   }
 ]
