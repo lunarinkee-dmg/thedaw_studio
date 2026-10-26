@@ -1,5 +1,55 @@
 [
   {
+    "id": "rss2270987288ee3997",
+    "category": "Казахстан / Новости",
+    "title": "15:44, 26 Октября 2026 Землетрясение магнитудой 4,7 произошло в Китае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-47-proizoshlo-v-kitae-8bc0196f",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T10:44:00+00:00"
+  },
+  {
+    "id": "rssc8129dac926cdebb",
+    "category": "Казахстан / Новости",
+    "title": "15:33, 26 Октября 2026 Поражение партии Вучича на выборах в Сербии прокомментировали в ЕС",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/porazhenie-partii-vuchicha-na-viborah-v-serbii-prokommentirovali-v-es-ea5a94d4",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T10:33:00+00:00"
+  },
+  {
+    "id": "rss8c906345176a7362",
+    "category": "Казахстан / Новости",
+    "title": "15:20, 26 Октября 2026 Грузовик врезался в остановку после столкновения с легковым авто в Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/gruzovik-vrezalsya-v-ostanovku-posle-stolknoveniya-s-legkovushkoy-v-almati-5fd42cb3",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T10:20:00+00:00"
+  },
+  {
+    "id": "rssa357b635f082f44c",
+    "category": "Казахстан / Новости",
+    "title": "“Подглядывал и снимал на камеру в женском туалете“. Парня задержали в торговом центре Атырау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/podglyadyival-snimal-kameru-jenskom-tualete-parnya-zaderjali-611669/",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T10:16:57+00:00"
+  },
+  {
+    "id": "rssf20490af3f621e72",
+    "category": "Казахстан / Новости",
+    "title": "15:11, 26 Октября 2026 Багдат Сабаз уступил олимпийскому чемпиону на ЧМ по борьбе в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bagdat-sabaz-ustupil-olimpiyskomu-chempionu-na-chm-po-borbe-v-astane-c437f9e2",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T10:11:00+00:00"
+  },
+  {
     "id": "rssf9590b4f66cefd72",
     "category": "Казахстан / Новости",
     "title": "15:00, 26 Октября 2026 «Лица республики»: человек, который спасает архаров и хранит природу Казахстана",
@@ -22,7 +72,7 @@
   {
     "id": "rss669c210f53c8325e",
     "category": "Казахстан / Новости",
-    "title": "14:40, 26 Октября 2026 Поклонники Димаша Кудайбергена пожертвовали 3 тысячи евро на благотворительность в Испании",
+    "title": "14:40, 26 Октября 2026 Испанские поклонники Димаша Кудайбергена поддержали людей с нарушениями слуха и зрения",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/poklonniki-dimasha-kudaybergena-pozhertvovali-3-tisyachi-evro-nablagotvoritelnos-53a57adf",
@@ -7338,15 +7388,5 @@
     "url": "https://t.me/quicknrapp/30774",
     "date": "19.10.2026",
     "published_at": "2026-10-19T11:10:25+00:00"
-  },
-  {
-    "id": "rssc6f7d56fb8a80c9f",
-    "category": "Казахстан / ЦА",
-    "title": "У киноальманаха «Алматы, мен сені сүйемін» состоялся цифровой релиз",
-    "summary": "Независимый казахстанский киноальманах «Алматы, мен сені сүйемін» стал доступен для онлайн-просмотра. Фильм состоит из шести художественных новелл, объединённых темами любви и Алматы. Сообщение У киноальманаха «Алматы, мен сені сүйемін» состоялся цифровой релиз появились сначала на 98mag .",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/kultura/u-kinoalmanaha-almaty-men-seni-sujemin-sostoyalsya-czifrovoj-reliz/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T10:45:49+00:00"
   }
 ]
