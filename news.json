@@ -1,5 +1,45 @@
 [
   {
+    "id": "rss1432abfed01a82ea",
+    "category": "Казахстан / Новости",
+    "title": "13:15, 26 Октября 2026 Люди Республики: как ученые Казахстана разрабатывают материалы для энергетики будущего",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/lyudi-respubliki-kakuchenie-kazahstana-razrabativayut-materiali-dlyaenergetiki-b-c65b199f",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T08:15:00+00:00"
+  },
+  {
+    "id": "rss7fa96d717f38f0c3",
+    "category": "Казахстан / Новости",
+    "title": "В Грузии оппозиция объявила о начале новой волны массовых протестов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/gruzii-oppozitsiya-obyyavila-nachale-novoy-volnyi-massovyih-611663/",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T08:08:26+00:00"
+  },
+  {
+    "id": "rss732f8ad1b1544a98",
+    "category": "Казахстан / Новости",
+    "title": "13:00, 26 Октября 2026 За что казахи давали «теріс бата» и почему этого боялись",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/za-chto-kazahi-davali-ters-bata-i-pochemu-etogo-boyalis-cfef6ef5",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T08:00:00+00:00"
+  },
+  {
+    "id": "rss9152b15dec5c4105",
+    "category": "Казахстан / Новости",
+    "title": "12:45, 26 Октября 2026 Школьник из Петропавловска разработал ИИ-помощника для пожилых, вызывающего скорую при падении",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/shkolnik-izpetropavlovska-razrabotal-ii-pomoshnika-dlyapozhilih-vizivayushego-sk-e2e02ea5",
+    "date": "26.10.2026",
+    "published_at": "2026-10-26T07:45:00+00:00"
+  },
+  {
     "id": "rss3b4a2273ea3dd78b",
     "category": "Казахстан / Новости",
     "title": "12:20, 26 Октября 2026 Троих подозреваемых в нападении на церковь задержали в Иордании",
@@ -390,22 +430,22 @@
     "published_at": "2026-10-25T23:48:00+00:00"
   },
   {
-    "id": "rssbc57a06c0fb434a5",
-    "category": "Казахстан / Новости",
-    "title": "04:17, 26 Октября 2026 Мбаппе забил 100-й гол за «Реал» в матче с «Барселоной»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mbappe-zabil-100-y-gol-za-real-v-matche-s-barselonoy-99fa7b8c",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T23:17:00+00:00"
-  },
-  {
     "id": "rssd1e9859a66d941c8",
     "category": "Казахстан / Новости",
     "title": "“Как одна семья“: что изменилось в жизни села в Алматинской области без алкоголя",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/kazakhstan_news/kak-odna-semya-izmenilos-jizni-sela-almatinskoy-oblasti-611655/",
+    "date": "25.10.2026",
+    "published_at": "2026-10-25T23:17:00+00:00"
+  },
+  {
+    "id": "rssbc57a06c0fb434a5",
+    "category": "Казахстан / Новости",
+    "title": "04:17, 26 Октября 2026 Мбаппе забил 100-й гол за «Реал» в матче с «Барселоной»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mbappe-zabil-100-y-gol-za-real-v-matche-s-barselonoy-99fa7b8c",
     "date": "25.10.2026",
     "published_at": "2026-10-25T23:17:00+00:00"
   },
@@ -7238,45 +7278,5 @@
     "url": "https://tengrinews.kz/around-the-world/samolet-s7-airlines-podavshiy-signal-bedstviya-kazahstanom-611151/",
     "date": "19.10.2026",
     "published_at": "2026-10-19T08:39:49+00:00"
-  },
-  {
-    "id": "rsse66958d481dbf641",
-    "category": "Казахстан / ЦА",
-    "title": "Aiqap сняли клип о женской дружбе и тоске",
-    "summary": "Алматинская инди-группа Aiqap выпустила клип на песню «BOLASHAQ NOSTALGIA» — заглавный трек будущего альбома «JÜREK JELISI». Главные роли в видео исполнили казахстанские актрисы Тамирис Жангазинова и Еңлік Қозыке. Режиссёркой клипа стала Севиль Байрамова, а для продюсерки Қырмызы Жауһарқызы эта работа стала дебютом в музыкальных видео. Сообщение Ai",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/kultura/aiqap-snyali-klip-o-zhenskoj-druzhbe-i-toske/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T08:09:51+00:00"
-  },
-  {
-    "id": "rsscb60ced2f999e25c",
-    "category": "Казахстан / ЦА",
-    "title": "Как прошёл первый концерт Шакиры в Центральной Азии",
-    "summary": "Колумбийская певица Шакира 18 октября выступила на стадионе «Бишкек Арена» в Кыргызстане. Концерт прошёл в рамках мирового тура Las Mujeres Ya No Lloran World Tour и стал первым выступлением артистки в Центральной Азии. На шоу приехали поклонники из 33 стран, большинство — из Казахстана, России и Узбекистана. Сообщение Как прошёл первый концерт Шак",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/gorod/kak-proshyol-pervyj-konczert-shakiry-v-czentralnoj-azii/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T08:03:36+00:00"
-  },
-  {
-    "id": "rss3341bd0616fac7e8",
-    "category": "Казахстан / Новости",
-    "title": "Российский самолет подал сигнал бедствия в небе над Казахстаном",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/rossiyskiy-samolet-podal-signal-bedstviya-nebe-kazahstanom-611148/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T08:01:42+00:00"
-  },
-  {
-    "id": "rss627f0f837887e47f",
-    "category": "Казахстан / ЦА",
-    "title": "Казахстанская команда завоевала бронзу Pentawards за проект SAF Qymyz",
-    "summary": "Казахстанский проект SAF Qymyz получил бронзовую награду международной премии Pentawards 2026 в категории Brand Identity & Connected Packaging. Концепцию упаковки разработала бренд-стратегиня Ырысты Ерден вместе с командой дизайнеров и копирайтеров. Победителей объявили 16 октября на церемонии в Лондоне. Сообщение Казахстанская команда завоевала бр",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/biznes/kazahstanskaya-komanda-zaviyevala-bronzu-pentawards/",
-    "date": "19.10.2026",
-    "published_at": "2026-10-19T07:58:52+00:00"
   }
 ]
