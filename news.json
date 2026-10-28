@@ -1,5 +1,55 @@
 [
   {
+    "id": "rss5af578e89b230c0e",
+    "category": "Казахстан / Новости",
+    "title": "Пожар вспыхнул в кафе в Шымкенте",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/pojar-vspyihnul-v-kafe-v-shyimkente-611854/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T18:07:18+00:00"
+  },
+  {
+    "id": "rss0cef382489cafd5f",
+    "category": "Казахстан / Новости",
+    "title": "23:01, 28 Октября 2026 Землетрясение магнитудой 5,1 произошло в Китае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-51-proizoshlo-v-kitae-7b55dba4",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T18:01:00+00:00"
+  },
+  {
+    "id": "rss95be025fd8397473",
+    "category": "Казахстан / Новости",
+    "title": "22:50, 28 Октября 2026 Послание Токаева открывает новые возможности для сотрудничества Казахстана и Азербайджана — эксперт из Баку",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/poslanie-tokaeva-otkrivaet-novie-vozmozhnosti-dlyasotrudnichestva-kazahstana-iaz-3d940807",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T17:50:00+00:00"
+  },
+  {
+    "id": "rssd095972f56a9c9e0",
+    "category": "Казахстан / Новости",
+    "title": "22:39, 28 Октября 2026 Заморозки до 6 градусов и сильный ветер ожидаются в Казахстане 29 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zamorozki-do-6-gradusov-i-silniy-veter-ozhidayutsya-v-kazahstane-29-oktyabrya-f60f8ac9",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T17:39:00+00:00"
+  },
+  {
+    "id": "rss77ac2118c8730d2a",
+    "category": "Казахстан / Новости",
+    "title": "22:28, 28 Октября 2026 Видеоотзывы о книгах сделали казахстанскую читательницу популярной в соцсетях",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/videootzivi-oknigah-sdelali-kazahstanskuyu-chitatelnitsu-populyarnoy-vsotssetyah-38d04ed3",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T17:28:00+00:00"
+  },
+  {
     "id": "tg30ade7ce4051965004",
     "category": "Музыка / Рэп",
     "title": "🟢 Ровно 2 года назад Tyler, The Creator выпустил альбом «CHROMAKOPIA».",
@@ -12118,25 +12168,5 @@
     "url": "https://t.me/quicknrapp/30834",
     "date": "21.10.2026",
     "published_at": "2026-10-21T19:10:28+00:00"
-  },
-  {
-    "id": "rss85cf6b68f702edcd",
-    "category": "Казахстан / Новости",
-    "title": "В два этапа: срочную службу изменят в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/dva-etapa-srochnuyu-slujbu-kardinalno-izmenyat-kazahstane-611404/",
-    "date": "21.10.2026",
-    "published_at": "2026-10-21T18:00:38+00:00"
-  },
-  {
-    "id": "tg7e132b137df8ddfa7c",
-    "category": "Музыка / Рэп",
-    "title": "🚘 Travis Scott пополнил коллекцию четырьмя винтажными автомобилями.",
-    "summary": "🚘 Travis Scott пополнил коллекцию четырьмя винтажными автомобилями.\nСреди новых приобретений — легендарный Lamborghini Countach 1989 года, два классических Chevrolet и Ford Fairlane 1957 года.\nРэпер увлекается не только дорогими суперкарами, но и ретроавтомобилями с историей.\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30828",
-    "date": "21.10.2026",
-    "published_at": "2026-10-21T17:31:25+00:00"
   }
 ]
