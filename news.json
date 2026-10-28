@@ -1,5 +1,85 @@
 [
   {
+    "id": "rss6a1431048142c915",
+    "category": "Казахстан / Новости",
+    "title": "08:52, 28 Октября 2026 В Казахстане обследовали 138 гидротехнических сооружений за три года",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vkazahstane-obsledovali-138-gidrotehnicheskih-sooruzheniy-zatri-goda-a3b4119a",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:52:00+00:00"
+  },
+  {
+    "id": "rssc985cc011b161508",
+    "category": "Казахстан / Новости",
+    "title": "США готовятся к “короткой и интенсивной“ операции против Ирана - СМИ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/ssha-gotovyatsya-korotkoy-intensivnoy-operatsii-protiv-irana-611765/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:41:06+00:00"
+  },
+  {
+    "id": "rss2e7192285b3222ca",
+    "category": "Казахстан / Новости",
+    "title": "Самый высокогорный мост Казахстана показали на видео",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/samyiy-vyisokogornyiy-most-kazahstana-pokazali-na-video-611738/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:41:00+00:00"
+  },
+  {
+    "id": "rss2a35f0296093a7cb",
+    "category": "Казахстан / Новости",
+    "title": "08:40, 28 Октября 2026 Мировые цены на нефть выросли 28 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mirovie-tseni-na-neft-virosli-28-oktyabrya-ac7fe095",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:40:00+00:00"
+  },
+  {
+    "id": "rss7833d85471fa2d1c",
+    "category": "Казахстан / Новости",
+    "title": "08:31, 28 Октября 2026 Курсы валют в обменниках Астаны и Алматы на 28 октября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-28-oktyabrya-b78633a3",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:31:00+00:00"
+  },
+  {
+    "id": "rss5f98c909c70af465",
+    "category": "Казахстан / Новости",
+    "title": "08:21, 28 Октября 2026 «ҚазАвтоЖол» и синдикат казахстанских банков подписали кредитное соглашение на сумму до $700 млн",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazavtozhol-isindikat-kazahstanskih-bankov-podpisali-kreditnoe-soglashenie-nasum-3bb0871f",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:21:00+00:00"
+  },
+  {
+    "id": "rssed5443600c864f22",
+    "category": "Казахстан / Новости",
+    "title": "Трамп предложил включить Венесуэлу в состав США",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/tramp-predlojil-vklyuchit-venesuelu-v-sostav-ssha-611763/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:20:19+00:00"
+  },
+  {
+    "id": "rss5687d8824163c36a",
+    "category": "Казахстан / Новости",
+    "title": "08:10, 28 Октября 2026 28 октября. Календарь Казинформа «Дни рождения»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/28-oktyabrya-kalendar-kazinforma-dni-rozhdeniya-2e754399",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T03:10:00+00:00"
+  },
+  {
     "id": "rss603537df7ef9edc8",
     "category": "Казахстан / Новости",
     "title": "WD-40: что это на самом деле и как не навредить машине",
@@ -32,7 +112,7 @@
   {
     "id": "rss989ff38671ccdef4",
     "category": "Казахстан / Новости",
-    "title": "Трансляция ежегодного послания народу Казахстана начнется в 11:00",
+    "title": "Трансляция ежегодного Послания народу Казахстана начнется в 11:00",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/kazakhstan_news/translyatsiya-ejegodnogo-poslaniya-narodu-kazahstana-611764/",
