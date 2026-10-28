@@ -1,5 +1,455 @@
 [
   {
+    "id": "rss0738ffa6fde6c173",
+    "category": "Казахстан / Новости",
+    "title": "12:23, 28 Октября 2026 Депозиты казахстанцев достигли рекордных 52 триллионов теңге — Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/depoziti-kazahstantsev-dostigli-rekordnih-52-trillionov-tenge-tokaev-1093aad7",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:23:00+00:00"
+  },
+  {
+    "id": "rssf254b3020e6d24e4",
+    "category": "Казахстан / Новости",
+    "title": "Минимальную зарплату повысят до 110 тысяч теңге в 2027 году – Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/minimalnuyu-zarplatu-povyisyat-100-tyisyach-tenge-2027-godu-611784/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:21:19+00:00"
+  },
+  {
+    "id": "rss556c27813547ed1b",
+    "category": "Казахстан / Новости",
+    "title": "12:21, 28 Октября 2026 Глава государства предложил внедрить английскую модель правосудия в Алатау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/glava-gosudarstva-predlozhil-vnedrit-angliyskuyu-model-pravosudiya-valatau-b8687d81",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:21:00+00:00"
+  },
+  {
+    "id": "rss830d3056ada5febd",
+    "category": "Казахстан / Новости",
+    "title": "12:20, 28 Октября 2026 Гражданам Таджикистана младше 18 лет запретили выезжать на заработки за границу",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/grazhdanam-tadzhikistana-mladshe-18-let-zapretili-viezzhat-nazarabotki-zagranits-ef3831ff",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:20:00+00:00"
+  },
+  {
+    "id": "rss240b58a720878b5e",
+    "category": "Казахстан / Новости",
+    "title": "12:20, 28 Октября 2026 Президент анонсировал упрощенный правовой режим цифровой занятости в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-anonsiroval-uproshenniy-pravovoy-rezhim-tsifrovoy-zanyatosti-v-kazahst-4d0ac747",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:20:00+00:00"
+  },
+  {
+    "id": "rssedbc73036b257189",
+    "category": "Казахстан / Новости",
+    "title": "Мнимая доброта и популизм: Токаев о социальных выплатах в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/mnimaya-dobrota-populizm-tokaev-sotsialnyih-vyiplatah-611801/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:19:49+00:00"
+  },
+  {
+    "id": "rss7741fe93b62576c7",
+    "category": "Казахстан / Новости",
+    "title": "Токаев поручил прислушаться к бизнесу и изменить Налоговый кодекс",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-poruchil-prislushatsya-biznesu-izmenit-nalogovyiy-611798/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:19:40+00:00"
+  },
+  {
+    "id": "rss6a63c9ce970891ef",
+    "category": "Казахстан / Новости",
+    "title": "12:19, 28 Октября 2026 Президент Казахстана предложил объявить следующий год Годом масштабного строительства",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-predlozhil-obyavit-sleduyushiy-god-godom-masshtabnogo-stroi-bba2471a",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:19:00+00:00"
+  },
+  {
+    "id": "rsse3ba943a2975bb7e",
+    "category": "Казахстан / Новости",
+    "title": "Токаев дал поручение правительству и Нацбанку по инфляции",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-dal-poruchenie-pravitelstvu-i-natsbanku-po-inflyatsii-611797/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:18:55+00:00"
+  },
+  {
+    "id": "rssd71ce8914bbac15f",
+    "category": "Казахстан / Новости",
+    "title": "12:16, 28 Октября 2026 Специальный план развития среднего бизнеса разработают в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/spetsialniy-plan-razvitiya-srednego-biznesa-razrabotayut-v-kazahstane-a2c32bc2",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:16:00+00:00"
+  },
+  {
+    "id": "rssae8f01e367054de7",
+    "category": "Казахстан / Новости",
+    "title": "12:15, 28 Октября 2026 Президент РК поручил принять меры по дальнейшей декриминализации экономических правонарушений",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-rk-poruchil-prinyat-meri-po-dalneyshey-dekriminalizatsii-ekonomicheski-ff091c1a",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:15:00+00:00"
+  },
+  {
+    "id": "rssa70e3bc3b98796f4",
+    "category": "Казахстан / Новости",
+    "title": "12:14, 28 Октября 2026 Цифровые проекты для сбыта продукции сельских производителей запустят в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tsifrovie-proekti-dlya-sbita-produktsii-selskih-proizvoditeley-zapustyat-v-kazah-dd0724ab",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:14:00+00:00"
+  },
+  {
+    "id": "rssec3fa4703a315e7b",
+    "category": "Казахстан / Новости",
+    "title": "12:11, 28 Октября 2026 Развивать глубокую переработку сельхозпродукции призвал Касым-Жомарт Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/razvivat-glubokuyu-pererabotku-selhozproduktsii-prizval-kasim-zhomart-tokaev-37090f62",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:11:00+00:00"
+  },
+  {
+    "id": "rss064fdcbb1fdb95f9",
+    "category": "Казахстан / Новости",
+    "title": "12:10, 28 Октября 2026 Президент Казахстана заявил о необходимости создать единую систему управления инвестициями",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-zayavil-oneobhodimosti-sozdat-edinuyu-sistemu-upravleniya-i-d3074e8e",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:10:00+00:00"
+  },
+  {
+    "id": "rssb30118da08c4025b",
+    "category": "Казахстан / Новости",
+    "title": "12:08, 28 Октября 2026 Восемь медалей завоевал Казахстан на молодежном чемпионате мира по боксу",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vosem-medaley-zavoeval-kazahstan-na-molodezhnom-chempionate-mira-po-boksu-0081629d",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:08:00+00:00"
+  },
+  {
+    "id": "rsscb5ef7874fbd3081",
+    "category": "Казахстан / Новости",
+    "title": "Токаев рассказал, как казахстанцы смогут стать совладельцами компаний",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/tokaev-rasskazal-kazahstantsyi-smogut-stat-sovladeltsami-611800/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:07:37+00:00"
+  },
+  {
+    "id": "rss2c305e0517e4cf18",
+    "category": "Казахстан / Новости",
+    "title": "12:06, 28 Октября 2026 Президент Казахстана поручил усилить контроль за водопотреблением",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-poruchil-usilit-kontrol-za-vodopotrebleniem-c4dfa62d",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:06:00+00:00"
+  },
+  {
+    "id": "rss9dff898e195f8707",
+    "category": "Казахстан / Новости",
+    "title": "12:05, 28 Октября 2026 Обновить подходы к геологоразведке призвал Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/obnovit-podhodi-kgeologorazvedke-prizval-tokaev-99cb72bb",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:05:00+00:00"
+  },
+  {
+    "id": "rss6927a2ea4a01001d",
+    "category": "Казахстан / Новости",
+    "title": "12:04, 28 Октября 2026 Президент Казахстана предложил ввести мораторий на проверки малого бизнеса с 2027 года",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-predlozhil-vvesti-moratoriy-naproverki-malogo-biznesa-s2027-d936fd47",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:04:00+00:00"
+  },
+  {
+    "id": "rss403f37b3fcca3083",
+    "category": "Казахстан / Новости",
+    "title": "Студентов КазНУ эвакуировали: что говорят в полиции",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/studentov-kaznu-evakuirovali-chto-govoryat-v-politsii-611793/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:04:00+00:00"
+  },
+  {
+    "id": "tg3aa3d4ab94251748d8",
+    "category": "Музыка / Рэп",
+    "title": "😭 A$AP Rocky: «Все эти мазафакеры хотят одеваться как я»",
+    "summary": "😭 A$AP Rocky: «Все эти мазафакеры хотят одеваться как я»\n*Kendrick появляется в таком же образе, как у Rocky*\nНа днях треку A$AP Rocky «F**kin’ Problems» при участии Drake, 2 Chainz и Kendrick Lamar исполнилось 14 лет.\n⠀\nПесня стала одним из главных хитов ранней карьеры Rocky, получила номинацию на «Грэмми» в категории «Лучшая рэп-песня» и остаётся одной из самых культовых рэп-коллабораций 2010-х.\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/30931",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:03:27+00:00"
+  },
+  {
+    "id": "rssaf859a2a61ff90cb",
+    "category": "Казахстан / Новости",
+    "title": "Токаев объявил 2027-й Годом масштабного строительства",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-obyyavil-2027-god-godom-masshtabnogo-stroitelstva-611799/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:02:04+00:00"
+  },
+  {
+    "id": "rss9e57b7a784e3f700",
+    "category": "Казахстан / Новости",
+    "title": "12:02, 28 Октября 2026 Токаев усомнился в востребованности продукции новых металлургических заводов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-usomnilsya-vvostrebovannosti-produktsii-novih-metallurgiche-e9286ed2",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:02:00+00:00"
+  },
+  {
+    "id": "rsse271c6680087a25e",
+    "category": "Казахстан / Новости",
+    "title": "В Алатау создадут инвестиционный суд – Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/v-alatau-sozdadut-investitsionnyiy-sud-tokaev-611794/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:01:27+00:00"
+  },
+  {
+    "id": "rss309f8bbab1baf86b",
+    "category": "Казахстан / Новости",
+    "title": "“Пока у нас больше слов, чем дела“: Токаев раскритиковал ход цифровизации",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/poka-nas-slov-dela-tokaev-raskritikoval-hod-tsifrovizatsii-611796/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:00:36+00:00"
+  },
+  {
+    "id": "rsscbf84d75fd59027e",
+    "category": "Казахстан / Новости",
+    "title": "12:00, 28 Октября 2026 Зараженные гранаты, пшеницу и пиломатериалы пытались ввезти в Казахстан",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zarazhennie-granati-pshenitsu-i-pilomateriali-pitalis-vvezti-v-kazahstan-94f05dac",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T07:00:00+00:00"
+  },
+  {
+    "id": "rss75af6eeb2a867deb",
+    "category": "Казахстан / Новости",
+    "title": "11:59, 28 Октября 2026 Более 500 млрд теңге планируют направить на проекты в пищевой промышленности Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-500mlrd-tenge-planiruyut-napravit-naproekti-vpishevoy-promishlennosti-kaza-28ae2ab0",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:59:00+00:00"
+  },
+  {
+    "id": "rss12baab7bd262ead8",
+    "category": "Казахстан / Новости",
+    "title": "11:56, 28 Октября 2026 Токаев поручил обеспечить фермеров новой масштабной системой долгосрочного финансирования",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tokaev-poruchil-obespechit-fermerov-novoy-masshtabnoy-sistemoy-dolgosrochnogo-fi-43bbae5f",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:56:00+00:00"
+  },
+  {
+    "id": "rssf9bf56478bf6cad9",
+    "category": "Казахстан / Новости",
+    "title": "11:54, 28 Октября 2026 Вся страна займется тотальным обновлением гражданской инфраструктуры — Касым-Жомарт Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vsya-strana-zaymetsya-totalnim-obnovleniem-grazhdanskoy-infrastrukturi-kasim-zho-55b8f31d",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:54:00+00:00"
+  },
+  {
+    "id": "rssa8742572b4f0bb18",
+    "category": "Казахстан / Новости",
+    "title": "Токаев предложил обсудить введение моратория на проверки бизнеса с 2027 года",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-predlojil-obsudit-vvedenie-moratoriya-proverki-611795/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:53:49+00:00"
+  },
+  {
+    "id": "rssb448c3a8c5226c4d",
+    "category": "Казахстан / Новости",
+    "title": "“Это абсурд“: Токаев об использовании питьевой воды на автомойках",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/eto-absurd-tokaev-ispolzovanii-pitevoy-vodyi-avtomoykah-611791/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:52:24+00:00"
+  },
+  {
+    "id": "rss40e1a5edfa4173cd",
+    "category": "Казахстан / Новости",
+    "title": "11:52, 28 Октября 2026 От теленка до прилавка: из чего складывается цена казахстанской говядины",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ot-telenka-doprilavka-izchego-skladivaetsya-tsena-kazahstanskoy-govyadini-d158d177",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:52:00+00:00"
+  },
+  {
+    "id": "rss852d3e0391635b16",
+    "category": "Казахстан / Новости",
+    "title": "11:50, 28 Октября 2026 Президент Казахстана: Наступившие реалии — это по-сути «эра электричества»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tokaev-nastupivshie-realii-eto-po-suti-era-elektrichestva-5117f01f",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:50:00+00:00"
+  },
+  {
+    "id": "rss9851f882f8c2dc9b",
+    "category": "Казахстан / Новости",
+    "title": "11:49, 28 Октября 2026 Токаев анонсировал подписание соглашения о комплексном сотрудничестве с целью начала строительства АЭС «Мойынкум»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-rkdopustil-nachalo-stroitelstva-aes-balhash-vsleduyushem-godu-d2c7b5fc",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:49:00+00:00"
+  },
+  {
+    "id": "rsscec11ab185b81606",
+    "category": "Казахстан / Новости",
+    "title": "“Устроили настоящий “футбол“ - Токаев раскритиковал чиновников из-за дорог",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/ustroili-nastoyaschiy-futbol-tokaev-raskritikoval-611789/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:47:03+00:00"
+  },
+  {
+    "id": "rssa17e39c2a67e292d",
+    "category": "Казахстан / Новости",
+    "title": "11:45, 28 Октября 2026 Казахстан должен добиться устойчивого энергопрофицита к 2029 году — Президент",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tokaev-oboznachil-zadachu-k2029-godu-dobitsya-ustoychivogo-energoprofitsita-c3aecca0",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:45:00+00:00"
+  },
+  {
+    "id": "rss72021438740b9383",
+    "category": "Казахстан / Новости",
+    "title": "11:43, 28 Октября 2026 Это абсурд: Президент Казахстана высказался о бумажных накладных в эпоху ИИ в сфере логистики",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/eto-absurd-prezident-kazahstana-viskazalsya-obumazhnih-nakladnih-vepohu-ii-v-sfe-d366a1eb",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:43:00+00:00"
+  },
+  {
+    "id": "rss0c7981e7fea5584e",
+    "category": "Казахстан / Новости",
+    "title": "Токаев предложил начать строительство АЭС “Балхаш“ в следующем году",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-predlojil-nachat-stroitelstvo-aes-balhash-611792/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:41:37+00:00"
+  },
+  {
+    "id": "rss011dc0d70848c8a6",
+    "category": "Казахстан / Новости",
+    "title": "“Вот такой простенький бизнес“: Токаев высказался о закупках электроэнергии за рубежом",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/vot-prostenkiy-biznes-tokaev-vyiskazalsya-zakupkah-611785/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:37:57+00:00"
+  },
+  {
+    "id": "rss627603a783cb0b34",
+    "category": "Казахстан / Новости",
+    "title": "ВВП на душу населения в Казахстане превысит 19 тысяч долларов — Токаев озвучил прогноз",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/vvp-dushu-naseleniya-kazahstane-prevyisit-19-tyisyach-611790/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:32:58+00:00"
+  },
+  {
+    "id": "rsse26c70a1d5b1f0b9",
+    "category": "Казахстан / Новости",
+    "title": "“Решений, как и результатов, пока нет“ – Президент о компании Air Cargo",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/resheniy-i-rezultatov-poka-net-prezident-kompanii-air-cargo-611780/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:31:31+00:00"
+  },
+  {
+    "id": "rss48b2c2933c2dd54b",
+    "category": "Казахстан / Новости",
+    "title": "Из Нацфонда выделят 6,5 триллиона теңге на строительство инфраструктуры – Президент",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/natsfonda-vyidelyat-65-trilliona-tenge-stroitelstvo-611782/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:25:43+00:00"
+  },
+  {
+    "id": "rsscc0695e831764359",
+    "category": "Казахстан / Новости",
+    "title": "Президент Казахстана заявил об упадке авторитета ООН и кризисе международного права",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/prezident-kazahstana-zayavil-upadke-avtoriteta-oon-krizise-611786/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:24:16+00:00"
+  },
+  {
+    "id": "rss4564462a4e46c98a",
+    "category": "Казахстан / Новости",
+    "title": "“Смысл и содержание этого Послания особые“: Токаев обратился к казахстанцам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/smyisl-soderjanie-poslaniya-osobyie-tokaev-obratilsya-611781/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:22:28+00:00"
+  },
+  {
+    "id": "rss00378907d2d0261a",
+    "category": "Казахстан / Новости",
+    "title": "Предлагают низкие цены и просят предоплату - МВД предупредило о мошенничестве при покупке зимних шин",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autonews/predlagayut-nizkie-tsenyi-prosyat-predoplatu-mvd-611779/",
+    "date": "28.10.2026",
+    "published_at": "2026-10-28T06:19:04+00:00"
+  },
+  {
     "id": "rssd54b346f8303b47d",
     "category": "Казахстан / Новости",
     "title": "11:10, 28 Октября 2026 Земельные участки на берегу Каспия вернули государству",
@@ -10248,25 +10698,5 @@
     "url": "https://tengrinews.kz/kazakhstan_news/kazahstantsam-predlojat-millionyi-tenge-za-pereezd-611352/",
     "date": "21.10.2026",
     "published_at": "2026-10-21T07:30:57+00:00"
-  },
-  {
-    "id": "rss41c42e2740e242b7",
-    "category": "Казахстан / ЦА",
-    "title": "В Казахстане выйдет фильм «Увидеть всё» Нэйтана Филдера и Лэнса Оппенхайма",
-    "summary": "В Казахстане 19 ноября состоится премьера документального фильма «Увидеть всё» («You Can See Everything») Нэйтана Филдера и Лэнса Оппенхайма. Картина рассказывает об Элизабет Холмс, основательнице биотехнологического стартапа Theranos, которую признали виновной в мошенничестве с инвесторами. Фильм охватывает последний месяц её жизни на свободе. Соо",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/kultura/v-kazahstane-vyjdet-film-uvidet-vsyo-nejtana-fildera-i-lensa-oppenhajma/",
-    "date": "21.10.2026",
-    "published_at": "2026-10-21T07:02:45+00:00"
-  },
-  {
-    "id": "tge0573ee6e4a2f65545",
-    "category": "Музыка / Рэп",
-    "title": "😤 Spotify борется с ИИ музыкой",
-    "summary": "😤 Spotify борется с ИИ музыкой\nСтриминг удалил из рекомендаций более 50 миллионов ИИ-треков и спама, а ещё 75 миллионов спам-релизов — с самой платформы.\nПрофили артистов с меткой «AI Persona» теперь по умолчанию исключены из редакционных и алгоритмических рекомендаций. Spotify обновляет алгоритмы, чтобы отдавать приоритет музыке настоящих артистов.\nВ основе этой работы лежит один принцип: человеческое творчество должно быть на первом месте\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30821",
-    "date": "21.10.2026",
-    "published_at": "2026-10-21T07:01:51+00:00"
   }
 ]
