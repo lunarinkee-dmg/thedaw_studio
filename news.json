@@ -1,5 +1,85 @@
 [
   {
+    "id": "rssab16e9785ba8d198",
+    "category": "Казахстан / Новости",
+    "title": "09:54, 29 Октября 2026 Первый Airbus A340 для грузовых перевозок ожидается в Казахстане в ноябре",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/perviy-airbus-a340-dlya-gruzovih-perevozok-ozhidaetsya-v-kazahstane-v-noyabre-23859150",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:54:00+00:00"
+  },
+  {
+    "id": "rssf3bbe7d9b363a592",
+    "category": "Казахстан / Новости",
+    "title": "09:46, 29 Октября 2026 Аральско-Каспийскую магистраль планируется завершить до конца 2028 года — Минтранспорта РК",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/aralsko-kaspiyskuyu-magistral-planiruetsya-zavershit-dokontsa-2028-goda-mintrans-25990a82",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:46:00+00:00"
+  },
+  {
+    "id": "rss35593672b3f70a8c",
+    "category": "Казахстан / Новости",
+    "title": "09:45, 29 Октября 2026 От бюджетных расходов до экспорта: экономист разобрал акценты Послания Президента РК",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/otbyudzhetnih-rashodov-doeksporta-ekonomist-razobral-aktsenti-poslaniya-preziden-9de3bd30",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:45:00+00:00"
+  },
+  {
+    "id": "rss83ddd9d6b1851705",
+    "category": "Казахстан / Новости",
+    "title": "09:33, 29 Октября 2026 Налог для богатых в Казахстане: Правительство изучит международный опыт",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/nalog-dlyabogatih-vkazahstane-pravitelstvo-izuchit-mezhdunarodniy-opit-94570f2b",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:33:00+00:00"
+  },
+  {
+    "id": "rss6c72045d2790227d",
+    "category": "Казахстан / Новости",
+    "title": "Казахстанец оспорил норму о повторном задержании в Конституционном суде",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/kazahstanets-osporil-normu-povtornom-zaderjanii-611867/",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:29:08+00:00"
+  },
+  {
+    "id": "rssd36e0de7ddf8e43d",
+    "category": "Казахстан / Новости",
+    "title": "09:28, 29 Октября 2026 Что чаще всего пытаются пронести в тюрьмы Актюбинской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/telefoni-narkotiki-idengi-vbankah-sikroy-chto-pitayutsya-pronesti-vtyurmi-aktyub-82b11a52",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:28:00+00:00"
+  },
+  {
+    "id": "rss8130ffb59d399295",
+    "category": "Казахстан / Новости",
+    "title": "09:19, 29 Октября 2026 Объявленная Президентом «Народная стройка» дает старт реформам во всех отраслях экономики — Бектенов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/podgotovit-chetkiy-plan-realizatsii-poslaniya-prezidenta-poruchil-olzhas-bekteno-732687fd",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:19:00+00:00"
+  },
+  {
+    "id": "rss6855b25c918f6018",
+    "category": "Казахстан / Новости",
+    "title": "09:09, 29 Октября 2026 Хет-трик и досрочный выход в 1/8 финала: «Кайрат» мощно стартовал в Лиге чемпионов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/het-trik-idosrochniy-vihod-v18-finala-kayrat-moshno-startoval-vlige-chempionov-b769d7b7",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T04:09:00+00:00"
+  },
+  {
     "id": "rss53f2e442b44d7d61",
     "category": "Казахстан / Новости",
     "title": "Пхукет для жизни: от квартир у гольф-поля до роскошных резиденций у моря",
@@ -12658,15 +12738,5 @@
     "url": "https://tengrinews.kz/article/dereva-supermarket-vyiraschivayut-yabloki-almatyi-4624/",
     "date": "22.10.2026",
     "published_at": "2026-10-22T05:01:00+00:00"
-  },
-  {
-    "id": "rssbd5f1f8a23fc2a10",
-    "category": "Казахстан / Новости",
-    "title": "Разметка стёрлась, права под угрозой: кто виноват - водитель или дорожники?",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/autonews/razmetka-strlas-prava-ugrozoy-vinovat-voditel-dorojniki-611398/",
-    "date": "22.10.2026",
-    "published_at": "2026-10-22T04:22:56+00:00"
   }
 ]
