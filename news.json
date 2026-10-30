@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss5e29bb4393cf7004",
+    "category": "Казахстан / Новости",
+    "title": "05:02, 30 Октября 2026 Две трагедии произошли в Акмолинской области за один день",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dve-tragedii-proizoshli-v-akmolinskoy-oblasti-za-odin-den-b74e0c3c",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T00:02:00+00:00"
+  },
+  {
+    "id": "rssa37f5fb1d2b84978",
+    "category": "Казахстан / Новости",
+    "title": "04:28, 30 Октября 2026 Поезд Деда Мороза посетит 65 городов России за 63 дня",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/poezd-deda-moroza-posetit-65-gorodov-rossii-za-63-dnya-a9e5b79f",
+    "date": "29.10.2026",
+    "published_at": "2026-10-29T23:28:00+00:00"
+  },
+  {
     "id": "rss23ae5ab9283e5bb5",
     "category": "Казахстан / Новости",
     "title": "03:54, 30 Октября 2026 Браслет Cartier с сапфиром Романовых оценили почти в $2 млн",
@@ -13958,25 +13978,5 @@
     "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-komu-stoit-doveritsya-sluchayu-kogo-jdet-611489/",
     "date": "23.10.2026",
     "published_at": "2026-10-23T00:16:00+00:00"
-  },
-  {
-    "id": "rsscffdeafc60261a56",
-    "category": "Казахстан / Новости",
-    "title": "05:01, 23 Октября 2026 Италия и Испания восстановят свободное передвижение после пограничного кризиса",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/italiya-i-ispaniya-vosstanovyat-svobodnoe-peredvizhenie-posle-pogranichnogo-kriz-815f212b",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T00:01:00+00:00"
-  },
-  {
-    "id": "rsse1e804b44cae2a38",
-    "category": "Казахстан / Новости",
-    "title": "Ушел из жизни голливудский актер, известный по роли в фильме “Чужой“",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/curious/ushel-jizni-gollivudskiy-akter-izvestnyiy-roli-filme-chujoy-611488/",
-    "date": "22.10.2026",
-    "published_at": "2026-10-22T23:25:00+00:00"
   }
 ]
