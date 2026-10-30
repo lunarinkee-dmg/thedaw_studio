@@ -1,5 +1,85 @@
 [
   {
+    "id": "rss7f1c4145f0a3497a",
+    "category": "Казахстан / Новости",
+    "title": "21:15, 30 Октября 2026 Аэропорт Астаны обязали восстановить уволенную сотрудницу и выплатить ей около 7 млн теңге",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/aeroport-astani-obyazali-vosstanovit-uvolennuyu-sotrudnitsu-i-viplatit-ey-okolo--7851d260",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T16:15:00+00:00"
+  },
+  {
+    "id": "rssce4ed77257afb47c",
+    "category": "Казахстан / Новости",
+    "title": "21:04, 30 Октября 2026 Движение грузовиков ограничили на трассе в ВКО",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dvizhenie-gruzovikov-ogranichili-na-trasse-v-vko-c5f6591a",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T16:04:00+00:00"
+  },
+  {
+    "id": "rss0f3b5c2b57fb95cd",
+    "category": "Казахстан / Новости",
+    "title": "Теракт под Парижем: подозреваемый признался, что целился в мусульман и африканцев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/terakt-parijem-podozrevaemyiy-priznalsya-tselilsya-musulman-612031/",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:54:13+00:00"
+  },
+  {
+    "id": "rssa12fde867fecc916",
+    "category": "Казахстан / Новости",
+    "title": "20:52, 30 Октября 2026 Четыре человека погибли при крушении военного вертолета в Боснии и Герцеговине",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/chetire-cheloveka-pogibli-pri-krushenii-voennogo-vertoleta-v-bosnii-i-gertsegovi-5419d096",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:52:00+00:00"
+  },
+  {
+    "id": "rss04d9dd21356bb663",
+    "category": "Казахстан / Новости",
+    "title": "20:43, 30 Октября 2026 От прозрачных стандартов ЖКХ до ИИ: как партия «Әділет» начала реализацию Послания Президента-2026",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/otprozrachnih-standartov-zhkh-doii-kakpartiya-adlet-nachala-realizatsiyu-poslani-1fcb040f",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:43:00+00:00"
+  },
+  {
+    "id": "rss0cce4eb409d37278",
+    "category": "Казахстан / Новости",
+    "title": "20:40, 30 Октября 2026 Участок улицы перекроют на два дня в Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/uchastok-ulitsi-perekroyut-nadva-dnya-valmati-480c86ad",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:40:00+00:00"
+  },
+  {
+    "id": "rssc25e0148d9dd0861",
+    "category": "Казахстан / Новости",
+    "title": "20:32, 30 Октября 2026 Казахстану потребуется до 300 тысяч тонн урана для работы будущих АЭС на 100 лет",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanu-potrebuetsya-do-300-tisyach-tonn-urana-dlya-budushih-aes-59b80b99",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:32:00+00:00"
+  },
+  {
+    "id": "rss4953167e6366f887",
+    "category": "Казахстан / Новости",
+    "title": "20:25, 30 Октября 2026 Организацию зимних Азиатских игр 2029 года в Алматы обсудили в НОК Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/organizatsiyu-zimnih-aziatskih-igr-2029-goda-v-almati-obsudili-v-nok-kazahstana-13ffc4dd",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T15:25:00+00:00"
+  },
+  {
     "id": "rss64f7785f7a6874b5",
     "category": "Казахстан / Новости",
     "title": "20:12, 30 Октября 2026 От дома до школы: как в Алматы организована перевозка учащихся",
@@ -13808,105 +13888,5 @@
     "url": "https://www.98mag.kz/kultura/aroojeanne-n%d3%99zik-shynajy-batyl-albom/",
     "date": "23.10.2026",
     "published_at": "2026-10-23T16:21:59+00:00"
-  },
-  {
-    "id": "rssd30b205c21b65bf8",
-    "category": "Казахстан / Новости",
-    "title": "21:14, 23 Октября 2026 Король Иордании пообещал жесткий ответ на нападение в Караке",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/korol-iordanii-poobeshal-zhestkiy-otvet-na-napadenie-v-karake-a5661c07",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T16:14:00+00:00"
-  },
-  {
-    "id": "rssaad150fa87038f29",
-    "category": "Казахстан / Новости",
-    "title": "21:05, 23 Октября 2026 Еркин Окасов вошел в состав Бюро United World Wrestling",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/erkin-okasov-voshel-v-sostav-byuro-united-world-wrestling-9ca98ea1",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T16:05:00+00:00"
-  },
-  {
-    "id": "rss2128b6ec7179428a",
-    "category": "Казахстан / Новости",
-    "title": "21:03, 23 Октября 2026 Шесть человек погибли, еще 28 ранены при стрельбе возле церкви в Иордании",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/shest-chelovekpogibli-eshe-28-ranenipri-strelbe-vozle-tserkvi-v-iordanii-45300444",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T16:03:00+00:00"
-  },
-  {
-    "id": "tgbe9f7ceb1670379f60",
-    "category": "Музыка / Рэп",
-    "title": "🚨 Quavo НЕ ОСТАНАВЛИВАЕТСЯ",
-    "summary": "🚨 Quavo НЕ ОСТАНАВЛИВАЕТСЯ\nРэпер показал новый сниппет с грядущего альбома «SATCHAMO» на фоне легендарного Maybach из клипа Jay-Z и Kanye West «Otis».\nКак вам? ❤️/👎\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30866",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T16:02:00+00:00"
-  },
-  {
-    "id": "rss24fd925e1dcf5489",
-    "category": "Казахстан / Новости",
-    "title": "20:58, 23 Октября 2026 Движение ограничили на двух трассах Карагандинской области из-за снегопада",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dvizhenie-ogranichili-na-dvuh-trassah-karagandinskoy-oblasti-iz-za-snegopada-8fd95ca3",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:58:00+00:00"
-  },
-  {
-    "id": "rssab510647fc5772f2",
-    "category": "Казахстан / Новости",
-    "title": "Под небом Акорды. Кого и как наградили в канун Дня Республики",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/nebom-akordyi-kogo-kak-nagradili-kanun-dnya-respubliki-4640/",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:52:33+00:00"
-  },
-  {
-    "id": "rss999bebacf384f207",
-    "category": "Казахстан / Новости",
-    "title": "20:50, 23 Октября 2026 II Международный форум Уполномоченных по правам ребенка стран Центральной Азии состоится в Астане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ii-mezhdunarodniy-forum-upolnomochennih-popravam-rebenka-stran-tsentralnoy-azii--2af87e9e",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:50:00+00:00"
-  },
-  {
-    "id": "rss1e717d5c91536b2e",
-    "category": "Казахстан / Новости",
-    "title": "Президент Казахстана посетил праздничный концерт по случаю Дня Республики",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/prezident-kazahstana-posetil-prazdnichnyiy-kontsert-sluchayu-611577/",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:42:21+00:00"
-  },
-  {
-    "id": "rssbb6e831464c4d36f",
-    "category": "Казахстан / Новости",
-    "title": "20:40, 23 Октября 2026 Таджикистан запустит ИИ-хаб при поддержке NVIDIA",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tadzhikistan-zapustit-ii-hab-pri-podderzhke-nvidia-330d32e2",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:40:00+00:00"
-  },
-  {
-    "id": "rssaa5910ca463afe2a",
-    "category": "Казахстан / Новости",
-    "title": "20:27, 23 Октября 2026 Нового главу департамента госаудита назначили в Костанайской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/novogo-glavu-departamenta-gosaudita-naznachili-vkostanayskoy-oblasti-2629c061",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T15:27:00+00:00"
   }
 ]
