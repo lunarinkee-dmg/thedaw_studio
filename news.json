@@ -1,5 +1,45 @@
 [
   {
+    "id": "rsseacdd262f57169dd",
+    "category": "Казахстан / Новости",
+    "title": "00:31, 31 Октября 2026 Заболеваемость диабетом и раком снизилась в Алматы на 25%",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zabolevaemost-diabetom-i-rakom-snizilas-v-almati-na-25-0b2bd528",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T19:31:00+00:00"
+  },
+  {
+    "id": "rss86fe2d9ae354846d",
+    "category": "Казахстан / Новости",
+    "title": "00:16, 31 Октября 2026 Казахстан принял участие в Глобальном форуме ЮНЕСКО по борьбе с расизмом и дискриминацией",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-prinyal-uchastie-v-globalnom-forume-yunesko-po-borbe-s-rasizmom-i-disk-b8825dea",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T19:16:00+00:00"
+  },
+  {
+    "id": "rss7cafebd4b57b6d90",
+    "category": "Казахстан / Новости",
+    "title": "00:03, 31 Октября 2026 Вертолет с шестью людьми на борту разбился на севере Индии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vertolet-s-shestyu-lyudmi-na-bortu-razbilsya-na-severe-indii-c556d71c",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T19:03:00+00:00"
+  },
+  {
+    "id": "rss419cee17518ef986",
+    "category": "Казахстан / Новости",
+    "title": "23:49, 30 Октября 2026 Три лесных пожара зарегистрировали в Казахстане за сутки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tri-lesnih-pozhara-zaregistrirovali-v-kazahstane-za-sutki-044225fa",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T18:49:00+00:00"
+  },
+  {
     "id": "rss7b7ec336134dbcf8",
     "category": "Казахстан / Новости",
     "title": "23:37, 30 Октября 2026 ИИ-система в Астане находит наркоконтент даже в закрытых чатах и ботах",
@@ -13818,35 +13858,5 @@
     "url": "https://www.inform.kz/ru/plyazhi-zakrivayut-v-oae-iz-za-razliva-nefti-17813e85",
     "date": "23.10.2026",
     "published_at": "2026-10-23T19:39:00+00:00"
-  },
-  {
-    "id": "rsse637b531872897e9",
-    "category": "Казахстан / Новости",
-    "title": "00:12, 24 Октября 2026 Пенсионные накопления казахстанцев достигли 28,3 трлн теңге",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/pensionnie-nakopleniya-kazahstantsev-dostigli-283-trln-tenge-2378a21a",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T19:12:00+00:00"
-  },
-  {
-    "id": "rss9c480004c42b427f",
-    "category": "Казахстан / Новости",
-    "title": "23:58, 23 Октября 2026 Роботизированную трансплантацию сердца впервые провели в Китае",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/robotizirovannuyu-transplantatsiyu-serdtsa-vpervie-proveli-v-kitae-63d690fa",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T18:58:00+00:00"
-  },
-  {
-    "id": "rss001c86d13176cbb8",
-    "category": "Казахстан / Новости",
-    "title": "23:42, 23 Октября 2026 Александр Бублик вышел в полуфинал Almaty Open, обыграв Карена Хачанова",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/aleksandr-bublik-vishel-vpolufinal-almaty-open-obigrav-karena-hachanova-115da548",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T18:42:00+00:00"
   }
 ]
