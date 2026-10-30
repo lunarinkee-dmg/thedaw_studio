@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss40a2a50c6ab21e1a",
+    "category": "Казахстан / Новости",
+    "title": "03:15, 31 Октября 2026 Более 370 млн теңге штрафов получили нарушители экологических норм в ВКО",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-370-mln-tenge-shtrafov-poluchili-narushiteli-ekologicheskih-norm-v-vko-85c7c6f0",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T22:15:00+00:00"
+  },
+  {
+    "id": "rssf86fba58db65a46a",
+    "category": "Казахстан / Новости",
+    "title": "02:59, 31 Октября 2026 Скот на 34 млн теңге украли из загонов и с пастбищ в Жамбылской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/skot-na-34-mln-tenge-ukrali-iz-zagonov-i-s-pastbish-v-zhambilskoy-oblasti-b390c3e5",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T21:59:00+00:00"
+  },
+  {
+    "id": "rss8877ab26488ec35a",
+    "category": "Казахстан / Новости",
+    "title": "02:43, 31 Октября 2026 Автоматический паспортный контроль запустили в аэропорту Костаная",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/avtomaticheskiy-pasportniy-kontrol-zapustili-v-aeroportu-kostanaya-6fe1e9b8",
+    "date": "30.10.2026",
+    "published_at": "2026-10-30T21:43:00+00:00"
+  },
+  {
     "id": "rss25ab058349d6068f",
     "category": "Казахстан / Новости",
     "title": "02:27, 31 Октября 2026 Хакеры взломали крупнейшую университетскую клинику Берлина",
@@ -13858,15 +13888,5 @@
     "url": "https://tengrinews.kz/kazakhstan_news/astane-perenesli-sud-delu-mujchinyi-kotoryiy-ubil-611583/",
     "date": "23.10.2026",
     "published_at": "2026-10-23T22:29:57+00:00"
-  },
-  {
-    "id": "rss9ed1e9a9a2bc3ef4",
-    "category": "Казахстан / Новости",
-    "title": "02:57, 24 Октября 2026 Мировые цены на золото упали до трехмесячного минимума",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mirovie-tseni-na-zoloto-upali-do-trehmesyachnogo-minimuma-4472f557",
-    "date": "23.10.2026",
-    "published_at": "2026-10-23T21:57:00+00:00"
   }
 ]
