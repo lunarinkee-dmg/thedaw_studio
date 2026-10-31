@@ -1,5 +1,75 @@
 [
   {
+    "id": "tg1a123f4ac94d4f4deb",
+    "category": "Культура / Музыка",
+    "title": "SKY RAE — «Miss Take»",
+    "summary": "SKY RAE — «Miss Take»\nХип-хоп в духе 2010-х с плотным битом, четкой ритмикой и акцентом на панчлайны. В новом сингле артистка высмеивает подражателей и хейтеров, обыгрывает поп-культурные отсылки и с фирменной иронией рассуждает о собственной уникальности.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32736",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T08:03:53+00:00"
+  },
+  {
+    "id": "rss1dca6950fde50051",
+    "category": "Казахстан / Новости",
+    "title": "13:00, 31 Октября 2026 Сколько стоит согым в Казахстане: где дешевле и по каким ценам продают мясо",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/skolko-stoit-sogim-v-kazahstane-gde-deshevle-i-po-kakim-tsenam-prodayut-myaso-161fa049",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T08:00:00+00:00"
+  },
+  {
+    "id": "rss36936d805c6287e9",
+    "category": "Казахстан / Новости",
+    "title": "12:58, 31 Октября 2026 70 тысяч полицейских выйдут на улицы Франции из-за угрозы беспорядков",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/70-tisyach-politseyskih-viydut-naulitsi-frantsii-iz-za-ugrozi-besporyadkov-e062eb69",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T07:58:00+00:00"
+  },
+  {
+    "id": "rssd49cce0a5ededff1",
+    "category": "Казахстан / Новости",
+    "title": "12:39, 31 Октября 2026 Казахстан расширит производство молока за счет новых животноводческих комплексов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-rasshirit-proizvodstvo-moloka-za-schet-novih-zhivotnovodcheskih-komple-cc505516",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T07:39:00+00:00"
+  },
+  {
+    "id": "rss835539c6e3e340b7",
+    "category": "Казахстан / Новости",
+    "title": "12:30, 31 Октября 2026 Наркотики, браконьерские сети и 126 задержанных: итоги спецоперации на Каспии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/narkotiki-brakonerskie-seti-i-126-zaderzhannih-itogi-spetsoperatsii-na-kaspii-20845124",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T07:30:00+00:00"
+  },
+  {
+    "id": "rss5bee48fc340b7de4",
+    "category": "Казахстан / Новости",
+    "title": "“10 тысяч теңге за опоздание“: в Минтруда рассказали о штрафах на работе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/10-tyisyach-tenge-opozdanie-mintruda-rasskazali-shtrafah-612048/",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T07:20:28+00:00"
+  },
+  {
+    "id": "rssa7ae565549d872e3",
+    "category": "Казахстан / Новости",
+    "title": "12:20, 31 Октября 2026 Полиция Алматы раскрыла причину розыска блогера Назара Роллана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/politsiya-almati-raskrila-prichinu-roziska-blogera-nazara-rollana-e1fff0d3",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T07:20:00+00:00"
+  },
+  {
     "id": "rss783135122ee9ca0b",
     "category": "Казахстан / Новости",
     "title": "12:16, 31 Октября 2026 Уникальная фотография легендарного кюйши из немецкого плена нашлась в Норвегии",
@@ -220,22 +290,22 @@
     "published_at": "2026-10-31T04:19:00+00:00"
   },
   {
-    "id": "rss968753dc286d0352",
-    "category": "Казахстан / ЦА",
-    "title": "Куда сходить в Алматы и Астане в ноябре: гид по главным событиям",
-    "summary": "Ноябрь в Казахстане обещает насыщенную культурную и событийную программу: от кинопремьер и театральных постановок до музыкальных фестивалей, выставок и международных спортивных соревнований. В Алматы и Астане пройдут концерты казахстанских артистов, премьеры спектаклей, творческие встречи и благотворительные мероприятия. STEPPE собрал гид по событи",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/steppe-select/kuda-shodit-i-chto-posmotret-v-nojabre",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T04:00:00+00:00"
-  },
-  {
     "id": "rssa85997b6f1ba40da",
     "category": "Казахстан / Новости",
     "title": "09:00, 31 Октября 2026 Шавкат Рахмонов пропустит январский турнир UFC — менеджер",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/shavkat-rahmonov-propustit-yanvarskiy-turnir-ufc-menedzher-3e406e9f",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T04:00:00+00:00"
+  },
+  {
+    "id": "rss968753dc286d0352",
+    "category": "Казахстан / ЦА",
+    "title": "Куда сходить в Алматы и Астане в ноябре: гид по главным событиям",
+    "summary": "Ноябрь в Казахстане обещает насыщенную культурную и событийную программу: от кинопремьер и театральных постановок до музыкальных фестивалей, выставок и международных спортивных соревнований. В Алматы и Астане пройдут концерты казахстанских артистов, премьеры спектаклей, творческие встречи и благотворительные мероприятия. STEPPE собрал гид по событи",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/steppe-select/kuda-shodit-i-chto-posmotret-v-nojabre",
     "date": "31.10.2026",
     "published_at": "2026-10-31T04:00:00+00:00"
   },
@@ -310,22 +380,22 @@
     "published_at": "2026-10-31T03:00:19+00:00"
   },
   {
-    "id": "rssc6d1d1e85286ace0",
-    "category": "Казахстан / Новости",
-    "title": "08:00, 31 Октября 2026 Что изменится в Казахстане с 1 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/chto-izmenitsya-vkazahstane-s1noyabrya-eb9e3b81",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T03:00:00+00:00"
-  },
-  {
     "id": "rss9b684f1d3ed384f1",
     "category": "Казахстан / Новости",
     "title": "“У нас почти как в Родине“. Как живут в маленьком селе в получасе езды от Астаны",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/article/u-pochti-v-rodine-jivut-malenkom-sele-poluchase-ezdyi-4657/",
+    "date": "31.10.2026",
+    "published_at": "2026-10-31T03:00:00+00:00"
+  },
+  {
+    "id": "rssc6d1d1e85286ace0",
+    "category": "Казахстан / Новости",
+    "title": "08:00, 31 Октября 2026 Что изменится в Казахстане с 1 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/chto-izmenitsya-vkazahstane-s1noyabrya-eb9e3b81",
     "date": "31.10.2026",
     "published_at": "2026-10-31T03:00:00+00:00"
   },
@@ -13868,55 +13938,5 @@
     "url": "https://www.inform.kz/ru/kitay-vivel-na-orbitu-sputniki-dlya-nablyudeniya-za-zemley-a42bedc4",
     "date": "24.10.2026",
     "published_at": "2026-10-24T08:17:00+00:00"
-  },
-  {
-    "id": "tg5ffab5610bf1507ca9",
-    "category": "Культура / Музыка",
-    "title": "nkeeei, ЛСП — «В нашем стиле»",
-    "summary": "nkeeei, ЛСП — «В нашем стиле»\nТанцевальный R&B с синти-поп-мотивами, мелодичным вокалом nkeeei и расслабленной подачей Олега ЛСП. В совместном сингле артисты обращаются к теме мимолетного влечения и отношений без обязательств, где главное — наслаждаться моментом и не задумываться о будущем.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32668",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T08:03:58+00:00"
-  },
-  {
-    "id": "rss093104b7fe6e79a3",
-    "category": "Казахстан / Новости",
-    "title": "13:03, 24 Октября 2026 Где в Казахстане дешевле вызвать «мужа на час»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/gde-vkazahstane-deshevle-vizvat-muzha-nachas-f6beaf2c",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T08:03:00+00:00"
-  },
-  {
-    "id": "rssf837054ebf52e028",
-    "category": "Казахстан / Новости",
-    "title": "12:45, 24 Октября 2026 Мерей Маулитканов одержал первую победу на чемпионате мира в Астане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/merey-maulitkanov-oderzhal-pobedu-na-chm-po-borbe-v-astane-0e6eef31",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T07:45:00+00:00"
-  },
-  {
-    "id": "rssd6fa41779bb63db8",
-    "category": "Казахстан / Новости",
-    "title": "В Атырау нашли мёртвым чиновника – СМИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/events/v-atyirau-nashli-mrtvyim-chinovnika-akimata-smi-611595/",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T07:29:14+00:00"
-  },
-  {
-    "id": "rssbe4d7c272895809f",
-    "category": "Казахстан / Новости",
-    "title": "12:29, 24 Октября 2026 Семья из ВКО знакомит туристов с искусством беркутчи",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/semya-iz-vko-znakomit-turistov-s-iskusstvom-berkutchi-2a24274e",
-    "date": "24.10.2026",
-    "published_at": "2026-10-24T07:29:00+00:00"
   }
 ]
