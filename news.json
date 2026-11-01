@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss5d4f91c7b09daa60",
+    "category": "Казахстан / Новости",
+    "title": "09:19, 01 Ноября 2026 Перегретое масло и неисправная техника: чем опасен пожар на кухне",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/peregretoe-maslo-i-neispravnaya-tehnika-chem-opasen-pozhar-na-kuhne-87cc5def",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T04:19:00+00:00"
+  },
+  {
+    "id": "rssc27c906aefa662c1",
+    "category": "Казахстан / Новости",
+    "title": "08:54, 01 Ноября 2026 Пилот погиб при крушении небольшого самолета в Чехии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/pilot-pogib-pri-krushenii-nebolshogo-samoleta-v-chehii-72d536e9",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T03:54:00+00:00"
+  },
+  {
+    "id": "rss3c0055fcc2e9f33e",
+    "category": "Казахстан / Новости",
+    "title": "Запрет на топку углём с 2027 года в Алматы - кому грозит штраф и можно ли жарить шашлыки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/home-news/zapret-topku-uglm-2027-goda-almatyi-komu-grozit-shtraf-mojno-611941/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T03:44:00+00:00"
+  },
+  {
     "id": "rsse49a78c73378a4f9",
     "category": "Казахстан / Новости",
     "title": "В OpenAI разработали кодекс для ИИ - что запретили нейросетям",
@@ -14118,65 +14148,5 @@
     "url": "https://www.inform.kz/ru/bolee-25-tisyachi-spasateley-likvidiruyut-posledstviya-zemletryaseniya-v-kitae-f6b75aa6",
     "date": "25.10.2026",
     "published_at": "2026-10-25T04:44:00+00:00"
-  },
-  {
-    "id": "rssa21296ec56c2ef60",
-    "category": "Казахстан / Новости",
-    "title": "09:29, 25 Октября 2026 Девушки-беркутчи и 8-летний кусбеги покорили гостей международного турнира «Қансонар»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/devushki-berkutchi-i8-letniy-kusbegi-pokorili-gostey-mezhdunarodnogo-turnira-kan-666edc61",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T04:29:00+00:00"
-  },
-  {
-    "id": "rssbe2371ebff584aa7",
-    "category": "Казахстан / Новости",
-    "title": "Чем зарабатывают молодые казахстанцы: названы самые популярные направления бизнеса",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/zarabatyivayut-molodyie-kazahstantsyi-nazvanyi-samyie-611348/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T04:15:00+00:00"
-  },
-  {
-    "id": "rss6771ff56cdc2ff38",
-    "category": "Казахстан / Новости",
-    "title": "09:10, 25 Октября 2026 Землетрясение магнитудой 5,3 произошло у берегов Японии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-53-proizoshlo-u-beregov-yaponii-1ed87dc5",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T04:10:00+00:00"
-  },
-  {
-    "id": "rss4c531e51696ad127",
-    "category": "Казахстан / Новости",
-    "title": "08:52, 25 Октября 2026 Лабораторию для бесплатного изготовления ортезов детям открыли в Алматы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/laboratoriyu-dlya-besplatnogo-izgotovleniya-ortezov-detyam-otkrili-v-almati-1ac8e1c1",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T03:52:00+00:00"
-  },
-  {
-    "id": "rsseea829024dfa39c1",
-    "category": "Казахстан / Новости",
-    "title": "Аэропорт, LRT и новые кварталы: Шымкент хотят “пересобрать“",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/home-news/aeroport-lrt-i-novyie-kvartalyi-shyimkent-hotyat-peresobrat-611376/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T03:45:00+00:00"
-  },
-  {
-    "id": "rss6317f5be66c5d898",
-    "category": "Казахстан / Новости",
-    "title": "08:35, 25 Октября 2026 Массовые беспорядки произошли в центре Барселоны: задержано около 100 человек",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/massovie-besporyadki-proizoshli-v-tsentre-barseloni-zaderzhano-okolo-100-chelove-65c11b64",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T03:35:00+00:00"
   }
 ]
