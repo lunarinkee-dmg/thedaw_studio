@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss7f2fa6405b0330ab",
+    "category": "Казахстан / Новости",
+    "title": "03:10, 02 Ноября 2026 Выставка рисунков казахских детей, живущих за рубежом, открылась в Испании",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vistavka-risunkov-kazahskih-detey-zhivushih-za-rubezhomotkrilas-v-ispanii-2f9f0bd5",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T22:10:00+00:00"
+  },
+  {
+    "id": "rss7c5142bf79b1aab8",
+    "category": "Казахстан / Новости",
+    "title": "Binance частично возобновила вывод средств после хакерской атаки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/binance-chastichno-vozobnovila-vyivod-sredstv-hakerskoy-612109/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T21:40:00+00:00"
+  },
+  {
     "id": "rss5403d22022fd6f93",
     "category": "Казахстан / Новости",
     "title": "02:17, 02 Ноября 2026 Илияна Йотова, по данным экзитполов, побеждает на выборах президента Болгарии",
@@ -14188,15 +14208,5 @@
     "url": "https://www.inform.kz/ru/vuchich-priznal-porazhenie-na-viborah-v-parlament-serbii-896c0301",
     "date": "25.10.2026",
     "published_at": "2026-10-25T22:15:00+00:00"
-  },
-  {
-    "id": "rssad0bde32e302a9b6",
-    "category": "Казахстан / Новости",
-    "title": "03:00, 26 Октября 2026 Следы поселения обнаружили на дне озера в Германии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sledi-poseleniya-obnaruzhili-nadne-ozera-vgermanii-0aa1c71f",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T22:00:00+00:00"
   }
 ]
