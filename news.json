@@ -1,5 +1,45 @@
 [
   {
+    "id": "rss9c54ec406109b43f",
+    "category": "Казахстан / Новости",
+    "title": "Подросток потерялся в горах Алматинской области - его искали более ста спасателей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/podrostok-poteryalsya-gorah-almatinskoy-oblasti-iskali-sta-612101/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T16:53:00+00:00"
+  },
+  {
+    "id": "rssf003a2b0f90bd3e3",
+    "category": "Казахстан / Новости",
+    "title": "21:45, 01 Ноября 2026 Власти Боливии объявили в стране чрезвычайное положение из-за угрозы наводнений",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vlasti-bolivii-obyavili-v-strane-chrezvichaynoe-polozhenie-iz-za-ugrozi-navodnen-e500608b",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T16:45:00+00:00"
+  },
+  {
+    "id": "rss8280dc2b7161f608",
+    "category": "Казахстан / Новости",
+    "title": "21:37, 01 Ноября 2026 Три человека погибли в массовом ДТП на трассе в Акмолинской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tri-cheloveka-pogibli-vmassovom-dtp-natrasse-vakmolinskoy-oblasti-c5de6b79",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T16:37:00+00:00"
+  },
+  {
+    "id": "rssf1577be7d2bc3e89",
+    "category": "Казахстан / Новости",
+    "title": "21:25, 01 Ноября 2026 Свыше 100 спасателей искали подростка на пике Сатпаева в Алматинской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/svishe-100-spasateley-iskali-podrostka-na-pike-satpaeva-v-almatinskoy-oblasti-53c6280e",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T16:25:00+00:00"
+  },
+  {
     "id": "rssae48c13ba51cd6a4",
     "category": "Казахстан / Новости",
     "title": "21:11, 01 Ноября 2026 Костанайский лес: как восстанавливают территории после пожаров и паводков",
@@ -14088,35 +14128,5 @@
     "url": "https://www.inform.kz/ru/shtormovoe-preduprezhdenie-obyavili-v-16-oblastyah-kazahstana-na-26-oktyabrya-f0360be7",
     "date": "25.10.2026",
     "published_at": "2026-10-25T17:09:00+00:00"
-  },
-  {
-    "id": "rss1d590649fe85bd47",
-    "category": "Казахстан / Новости",
-    "title": "Трамп выбирает между сделкой с Ираном и тем, чтобы “покончить“ с ним",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/tramp-vyibiraet-sdelkoy-iranom-tem-pokonchit-nim-611650/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T16:41:00+00:00"
-  },
-  {
-    "id": "tg5473d9e0e75666fe4f",
-    "category": "Музыка / Рэп",
-    "title": "🤝 Quavo x André 3000",
-    "summary": "🤝 Quavo x André 3000\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30894",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T16:31:56+00:00"
-  },
-  {
-    "id": "rssf38da2041d8df9d8",
-    "category": "Казахстан / Новости",
-    "title": "21:30, 25 Октября 2026 Жители Сербии голосуют на досрочных парламентских выборах",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zhiteli-serbii-golosuyut-nadosrochnih-parlamentskih-viborah-bb34bb53",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T16:30:00+00:00"
   }
 ]
