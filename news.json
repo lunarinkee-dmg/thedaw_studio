@@ -1,5 +1,45 @@
 [
   {
+    "id": "rssb36051e0dc426480",
+    "category": "Казахстан / Новости",
+    "title": "15:00, 01 Ноября 2026 Послание Президента, визит в Турцию и новые достижения Казахстана — обзор недели",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/poslanie-prezidenta-vizit-vturtsiyu-inovie-dostizheniya-kazahstana-obzor-nedeli-b01740dc",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T10:00:00+00:00"
+  },
+  {
+    "id": "rssb10b92818bba2a4d",
+    "category": "Казахстан / Новости",
+    "title": "14:40, 01 Ноября 2026 Новые заводы и инвестиции на $4 млрд: как Казахстан развивает зернопереработку",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/novie-zavodi-iinvestitsii-na4-mlrd-kakkazahstan-razvivaet-zernopererabotku-0b9796c3",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T09:40:00+00:00"
+  },
+  {
+    "id": "rss021ca7efed770908",
+    "category": "Казахстан / Новости",
+    "title": "Служба государственной охраны предупредила жителей и гостей Астаны",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/slujba-gosudarstvennoy-ohranyi-predupredila-jiteley-gostey-612087/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T09:39:17+00:00"
+  },
+  {
+    "id": "rssa267d37480332f0e",
+    "category": "Казахстан / Новости",
+    "title": "14:18, 01 Ноября 2026 Землетрясение магнитудой 6,1 произошло у побережья Японии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-61-proizoshlo-u-poberezhya-yaponii-745b0c12",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T09:18:00+00:00"
+  },
+  {
     "id": "rsscf93334c1700f4e5",
     "category": "Казахстан / Новости",
     "title": "14:06, 01 Ноября 2026 Кто имеет право на жилищную помощь зимой и как ее оформить в Казахстане",
@@ -380,22 +420,22 @@
     "published_at": "2026-11-01T01:04:00+00:00"
   },
   {
-    "id": "rss7f8ad0fb12e6aa4c",
-    "category": "Казахстан / Новости",
-    "title": "05:42, 01 Ноября 2026 Китай научил ИИ прогнозировать опасные погодные явления",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kitay-nauchil-ii-prognozirovat-opasnie-pogodnie-yavleniya-9712a632",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T00:42:00+00:00"
-  },
-  {
     "id": "rss4e16500dbb1353b5",
     "category": "Казахстан / Новости",
     "title": "Семь авто чуть не сгорели при пожаре в гараже в Восточном Казахстане",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/kazakhstan_news/sem-avto-ne-sgoreli-pojare-garaje-vostochnom-kazahstane-612075/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T00:42:00+00:00"
+  },
+  {
+    "id": "rss7f8ad0fb12e6aa4c",
+    "category": "Казахстан / Новости",
+    "title": "05:42, 01 Ноября 2026 Китай научил ИИ прогнозировать опасные погодные явления",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kitay-nauchil-ii-prognozirovat-opasnie-pogodnie-yavleniya-9712a632",
     "date": "01.11.2026",
     "published_at": "2026-11-01T00:42:00+00:00"
   },
@@ -13988,65 +14028,5 @@
     "url": "https://www.inform.kz/ru/tseremoniya-podnyatiya-gosudarstvennogo-flaga-obedinila-zhiteley-turkestana-e23be278",
     "date": "25.10.2026",
     "published_at": "2026-10-25T10:18:00+00:00"
-  },
-  {
-    "id": "rss41b866f46cd5934c",
-    "category": "Казахстан / Новости",
-    "title": "15:00, 25 Октября 2026 День Республики, визит главы NVIDIA и исторический триумф спорта: главное за неделю в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/den-respubliki-vizit-glavi-nvidia-iistoricheskiy-triumf-sporta-glavnoe-zanedelyu-639c731f",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T10:00:00+00:00"
-  },
-  {
-    "id": "rss30e4cf26f387e88a",
-    "category": "Казахстан / Новости",
-    "title": "14:45, 25 Октября 2026 Димаш Кудайберген представил новые авторские песни в Дюссельдорфе",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dimash-kudaybergen-predstavil-novie-avtorskie-pesni-v-dyusseldorfe-fb9d0c79",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T09:45:00+00:00"
-  },
-  {
-    "id": "rss947a07531b31023b",
-    "category": "Казахстан / Новости",
-    "title": "Мужчине стало плохо в Боровом. На помощь пришли спасатели",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/mujchine-stalo-ploho-v-borovom-na-pomosch-prishli-spasateli-611638/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T09:43:00+00:00"
-  },
-  {
-    "id": "rssa96d8f2ae2c97e7e",
-    "category": "Казахстан / Новости",
-    "title": "14:30, 25 Октября 2026 Кино как дело жизни: как Александр Шунькин создает профессиональное сообщество",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kino-kakdelo-zhizni-kakaleksandr-shunkin-sozdaet-professionalnoe-soobshestvo-536e996f",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T09:30:00+00:00"
-  },
-  {
-    "id": "tgf83cbf6f8faec5c714",
-    "category": "Музыка / Рэп",
-    "title": "⚡️ Новый сниппет Playboi Carti и Young Thug, записанный в 2026 году",
-    "summary": "⚡️ Новый сниппет Playboi Carti и Young Thug, записанный в 2026 году\nКак вам? ❤️/👎\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/30890",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T09:27:34+00:00"
-  },
-  {
-    "id": "rss8bcede1c75c5c469",
-    "category": "Казахстан / Новости",
-    "title": "14:18, 25 Октября 2026 Более 1500 жителей и гостей Алматы собрались на «Медеу» ко Дню Республики",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-1500-zhiteley-igostey-almati-sobralis-namedeu-kodnyu-respubliki-3746d57b",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T09:18:00+00:00"
   }
 ]
