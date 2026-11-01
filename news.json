@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss7f8ad0fb12e6aa4c",
+    "category": "Казахстан / Новости",
+    "title": "05:42, 01 Ноября 2026 Китай научил ИИ прогнозировать опасные погодные явления",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kitay-nauchil-ii-prognozirovat-opasnie-pogodnie-yavleniya-9712a632",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T00:42:00+00:00"
+  },
+  {
+    "id": "rss4e16500dbb1353b5",
+    "category": "Казахстан / Новости",
+    "title": "Семь авто чуть не сгорели при пожаре в гараже в Восточном Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/sem-avto-ne-sgoreli-pojare-garaje-vostochnom-kazahstane-612075/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T00:42:00+00:00"
+  },
+  {
+    "id": "rss0227f82b0fc77bae",
+    "category": "Казахстан / Новости",
+    "title": "05:15, 01 Ноября 2026 Меркель выступила за избрание женщины президентом Германии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/merkel-vistupila-za-izbranie-zhenshini-prezidentom-germanii-c4393feb",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T00:15:00+00:00"
+  },
+  {
     "id": "rssf1f54250e99f0114",
     "category": "Казахстан / Новости",
     "title": "Хаменеи провел первую публичную встречу и приказал “максимально“ ответить на любое нападение",
@@ -14158,25 +14188,5 @@
     "url": "https://www.inform.kz/ru/zhiteley-chetireh-gorodov-kazahstana-predupredili-oneblagopriyatnih-meteousloviy-06635774",
     "date": "25.10.2026",
     "published_at": "2026-10-25T01:20:00+00:00"
-  },
-  {
-    "id": "rssae51cc621945fb0a",
-    "category": "Казахстан / Новости",
-    "title": "05:15, 25 Октября 2026 Массовые митинги вновь охватили крупные города Франции",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/massovie-mitingi-vnov-ohvatili-krupnie-goroda-frantsii-c1b1c894",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T00:15:00+00:00"
-  },
-  {
-    "id": "rss67f2d3ec8590a9dd",
-    "category": "Казахстан / Новости",
-    "title": "Заключенные устроили демарш в СИЗО Атырау - СМИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/zaklyuchennyie-ustroili-demarsh-v-sizo-atyirau-smi-611616/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T00:06:08+00:00"
   }
 ]
