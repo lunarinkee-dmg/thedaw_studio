@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss8acfe39112c8ca91",
+    "category": "Казахстан / Новости",
+    "title": "В Алматы арестовали мужчину, призывавшего к массовой остановке грузового транспорта",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/almatyi-arestovali-mujchinu-prizyivavshego-massovoy-612093/",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T11:50:06+00:00"
+  },
+  {
+    "id": "rss8be82de30405f69c",
+    "category": "Казахстан / Новости",
+    "title": "16:46, 01 Ноября 2026 Казахстанский флаг пронесли на открытии юношеской Олимпиады в Сенегале",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanskiy-flag-pronesli-naotkritii-yunosheskoy-olimpiadi-vsenegale-9a81fd09",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T11:46:00+00:00"
+  },
+  {
+    "id": "rss74b00774bc4e4748",
+    "category": "Казахстан / Новости",
+    "title": "16:39, 01 Ноября 2026 Алматинца арестовали после призыва к массовой остановке грузовиков",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/almatintsa-arestovali-posle-priziva-kmassovoy-ostanovke-gruzovikov-c8a81908",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T11:39:00+00:00"
+  },
+  {
     "id": "rss0f5ba53a22573738",
     "category": "Казахстан / Новости",
     "title": "16:18, 01 Ноября 2026 ФБР заявило о причастности КНДР к краже более $6 млрд в криптовалюте",
@@ -14008,15 +14038,5 @@
     "url": "https://www.inform.kz/ru/lyudi-respubliki-kak-odna-semya-iz-zhetsu-posvyatila-zheleznoy-doroge-347-let-67aee1de",
     "date": "25.10.2026",
     "published_at": "2026-10-25T12:00:00+00:00"
-  },
-  {
-    "id": "rss40362109a34e1fc2",
-    "category": "Казахстан / Новости",
-    "title": "16:47, 25 Октября 2026 Дональд Трамп досрочно проголосовал на выборах в Конгресс США",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/donald-tramp-dosrochno-progolosoval-naviborah-vkongress-ssha-993b9408",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T11:47:00+00:00"
   }
 ]
