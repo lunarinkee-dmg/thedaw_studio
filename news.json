@@ -1,5 +1,15 @@
 [
   {
+    "id": "tg2f152221d26b1e3f62",
+    "category": "Музыка / Рэп",
+    "title": "👻 Sexyy Red в образе Мистик из «Людей Икс» на Хэллоуин",
+    "summary": "👻 Sexyy Red в образе Мистик из «Людей Икс» на Хэллоуин\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31011",
+    "date": "01.11.2026",
+    "published_at": "2026-11-01T19:20:33+00:00"
+  },
+  {
     "id": "rss25347ed30e90ecc6",
     "category": "Казахстан / Новости",
     "title": "00:01, 02 Ноября 2026 Впервые за более чем 20 лет в Таразе начинают перерабатывать свеклу",
@@ -62,7 +72,7 @@
   {
     "id": "rss90d65420729d2b72",
     "category": "Казахстан / Новости",
-    "title": "Суд в США окончательно отклонил иск Трампа к WJS о клевете в связи с освещением истории с Эпштейном",
+    "title": "Суд в США окончательно отклонил иск Трампа к WSJ о клевете в связи с освещением истории с Эпштейном",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/usa/sud-ssha-okonchatelno-otklonil-isk-trampa-wjs-klevete-svyazi-612102/",
@@ -14168,25 +14178,5 @@
     "url": "https://www.inform.kz/ru/osennie-kanikuli-nachalis-vkazahstane-kogda-shkolniki-vernutsya-zaparti-4632d5e9",
     "date": "25.10.2026",
     "published_at": "2026-10-25T20:23:00+00:00"
-  },
-  {
-    "id": "rss1e01ae9a6d94de0d",
-    "category": "Казахстан / Новости",
-    "title": "00:40, 26 Октября 2026 Турнир по казахской игре тоғызқұмалақ прошел в Пекине",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/turnir-pokazahskoy-igre-togizkumalak-proshel-v-pekine-a3a2ebb4",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T19:40:00+00:00"
-  },
-  {
-    "id": "rss4f91b83dea5c0101",
-    "category": "Казахстан / Новости",
-    "title": "Лидер оппозиции и лауреат Нобелевской премии мира вернулась в Венесуэлу",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/latin/lider-oppozitsii-laureat-nobelevskoy-premii-mira-vernulas-611652/",
-    "date": "25.10.2026",
-    "published_at": "2026-10-25T19:35:00+00:00"
   }
 ]
