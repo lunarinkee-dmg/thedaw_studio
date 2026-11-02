@@ -1,5 +1,15 @@
 [
   {
+    "id": "rss07a62fa11e60c0b7",
+    "category": "Казахстан / Новости",
+    "title": "03:28, 03 Ноября 2026 Суперкомпьютер за $276 млн запустили в Южной Корее",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/superkompyuter-za-276-mln-zapustili-v-yuzhnoy-koree-3564cda9",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T22:28:00+00:00"
+  },
+  {
     "id": "rssb252ee9fdbc85a05",
     "category": "Казахстан / Новости",
     "title": "03:00, 03 Ноября 2026 Трамп заявил о готовности превентивно помиловать Маска",
@@ -15608,25 +15618,5 @@
     "url": "https://www.inform.kz/ru/tramp-poobeshal-1-mln-za-svedeniya-o-mahinatsiyah-na-viborah-v-ssha-333f398d",
     "date": "26.10.2026",
     "published_at": "2026-10-26T22:57:00+00:00"
-  },
-  {
-    "id": "rss6162546bfa1ffa25",
-    "category": "Казахстан / Новости",
-    "title": "Мужчина в США рассылал письма с белым веществом и странными посланиями",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/mujchina-ssha-rassyilal-pisma-belyim-veschestvom-strannyimi-611688/",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T22:25:00+00:00"
-  },
-  {
-    "id": "rss766402b15bce88f8",
-    "category": "Казахстан / Новости",
-    "title": "03:21, 27 Октября 2026 Три человека погибли при крушении нефтяной платформы у берегов Габона",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tri-cheloveka-pogibli-pri-krushenii-neftyanoy-platformi-u-beregov-gabona-e21076c8",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T22:21:00+00:00"
   }
 ]
