@@ -1,5 +1,295 @@
 [
   {
+    "id": "rsscdca7a3f18ef73bd",
+    "category": "Казахстан / Новости",
+    "title": "13:13, 02 Ноября 2026 Амур вслед за Үміт — второго тигра выпустили в дикую природу Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/amur-vsled-za-umt-vtorogo-tigra-vipustili-v-dikuyu-prirodu-kazahstana-bbe2cd79",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T08:13:00+00:00"
+  },
+  {
+    "id": "rss1eeb4c73943c2708",
+    "category": "Казахстан / Новости",
+    "title": "13:05, 02 Ноября 2026 Проверки мобильных переводов: что изменится в Казахстане с 10 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/proverki-mobilnih-perevodov-chto-izmenitsya-vkazahstane-s10noyabrya-44c0c7c2",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T08:05:00+00:00"
+  },
+  {
+    "id": "rss4667c31738fbfc63",
+    "category": "Казахстан / Новости",
+    "title": "Ярмарка ремесленников прошла в Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/yarmarka-remeslennikov-proshla-v-almatyi-612092/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T08:02:00+00:00"
+  },
+  {
+    "id": "rss8baa36e2b0e7a0f9",
+    "category": "Казахстан / Новости",
+    "title": "Проверка мобильных переводов: в Казахстане изменили порог, который привлечёт внимание налоговой",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/proverka-mobilnyih-perevodov-kazahstane-izmenili-porog-612152/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T08:01:00+00:00"
+  },
+  {
+    "id": "rssc3a44b516a9da9f2",
+    "category": "Казахстан / Новости",
+    "title": "12:58, 02 Ноября 2026 Нарушения на 8 млрд теңге выявили в дорожной отрасли Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/narusheniya-na-8-mlrd-tenge-viyavili-v-dorozhnoy-otrasli-kazahstana-925dc42c",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:58:00+00:00"
+  },
+  {
+    "id": "rss90ebb86251b80592",
+    "category": "Казахстан / Новости",
+    "title": "12:57, 02 Ноября 2026 На сколько выросло население Казахстана в октябре",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/naskolko-viroslo-naselenie-kazahstana-voktyabre-6f6bdec5",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:57:00+00:00"
+  },
+  {
+    "id": "rsscb74220d1af84d01",
+    "category": "Казахстан / Новости",
+    "title": "Хотели силой изменить конституционный строй: КНБ задержал экстремистов в Атырау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/crime/hoteli-siloy-izmenit-konstitutsionnyiy-stroy-knb-zaderjal-612154/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:52:17+00:00"
+  },
+  {
+    "id": "rsseeead89123271ce2",
+    "category": "Казахстан / Новости",
+    "title": "Выборы в маслихаты: сколько человек претендуют на одно депутатское кресло в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/vyiboryi-maslihatyi-skolko-pretenduyut-odno-deputatskoe-612146/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:51:31+00:00"
+  },
+  {
+    "id": "rssf5bff2e7c4ca1209",
+    "category": "Казахстан / Новости",
+    "title": "12:51, 02 Ноября 2026 Выборы в маслихаты: зарегистрировались 10 971 кандидат в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vibori-vmaslihati-vkazahstane-zaregistrirovali-10-971-kandidata-eb38ab93",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:51:00+00:00"
+  },
+  {
+    "id": "rssd1dbf985b744ab1f",
+    "category": "Казахстан / Новости",
+    "title": "12:49, 02 Ноября 2026 Тренер «Семея» рассказал о задачах команды после выхода в 1/8 финала Лиги чемпионов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/trener-semeya-rasskazal-o-zadachah-komandi-posle-vihoda-v-18-finala-ligi-chempio-24d1f85c",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:49:00+00:00"
+  },
+  {
+    "id": "rss07207b0ec3568041",
+    "category": "Казахстан / Новости",
+    "title": "Плюс 130 тысяч с начала года: как быстро растет население Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/plyus-130-tyisyach-nachala-goda-byistro-rastet-naselenie-612145/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:47:16+00:00"
+  },
+  {
+    "id": "rssf57a5f17ad231a10",
+    "category": "Казахстан / Новости",
+    "title": "12:40, 02 Ноября 2026 Оружие, наркотики и подпольные учебные центры выявили в Атырау при задержании 10 подозреваемых в экстремизме",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/oruzhie-narkotiki-i-podpolnie-uchebnie-tsentri-viyavili-v-atirau-pri-zaderzhanii-48117791",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:40:00+00:00"
+  },
+  {
+    "id": "rss78528039a65faf6b",
+    "category": "Казахстан / Новости",
+    "title": "12:38, 02 Ноября 2026 Жумангарин высказался против единой ставки СНР для бизнеса по всему Казахстану",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zhumangarin-viskazalsya-protiv-edinoy-stavki-snr-dlyabiznesa-povsemu-kazahstanu-988ada26",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:38:00+00:00"
+  },
+  {
+    "id": "rss9cba3040bce89945",
+    "category": "Казахстан / Новости",
+    "title": "12:29, 02 Ноября 2026 От угля к новым производствам — чем живет Карагандинская область",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/otuglya-knovim-proizvodstvam-chem-zhivet-karagandinskaya-oblast-53bd6e9a",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:29:00+00:00"
+  },
+  {
+    "id": "rssb9a60e376a01992a",
+    "category": "Казахстан / Новости",
+    "title": "12:27, 02 Ноября 2026 Депутат Курултая предложила передать разработку государственных IT-систем частным компаниям",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/deputat-kurultaya-predlozhila-peredat-razrabotku-gosudarstvennih-it-sistem-chast-1ce006ff",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:27:00+00:00"
+  },
+  {
+    "id": "rss70852ea411b83307",
+    "category": "Казахстан / Новости",
+    "title": "“Интернет не работает?“: операторы ответили на жалобы жителей Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/internet-rabotaet-operatoryi-otvetili-jalobyi-jiteley-612139/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:19:00+00:00"
+  },
+  {
+    "id": "rss1abf396b36fd214d",
+    "category": "Казахстан / Новости",
+    "title": "12:18, 02 Ноября 2026 Бектенов рассказал о выявленных недостатках в работе Минобороны после трагедии на Каспии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bektenov-rasskazal-oviyavlennih-nedostatkah-vrabote-minoboroni-posle-tragedii-na-4f35bd72",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:18:00+00:00"
+  },
+  {
+    "id": "rssdbe2398b051ada78",
+    "category": "Казахстан / Новости",
+    "title": "12:17, 02 Ноября 2026 Около 500 хуситов нейтрализованы за сутки в Йемене",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/okolo-500-husitov-neytralizovani-za-sutki-v-yemene-bc3a2862",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:17:00+00:00"
+  },
+  {
+    "id": "rssea6bf1d82de8027f",
+    "category": "Казахстан / Новости",
+    "title": "Молодой орёл из Казахстана преодолел 1 400 километров: за ним следят по GPS",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/my-country/molodoy-orl-kazahstana-preodolel-1-400-kilometrov-nim-612129/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:17:00+00:00"
+  },
+  {
+    "id": "rss2d710a1a2d151577",
+    "category": "Казахстан / Новости",
+    "title": "Сильные дожди и похолодание идут в Казахстан",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/silnyie-dojdi-i-poholodanie-idut-v-kazahstan-612141/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:11:29+00:00"
+  },
+  {
+    "id": "rss471ca593e3d1802b",
+    "category": "Казахстан / Новости",
+    "title": "12:11, 02 Ноября 2026 Появились подробности о заболевших футболистах из Караганды в Ташкенте",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/poyavilis-podrobnosti-ozabolevshih-futbolistah-izkaragandi-vtashkente-f4de1013",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:11:00+00:00"
+  },
+  {
+    "id": "rss91f9df7941e72140",
+    "category": "Казахстан / Новости",
+    "title": "В Алматинской области расширили производство мяса птицы при поддержке БРК",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/almatinskoy-oblasti-rasshirili-proizvodstvo-myasa-ptitsyi-612135/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:10:07+00:00"
+  },
+  {
+    "id": "rssfec7a0d46da86f0a",
+    "category": "Казахстан / Новости",
+    "title": "12:10, 02 Ноября 2026 Кредитную и страховую историю бизнеса теперь можно проверить через eGov Business",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kreditnuyu-i-strahovuyu-istoriyu-biznesa-teper-mozhno-proverit-cherez-egov-busin-7c0be3b8",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:10:00+00:00"
+  },
+  {
+    "id": "rssc088845c2609af41",
+    "category": "Казахстан / Новости",
+    "title": "12:03, 02 Ноября 2026 Лицензии отозвали у 78 медорганизаций Казахстана, включая стоматологии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/litsenzii-otozvali-u78-medorganizatsiy-kazahstana-vklyuchaya-stomatologii-5df07259",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:03:00+00:00"
+  },
+  {
+    "id": "rss286f2252fbd2bdc0",
+    "category": "Казахстан / Новости",
+    "title": "12:02, 02 Ноября 2026 Снег на востоке, дожди на западе: прогноз погоды в Казахстане на 3–5 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sneg-na-vostoke-dozhdi-na-zapade-prognoz-pogodi-v-kazahstane-na-35-noyabrya-21d923a9",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T07:02:00+00:00"
+  },
+  {
+    "id": "rss5a8b89293737152f",
+    "category": "Казахстан / Новости",
+    "title": "11:55, 02 Ноября 2026 Казахстанским банкам предлагают новые правила финансирования инвестпроектов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanskim-bankam-predlagayut-novie-pravila-finansirovaniya-investproektov-805c0f74",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T06:55:00+00:00"
+  },
+  {
+    "id": "rss4140fc71e699e2cf",
+    "category": "Казахстан / Новости",
+    "title": "11:53, 02 Ноября 2026 Касым-Жомарт Токаев прибыл с рабочей поездкой в Карагандинскую область",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kasim-zhomart-tokaev-pribil-s-rabochey-poezdkoy-v-karagandinskuyu-oblast-5697cb0a",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T06:53:00+00:00"
+  },
+  {
+    "id": "rssc30303553fa4953c",
+    "category": "Казахстан / Новости",
+    "title": "Ставки по депозитам снижаются в Казахстане: сколько теперь предлагают банки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/money/stavki-depozitam-snijayutsya-kazahstane-skolko-predlagayut-612133/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T06:52:00+00:00"
+  },
+  {
+    "id": "rss6029a66964079131",
+    "category": "Казахстан / Новости",
+    "title": "Токаев прибыл в Карагандинскую область",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-pribyil-v-karagandinskuyu-oblast-612144/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T06:51:56+00:00"
+  },
+  {
     "id": "rsse44a8dc7545f61cf",
     "category": "Казахстан / Новости",
     "title": "11:49, 02 Ноября 2026 Более 60 человек пострадали в период Хэллоуина в США",
@@ -120,22 +410,22 @@
     "published_at": "2026-11-02T06:10:00+00:00"
   },
   {
-    "id": "rssec0782600f8f2928",
-    "category": "Казахстан / Новости",
-    "title": "11:03, 02 Ноября 2026 Мужчину, напавшего на врача детской больницы, задержали в Актау",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/muzhchinu-napavshego-navracha-detskoy-bolnitsi-zaderzhali-vaktau-4af853e3",
-    "date": "02.11.2026",
-    "published_at": "2026-11-02T06:03:00+00:00"
-  },
-  {
     "id": "rssfe08831f52da4004",
     "category": "Казахстан / Новости",
     "title": "Казахстан проведет 36 мероприятий на климатической конференции в Турции",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/kazakhstan_news/kazahstan-provedet-36-meropriyatiy-klimaticheskoy-612119/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T06:03:00+00:00"
+  },
+  {
+    "id": "rssec0782600f8f2928",
+    "category": "Казахстан / Новости",
+    "title": "11:03, 02 Ноября 2026 Мужчину, напавшего на врача детской больницы, задержали в Актау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/muzhchinu-napavshego-navracha-detskoy-bolnitsi-zaderzhali-vaktau-4af853e3",
     "date": "02.11.2026",
     "published_at": "2026-11-02T06:03:00+00:00"
   },
@@ -14398,65 +14688,5 @@
     "url": "https://www.inform.kz/ru/kazahstanskiy-aviaperevozchik-stal-krupneyshey-inostrannoy-aviakompaniey-vsintsz-76d128b8",
     "date": "26.10.2026",
     "published_at": "2026-10-26T08:38:00+00:00"
-  },
-  {
-    "id": "rss1432abfed01a82ea",
-    "category": "Казахстан / Новости",
-    "title": "13:15, 26 Октября 2026 Люди Республики: как ученые Казахстана разрабатывают материалы для энергетики будущего",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/lyudi-respubliki-kakuchenie-kazahstana-razrabativayut-materiali-dlyaenergetiki-b-c65b199f",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T08:15:00+00:00"
-  },
-  {
-    "id": "rss7fa96d717f38f0c3",
-    "category": "Казахстан / Новости",
-    "title": "В Грузии оппозиция объявила о начале новой волны массовых протестов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/gruzii-oppozitsiya-obyyavila-nachale-novoy-volnyi-massovyih-611663/",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T08:08:26+00:00"
-  },
-  {
-    "id": "rss732f8ad1b1544a98",
-    "category": "Казахстан / Новости",
-    "title": "13:00, 26 Октября 2026 За что казахи давали «теріс бата» и почему этого боялись",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/za-chto-kazahi-davali-ters-bata-i-pochemu-etogo-boyalis-cfef6ef5",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T08:00:00+00:00"
-  },
-  {
-    "id": "rss9152b15dec5c4105",
-    "category": "Казахстан / Новости",
-    "title": "12:45, 26 Октября 2026 Школьник из Петропавловска разработал ИИ-помощника для пожилых, вызывающего скорую при падении",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/shkolnik-izpetropavlovska-razrabotal-ii-pomoshnika-dlyapozhilih-vizivayushego-sk-e2e02ea5",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T07:45:00+00:00"
-  },
-  {
-    "id": "rss3b4a2273ea3dd78b",
-    "category": "Казахстан / Новости",
-    "title": "12:20, 26 Октября 2026 Троих подозреваемых в нападении на церковь задержали в Иордании",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/troih-podozrevaemih-vnapadenii-natserkov-zaderzhali-viordanii-35382cb0",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T07:20:00+00:00"
-  },
-  {
-    "id": "rssb6c857e9477b347b",
-    "category": "Казахстан / Новости",
-    "title": "12:07, 26 Октября 2026 Обещаю не сдаваться: Шайдоров обратился к болельщикам после Гран-при Франции",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/obeshayu-ne-sdavatsya-shaydorov-obratilsya-k-bolelshikam-posle-gran-pri-frantsii-703db491",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T07:07:00+00:00"
   }
 ]
