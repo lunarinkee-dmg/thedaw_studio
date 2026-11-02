@@ -1,5 +1,35 @@
 [
   {
+    "id": "rssb252ee9fdbc85a05",
+    "category": "Казахстан / Новости",
+    "title": "03:00, 03 Ноября 2026 Трамп заявил о готовности превентивно помиловать Маска",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tramp-zayavil-ogotovnosti-preventivno-pomilovat-maska-56facc7f",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T22:00:00+00:00"
+  },
+  {
+    "id": "rss041b5f0b2d0c2006",
+    "category": "Казахстан / Новости",
+    "title": "Подросток впал в кому после избиения старшеклассником в Жамбылской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/podrostok-vpal-komu-izbieniya-starsheklassnikom-jambyilskoy-612204/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T21:37:52+00:00"
+  },
+  {
+    "id": "rssd10ef112c322d66a",
+    "category": "Казахстан / Новости",
+    "title": "02:35, 03 Ноября 2026 Казахстан завоевал два золота на международном турнире Moscow Karate Universe",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-zavoeval-dva-zolota-namezhdunarodnom-turnire-moscow-karate-universe-936db622",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T21:35:00+00:00"
+  },
+  {
     "id": "tg802e7ded75e2279ca9",
     "category": "Культура / Музыка",
     "title": "На этот раз мы вышли за пределы привычного формата и перенесли TOASTER LIVE прямо на нашу совместную вечеринку с DFF. Артисты выступали перед гостями, а сама тусовка стала частью с",
@@ -152,7 +182,7 @@
   {
     "id": "rss4b81b0bb690e516f",
     "category": "Казахстан / Новости",
-    "title": "23:12, 02 Ноября 2026 529 кандидатов в депутаты зарегистрированы в Павлодарской области",
+    "title": "23:12, 02 Ноября 2026 529 кандидатов в депутаты маслихатов зарегистрированы в Павлодарской области",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/529-kandidatov-vdeputati-zaregistrirovani-vpavlodarskoy-oblasti-8feb56e0",
@@ -15598,25 +15628,5 @@
     "url": "https://www.inform.kz/ru/tri-cheloveka-pogibli-pri-krushenii-neftyanoy-platformi-u-beregov-gabona-e21076c8",
     "date": "26.10.2026",
     "published_at": "2026-10-26T22:21:00+00:00"
-  },
-  {
-    "id": "rss21aa5482f892d264",
-    "category": "Казахстан / Новости",
-    "title": "03:00, 27 Октября 2026 Apple признала проблему с экранами iPhone Duo после жалоб покупателей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/apple-priznala-problemu-sekranami-iphone-duo-posle-zhalob-pokupateley-55a48abc",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T22:00:00+00:00"
-  },
-  {
-    "id": "rssbe072bc20105663a",
-    "category": "Казахстан / Новости",
-    "title": "“Всё выглядело очень плохо“: Трамп раскритиковал выборы в Бразилии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/vs-vyiglyadelo-ochen-ploho-tramp-raskritikoval-vyiboryi-611686/",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T21:30:00+00:00"
   }
 ]
