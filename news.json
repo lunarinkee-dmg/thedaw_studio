@@ -1,5 +1,45 @@
 [
   {
+    "id": "tg802e7ded75e2279ca9",
+    "category": "Культура / Музыка",
+    "title": "На этот раз мы вышли за пределы привычного формата и перенесли TOASTER LIVE прямо на нашу совместную вечеринку с DFF. Артисты выступали перед гостями, а сама тусовка стала частью с",
+    "summary": "На этот раз мы вышли за пределы привычного формата и перенесли TOASTER LIVE прямо на нашу совместную вечеринку с DFF. Артисты выступали перед гостями, а сама тусовка стала частью съёмки\nОткрывают серию old honda и SELFISH с треками «#kukoldmusic» и «Шампанское»\nИ это только начало - впереди ещё много интересного\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32766",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T21:00:36+00:00"
+  },
+  {
+    "id": "rsse3cc0e767f31a710",
+    "category": "Казахстан / Новости",
+    "title": "02:00, 03 Ноября 2026 Конституционный Суд РК проверит правила учета наград за материнство при назначении пособий",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/konstitutsionniy-sud-rk-proverit-pravila-ucheta-nagrad-za-materinstvo-pri-naznac-86ff7ac6",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T21:00:00+00:00"
+  },
+  {
+    "id": "rssfef86a131b04eab6",
+    "category": "Казахстан / Новости",
+    "title": "Две женщины и мужчина погибли в массовой аварии в Акмолинской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/dve-jenschinyi-mujchina-pogibli-massovoy-avarii-akmolinskoy-612202/",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T20:38:48+00:00"
+  },
+  {
+    "id": "rssd414fd69858298fa",
+    "category": "Казахстан / Новости",
+    "title": "01:30, 03 Ноября 2026 Расчет долговой нагрузки заемщиков проверят в 11 крупных банках Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/raschet-dolgovoy-nagruzki-zaemshikov-proveryat-v-11-krupnih-bankah-kazahstana-4fb58133",
+    "date": "02.11.2026",
+    "published_at": "2026-11-02T20:30:00+00:00"
+  },
+  {
     "id": "rssd377c563ee5a5f43",
     "category": "Казахстан / Новости",
     "title": "01:20, 03 Ноября 2026 Мнения казахстанцев учтут при отборе кандидатов на судейские должности",
@@ -15578,35 +15618,5 @@
     "url": "https://tengrinews.kz/world_news/vs-vyiglyadelo-ochen-ploho-tramp-raskritikoval-vyiboryi-611686/",
     "date": "26.10.2026",
     "published_at": "2026-10-26T21:30:00+00:00"
-  },
-  {
-    "id": "rssa4af4f6797fee414",
-    "category": "Казахстан / Новости",
-    "title": "02:15, 27 Октября 2026 Корейская «Ариран» под домбру прозвучала на концерте в Астане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/koreyskaya-ariran-poddombru-prozvuchala-nakontserte-vastane-b5c2221c",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T21:15:00+00:00"
-  },
-  {
-    "id": "rssd02746080c9aec34",
-    "category": "Казахстан / Новости",
-    "title": "Неблагоприятные метеоусловия накроют Астану, Алматы и еще восемь городов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/neblagopriyatnyie-meteousloviya-nakroyut-astanu-almatyi-611684/",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T20:35:00+00:00"
-  },
-  {
-    "id": "rss7faee35399b0481a",
-    "category": "Казахстан / Новости",
-    "title": "01:29, 27 Октября 2026 Компания Anthropic планирует провести IPO",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kompaniya-anthropic-planiruet-provesti-ipo-1de5ac82",
-    "date": "26.10.2026",
-    "published_at": "2026-10-26T20:29:00+00:00"
   }
 ]
