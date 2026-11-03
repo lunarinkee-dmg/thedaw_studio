@@ -1,5 +1,105 @@
 [
   {
+    "id": "rssfcb573cdac6c3ce3",
+    "category": "Казахстан / Новости",
+    "title": "09:10, 03 Ноября 2026 Казахстан и Израиль подписали конвенцию об избежании двойного налогообложения",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-iizrail-podpisali-konventsiyu-obizbezhanii-dvoynogo-nalogooblozheniya-f142da31",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T04:10:00+00:00"
+  },
+  {
+    "id": "rssd2bd3abbc8d6941f",
+    "category": "Казахстан / Новости",
+    "title": "Ямы засыпают глиной: ремонт дороги на юге Казахстана сняли на видео",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/yamyi-zasyipayut-glinoy-remont-dorogi-yuge-kazahstana-snyali-612200/",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T04:10:00+00:00"
+  },
+  {
+    "id": "rss48c631bee7a352d1",
+    "category": "Казахстан / Новости",
+    "title": "08:58, 03 Ноября 2026 Газовая котельная на Алматинской ТЭЦ-2 начала выдавать тепло",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/gazovaya-kotelnaya-naalmatinskoy-tets-2-nachala-vidavat-teplo-4a90e769",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:58:00+00:00"
+  },
+  {
+    "id": "rss2e8b037d151781ea",
+    "category": "Казахстан / Новости",
+    "title": "08:50, 03 Ноября 2026 ISU раскрыл шансы Софьи Самоделкиной на финал Гран-при перед этапом в США",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/isu-raskril-shansi-sofi-samodelkinoy-na-final-gran-pri-pered-etapom-v-ssha-93ba820f",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:50:00+00:00"
+  },
+  {
+    "id": "rss322c5343aeb1c28a",
+    "category": "Казахстан / Новости",
+    "title": "08:39, 03 Ноября 2026 Водителей двух областей РК предупредили о скользких дорогах 3 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/voditeley-dvuh-oblastey-rkpredupredili-oskolzkih-dorogah-3noyabrya-cede3a38",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:39:00+00:00"
+  },
+  {
+    "id": "rssf9ab48a51e49cd03",
+    "category": "Казахстан / Новости",
+    "title": "Платёж по кредиту могут снизить вдвое: кто имеет на это право в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/private_finance/platj-kreditu-mogut-snizit-vdvoe-imeet-eto-pravo-kazahstane-611978/",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:36:00+00:00"
+  },
+  {
+    "id": "rsscdf36fedbc9e78f4",
+    "category": "Казахстан / Новости",
+    "title": "08:30, 03 Ноября 2026 Казахстан и Германия планируют создать совместный водный хаб",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-igermaniya-planiruyut-sozdat-sovmestniy-vodniy-hab-206c389d",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:30:00+00:00"
+  },
+  {
+    "id": "rsscea316910152acf1",
+    "category": "Казахстан / Новости",
+    "title": "США и Иран обвалили цены на нефть: что произошло",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/ssha-i-iran-obvalili-tsenyi-na-neft-chto-proizoshlo-612210/",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:28:41+00:00"
+  },
+  {
+    "id": "rss7191679a3cad0fc3",
+    "category": "Казахстан / Новости",
+    "title": "Польша начала крупную спецоперацию у границы с Россией",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/polsha-nachala-krupnuyu-spetsoperatsiyu-granitsyi-rossiey-612209/",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:20:55+00:00"
+  },
+  {
+    "id": "rss48f68164879c823a",
+    "category": "Казахстан / Новости",
+    "title": "08:19, 03 Ноября 2026 Мировые цены на нефть на 3 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mirovie-tseni-naneft-na3noyabrya-e75c0d25",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T03:19:00+00:00"
+  },
+  {
     "id": "rss9f83d4ad435f44ad",
     "category": "Казахстан / Новости",
     "title": "08:10, 03 Ноября 2026 3 ноября. Календарь Казинформа «Дни рождения»",
@@ -15578,95 +15678,5 @@
     "url": "https://www.inform.kz/ru/svishe-30-chelovek-spasli-pri-pozhare-v-parkinge-zhilogo-doma-v-astane-e721d4ec",
     "date": "27.10.2026",
     "published_at": "2026-10-27T04:17:00+00:00"
-  },
-  {
-    "id": "rss139ea19e5b6ee786",
-    "category": "Казахстан / Новости",
-    "title": "От “Слышащего государства“ до однопалатного Парламента: о чём говорил Токаев в Посланиях",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/slyishaschego-gosudarstva-odnopalatnogo-parlamenta-chm-611036/",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T04:10:00+00:00"
-  },
-  {
-    "id": "rssaf7fd5c7b362d0b0",
-    "category": "Казахстан / Новости",
-    "title": "09:10, 27 Октября 2026 Более 17 тысяч пропавших без вести граждан нашли в Казахстане за девять месяцев",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-17-tisyach-propavshih-bezvesti-grazhdan-nashli-vkazahstane-zadevyat-mesyat-92f0c4ec",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T04:10:00+00:00"
-  },
-  {
-    "id": "rss30c1d35fe3434f77",
-    "category": "Казахстан / Новости",
-    "title": "08:50, 27 Октября 2026 Житель Кызылорды погиб после избиения: родственники говорят о 12 нападавших",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/podrostok-pogib-posle-izbieniya-vkizilorde-rodstvenniki-govoryat-o12-napadavshih-b99a4689",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:50:00+00:00"
-  },
-  {
-    "id": "rss3905575ebe8e283c",
-    "category": "Казахстан / Новости",
-    "title": "Девушка оказалась в ледяной воде в Аркалыке: спасение попало на видео",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/devushka-okazalas-ledyanoy-vode-arkalyike-spasenie-popalo-611694/",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:46:05+00:00"
-  },
-  {
-    "id": "rss67bf2a969384e576",
-    "category": "Казахстан / Новости",
-    "title": "08:45, 27 Октября 2026 Мировые цены на нефть снизились 27 октября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mirovie-tseni-naneft-snizilis-27oktyabrya-c792bc22",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:45:00+00:00"
-  },
-  {
-    "id": "rssd2797d0b177c4cc6",
-    "category": "Казахстан / Новости",
-    "title": "08:36, 27 Октября 2026 Дефицит кадров в сельском хозяйстве Павлодарской области превысил 400 специалистов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/defitsit-kadrov-vselskom-hozyaystve-pavlodarskoy-oblasti-previsil-400-spetsialis-8a86e6f6",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:36:00+00:00"
-  },
-  {
-    "id": "rsse639aba9fde6f131",
-    "category": "Казахстан / Новости",
-    "title": "Мировой техногигант предложил 60 тысячам сотрудников уволиться с компенсацией",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/curious/mirovoy-tehnogigant-predlojil-60-tyisyacham-sotrudnikov-611693/",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:30:00+00:00"
-  },
-  {
-    "id": "rss1f43b86931ec2f5c",
-    "category": "Казахстан / Новости",
-    "title": "08:26, 27 Октября 2026 Курсы валют в обменниках Астаны и Алматы на 27 октября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na27oktyabrya-0c20a218",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:26:00+00:00"
-  },
-  {
-    "id": "rss00598619e3297198",
-    "category": "Казахстан / Новости",
-    "title": "08:15, 27 Октября 2026 Около 40 млрд кубометров воды поступило в Балхаш за три года",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/okolo-40mlrd-kubometrov-vodi-postupilo-vbalhash-zatri-goda-0360fa8e",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T03:15:00+00:00"
   }
 ]
