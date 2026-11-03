@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss42a529decb5f409d",
+    "category": "Казахстан / Новости",
+    "title": "В Костанае убили 86-летнего пенсионера: полиция ищет подозреваемого",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/kostanae-ubili-86-letnego-pensionera-politsiya-ischet-612307/",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T22:50:00+00:00"
+  },
+  {
+    "id": "rsse97acc47eaf538e6",
+    "category": "Казахстан / Новости",
+    "title": "03:30, 04 Ноября 2026 Семь самолетов получили ложные сообщения об угрозе взрыва в Европе за сутки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sem-samoletov-poluchili-lozhnie-soobsheniya-ob-ugroze-vzriva-v-evrope-za-sutki-a6a6e07b",
+    "date": "03.11.2026",
+    "published_at": "2026-11-03T22:30:00+00:00"
+  },
+  {
     "id": "rsseb9af8d942a19819",
     "category": "Казахстан / Новости",
     "title": "03:00, 04 Ноября 2026 Больше 93 тысяч сеголетков осетра выпустили в Черный Иртыш для спасения исчезающей популяции",
@@ -232,7 +252,7 @@
   {
     "id": "rssa2633d6eae259e5b",
     "category": "Казахстан / Новости",
-    "title": "22:35, 03 Ноября 2026 Статус земель в районе «Чистые пруды» в Косшы могут пересмотреть из-за сибиреязвенного захоронения",
+    "title": "22:35, 03 Ноября 2026 Статус земель в районе «Чистые пруды» в Косшы могут пересмотреть из-за захоронения сибирской язвы",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/status-zemel-v-rayone-chistie-prudi-v-kosshi-mogut-peresmotret-iz-za-sibireyazve-e5498b15",
@@ -16028,25 +16048,5 @@
     "url": "https://www.inform.kz/ru/bolee-56-mln-tenge-spasli-ot-internet-moshennikov-v-kostanae-b5ffdf41",
     "date": "27.10.2026",
     "published_at": "2026-10-27T23:09:00+00:00"
-  },
-  {
-    "id": "rss38df45f312f2f491",
-    "category": "Казахстан / Новости",
-    "title": "03:32, 28 Октября 2026 Дети составляют 60% заболевших грибковыми инфекциями в Жамбылской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/deti-sostavlyayut-60-zabolevshih-gribkovimi-infektsiyami-v-zhambilskoy-oblasti-7a4a50b7",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T22:32:00+00:00"
-  },
-  {
-    "id": "rssdbbb6f4e86e7a8e6",
-    "category": "Казахстан / Новости",
-    "title": "03:16, 28 Октября 2026 Трамп намерен официально запретить термин «искусственный интеллект»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tramp-nameren-zapretit-termin-iskusstvenniy-intellekt-v-dokumentah-ssha-720aaf8f",
-    "date": "27.10.2026",
-    "published_at": "2026-10-27T22:16:00+00:00"
   }
 ]
