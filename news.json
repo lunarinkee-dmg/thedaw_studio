@@ -1,5 +1,55 @@
 [
   {
+    "id": "rss5aa74f92bc7f31f4",
+    "category": "Казахстан / Новости",
+    "title": "07:18, 04 Ноября 2026 Избрание экс-президента Южной Кореи Юн Сок Ёля могут признать недействительным",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/izbranie-eks-prezidenta-yuzhnoy-korei-yunsok-yolya-mogut-priznat-nedeystvitelnim-6070f4e5",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T02:18:00+00:00"
+  },
+  {
+    "id": "rssdd5fbe741e7f9d17",
+    "category": "Казахстан / Новости",
+    "title": "Казахстанские сейсмологи зарегистрировали землетрясения в Таджикистане и Китае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/kazahstanskie-seysmologi-zaregistrirovali-zemletryaseniya-612311/",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T02:01:00+00:00"
+  },
+  {
+    "id": "rsse347f3b7407a47ef",
+    "category": "Казахстан / Новости",
+    "title": "07:00, 04 Ноября 2026 4 ноября. Календарь Казинформа «Даты. События»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/4noyabrya-kalendar-kazinforma-dati-sobitiya-4ecac2f3",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T02:00:00+00:00"
+  },
+  {
+    "id": "rss6a930f5a6d214f9a",
+    "category": "Казахстан / Новости",
+    "title": "Откуда у ЕНПФ 20 гектаров земли под Астаной и почему её не могут продать",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/otkuda-enpf-20-gektarov-zemli-astanoy-pochemu-e-mogut-prodat-612148/",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T01:46:00+00:00"
+  },
+  {
+    "id": "rss3f9a3eb6b2c1596f",
+    "category": "Казахстан / Новости",
+    "title": "06:43, 04 Ноября 2026 Необычная находка в боксерской груше обернулась семью годами колонии в Костанае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/neobichnaya-nahodka-v-bokserskoy-grushe-obernulas-semyu-godami-kolonii-v-kostana-4564afc6",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T01:43:00+00:00"
+  },
+  {
     "id": "rss051fd178649e7c23",
     "category": "Казахстан / Новости",
     "title": "Не Чубары, а Шубар: зачем Астанчане регулярно ездят в это село?",
@@ -12,7 +62,7 @@
   {
     "id": "rssdda50e5331f6384e",
     "category": "Казахстан / Новости",
-    "title": "06:18, 04 Ноября 2026 Неблагоприятные метеоусловия ожидаются в восьми городах Казахстан",
+    "title": "06:18, 04 Ноября 2026 Неблагоприятные метеоусловия ожидаются в восьми городах Казахстана",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/neblagopriyatnie-meteousloviya-ozhidayutsya-v-vosmi-gorodah-kazahstan-b7694ad5",
@@ -15978,25 +16028,5 @@
     "url": "https://www.inform.kz/ru/apellyatsiya-po-delu-tsentra-plova-v-shuchinske-kto-i-s-chem-okazalsya-ne-soglas-e0fdcfe5",
     "date": "28.10.2026",
     "published_at": "2026-10-28T02:32:00+00:00"
-  },
-  {
-    "id": "rssa26d90cf02d6fb55",
-    "category": "Казахстан / Новости",
-    "title": "07:00, 28 Октября 2026 28 октября. Календарь Казинформа «Даты. События»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/28-oktyabrya-kalendar-kazinforma-dati-sobitiya-de0fba08",
-    "date": "28.10.2026",
-    "published_at": "2026-10-28T02:00:00+00:00"
-  },
-  {
-    "id": "rsse2e0c496bcd63d67",
-    "category": "Казахстан / Новости",
-    "title": "Своя Москва и Шанхай: откуда в Актобе взялись необычные названия районов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/svoya-moskva-shanhay-otkuda-aktobe-vzyalis-neobyichnyie-4633/",
-    "date": "28.10.2026",
-    "published_at": "2026-10-28T01:40:00+00:00"
   }
 ]
