@@ -1,5 +1,75 @@
 [
   {
+    "id": "rssf2f11840c18095ac",
+    "category": "Казахстан / Новости",
+    "title": "23:10, 05 Ноября 2026 Лесной пожар вспыхнул в Северо-Казахстанской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/lesnoy-pozhar-vspihnul-vsevero-kazahstanskoy-oblasti-6bedd7da",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T18:10:00+00:00"
+  },
+  {
+    "id": "rss74847fbad1029c13",
+    "category": "Казахстан / Новости",
+    "title": "22:46, 05 Ноября 2026 Цифровые доказательства и права человека: Казахстан изучает европейский опыт уголовного правосудия",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tsifrovie-dokazatelstva-i-prava-cheloveka-kazahstan-izuchaet-evropeyskiy-opit-ug-db6564df",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:46:00+00:00"
+  },
+  {
+    "id": "rssd451d09bd46616d9",
+    "category": "Казахстан / Новости",
+    "title": "Известную в соцсетях алматинку оштрафовали за мат и ругань в прямом эфире",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/izvestnuyu-sotssetyah-almatinku-oshtrafovali-mat-rugan-612475/",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:42:54+00:00"
+  },
+  {
+    "id": "rssbf61f48b6596ce3d",
+    "category": "Казахстан / Новости",
+    "title": "22:35, 05 Ноября 2026 Азербайджан возглавит комиссию по биоресурсам Каспия в 2027–2028 годах",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/azerbaydzhan-vozglavit-komissiyu-po-bioresursam-kaspiya-v-20272028-godah-e8ecc2b8",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:35:00+00:00"
+  },
+  {
+    "id": "tg33364a66c987f30873",
+    "category": "Культура / Музыка",
+    "title": "Собрали для вас новинки грядущей пятницы",
+    "summary": "Собрали для вас новинки грядущей пятницы\nЧто ждете?",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32789",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:26:29+00:00"
+  },
+  {
+    "id": "tga026c7fd376527ab73",
+    "category": "Культура / Музыка",
+    "title": "#пятничныйтостер",
+    "summary": "#пятничныйтостер",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32787",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:26:14+00:00"
+  },
+  {
+    "id": "tge7d827a17a9712f94b",
+    "category": "Культура / Музыка",
+    "title": "#toasterfriday",
+    "summary": "#toasterfriday",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32785",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T17:26:06+00:00"
+  },
+  {
     "id": "rsscff1ef4abc320906",
     "category": "Казахстан / Новости",
     "title": "22:21, 05 Ноября 2026 Первый снег выпал на горнолыжном курорте Шымбулак",
@@ -12,7 +82,7 @@
   {
     "id": "rss1f01846363a35acb",
     "category": "Казахстан / Новости",
-    "title": "22:16, 05 Ноября 2026 Вслед за границей с Китаем в ВКО масштабно модернизируют погранпереход в Россию",
+    "title": "22:16, 05 Ноября 2026 Более 331 кг наркотиков изъяли в Акмолинской области за пять месяцев",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Kazinform",
     "url": "https://www.inform.kz/ru/vsled-zagranitsey-skitaem-vvko-masshtabno-moderniziruyut-pogranperehod-vrossiyu-d4ff48b6",
@@ -15688,75 +15758,5 @@
     "url": "https://www.inform.kz/ru/katastrofa-v-ispanii-74-cheloveka-pogibli-pri-stolknovenii-poezdov-5d162a09",
     "date": "29.10.2026",
     "published_at": "2026-10-29T18:14:00+00:00"
-  },
-  {
-    "id": "rssc1224932f6912f1e",
-    "category": "Казахстан / Новости",
-    "title": "22:59, 29 Октября 2026 США ввели новые санкции против КНДР",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ssha-vveli-novie-sanktsii-protiv-kndr-13f0fc61",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:59:00+00:00"
-  },
-  {
-    "id": "rss8db772058f23c88c",
-    "category": "Казахстан / Новости",
-    "title": "22:48, 29 Октября 2026 Участок под строительство без разрешительных документов огородили в лесу Бурабая",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/uchastok-podstroitelstvo-bezrazreshitelnih-dokumentov-ogorodili-vlesu-burabaya-7e850690",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:48:00+00:00"
-  },
-  {
-    "id": "rssbbdd3125bf662544",
-    "category": "Казахстан / Новости",
-    "title": "22:40, 29 Октября 2026 Аэропорт Петропавловска модернизируют для повышения транзитного потенциала РК",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/aeroport-petropavlovska-moderniziruyut-dlyapovisheniya-tranzitnogo-potentsiala-r-3b87af9d",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:40:00+00:00"
-  },
-  {
-    "id": "rss4f4534bd88793e72",
-    "category": "Казахстан / Новости",
-    "title": "22:39, 29 Октября 2026 Казахстанские фехтовальщики завоевали золото, серебро и бронзу чемпионата Азии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstanskie-fehtovalshiki-zavoevali-zoloto-serebro-i-bronzu-chempionata-azii-9ae27e37",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:39:00+00:00"
-  },
-  {
-    "id": "rsse00805820a4adc7b",
-    "category": "Казахстан / Новости",
-    "title": "22:33, 29 Октября 2026 Вице-Президент вручил государственные награды деятелям культуры и искусства стран Центральной Азии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/vitse-prezident-vruchil-gosudarstvennie-nagradi-deyatelyam-kulturi-i-iskusstva-s-c7574340",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:33:00+00:00"
-  },
-  {
-    "id": "rss2c60422203a91a9b",
-    "category": "Казахстан / Новости",
-    "title": "22:28, 29 Октября 2026 Незаконное религиозное обучение детей выявили в Алматинской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/nezakonnoe-religioznoe-obuchenie-detey-viyavili-v-almatinskoy-oblasti-a7f9b1af",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:28:00+00:00"
-  },
-  {
-    "id": "rsscfd87f34ecbcdd3f",
-    "category": "Казахстан / Новости",
-    "title": "Главы тюркских государств открыли Аллею тюркского мира в Анкаре",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/glavyi-tyurkskih-gosudarstv-otkryili-alleyu-tyurkskogo-mira-611955/",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T17:27:35+00:00"
   }
 ]
