@@ -1,5 +1,15 @@
 [
   {
+    "id": "rss06cde29b55d58730",
+    "category": "Казахстан / Новости",
+    "title": "02:17, 06 Ноября 2026 Жители Аркалыка пожаловались на темную воду из крана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zhiteli-arkalika-pozhalovalis-natemnuyu-vodu-izkrana-22a83c55",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T21:17:00+00:00"
+  },
+  {
     "id": "rss895c79b06541f81a",
     "category": "Казахстан / Новости",
     "title": "Экс-резидент Comedy Club оказался владельцем недвижимости в США на миллион долларов",
@@ -15658,35 +15668,5 @@
     "url": "https://www.inform.kz/ru/bolee-tisyachi-noutbukov-ukrali-izpoezda-sledovavshego-vpolshu-cherez-kazahstan-701620bd",
     "date": "29.10.2026",
     "published_at": "2026-10-29T21:59:00+00:00"
-  },
-  {
-    "id": "rss94ecfb82509f5503",
-    "category": "Казахстан / Новости",
-    "title": "02:43, 30 Октября 2026 Жительницу Астаны осудили за мошенничество с квартирами на 155 млн теңге",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zhitelnitsu-astani-osudili-za-moshennichestvo-s-kvartirami-na-155-mln-tenge-0aba7a12",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T21:43:00+00:00"
-  },
-  {
-    "id": "rss6373dc7bc4a3a8b4",
-    "category": "Казахстан / Новости",
-    "title": "02:27, 30 Октября 2026 Число пожилых людей в Китае впервые превысило число детей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/chislo-pozhilih-lyudey-v-kitae-vpervie-previsilo-chislo-detey-dfc0354a",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T21:27:00+00:00"
-  },
-  {
-    "id": "rss44077c7aeba7ae73",
-    "category": "Казахстан / Новости",
-    "title": "02:12, 30 Октября 2026 Предпринимательницу в Павлодаре обвиняют в переводе 107 млн теңге через счета сотрудников",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/predprinimatelnitsu-v-pavlodare-obvinyayut-v-perevode-107-mln-tenge-cherez-schet-c13ca955",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T21:12:00+00:00"
   }
 ]
