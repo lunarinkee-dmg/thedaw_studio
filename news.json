@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss8014460e998eb995",
+    "category": "Казахстан / Новости",
+    "title": "05:32, 05 Ноября 2026 Как собираются решать вопрос дефицита электроэнергии в Акмолинской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kaksobirayutsya-reshat-vopros-defitsita-elektroenergii-vakmolinskoy-oblasti-d6148ede",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T00:32:00+00:00"
+  },
+  {
+    "id": "rss0f00e20802fa2c71",
+    "category": "Казахстан / Новости",
+    "title": "Дождь, снег, гололёд: какой будет погода в Казахстане 5 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/dojd-sneg-golold-kakoy-budet-pogoda-v-kazahstane-5-noyabrya-612400/",
+    "date": "05.11.2026",
+    "published_at": "2026-11-05T00:30:00+00:00"
+  },
+  {
+    "id": "rssa41da5d6d894a054",
+    "category": "Казахстан / Новости",
+    "title": "04:58, 05 Ноября 2026 Человекоподобные роботы вышли на 24-часовую смену в Шанхае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/chelovekopodobnie-roboti-vishli-na-24-chasovuyu-smenu-v-shanhae-3a47b9dc",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T23:58:00+00:00"
+  },
+  {
     "id": "rss9f9a57235c148db7",
     "category": "Казахстан / ЦА",
     "title": "Что смотреть в ноябре",
@@ -10,9 +40,19 @@
     "published_at": "2026-11-04T23:40:56+00:00"
   },
   {
+    "id": "rssbaabba14e50629ca",
+    "category": "Казахстан / Новости",
+    "title": "04:30, 05 Ноября 2026 Разрушительный циклон накрыл юг Индии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/moshniy-tsiklon-obrushilsya-na-yug-indii-333106ad",
+    "date": "04.11.2026",
+    "published_at": "2026-11-04T23:30:00+00:00"
+  },
+  {
     "id": "rss354ebd81ae59ecaf",
     "category": "Казахстан / Новости",
-    "title": "Бывший учитель начальной школы стала новым “бумажным“ миллиардером в Китае",
+    "title": "Бывший учитель начальной школы стал новым “бумажным“ миллиардером в Китае",
     "summary": "Откройте первоисточник, чтобы прочитать подробности.",
     "source": "Tengrinews",
     "url": "https://tengrinews.kz/curious/byivshiy-uchitel-nachalnoy-shkolyi-stala-novyim-bumajnyim-612395/",
@@ -15878,35 +15918,5 @@
     "url": "https://www.inform.kz/ru/apple-pokazala-perviy-sensorniy-macbook-pro-so-svetyashimsya-logotipom-8a24591e",
     "date": "29.10.2026",
     "published_at": "2026-10-29T00:57:00+00:00"
-  },
-  {
-    "id": "rsse5d4e5043b22526d",
-    "category": "Казахстан / Новости",
-    "title": "От +6 до +19 градусов, местами дожди: какой будет погода в Казахстане в четверг",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/6-19-gradusov-mestami-dojdi-budet-pogoda-kazahstane-chetverg-611862/",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T00:30:00+00:00"
-  },
-  {
-    "id": "rss2d9f806d2ca6152d",
-    "category": "Казахстан / Новости",
-    "title": "Гороскоп на сегодня: кто закроет давний долг, а кому придется менять планы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-zakroet-davniy-dolg-komu-pridetsya-menyat-611859/",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T00:26:00+00:00"
-  },
-  {
-    "id": "rssff243f1e74f6b62c",
-    "category": "Казахстан / Новости",
-    "title": "05:17, 29 Октября 2026 До $1 млн обещают в Японии за помощь в поиске хакеров",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/do-1-mln-obeshayut-v-yaponii-za-pomosh-v-poiske-hakerov-8c64fbd5",
-    "date": "29.10.2026",
-    "published_at": "2026-10-29T00:17:00+00:00"
   }
 ]
