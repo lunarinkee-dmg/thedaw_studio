@@ -1,5 +1,85 @@
 [
   {
+    "id": "rssd15be3add02afedc",
+    "category": "Казахстан / Новости",
+    "title": "16:00, 07 Ноября 2026 Как казахстанская кибермодель покоряет мировые бренды и развивает инклюзию",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kak-kazahstanskaya-kibermodel-pokoryaet-mirovie-brendi-i-razvivaet-inklyuziyu-bcf5fc7d",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T11:00:00+00:00"
+  },
+  {
+    "id": "rss770da6d91ea887ba",
+    "category": "Казахстан / Новости",
+    "title": "15:51, 07 Ноября 2026 Эмомали Рахмон отметил укрепление международного авторитета Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/emomali-rahmon-otmetil-ukreplenie-mezhdunarodnogo-avtoriteta-kazahstana-4c8c1f3f",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:51:00+00:00"
+  },
+  {
+    "id": "rss19eaf05a0222efed",
+    "category": "Казахстан / Новости",
+    "title": "15:46, 07 Ноября 2026 Казахстан поддержит кандидатуру Таджикистана в непостоянные члены Совбеза ООН — Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-podderzhit-kandidaturu-tadzhikistana-vnepostoyannie-chleni-sovbeza-oon-039a1ed0",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+    "id": "rssa4d87dae6935ccaa",
+    "category": "Казахстан / Новости",
+    "title": "15:41, 07 Ноября 2026 ТРК Президента: новые медиапартнеры в Таджикистане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/trk-prezidenta-novie-mediapartneri-vtadzhikistane-f5ad0a32",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:41:00+00:00"
+  },
+  {
+    "id": "rssbaec1a2eca8250d7",
+    "category": "Казахстан / Новости",
+    "title": "15:40, 07 Ноября 2026 Токаев обозначил новые направления сотрудничества с Таджикистаном",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-itadzhikistan-narastili-obemi-perevozok-do7mln-tonn-f04a6df2",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:40:00+00:00"
+  },
+  {
+    "id": "rss12135e3f632702a2",
+    "category": "Казахстан / Новости",
+    "title": "15:34, 07 Ноября 2026 Казахстан и Таджикистан приняли Дорожную карту по увеличению товарооборота до 2030 года",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-itadzhikistan-prinyali-dorozhnuyu-kartu-pouvelicheniyu-tovarooborota-d-8a886797",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:34:00+00:00"
+  },
+  {
+    "id": "rss88e94d868ac665f5",
+    "category": "Казахстан / Новости",
+    "title": "15:30, 07 Ноября 2026 Между Казахстаном и Таджикистаном нет каких-либо нерешенных и нерешаемых вопросов — Токаев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mezhdu-kazahstanom-itadzhikistanom-net-kakih-libo-nereshennih-inereshaemih-vopro-a4827b07",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:30:00+00:00"
+  },
+  {
+    "id": "rss83a8f524333d49cc",
+    "category": "Казахстан / Новости",
+    "title": "Президенты Казахстана и Таджикистана приняли совместное заявление",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/prezidentyi-kazahstana-tadjikistana-prinyali-sovmestnoe-612578/",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T10:16:08+00:00"
+  },
+  {
     "id": "rsse3015588e9edb5d1",
     "category": "Казахстан / Новости",
     "title": "15:04, 07 Ноября 2026 Энергетика, промышленность и цифровизация: о чем договорились Казахстан и Таджикистан",
@@ -15508,75 +15588,5 @@
     "url": "https://tengrinews.kz/kazakhstan_news/akmolinskaya-oblast-zavershila-sezon-yarmarok-v-astane-612055/",
     "date": "31.10.2026",
     "published_at": "2026-10-31T11:03:05+00:00"
-  },
-  {
-    "id": "rssc50adcca419f793e",
-    "category": "Казахстан / Новости",
-    "title": "16:00, 31 Октября 2026 От общих корней — к совместным проектам: какую повестку Президент Токаев обозначил в Анкаре",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sammit-otg-pochemu-kazahstan-delaet-stavku-naekonomiku-tsifrovizatsiyu-irasshire-b3f701fc",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T11:00:00+00:00"
-  },
-  {
-    "id": "rss4a94916bf593114e",
-    "category": "Казахстан / Новости",
-    "title": "Какая погода ждёт Астану, Алматы и Шымкент с 1 по 3 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/pogoda-jdt-astanu-almatyi-shyimkent-1-3-noyabrya-612054/",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:58:12+00:00"
-  },
-  {
-    "id": "tgccdc549e64146b0d83",
-    "category": "Культура / Музыка",
-    "title": "Beautiful Boys — «Пропасть»",
-    "summary": "Beautiful Boys — «Пропасть»\nНовый EP из трех треков, в котором светлые романтичные мелодии постепенно сменяются тревожным звучанием с атональным танго, гитарными соло и диссонирующими скрипками. Песни складываются в историю отношений: от ночной влюбленности через болезненную созависимость к окончательному разрыву. Музыкальная кульминация передает внутренний надлом героя, а финальный аккорд напоминает бесконечный пульс на грани безумия.\nVK | Яндекс | Spotify | Apple Music\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32737",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:55:58+00:00"
-  },
-  {
-    "id": "rss6ddab0a9c257f560",
-    "category": "Казахстан / Новости",
-    "title": "15:48, 31 Октября 2026 Отремонтировали и снова раскопали: что происходит на улицах Алматы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/otremontirovali-i-snova-raskopali-chto-proishodit-na-ulitsah-almati-62017de4",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:48:00+00:00"
-  },
-  {
-    "id": "rss193a304338b7e9d6",
-    "category": "Казахстан / Новости",
-    "title": "15:33, 31 Октября 2026 Президент Польши заявил о силовом захвате Конституционного суда в Варшаве",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/prezident-polshi-zayavil-o-silovom-zahvate-konstitutsionnogo-suda-v-varshave-e81a4178",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:33:00+00:00"
-  },
-  {
-    "id": "rss364e74dc204ac12e",
-    "category": "Казахстан / Новости",
-    "title": "Погибший возле суда в Семее был потерпевшим по уголовному делу: что известно",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/events/pogibshiy-vozle-suda-semee-poterpevshim-ugolovnomu-delu-612053/",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:28:25+00:00"
-  },
-  {
-    "id": "rss9857613117a243e9",
-    "category": "Казахстан / Новости",
-    "title": "15:16, 31 Октября 2026 Кто формирует цену на мясо в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kto-formiruet-tsenu-namyaso-vkazahstane-d3321124",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T10:16:00+00:00"
   }
 ]
