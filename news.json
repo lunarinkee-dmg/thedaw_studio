@@ -1,5 +1,25 @@
 [
   {
+    "id": "rss1555c60dac73667b",
+    "category": "Казахстан / Новости",
+    "title": "04:52, 07 Ноября 2026 При пожаре в дачном обществе Усть-Каменогорска погибла женщина",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/pripozhare-vdachnom-obshestve-ust-kamenogorska-pogibla-zhenshina-c8fb666b",
+    "date": "06.11.2026",
+    "published_at": "2026-11-06T23:52:00+00:00"
+  },
+  {
+    "id": "rss77a69906d096c1da",
+    "category": "Казахстан / Новости",
+    "title": "04:24, 07 Ноября 2026 Землетрясение магнитудой 6,1 встряхнуло Японию",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-61-vstryahnulo-yaponiyu-4d0274dc",
+    "date": "06.11.2026",
+    "published_at": "2026-11-06T23:24:00+00:00"
+  },
+  {
     "id": "rssf1e3dd6d9f4999c4",
     "category": "Казахстан / Новости",
     "title": "03:58, 07 Ноября 2026 На 4,5 млн теңге наказали предпринимателей за нарушение торговли в Павлодарской области",
@@ -15478,25 +15498,5 @@
     "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-kogo-jdet-krupnaya-pokupka-kogo-razgovor-612037/",
     "date": "31.10.2026",
     "published_at": "2026-10-31T00:28:28+00:00"
-  },
-  {
-    "id": "rss370304bbf1b1bbbc",
-    "category": "Казахстан / Новости",
-    "title": "04:56, 31 Октября 2026 Call of Duty удалит кадры трагедии в Сеуле после критики семей погибших",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/call-of-duty-udalit-kadri-tragedii-v-seule-posle-kritiki-semey-pogibshih-8d814e3a",
-    "date": "30.10.2026",
-    "published_at": "2026-10-30T23:56:00+00:00"
-  },
-  {
-    "id": "rss1a9803d02bf99574",
-    "category": "Казахстан / Новости",
-    "title": "04:28, 31 Октября 2026 Работающий 27 лет торговый павильон отстояли через суд в Таразе",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/rabotayushiy-27-let-torgoviy-pavilon-otstoyali-cherez-sud-v-taraze-a5cb1c03",
-    "date": "30.10.2026",
-    "published_at": "2026-10-30T23:28:00+00:00"
   }
 ]
