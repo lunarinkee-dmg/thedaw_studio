@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss60fcc42226895772",
+    "category": "Казахстан / Новости",
+    "title": "01:33, 08 Ноября 2026 Улицы Актау затопило после сильного дождя",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ulitsi-aktau-zatopilo-posle-silnogo-dozhdya-8118b707",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T20:33:00+00:00"
+  },
+  {
+    "id": "rss4ecd348a83687cef",
+    "category": "Казахстан / Новости",
+    "title": "01:01, 08 Ноября 2026 Трамп предложил главе UFC Дане Уайту стать пресс-секретарем Белого дома",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tramp-predlozhil-glave-ufc-dane-uaytu-stat-press-sekretarem-belogo-doma-1c509803",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T20:01:00+00:00"
+  },
+  {
+    "id": "rss2769736827dc7c82",
+    "category": "Казахстан / Новости",
+    "title": "Актау заливает дождевой водой, синоптики дают неутешительный прогноз на 8 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/aktau-zalivaet-dojdevoy-vodoy-sinoptiki-dayut-612595/",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T19:59:00+00:00"
+  },
+  {
     "id": "rssda742a774c857acb",
     "category": "Казахстан / Новости",
     "title": "00:48, 08 Ноября 2026 Мат в прямом эфире TikTok обернулся 10 сутками ареста в Астане",
@@ -15518,35 +15548,5 @@
     "url": "https://tengrinews.kz/europe/protestyi-pokoleniya-z-germanii-ohvatili-desyatki-gorodov-612070/",
     "date": "31.10.2026",
     "published_at": "2026-10-31T20:54:00+00:00"
-  },
-  {
-    "id": "rss406cc06c3b1da4fc",
-    "category": "Казахстан / Новости",
-    "title": "01:15, 01 Ноября 2026 Дзюдоист Марат Байкамуров завоевал бронзу Grand Slam в Абу-Даби",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dzyudoist-marat-baykamurov-zavoeval-bronzu-grand-slam-v-abu-dabi-9d4f2938",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T20:15:00+00:00"
-  },
-  {
-    "id": "rssbc258c676d40034c",
-    "category": "Казахстан / Новости",
-    "title": "01:05, 01 Ноября 2026 Второй тур президентских выборов пройдет 1 ноября в Болгарии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/vtoroy-tur-prezidentskih-viborov-proydet-1-noyabrya-v-bolgarii-f1b178a0",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T20:05:00+00:00"
-  },
-  {
-    "id": "rss937ebb3f95c11f60",
-    "category": "Казахстан / Новости",
-    "title": "Главу Стамбульской фондовой биржи задержали по подозрению в получении взяток",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/glavu-stambulskoy-fondovoy-birji-zaderjali-podozreniyu-612071/",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T19:58:00+00:00"
   }
 ]
