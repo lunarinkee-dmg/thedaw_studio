@@ -1,5 +1,15 @@
 [
   {
+    "id": "rssc24d11afc12c26aa",
+    "category": "Казахстан / Новости",
+    "title": "02:58, 08 Ноября 2026 Официально исчез последний ледник Алльгойских гор в Альпах",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ofitsialno-ischez-posledniy-lednik-allgoyskih-gor-v-alpah-3fd70388",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T21:58:00+00:00"
+  },
+  {
     "id": "rss87a80404be5a2b02",
     "category": "Казахстан / Новости",
     "title": "Сильный дождь, снег и пожарная опасность: штормовые предупреждения объявлены по всему Казахстану",
@@ -15538,25 +15548,5 @@
     "url": "https://www.inform.kz/ru/v-grenlandii-otkrili-mezhdunarodniy-aeroport-dlya-privlecheniya-turistov-82925c7b",
     "date": "31.10.2026",
     "published_at": "2026-10-31T22:46:00+00:00"
-  },
-  {
-    "id": "rss1320b0bd7c88f7aa",
-    "category": "Казахстан / Новости",
-    "title": "03:30, 01 Ноября 2026 Binance возместил 90% украденных активов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/binance-vozmestil-90-ukradennih-aktivov-6efabe8e",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T22:30:00+00:00"
-  },
-  {
-    "id": "rssaf1eae3d74658f52",
-    "category": "Казахстан / Новости",
-    "title": "03:00, 01 Ноября 2026 «Bésame Mucho» и десять новых песен: Димаш выступил с концертом в Мадриде",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bsame-mucho-i-desyat-novih-pesen-dimash-vistupil-s-kontsertom-v-madride-dedcf3c0",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T22:00:00+00:00"
   }
 ]
