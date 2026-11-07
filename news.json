@@ -1,5 +1,35 @@
 [
   {
+    "id": "rss3eeeeadb2d46615b",
+    "category": "Казахстан / Новости",
+    "title": "21:19, 07 Ноября 2026 Казахстан накроют дожди и снег, ветер усилится до 30 м/с",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-nakroyut-dozhdi-i-sneg-veter-usilitsya-do-30-ms-f45b21da",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T16:19:00+00:00"
+  },
+  {
+    "id": "rss85373f51885b08b9",
+    "category": "Казахстан / Новости",
+    "title": "21:04, 07 Ноября 2026 Туск назвал стрельбу в Кракове терактом",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tusk-nazval-strelbu-v-krakove-teraktom-e4b1995d",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T16:04:00+00:00"
+  },
+  {
+    "id": "rssfe56636307c01971",
+    "category": "Казахстан / Новости",
+    "title": "Ночной конфликт между мужчинами в Костанае перерос в драку и закончился хищением денег",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/nochnoy-konflikt-mujchinami-kostanae-pereros-draku-612589/",
+    "date": "07.11.2026",
+    "published_at": "2026-11-07T15:58:00+00:00"
+  },
+  {
     "id": "rss2b1b5af97e3eaea2",
     "category": "Казахстан / Новости",
     "title": "20:39, 07 Ноября 2026 Около 340 км электросетей обновят в Акмолинской области",
@@ -15528,55 +15558,5 @@
     "url": "https://www.inform.kz/ru/sparring-partner-kanelo-kazahstanets-bek-nurmaganbet-nokautiroval-sopernika-v-er-8cb995d6",
     "date": "31.10.2026",
     "published_at": "2026-10-31T16:22:00+00:00"
-  },
-  {
-    "id": "rss84b0ab73f900a582",
-    "category": "Казахстан / Новости",
-    "title": "Протесты в ночь Хеллоуина: во Франции готовятся к новым беспорядкам",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/protestyi-noch-hellouina-frantsii-gotovyatsya-novyim-612063/",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T16:17:00+00:00"
-  },
-  {
-    "id": "rss8f33584d847a1ad9",
-    "category": "Казахстан / Новости",
-    "title": "21:12, 31 Октября 2026 Россия продлила запрет на экспорт дизельного топлива",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/rossiya-prodlila-zapret-na-eksport-dizelnogo-topliva-b75a3c77",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T16:12:00+00:00"
-  },
-  {
-    "id": "tgd04aaca32263f011ee",
-    "category": "Культура / Музыка",
-    "title": "TOASTER pinned a video",
-    "summary": "TOASTER pinned a video",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32739",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T16:07:51+00:00"
-  },
-  {
-    "id": "rssd82091c3b59a71eb",
-    "category": "Казахстан / Новости",
-    "title": "21:00, 31 Октября 2026 Заморозки до минус 8 градусов прогнозируют в Казахстане 1 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zamorozki-do-minus-8-gradusov-prognoziruyut-v-kazahstane-1-noyabrya-f60d0030",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T16:00:00+00:00"
-  },
-  {
-    "id": "rss63c0cbb3aeac2085",
-    "category": "Казахстан / Новости",
-    "title": "20:47, 31 Октября 2026 Общественный контроль поможет избежать ошибок в «Народной стройке» — эксперт",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/obshestvenniy-kontrol-pomozhet-izbezhat-oshibok-vnarodnoy-stroyke-ekspert-0612032e",
-    "date": "31.10.2026",
-    "published_at": "2026-10-31T15:47:00+00:00"
   }
 ]
