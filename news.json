@@ -1,5 +1,45 @@
 [
   {
+    "id": "rssadbcafbb3ca83c49",
+    "category": "Казахстан / Новости",
+    "title": "21:01, 08 Ноября 2026 Казахстану выделили 4300 мест для хаджа в 2027 году",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanu-videlili-4300-mest-dlya-hadzha-v-2027-godu-0c9d345a",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T16:01:00+00:00"
+  },
+  {
+    "id": "rss77e5676bc0198821",
+    "category": "Казахстан / Новости",
+    "title": "Скрытую нарколабораторию обнаружили в одном из домов в Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/skryituyu-narkolaboratoriyu-obnarujili-odnom-domov-almatyi-612621/",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T15:47:09+00:00"
+  },
+  {
+    "id": "rssfec5f548e4d77ff9",
+    "category": "Казахстан / Новости",
+    "title": "20:41, 08 Ноября 2026 Хуситы второй день подряд заявляют об ударах по нефтяным объектам Саудовской Аравии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/husiti-vtoroy-den-podryad-zayavlyayut-obudarah-poneftyanim-obektam-saudovskoy-ar-88d0f517",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T15:41:00+00:00"
+  },
+  {
+    "id": "tg03c5157183be2fe7c2",
+    "category": "Музыка / Рэп",
+    "title": "🎬 Культовому фильму «8 миля» исполнилось 24 года!",
+    "summary": "🎬 Культовому фильму «8 миля» исполнилось 24 года!\nФильм с Эминемом в главной роли выиграл Оскар за лучшую песню «Lose Yourself» и стал настоящей классикой.\nКакой ваш любимый момент из фильма?\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31139",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T15:40:36+00:00"
+  },
+  {
     "id": "rss3750f4747b2653b6",
     "category": "Казахстан / Новости",
     "title": "20:19, 08 Ноября 2026 Снег на севере, сильные дожди на юге: Казахстан накроет непогода",
@@ -4030,22 +4070,22 @@
     "published_at": "2026-11-06T06:03:00+00:00"
   },
   {
-    "id": "rss8f1e6c520df580f5",
-    "category": "Казахстан / ЦА",
-    "title": "BUCKET LIST Рас-эль-Хайма: полёты на самолёте, жемчужная ферма и песчаные дюны",
-    "summary": "Все привыкли представлять Эмираты через стеклянные небоскрёбы, торговые моллы и постоянную спешку большого города. Первыми на ум всегда приходят Дубай и Абу-Даби. Но мне посчастливилось открыть новую точку на карте — Рас-эль-Хайму, со своим колоритом и характером. Делюсь заметками о путешествии и о том, что мне пришлось в нём преодолеть. На обложке",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/likbez/bucket-list-ras-el-hajma-polyoty-na-samolyote-zhemchuzhnaya-ferma-i-peschanye-dyuny/",
-    "date": "06.11.2026",
-    "published_at": "2026-11-06T06:00:00+00:00"
-  },
-  {
     "id": "rssbf2b149690c62805",
     "category": "Казахстан / ЦА",
     "title": "В Алматы открывается персональная выставка художника Марата Дильмана Time Gate",
     "summary": "6 ноября 2026 года в 19:00 в пространстве Egin Art Space откроется персональная выставка казахстанского художника Марата Дильмана, которая продлится до 26 ноября. В своих работах он обращается к национальным орнаментам, придорожным скульптурам, архивной телевизионной графике, исследуя, как визуальные образы меняются с течением времени. О выставке В",
     "source": "the-steppe.com",
     "url": "https://the-steppe.com/kultura/v-almaty-otkryvaetsja-personalnaja-vystavka-hudozhnika-marata-dilmana-time-gate",
+    "date": "06.11.2026",
+    "published_at": "2026-11-06T06:00:00+00:00"
+  },
+  {
+    "id": "rss8f1e6c520df580f5",
+    "category": "Казахстан / ЦА",
+    "title": "BUCKET LIST Рас-эль-Хайма: полёты на самолёте, жемчужная ферма и песчаные дюны",
+    "summary": "Все привыкли представлять Эмираты через стеклянные небоскрёбы, торговые моллы и постоянную спешку большого города. Первыми на ум всегда приходят Дубай и Абу-Даби. Но мне посчастливилось открыть новую точку на карте — Рас-эль-Хайму, со своим колоритом и характером. Делюсь заметками о путешествии и о том, что мне пришлось в нём преодолеть. На обложке",
+    "source": "98mag",
+    "url": "https://www.98mag.kz/likbez/bucket-list-ras-el-hajma-polyoty-na-samolyote-zhemchuzhnaya-ferma-i-peschanye-dyuny/",
     "date": "06.11.2026",
     "published_at": "2026-11-06T06:00:00+00:00"
   },
@@ -15538,55 +15578,5 @@
     "url": "https://www.inform.kz/ru/svishe-100-spasateley-iskali-podrostka-na-pike-satpaeva-v-almatinskoy-oblasti-53c6280e",
     "date": "01.11.2026",
     "published_at": "2026-11-01T16:25:00+00:00"
-  },
-  {
-    "id": "rssae48c13ba51cd6a4",
-    "category": "Казахстан / Новости",
-    "title": "21:11, 01 Ноября 2026 Костанайский лес: как восстанавливают территории после пожаров и паводков",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kostanayskiy-les-kak-vosstanavlivayut-territorii-posle-pozharov-i-pavodkov-d81df1ea",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T16:11:00+00:00"
-  },
-  {
-    "id": "tg5b090961e13e271fda",
-    "category": "Музыка / Рэп",
-    "title": "🥀 Takeoff ушёл из жизни ровно 4 года назад",
-    "summary": "🥀 Takeoff ушёл из жизни ровно 4 года назад\nАртист трагически скончался 1 ноября 2022 года от огнестрельного ранения в голову, инцидент произошёл на дне рождения сына певца Джеймса Принца. В ходе словесной перепалки, кто-то из посетителей достал пистолет и произвёл случайный выстрел.\nR.I.P. 🕊\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31005",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T16:01:42+00:00"
-  },
-  {
-    "id": "rsse869ce2c31fefc69",
-    "category": "Казахстан / Новости",
-    "title": "Масштабные протесты захлестнули Индию из-за пересмотра списков избирателей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/masshtabnyie-protestyi-zahlestnuli-indiyu-iz-za-peresmotra-612100/",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:58:00+00:00"
-  },
-  {
-    "id": "rssb3702b75c5c552a5",
-    "category": "Казахстан / Новости",
-    "title": "20:58, 01 Ноября 2026 Туман, гололед и заморозки прогнозируют 2 ноября в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tuman-gololed-i-zamorozki-prognoziruyut-2-noyabrya-v-kazahstane-0bcbda81",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:58:00+00:00"
-  },
-  {
-    "id": "rss37f7cdb5ac376a5a",
-    "category": "Казахстан / Новости",
-    "title": "20:45, 01 Ноября 2026 Участок трассы от Акколя до Щучинска временно закрыли из-за ДТП",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/uchastok-trassi-otakkolya-doshuchinska-vremenno-zakrili-iz-za-dtp-1a028902",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:45:00+00:00"
   }
 ]
