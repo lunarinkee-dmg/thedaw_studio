@@ -1,5 +1,15 @@
 [
   {
+    "id": "rss3750f4747b2653b6",
+    "category": "Казахстан / Новости",
+    "title": "20:19, 08 Ноября 2026 Снег на севере, сильные дожди на юге: Казахстан накроет непогода",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sneg-na-severe-silnie-dozhdi-na-yuge-kazahstan-nakroet-nepogoda-563a0989",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T15:19:00+00:00"
+  },
+  {
     "id": "rss3ddfed520496a8e5",
     "category": "Казахстан / Новости",
     "title": "19:57, 08 Ноября 2026 Франция анонсировала участие Европы в переговорах России, США и Украины в Абу-Даби",
@@ -8,6 +18,16 @@
     "url": "https://www.inform.kz/ru/frantsiya-anonsirovala-uchastie-evropi-v-peregovorah-rossii-ssha-i-ukraini-v-abu-bdb36292",
     "date": "08.11.2026",
     "published_at": "2026-11-08T14:57:00+00:00"
+  },
+  {
+    "id": "rssa8597687c13d7725",
+    "category": "Казахстан / Новости",
+    "title": "Даже с международными правами: Таиланд готовит новые правила для иностранных водителей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autonews/s-mejdunarodnyimi-pravami-tailand-gotovit-novyie-pravila-612619/",
+    "date": "08.11.2026",
+    "published_at": "2026-11-08T14:56:26+00:00"
   },
   {
     "id": "rss9b99782a05485564",
@@ -15568,35 +15588,5 @@
     "url": "https://www.inform.kz/ru/uchastok-trassi-otakkolya-doshuchinska-vremenno-zakrili-iz-za-dtp-1a028902",
     "date": "01.11.2026",
     "published_at": "2026-11-01T15:45:00+00:00"
-  },
-  {
-    "id": "rssea2f89b1ca8ed628",
-    "category": "Казахстан / Новости",
-    "title": "20:20, 01 Ноября 2026 Вместо земли — минеральная вата: как выращивают огурцы в теплицах Алматинской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/vmesto-zemli-mineralnaya-vata-kakvirashivayut-ogurtsi-vteplitsah-almatinskoy-obl-51f48205",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:20:00+00:00"
-  },
-  {
-    "id": "rss3b51a8416b4f9a14",
-    "category": "Казахстан / Новости",
-    "title": "20:08, 01 Ноября 2026 «Сын маминой подруги»: как сравнение с другими влияет на самооценку ребенка в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sin-maminoy-podrugi-kaksravnenie-sdrugimi-vliyaet-nasamootsenku-rebenka-vkazahst-b240935c",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:08:00+00:00"
-  },
-  {
-    "id": "rss417bc76320065b5d",
-    "category": "Казахстан / Новости",
-    "title": "20:02, 01 Ноября 2026 Нуркожа Кайпанов завоевал серебро чемпионата мира по борьбе в Астане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/nurkozha-kaypanov-zavoeval-serebro-chempionata-mira-po-borbe-v-astane-3910a67c",
-    "date": "01.11.2026",
-    "published_at": "2026-11-01T15:02:00+00:00"
   }
 ]
