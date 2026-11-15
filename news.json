@@ -1,5 +1,105 @@
 [
   {
+    "id": "rssbb424c0d6d98c61e",
+    "category": "Казахстан / Новости",
+    "title": "Францию вновь охватили массовые протесты из-за роста цен и низких зарплат",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/frantsiyu-vnov-ohvatili-massovyie-protestyi-iz-za-rosta-tsen-613097/",
+    "date": "15.11.2026",
+    "published_at": "2026-11-15T00:08:03+00:00"
+  },
+  {
+    "id": "rss1e500d1f430a1ed1",
+    "category": "Казахстан / Новости",
+    "title": "04:43, 15 Ноября 2026 Китайский электросамолет весом 10 тонн впервые взлетел с экипажем",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kitayskiy-elektrosamolet-vesom-10-tonn-vpervie-vzletel-s-ekipazhem-26dd300d",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T23:43:00+00:00"
+  },
+  {
+    "id": "rss694de12a95afb87c",
+    "category": "Казахстан / Новости",
+    "title": "Полиция Алматы обратилась к водителям в связи с наступлением холодов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/politsiya-almatyi-obratilas-voditelyam-svyazi-nastupleniem-613096/",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T23:30:45+00:00"
+  },
+  {
+    "id": "rssd018f3ca339673c1",
+    "category": "Казахстан / Новости",
+    "title": "04:02, 15 Ноября 2026 Извержение вулкана в Индонезии вызвало угрозу селевых потоков",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/izverzhenie-vulkana-v-indonezii-vizvalo-ugrozu-selevih-potokov-d9999889",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T23:02:00+00:00"
+  },
+  {
+    "id": "rss003a82519d428035",
+    "category": "Казахстан / Новости",
+    "title": "Совершенное в 2023 году убийство раскрыли в области Абай",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/sovershennoe-v-2023-godu-ubiystvo-raskryili-v-oblasti-abay-613095/",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T23:00:32+00:00"
+  },
+  {
+    "id": "rss1c7eed049cda82e2",
+    "category": "Казахстан / Новости",
+    "title": "03:35, 15 Ноября 2026 Микроавтобус столкнулся с грузовиком в Индии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mikroavtobus-stolknulsya-s-gruzovikom-v-indii-22f76a08",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T22:35:00+00:00"
+  },
+  {
+    "id": "rss70fb86b7980c10e8",
+    "category": "Казахстан / Новости",
+    "title": "03:01, 15 Ноября 2026 Танкер перевернул круизный лайнер с 180 людьми на борту в США",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tanker-perevernul-kruizniy-layner-s-180-lyudmi-na-bortu-v-ssha-ae2c3b2a",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T22:01:00+00:00"
+  },
+  {
+    "id": "rss68fd1248c06cc282",
+    "category": "Казахстан / Новости",
+    "title": "02:34, 15 Ноября 2026 85 правонарушений пресекли полицейские за сутки в Экибастузе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/85-pravonarusheniy-presekli-politseyskie-za-sutki-v-ekibastuze-19f6d539",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T21:34:00+00:00"
+  },
+  {
+    "id": "rss68c61a65678cc93a",
+    "category": "Казахстан / Новости",
+    "title": "02:09, 15 Ноября 2026 Meta оштрафовали за доступ Facebook к фото пользователей без согласия",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/meta-oshtrafovali-za-dostup-facebook-k-foto-polzovateley-bez-soglasiya-146d3c9c",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T21:09:00+00:00"
+  },
+  {
+    "id": "rssb9e04429576b55d5",
+    "category": "Казахстан / Новости",
+    "title": "01:46, 15 Ноября 2026 Водитель автобуса скончался после ДТП с деревом в Темиртау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/voditel-avtobusa-skonchalsya-posle-dtp-s-derevom-v-temirtau-bc39e6ff",
+    "date": "14.11.2026",
+    "published_at": "2026-11-14T20:46:00+00:00"
+  },
+  {
     "id": "rssa2839acc8fff903c",
     "category": "Казахстан / Новости",
     "title": "01:21, 15 Ноября 2026 Екатерина Дмитриченко завоевала титул на турнире в Египте",
@@ -10238,115 +10338,5 @@
     "url": "https://www.inform.kz/ru/krupnaya-avtokatastrofa-v-turtsii-unesla-zhizni-devyati-chelovek-28b4e47e",
     "date": "08.11.2026",
     "published_at": "2026-11-08T00:36:00+00:00"
-  },
-  {
-    "id": "rss12ce6267d83b784c",
-    "category": "Казахстан / Новости",
-    "title": "04:49, 08 Ноября 2026 Маск намерен увеличить пропускную способность Starlink в 100 раз за три года",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mask-nameren-uvelichit-propusknuyu-sposobnost-starlink-v-100-raz-za-tri-goda-f022122f",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T23:49:00+00:00"
-  },
-  {
-    "id": "rss412f367f42923ecf",
-    "category": "Казахстан / Новости",
-    "title": "Личные данные главы МИД Италии утекли в сеть, его семье угрожают",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/lichnyie-dannyie-glavyi-mid-italii-utekli-set-seme-ugrojayut-612597/",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T23:45:00+00:00"
-  },
-  {
-    "id": "rss3758da7f47df3594",
-    "category": "Казахстан / Новости",
-    "title": "04:22, 08 Ноября 2026 Данные более 39 тысяч человек утекли после серии кибератак в Южной Корее",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dannie-bolee-39-tisyach-chelovek-utekli-posle-serii-kiberatak-v-yuzhnoy-koree-46b8e87d",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T23:22:00+00:00"
-  },
-  {
-    "id": "rss1219f1362829c1c1",
-    "category": "Казахстан / Новости",
-    "title": "Стали известны подробности о краковском стрелке. Власти заявили о шести убитых",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/stali-izvestnyi-podrobnosti-krakovskom-strelke-vlasti-612601/",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T22:48:00+00:00"
-  },
-  {
-    "id": "rss1574d7086acead5a",
-    "category": "Казахстан / Новости",
-    "title": "03:36, 08 Ноября 2026 Жительница Арыси заявила о возможном насилии над дочерью: что выяснила полиция",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zhitelnitsa-arisi-zayavila-o-vozmozhnom-nasilii-nad-docheryu-chto-viyasnila-poli-e0df384d",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T22:36:00+00:00"
-  },
-  {
-    "id": "rssc24d11afc12c26aa",
-    "category": "Казахстан / Новости",
-    "title": "02:58, 08 Ноября 2026 Официально исчез последний ледник Алльгойских гор в Альпах",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ofitsialno-ischez-posledniy-lednik-allgoyskih-gor-v-alpah-3fd70388",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T21:58:00+00:00"
-  },
-  {
-    "id": "rss87a80404be5a2b02",
-    "category": "Казахстан / Новости",
-    "title": "Сильный дождь, снег и пожарная опасность: штормовые предупреждения объявлены по всему Казахстану",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/silnyiy-dojd-sneg-pojarnaya-opasnost-shtormovyie-612591/",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T21:51:00+00:00"
-  },
-  {
-    "id": "rss9fdbf6420aaf0917",
-    "category": "Казахстан / Новости",
-    "title": "02:29, 08 Ноября 2026 Строительство новых канатных дорог показали в горах Алматы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/stroitelstvo-novih-kanatnih-dorog-pokazali-vgorah-almati-3139b856",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T21:29:00+00:00"
-  },
-  {
-    "id": "rss84940ee3d2f4376a",
-    "category": "Казахстан / Новости",
-    "title": "02:02, 08 Ноября 2026 Тысячи человек вышли на акции в поддержку иранцев в Германии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tisyachi-chelovek-vishli-na-aktsii-v-podderzhku-irantsev-v-germanii-d0e0672d",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T21:02:00+00:00"
-  },
-  {
-    "id": "tg3b8849380f6eaf5def",
-    "category": "Культура / Музыка",
-    "title": "Продолжаем серию TOASTER AFTERPARTY LIVE, которую мы записали прямо на нашей вечеринке с DFF",
-    "summary": "Продолжаем серию TOASTER AFTERPARTY LIVE, которую мы записали прямо на нашей вечеринке с DFF\nНа сцену выходит Mag Luzi с треком «играй биток»\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32805",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T21:01:49+00:00"
-  },
-  {
-    "id": "rss617837d5470894c8",
-    "category": "Казахстан / Новости",
-    "title": "Трамп предложил Дане Уайту стать пресс-секретарём Белого дома – глава UFC ответил",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/tramp-predlojil-dane-uayt-stat-press-sekretarm-belogo-doma-612596/",
-    "date": "07.11.2026",
-    "published_at": "2026-11-07T20:55:00+00:00"
   }
 ]
