@@ -1,5 +1,345 @@
 [
   {
+    "id": "rssc40dad5a67a6e843",
+    "category": "Казахстан / Новости",
+    "title": "04:19, 18 Ноября 2026 В Брюсселе студенты протестовали против повышения платы за обучение",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/v-bryussele-studenti-protestovali-protiv-povisheniya-plati-za-obuchenie-6117d2ce",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T23:19:00+00:00"
+  },
+  {
+    "id": "rss663324ccd9e3e688",
+    "category": "Казахстан / Новости",
+    "title": "Снег, метель и туман: штормовые предупреждения объявили в Алматы и областях",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/sneg-metel-tuman-shtormovyie-preduprejdeniya-obyyavili-613314/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T23:07:00+00:00"
+  },
+  {
+    "id": "rssc3cdf99879af4824",
+    "category": "Казахстан / Новости",
+    "title": "03:47, 18 Ноября 2026 Лечение раненого знакомого обойдется осужденному жамбылцу в 436 тысяч теңге",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/lechenie-ranenogo-znakomogo-oboydetsya-osuzhdennomu-zhambiltsu-v436-tisyach-teng-46104cd0",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T22:47:00+00:00"
+  },
+  {
+    "id": "rssd582ad482c158560",
+    "category": "Казахстан / Новости",
+    "title": "03:21, 18 Ноября 2026 Южную Корею всколыхнуло мощнейшее за год землетрясение",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/yuzhnuyu-koreyu-vskolihnulo-moshneyshee-za-god-zemletryasenie-0e025f09",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T22:21:00+00:00"
+  },
+  {
+    "id": "rss0929e6c4ba434a7c",
+    "category": "Казахстан / Новости",
+    "title": "Пользователи Apple столкнулись с масштабным сбоем, в компании назвали причину",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/polzovateli-apple-stolknulis-masshtabnyim-sboem-kompanii-613313/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T22:09:04+00:00"
+  },
+  {
+    "id": "rss3f38b8d4b6dacd40",
+    "category": "Казахстан / Новости",
+    "title": "02:55, 18 Ноября 2026 Более 83 тысяч административных правонарушений выявили в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-83-tisyach-administrativnih-pravonarusheniy-viyavili-v-kazahstane-e61f9dd4",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:55:00+00:00"
+  },
+  {
+    "id": "rss91cfedd82200062c",
+    "category": "Казахстан / Новости",
+    "title": "02:38, 18 Ноября 2026 Министры обороны Евросоюза обсудили отношения с Китаем и трансатлантическое сотрудничество",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ministri-oboroni-evrosoyuza-obsudili-otnosheniya-skitaem-itransatlanticheskoe-so-e27d0894",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:38:00+00:00"
+  },
+  {
+    "id": "rss7aff7ac49f9c5a46",
+    "category": "Казахстан / Новости",
+    "title": "02:25, 18 Ноября 2026 266 фактов незаконного недропользования выявили в Туркестанской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/266-faktov-nezakonnogo-nedropolzovaniya-viyavili-vturkestanskoy-oblasti-79df3535",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:25:00+00:00"
+  },
+  {
+    "id": "rss796cc221fe116a04",
+    "category": "Казахстан / Новости",
+    "title": "Участников дорожного конфликта в Алматы арестовали на 10 суток",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/uchastnikov-dorojnogo-konflikta-almatyi-arestovali-10-sutok-613312/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:18:49+00:00"
+  },
+  {
+    "id": "rss93b2e89216a07fa0",
+    "category": "Казахстан / Новости",
+    "title": "02:10, 18 Ноября 2026 Бельгия готова выступить надежным партнеров Казахстана — глава МИД Максим Прево",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/belgiya-gotova-vistupit-nadezhnim-partnerov-kazahstana-glava-mid-maksim-prevo-c4338c87",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:10:00+00:00"
+  },
+  {
+    "id": "rss59705a01c755c11c",
+    "category": "Казахстан / Новости",
+    "title": "02:04, 18 Ноября 2026 Казахстан объявил состав сборной на третий этап Мирового тура по шорт-треку",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-obyavil-sostav-sbornoy-na-tretiy-etap-mirovogo-tura-po-short-treku-8f1a6cc8",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T21:04:00+00:00"
+  },
+  {
+    "id": "rss23bdec240a0888a8",
+    "category": "Казахстан / Новости",
+    "title": "01:48, 18 Ноября 2026 Сильную вспышку класса М зафиксировали на Солнце",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/silnuyu-vspishku-klassa-m-zafiksirovali-na-solntse-8dcf909f",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:48:00+00:00"
+  },
+  {
+    "id": "rss649cf0730a43ceca",
+    "category": "Казахстан / Новости",
+    "title": "Экс-глава NVIDIA сделал первое заявление после увольнения из-за супружеской измены",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/eks-glava-nvidia-sdelal-pervoe-zayavlenie-uvolneniya-iz-za-613311/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:41:12+00:00"
+  },
+  {
+    "id": "rss8976157d925c0b54",
+    "category": "Казахстан / Новости",
+    "title": "01:32, 18 Ноября 2026 Восемь человек погибли и 12 пострадали в ДТП в Пакистане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/vosem-chelovek-pogibli-i-12-postradali-v-dtp-v-pakistane-79f44fe3",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:32:00+00:00"
+  },
+  {
+    "id": "rss0b324006e1296ed7",
+    "category": "Казахстан / Новости",
+    "title": "01:19, 18 Ноября 2026 Заявка аннулируется: из-за чего костанайцы сталкиваются с проблемами при получении земли",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zayavka-annuliruetsya-iz-za-chego-kostanaytsi-stalkivayutsya-s-problemami-pri-po-3d1a20c4",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:19:00+00:00"
+  },
+  {
+    "id": "rsseb17996828e749b4",
+    "category": "Казахстан / Новости",
+    "title": "01:04, 18 Ноября 2026 Хуситы заявили об ударах по двум нефтяным объектам в Саудовской Аравии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/husiti-zayavili-ob-udarah-po-dvum-neftyanim-obektam-v-saudovskoy-aravii-d6072b34",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:04:00+00:00"
+  },
+  {
+    "id": "rss7a5a5163f6732bfb",
+    "category": "Казахстан / ЦА",
+    "title": "Как «Голубая шкатулка» совмещает современный и классический ромком",
+    "summary": "Этой осенью стартовал второй сезон «Голубой шкатулки» — спортивного аниме-ромкома о зреющей любви между баскетболисткой и бадминтонистом. Первоисточник стал одной из самых популярных манг 2020-х, разойдясь тиражом свыше 11 млн копий, а его экранизация побеждала в номинации «Лучшее романтическое аниме» на Crunchyroll Anime Awards. Абулхаир Жусупов р",
+    "source": "98mag",
+    "url": "https://www.98mag.kz/kultura/kino/kak-golubaya-shkatulka-sovmeshhaet-sovremennyj-i-klassicheskij-romkom/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T20:00:43+00:00"
+  },
+  {
+    "id": "rsscdedd9eeaf647426",
+    "category": "Казахстан / Новости",
+    "title": "00:50, 18 Ноября 2026 Смерть 31-летнего мужчины расследуют в СКО",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/31-letniy-muzhchina-pokonchil-soboy-vsko-6f1b0ce1",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:50:00+00:00"
+  },
+  {
+    "id": "rssd7b56c4cefd03185",
+    "category": "Казахстан / Новости",
+    "title": "00:37, 18 Ноября 2026 Ущерб от природных пожаров превысил 19 млн теңге в Павлодарской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/usherb-otprirodnih-pozharov-previsil-19mln-tenge-vpavlodarskoy-oblasti-091baba5",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:37:00+00:00"
+  },
+  {
+    "id": "rsse34ec78e8bf3924c",
+    "category": "Казахстан / Новости",
+    "title": "В Павлодаре пассажир избил водителя автобуса и распылил перцовку ему в лицо",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/pavlodare-passajir-izbil-voditelya-avtobusa-raspyilil-613310/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:34:25+00:00"
+  },
+  {
+    "id": "rssfdcd2c2dda4fe26a",
+    "category": "Казахстан / Новости",
+    "title": "00:24, 18 Ноября 2026 Хакеры похитили данные клиентов десятков ресторанов и отелей Германии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/hakeri-pohitili-dannie-klientov-desyatkov-restoranov-i-oteley-germanii-69c7cca6",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:24:00+00:00"
+  },
+  {
+    "id": "rssd76b265e0a779c65",
+    "category": "Казахстан / Новости",
+    "title": "00:13, 18 Ноября 2026 Казахстанские лучники выступят на молодежном чемпионате Азии в ОАЭ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanskie-luchniki-vistupyat-na-molodezhnom-chempionate-azii-v-oae-8d6ccf74",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:13:00+00:00"
+  },
+  {
+    "id": "tg9ea2ffd3221b0ed7d6",
+    "category": "Музыка / Рэп",
+    "title": "🐬 Ровно пять лет назад не стало Young Dolph.",
+    "summary": "🐬 Ровно пять лет назад не стало Young Dolph.\nОдин из ключевых представителей трэп-сцены Мемфиса был застрелен прямо в родном городе.\nВ тот день рэпер заехал в местную пекарню, чтобы купить печенье для матери. Когда он вышел на улицу, к нему подъехал автомобиль, из которого выбежали двое вооружённых людей и открыли огонь. В рэпера выпустили более 50 пуль.\nR.I.P. 🕊\nКакие ваши любимые треки Young Dolph?\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31264",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:10:30+00:00"
+  },
+  {
+    "id": "rssb5cdf21326a528dd",
+    "category": "Казахстан / Новости",
+    "title": "00:01, 18 Ноября 2026 Поголовье птицы в Жамбылской области увеличилось почти на треть",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/pogolove-ptitsi-v-zhambilskoy-oblasti-uvelichilos-pochti-na-tret-14990e9a",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T19:01:00+00:00"
+  },
+  {
+    "id": "rss0453afe273d24ca6",
+    "category": "Казахстан / Новости",
+    "title": "23:50, 17 Ноября 2026 Тревожный сигнал от родителей: мужчину задержали в Алматы по подозрению в насилии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/trevozhniy-signal-otroditeley-muzhchinu-zaderzhali-valmati-popodozreniyu-vnasili-3b24b92a",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:50:00+00:00"
+  },
+  {
+    "id": "rssf3f70d83feafe96f",
+    "category": "Казахстан / Новости",
+    "title": "23:38, 17 Ноября 2026 Два судна подорвались на минах и загорелись в Ормузском проливе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dva-sudna-podorvalis-na-minah-i-zagorelis-v-ormuzskom-prolive-45368d08",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:38:00+00:00"
+  },
+  {
+    "id": "rss1ba584064a4a6787",
+    "category": "Казахстан / Новости",
+    "title": "Ким Чен Ын с женой и дочерью посетили горнолыжный курорт на границе с Китаем",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/kim-chen-yin-jenoy-docheryu-posetili-gornolyijnyiy-kurort-613308/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:37:48+00:00"
+  },
+  {
+    "id": "rss2e7b421ae0b7e406",
+    "category": "Казахстан / Новости",
+    "title": "23:25, 17 Ноября 2026 Платформу для оценки психологического благополучия студентов разработали в казахстанском вузе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/platformu-dlyaotsenki-psihologicheskogo-blagopoluchiya-studentov-razrabotali-vka-85bfe0ec",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:25:00+00:00"
+  },
+  {
+    "id": "rss5431997beb4febc9",
+    "category": "Казахстан / Новости",
+    "title": "23:14, 17 Ноября 2026 Водитель Lada выехал на тротуар ради видео в TikTok в Таразе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/voditel-lada-viehal-na-trotuar-radi-video-v-tiktok-v-taraze-582082ca",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:14:00+00:00"
+  },
+  {
+    "id": "rsse19b1d3fa238b381",
+    "category": "Казахстан / Новости",
+    "title": "23:05, 17 Ноября 2026 15 конькобежцев представят Казахстан на этапе Кубка мира в Японии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/15-konkobezhtsev-predstavyat-kazahstan-na-etape-kubka-mira-v-yaponii-001648cb",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T18:05:00+00:00"
+  },
+  {
+    "id": "rss681b290b5509442d",
+    "category": "Казахстан / Новости",
+    "title": "22:55, 17 Ноября 2026 Дополнительную плату за вывоз автомобилей для перепродажи ввели в Грузии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dopolnitelnuyu-platu-za-vivoz-avtomobiley-dlya-pereprodazhi-vveli-v-gruzii-c7418737",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T17:55:00+00:00"
+  },
+  {
+    "id": "rss985dbacff9ed49f4",
+    "category": "Казахстан / Новости",
+    "title": "22:43, 17 Ноября 2026 Зима обманет ожидания: какой прогноз дали синоптики для Костанайской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zima-obmanet-ozhidaniya-kakoy-prognoz-dali-sinoptiki-dlyakostanayskoy-oblasti-7afe3a84",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T17:43:00+00:00"
+  },
+  {
+    "id": "rss7b7f9c2d654d8738",
+    "category": "Казахстан / Новости",
+    "title": "В Алматы 18-летнего парня арестовали на семь суток за салют в честь девушки",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/almatyi-18-letnego-parnya-arestovali-sem-sutok-salyut-chest-613309/",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T17:32:04+00:00"
+  },
+  {
+    "id": "tg9d2bfa82b7168fb141",
+    "category": "Музыка / Рэп",
+    "title": "😭 Преподаватель из Мадрида освободил своих студентов от заданий ради GTA 6",
+    "summary": "😭 Преподаватель из Мадрида освободил своих студентов от заданий ради GTA 6\nВ сети завирусилось письмо, которое он отправил своим студентам, где сообщил, что в неделю релиза игры у них не будет домашних заданий, проектов и других работ. Более того, он перенёс экзамен с 23 на 30 ноября, чтобы дать им больше времени на игру.\nДобрый день, ребята!\nКак многие из вас знают, мы приближаемся к одному из самых ожидаемых релизов в истории - выходу GTA 6. И хотя это не тема для занятий, я хотел сообщить вам кое-что важное.\nКогда в 2013 году вышла GTA 5, я был примерно вашего возраста и отлично помню, как ",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31262",
+    "date": "17.11.2026",
+    "published_at": "2026-11-17T17:20:35+00:00"
+  },
+  {
     "id": "rss4c40525c882d5abb",
     "category": "Казахстан / Новости",
     "title": "21:59, 17 Ноября 2026 DeepSeek ограничил доступ к чату из-за нехватки вычислительных ресурсов",
@@ -10018,365 +10358,5 @@
     "url": "https://tengrinews.kz/usa/glave-pentagona-udalos-izbejat-protseduryi-impichmenta-612798/",
     "date": "11.11.2026",
     "published_at": "2026-11-11T00:05:00+00:00"
-  },
-  {
-    "id": "rss0cd6bf8c7df565ea",
-    "category": "Казахстан / Новости",
-    "title": "В ЕС введут “пробационный период“ для одобрения постоянного членства",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/es-vvedut-probatsionnyiy-period-odobreniya-postoyannogo-612797/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T23:38:00+00:00"
-  },
-  {
-    "id": "rss6d5ee816ac687150",
-    "category": "Казахстан / Новости",
-    "title": "04:31, 11 Ноября 2026 Четыре страны объединят усилия для поставок чистой энергии в Европу",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/chetire-strani-obedinyat-usiliya-dlya-postavok-chistoy-energii-v-evropu-449f3e93",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T23:31:00+00:00"
-  },
-  {
-    "id": "rssb48ee223ab0eaf26",
-    "category": "Казахстан / Новости",
-    "title": "03:55, 11 Ноября 2026 Ошибку 17-летней давности исправили после обращения в суд в Костанайской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/oshibku-17-letney-davnosti-ispravili-posle-obrasheniya-v-sud-v-kostanayskoy-obla-759ee3c8",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T22:55:00+00:00"
-  },
-  {
-    "id": "rss92764c9f33a87045",
-    "category": "Казахстан / Новости",
-    "title": "Пол Маккартни стал миллиардером и вошёл в тройку самых богатых музыкантов мира",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/curious/pol-makkartni-stal-milliarderom-voshl-troyku-samyih-bogatyih-612730/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T22:41:00+00:00"
-  },
-  {
-    "id": "rss815e60ef9e0caa43",
-    "category": "Казахстан / Новости",
-    "title": "03:28, 11 Ноября 2026 В Испании взорвался рюкзак со взрывчаткой: погиб полицейский",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/v-ispanii-vzorvalsya-ryukzak-so-vzrivchatkoy-pogib-politseyskiy-d088f8df",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T22:28:00+00:00"
-  },
-  {
-    "id": "rss91c7ad00da187515",
-    "category": "Казахстан / Новости",
-    "title": "03:01, 11 Ноября 2026 Изменение климата угрожает благополучию 1,5 млрд женщин и девочек — ООН",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/izmenenie-klimata-ugrozhaet-blagopoluchiyu-15-mlrd-zhenshin-i-devochek-oon-41b9f9f8",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T22:01:00+00:00"
-  },
-  {
-    "id": "rsse312c88db0a37f68",
-    "category": "Казахстан / Новости",
-    "title": "Брижит никогда не существовала: чета Макрон подала новый иск против журналистки",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/curious/brijit-ne-suschestvovala-cheta-makronov-podala-novyiy-isk-612795/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T21:45:00+00:00"
-  },
-  {
-    "id": "rss31662e9d93688666",
-    "category": "Казахстан / Новости",
-    "title": "02:41, 11 Ноября 2026 Израильские депутаты инициировали расследование нападения ХАМАС 7 октября 2023 года",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/izrailskie-deputati-initsiirovali-rassledovanie-napadeniya-hamas-7-oktyabrya-202-79937565",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T21:41:00+00:00"
-  },
-  {
-    "id": "rss1d1c5c8a0ce14486",
-    "category": "Казахстан / Новости",
-    "title": "02:18, 11 Ноября 2026 Иран представил новую ракетную базу",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/iran-predstavil-novuyu-raketnuyu-bazu-fdf75f4a",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T21:18:00+00:00"
-  },
-  {
-    "id": "rss3a82f65acd063322",
-    "category": "Казахстан / Новости",
-    "title": "02:01, 11 Ноября 2026 Свыше 6 тысяч детей заболели ОРВИ в ЗКО",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/svishe-6-tisyach-detey-zaboleli-orvi-vzko-33dbba03",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T21:01:00+00:00"
-  },
-  {
-    "id": "rss6c4df74f554a45d6",
-    "category": "Казахстан / Новости",
-    "title": "Столкнулись 86 авто, погибли более 10 человек: массовое ДТП произошло в Болгарии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/stolknulis-86-avto-pogibli-10-chelovek-massovoe-dtp-612791/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T20:48:00+00:00"
-  },
-  {
-    "id": "rss005335b4f2b28dc5",
-    "category": "Казахстан / Новости",
-    "title": "01:46, 11 Ноября 2026 Налоговые платежи для трудовых мигрантов с семьями повысят в России",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/nalogovie-platezhi-dlyatrudovih-migrantov-ssemyami-povisyat-vrossii-35ed8255",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T20:46:00+00:00"
-  },
-  {
-    "id": "rssb2d55b90edde3bda",
-    "category": "Казахстан / Новости",
-    "title": "01:33, 11 Ноября 2026 Астана примет финал Кубка мира по конкуру",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/astana-primet-final-kubka-mira-po-konkuru-f03a4287",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T20:33:00+00:00"
-  },
-  {
-    "id": "rssffe7f36d985a1877",
-    "category": "Казахстан / Новости",
-    "title": "01:18, 11 Ноября 2026 Каждая третья компания Германии планирует сокращение персонала",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazhdaya-tretya-kompaniya-germanii-planiruet-sokrashenie-personala-7844ccb3",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T20:18:00+00:00"
-  },
-  {
-    "id": "rss0448b9f2d78012ab",
-    "category": "Казахстан / Новости",
-    "title": "00:59, 11 Ноября 2026 Более 28 тысяч человек занимаются научными исследованиями в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-28-tisyach-chelovek-zanimayutsya-nauchnimi-issledovaniyami-v-kazahstane-787e007a",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:59:00+00:00"
-  },
-  {
-    "id": "rss9ae1171563d33f62",
-    "category": "Казахстан / Новости",
-    "title": "Штормовое предупреждение: снег, гололёд, туман ожидаются по всему Казахстану",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/shtormovoe-preduprejdenie-sneg-golold-tuman-ojidayutsya-612793/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:52:00+00:00"
-  },
-  {
-    "id": "rss0680d91f0b774702",
-    "category": "Казахстан / Новости",
-    "title": "00:37, 11 Ноября 2026 Массовые ДТП в Болгарии унесли жизни 12 человек, еще 48 пострадали",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/massovie-dtp-v-bolgarii-unesli-zhizni-12-chelovek-eshe-48-postradali-bc27c2ba",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:37:00+00:00"
-  },
-  {
-    "id": "rss2e1c9de0fb8f2f04",
-    "category": "Казахстан / Новости",
-    "title": "00:19, 11 Ноября 2026 Энергосети с износом до 92% восстановили в регионах Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/energoseti-s-iznosom-do-92-vosstanovili-v-regionah-kazahstana-98bed798",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:19:00+00:00"
-  },
-  {
-    "id": "rss7402f9b47a4d5a23",
-    "category": "Казахстан / Новости",
-    "title": "00:11, 11 Ноября 2026 Казахстанский режиссер Айсултан Сеитов снял клип для K-pop-группы LNGSHOT",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstanskiy-rezhisser-aysultan-seitov-snyal-klip-dlyak-pop-gruppi-lngshot-9146d487",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:11:00+00:00"
-  },
-  {
-    "id": "rss59989079a336a93a",
-    "category": "Казахстан / Новости",
-    "title": "00:08, 11 Ноября 2026 Китайские ученые разработали устройство для очистки крови от раковых клеток",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kitayskie-uchenie-razrabotali-ustroystvo-dlya-ochistki-krovi-ot-rakovih-kletok-e0393c5f",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:08:00+00:00"
-  },
-  {
-    "id": "tg004787004c59f2e94f",
-    "category": "Музыка / Рэп",
-    "title": "💀 Получить золотой скин Lil Uzi Vert в Fortnite сложнее, чем попасть под удар молнии",
-    "summary": "💀 Получить золотой скин Lil Uzi Vert в Fortnite сложнее, чем попасть под удар молнии\nШанс выпадения золотого скина из сундуков Fortnite Battle Royal составляет всего 1 к 1,562,500. Для сравнения, шанс получить доступ к Пиратскому магазину — 1 к 137,500.\nЗолотой A$AP Rocky имел такие же шансы выпадения, но теперь его уже невозможно получить после завершения еженедельной ротации.\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31177",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T19:01:01+00:00"
-  },
-  {
-    "id": "rss295d115012b44f97",
-    "category": "Казахстан / Новости",
-    "title": "23:59, 10 Ноября 2026 Волонтеры Казахстана связали более 22 тысяч комплектов одежды для недоношенных детей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/volonteri-kazahstana-svyazali-bolee-22-tisyach-komplektov-odezhdi-dlya-nedonoshe-18fe9c95",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:59:00+00:00"
-  },
-  {
-    "id": "rssdb3a889fcde14d17",
-    "category": "Казахстан / Новости",
-    "title": "Жителя Туркестанской области оштрафовали за оскорбления в соцсети",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/jitelya-turkestanskoy-oblasti-oshtrafovali-oskorbleniya-612790/",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:55:00+00:00"
-  },
-  {
-    "id": "rss51696649bee1dd71",
-    "category": "Казахстан / Новости",
-    "title": "23:43, 10 Ноября 2026 Пол Маккартни стал третьим самым богатым музыкантом в мире",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/pol-makkartni-stal-tretim-samim-bogatim-muzikantom-vmire-4d9ad985",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:43:00+00:00"
-  },
-  {
-    "id": "rss14e9ee53a59d9a6f",
-    "category": "Казахстан / Новости",
-    "title": "23:32, 10 Ноября 2026 Превышение по сероводороду зафиксировали датчики в воздухе Усть-Каменогорска",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/previshenie-poserovodorodu-zafiksirovali-datchiki-vvozduhe-ust-kamenogorska-2a29a7b0",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:32:00+00:00"
-  },
-  {
-    "id": "rss42443c4e3c01e2b5",
-    "category": "Казахстан / Новости",
-    "title": "23:27, 10 Ноября 2026 Мальдивы изменили правила заполнения декларации для туристов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/maldivi-izmenili-pravila-zapolneniya-deklaratsii-dlya-turistov-a7cd7db8",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:27:00+00:00"
-  },
-  {
-    "id": "rssd7782ad5b65666ac",
-    "category": "Казахстан / Новости",
-    "title": "23:16, 10 Ноября 2026 Инвестиции в производство продуктов питания в Казахстане выросли более чем вдвое",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/investitsii-v-proizvodstvo-produktov-pitaniya-v-kazahstane-virosli-bolee-chem-vd-935b69e2",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:16:00+00:00"
-  },
-  {
-    "id": "rss9e5b7d6f851263ef",
-    "category": "Казахстан / Новости",
-    "title": "23:10, 10 Ноября 2026 Память Мустафы Кемаля Ататюрка почтили в Турции",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/pamyat-mustafi-kemalya-atatyurka-pochtili-v-turtsii-58b53341",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:10:00+00:00"
-  },
-  {
-    "id": "rssfe380e9b4da3fa28",
-    "category": "Казахстан / Новости",
-    "title": "23:00, 10 Ноября 2026 Новые правила пенсионных выплат для казахстанцев за границей предложили ввести в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/novie-pravila-pensionnih-viplat-dlyakazahstantsev-zagranitsey-predlozhili-vvesti-d936aabe",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T18:00:00+00:00"
-  },
-  {
-    "id": "rss2154aa92a547b61a",
-    "category": "Казахстан / Новости",
-    "title": "22:52, 10 Ноября 2026 Британский актер Рассел Брэнд получил более 10 лет тюрьмы по делу об изнасиловании",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/britanskiy-akter-rassel-brend-poluchil-bolee-10-let-tyurmi-podelu-obiznasilovani-fb48f5a6",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:52:00+00:00"
-  },
-  {
-    "id": "rss0f9a0831862fed6b",
-    "category": "Казахстан / Новости",
-    "title": "22:49, 10 Ноября 2026 Камеры контроля скорости запущены на трассе Кызылорда — Аральск",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kameri-kontrolya-skorosti-zapusheni-natrasse-kizilorda-aralsk-67315141",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:49:00+00:00"
-  },
-  {
-    "id": "rssf88c56d5ed9c6c66",
-    "category": "Казахстан / Новости",
-    "title": "22:47, 10 Ноября 2026 Катар сообщил о прогрессе в переговорах между США и Ираном",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/katar-soobshil-o-progresse-v-peregovorah-mezhdu-ssha-i-iranom-4408bfbb",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:47:00+00:00"
-  },
-  {
-    "id": "rss36d777e0c4417c0f",
-    "category": "Казахстан / Новости",
-    "title": "22:40, 10 Ноября 2026 Стало известно, сколько потратят на подготовку Костаная к Новому году",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/stalo-izvestno-skolko-potratyat-na-podgotovku-kostanaya-k-novomu-godu-40018176",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:40:00+00:00"
-  },
-  {
-    "id": "rss35fbca3d211229e5",
-    "category": "Казахстан / Новости",
-    "title": "22:34, 10 Ноября 2026 Сектор Газа затопило после сильных дождей: погибли дети, тысячи семей лишились укрытий",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sektor-gaza-zatopilo-posle-silnih-dozhdey-pogibli-deti-tisyachi-semey-lishilis-u-5f6c7a2d",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:34:00+00:00"
-  },
-  {
-    "id": "rss1dfe688ed44ed6e8",
-    "category": "Казахстан / Новости",
-    "title": "22:23, 10 Ноября 2026 Синоптики предупредили о резком ухудшении погоды в регионах Казахстана 11 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sinoptiki-predupredili-o-rezkom-uhudshenii-pogodi-v-regionah-kazahstana-11-noyab-b941d4b5",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:23:00+00:00"
-  },
-  {
-    "id": "rss11fc387d58b0aab5",
-    "category": "Казахстан / Новости",
-    "title": "22:10, 10 Ноября 2026 Казахстан представил на COP31 платформу климатических инвестиций",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstan-predstavil-nacop31-platformu-klimaticheskih-investitsiy-3c7c57b8",
-    "date": "10.11.2026",
-    "published_at": "2026-11-10T17:10:00+00:00"
   }
 ]
