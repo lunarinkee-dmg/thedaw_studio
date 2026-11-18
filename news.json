@@ -1,5 +1,585 @@
 [
   {
+    "id": "rssc853af4b68896578",
+    "category": "Казахстан / Новости",
+    "title": "12:00, 18 Ноября 2026 Борьба с коррупцией в Казахстане: что изменилось после реорганизации Антикора",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/borba-s-korruptsiey-v-kazahstane-chto-izmenilos-posle-reorganizatsii-antikora-260368bd",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T07:00:00+00:00"
+  },
+  {
+    "id": "rss64dd7d761a687f5a",
+    "category": "Казахстан / Новости",
+    "title": "11:55, 18 Ноября 2026 Глав «Самрук-Қазына» и КТЖ арестовали по подозрению в коррупции",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/glav-samruk-kazina-iktzh-arestovali-popodozreniyu-vkorruptsii-fbdcd5f5",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:55:00+00:00"
+  },
+  {
+    "id": "rssde05a8742e574279",
+    "category": "Казахстан / Новости",
+    "title": "Детские SIM-карты снова обсуждают - теперь на фоне запрета соцсетей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/detskie-sim-kartyi-snova-obsujdayut-na-fone-zapreta-613347/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:53:27+00:00"
+  },
+  {
+    "id": "rssbf40dacf023272f3",
+    "category": "Казахстан / Новости",
+    "title": "За мат в интернете предложили наказывать как за мелкое хулиганство: подробности",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/mat-internete-predlojili-priravnyat-melkomu-huliganstvu-613340/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:53:07+00:00"
+  },
+  {
+    "id": "rss4c5cdd69d157eb49",
+    "category": "Казахстан / Новости",
+    "title": "11:53, 18 Ноября 2026 Казахстанцы смогут подтвердить профессиональные навыки международными сертификатами",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstantsi-smogut-podtverdit-professionalnie-naviki-mezhdunarodnimi-sertifikat-66b203d8",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:53:00+00:00"
+  },
+  {
+    "id": "rss791b68b7404a0bb1",
+    "category": "Казахстан / Новости",
+    "title": "11:51, 18 Ноября 2026 Регистрация в соцсетях до 16 лет: какие платформы не затронут ограничения в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/registratsiya-vsotssetyah-do16-let-kakie-platformi-nezatronut-ogranicheniya-vkaz-f07333bc",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:51:00+00:00"
+  },
+  {
+    "id": "rssa5f1d1d774d52f60",
+    "category": "Казахстан / Новости",
+    "title": "Солнце готовит новый сюрприз? Учёные сообщили о резком росте активности",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/solntse-gotovit-novyiy-syurpriz-uchnyie-soobschili-rezkom-613337/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:46:56+00:00"
+  },
+  {
+    "id": "rssa94c03fef05d07e7",
+    "category": "Казахстан / Новости",
+    "title": "11:46, 18 Ноября 2026 Президент Казахстана поздравил Латвию с Днем провозглашения республики",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/prezident-kazahstana-pozdravil-latviyu-s-dnem-provozglasheniya-respubliki-baea2648",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:46:00+00:00"
+  },
+  {
+    "id": "rss4daf686fe21f2c25",
+    "category": "Казахстан / Новости",
+    "title": "11:45, 18 Ноября 2026 Посев озимой пшеницы впервые провели в Мангистауской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/posev-ozimoy-pshenitsi-vpervie-proveli-v-mangistauskoy-oblasti-5134f560",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:45:00+00:00"
+  },
+  {
+    "id": "rssef245f9b6b5885b2",
+    "category": "Казахстан / Новости",
+    "title": "За публикацию чужих фото без разрешения хотят ввести штрафы в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/chujie-foto-razresheniya-hotyat-vvesti-shtrafyi-kazahstane-613302/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:44:54+00:00"
+  },
+  {
+    "id": "rss2cb2a6f7455b3062",
+    "category": "Казахстан / Новости",
+    "title": "11:40, 18 Ноября 2026 Мошенники продают поддельные билеты на концерты Димы Билана в Астане и Алматы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/moshenniki-prodayut-poddelnie-bileti-nakontserti-dimi-bilana-vastane-ialmati-b4749fd8",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:40:00+00:00"
+  },
+  {
+    "id": "rss02b38b14f3c933e6",
+    "category": "Казахстан / Новости",
+    "title": "Циклон испортит погоду в Казахстане - где ожидается снег",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/tsiklon-isportit-pogodu-v-kazahstane-gde-ojidaetsya-sneg-613346/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:39:13+00:00"
+  },
+  {
+    "id": "rss9da9e1515e94fa4b",
+    "category": "Казахстан / Новости",
+    "title": "Запрещённый контент и фильмы без возрастной маркировки: новые требования к онлайн-кинотеатрам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/zapreschnnyiy-kontent-filmyi-vozrastnoy-markirovki-novyie-613341/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:36:58+00:00"
+  },
+  {
+    "id": "rss96dc878f8ad10429",
+    "category": "Казахстан / Новости",
+    "title": "11:36, 18 Ноября 2026 Казахстан и Сингапур будут помогать друг другу в расследовании уголовных дел",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-i-singapur-budut-pomogat-drug-drugu-v-rassledovanii-ugolovnih-del-85f079f8",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:36:00+00:00"
+  },
+  {
+    "id": "rss45eab193375a7948",
+    "category": "Казахстан / Новости",
+    "title": "Клевету в соцсетях хотят прописать в КоАП: что изменится для казахстанцев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/klevetu-sotssetyah-hotyat-propisat-koap-izmenitsya-613339/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:34:32+00:00"
+  },
+  {
+    "id": "rss019843bf043f7daf",
+    "category": "Казахстан / Новости",
+    "title": "11:32, 18 Ноября 2026 Стали известны сроки открытия горнолыжного курорта Almaty SuperSki",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/stali-izvestni-sroki-otkritiya-gornolizhnogo-kurorta-almaty-superski-722068cb",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:32:00+00:00"
+  },
+  {
+    "id": "rss3f42d871f4701ed0",
+    "category": "Казахстан / Новости",
+    "title": "11:30, 18 Ноября 2026 Солнечные панели для дома в Казахстане: сколько можно заработать и есть ли субсидии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/solnechnie-paneli-dlyadoma-vkazahstane-skolko-mozhno-zarabotat-iestli-subsidii-83e5bfcf",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:30:00+00:00"
+  },
+  {
+    "id": "rss654a7351339e745f",
+    "category": "Казахстан / Новости",
+    "title": "11:25, 18 Ноября 2026 Дети упали с эскалатора в торговом центре в Сербии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/deti-upali-seskalatora-vtorgovom-tsentre-vserbii-b5e11aff",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:25:00+00:00"
+  },
+  {
+    "id": "rssd6b34c6112a6cc96",
+    "category": "Казахстан / Новости",
+    "title": "11:21, 18 Ноября 2026 На eGov могут запустить сервис для обозначения детских номеров",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/roditeli-smogut-ukazivat-detskie-nomera-cherez-egov-mintsifri-0ffe97d6",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:21:00+00:00"
+  },
+  {
+    "id": "rss186122a91685b4f7",
+    "category": "Казахстан / Новости",
+    "title": "11:20, 18 Ноября 2026 Возрастное ограничение для регистрации в соцсетях могут ввести в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/regulirovanie-onlayn-platform-imass-media-sovershenstvuyut-vkazahstane-5154af1d",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:20:00+00:00"
+  },
+  {
+    "id": "rssc5048e6629b92b1e",
+    "category": "Казахстан / Новости",
+    "title": "11:12, 18 Ноября 2026 Ответственность за использование нецензурной брани в соцсетях могут ввести в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/v-kazahstane-predlozhili-novie-meri-po-regulirovaniyu-onlayn-platform-i-zashite--4002a8c5",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:12:00+00:00"
+  },
+  {
+    "id": "rss6f991eb2f4daaa76",
+    "category": "Казахстан / Новости",
+    "title": "Суд арестовал руководителей “Самрук-Казына“ и КТЖ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/sud-arestoval-rukovoditeley-samruk-kazyina-i-ktj-613336/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:11:42+00:00"
+  },
+  {
+    "id": "rss31163c8cc90b231b",
+    "category": "Казахстан / Новости",
+    "title": "11:10, 18 Ноября 2026 Китай проверит автопроизводителей на задержки выплат поставщикам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kitay-proverit-avtoproizvoditeley-nazaderzhki-viplat-postavshikam-a6c61c54",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:10:00+00:00"
+  },
+  {
+    "id": "rss0e6ab06316d7a1e1",
+    "category": "Казахстан / Новости",
+    "title": "11:05, 18 Ноября 2026 Систему, которая поможет выявлять причины разрушения дорог, создают в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sistemu-kotoraya-pomozhet-viyavlyat-prichini-razrusheniya-dorog-sozdayut-v-kazah-a53a0a16",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:05:00+00:00"
+  },
+  {
+    "id": "rss5d9874a812c48a0e",
+    "category": "Казахстан / Новости",
+    "title": "Казахстанским СМИ готовят новые правила: что изменится в законе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/kazahstanskim-smi-gotovyat-novyie-pravila-izmenitsya-zakone-613304/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:03:41+00:00"
+  },
+  {
+    "id": "rss143a22aee687e271",
+    "category": "Казахстан / Новости",
+    "title": "Bank RBK занял первое место по темпам роста вкладов населения",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/bank-rbk-zanyal-pervoe-mesto-tempam-rosta-vkladov-naseleniya-613330/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:03:00+00:00"
+  },
+  {
+    "id": "rss7aa7acd620bfa8b0",
+    "category": "Казахстан / Новости",
+    "title": "Гадания и предсказания хотят помечать специальным предупреждением в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/gadaniya-predskazaniya-hotyat-pomechat-spetsialnyim-613334/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:00:27+00:00"
+  },
+  {
+    "id": "rssae897f2f4c3911b6",
+    "category": "Казахстан / Новости",
+    "title": "11:00, 18 Ноября 2026 Движение ограничили на четырех участках трасс в Костанайской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/dvizhenie-ogranichili-nachetireh-uchastkah-trass-vkostanayskoy-oblasti-ee672656",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T06:00:00+00:00"
+  },
+  {
+    "id": "rss2266f3be03e490e0",
+    "category": "Казахстан / Новости",
+    "title": "Водителям на летних шинах запретили выезжать на трассы в Костанайской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autoroads/voditelyam-letnih-shinah-zapretili-vyiezjat-trassyi-613335/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:58:25+00:00"
+  },
+  {
+    "id": "rssc56c4071f9f6e922",
+    "category": "Казахстан / Новости",
+    "title": "10:55, 18 Ноября 2026 Более 40 млн теңге незаконно взысканных средств вернули казахстанцам",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-40mln-tenge-nezakonno-vziskannih-sredstv-vernuli-kazahstantsam-2ac4be42",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:55:00+00:00"
+  },
+  {
+    "id": "rss55d164436a4f5a4d",
+    "category": "Казахстан / Новости",
+    "title": "В Казахстане можно стать чужой енешкой или женой на один вечер - что за новый тренд",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/kazahstane-stat-chujoy-eneshkoy-jenoy-odin-vecher-za-novyiy-613325/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:55:00+00:00"
+  },
+  {
+    "id": "rss4993f323827863bb",
+    "category": "Казахстан / Новости",
+    "title": "Соцсети и маркетплейсы обяжут зарегистрировать представительства в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/sotsseti-marketpleysyi-obyajut-zaregistrirovat-613332/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:53:21+00:00"
+  },
+  {
+    "id": "rssd260f623a701e55e",
+    "category": "Казахстан / Новости",
+    "title": "Казахстан запретит соцсети детям до 16 лет: Курултай рассматривает документ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/kazahstan-zapretit-sotsseti-detyam-16-let-kurultay-613305/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:52:43+00:00"
+  },
+  {
+    "id": "rss4edef525930f9bcb",
+    "category": "Казахстан / Новости",
+    "title": "10:52, 18 Ноября 2026 Крокодила обнаружили в одном из каналов Ташкента",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/krokodila-obnaruzhili-vodnom-izkanalov-tashkenta-551e7464",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:52:00+00:00"
+  },
+  {
+    "id": "rssf570591a3a850d12",
+    "category": "Казахстан / Новости",
+    "title": "10:46, 18 Ноября 2026 Колледж в Туркестанской области закупил наборы LEGO на 20,4 млн теңге: что выяснила проверка",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kolledzh-v-turkestanskoy-oblasti-zakupil-nabori-lego-na-204-mln-tenge-chto-viyas-39cd76c8",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:46:00+00:00"
+  },
+  {
+    "id": "rss5fdaca0d310af017",
+    "category": "Казахстан / Новости",
+    "title": "10:45, 18 Ноября 2026 Военный самолет разбился в России, все 19 человек на борту погибли",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/voenniy-samolet-razbilsya-v-rossii-vse-19-chelovek-na-bortu-pogibli-6a6136c5",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:45:00+00:00"
+  },
+  {
+    "id": "rss4ea7a3da3b15144e",
+    "category": "Казахстан / Новости",
+    "title": "10:41, 18 Ноября 2026 Какие товары будут перевозить по железной дороге под охраной в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kakie-tovari-budut-perevozit-pozheleznoy-doroge-podohranoy-vkazahstane-f89dd350",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:41:00+00:00"
+  },
+  {
+    "id": "rssaa7349b811c91796",
+    "category": "Казахстан / Новости",
+    "title": "10:39, 18 Ноября 2026 Мужчину, скрывавшегося от полиции Павлодара с 1999 года, задержали в России",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/v-rossii-zaderzhali-muzhchinu-skrivavshegosya-ot-politsii-pavlodara-s-1999-goda-1c35a70c",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:39:00+00:00"
+  },
+  {
+    "id": "rss286df1ad53695d14",
+    "category": "Казахстан / Новости",
+    "title": "10:34, 18 Ноября 2026 Ушла из жизни народная поэтесса Казахстана Асия Беркенова",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ushla-iz-zhizni-narodnaya-poetessa-kazahstana-asiya-berkenova-c137727d",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:34:00+00:00"
+  },
+  {
+    "id": "rss48f03523d47ef85a",
+    "category": "Казахстан / Новости",
+    "title": "Казахстан и Мальдивы договорились о новых авиарейсах",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/my-country/kazahstan-i-maldivyi-dogovorilis-o-novyih-aviareysah-613331/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:32:15+00:00"
+  },
+  {
+    "id": "rss935c7e9bb24e1db2",
+    "category": "Казахстан / Новости",
+    "title": "Отбасы банк исключил из очереди на жильё 52 тысячи казахстанцев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/home-news/otbasyi-bank-isklyuchil-ocheredi-jil-52-tyisyachi-613329/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:19:47+00:00"
+  },
+  {
+    "id": "rss58abda99b0f72891",
+    "category": "Казахстан / Новости",
+    "title": "Скрывавшегося 27 лет после разбоя в Павлодаре преступника задержали в России",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/skryivavshegosya-27-let-razboya-pavlodare-prestupnika-613321/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:05:25+00:00"
+  },
+  {
+    "id": "rss57b4afb372bb33c8",
+    "category": "Казахстан / Новости",
+    "title": "“Договоры на полмиллиарда“: казахстанцам предлагали “беспроцентные займы“ на жилье",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/dogovoryi-polmilliarda-kazahstantsam-predlagali-613326/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T05:00:57+00:00"
+  },
+  {
+    "id": "rss5ef81fc29be744e2",
+    "category": "Казахстан / ЦА",
+    "title": "Эффект Чонгука и V: как k-pop-звезды приносят миллионы долларов брендам",
+    "summary": "K-pop-индустрия влияет на мир все сильнее с каждым годом, и бренды это прекрасно понимают. Сотрудничество с айдолами стало чуть ли не главным приоритетом для всех марок, которым важна узнаваемость и лояльность аудитории. Интересно, но именно k-pop-артисты приносят компаниям наибольшие охваты и просмотры. Такой эффект от сотрудничества измеряется по",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/kultura/jeffekt-chonguka-i-v-kak-k-pop-zvezdy-prinosjat-milliony-dollarov-brendam",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T04:00:00+00:00"
+  },
+  {
+    "id": "rssf0c47c1df2f2cfac",
+    "category": "Казахстан / Новости",
+    "title": "Гороскоп на сегодня: кого ждет успех в делах, кому стоит проявить решительность",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-kogo-jdet-uspeh-delah-komu-stoit-proyavit-613322/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:52:32+00:00"
+  },
+  {
+    "id": "rss2ca71ec14d4cbcda",
+    "category": "Казахстан / Новости",
+    "title": "Мощное землетрясение в Румынии ощутили жители нескольких стран Европы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/europe/moschnoe-zemletryasenie-rumyinii-oschutili-jiteli-neskolkih-613319/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:30:00+00:00"
+  },
+  {
+    "id": "rss6cb0af209d102505",
+    "category": "Казахстан / Новости",
+    "title": "До 5 лет за сваттинг: МВД предупредило казахстанцев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/do-5-let-za-svatting-mvd-predupredilo-kazahstantsev-613320/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:25:27+00:00"
+  },
+  {
+    "id": "rssc7866ac557dbd7a4",
+    "category": "Казахстан / Новости",
+    "title": "Снег на госномере и фарах - могут ли оштрафовать за неочищенную машину",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/tengriautouseful/sneg-gosnomere-farah-mogut-oshtrafovat-neochischennuyu-613206/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:02:00+00:00"
+  },
+  {
+    "id": "rss4226d7892386bc77",
+    "category": "Казахстан / Новости",
+    "title": "Секретная сеть Агентства нацбезопасности США вышла из строя на фоне массовых сбоев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/usa/sekretnaya-set-agentstva-natsbezopasnosti-ssha-vyishla-613318/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:01:00+00:00"
+  },
+  {
+    "id": "rss869c5325a3e8fb34",
+    "category": "Казахстан / Новости",
+    "title": "Как правильно принять квартиру от застройщика и что проверить. Советы покупателям",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/tengri-home/article/pravilno-prinyat-kvartiru-zastroyschika-chto-proverit-4731/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T03:01:00+00:00"
+  },
+  {
+    "id": "rss3465202a9a98c9d6",
+    "category": "Казахстан / Новости",
+    "title": "Деньги для строительства LRT - какую недвижимость распродаёт CTS в Астане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/home-news/dengi-stroitelstva-lrt-kakuyu-nedvijimost-rasprodat-cts-613274/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T02:33:00+00:00"
+  },
+  {
+    "id": "rsse18e8462f1c85332",
+    "category": "Казахстан / Новости",
+    "title": "11-классница пришла на уроки с ножом в Астане: в школе рассказали подробности",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/11-klassnitsa-prishla-uroki-nojom-astane-shkole-rasskazali-613317/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T02:02:00+00:00"
+  },
+  {
+    "id": "rss78326b82000e6de6",
+    "category": "Казахстан / Новости",
+    "title": "Запрещённые в Казахстане госномера. Проверяем, можно ли купить их в интернете",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/article/zapreschnnyie-kazahstane-gosnomera-proveryaem-li-kupit-v-4742/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T02:01:00+00:00"
+  },
+  {
+    "id": "rssd457d77ae3b3ae65",
+    "category": "Казахстан / Новости",
+    "title": "Работодатель годами не платил пенсионные взносы: можно ли взыскать старый долг",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/rabotodatel-godami-platil-pensionnyie-vznosyi-li-vzyiskat-611932/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T01:52:00+00:00"
+  },
+  {
+    "id": "rss8f58dfb9ee979c91",
+    "category": "Казахстан / Новости",
+    "title": "Фантомные штрафы: почему казахстанцы получают чужие предписания и как их оспорить",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/tengriautouseful/fantomnyie-shtrafyi-pochemu-kazahstantsyi-poluchayut-chujie-613260/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T01:23:00+00:00"
+  },
+  {
+    "id": "rss8aefc609ff2724d3",
+    "category": "Казахстан / Новости",
+    "title": "Неиспользованный отпуск в Казахстане: сколько денег выплатят при увольнении",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/neispolzovannyiy-otpusk-kazahstane-skolko-deneg-vyiplatyat-611897/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T01:14:00+00:00"
+  },
+  {
+    "id": "rss9d603f42597a19eb",
+    "category": "Казахстан / Новости",
+    "title": "От мороза до +17 градусов: какой будет погода в Казахстане в среду",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/moroza-17-gradusov-budet-pogoda-kazahstane-sredu-613316/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T01:03:00+00:00"
+  },
+  {
+    "id": "rssf3a606ea12f8ff36",
+    "category": "Казахстан / Новости",
+    "title": "Пожар вспыхнул ночью в сауне в Караганде, людей эвакуировали",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/pojar-vspyihnul-nochyu-saune-karagande-lyudey-evakuirovali-613315/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T00:05:00+00:00"
+  },
+  {
     "id": "rssc40dad5a67a6e843",
     "category": "Казахстан / Новости",
     "title": "04:19, 18 Ноября 2026 В Брюсселе студенты протестовали против повышения платы за обучение",
@@ -10048,315 +10628,5 @@
     "url": "https://www.inform.kz/ru/dozhd-sneg-i-gololed-kakoy-budet-pogoda-v-kazahstane-12-14-noyabrya-1ab6782f",
     "date": "11.11.2026",
     "published_at": "2026-11-11T07:05:00+00:00"
-  },
-  {
-    "id": "rssa0b201251eba769c",
-    "category": "Казахстан / Новости",
-    "title": "12:00, 11 Ноября 2026 Названа страна с самым высоким темпом роста потребления алкоголя",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/nazvana-strana-ssamim-visokim-tempom-rosta-potrebleniya-alkogolya-3c651099",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T07:00:00+00:00"
-  },
-  {
-    "id": "rssa6466d537d82c673",
-    "category": "Казахстан / Новости",
-    "title": "В аэропорту Алматы рассказали подробности гибели рабочего",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/v-aeroportu-almatyi-rasskazali-podrobnosti-gibeli-rabochego-612828/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:57:18+00:00"
-  },
-  {
-    "id": "rss03e219bbd2e7c8d3",
-    "category": "Казахстан / Новости",
-    "title": "11:52, 11 Ноября 2026 Подходы к финансированию науки предложили пересмотреть в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/podhodi-k-finansirovaniyu-nauki-predlozhili-peresmotret-v-kazahstane-eb01645b",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:52:00+00:00"
-  },
-  {
-    "id": "rssd3fd731d16d314ea",
-    "category": "Казахстан / Новости",
-    "title": "15-градусные морозы ударят в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/15-gradusnyie-morozyi-udaryat-v-kazahstane-612803/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:51:05+00:00"
-  },
-  {
-    "id": "rssed48a9c7ce27d2ae",
-    "category": "Казахстан / Новости",
-    "title": "“Будто что-то горит“: белый шлейф над Астаной объяснили в акимате",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/budto-chto-to-gorit-belyiy-shleyf-astanoy-obyyasnili-akimate-612819/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:38:34+00:00"
-  },
-  {
-    "id": "rss045c1e55b13745ad",
-    "category": "Казахстан / Новости",
-    "title": "В аэропорту Алматы погиб человек",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/v-aeroportu-almatyi-pogib-chelovek-612822/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:26:55+00:00"
-  },
-  {
-    "id": "rss7fc4a18d623fba72",
-    "category": "Казахстан / Новости",
-    "title": "Bank RBK возглавил рейтинг крупнейших банков Казахстана по росту кредитования",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/bank-rbk-vozglavil-reyting-krupneyshih-bankov-kazahstana-612811/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T06:03:00+00:00"
-  },
-  {
-    "id": "rss473b49834da115c3",
-    "category": "Казахстан / Новости",
-    "title": "Нарушения на 51 миллиард теңге в расходах на науку выявили аудиторы в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/narusheniya-51-milliard-tenge-rashodah-nauku-vyiyavili-612816/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T05:50:26+00:00"
-  },
-  {
-    "id": "rssfba959319513f580",
-    "category": "Казахстан / Новости",
-    "title": "Станцию метро “Алатау” в Алматы затопило из-за дождя",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/stantsiyu-metro-alatau-v-almatyi-zatopilo-iz-za-dojdya-612807/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T05:43:00+00:00"
-  },
-  {
-    "id": "rss3f74fbf81f361947",
-    "category": "Казахстан / Новости",
-    "title": "Молодой гриф из Казахстана добрался до предгорий Гималаев",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/molodoy-grif-iz-kazahstana-dobralsya-do-predgoriy-gimalaev-612806/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T05:37:00+00:00"
-  },
-  {
-    "id": "rssf8cbe92baac4c81a",
-    "category": "Казахстан / Новости",
-    "title": "Maserati может выпустить электромобиль в неожиданной китайской коллаборации",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/electromobiles/maserati-vyipustit-elektromobil-neojidannoy-kitayskoy-612812/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T05:36:26+00:00"
-  },
-  {
-    "id": "rss9e18cae3b29fd887",
-    "category": "Казахстан / Новости",
-    "title": "Кандидатуру нового судьи Верховного суда поддержали депутаты Курултая",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/kandidaturu-novogo-sudi-verhovnogo-suda-podderjali-deputatyi-612808/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T05:34:14+00:00"
-  },
-  {
-    "id": "rsscdf173f7b2703092",
-    "category": "Казахстан / Новости",
-    "title": "Сам себя ранил или нападение? В Уральске расследуют инцидент с экс-полицейскими",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/sebya-ranil-napadenie-uralske-rassleduyut-intsident-eks-612802/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T04:05:19+00:00"
-  },
-  {
-    "id": "rss5366db4ab899e47d",
-    "category": "Казахстан / ЦА",
-    "title": "«Ты мне нравишься, но я исчезну»: что такое гостинг и как его объясняет наука",
-    "summary": "О гостинге сегодня говорят все чаще, и почти каждый хотя бы раз оказывался по одну из его сторон. Редакторка STEPPE Ажара собрала истории людей, которых «загостили», и признания тех, кто сам исчезал из чужой жизни, а также разобралась, что об этом говорят научные исследования. Что такое гостинг? Гостинг (от англ. ghost — «призрак») — это […]",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/steppe-select/ty-mne-nravishsja-no-ja-ischeznu-chto-takoe-gosting-i-kak-ego-objasnjaet-nauka",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T04:00:00+00:00"
-  },
-  {
-    "id": "rss886547605c9ffae4",
-    "category": "Казахстан / Новости",
-    "title": "Останки нашли 12 лет назад, а родных - только сейчас: история солдата из Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/ostanki-nashli-12-let-nazad-rodnyih-seychas-istoriya-soldata-612548/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T03:47:00+00:00"
-  },
-  {
-    "id": "rss2bfed050a24a9d7f",
-    "category": "Казахстан / Новости",
-    "title": "Тепло вернётся в Алматы, а Астану ждут морозы до -7 - прогноз на 10 дней",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/teplo-verntsya-almatyi-astanu-jdut-morozyi-7-prognoz-10-612801/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T03:46:14+00:00"
-  },
-  {
-    "id": "rss5175f6f51a0c45bb",
-    "category": "Казахстан / Новости",
-    "title": "В Германии запретили использование китайских дронов и автомобилей в армии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/news/germanii-zapretili-ispolzovanie-kitayskih-dronov-avtomobiley-612800/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T03:25:00+00:00"
-  },
-  {
-    "id": "rss2a2e5bc5723cb844",
-    "category": "Казахстан / Новости",
-    "title": "Что делать, если выпал снег, но по закону “переобуваться“ ещё рано, объяснил эксперт",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/autonews/delat-vyipal-sneg-po-zakonu-pereobuvatsya-esch-rano-612682/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T03:02:00+00:00"
-  },
-  {
-    "id": "rssa59637aa2bd834cf",
-    "category": "Казахстан / Новости",
-    "title": "Статья 492 КоАП РК простыми словами - штраф за жизнь без прописки и удостоверения личности",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/tengri-home/article/statya-492-koap-rk-prostyimi-slovami-shtraf-jizn-propiski-4705/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T02:33:00+00:00"
-  },
-  {
-    "id": "rss399b1bc570157cec",
-    "category": "Казахстан / Новости",
-    "title": "07:15, 11 Ноября 2026 Курсы валют в обменниках Астаны и Алматы на 11 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-11-noyabrya-12d0b868",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T02:15:00+00:00"
-  },
-  {
-    "id": "rss93d7d9b42fba0e25",
-    "category": "Казахстан / Новости",
-    "title": "07:00, 11 Ноября 2026 11 ноября. Календарь Казинформа «Даты. События»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/11-noyabrya-kalendar-kazinforma-dati-sobitiya-71f9ccaf",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T02:00:00+00:00"
-  },
-  {
-    "id": "rssea3ce79b338c0fc4",
-    "category": "Казахстан / Новости",
-    "title": "Как вернуться на работу после декрета или долгого перерыва",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/kak-vernutsya-na-rabotu-posle-dekreta-ili-dolgogo-pereryiva-612287/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T01:48:00+00:00"
-  },
-  {
-    "id": "rss7f0bb37b5fc8bfe2",
-    "category": "Казахстан / Новости",
-    "title": "“Найдём, где торговать“. Репортаж с самого большого блошиного рынка Алматы, который сносят",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/naydm-torgovat-reportaj-samogo-bolshogo-bloshinogo-ryinka-4712/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T01:32:00+00:00"
-  },
-  {
-    "id": "rssb04d7d4e24a99c9d",
-    "category": "Казахстан / Новости",
-    "title": "06:30, 11 Ноября 2026 Метеорологи сделали предупреждение для жителей шести городов Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/meteorologi-sdelali-preduprezhdenie-dlya-zhiteley-shesti-gorodov-kazahstana-cccd756f",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T01:30:00+00:00"
-  },
-  {
-    "id": "rssa79ab1c37af1ef28",
-    "category": "Казахстан / Новости",
-    "title": "Заброшенный дворец бракосочетания в Алматы показали изнутри: что с ним будет дальше",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/zabroshennyiy-dvorets-brakosochetaniya-almatyi-pokazali-612661/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T01:19:00+00:00"
-  },
-  {
-    "id": "rssabc9cd6c35fb5961",
-    "category": "Казахстан / Новости",
-    "title": "По следам истории Ясмин из Павлодара. Как защитить своё имущество в браке",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/sledam-istorii-yasmin-pavlodara-zaschitit-svo-imuschestvo-4702/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T01:01:00+00:00"
-  },
-  {
-    "id": "rss3a8a2b2b31b37fe9",
-    "category": "Казахстан / Новости",
-    "title": "05:46, 11 Ноября 2026 Южная Корея планирует восстановить участок исторической железной дороги к КНДР",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/yuzhnaya-koreya-planiruet-vosstanovit-uchastok-istoricheskoy-zheleznoy-dorogi-k--075d8ab0",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T00:46:00+00:00"
-  },
-  {
-    "id": "rssfe5a05346ee5c37c",
-    "category": "Казахстан / Новости",
-    "title": "Гороскоп на сегодня: кого потянет к новым знаниям, а кого - к переменам",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-kogo-potyanet-novyim-znaniyam-kogo-612799/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T00:45:01+00:00"
-  },
-  {
-    "id": "rss3d326643d327e489",
-    "category": "Казахстан / Новости",
-    "title": "Сильные осадки и ветер: какой будет погода в Казахстане 11 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/silnyie-osadki-veter-budet-pogoda-kazahstane-11-noyabrya-612794/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T00:35:00+00:00"
-  },
-  {
-    "id": "rss11fb1bcec30d5d3d",
-    "category": "Казахстан / Новости",
-    "title": "05:08, 11 Ноября 2026 Искусственный интеллект научат выявлять подозрительные суда в ОАЭ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/iskusstvenniy-intellekt-nauchat-viyavlyat-podozritelnie-suda-v-oae-e4fb404c",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T00:08:00+00:00"
-  },
-  {
-    "id": "rss3890686023cf0537",
-    "category": "Казахстан / Новости",
-    "title": "Главе Пентагона удалось избежать процедуры импичмента - вопрос отложен до следующего созыва",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/glave-pentagona-udalos-izbejat-protseduryi-impichmenta-612798/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T00:05:00+00:00"
   }
 ]
