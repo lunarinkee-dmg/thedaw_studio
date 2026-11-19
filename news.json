@@ -1,5 +1,285 @@
 [
   {
+    "id": "rsscb85abf6a1151ce1",
+    "category": "Казахстан / Новости",
+    "title": "08:55, 19 Ноября 2026 Овощехранилище на 12 тысяч тонн построили в Таразе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ovoshehranilishe-na-12-tisyach-tonn-postroili-v-taraze-80b8131f",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:55:00+00:00"
+  },
+  {
+    "id": "rss9b505ee3ab207fbd",
+    "category": "Казахстан / Новости",
+    "title": "08:47, 19 Ноября 2026 Мировые цены на нефть на 19 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/mirovie-tseni-na-neft-na-19-noyabrya-bce6a83e",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:47:00+00:00"
+  },
+  {
+    "id": "rss8423e288b0c0bab3",
+    "category": "Казахстан / Новости",
+    "title": "Новая семья и чужое имя: подробности поимки казахстанца спустя 27 лет",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/crime/novaya-semya-chujoe-imya-podrobnosti-poimki-kazahstantsa-613404/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:44:00+00:00"
+  },
+  {
+    "id": "rss3a4a981536dafb18",
+    "category": "Казахстан / Новости",
+    "title": "Прямой рейс из Казахстана в США: появились новые подробности",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/my-country/pryamoy-reys-kazahstana-ssha-poyavilis-novyie-podrobnosti-613419/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:37:38+00:00"
+  },
+  {
+    "id": "rssda8337c1206c6308",
+    "category": "Казахстан / Новости",
+    "title": "08:36, 19 Ноября 2026 Казахстан продолжает подготовку к запуску прямых рейсов в США",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-prodolzhaet-podgotovku-k-zapusku-pryamih-reysov-v-ssha-4483e9a3",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:36:00+00:00"
+  },
+  {
+    "id": "rss6c33cf103cd930a4",
+    "category": "Казахстан / Новости",
+    "title": "08:30, 19 Ноября 2026 Курсы валют в обменниках Астаны и Алматы на 19 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kursi-valyut-vobmennikah-astani-ialmati-na19noyabrya-78c309e7",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:30:00+00:00"
+  },
+  {
+    "id": "rss26feade09d613063",
+    "category": "Казахстан / Новости",
+    "title": "Трамп пригрозил уничтожить Иран в случае применения “грязной бомбы“ в США",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/tramp-prigrozil-unichtojit-iran-sluchae-primeneniya-gryaznoy-613415/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:28:51+00:00"
+  },
+  {
+    "id": "rss1ec6c3b1caa39ff6",
+    "category": "Казахстан / Новости",
+    "title": "08:22, 19 Ноября 2026 Незаконное изменение русла реки Каратал пресекли в области Жетісу",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/nezakonnoe-izmenenie-rusla-reki-karatal-presekli-v-oblasti-zhetsu-bed4f3fc",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:22:00+00:00"
+  },
+  {
+    "id": "rss11d79eba70339560",
+    "category": "Казахстан / Новости",
+    "title": "08:10, 19 Ноября 2026 19 ноября. Календарь Казинформа «Дни рождения»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/19-noyabrya-kalendar-kazinforma-dni-rozhdeniya-23d3630a",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:10:00+00:00"
+  },
+  {
+    "id": "rss351abc71da08c233",
+    "category": "Казахстан / Новости",
+    "title": "В Алматы пройдет бесплатная конференция для торгового бизнеса",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/almatyi-proydet-besplatnaya-konferentsiya-torgovogo-biznesa-613228/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:03:00+00:00"
+  },
+  {
+    "id": "rss709efcc527ed9365",
+    "category": "Казахстан / Новости",
+    "title": "Кто виноват, если машину занесло на встречную полосу из-за гололёда и произошло ДТП",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/tengriautouseful/vinovat-mashinu-zaneslo-vstrechnuyu-polosu-iz-za-gololda-613353/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:02:00+00:00"
+  },
+  {
+    "id": "rss512b95dfd4c05f6e",
+    "category": "Казахстан / Новости",
+    "title": "08:00, 19 Ноября 2026 «Народная стройка»: как Казахстан распорядится накоплениями из Нацфонда",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/narodnaya-stroyka-kak-kazahstan-rasporyaditsya-nakopleniyami-iz-natsfonda-70ed2fa5",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T03:00:00+00:00"
+  },
+  {
+    "id": "rss9555e6124b547ebc",
+    "category": "Казахстан / Новости",
+    "title": "07:41, 19 Ноября 2026 Более 450 кандидатов претендуют на места в маслихатах области Жетісу",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-450-kandidatov-pretenduyut-namesta-vmaslihatah-oblasti-zhetsu-5c441953",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:41:00+00:00"
+  },
+  {
+    "id": "rss3d9c78804744dda4",
+    "category": "Казахстан / Новости",
+    "title": "Ипотека до брака и другие случаи, когда личное жильё признают общим при разводе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/tengri-home/article/ipoteka-braka-drugie-sluchai-lichnoe-jil-priznayut-obschim-4740/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:33:00+00:00"
+  },
+  {
+    "id": "rssa678cd3c8ef1f197",
+    "category": "Казахстан / Новости",
+    "title": "07:23, 19 Ноября 2026 Казахстанские реформы и 35-летие Независимости обсудили на круглом столе в Будапеште",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstanskie-reformi-i-35-letie-nezavisimosti-obsudili-na-kruglom-stole-v-budap-83d39c6f",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:23:00+00:00"
+  },
+  {
+    "id": "rss7cd8c88dec7079ee",
+    "category": "Казахстан / Новости",
+    "title": "Трамп сделал неожиданное заявление о шпионаже США за Китаем",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/tramp-sdelal-neojidannoe-zayavlenie-shpionaje-ssha-kitaem-613414/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:21:43+00:00"
+  },
+  {
+    "id": "rss1950205f3743c414",
+    "category": "Казахстан / Новости",
+    "title": "Хуситы заявили об атаке на Эр-Рияд, коалиция уничтожила их ракетную установку",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/near_east/husityi-zayavili-atake-er-riyad-koalitsiya-unichtojila-613413/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:01:00+00:00"
+  },
+  {
+    "id": "rss11a20102a6080b52",
+    "category": "Казахстан / Новости",
+    "title": "07:00, 19 Ноября 2026 19 ноября. Календарь Казинформа «Даты. События»",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/19-noyabrya-kalendar-kazinforma-dati-sobitiya-0646d4b3",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T02:00:00+00:00"
+  },
+  {
+    "id": "rss9906d71cabc4e307",
+    "category": "Казахстан / Новости",
+    "title": "На работе запретили пользоваться смартфоном: насколько это законно",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/rabote-zapretili-polzovatsya-smartfonom-naskolko-zakonno-613210/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T01:46:00+00:00"
+  },
+  {
+    "id": "rssb77dc38705135d9b",
+    "category": "Казахстан / Новости",
+    "title": "Закрыть арык велодорожкой. Как в Алматы столкнулись две святыни благоустройства",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/article/zakryit-aryik-velodorojkoy-v-almatyi-stolknulis-dve-4739/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T01:32:00+00:00"
+  },
+  {
+    "id": "rss4af35ef506cb2546",
+    "category": "Казахстан / Новости",
+    "title": "06:30, 19 Ноября 2026 Неблагоприятные метеоусловия накроют десять городов Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/neblagopriyatnie-meteousloviya-nakroyut-desyat-gorodov-kazahstana-194e99e1",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T01:30:00+00:00"
+  },
+  {
+    "id": "rss13c06efa80a49fa0",
+    "category": "Казахстан / Новости",
+    "title": "Где в Казахстане пройдут дожди, а где будет метель: о погоде на 19 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/v-kazahstane-proydut-dojdi-gde-metel-pogode-19-noyabrya-613412/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T01:03:00+00:00"
+  },
+  {
+    "id": "rsse0385c0b1bb418b6",
+    "category": "Казахстан / Новости",
+    "title": "05:45, 19 Ноября 2026 В новоприсоединенных массивах Тараза планируют построить школы на 900 мест",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/v-novoprisoedinennih-massivah-taraza-planiruyut-postroit-shkoli-na-900-mest-63de123d",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T00:45:00+00:00"
+  },
+  {
+    "id": "rssda7209a71399ae35",
+    "category": "Казахстан / Новости",
+    "title": "К 2035 году мусульман в мире может стать больше, чем христиан - прогноз",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/2035-godu-musulman-mire-stat-bolshe-hristian-prognoz-613411/",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T00:05:00+00:00"
+  },
+  {
+    "id": "rss36e3180fa9740dd5",
+    "category": "Казахстан / Новости",
+    "title": "05:03, 19 Ноября 2026 Пропавшая в 1945 году картина вновь появилась во дворце Потсдама",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/propavshaya-v-1945-godu-kartina-vnov-poyavilas-vo-dvortse-potsdama-2e3f0338",
+    "date": "19.11.2026",
+    "published_at": "2026-11-19T00:03:00+00:00"
+  },
+  {
+    "id": "tg792b31c9439c3eae92",
+    "category": "Музыка / Рэп",
+    "title": "🔥 Travis Scott готов играть в GTA 6 где угодно",
+    "summary": "🔥 Travis Scott готов играть в GTA 6 где угодно\nРэпер настолько увлёкся игрой, что продолжает играть в неё даже во время поездки по городу, пока его сопровождает полицейский эскорт.\nКак ваши первые впечатления от игры? ❤️/👎\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31280",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T23:42:18+00:00"
+  },
+  {
+    "id": "rss1c6e5b619121e862",
+    "category": "Казахстан / Новости",
+    "title": "04:34, 19 Ноября 2026 Опасный вирус обнаружили на двух птицефермах в Индии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/opasniy-virus-obnaruzhili-na-dvuh-ptitsefermah-v-indii-0016610c",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T23:34:00+00:00"
+  },
+  {
+    "id": "rss2840d319a7e8775f",
+    "category": "Казахстан / Новости",
+    "title": "Скандал с Хулио Иглесиасом получил продолжение: начато новое расследование",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/skandal-hulio-iglesiasom-poluchil-prodoljenie-nachato-novoe-613410/",
+    "date": "18.11.2026",
+    "published_at": "2026-11-18T23:07:00+00:00"
+  },
+  {
     "id": "rss416492b7ccc7eec2",
     "category": "Казахстан / Новости",
     "title": "03:56, 19 Ноября 2026 Японскую префектуру Кумамото вновь потрясло землетрясение",
@@ -10158,295 +10438,5 @@
     "url": "https://tengrinews.kz/kazakhstan_news/gruziya-vyidala-kazahstanu-uchastnitsu-shemyi-saytom-612887/",
     "date": "12.11.2026",
     "published_at": "2026-11-12T04:14:59+00:00"
-  },
-  {
-    "id": "rss6f46621ec690d618",
-    "category": "Казахстан / Новости",
-    "title": "09:09, 12 Ноября 2026 Один человек погиб и 10 пострадали при обрушении дома в Бруклине",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/odin-chelovek-pogib-i-10-postradali-pri-obrushenii-doma-v-brukline-de8c8819",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T04:09:00+00:00"
-  },
-  {
-    "id": "rssfc8f39a326ba1d61",
-    "category": "Казахстан / Новости",
-    "title": "09:00, 12 Ноября 2026 Редкие кадры с лосями показали в нацпарке «Буйратау»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/redkie-kadri-s-losyami-pokazali-v-natsparke-buyratau-670378de",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T04:00:00+00:00"
-  },
-  {
-    "id": "rssa6e1339019b2ff0a",
-    "category": "Казахстан / Новости",
-    "title": "08:48, 12 Ноября 2026 Снег и дождь со снегом ожидаются на трассах Казахстана 12 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/sneg-i-dozhd-so-snegom-ozhidayutsya-na-trassah-kazahstana-12-noyabrya-8fdbb905",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:48:00+00:00"
-  },
-  {
-    "id": "rss43c042743e63ab38",
-    "category": "Казахстан / Новости",
-    "title": "08:34, 12 Ноября 2026 23 казахстанских водника проходят обучение в Китае по новым программам",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/23-kazahstanskih-vodnika-prohodyat-obuchenie-v-kitae-po-novim-programmam-20f6e5fc",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:34:00+00:00"
-  },
-  {
-    "id": "rssd8223c998e60cd75",
-    "category": "Казахстан / Новости",
-    "title": "08:23, 12 Ноября 2026 Мировые цены на нефть на 12 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mirovie-tseni-naneft-na12noyabrya-9df8f989",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:23:00+00:00"
-  },
-  {
-    "id": "rssdbd2f03c9ba23976",
-    "category": "Казахстан / Новости",
-    "title": "У гендиректора NVIDIA нашли вторую любовницу - СМИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/u-gendirektora-nvidia-nashli-vtoruyu-lyubovnitsu-smi-612886/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:18:58+00:00"
-  },
-  {
-    "id": "rssc65bd5f3134c819a",
-    "category": "Казахстан / Новости",
-    "title": "08:12, 12 Ноября 2026 12 ноября. Календарь Казинформа «Дни рождения»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/12-noyabrya-kalendar-kazinforma-dni-rozhdeniya-2fc379a1",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:12:00+00:00"
-  },
-  {
-    "id": "rss66bbaaa67a36464b",
-    "category": "Казахстан / Новости",
-    "title": "Два архитектурных проекта из Казахстана вышли в финал международной премии в Лондоне",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/arhitekturnyih-proekta-kazahstana-vyishli-final-612697/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:05:00+00:00"
-  },
-  {
-    "id": "rss040565d12bfec46d",
-    "category": "Казахстан / Новости",
-    "title": "08:03, 12 Ноября 2026 Курсы валют в обменниках Астаны и Алматы на 12 ноября",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kursi-valyut-v-obmennikah-astani-i-almati-na-12-noyabrya-20952dcf",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:03:00+00:00"
-  },
-  {
-    "id": "rss7db5ae322553fc8d",
-    "category": "Казахстан / Новости",
-    "title": "Как запомнить дорожные знаки с изображением автомобилей: простая шпаргалка для водителей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/tengriautouseful/zapomnit-dorojnyie-znaki-izobrajeniem-avtomobiley-prostaya-612821/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:02:00+00:00"
-  },
-  {
-    "id": "rssd977075f83d10261",
-    "category": "Казахстан / Новости",
-    "title": "08:00, 12 Ноября 2026 Дороги, школы, бюджеты: почему выборы в маслихаты важны для каждого региона Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/maslihati-na-perezagruzke-chego-zhdat-ot-dosrochnih-viborov-i-izmenitsya-li-mest-49a06ac5",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T03:00:00+00:00"
-  },
-  {
-    "id": "rss0b4202f4476057bf",
-    "category": "Казахстан / Новости",
-    "title": "В Испании миллионы людей вышли на улицы, требуя доступного жилья и роста зарплат",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/ispanii-millionyi-lyudey-vyishli-ulitsyi-trebuya-dostupnogo-612883/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:57:16+00:00"
-  },
-  {
-    "id": "rsse8c3a899d1d2693f",
-    "category": "Казахстан / Новости",
-    "title": "07:37, 12 Ноября 2026 Землетрясение магнитудой 5,4 произошло на Камчатке",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zemletryasenie-magnitudoy-54-proizoshlo-na-kamchatke-eb7025c0",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:37:00+00:00"
-  },
-  {
-    "id": "rss54bf4b20cee030ab",
-    "category": "Казахстан / Новости",
-    "title": "Переселить или обработать? Что станет с домами в Косшы близ очага сибирской язвы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/home-news/pereselit-obrabotat-stanet-domami-kosshyi-bliz-ochaga-612544/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:33:00+00:00"
-  },
-  {
-    "id": "rss35fc22ecc19442fe",
-    "category": "Казахстан / Новости",
-    "title": "07:15, 12 Ноября 2026 Китай запустил новый спутник с космодрома Цзюцюань",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kitay-zapustil-noviy-sputnik-s-kosmodroma-tszyutsyuan-c00c4c84",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:15:00+00:00"
-  },
-  {
-    "id": "rssbd0b3133ebda6df0",
-    "category": "Казахстан / Новости",
-    "title": "В Алматы двое мужчин заявили в полицию на обманувшую их ночную бабочку",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/almatyi-dvoe-mujchin-zayavili-politsiyu-obmanuvshuyu-612885/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:01:31+00:00"
-  },
-  {
-    "id": "rss529228eaccfb46d7",
-    "category": "Казахстан / Новости",
-    "title": "500 тысяч тонн серной кислоты: как работают рудники и заводы в Жамбылской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/500-tyisyach-tonn-sernoy-kislotyi-rabotayut-rudniki-zavodyi-4721/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:00:00+00:00"
-  },
-  {
-    "id": "rssf53ab27f8a898431",
-    "category": "Казахстан / Новости",
-    "title": "07:00, 12 Ноября 2026 12 ноября. Календарь Казинформа «Даты. События»",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/12-noyabrya-kalendar-kazinforma-dati-sobitiya-d670f665",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T02:00:00+00:00"
-  },
-  {
-    "id": "rssad7dcf9fa7951d0e",
-    "category": "Казахстан / Новости",
-    "title": "Какой будет пенсия при зарплате 500 тысяч теңге: расчет ЕНПФ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/budet-pensiya-zarplate-500-tyisyach-tenge-raschet-enpf-612738/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T01:43:00+00:00"
-  },
-  {
-    "id": "rssa645138871045b1b",
-    "category": "Казахстан / Новости",
-    "title": "Умер бывший замакима Мангистауской области Ракимбек Амиржанов",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/umer-byivshiy-zamakima-mangistauskoy-oblasti-rakimbek-612884/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T01:34:37+00:00"
-  },
-  {
-    "id": "rssaea11b8ec31d849b",
-    "category": "Казахстан / Новости",
-    "title": "“Мне 30 лет, и я не замужем“ - почему в казахском обществе это звучит как диагноз",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/article/mne-30-let-ya-ne-zamujem-pochemu-kazahskom-obschestve-4717/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T01:30:00+00:00"
-  },
-  {
-    "id": "rss0c4c40378452f65d",
-    "category": "Казахстан / Новости",
-    "title": "06:30, 12 Ноября 2026 Метеорологи назвали города Казахстана с риском загрязнения воздуха",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/meteorologi-nazvali-goroda-kazahstana-s-riskom-zagryazneniya-vozduha-be25bd5a",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T01:30:00+00:00"
-  },
-  {
-    "id": "rss9ae847e5c2901703",
-    "category": "Казахстан / Новости",
-    "title": "Женщин становится больше, детей - меньше: как меняется население Казахстана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/jenschin-stanovitsya-bolshe-detey-menshe-menyaetsya-611177/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T01:10:00+00:00"
-  },
-  {
-    "id": "rss1a45c08a37945d2e",
-    "category": "Казахстан / Новости",
-    "title": "05:37, 12 Ноября 2026 Тайны Великого шелкового пути раскрывают на выставке в ОАЭ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tayni-velikogo-shelkovogo-puti-raskrivayut-na-vistavke-v-oae-96c57b4c",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T00:37:00+00:00"
-  },
-  {
-    "id": "rss9f4e387e65994621",
-    "category": "Казахстан / Новости",
-    "title": "Гороскоп на сегодня: кому захочется романтики, кто удивит своей спонтанностью",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-komu-zahochetsya-romantiki-udivit-svoey-612882/",
-    "date": "12.11.2026",
-    "published_at": "2026-11-12T00:33:00+00:00"
-  },
-  {
-    "id": "rss027aa4d6869925fe",
-    "category": "Казахстан / Новости",
-    "title": "04:58, 12 Ноября 2026 15 финансовых компаний Южной Кореи уличили в многолетнем сговоре",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/15-finansovih-kompaniy-yuzhnoy-korei-ulichili-v-mnogoletnem-sgovore-c4c001c6",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T23:58:00+00:00"
-  },
-  {
-    "id": "rss1bb117ab9e9a69ca",
-    "category": "Казахстан / Новости",
-    "title": "Анкара прокомментировала заявления Израиля в адрес Эрдогана",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/ankara-prokommentirovala-zayavleniya-izrailya-adres-erdogana-612881/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T23:50:18+00:00"
-  },
-  {
-    "id": "rssa5742e93bd42fc79",
-    "category": "Казахстан / Новости",
-    "title": "04:29, 12 Ноября 2026 Утвержден Генплан: будут ли сносить дачи в городе Конаев",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/utverzhden-genplan-budutli-snosit-dachi-vgorode-konaev-0d8d876c",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T23:29:00+00:00"
-  },
-  {
-    "id": "rss1e90c9aae3791772",
-    "category": "Казахстан / Новости",
-    "title": "Глава Евросовета отреагировал на ультиматум канцлера Германии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/glava-evrosoveta-otreagiroval-ultimatum-kantslera-germanii-612874/",
-    "date": "11.11.2026",
-    "published_at": "2026-11-11T23:02:17+00:00"
   }
 ]
