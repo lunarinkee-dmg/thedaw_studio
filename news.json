@@ -1,5 +1,475 @@
 [
   {
+    "id": "rsse7095aa1eb0e6c79",
+    "category": "Казахстан / Новости",
+    "title": "Генсек НАТО назвал неприемлемыми требования о возвращении к границам 1997 года",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/gensek-nato-nazval-nepriemlemyimi-trebovaniya-vozvraschenii-613727/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T23:27:39+00:00"
+  },
+  {
+    "id": "rss607aeff07fa7cc74",
+    "category": "Казахстан / Новости",
+    "title": "04:25, 24 Ноября 2026 В Иране пресекли деятельность четырех вооруженных групп",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/v-irane-presekli-deyatelnost-chetireh-vooruzhennih-grupp-8352613a",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T23:25:00+00:00"
+  },
+  {
+    "id": "rss3af3d3a89b305f49",
+    "category": "Казахстан / Новости",
+    "title": "03:50, 24 Ноября 2026 16 разыскиваемых задержали за три дня в Жамбылской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/16-raziskivaemih-zaderzhali-zatri-dnya-vzhambilskoy-oblasti-6d28fa0c",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T22:50:00+00:00"
+  },
+  {
+    "id": "rss83b09f783e7beca6",
+    "category": "Казахстан / Новости",
+    "title": "03:10, 24 Ноября 2026 Сотрудника избиркома арестовали в Южной Корее",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/sotrudnika-izbirkoma-arestovali-v-yuzhnoy-koree-6ef9951b",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T22:10:00+00:00"
+  },
+  {
+    "id": "rss5d36d44e244fef5c",
+    "category": "Казахстан / Новости",
+    "title": "02:47, 24 Ноября 2026 Общественник из Усть-Каменогорска добился пересмотра порогов загрязнения воздуха по всей стране",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/obshestvennik-izust-kamenogorska-dobilsya-peresmotra-porogov-zagryazneniya-vozdu-f782ac73",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T21:47:00+00:00"
+  },
+  {
+    "id": "rss8ddb4cd17fe24c78",
+    "category": "Казахстан / Новости",
+    "title": "02:15, 24 Ноября 2026 Школьникам в Дании запретят пользоваться мобильными телефонами",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/shkolnikam-vdanii-zapretyat-polzovatsya-mobilnimi-telefonami-b0cde556",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T21:15:00+00:00"
+  },
+  {
+    "id": "rssdd53bbd6a79f6e38",
+    "category": "Казахстан / Новости",
+    "title": "01:34, 24 Ноября 2026 Экспертное сообщество Кыргызстана обсудило Послание Президента Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/ekspertnoe-soobshestvo-kirgizstana-obsudilo-poslanie-prezidenta-kazahstana-1f1ca49d",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T20:34:00+00:00"
+  },
+  {
+    "id": "rssf85e76ad401943e9",
+    "category": "Казахстан / Новости",
+    "title": "01:14, 24 Ноября 2026 Еще 53 тысячи гектаров вернули государству в Жамбылской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/eshe-53-tisyachi-gektarov-vernuli-gosudarstvu-vzhambilskoy-oblasti-5617c5c5",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T20:14:00+00:00"
+  },
+  {
+    "id": "rssba3776e167725ee4",
+    "category": "Казахстан / Новости",
+    "title": "00:36, 24 Ноября 2026 Забастовка в Бельгии: отменены сотни авиарейсов, в Брюсселе произошли столкновения",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/zabastovka-v-belgii-otmeneni-sotni-aviareysov-v-bryussele-proizoshli-stolknoveni-b47d89f5",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T19:36:00+00:00"
+  },
+  {
+    "id": "rsse0b31790a445f08c",
+    "category": "Казахстан / Новости",
+    "title": "00:25, 24 Ноября 2026 В Иране ввели веерные отключения электроэнергии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/virane-vveli-veernie-otklyucheniya-elektroenergii-cfdea9d4",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T19:25:00+00:00"
+  },
+  {
+    "id": "rss125bd8c10fff47dd",
+    "category": "Казахстан / Новости",
+    "title": "00:22, 24 Ноября 2026 Самую высокую в мире статую Роналду установили в Шанхае",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/samuyu-visokuyu-vmire-statuyu-ronaldu-ustanovili-vshanhae-40e57672",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T19:22:00+00:00"
+  },
+  {
+    "id": "rss47ca54ddaffb647d",
+    "category": "Казахстан / Новости",
+    "title": "Ким Чен Ын заявил о смене внешней политики Северной Кореи",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/kim-chen-yin-zayavil-smene-vneshney-politiki-severnoy-korei-613722/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T19:04:35+00:00"
+  },
+  {
+    "id": "tgebf1b8efc0bf75ae17",
+    "category": "Музыка / Рэп",
+    "title": "🤝 Don Toliver x Tame Impala",
+    "summary": "🤝 Don Toliver x Tame Impala\nАртисты засветились вместе в студии, где Don Toliver экспериментировал с Orchid — новым синтезатором от компании Кевина Паркера.\nПохоже, «NITROUS» может стать таким же громким релизом, как и «OCTANE».\nПремьера уже 4 декабря.\nЖдёте? ❤️/👎\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31345",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T18:59:58+00:00"
+  },
+  {
+    "id": "rss51e67898a7e21ede",
+    "category": "Казахстан / Новости",
+    "title": "23:46, 23 Ноября 2026 Трамп заключил сделки в Юго-Восточной Азии на $17 млрд",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/tramp-zaklyuchil-sdelki-vyugo-vostochnoy-azii-na17-mlrd-4ea96766",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T18:46:00+00:00"
+  },
+  {
+    "id": "rssc9ca1c3627cf53ea",
+    "category": "Казахстан / Новости",
+    "title": "23:38, 23 Ноября 2026 Поврежденный вандалами мемориал в Таразе восстановили и взяли под охрану",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/povrezhdenniy-vandalami-memorial-v-taraze-vosstanovili-i-vzyali-pod-ohranu-b24e2389",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T18:38:00+00:00"
+  },
+  {
+    "id": "rss139355512e11d0c3",
+    "category": "Казахстан / Новости",
+    "title": "23:21, 23 Ноября 2026 Водителей предупредили о закрытии ряда трасс в Казахстане",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/voditeley-predupredili-o-zakritii-ryada-trass-v-kazahstane-645b43bd",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T18:21:00+00:00"
+  },
+  {
+    "id": "rss4166cc5d1127108c",
+    "category": "Казахстан / Новости",
+    "title": "23:15, 23 Ноября 2026 400 млн таблеток каптагона уничтожили в Сирии",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/400mln-tabletok-kaptagona-unichtozhili-vsirii-25749573",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T18:15:00+00:00"
+  },
+  {
+    "id": "rss1583ad8bfa726801",
+    "category": "Казахстан / Новости",
+    "title": "Страна Центральной Азии объявила о выходе из Международного уголовного суда",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/strana-tsentralnoy-azii-obyyavila-vyihode-mejdunarodnogo-613721/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:55:28+00:00"
+  },
+  {
+    "id": "rss276955f92873f1e0",
+    "category": "Казахстан / Новости",
+    "title": "22:53, 23 Ноября 2026 Казахстан и Япония намерены укреплять расширенное стратегическое партнерство",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kazahstan-i-yaponiya-namereni-ukreplyat-rasshirennoe-strategicheskoe-partnerstvo-d8c95202",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:53:00+00:00"
+  },
+  {
+    "id": "rssd515e82c0fd0dd14",
+    "category": "Казахстан / Новости",
+    "title": "22:48, 23 Ноября 2026 Китай запустит серийное производство летающих автомобилей",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/kitay-zapustit-seriynoe-proizvodstvo-letayushih-avtomobiley-321cbb1d",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:48:00+00:00"
+  },
+  {
+    "id": "rssd2df532f4183deb7",
+    "category": "Казахстан / Новости",
+    "title": "22:35, 23 Ноября 2026 Более 300 свертков с психотропными веществами изъяли у 36-летнего жителя Кокшетау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/bolee-300-svertkov-spsihotropnimi-veshestvami-izyali-u36-letnego-zhitelya-kokshe-1266c279",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:35:00+00:00"
+  },
+  {
+    "id": "tg77a1930c9874ab683c",
+    "category": "Культура / Музыка",
+    "title": "ALISHA — ЭТО ЛИ ЛЮБОВЬ / МАМА | ФЛАУВАУ x TOASTER LIVE’26",
+    "summary": "ALISHA — ЭТО ЛИ ЛЮБОВЬ / МАМА | ФЛАУВАУ x TOASTER LIVE’26\nНаш цветочный сезон с ФЛАУВАУ продолжается! Следующей героиней лайва стала ALISHA, которая совсем недавно представила новый макси-сингл, а теперь перенесла свою музыку в атмосферу цветущего сада на Мясницкой\nДля нашего выпуска Алиша исполнила две песни: «это ли любовь» и «МАМА». Последняя вошла в её недавний проект «GANGSTA», а теперь получила живое воплощение в рамках нашего проекта.\nСмотреть: YouTube | VK\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32979",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:27:49+00:00"
+  },
+  {
+    "id": "rss3fdbaab3fbc6ea6e",
+    "category": "Казахстан / Новости",
+    "title": "22:23, 23 Ноября 2026 Учитель из Астаны построил восьмиметровую башню из семи тысяч книг",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/uchitel-iz-astani-postroil-vosmimetrovuyu-bashnyu-iz-semi-tisyach-knig-12c97cb8",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:23:00+00:00"
+  },
+  {
+    "id": "rssb07a6cc2fde64313",
+    "category": "Казахстан / Новости",
+    "title": "22:14, 23 Ноября 2026 Рост производства и новые рабочие места: в Курултае обсудили развитие промышленности",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/rost-proizvodstva-inovie-rabochie-mesta-vkurultae-obsudili-razvitie-promishlenno-db1e136e",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:14:00+00:00"
+  },
+  {
+    "id": "rssbf5de75051428b9d",
+    "category": "Казахстан / Новости",
+    "title": "22:11, 23 Ноября 2026 Рабочий скончался от ожогов после пожара в больнице Актобе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/rabochiy-skonchalsya-otozhogov-posle-pozhara-vbolnitse-aktobe-bc987bb2",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:11:00+00:00"
+  },
+  {
+    "id": "rss6d17498d2b65c9c0",
+    "category": "Казахстан / Новости",
+    "title": "22:00, 23 Ноября 2026 Рекордный урожай и награды: в Акмолинской области чествовали аграриев",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/rekordniy-urozhay-inagradi-vakmolinskoy-oblasti-chestvovali-agrariev-d1d00880",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T17:00:00+00:00"
+  },
+  {
+    "id": "tg9aea5b50f239941a36",
+    "category": "Музыка / Рэп",
+    "title": "🔥 Rockstar выпустили Deluxe-версию альбома GTA 6",
+    "summary": "🔥 Rockstar выпустили Deluxe-версию альбома GTA 6\nК официальному саундтреку добавили 23 новых трека от Travis Scott, 21 Savage, Offset, Quavo, Kodak Black, Denzel Curry и других артистов.\nТеперь альбом насчитывает 57 композиций!\nНовые треки:\n· Travis Scott - Burn This Shit Down\n· Slayyyter - internet $tar\n· The Dare - Interesting\n· Anitta - Touch & Go\n· Offset - I Just Came To Pop It\n· HXG, tana & Quavo - RCKSTRL!VING\n· 21 Savage - Cookin\n· Pooh Shiesty - Got Dat\n· Young Nudy - Don Da Da\n· SoFaygo - CASHOUT\n· Real Dimez & Sexyy Red - Cooties (Remix)\n· Latto & Flo Milli - 50 Bands\n· Kodak Black ",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31344",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T16:59:58+00:00"
+  },
+  {
+    "id": "rss9934b34ab8feb322",
+    "category": "Казахстан / Новости",
+    "title": "21:58, 23 Ноября 2026 Иордания планирует запретить GTA 6",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/iordaniya-planiruet-zapretit-gta6-74c01d63",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T16:58:00+00:00"
+  },
+  {
+    "id": "rss4bfcb0bc82c1ef72",
+    "category": "Казахстан / Новости",
+    "title": "Известный в Алматы ночной клуб закрыли после повторного нарушения закона",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/izvestnyiy-almatyi-nochnoy-klub-zakryili-povtornogo-613720/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T16:52:41+00:00"
+  },
+  {
+    "id": "rssd80476d7164827cd",
+    "category": "Казахстан / Новости",
+    "title": "21:46, 23 Ноября 2026 Сильный ветер до 29 м/с, дождь и гололед ожидаются в Казахстане 24 ноября",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/silniy-veter-do-29-ms-dozhd-i-gololed-ozhidayutsya-v-kazahstane-24-noyabrya-02b17f9f",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T16:46:00+00:00"
+  },
+  {
+    "id": "rss7f03b4f70ae1841e",
+    "category": "Казахстан / Новости",
+    "title": "21:34, 23 Ноября 2026 Самую высокую дымовую трубу в мире показали с необычного ракурса в Экибастузе",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Kazinform",
+    "url": "https://www.inform.kz/ru/samuyu-visokuyu-dimovuyu-trubu-vmire-pokazali-sneobichnogo-rakursa-vekibastuze-4444ded6",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T16:34:00+00:00"
+  },
+  {
+    "id": "rss70791c073de4ba7b",
+    "category": "Казахстан / Новости",
+    "title": "Трамп прокомментировал возвращение Хуанга на пост гендиректора Nvidia",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/world_news/tramp-prokommentiroval-vozvraschenie-huanga-post-613718/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T15:49:32+00:00"
+  },
+  {
+    "id": "tg552ab61b6fe0177aa9",
+    "category": "Музыка / Рэп",
+    "title": "🤬 Swae Lee ОБЛИЛИ пивом",
+    "summary": "🤬 Swae Lee ОБЛИЛИ пивом\nВо время выступления Swae Lee в Индии фанат плеснул ему пивом в лицо. Охрана вывела нарушителя с площадки.\nКТО ЭТО НАХ*Й СДЕЛАЛ?! СРАНЫЙ УБЛЮДОК! ВЫВЕДИТЕ ЕГО ОТСЮДА НАХ*Й!\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31343",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T14:59:58+00:00"
+  },
+  {
+    "id": "rss260230eec1a19397",
+    "category": "Казахстан / Новости",
+    "title": "“Насилие - не повод для шуток“: шоумена арестовали на 20 суток в Павлодаре",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/nasilie-povod-shutok-shoumena-arestovali-20-sutok-pavlodare-613714/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T14:31:56+00:00"
+  },
+  {
+    "id": "rss048cf60bf1c69585",
+    "category": "Казахстан / Новости",
+    "title": "Дженсена Хуанга вернули на пост главы Nvidia",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/usa/djensena-huanga-vernuli-na-post-glavyi-nvidia-613715/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T14:15:45+00:00"
+  },
+  {
+    "id": "rss1d8c6ddc48172e9b",
+    "category": "Казахстан / Новости",
+    "title": "В Китае электромобиль пытался припарковаться 868 раз за ночь, пока хозяин спал",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/electromobiles/kitae-elektromobil-pyitalsya-priparkovatsya-868-za-noch-poka-613689/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T14:03:00+00:00"
+  },
+  {
+    "id": "rss4c8d3a4dea4a65ab",
+    "category": "Казахстан / ЦА",
+    "title": "Фронтмен Led Zeppelin Роберт Плант впервые выступит в Алматы",
+    "summary": "Бывший вокалист Led Zeppelin Роберт Плант приедет в Казахстан вместе с коллективом Saving Grace. Концерт состоится 28 августа 2027 года во Дворце Республики в Алматы в рамках мирового тура Root & Branch. Это будет первое выступление музыканта в Центральной Азии. Вместе с Плантом в Saving Grace выступают вокалистка Сьюзи Диан, барабанщик Оли Джеффер",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/kultura/robert-plant-vperviye-vystupit-v-almaty",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T14:00:00+00:00"
+  },
+  {
+    "id": "rssfbcc23c21ee45212",
+    "category": "Казахстан / Новости",
+    "title": "Неудачная шутка в аэропорту Астаны стоила пассажирке почти 87 тысяч теңге",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/my-country/neudachnaya-shutka-aeroportu-astanyi-stoila-passajirke-87-613709/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:54:17+00:00"
+  },
+  {
+    "id": "rss522d9a70ee6145ad",
+    "category": "Казахстан / Новости",
+    "title": "Жительница Актобе “похоронила“ мать ради 30 миллионов теңге",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/jitelnitsa-aktobe-pohoronila-mat-radi-30-millionov-tenge-613695/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:29:44+00:00"
+  },
+  {
+    "id": "rss8bad1c2815399fe4",
+    "category": "Казахстан / Новости",
+    "title": "Казахстанцам помогут зарабатывать через цифровые платформы - Токаев подписал указ",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/kazahstantsam-pomogut-zarabatyivat-tsifrovyie-platformyi-613713/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:25:50+00:00"
+  },
+  {
+    "id": "rssb80a7e7b4b40db6a",
+    "category": "Казахстан / Новости",
+    "title": "Токаев назначил заместителя управляющего делами Президента",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/news/tokaev-naznachil-zamestitelya-upravlyayuschego-delami-613711/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:11:23+00:00"
+  },
+  {
+    "id": "rssfb98b3b339db60a8",
+    "category": "Казахстан / Новости",
+    "title": "Реконструкцию 400-километровой трассы Кызылорда - Жезказган завершили в области Ұлытау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/rekonstruktsiyu-400-kilometrovoy-trassyi-kyizyilorda-613707/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:05:36+00:00"
+  },
+  {
+    "id": "tg0d8571ee8f83d4dde5",
+    "category": "Культура / Музыка",
+    "title": "Кто сказал, что гэнгста не поют о любви? Сегодня в нашем цветочном саду появилась девушка, которая готова доказать обратное",
+    "summary": "Кто сказал, что гэнгста не поют о любви? Сегодня в нашем цветочном саду появилась девушка, которая готова доказать обратное\nУже догадались, кто сегодня у микрофона?\ntoaster.mag",
+    "source": "Toaster",
+    "url": "https://t.me/toastermag/32978",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T13:01:01+00:00"
+  },
+  {
+    "id": "tged3e8bd896e712063f",
+    "category": "Музыка / Рэп",
+    "title": "🧛🏿‍♂️ Ровно 6 лет назад Playboi Carti начал промокампанию альбома «Whole Lotta Red».",
+    "summary": "🧛🏿‍♂️ Ровно 6 лет назад Playboi Carti начал промокампанию альбома «Whole Lotta Red».\nТогда он опубликовал пост «Album.TuRneD iN» и впервые показал сниппет трека «New Tank» во время прямого эфира.\nВ итоге альбом стал одним из самых знаковых рэп-релизов того времени и оказал огромное влияние на новую волну хип-хопа.\n🥤QuickNRap",
+    "source": "Quick N Rapp",
+    "url": "https://t.me/quicknrapp/31341",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T12:59:58+00:00"
+  },
+  {
+    "id": "rss17a2965d09c9fe8e",
+    "category": "Казахстан / Новости",
+    "title": "Вода цвета кофе: жители Актау показали, что течёт из их кранов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/voda-tsveta-kofe-jiteli-aktau-pokazali-techt-ih-kranov-613701/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T12:58:00+00:00"
+  },
+  {
+    "id": "rss25b099b3d0f0f0eb",
+    "category": "Казахстан / Новости",
+    "title": "Акимат в Туркестанской области продает Land Rover на торгах",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autonews/akimat-v-turkestanskoy-oblasti-vyistavil-land-rover-na-torgi-613702/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T12:47:56+00:00"
+  },
+  {
+    "id": "rss79dece775344990f",
+    "category": "Казахстан / Новости",
+    "title": "Австралия ужесточает визовые правила для туристов",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/travel-notes/avstraliya-ujestochaet-vizovyie-pravila-dlya-turistov-613704/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T12:20:40+00:00"
+  },
+  {
     "id": "rsse55c68fa3b453e07",
     "category": "Казахстан / Новости",
     "title": "17:07, 23 Ноября 2026 Кристина Шумекова стала пятой на дистанции 1000 метров на этапе Кубка мира в Японии",
@@ -20,6 +490,16 @@
     "published_at": "2026-11-23T12:02:00+00:00"
   },
   {
+    "id": "rssca8c662f054a06ff",
+    "category": "Казахстан / ЦА",
+    "title": "10 казахстанцев, громко заявивших о себе за рубежом",
+    "summary": "Интерес к Казахстану в мире сегодня на пике — причем это работает в обе стороны. Пока мировые звезды спорта, музыки и кинематографа открывают для себя нашу страну, местные таланты громко заявляют о себе на глобальном рынке. Казахстанские креаторы снимаются в кино и крупных рекламных кампейнах, выпускают музыку, режиссируют проекты для зарубежных ар",
+    "source": "the-steppe.com",
+    "url": "https://the-steppe.com/kultura/10-kazahstantsyev-za-rubyezhom",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T12:00:00+00:00"
+  },
+  {
     "id": "rss288e951c17f09f93",
     "category": "Казахстан / Новости",
     "title": "16:58, 23 Ноября 2026 Абитуриенты в 2027 году смогут на ЕНТ выбрать «Химию — Физику» или «Химию — Биологию»",
@@ -38,6 +518,16 @@
     "url": "https://www.98mag.kz/kultura/trenazhyor-otnoshenij-ili-simulyator-podkabluchnika-kak-igroki-vidyat-otnosheniya-v-gta-vi/",
     "date": "23.11.2026",
     "published_at": "2026-11-23T11:54:19+00:00"
+  },
+  {
+    "id": "rss97ad590576149085",
+    "category": "Казахстан / Новости",
+    "title": "Экс-акима Карима Кокрекбаева передумали освобождать досрочно: что решил суд",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/eks-akima-karima-kokrekbaeva-peredumali-osvobojdat-dosrochno-613703/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T11:53:54+00:00"
   },
   {
     "id": "rssa93a8fdc623e1835",
@@ -140,6 +630,16 @@
     "published_at": "2026-11-23T11:09:00+00:00"
   },
   {
+    "id": "rss5e54ed803d7da9a9",
+    "category": "Казахстан / Новости",
+    "title": "Более миллиона тонн полиэтилена в год планируют производить на заводе под Атырау",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/milliona-tonn-polietilena-god-planiruyut-proizvodit-zavode-613686/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T11:08:51+00:00"
+  },
+  {
     "id": "rssbbc82504314b9c24",
     "category": "Казахстан / Новости",
     "title": "16:07, 23 Ноября 2026 Герб Узбекистана могут изменить из-за обновления алфавита",
@@ -148,6 +648,16 @@
     "url": "https://www.inform.kz/ru/gerb-uzbekistana-mogut-izmenit-iz-za-obnovleniya-alfavita-a729107d",
     "date": "23.11.2026",
     "published_at": "2026-11-23T11:07:00+00:00"
+  },
+  {
+    "id": "rss4e450943d5c18815",
+    "category": "Казахстан / Новости",
+    "title": "Лишние 185 миллионов обнаружили в смете на ремонт трассы в Жамбылской области",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autoroads/lishnie-185-millionov-obnarujili-smete-remont-trassyi-613693/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T11:02:51+00:00"
   },
   {
     "id": "rssaa0b8d33cc7cafe4",
@@ -290,6 +800,16 @@
     "published_at": "2026-11-23T10:14:00+00:00"
   },
   {
+    "id": "rssc8c746e28853b141",
+    "category": "Казахстан / Новости",
+    "title": "GTA 6 в реальной жизни - Tesla обновила систему автопилота",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autonews/gta-6-v-realnoy-jizni-tesla-obnovila-sistemu-avtopilota-613663/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T10:12:21+00:00"
+  },
+  {
     "id": "rss2ed18383b99745ee",
     "category": "Казахстан / Новости",
     "title": "Волк напал на мужчину: пострадавшего госпитализировали в Костанайской области",
@@ -298,6 +818,16 @@
     "url": "https://tengrinews.kz/kazakhstan_news/volk-napal-mujchinu-postradavshego-gospitalizirovali-613683/",
     "date": "23.11.2026",
     "published_at": "2026-11-23T10:12:00+00:00"
+  },
+  {
+    "id": "rss56cd3d64e55bdd2a",
+    "category": "Казахстан / Новости",
+    "title": "В деле об убийстве художницы в Баку появился неожиданный поворот после признания отца",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/curious/dele-ubiystve-hudojnitsyi-baku-poyavilsya-neojidannyiy-613687/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T10:10:41+00:00"
   },
   {
     "id": "rsse372d9dde741fd32",
@@ -490,6 +1020,16 @@
     "published_at": "2026-11-23T07:38:48+00:00"
   },
   {
+    "id": "rss641c47ed13aa1c6e",
+    "category": "Казахстан / Новости",
+    "title": "Движение ограничили на трассах в нескольких регионах Казахстана",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/autoroads/dvijenie-ogranichili-trassah-neskolkih-regionah-kazahstana-613666/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T07:23:54+00:00"
+  },
+  {
     "id": "rssabf00fc142083f1d",
     "category": "Казахстан / Новости",
     "title": "Токаев утвердил состав Экспертной группы по стратегическому развитию Казахстана",
@@ -498,6 +1038,16 @@
     "url": "https://tengrinews.kz/kazakhstan_news/tokaev-utverdil-sostav-ekspertnoy-gruppyi-strategicheskomu-613668/",
     "date": "23.11.2026",
     "published_at": "2026-11-23T07:19:05+00:00"
+  },
+  {
+    "id": "rss5c98d8b82a376f54",
+    "category": "Казахстан / Новости",
+    "title": "LRT в Алматы: отвечаем на главные вопросы",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/lrt-v-almatyi-otvechaem-na-glavnyie-voprosyi-613558/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T07:07:00+00:00"
   },
   {
     "id": "rssb69f2c53552e1c3f",
@@ -670,6 +1220,16 @@
     "published_at": "2026-11-23T02:33:00+00:00"
   },
   {
+    "id": "rss57a0bf9691f7ea06",
+    "category": "Казахстан / Новости",
+    "title": "Акимат подал в суд на жен и детей Болата Назарбаева: чем закончилось дело",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/akimat-podal-sud-jen-detey-bolata-nazarbaeva-zakonchilos-613327/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T02:23:00+00:00"
+  },
+  {
     "id": "rss15a97aac31610f48",
     "category": "Казахстан / Новости",
     "title": "Новый сбой: более тысячи рейсов авиакомпании Delta отменили в США",
@@ -698,6 +1258,16 @@
     "url": "https://www.inform.kz/ru/23noyabrya-kalendar-kazinforma-dati-sobitiya-95335d5d",
     "date": "23.11.2026",
     "published_at": "2026-11-23T02:00:00+00:00"
+  },
+  {
+    "id": "rss28e6271c17b37733",
+    "category": "Казахстан / Новости",
+    "title": "Начальник пишет ночью: обязаны ли казахстанцы отвечать на такие сообщения",
+    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
+    "source": "Tengrinews",
+    "url": "https://tengrinews.kz/kazakhstan_news/nachalnik-pishet-nochyu-obyazanyi-kazahstantsyi-otvechat-611900/",
+    "date": "23.11.2026",
+    "published_at": "2026-11-23T01:53:00+00:00"
   },
   {
     "id": "rss0a3a2bc741196882",
@@ -9288,775 +9858,5 @@
     "url": "https://tengrinews.kz/horoscopes/goroskop-segodnya-komu-udastsya-sdvinut-delo-mertvoy-tochki-613217/",
     "date": "17.11.2026",
     "published_at": "2026-11-17T00:13:00+00:00"
-  },
-  {
-    "id": "rss5c37f8d39c471f2f",
-    "category": "Казахстан / Новости",
-    "title": "В Великобритании помиловали всех женщин, осуждённых за прерывание беременности",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/europe/velikobritanii-pomilovali-jenschin-osujdnnyih-preryivanie-613244/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T23:49:00+00:00"
-  },
-  {
-    "id": "rssbc561cedf01d4c93",
-    "category": "Казахстан / Новости",
-    "title": "04:27, 17 Ноября 2026 Tesla вложит 3 млрд евро в производство беспилотных такси в Германии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/tesla-vlozhit-3-mlrd-evro-v-proizvodstvo-bespilotnih-taksi-v-germanii-c00346d8",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T23:27:00+00:00"
-  },
-  {
-    "id": "rssc22233056f176a2d",
-    "category": "Казахстан / Новости",
-    "title": "Жерар Депардье признал себя виновным в сексуальном насилии",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/curious/jerar-deparde-priznal-sebya-vinovnyim-v-seksualnom-nasilii-613234/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T23:21:00+00:00"
-  },
-  {
-    "id": "rss3ea0b08261328cbf",
-    "category": "Казахстан / Новости",
-    "title": "03:59, 17 Ноября 2026 В Голливуде вручили почетные «Оскары» легендам кинематографа",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/v-gollivude-vruchili-pochetnie-oskari-legendam-kinematografa-5e41f52c",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T22:59:00+00:00"
-  },
-  {
-    "id": "rss8482e3fd82a76457",
-    "category": "Казахстан / Новости",
-    "title": "Возвращение Дженсена Хуанга: Трамп не возражает, Маск - за, в Nvidia - против",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/vozvraschenie-djensena-huanga-tramp-vozrajaet-mask-za-nvidia-613243/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T22:35:00+00:00"
-  },
-  {
-    "id": "rss73db5b6c53d70951",
-    "category": "Казахстан / Новости",
-    "title": "03:35, 17 Ноября 2026 Подземные толчки магнитудой 5,2 зарегистрировали у побережья Перу",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/podzemnie-tolchki-magnitudoy-52-zaregistrirovali-u-poberezhya-peru-c03260a7",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T22:35:00+00:00"
-  },
-  {
-    "id": "rss29915dd3163b1c1a",
-    "category": "Казахстан / Новости",
-    "title": "02:55, 17 Ноября 2026 Вспышка Эболы в ДР Конго унесла жизни более 5,5 тысячи человек",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/vspishka-eboli-v-dr-kongo-unesla-zhizni-bolee-55-tisyachi-chelovek-8bbce004",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T21:55:00+00:00"
-  },
-  {
-    "id": "rss9417ea255879e741",
-    "category": "Казахстан / Новости",
-    "title": "В Кокшетау любители опасных манёвров превратили общественную парковку в дрифт-площадку",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/autonews/kokshetau-lyubiteli-opasnyih-manvrov-prevratili-613238/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T21:41:00+00:00"
-  },
-  {
-    "id": "rss5435b3a228fc75e2",
-    "category": "Казахстан / Новости",
-    "title": "02:37, 17 Ноября 2026 Более 20 тысяч нарушений благоустройства выявили в Жамбылской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-20-tisyach-narusheniy-blagoustroystva-viyavili-v-zhambilskoy-oblasti-49f8a83b",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T21:37:00+00:00"
-  },
-  {
-    "id": "rssd00b0d315545931a",
-    "category": "Казахстан / Новости",
-    "title": "02:19, 17 Ноября 2026 Калифорния подала в суд на OpenAI из-за кибератак искусственного интеллекта",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kaliforniya-podala-v-sud-na-openai-iz-za-kiberatak-iskusstvennogo-intellekta-2945df5b",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T21:19:00+00:00"
-  },
-  {
-    "id": "rssb7302d008ebadf25",
-    "category": "Казахстан / Новости",
-    "title": "02:03, 17 Ноября 2026 Массовый сбой затронул крупнейшие банки США",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/massoviy-sboy-zatronul-krupneyshie-banki-ssha-3d86e410",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T21:03:00+00:00"
-  },
-  {
-    "id": "rss480934b60536c374",
-    "category": "Казахстан / Новости",
-    "title": "01:48, 17 Ноября 2026 Девять человек осудили за дропперство в области Абай",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/devyat-chelovek-osudili-za-dropperstvo-v-oblasti-abay-90fd0a73",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T20:48:00+00:00"
-  },
-  {
-    "id": "rss8792375f4005646d",
-    "category": "Казахстан / Новости",
-    "title": "Масштабный сбой в работе банковских приложений произошёл в США",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/masshtabnyiy-sboy-rabote-bankovskih-prilojeniy-proizoshl-613239/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T20:45:00+00:00"
-  },
-  {
-    "id": "rssfe434fff36407f7f",
-    "category": "Казахстан / Новости",
-    "title": "01:26, 17 Ноября 2026 Племенной скот из Австралии и Европы завезут в Жамбылскую область",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/plemennoy-skot-iz-avstralii-i-evropi-zavezut-v-zhambilskuyu-oblast-03145846",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T20:26:00+00:00"
-  },
-  {
-    "id": "rssd5c03426b2e95129",
-    "category": "Казахстан / Новости",
-    "title": "01:09, 17 Ноября 2026 Казахстанский дзюдоист вошел в десятку сильнейших в мире",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstanskiy-dzyudoist-voshel-v-desyatku-silneyshih-v-mire-1d7c1364",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T20:09:00+00:00"
-  },
-  {
-    "id": "rss0db3fc70dbebfaee",
-    "category": "Казахстан / Новости",
-    "title": "00:56, 17 Ноября 2026 Две массовые стрельбы в ЮАР унесли жизни 17 человек",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dve-massovie-strelbi-v-yuar-unesli-zhizni-17-chelovek-30bcf544",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:56:00+00:00"
-  },
-  {
-    "id": "rsse269d3924b1386d9",
-    "category": "Казахстан / Новости",
-    "title": "Туман, осадки, гололёд: штормовые предупреждения объявлены почти по всему Казахстану",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/tuman-osadki-golold-shtormovyie-preduprejdeniya-obyyavlenyi-613236/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:50:00+00:00"
-  },
-  {
-    "id": "rss818dbf5105067862",
-    "category": "Казахстан / Новости",
-    "title": "00:42, 17 Ноября 2026 Логистический центр за $50 млн планируют построить в области Жетісу",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/logisticheskiy-tsentr-za-50-mln-planiruyut-postroit-v-oblasti-zhetsu-cfe6ffec",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:42:00+00:00"
-  },
-  {
-    "id": "rss11fc9e579e46c5c3",
-    "category": "Казахстан / Новости",
-    "title": "В США впервые со времен холодной войны создают новую ядерную бомбу - СМИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/usa/ssha-vpervyie-vremen-holodnoy-voynyi-sozdayut-novuyu-613237/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:30:00+00:00"
-  },
-  {
-    "id": "rssea0cb0ce26e5f229",
-    "category": "Казахстан / Новости",
-    "title": "00:27, 17 Ноября 2026 Черный старатель погиб на шахте в Акмолинской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/cherniy-staratel-pogib-nashahte-vakmolinskoy-oblasti-8aac7331",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:27:00+00:00"
-  },
-  {
-    "id": "tgd2ca06410acb797ef8",
-    "category": "Музыка / Рэп",
-    "title": "🔥 30-летний альбом Eminem занял первую строчку в Apple Music",
-    "summary": "🔥 30-летний альбом Eminem занял первую строчку в Apple Music\nК 30-летию своего дебютного альбома «Infinite» (который он выпустил 12 ноября 1996 года) Eminem представил специальный EP из шести треков оригинальной пластинки.\nКомпозиции получили новые миксы и дополнительный продакшн от Jake Bass и Mike «Slim» Wilder.\nПосле выхода переиздание поднялось на первое место американского чарта Hip-Hop/Rap Albums в Apple Music.\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31252",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:20:27+00:00"
-  },
-  {
-    "id": "rss808455de53868e7f",
-    "category": "Казахстан / Новости",
-    "title": "00:14, 17 Ноября 2026 Житель Жамбылской области оскорбил оператора «102» и получил 40 часов общественных работ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/zhitel-zhambilskoy-oblasti-oskorbil-operatora-102-ipoluchil-40-chasov-obshestven-3dc651a0",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:14:00+00:00"
-  },
-  {
-    "id": "rss7d591394a3799e9b",
-    "category": "Казахстан / Новости",
-    "title": "00:02, 17 Ноября 2026 Ученые выявили ключевые факторы снижения тестостерона у мужчин в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/uchenie-viyavili-klyuchevie-faktori-snizheniya-testosterona-umuzhchin-vkazahstan-1c1a8e9b",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T19:02:00+00:00"
-  },
-  {
-    "id": "rss6ee3dfab3a774fa3",
-    "category": "Казахстан / Новости",
-    "title": "23:49, 16 Ноября 2026 Старт опасного сезона: более 300 лавиносборов и 93 километра трасс под контролем в ВКО",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/start-opasnogo-sezona-bolee-300-lavinosborov-i93-kilometra-trass-podkontrolem-vv-863371f7",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:49:00+00:00"
-  },
-  {
-    "id": "rss1fcd4ad3dfaa28c7",
-    "category": "Казахстан / Новости",
-    "title": "23:37, 16 Ноября 2026 Новым Джеймсом Бондом станет актер Роберт Паттинсон",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/novim-dzheymsom-bondom-stanet-akter-robert-pattinson-6e2428f9",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:37:00+00:00"
-  },
-  {
-    "id": "rssaa3191dbfaa63aaf",
-    "category": "Казахстан / Новости",
-    "title": "23:25, 16 Ноября 2026 Более пяти тысяч правонарушений зафиксировали камеры в Туркестанской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-pyati-tisyach-pravonarusheniy-zafiksirovali-kameri-v-turkestanskoy-oblasti-de931867",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:25:00+00:00"
-  },
-  {
-    "id": "rssd693c8a040d2f2d5",
-    "category": "Казахстан / Новости",
-    "title": "На Ближнем Востоке опасаются, что Иран возобновит удары на фоне дефицита топлива в стране",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/near_east/blijnem-vostoke-opasayutsya-iran-vozobnovit-udaryi-fone-613235/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:18:00+00:00"
-  },
-  {
-    "id": "rsse935076a1796a5e6",
-    "category": "Казахстан / Новости",
-    "title": "23:13, 16 Ноября 2026 От оттепели до −29 градусов: синоптики рассказали о погоде в декабре в Костанайской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/otottepeli-do29-gradusov-sinoptiki-rasskazali-opogode-vdekabre-vkostanayskoy-obl-d73e7b34",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:13:00+00:00"
-  },
-  {
-    "id": "rss218cfea15d9bc601",
-    "category": "Казахстан / Новости",
-    "title": "23:01, 16 Ноября 2026 170 инватакси и 40 сурдопереводчиков задействуют в Алматы в день выборов в маслихат",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/170-invataksi-i40-surdoperevodchikov-zadeystvuyut-valmati-vden-viborov-vmaslihat-6f81deb3",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T18:01:00+00:00"
-  },
-  {
-    "id": "rssb44961af4b05f73e",
-    "category": "Казахстан / Новости",
-    "title": "22:50, 16 Ноября 2026 США ограничат доступ Китая, России и Ирана к передовым чипам для ИИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ssha-ogranichat-dostup-kitaya-rossii-i-irana-k-peredovim-chipam-dlya-ii-e913a5f5",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:50:00+00:00"
-  },
-  {
-    "id": "rss2d6a8cc0a4157d69",
-    "category": "Казахстан / Новости",
-    "title": "22:41, 16 Ноября 2026 Спустя четыре года в Ботсаду Алматы возобновили реконструкцию оранжереи",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/spustya-chetire-goda-v-botsadu-almati-vozobnovili-rekonstruktsiyu-oranzherei-fcfc31a4",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:41:00+00:00"
-  },
-  {
-    "id": "tga8d8189916920bc298",
-    "category": "Музыка / Рэп",
-    "title": "🏆 Номинанты на премию «Грэмми-2027», церемония состоится 7 февраля.",
-    "summary": "🏆 Номинанты на премию «Грэмми-2027», церемония состоится 7 февраля.\nВ этом году среди претендентов немало представителей хип-хоп-сцены. Don Toliver получил сразу несколько номинаций, включая «Лучшего нового артиста», а Kanye West, Cardi B и другие поборются за награды в рэп-категориях.\nГлавной рекордсменкой стала RAYE — у певицы 11 номинаций. Церемония состоится 7 февраля 2027 года в Лос-Анджелесе.\nНоминации и номинанты:\nАльбом года:\n• Phoebe Bridgers — «Lost Weekend»\n• Olivia Dean — «The Art of Loving»\n• Ella Langley — «Dandelion»\n• Bruno Mars — «The Romantic»\n• RAYE — «THIS MUSIC MAY CONTAIN",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31251",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:40:25+00:00"
-  },
-  {
-    "id": "rss73aa6458024a3582",
-    "category": "Казахстан / Новости",
-    "title": "22:33, 16 Ноября 2026 Пассажиры двух рейсов FlyArystan задержались в Индии: стала известна причина",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/passazhiri-dvuh-reysov-flyarystan-zaderzhalis-v-indii-stala-izvestna-prichina-71700f77",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:33:00+00:00"
-  },
-  {
-    "id": "rss1e69aee2a17e598b",
-    "category": "Казахстан / Новости",
-    "title": "Марокко ни при чём, виноваты соцсети - испанская разведка о причинах кризиса в Сеуте",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/world_news/marokko-pri-chm-vinovatyi-sotsseti-ispanskaya-razvedka-613233/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:30:00+00:00"
-  },
-  {
-    "id": "rss1ae76e2bb4b3d484",
-    "category": "Казахстан / Новости",
-    "title": "22:30, 16 Ноября 2026 Казахстан и Словакия сыграли вничью в последнем матче Лиги наций",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstan-i-slovakiya-sigrali-vnichyu-v-poslednem-matche-ligi-natsiy-1560549d",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T17:30:00+00:00"
-  },
-  {
-    "id": "rss67addbdc82627519",
-    "category": "Казахстан / Новости",
-    "title": "Названо имя нового Джеймса Бонда",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kino-life/nazvano-imya-novogo-djeymsa-bonda-612642/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T16:33:11+00:00"
-  },
-  {
-    "id": "tgb9bad1379b9bf60e0b",
-    "category": "Музыка / Рэп",
-    "title": "⚡️ Сын Lil Wayne, Lil Novi, зачитал под трек своего отца и Drake «The Motto» во время стрима Plaqueboymax",
-    "summary": "⚡️ Сын Lil Wayne, Lil Novi, зачитал под трек своего отца и Drake «The Motto» во время стрима Plaqueboymax\nКак вам? ❤️/👎\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31250",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T16:01:11+00:00"
-  },
-  {
-    "id": "rss1158ce18a232aa3e",
-    "category": "Казахстан / Новости",
-    "title": "20:45, 16 Ноября 2026 Более 1,2 тысячи населенных пунктов Казахстана находятся в зоне паводкового риска",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/bolee-12-tisyachi-naselennih-punktov-kazahstana-nahodyatsya-v-zone-pavodkovogo-r-ee1f25b8",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:45:00+00:00"
-  },
-  {
-    "id": "rssd69d409df26db415",
-    "category": "Казахстан / Новости",
-    "title": "20:38, 16 Ноября 2026 Ирак вслед за Иорданией заблокировал Telegram",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/irak-vsled-za-iordaniey-zablokiroval-telegram-40a81047",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:38:00+00:00"
-  },
-  {
-    "id": "rss087d9a210a901419",
-    "category": "Казахстан / Новости",
-    "title": "20:37, 16 Ноября 2026 Увеличить финансирование науки и повысить зарплаты ученых предложили в Казахстане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/uvelichit-finansirovanie-nauki-ipovisit-zarplati-uchenih-predlozhili-vkazahstane-a7fd8ab5",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:37:00+00:00"
-  },
-  {
-    "id": "rssbac27e1697ba7bfe",
-    "category": "Казахстан / Новости",
-    "title": "20:29, 16 Ноября 2026 Два вуза Казахстана вошли в Союз университетов искусств тюркского мира",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/dva-vuza-kazahstana-voshli-vsoyuz-universitetov-iskusstv-tyurkskogo-mira-818eef41",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:29:00+00:00"
-  },
-  {
-    "id": "rssaf6ef13e12099e48",
-    "category": "Казахстан / Новости",
-    "title": "20:18, 16 Ноября 2026 Сколько семей получают АСП в Шымкенте и какие доплаты положены детям",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/skolko-semey-poluchayut-asp-vshimkente-ikakie-doplati-polozheni-detyam-dd99c68c",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:18:00+00:00"
-  },
-  {
-    "id": "rsscbf49c5f2584d022",
-    "category": "Казахстан / Новости",
-    "title": "20:14, 16 Ноября 2026 Исторический прорыв: Софья Самоделкина впервые вошла в десятку лучших фигуристок мира",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/istoricheskiy-proriv-sofya-samodelkina-vpervie-voshla-vdesyatku-luchshih-figuris-9dcbcdb2",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:14:00+00:00"
-  },
-  {
-    "id": "rss37711a5727242035",
-    "category": "Казахстан / Новости",
-    "title": "Раскопки или засыпка ям? Что произошло у древних курганов в ВКО",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/raskopki-zasyipka-yam-proizoshlo-drevnih-kurganov-vko-613226/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:09:00+00:00"
-  },
-  {
-    "id": "rssdee52b39c6449236",
-    "category": "Казахстан / Новости",
-    "title": "20:09, 16 Ноября 2026 Правительственные войска Йемена оставили хуситам позиции у ключевого маршрута транспортировки нефти",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/pravitelstvennie-voyska-yemena-ostavili-husitam-pozitsii-u-klyuchevogo-marshruta-f71169aa",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:09:00+00:00"
-  },
-  {
-    "id": "rss4c2ae059c1ec3297",
-    "category": "Казахстан / ЦА",
-    "title": "Будешь хорошо учиться — пойдешь на завод: как меняется отношение к рабочим профессиям в Казахстане",
-    "summary": "«Не будешь учиться, пойдешь работать на завод» — эту фразу многие слышали в детстве, и звучала она скорее как угроза, а не совет. Работа на производстве считалась запасным вариантом для тех, кто не смог построить другую карьеру, однако сегодня такое представление все меньше соответствует действительности. Яркий пример таких перемен — инициативы ком",
-    "source": "the-steppe.com",
-    "url": "https://the-steppe.com/razvitie/zavod-bolshye-nye-zapasnoyi-vareeant-allur-ee-qarmet-zapuskayut-programmu-poddyerzhkee-molodyezhee",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T15:00:00+00:00"
-  },
-  {
-    "id": "rssfab4d9fddfb73d6d",
-    "category": "Казахстан / Новости",
-    "title": "19:56, 16 Ноября 2026 Пособия и алименты не входят в доход казахстанских семей при оценке по Цифровой карте",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/posobiya-ialimenti-nevhodyat-vdohod-kazahstanskih-semey-priotsenke-potsifrovoy-k-49058070",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:56:00+00:00"
-  },
-  {
-    "id": "rss20cddc7cfda72cba",
-    "category": "Казахстан / Новости",
-    "title": "Самолет из Алматы совершил вынужденную посадку в Дели",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/my-country/samolet-almatyi-sovershil-vyinujdennuyu-posadku-nyu-deli-613225/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:48:24+00:00"
-  },
-  {
-    "id": "rssd732b1bb45e65eb3",
-    "category": "Казахстан / Новости",
-    "title": "Два новых вице-министра назначены в Казахстане: что о них известно",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/novyih-vitse-ministra-naznachenyi-kazahstane-o-izvestno-613227/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:46:06+00:00"
-  },
-  {
-    "id": "rss00575cc64464e020",
-    "category": "Казахстан / Новости",
-    "title": "19:45, 16 Ноября 2026 Построят ли в Атырау новый мост через Урал",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/postroyatli-vatirau-noviy-most-cherez-ural-02e3a503",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:45:00+00:00"
-  },
-  {
-    "id": "rss55f89c6bfb033f88",
-    "category": "Казахстан / Новости",
-    "title": "19:36, 16 Ноября 2026 Адилет Турганбаев назначен вице-министром туризма и спорта РК",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/adilet-turganbaev-naznachen-vitse-ministrom-turizma-isporta-rk-d3552563",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:36:00+00:00"
-  },
-  {
-    "id": "rssf6328e4133387cc3",
-    "category": "Казахстан / Новости",
-    "title": "19:33, 16 Ноября 2026 Казахстан призвал повысить эффективность экономического сотрудничества стран ОЭС",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/kazahstan-prizval-povisit-effektivnost-ekonomicheskogo-sotrudnichestva-stran-oes-08ebd274",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:33:00+00:00"
-  },
-  {
-    "id": "rssdd05c8e2cdf1504a",
-    "category": "Казахстан / Новости",
-    "title": "17 ноября Астана останется без света: время и адреса",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/17-noyabrya-astana-ostanetsya-bez-sveta-vremya-i-adresa-613220/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:31:48+00:00"
-  },
-  {
-    "id": "rssa4e1b1dc726db34f",
-    "category": "Казахстан / Новости",
-    "title": "19:24, 16 Ноября 2026 Бесшумные канатные дороги: для Almaty SuperSki рассматривают приводы с пониженным уровнем шума",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/besshumnie-kanatnie-dorogi-dlyaalmaty-superski-rassmatrivayut-privodi-sponizhenn-e123e19f",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:24:00+00:00"
-  },
-  {
-    "id": "rss8e558be20cf44354",
-    "category": "Казахстан / Новости",
-    "title": "19:15, 16 Ноября 2026 Диабет второго типа все чаще выявляют у казахстанских детей",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/diabet-vtorogo-tipa-vse-chashe-viyavlyayut-ukazahstanskih-detey-c5c5a38b",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:15:00+00:00"
-  },
-  {
-    "id": "rssed126f060687ea9c",
-    "category": "Казахстан / Новости",
-    "title": "Кафе не проверяли до взрыва: новые подробности ЧП в Актобе",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/accidents/kafe-proveryali-vzryiva-novyie-podrobnosti-chp-aktobe-613212/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:06:31+00:00"
-  },
-  {
-    "id": "rss62a181ae65add394",
-    "category": "Казахстан / Новости",
-    "title": "19:06, 16 Ноября 2026 Правительство Виктора Орбана заподозрили в масштабной коррупции",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/pravitelstvo-viktora-orbana-zapodozrili-v-masshtabnoy-korruptsii-8ab49037",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:06:00+00:00"
-  },
-  {
-    "id": "tg739b209a672ddf1298",
-    "category": "Музыка / Рэп",
-    "title": "🫡 Фанаты GTA устроят последний заезд по Лос-Сантосу перед выходом GTA 6",
-    "summary": "🫡 Фанаты GTA устроят последний заезд по Лос-Сантосу перед выходом GTA 6 \n18 ноября игроки соберутся в GTA Online, чтобы в последний раз прокатиться по городу на любимых автомобилях.\nДо выхода GTA 6 осталось всего 3 дня!\nА на какой машине вы бы отправились в последний заезд?\n🥤QuickNRap",
-    "source": "Quick N Rapp",
-    "url": "https://t.me/quicknrapp/31249",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:05:27+00:00"
-  },
-  {
-    "id": "rss96c79d9616b3708f",
-    "category": "Казахстан / Новости",
-    "title": "19:03, 16 Ноября 2026 Школьница напала с ножом на двух одноклассниц в Астане",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/shkolnitsa-napala-snozhom-nadvuh-odnoklassnits-vastane-c512da33",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T14:03:00+00:00"
-  },
-  {
-    "id": "rss32a8e543519e4969",
-    "category": "Казахстан / Новости",
-    "title": "18:58, 16 Ноября 2026 Охват ОСМС в Казахстане достиг почти 87%",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ohvat-osms-vkazahstane-dostig-pochti87-cc3ae1bc",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:58:00+00:00"
-  },
-  {
-    "id": "rssc990b415b2bbcf1d",
-    "category": "Казахстан / Новости",
-    "title": "18:50, 16 Ноября 2026 Сельхозперепись показала, как изменилось село Казахстана почти за 20 лет",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/selhozperepis-pokazala-kakizmenilos-selo-kazahstana-pochti-za20-let-6015a8d9",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:50:00+00:00"
-  },
-  {
-    "id": "rssfa8cc72f37cd5a1f",
-    "category": "Казахстан / Новости",
-    "title": "18:42, 16 Ноября 2026 От поддельных заявлений министров до нового штамма COVID-19 — главные фейки прошедшей недели",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/ot-poddelnih-zayavleniy-ministrov-do-novogo-shtamma-covid-19-glavnie-feyki-prosh-8e18577f",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:42:00+00:00"
-  },
-  {
-    "id": "rss4fcc38044946abc8",
-    "category": "Казахстан / Новости",
-    "title": "18:41, 16 Ноября 2026 Можно ли строить на Кок-Жайлау: ученые представили свои выводы",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/mozhnoli-stroit-nakok-zhaylau-uchenie-predstavili-svoi-vivodi-20bc9610",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:41:00+00:00"
-  },
-  {
-    "id": "rssddbb0cd76be09c3b",
-    "category": "Казахстан / Новости",
-    "title": "Отопительный сезон, запасы топлива и новые НПЗ: Токаев принял главу Минэнерго",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-prinyal-ministra-energetiki-613218/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:40:09+00:00"
-  },
-  {
-    "id": "rssf28aa117cb3fa742",
-    "category": "Казахстан / Новости",
-    "title": "18:34, 16 Ноября 2026 19 необоснованных проверок бизнеса предотвратили в Карагандинской области",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/19-neobosnovannih-proverok-biznesa-predotvratili-v-karagandinskoy-oblasti-c0f62a07",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:34:00+00:00"
-  },
-  {
-    "id": "rss9fb3314bb1a405b9",
-    "category": "Казахстан / Новости",
-    "title": "18:34, 16 Ноября 2026 Объемы переработки нефти в Казахстане выросли на 4,7%",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/obemi-pererabotki-nefti-v-kazahstane-virosli-na-47-65bb02a9",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:34:00+00:00"
-  },
-  {
-    "id": "rssfcbff2346d39ccb9",
-    "category": "Казахстан / Новости",
-    "title": "18:25, 16 Ноября 2026 Крупнейший за 37 лет протест прошел в Чехии из-за реформы финансирования СМИ",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/krupneyshiy-za-37-let-protest-proshel-v-chehii-iz-za-reformi-finansirovaniya-smi-601361da",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:25:00+00:00"
-  },
-  {
-    "id": "rss5c5dee262d57ca35",
-    "category": "Казахстан / Новости",
-    "title": "Неисправность двигателя изменила планы туристов, летевших на отдых в Таиланд",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/around-the-world/neispravnost-dvigatelya-izmenila-planyi-turistov-letevshih-613196/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:22:28+00:00"
-  },
-  {
-    "id": "rsse2a4c6f32b339d96",
-    "category": "Казахстан / Новости",
-    "title": "11-классница пришла в школу с ножом в Астане: полиция начала расследование",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/crime/11-klassnitsa-prishla-shkolu-nojom-astane-politsiya-nachala-613214/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:18:41+00:00"
-  },
-  {
-    "id": "rsse1b8836ddc2979e1",
-    "category": "Казахстан / Новости",
-    "title": "18:16, 16 Ноября 2026 Поддельные Ariel, Tide и «МИФ» обнаружили на складе в Шымкенте",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/poddelnie-ariel-tide-imif-obnaruzhili-nasklade-vshimkente-5b657fe3",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:16:00+00:00"
-  },
-  {
-    "id": "rss5428297b93b2af71",
-    "category": "Казахстан / Новости",
-    "title": "18:07, 16 Ноября 2026 Врачи Алматы провели сложную операцию женщине после падения с четвертого этажа",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Kazinform",
-    "url": "https://www.inform.kz/ru/vrachi-almati-proveli-slozhnuyu-operatsiyu-zhenshine-posle-padeniya-schetvertogo-b3da5504",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:07:00+00:00"
-  },
-  {
-    "id": "rss73a8b7844f8d988b",
-    "category": "Казахстан / Новости",
-    "title": "Автомобиль угнали прямо из китайского автосалона прямо в день продажи",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/autonews/avtomobil-ugnali-pryamo-kitayskogo-avtosalona-pryamo-den-613178/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:03:00+00:00"
-  },
-  {
-    "id": "rssabdc44245e2ed6e7",
-    "category": "Казахстан / Новости",
-    "title": "О чем говорили депутаты Курултая на встречах по Посланию Президента в регионах",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/chem-govorili-deputatyi-kurultaya-vstrechah-poslaniyu-613211/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:02:00+00:00"
-  },
-  {
-    "id": "tg78c311a6072aacf1bb",
-    "category": "Культура / Музыка",
-    "title": "ATL, BUSHIDO ZHO и ЛАУД выступят на одной сцене в Москве",
-    "summary": "ATL, BUSHIDO ZHO и ЛАУД выступят на одной сцене в Москве\n20 ноября в TAU пройдет вечеринка RARE, которая соберет артистов из разных уголков\nсовременной российской рэп-сцены. \nОт мрачного звучания ATL и энергичных треков BUSHIDO ZHO до танцевальной электроники ЛАУД.\nВ лайнапе также: Daily Slime, Saynomo, Salamé и Curry.\n🎫 Билеты\n(промокод TOASTER10)\ntoaster.mag",
-    "source": "Toaster",
-    "url": "https://t.me/toastermag/32909",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T13:00:24+00:00"
-  },
-  {
-    "id": "rss57330719775ae70d",
-    "category": "Казахстан / ЦА",
-    "title": "Почему Голливуд разлюбил подростковые антиутопии, а мир — нет",
-    "summary": "На фоне выхода новых «Голодных игр» авторка Гульзада Ксан разбирается, почему подростковые антиутопии стали настолько популярными, какую роль в их успехе сыграли женские персонажи и аудитория молодых девушек, почему жанр потерял коммерческую привлекательность и как его символы превратились в язык реальных протестов — от Таиланда до Франции. Сообщен",
-    "source": "98mag",
-    "url": "https://www.98mag.kz/likbez/istorii/pochemu-gollivud-razlyubil-podrostkovye-antiutopii-a-mir-net/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T12:55:08+00:00"
-  },
-  {
-    "id": "rssc5d38b649deb0219",
-    "category": "Казахстан / Новости",
-    "title": "Эффект Джонни Деппа? Сколько собрал его новый фильм",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kino-life/effekt-djonni-deppa-skolko-sobral-ego-novyiy-film-613154/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T12:48:00+00:00"
-  },
-  {
-    "id": "rssf83f2a6643c72e85",
-    "category": "Казахстан / Новости",
-    "title": "Токаев принял главу ЦИК перед досрочными выборами в маслихаты",
-    "summary": "Откройте первоисточник, чтобы прочитать подробности.",
-    "source": "Tengrinews",
-    "url": "https://tengrinews.kz/kazakhstan_news/tokaev-priyal-glavu-tsik-nakanune-dosrochnyih-vyiborov-613213/",
-    "date": "16.11.2026",
-    "published_at": "2026-11-16T12:35:58+00:00"
   }
 ]
